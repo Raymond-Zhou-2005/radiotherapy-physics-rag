@@ -22,6 +22,7 @@ Each record includes:
 - `caption`
 - rows and columns for detected tables
 - image_xref, width, height, and extension for images
+- short `text_preview` for detected tables in local runtime metadata
 
 `assets/extracted/asset_manifest.json` summarizes per-document asset counts.
 
@@ -95,4 +96,20 @@ Metadata plus embedded image binaries:
 python scripts/extract_pdf_assets.py reports/raw --output-dir assets/extracted --save-images
 ```
 
-The metadata path is useful for review, evaluation, and future multimodal indexing. Generated asset metadata is ignored by Git because it is derived from third-party report PDFs. The main RAG index remains text-first until figure/table content is explicitly curated.
+The metadata path is useful for review, evaluation, and future multimodal indexing. Generated asset metadata is ignored by Git because it is derived from third-party report PDFs. The main RAG index remains text-first, but explicit table/figure page queries now surface nearby asset metadata in evidence outputs.
+
+## Asset QA Evaluation
+
+```bash
+python scripts/generate_asset_benchmark.py --assets-dir assets/extracted --sources reports/starter_corpus_sources.json --output evaluation/radiotherapy_asset_questions.json
+python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/asset_qa_eval_results.json --output-md evaluation/asset_qa_eval_results.md
+```
+
+Current 120-question metadata-derived result:
+
+- Document Hit Rate@5: 1.000.
+- Page Hit Rate@5: 0.983.
+- Asset ID Trace Hit Rate@5: 0.950.
+- Asset Type Trace Hit Rate@5: 0.975.
+
+This evaluates whether the skill can retrieve evidence near the table/figure metadata. It is not full image understanding.

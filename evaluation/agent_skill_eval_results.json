@@ -1,18 +1,18 @@
 {
-  "questions": 260,
+  "questions": 280,
   "retrieval_backend": "routed",
-  "tool_success_rate": 0.9423076923076923,
-  "document_hit_rate@5": 0.8571428571428571,
+  "tool_success_rate": 0.875,
+  "document_hit_rate@5": 0.8612244897959184,
   "citation_present_rate": 1.0,
   "ood_abstention_success_rate": 1.0,
   "unexpected_error_count": 0,
   "counts": {
     "tool_success": 245,
     "in_scope": 245,
-    "ood": 15,
-    "doc_hit_at_5": 210,
+    "ood": 35,
+    "doc_hit_at_5": 211,
     "citation_present": 245,
-    "expected_abstain_success": 15,
+    "expected_abstain_success": 35,
     "unexpected_error": 0
   },
   "details": [
@@ -32,7 +32,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0002",
@@ -50,7 +50,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0003",
@@ -86,7 +86,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0005",
@@ -104,7 +104,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0006",
@@ -194,7 +194,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0011",
@@ -212,7 +212,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0012",
@@ -230,7 +230,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0013",
@@ -266,7 +266,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0015",
@@ -284,7 +284,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0016",
@@ -495,7 +495,7 @@
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg100_radiotherapy_quality_management",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg100_radiotherapy_quality_management"
       ],
       "doc_hit_at_5": true,
@@ -536,7 +536,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0030",
@@ -590,7 +590,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0033",
@@ -729,7 +729,7 @@
         "iaea_tecdoc_1040_radiotherapy_programme",
         "iaea_tecdoc_1040_radiotherapy_programme",
         "iaea_tecdoc_1040_radiotherapy_programme",
-        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc_1040_radiotherapy_programme",
         "iaea_tecdoc_1040_radiotherapy_programme"
       ],
       "doc_hit_at_5": true,
@@ -763,14 +763,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_tg51_photon_dosimetry_addendum"
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0043",
@@ -799,14 +799,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "aapm_tg51_photon_dosimetry_addendum",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0045",
@@ -818,13 +818,13 @@
       "retrieved_doc_ids": [
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0046",
@@ -910,11 +910,11 @@
         "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_tecdoc1583_tps_commissioning"
+        "iaea_trs430_tps_commissioning_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0051",
@@ -1016,8 +1016,8 @@
       "retrieved_doc_ids": [
         "iaea_trs469_reference_dosimeters",
         "iaea_trs469_reference_dosimeters",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
         "iaea_trs469_reference_dosimeters"
       ],
       "doc_hit_at_5": true,
@@ -1033,14 +1033,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_trs469_reference_dosimeters",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
         "iaea_trs469_reference_dosimeters"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0058",
@@ -1051,10 +1051,10 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs469_reference_dosimeters",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs469_reference_dosimeters",
-        "iaea_trs469_reference_dosimeters",
-        "iaea_trs398_rev1_absorbed_dose_ebrt"
+        "iaea_trs469_reference_dosimeters"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -1068,15 +1068,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
         "iaea_trs469_reference_dosimeters",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_absorbed_dose_ebrt"
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0060",
@@ -1094,7 +1094,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0061",
@@ -1105,10 +1105,10 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_tecdoc1543_quatro",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_pub1990_quatro_quality_improvement",
         "iaea_tecdoc1543_quatro",
-        "iaea_tecdoc1543_quatro"
+        "iaea_tecdoc1543_quatro",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -1122,10 +1122,10 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_tecdoc1543_quatro",
-        "iaea_tecdoc1543_quatro",
         "iaea_tecdoc1543_quatro"
       ],
       "doc_hit_at_5": true,
@@ -1159,14 +1159,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
         "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_pub1297_quatro_audit_tool"
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0065",
@@ -1292,7 +1292,7 @@
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0072",
@@ -1304,13 +1304,13 @@
       "retrieved_doc_ids": [
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1297_quatro_audit_tool",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1990_quatro_quality_improvement"
+        "iaea_pub1297_quatro_audit_tool"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0073",
@@ -1346,7 +1346,7 @@
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0075",
@@ -1364,7 +1364,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0076",
@@ -1395,12 +1395,12 @@
         "tg158",
         "tg158",
         "tg158",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_trs430_tps_commissioning_qa"
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_report_104_kv_imaging_guidance"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0078",
@@ -1432,11 +1432,11 @@
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "tg158"
+        "iaea_ssg46_medical_uses_radiation_safety"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0080",
@@ -1454,7 +1454,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0081",
@@ -1465,10 +1465,10 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_trs483_small_static_fields",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs483_small_static_fields",
         "iaea_trs483_small_static_fields",
-        "iaea_trs483_small_static_fields"
+        "iaea_trs483_small_static_fields",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -1490,7 +1490,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0083",
@@ -1501,10 +1501,10 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_trs469_reference_dosimeters",
         "iaea_trs483_small_static_fields",
         "iaea_trs483_small_static_fields",
-        "iaea_srs47_radiotherapy_facility_radiation_protection"
+        "iaea_trs483_small_static_fields",
+        "iaea_trs469_reference_dosimeters"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -1520,13 +1520,13 @@
       "retrieved_doc_ids": [
         "iaea_trs483_small_static_fields",
         "iaea_trs483_small_static_fields",
-        "iaea_tecdoc_1040_radiotherapy_programme",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
         "iaea_trs483_small_static_fields"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0085",
@@ -1544,7 +1544,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0086",
@@ -1555,14 +1555,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_tecdoc1274_brachytherapy_source_calibration"
+        "iaea_trs492_brachytherapy_dosimetry"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0087",
@@ -1572,15 +1572,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt"
+        "iaea_trs430_tps_commissioning_qa"
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0088",
@@ -1610,13 +1610,13 @@
       "retrieved_doc_ids": [
         "aapm_report_46_tg40_radiation_oncology_qa",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0090",
@@ -1627,14 +1627,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_tecdoc1543_quatro",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
         "iaea_trs492_brachytherapy_dosimetry"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0091",
@@ -1647,12 +1647,12 @@
         "iaea_ssg46_medical_uses_radiation_safety",
         "aapm_report_46_tg40_radiation_oncology_qa",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
+        "aapm_tg132_image_registration_fusion",
+        "aapm_tg142_medical_accelerator_qa"
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0092",
@@ -1662,15 +1662,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhs19_ct_sim_radiotherapy"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0093",
@@ -1701,12 +1701,12 @@
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs19_ct_sim_radiotherapy"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0095",
@@ -1736,13 +1736,13 @@
       "retrieved_doc_ids": [
         "aapm_tg147_nonradiographic_localization_qa",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_tecdoc1583_tps_commissioning",
         "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1583_tps_commissioning",
         "iaea_tecdoc1540_tps_acceptance"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0097",
@@ -1760,7 +1760,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0098",
@@ -1792,11 +1792,11 @@
         "iaea_tecdoc_1040_radiotherapy_programme",
         "iaea_tecdoc1540_tps_acceptance",
         "aapm_report_166_biological_models_treatment_planning_qa",
-        "aapm_tg147_nonradiographic_localization_qa"
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0100",
@@ -1814,7 +1814,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0101",
@@ -1825,9 +1825,9 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
         "aapm_tg142_medical_accelerator_qa",
         "aapm_tg147_nonradiographic_localization_qa",
-        "iaea_tecdoc1583_tps_commissioning",
         "iaea_tecdoc1540_tps_acceptance"
       ],
       "doc_hit_at_5": true,
@@ -1842,11 +1842,11 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_tecdoc1583_tps_commissioning",
         "iaea_tecdoc1540_tps_acceptance",
-        "iaea_hhr7_record_verify_systems",
-        "iaea_hhr17_linear_accelerators",
-        "iaea_tecdoc1540_tps_acceptance"
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1583_tps_commissioning"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -1860,10 +1860,10 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "aapm_tg147_nonradiographic_localization_qa",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "aapm_tg147_nonradiographic_localization_qa",
         "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "aapm_tg147_nonradiographic_localization_qa",
         "iaea_tecdoc1540_tps_acceptance"
       ],
       "doc_hit_at_5": true,
@@ -1878,9 +1878,9 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_tecdoc1540_tps_acceptance",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1540_tps_acceptance"
       ],
@@ -1898,7 +1898,7 @@
       "retrieved_doc_ids": [
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1540_tps_acceptance"
       ],
@@ -1994,7 +1994,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0111",
@@ -2006,9 +2006,9 @@
       "retrieved_doc_ids": [
         "iaea_hhr7_record_verify_systems",
         "aapm_tg147_nonradiographic_localization_qa",
-        "aapm_tg147_nonradiographic_localization_qa",
-        "aapm_tg147_nonradiographic_localization_qa",
-        "iaea_hhr7_record_verify_systems"
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "aapm_tg147_nonradiographic_localization_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -2023,9 +2023,9 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
         "iaea_hhr16_igrt_qa",
-        "aapm_tg147_nonradiographic_localization_qa",
-        "aapm_tg147_nonradiographic_localization_qa",
         "aapm_tg147_nonradiographic_localization_qa"
       ],
       "doc_hit_at_5": true,
@@ -2078,13 +2078,13 @@
       "retrieved_doc_ids": [
         "iaea_hhr7_record_verify_systems",
         "iaea_hhr7_record_verify_systems",
-        "iaea_hhr16_igrt_qa",
+        "iaea_hhr7_record_verify_systems",
         "iaea_hhr7_record_verify_systems",
         "iaea_hhr7_record_verify_systems"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0116",
@@ -2096,13 +2096,13 @@
       "retrieved_doc_ids": [
         "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1297_quatro_audit_tool"
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0117",
@@ -2112,15 +2112,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_pub1297_quatro_audit_tool",
-        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_hhr16_igrt_qa",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1990_quatro_quality_improvement"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0118",
@@ -2133,8 +2133,8 @@
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -2149,14 +2149,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_pub1297_quatro_audit_tool",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement",
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_pub1990_quatro_quality_improvement"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0120",
@@ -2167,14 +2167,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_pub1297_quatro_audit_tool",
-        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1297_quatro_audit_tool"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0121",
@@ -2246,7 +2246,7 @@
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0125",
@@ -2257,14 +2257,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_pub1297_quatro_audit_tool",
-        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1297_quatro_audit_tool"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0126",
@@ -2293,14 +2293,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs430_tps_commissioning_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0128",
@@ -2331,12 +2331,12 @@
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0130",
@@ -2382,13 +2382,13 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_hhr17_linear_accelerators",
-        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_hhr17_linear_accelerators",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_hhr10_radiotherapy_facilities"
+        "iaea_tecdoc_1040_radiotherapy_programme"
       ],
-      "doc_hit_at_5": true,
+      "doc_hit_at_5": false,
       "citation_present": true,
       "retrieval_backend": "sparse"
     },
@@ -2437,10 +2437,10 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_hhr10_radiotherapy_facilities",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhr17_linear_accelerators",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhr10_radiotherapy_facilities"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -2454,9 +2454,9 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg147_nonradiographic_localization_qa",
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators"
       ],
@@ -2494,7 +2494,7 @@
         "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators",
-        "iaea_pub1196_radiation_oncology_physics_handbook"
+        "iaea_hhr17_linear_accelerators"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
@@ -2508,9 +2508,9 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_hhr17_linear_accelerators",
-        "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators"
       ],
@@ -2545,7 +2545,7 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_tecdoc1274_brachytherapy_source_calibration",
-        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration"
@@ -2562,15 +2562,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0143",
@@ -2600,13 +2600,13 @@
       "retrieved_doc_ids": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_tecdoc1274_brachytherapy_source_calibration",
-        "iaea_trs492_brachytherapy_dosimetry",
-        "aapm_report_46_tg40_radiation_oncology_qa",
-        "iaea_tecdoc1274_brachytherapy_source_calibration"
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs492_brachytherapy_dosimetry"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0145",
@@ -2617,14 +2617,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_tecdoc1274_brachytherapy_source_calibration",
-        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration",
         "iaea_tecdoc1274_brachytherapy_source_calibration"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0146",
@@ -2642,7 +2642,7 @@
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0147",
@@ -2652,15 +2652,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_pub1297_quatro_audit_tool",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1297_quatro_audit_tool"
       ],
-      "doc_hit_at_5": false,
+      "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0148",
@@ -2690,13 +2690,13 @@
       "retrieved_doc_ids": [
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_tg100_radiotherapy_quality_management",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhr18_radiotherapy_dosimetry_audits"
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0150",
@@ -2707,14 +2707,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0151",
@@ -2726,13 +2726,13 @@
       "retrieved_doc_ids": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0152",
@@ -2742,15 +2742,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
+        "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_pub1297_quatro_audit_tool"
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0153",
@@ -2779,14 +2779,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0155",
@@ -2798,13 +2798,13 @@
       "retrieved_doc_ids": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0156",
@@ -2840,7 +2840,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0158",
@@ -2876,7 +2876,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0160",
@@ -2894,7 +2894,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0161",
@@ -2912,7 +2912,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0162",
@@ -2930,7 +2930,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0163",
@@ -2966,7 +2966,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0165",
@@ -3074,7 +3074,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0171",
@@ -3092,7 +3092,7 @@
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0172",
@@ -3102,15 +3102,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_hhr17_linear_accelerators",
-        "iaea_hhr10_radiotherapy_facilities",
-        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0173",
@@ -3124,9 +3124,9 @@
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
-      "doc_hit_at_5": false,
+      "doc_hit_at_5": true,
       "citation_present": true,
       "retrieval_backend": "sparse"
     },
@@ -3146,7 +3146,7 @@
       ],
       "doc_hit_at_5": false,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0175",
@@ -3164,7 +3164,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0176",
@@ -3182,7 +3182,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0177",
@@ -3200,7 +3200,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0178",
@@ -3236,7 +3236,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0180",
@@ -3254,7 +3254,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0181",
@@ -3267,12 +3267,12 @@
         "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0182",
@@ -3284,13 +3284,13 @@
       "retrieved_doc_ids": [
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_hhr17_linear_accelerators",
-        "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0183",
@@ -3326,7 +3326,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0185",
@@ -3355,14 +3355,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg142_medical_accelerator_qa",
+        "aapm_report_104_kv_imaging_guidance",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg148_helical_tomotherapy_qa"
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0187",
@@ -3372,15 +3372,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "aapm_tg142_medical_accelerator_qa",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg147_nonradiographic_localization_qa"
+        "aapm_tg142_medical_accelerator_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0188",
@@ -3416,7 +3416,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0190",
@@ -3434,7 +3434,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0191",
@@ -3446,13 +3446,13 @@
       "retrieved_doc_ids": [
         "aapm_tg119_imrt_commissioning",
         "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg119_imrt_commissioning",
         "aapm_tg132_image_registration_fusion",
-        "aapm_tg218_imrt_measurement_based_qa",
-        "aapm_tg100_radiotherapy_quality_management"
+        "aapm_tg218_imrt_measurement_based_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0192",
@@ -3462,15 +3462,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_trs430_tps_commissioning_qa",
         "aapm_tg119_imrt_commissioning",
         "aapm_tg119_imrt_commissioning",
+        "iaea_hhr16_igrt_qa",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhr16_igrt_qa"
+        "aapm_tg119_imrt_commissioning"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0193",
@@ -3502,11 +3502,11 @@
         "iaea_tecdoc_1040_radiotherapy_programme",
         "aapm_tg119_imrt_commissioning",
         "aapm_tg218_imrt_measurement_based_qa",
-        "aapm_tg218_imrt_measurement_based_qa"
+        "aapm_tg119_imrt_commissioning"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0195",
@@ -3524,7 +3524,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0196",
@@ -3542,7 +3542,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0197",
@@ -3552,15 +3552,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_tg106_beam_data_commissioning",
         "aapm_tg106_beam_data_commissioning",
         "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg106_beam_data_commissioning",
         "iaea_trs430_tps_commissioning_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0198",
@@ -3596,7 +3596,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0200",
@@ -3609,12 +3609,12 @@
         "aapm_tg106_beam_data_commissioning",
         "aapm_tg106_beam_data_commissioning",
         "aapm_tg106_beam_data_commissioning",
-        "aapm_tg120_imrt_dosimetry_tools",
+        "aapm_tg106_beam_data_commissioning",
         "aapm_tg106_beam_data_commissioning"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0201",
@@ -3626,13 +3626,13 @@
       "retrieved_doc_ids": [
         "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg120_imrt_dosimetry_tools",
-        "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg119_imrt_commissioning",
+        "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg218_imrt_measurement_based_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0202",
@@ -3645,12 +3645,12 @@
         "iaea_trs430_tps_commissioning_qa",
         "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg120_imrt_dosimetry_tools",
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_tg218_imrt_measurement_based_qa"
+        "aapm_tg120_imrt_dosimetry_tools",
+        "aapm_tg120_imrt_dosimetry_tools"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0203",
@@ -3680,13 +3680,13 @@
       "retrieved_doc_ids": [
         "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg119_imrt_commissioning",
         "aapm_tg120_imrt_dosimetry_tools",
-        "aapm_tg120_imrt_dosimetry_tools",
-        "aapm_tg120_imrt_dosimetry_tools"
+        "iaea_trs430_tps_commissioning_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0205",
@@ -3698,13 +3698,13 @@
       "retrieved_doc_ids": [
         "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg120_imrt_dosimetry_tools",
-        "aapm_report_113_physics_clinical_trials",
         "aapm_tg120_imrt_dosimetry_tools",
-        "aapm_tg218_imrt_measurement_based_qa"
+        "aapm_tg120_imrt_dosimetry_tools",
+        "aapm_tg120_imrt_dosimetry_tools"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0206",
@@ -3722,7 +3722,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0207",
@@ -3740,7 +3740,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0208",
@@ -3776,7 +3776,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0210",
@@ -3794,7 +3794,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0211",
@@ -3902,7 +3902,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0217",
@@ -3920,7 +3920,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0218",
@@ -3956,7 +3956,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0220",
@@ -3974,7 +3974,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0221",
@@ -4064,7 +4064,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0226",
@@ -4095,7 +4095,7 @@
         "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management",
         "aapm_tg75_igrt_imaging_dose",
-        "iaea_hhr16_igrt_qa",
+        "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management"
       ],
       "doc_hit_at_5": true,
@@ -4131,7 +4131,7 @@
         "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management",
-        "iaea_hhr16_igrt_qa",
+        "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management"
       ],
       "doc_hit_at_5": false,
@@ -4262,7 +4262,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0237",
@@ -4272,15 +4272,15 @@
       "ok": true,
       "error_code": null,
       "retrieved_doc_ids": [
-        "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_trs430_tps_commissioning_qa",
         "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg148_helical_tomotherapy_qa"
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "iaea_trs430_tps_commissioning_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0238",
@@ -4309,14 +4309,14 @@
       "error_code": null,
       "retrieved_doc_ids": [
         "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg142_medical_accelerator_qa",
         "aapm_report_104_kv_imaging_guidance",
         "iaea_trs430_tps_commissioning_qa",
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg142_medical_accelerator_qa"
+        "aapm_tg148_helical_tomotherapy_qa"
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0240",
@@ -4334,7 +4334,7 @@
       ],
       "doc_hit_at_5": true,
       "citation_present": true,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0241",
@@ -4597,6 +4597,246 @@
     {
       "qid": "public_q0260",
       "question": "Which bread flour protein percentage is best for Neapolitan pizza dough?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0261",
+      "question": "What chemotherapy regimen should be used for stage III lung cancer?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0262",
+      "question": "How should a patient manage skin burns after radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0263",
+      "question": "What MRI protocol is best for diagnosing a brain tumor?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0264",
+      "question": "What ICD-10 code should be billed for external beam radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0265",
+      "question": "Which antibiotic treats cellulitis after radiation dermatitis?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0266",
+      "question": "What survival benefit does immunotherapy add after chemoradiation?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0267",
+      "question": "How should a hospital obtain insurance authorization for IMRT?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0268",
+      "question": "What CT contrast dose should be used for a patient with renal insufficiency?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0269",
+      "question": "What diet should a patient follow during head and neck radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0270",
+      "question": "Can proton therapy cure prostate cancer better than surgery?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0271",
+      "question": "How should a patient interpret PET/CT SUV after treatment?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0272",
+      "question": "What radiation dose should this patient receive for a new tumor diagnosis?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0273",
+      "question": "Should my mother choose SBRT or surgery for early stage lung cancer?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0274",
+      "question": "What are the legal requirements for malpractice documentation after a treatment error?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0275",
+      "question": "How should a dentist manage osteoradionecrosis risk after radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0276",
+      "question": "Which immunotherapy should be combined with radiation for melanoma?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0277",
+      "question": "What prognosis should be given to a patient with metastatic disease after palliative radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0278",
+      "question": "How should nausea be treated during abdominal radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0279",
+      "question": "What surgical margin is required after preoperative radiotherapy?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0280",
+      "question": "Which hospital billing code applies to adaptive radiotherapy planning?",
       "expected_doc_id": null,
       "expected_abstain": true,
       "ok": false,

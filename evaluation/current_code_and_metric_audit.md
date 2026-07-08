@@ -1,6 +1,6 @@
 # Current Code And Metric Audit
 
-This note records the July 2026 audit of chunking, indexing, retrieval, reranking, and evaluation behavior for the current radiotherapy physics RAG skill package.
+This note records the current July 2026 audit of chunking, indexing, retrieval, reranking, asset lookup, and evaluation behavior for the radiotherapy physics RAG skill package.
 
 ## Compared Folders
 
@@ -12,80 +12,79 @@ This note records the July 2026 audit of chunking, indexing, retrieval, rerankin
 
 ### Chunking
 
-The section-aware chunking implementation is effectively unchanged from 2.0. The current package still uses the same splitter structure and chunk metadata fields. The major difference is scale: the current runtime indexes 49 PDFs and 10923 chunks, while the prior 2.0 package was built around a smaller starter corpus.
-
-Practical meaning: the chunking logic did not become smarter; retrieval performance changes mainly come from corpus expansion, sparse/hybrid index behavior, routing defaults, and evaluation changes.
+The section-aware chunking implementation remains close to 2.0. The main scale change is the runtime corpus: 49 PDFs and 10923 chunks. The current package also preserves definition microchunks and report metadata fields so retrieval and citations can be audited.
 
 ### Indexing
 
-The dense index builder path remains compatible with the earlier design, but the current package adds a sparse-only path:
+The current local build now uses a real semantic dense model:
 
-- `scripts/prepare_index.py` now supports `--index-backend sparse`.
-- `scripts/build_sparse_index.py` builds the BM25 payload without requiring embedding model downloads.
-- `src/retrieval/sparse.py` caches BM25 payload loading.
-- `src/retrieval/dense.py` caches dense index loading and validates model/backend metadata before querying.
-- `src/retrieval/embedder.py` supports forced hash embeddings for reproducible no-model builds.
+- Embedding model: `BAAI/bge-small-en-v1.5`.
+- Backend: `sentence_transformers`.
+- Dense dimension: 384.
+- Query prefix: `Represent this sentence for searching relevant passages: `.
+- Dense search: FAISS inner-product search over normalized embeddings.
 
-Practical meaning: the project can now run a public, reproducible BM25 benchmark without a neural embedding model. The bundled hash dense index is useful for CI and packaging checks, but it is not a semantic dense retriever.
+The no-model hash dense path still exists for CI/debugging, but it is explicitly treated as non-semantic. `dense_meta.json` is checked before hybrid search is trusted.
 
-### Retrieval
+### Retrieval And Reranking
 
-The basic hybrid retriever remains close to 2.0, but the skill-facing retrieval wrapper changed substantially:
+The skill-facing retrieval wrapper supports `sparse`, `hybrid`, `auto`, and `routed`.
 
-- `scripts/run_skill.py` now supports `sparse`, `hybrid`, `auto`, and `routed`.
-- `auto` can run from sparse files alone.
-- `routed` uses query scene features and lightweight memory records to select a retrieval mode and evidence depth.
-- Metadata and hybrid retriever objects are cached to reduce repeated load cost.
-- The current patch treats hash dense artifacts as non-semantic by default. `auto` and `routed` use sparse retrieval unless a real semantic dense index is available or `RAG_ALLOW_HASH_HYBRID=1` is set.
-- Routed query traces are no longer appended by default. Set `RAG_EXPERIENCE_APPEND=1` only for intentional local experiments; the public release excludes the local memory file.
+- `sparse`: BM25 plus transparent report-aware heuristics.
+- `hybrid`: semantic dense retrieval plus BM25 reciprocal-rank fusion.
+- `auto`: uses semantic hybrid when the dense index is real; otherwise falls back to sparse.
+- `routed`: uses scene analysis to choose sparse or hybrid. It currently prefers sparse for exact report/source lookup and QA/procedure questions, and reserves semantic hybrid for broader comparison or multi-report synthesis.
 
-Practical meaning: current default behavior is more conservative and more reproducible. It avoids letting a hash dense baseline degrade retrieval quality while still keeping explicit `hybrid` available for diagnostics.
+Report-aware ranking now uses TG, AAPM Report, TRS, TECDOC, HHR/HHS, SSG, SRS, and publication number cues, plus title-term overlap. This addresses the common failure where the system finds the right broad QA topic but the wrong similar report.
 
-### Reranking
+### OOD Boundary
 
-`src/retrieval/reranker.py` now supports forced lexical reranking:
+The router now includes hard medical-boundary controls, such as chemotherapy, immunotherapy, billing, legal, symptom management, surgery, prognosis, and patient-specific treatment decisions. It deliberately does not reject phrases such as `patient-specific IMRT QA`, which are valid radiotherapy physics topics.
 
-- `RAG_FORCE_LEXICAL_RERANK=1` prevents neural reranker loading.
-- `RAG_FORCE_HASH_EMBEDDINGS=1` also forces lexical reranking.
-- If lexical mode is forced, the reranker avoids importing sentence-transformer or transformer rerank models.
+### Table And Figure Metadata
 
-Practical meaning: public evaluation can run on machines without model downloads, GPU, or Hugging Face cache state. This improves reproducibility but limits semantic reranking strength.
+PDF asset extraction still records table and image metadata, and table records now include a short local `text_preview`. Runtime evidence outputs include `nearby_assets` for chunks near detected table/figure metadata. Explicit table/figure/page questions trigger asset-aware evidence augmentation, which injects chunks from the requested page neighborhood before citation formatting.
 
-## What Was Learned From Comparable RAG Skill Designs
+This is metadata-proximity QA, not visual interpretation or full table-cell answer grading.
 
-The useful transferable ideas were:
+### Answer Quality
 
-- Package the system as an agent-callable skill, not only a chatbot. The agent needs clear entry points, argument contracts, evidence objects, and failure modes.
-- Keep runtime artifacts separate from the public repository. Source metadata, scripts, tests, and benchmark assets are public; PDFs, parsed text, chunks, indexes, and generated full-text uploads stay local.
-- Use a topic navigator as a routing layer. It gives an agent a structured map of the corpus before retrieval.
-- Add strategy evaluation, navigator evaluation, and agent-contract evaluation separately. A retrieval algorithm can look good while the agent interface still fails, or the navigator can route to the right topic while missing the exact report.
-- Include abstention behavior in the benchmark. A medical-domain RAG skill should know when the local corpus is insufficient.
-- Make the no-model baseline explicit. A fully reproducible BM25 baseline is valuable even if later semantic dense baselines are added.
+The package now includes automatic answer-quality proxy evaluation for extractive answers:
+
+- answer presence
+- citation marker presence
+- used evidence ID validity
+- grounded token overlap
+- unsupported number cases
+- overclaim phrase flags
+- OOD abstention success
+
+These are reproducible proxies, not expert correctness labels.
 
 ## Current Evaluation Snapshot
 
 Benchmark:
 
-- Total questions: 260.
+- Total questions: 280.
 - In-domain public-source topic questions: 245.
-- Out-of-domain controls: 15.
+- OOD controls: 35, including 20 hard medical-boundary controls.
 - Runtime source records: 49.
 
 Strategy evaluation:
 
 | Strategy | Document Recall@3 | Document Recall@5 | OOD TP | OOD FP | OOD TN | OOD FN |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| sparse | 0.755 | 0.857 | 15 | 0 | 245 | 0 |
-| hybrid hash+dense | 0.702 | 0.804 | 15 | 0 | 245 | 0 |
-| auto | 0.755 | 0.857 | 15 | 0 | 245 | 0 |
-| routed | 0.755 | 0.857 | 15 | 0 | 245 | 0 |
+| sparse | 0.771 | 0.861 | 35 | 0 | 245 | 0 |
+| hybrid semantic | 0.771 | 0.820 | 35 | 0 | 245 | 0 |
+| auto | 0.771 | 0.820 | 35 | 0 | 245 | 0 |
+| routed | 0.780 | 0.861 | 35 | 0 | 245 | 0 |
 
 Agent skill evaluation:
 
 | Metric | Current value |
 | --- | ---: |
-| Tool success rate | 0.942 |
-| Document Hit Rate@5 | 0.857 |
+| Tool success rate | 0.875 |
+| Document Hit Rate@5 | 0.861 |
 | Citation present rate | 1.000 |
 | OOD abstention success rate | 1.000 |
 | Unexpected errors | 0 |
@@ -101,47 +100,45 @@ Navigator evaluation:
 | Candidate Document Recall@3 | 0.490 |
 | Candidate Document Recall@5 | 0.673 |
 
-## Comparison With Previous Public Release
+Asset QA evaluation:
 
-The previous public release had 35 runtime documents and 190 questions. The current package has 49 runtime documents and 260 questions.
+| Metric | Current value |
+| --- | ---: |
+| Questions | 120 |
+| Skill OK rate | 1.000 |
+| Document Hit Rate@5 | 1.000 |
+| Page Hit Rate@5 | 0.983 |
+| Asset ID Trace Hit Rate@5 | 0.950 |
+| Asset Type Trace Hit Rate@5 | 0.975 |
 
-Strategy-level comparison:
+Answer-quality proxy evaluation:
 
-| Strategy | Previous Doc Recall@3 | Current Doc Recall@3 | Previous Doc Recall@5 | Current Doc Recall@5 |
-| --- | ---: | ---: | ---: | ---: |
-| sparse | 0.686 | 0.755 | 0.806 | 0.857 |
-| hybrid hash+dense | 0.663 | 0.702 | 0.754 | 0.804 |
-| auto | 0.663 | 0.755 | 0.754 | 0.857 |
-| routed | 0.674 | 0.755 | 0.794 | 0.857 |
+| Metric | Current value |
+| --- | ---: |
+| Questions | 280 |
+| In-scope OK rate | 1.000 |
+| Answer present rate | 1.000 |
+| Citation marker rate | 1.000 |
+| Used evidence ID valid rate | 1.000 |
+| Mean grounded token overlap | 0.994 |
+| Unsupported number case rate | 0.016 |
+| Overclaim flag rate | 0.004 |
+| OOD abstention success rate | 1.000 |
+| Unexpected errors | 0 |
 
-Agent-contract comparison:
+## Interpretation
 
-| Metric | Previous | Current |
-| --- | ---: | ---: |
-| Tool success rate | 0.947 | 0.942 |
-| Document Hit Rate@5 | 0.800 | 0.857 |
-| Citation present rate | 0.994 | 1.000 |
-| OOD abstention success rate | 0.600 | 1.000 |
-| Unexpected errors | 1 | 0 |
+The current package has a real semantic embedding index, but the metadata-generated public benchmark rewards exact report identifiers, titles, and source-role terms. For that reason, sparse BM25 and routed retrieval currently outperform pure semantic hybrid on Document Recall@5. This is not a failure of semantic search; it shows that the benchmark is closer to report-location retrieval than open-ended semantic QA.
 
-Navigator comparison:
+Routed retrieval is therefore the practical default: it uses sparse retrieval where exact report matching matters and keeps semantic hybrid available for broader synthesis or comparison tasks.
 
-| Metric | Previous | Current |
-| --- | ---: | ---: |
-| Topic Recall@1 | 0.880 | 0.837 |
-| Topic Recall@2 | 0.926 | 0.939 |
-| Topic Recall@3 | 0.966 | 0.967 |
-| Candidate Document Recall@1 | 0.211 | 0.188 |
-| Candidate Document Recall@3 | 0.480 | 0.490 |
-| Candidate Document Recall@5 | 0.709 | 0.673 |
-
-Interpretation: the expanded corpus improved document-level retrieval and agent evidence hits, especially after `auto` and `routed` stopped using hash dense retrieval as if it were semantic dense retrieval. Explicit OOD controls are now rejected before lexical overlap scoring. The main remaining cost is that navigator document ranking became harder because the runtime now contains more overlapping QA, IMRT, IGRT, SBRT, dosimetry, commissioning, and safety reports.
+The strongest remaining weak point is navigator document ranking. Topic recall is high, but picking the exact report inside overlapping QA/IMRT/IGRT/dosimetry topics remains hard.
 
 ## Metric Meanings
 
-- `Document Recall@3` / `Document Recall@5`: whether the expected source report appears among the top 3 or top 5 retrieved source documents. This is the main metric for the current public benchmark.
-- `Recall@3` / `Recall@5`: whether the exact gold chunk appears in the top 3 or top 5 retrieved chunks. These are currently 0.000 because the public benchmark does not contain expert gold chunk IDs.
-- `MRR`: mean reciprocal rank of the first exact gold chunk. This is also not meaningful until expert chunk-level gold labels exist.
+- `Document Recall@3` / `Document Recall@5`: whether the expected source report appears among the top 3 or top 5 retrieved source documents.
+- `Recall@3` / `Recall@5`: exact gold chunk recall. These are 0.000 because the public benchmark does not contain expert gold chunk IDs.
+- `MRR`: mean reciprocal rank of the first exact gold chunk. Not meaningful until expert chunk labels exist.
 - `OOD TP`: an out-of-domain question was correctly rejected or abstained.
 - `OOD FP`: an in-domain question was incorrectly rejected.
 - `OOD TN`: an in-domain question was answered instead of rejected.
@@ -151,15 +148,16 @@ Interpretation: the expanded corpus improved document-level retrieval and agent 
 - `Tool success rate`: proportion of questions that return `ok=true`. Correct OOD abstentions are structured `insufficient_evidence` errors, so this rate can decrease when abstention improves.
 - `Document Hit Rate@5`: whether the agent-facing evidence output includes the expected source report in its top 5 evidence items.
 - `Citation present rate`: whether successful in-domain outputs include citations.
-- `OOD abstention success rate`: proportion of out-of-domain control questions correctly rejected.
-- `Unexpected errors`: uncaught or unexpected runtime failures during agent-skill evaluation.
+- `Page Hit Rate@5`: whether asset QA evidence lands within the expected page neighborhood.
+- `Asset ID Trace Hit Rate@5`: whether returned `nearby_assets` include the expected asset ID.
+- `Grounded token overlap`: token-overlap proxy between extractive answer text and returned evidence text.
+- `Unsupported number case rate`: proportion of answers containing numbers not found in returned evidence text.
+- `Overclaim flag rate`: proportion of answers containing high-risk phrases suggesting clinical overreach.
 
-## Optimization Opportunities
+## Remaining Optimization Opportunities
 
-Highest-impact next steps:
-
-1. Add a real semantic dense index with documented model name, cache instructions, and fixed embedding metadata, then rerun sparse, dense, hybrid, auto, and routed comparisons.
-2. Add a source-title-aware reranking feature to handle overlapping reports, especially older/newer report versions and reports that share QA or commissioning vocabulary.
-3. Further strengthen OOD abstention with a calibrated domain gate, evidence sufficiency threshold, and broader negative-topic controls. The current package already rejects explicit non-radiotherapy control topics before lexical overlap scoring.
-4. Add expert or semi-expert gold chunk IDs for a smaller benchmark subset so `Recall@k` and `MRR` become meaningful.
-5. Add table/figure-specific benchmark items if the paper wants to claim asset-aware retrieval rather than text-only evidence retrieval.
+1. Add expert gold chunk IDs for a smaller adjudicated benchmark so exact `Recall@k` and `MRR` become meaningful.
+2. Improve navigator document ranking with report-number/title cues and topic-specific candidate ordering.
+3. Add cell-level table QA only if table-content licensing and expert review boundaries are clear.
+4. Compare extractive answers with local LLM or hosted LLM answers under the same evidence contract.
+5. Calibrate OOD abstention on broader negative controls beyond the current synthetic benchmark.

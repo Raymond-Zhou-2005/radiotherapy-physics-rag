@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import traceback
 from pathlib import Path
@@ -26,7 +27,7 @@ from src.orchestration.router import (
     load_experience_memory,
     select_retrieval_strategy,
 )
-from src.retrieval.heuristics import compute_chunk_bonus, get_query_type
+from src.retrieval.heuristics import compute_chunk_bonus, get_query_type, report_title_terms
 from src.retrieval.hybrid import HybridRetriever
 from src.retrieval.reranker import CandidateReranker
 from src.retrieval.sparse import SparseIndexer
@@ -38,6 +39,7 @@ SCHEMA_VERSION = "1.0.0"
 RETRIEVAL_BACKENDS = {"auto", "hybrid", "sparse", "routed"}
 _METADATA_CACHE: Dict[str, Dict[str, Dict[str, Any]]] = {}
 _HYBRID_RETRIEVER_CACHE: Dict[Tuple[str, str, str, str, bool], HybridRetriever] = {}
+_ASSET_CACHE: Dict[str, List[Dict[str, Any]]] = {}
 
 ERROR_EXIT_CODES = {
     "missing_index": 2,
@@ -82,6 +84,9 @@ QUERY_STOPWORDS = {
     "which",
     "with",
 }
+
+ASSET_QUERY_RE = re.compile(r"\b(table|figure|fig\.?|image|diagram|asset)\b", re.IGNORECASE)
+PAGE_QUERY_RE = re.compile(r"\bpage\s+(\d{1,4})\b", re.IGNORECASE)
 
 
 class SkillExecutionError(Exception):
@@ -526,7 +531,7 @@ def assess_evidence_sufficiency(query: str, evidence: List[Dict[str, Any]]) -> D
             max_overlap = overlap
             best_chunk_id = chunk.get("chunk_id")
 
-    threshold = 0.34
+    threshold = 0.30
     return {
         "sufficient": max_overlap >= threshold,
         "reason": "Top evidence overlaps enough query content terms." if max_overlap >= threshold else "Retrieved evidence does not overlap enough query content terms.",
@@ -535,6 +540,113 @@ def assess_evidence_sufficiency(query: str, evidence: List[Dict[str, Any]]) -> D
         "best_overlap_chunk_id": best_chunk_id,
         "threshold": threshold,
     }
+
+
+def extract_requested_page(query: str) -> Optional[int]:
+    match = PAGE_QUERY_RE.search(query)
+    if not match:
+        return None
+    try:
+        return int(match.group(1))
+    except ValueError:
+        return None
+
+
+def is_asset_page_query(query: str) -> bool:
+    return bool(ASSET_QUERY_RE.search(query) and extract_requested_page(query) is not None)
+
+
+def infer_asset_doc_id(query: str, metadata: List[Dict[str, Any]], evidence: List[Dict[str, Any]]) -> Optional[str]:
+    q_terms = report_title_terms(query)
+    by_doc: Dict[str, str] = {}
+    for chunk in metadata:
+        doc_id = str(chunk.get("doc_id", "") or "")
+        if doc_id and doc_id not in by_doc:
+            by_doc[doc_id] = str(chunk.get("title", "") or doc_id)
+
+    best_doc = None
+    best_score = 0
+    for doc_id, title in by_doc.items():
+        terms = report_title_terms(f"{doc_id} {title}")
+        score = len(q_terms & terms)
+        if score > best_score:
+            best_score = score
+            best_doc = doc_id
+    if best_doc and best_score >= 2:
+        return best_doc
+
+    for item in evidence:
+        doc_id = item.get("chunk", {}).get("doc_id")
+        if doc_id:
+            return str(doc_id)
+    return None
+
+
+def augment_asset_page_evidence(
+    query: str,
+    evidence: List[Dict[str, Any]],
+    metadata: List[Dict[str, Any]],
+    evidence_top_k: Optional[int] = None,
+    window_pages: int = 1,
+) -> List[Dict[str, Any]]:
+    """Prepend chunks from the requested asset page neighborhood when explicit."""
+    if not is_asset_page_query(query):
+        return evidence
+    page = extract_requested_page(query)
+    if page is None:
+        return evidence
+    doc_id = infer_asset_doc_id(query, metadata, evidence)
+    if not doc_id:
+        return evidence
+
+    low = page - window_pages
+    high = page + window_pages
+    nearby_chunks = [
+        chunk for chunk in metadata
+        if chunk.get("doc_id") == doc_id
+        and int(chunk.get("page_start", -999)) <= high
+        and int(chunk.get("page_end", -999)) >= low
+    ]
+    nearby_chunks.sort(
+        key=lambda chunk: (
+            min(abs(int(chunk.get("page_start", page)) - page), abs(int(chunk.get("page_end", page)) - page)),
+            int(chunk.get("page_start", page)),
+            str(chunk.get("chunk_id", "")),
+        )
+    )
+
+    seen = {item.get("chunk_id") for item in evidence}
+    augmented: List[Dict[str, Any]] = []
+    for chunk in nearby_chunks[:3]:
+        chunk_id = chunk.get("chunk_id")
+        if chunk_id in seen:
+            continue
+        augmented.append(
+            {
+                "chunk_id": chunk_id,
+                "dense_score": None,
+                "bm25_score": None,
+                "dense_hit": False,
+                "bm25_hit": False,
+                "fusion_score": 0.0,
+                "heuristic_bonus": 0.0,
+                "final_retrieval_score": 1.0,
+                "retrieval_rank": 0,
+                "rerank_score": 1.0,
+                "rank": 0,
+                "asset_page_injected": True,
+                "chunk": chunk,
+            }
+        )
+        seen.add(chunk_id)
+
+    if not augmented:
+        return evidence
+    combined = augmented + evidence
+    for rank, item in enumerate(combined, start=1):
+        item["rank"] = rank
+    limit = evidence_top_k if evidence_top_k is not None else len(evidence)
+    return combined[:limit]
 
 
 def build_citations(evidence: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -587,10 +699,59 @@ def safe_float(value: Any) -> Optional[float]:
         return None
 
 
-def flatten_evidence(evidence: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def load_doc_assets(project_root: Path, doc_id: str) -> List[Dict[str, Any]]:
+    asset_path = project_root / "assets" / "extracted" / f"{doc_id}.assets.jsonl"
+    cache_key = str(asset_path.resolve())
+    if cache_key in _ASSET_CACHE:
+        return _ASSET_CACHE[cache_key]
+    if not asset_path.exists():
+        _ASSET_CACHE[cache_key] = []
+        return []
+    assets = []
+    for record in iter_jsonl(asset_path):
+        assets.append(record)
+    _ASSET_CACHE[cache_key] = assets
+    return assets
+
+
+def find_nearby_assets(
+    project_root: Path,
+    doc_id: str,
+    page_start: int,
+    page_end: int,
+    window_pages: int = 1,
+    limit: int = 5,
+) -> List[Dict[str, Any]]:
+    assets = load_doc_assets(project_root, doc_id)
+    nearby = []
+    low = page_start - window_pages
+    high = page_end + window_pages
+    for asset in assets:
+        page = int(asset.get("page", -999))
+        if low <= page <= high:
+            nearby.append(
+                {
+                    "asset_id": asset.get("asset_id"),
+                    "asset_type": asset.get("asset_type"),
+                    "page": page,
+                    "caption": str(asset.get("caption", "") or "")[:240],
+                    "rows": asset.get("rows"),
+                    "columns": asset.get("columns"),
+                    "width": asset.get("width"),
+                    "height": asset.get("height"),
+                }
+            )
+    nearby.sort(key=lambda item: (abs(int(item["page"]) - page_start), str(item.get("asset_id", ""))))
+    return nearby[:limit]
+
+
+def flatten_evidence(evidence: List[Dict[str, Any]], project_root: Optional[Path] = None) -> List[Dict[str, Any]]:
     flattened = []
+    root = project_root or PROJECT_ROOT
     for i, item in enumerate(evidence, start=1):
         chunk = item["chunk"]
+        page_start = int(chunk["page_start"])
+        page_end = int(chunk["page_end"])
         page_range = format_page_range(chunk["page_start"], chunk["page_end"])
         citation_text = format_citation_text(
             evidence_id=f"E{i}",
@@ -607,14 +768,15 @@ def flatten_evidence(evidence: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 "document": chunk["title"],
                 "section": chunk["section"],
                 "subsection": chunk["subsection"],
-                "page_start": int(chunk["page_start"]),
-                "page_end": int(chunk["page_end"]),
+                "page_start": page_start,
+                "page_end": page_end,
                 "page_range": page_range,
                 "chunk_kind": chunk.get("chunk_kind", "standard"),
                 "parent_chunk_id": chunk.get("parent_chunk_id"),
                 "tags": chunk.get("tags", []),
                 "source_path": chunk.get("source_path"),
                 "citation": citation_text,
+                "nearby_assets": find_nearby_assets(root, chunk["doc_id"], page_start, page_end),
                 "text": chunk["text"],
                 "scores": {
                     "dense_score": safe_float(item.get("dense_score")),
@@ -643,6 +805,7 @@ def base_success(
     evidence: List[Dict[str, Any]],
     retrieval_backend: str = "hybrid",
     retrieval_warnings: Optional[List[Dict[str, Any]]] = None,
+    project_root: Optional[Path] = None,
 ) -> Dict[str, Any]:
     retrieval_label = (
         "dense semantic search + BM25 sparse search"
@@ -675,7 +838,7 @@ def base_success(
         },
         "evidence_status": "sufficient",
         "abstained": False,
-        "evidence": flatten_evidence(evidence),
+        "evidence": flatten_evidence(evidence, project_root=project_root),
         "citations": build_citations(evidence),
     }
 
@@ -760,6 +923,7 @@ def run_skill(
         evidence_top_k=evidence_top_k,
         retrieval_backend=selected_retrieval_backend,
     )
+    evidence = augment_asset_page_evidence(query, evidence, metadata, evidence_top_k=evidence_top_k)
     sufficiency = assess_evidence_sufficiency(query, evidence)
     if not sufficiency["sufficient"]:
         raise SkillExecutionError(
@@ -775,6 +939,7 @@ def run_skill(
         evidence,
         retrieval_backend=actual_retrieval_backend,
         retrieval_warnings=retrieval_warnings,
+        project_root=index_dir.parent,
     )
     if selected_retrieval_backend == "routed" and experience_append_enabled():
         routing = result.get("rag_pipeline", {}).get("routing") or {}

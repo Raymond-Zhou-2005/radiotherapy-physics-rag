@@ -11,10 +11,13 @@ from scripts.build_sparse_index import main as build_sparse_index_main
 from scripts.build_skill_bundle import main as build_bundle_main
 from scripts.download_starter_corpus import main as download_corpus_main
 from scripts.evaluate_agent_skill import main as evaluate_agent_skill_main
+from scripts.evaluate_answer_quality import main as evaluate_answer_quality_main
+from scripts.evaluate_asset_qa import main as evaluate_asset_qa_main
 from scripts.evaluate_navigator import main as evaluate_navigator_main
 from scripts.extract_pdf_assets import main as extract_assets_main
-from scripts.generate_public_benchmark import main as generate_public_benchmark_main
 from scripts.evaluate_strategies import main as evaluate_strategies_main
+from scripts.generate_asset_benchmark import main as generate_asset_benchmark_main
+from scripts.generate_public_benchmark import main as generate_public_benchmark_main
 from scripts.inspect_pdfs import main as inspect_pdfs_main
 from scripts.list_corpus import main as list_corpus_main
 from scripts.mcp_server import main as mcp_server_main
@@ -35,9 +38,12 @@ __all__ = [
     "build_bundle_main",
     "download_corpus_main",
     "evaluate_agent_skill_main",
+    "evaluate_answer_quality_main",
+    "evaluate_asset_qa_main",
     "evaluate_navigator_main",
     "evaluate_strategies_main",
     "extract_assets_main",
+    "generate_asset_benchmark_main",
     "generate_public_benchmark_main",
     "inspect_pdfs_main",
     "list_corpus_main",

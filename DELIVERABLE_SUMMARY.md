@@ -13,7 +13,8 @@ This folder is the complete non-article implementation bundle for an open-source
 - PDF asset metadata: 655 tables and 3263 images.
 - ChatGPT Knowledge upload files generated locally: 49.
 - Navigator topics: 10.
-- Dense/hash artifacts: present for reproducible no-model hybrid baseline.
+- Semantic dense artifacts: `BAAI/bge-small-en-v1.5`, `sentence_transformers`, 384 dimensions, FAISS index.
+- Hash dense fallback: available only as explicit no-model CI/debug profile.
 
 ## Main Entry Points
 
@@ -44,17 +45,18 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 
 Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 
-- Total questions: 260.
+- Total questions: 280.
 - In-domain public-source topic questions: 245.
-- Out-of-domain controls: 15.
+- Out-of-domain controls: 35, including 20 hard medical-boundary negatives.
 - Source policy: generated from public source catalog metadata; no ABR/RAPHEX/commercial copyrighted question text.
 
 Strategy evaluation:
 
-- Sparse Document Recall@5: 0.857.
-- Hybrid hash+dense Document Recall@5: 0.804.
-- Auto Document Recall@5: 0.857.
-- Routed Document Recall@5: 0.857.
+- Sparse Document Recall@5: 0.861.
+- Hybrid semantic Document Recall@5: 0.820.
+- Auto Document Recall@5: 0.820.
+- Routed Document Recall@5: 0.861.
+- OOD abstention success: 1.000 for all evaluated retrieval strategies.
 
 Navigator evaluation:
 
@@ -63,11 +65,25 @@ Navigator evaluation:
 
 Agent-skill contract evaluation:
 
-- Routed tool success rate: 0.942.
-- Routed Document Hit Rate@5: 0.857.
+- Routed tool success rate: 0.875.
+- Routed Document Hit Rate@5: 0.861.
 - Citation present rate: 1.000.
 - OOD abstention success rate: 1.000.
 - Unexpected in-scope error count: 0.
+
+Asset QA evaluation:
+
+- 120 table/figure metadata questions.
+- Document Hit Rate@5: 1.000.
+- Page Hit Rate@5: 0.983.
+- Asset ID Trace Hit Rate@5: 0.950.
+
+Answer-quality proxy evaluation:
+
+- Citation marker rate: 1.000.
+- Used evidence ID valid rate: 1.000.
+- Mean grounded token overlap: 0.994.
+- OOD abstention success rate: 1.000.
 
 ## Verification Snapshot
 

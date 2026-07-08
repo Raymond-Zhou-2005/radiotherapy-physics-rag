@@ -5,7 +5,7 @@ description: Use this skill when the user asks evidence-grounded questions about
 
 # Radiotherapy Physics RAG
 
-Use the locally built report corpus as the evidence boundary. The skill supports evidence lookup, evidence bundles, conservative extractive answers, topic-tree navigation, scene-aware strategy routing, corpus inspection, PDF onboarding, index rebuilding, validation, and ChatGPT Knowledge export.
+Use the locally built report corpus as the evidence boundary. The skill supports evidence lookup, evidence bundles, conservative extractive answers, topic-tree navigation, scene-aware strategy routing, table/figure metadata lookup, corpus inspection, PDF onboarding, index rebuilding, validation, and ChatGPT Knowledge export.
 
 ## User Experience Boundary
 
@@ -27,7 +27,8 @@ in the public repository.
 python scripts/plugin_query.py --mode evidence --retrieval-backend routed "What does the corpus say about radiation oncology QA?"
 ```
 
-6. Use `--retrieval-backend sparse` for portable BM25 evidence retrieval. Use `--retrieval-backend auto` to try hybrid retrieval when local dense files and models are available, with sparse fallback when they are not. Use `--retrieval-backend routed` to classify the scene, optionally consult local routing memory if present, and choose a retrieval strategy. Routed traces are appended only when `RAG_EXPERIENCE_APPEND=1` is set.
+6. Use `--retrieval-backend sparse` for portable BM25 evidence retrieval. Use `--retrieval-backend hybrid` or `auto` when a semantic dense index such as `BAAI/bge-small-en-v1.5` has been built. Use `--retrieval-backend routed` to classify the scene, optionally consult local routing memory if present, and choose a retrieval strategy. Routed currently prefers sparse for exact report/source lookup and QA procedure questions, and semantic hybrid for broader comparison or synthesis. Routed traces are appended only when `RAG_EXPERIENCE_APPEND=1` is set.
+7. For explicit table, figure, image, or diagram page questions, inspect returned `nearby_assets` metadata in each evidence item. This is metadata-grounded table/figure lookup, not visual interpretation.
 
 If the index is missing, bootstrap the local corpus first:
 
@@ -52,7 +53,9 @@ python scripts/plugin_doctor.py --root .
 python scripts/plugin_query.py --mode evidence --retrieval-backend routed "What does IAEA TRS 398 cover about absorbed dose determination in external beam radiotherapy?"
 python scripts/list_corpus.py --root .
 python scripts/build_navigator.py --index-dir index --manifest reports/manifest.jsonl --output-dir navigator --skill-dir skills/radiotherapy-physics-navigator
-python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_30doc_questions.json --index-dir index --strategies sparse auto routed --ignore-report-scope
+python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope
+python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend routed
+python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed
 python scripts/build_chatgpt_knowledge.py --root .
 python scripts/validate_skill_package.py --skill-root . --check-sample-baseline --require-index
 ```

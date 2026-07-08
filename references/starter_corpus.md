@@ -87,8 +87,8 @@ Do commit:
 Current public benchmark:
 
 - `evaluation/radiotherapy_skill_open_questions.json`
-- 260 questions total.
+- 280 questions total.
 - 245 in-domain public-source topic questions.
-- 15 OOD controls.
+- 35 OOD controls, including 20 medical-boundary hard negatives.
 
 The benchmark is open-source and source-attributed, but not expert-adjudicated.

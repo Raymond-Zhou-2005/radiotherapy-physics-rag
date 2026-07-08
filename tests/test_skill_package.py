@@ -122,8 +122,11 @@ def test_maturity_scripts_exist():
         "scripts/build_navigator.py",
         "scripts/build_chatgpt_knowledge.py",
         "scripts/generate_public_benchmark.py",
+        "scripts/generate_asset_benchmark.py",
         "scripts/evaluate_navigator.py",
         "scripts/evaluate_agent_skill.py",
+        "scripts/evaluate_answer_quality.py",
+        "scripts/evaluate_asset_qa.py",
         "scripts/build_public_release.py",
         "scripts/audit_public_release.py",
     ]:
@@ -175,11 +178,14 @@ def test_pyproject_console_scripts_are_declared_without_http_server():
         "radiotherapy-rag-query",
         "radiotherapy-rag-chatgpt-knowledge",
         "radiotherapy-rag-generate-benchmark",
+        "radiotherapy-rag-generate-asset-benchmark",
         "radiotherapy-rag-build-sparse",
         "radiotherapy-rag-build-public-release",
         "radiotherapy-rag-audit-public-release",
         "radiotherapy-rag-evaluate-navigator",
         "radiotherapy-rag-evaluate-agent-skill",
+        "radiotherapy-rag-evaluate-answer-quality",
+        "radiotherapy-rag-evaluate-asset-qa",
     ]:
         assert command in text
     assert "radiotherapy-rag-serve" not in text

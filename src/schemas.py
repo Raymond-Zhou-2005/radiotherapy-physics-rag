@@ -84,6 +84,7 @@ class PdfAssetRecord:
     height: Optional[int] = None
     extension: Optional[str] = None
     extracted_image_path: Optional[str] = None
+    text_preview: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

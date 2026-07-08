@@ -30,15 +30,15 @@ class ModelConfig:
     """Model-related configuration.
 
     Retrieval and generation are intentionally separated.
-    The default retrieval setup is quality-first:
-    - Dense retrieval: BAAI/bge-base-en-v1.5
+    The default retrieval setup is semantic but lightweight:
+    - Dense retrieval: BAAI/bge-small-en-v1.5
     - Reranking: BGE reranker v2 m3
     These can be overridden through environment variables.
     """
 
     embedding_model_name: str = os.getenv(
         "EMBEDDING_MODEL_NAME",
-        "BAAI/bge-base-en-v1.5",
+        "BAAI/bge-small-en-v1.5",
     )
     reranker_model_name: str = os.getenv(
         "RERANKER_MODEL_NAME",

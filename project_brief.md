@@ -14,7 +14,8 @@ The implementation is now a local runtime bundle plus clean public-release packa
 - Indexed chunks: 10923.
 - Extracted PDF asset metadata: 655 tables and 3263 images.
 - ChatGPT Knowledge local export: 49 Markdown files.
-- Benchmark: 260 open-source topic questions, including 15 OOD controls.
+- Benchmark: 280 open-source topic questions, including 35 OOD controls with 20 hard medical-boundary negatives.
+- Asset benchmark: 120 metadata-derived table/figure questions.
 - Interfaces: Python CLI, Codex skill, MCP server, navigator skill, ChatGPT Knowledge export.
 - Public packaging: `scripts/build_public_release.py` and `scripts/audit_public_release.py`.
 
@@ -25,13 +26,13 @@ The implementation is now a local runtime bundle plus clean public-release packa
 3. Accepts manual PDFs for sources whose official pages block automated download.
 4. Parses PDFs into structured text blocks.
 5. Builds section-aware chunks.
-6. Builds sparse BM25 and optional dense/hash or neural dense indexes.
+6. Builds sparse BM25 and semantic dense indexes with an explicit hash fallback for CI/debugging.
 7. Builds a topic-tree navigator.
 8. Performs sparse, hybrid, auto, or routed evidence retrieval.
 9. Returns structured evidence and citations.
 10. Exposes MCP tools for Codex and other local agents.
 11. Generates a public open-source benchmark.
-12. Evaluates retrieval, navigator routing, and agent-facing skill behavior.
+12. Evaluates retrieval, navigator routing, agent-facing skill behavior, asset metadata QA, and answer-quality proxies.
 13. Builds a clean GitHub release directory without PDFs or derived full text.
 
 ## What The System Does Not Do
@@ -47,17 +48,18 @@ The implementation is now a local runtime bundle plus clean public-release packa
 
 Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 
-- 260 questions total.
+- 280 questions total.
 - 245 in-domain public-source topic questions.
-- 15 out-of-domain controls.
+- 35 out-of-domain controls, including medical-adjacent hard negatives.
 - Questions are generated from public source catalog metadata.
 
 Strategy results:
 
-- Sparse Document Recall@5: 0.857.
-- Hybrid hash+dense Document Recall@5: 0.804.
-- Auto Document Recall@5: 0.857.
-- Routed Document Recall@5: 0.857.
+- Sparse Document Recall@5: 0.861.
+- Hybrid semantic Document Recall@5: 0.820.
+- Auto Document Recall@5: 0.820.
+- Routed Document Recall@5: 0.861.
+- OOD abstention success: 1.000 for all evaluated strategies.
 
 Navigator results:
 
@@ -66,12 +68,25 @@ Navigator results:
 
 Agent skill results:
 
-- Tool success rate: 0.942.
-- Document Hit Rate@5: 0.857.
+- Tool success rate: 0.875.
+- Document Hit Rate@5: 0.861.
 - Citation present rate: 1.000.
 - OOD abstention success rate: 1.000.
 
-Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. Corpus expansion improved document-level retrieval coverage. Sparse BM25 is currently the strongest reproducible default because the bundled dense index is a hash baseline rather than a semantic embedding index. Explicit non-radiotherapy controls are rejected cleanly. Topic-to-document ranking inside the navigator remains the weakest measured area. The project still lacks expert answer adjudication.
+Asset QA results:
+
+- Document Hit Rate@5: 1.000.
+- Page Hit Rate@5: 0.983.
+- Asset ID Trace Hit Rate@5: 0.950.
+
+Answer quality proxy results:
+
+- Citation marker rate: 1.000.
+- Used evidence ID valid rate: 1.000.
+- Mean grounded token overlap: 0.994.
+- OOD abstention success rate: 1.000.
+
+Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. It uses a real semantic embedding index, but sparse/routed retrieval is still strongest on the current source-metadata benchmark because exact report identifiers and titles dominate. Topic-to-document ranking inside the navigator remains the weakest measured area. The project still lacks expert answer adjudication.
 
 ## Public Repository Boundary
 
@@ -130,7 +145,7 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 - AAPM public/free-access report pages can block scripted downloads; some sources require local browser rendering or manual download.
 - PDF section extraction is imperfect.
 - The benchmark is public-source generated and not expert-adjudicated.
-- Hash dense is a reproducible no-model baseline, not a neural semantic retriever.
+- Semantic dense retrieval is present, but exact-source sparse retrieval currently performs better on the public source-location benchmark.
 - OOD abstention is still heuristic beyond the explicit public negative controls.
 - Table/figure support is metadata-first, not full multimodal QA.
 
@@ -139,8 +154,8 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 These are article-preparation steps, not required for the current software release:
 
 1. Add expert-reviewed answer keys if a medical physicist becomes available.
-2. Add real neural dense baselines using a documented cached embedding model.
+2. Add a stronger answer generator and compare extractive, local LLM, and hosted LLM answer modes under the same evidence contract.
 3. Improve navigator document ranking.
 4. Calibrate OOD abstention on broader negative controls and report confidence thresholds.
-5. Add table-specific QA questions and asset retrieval metrics.
+5. Add cell-level table QA or multimodal figure QA if licensing and expert review become available.
 6. Write the manuscript around safe claims supported by the current evaluation.

@@ -115,6 +115,38 @@
           "citation": {
             "type": "string"
           },
+          "nearby_assets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "asset_id": {
+                  "type": ["string", "null"]
+                },
+                "asset_type": {
+                  "type": ["string", "null"]
+                },
+                "page": {
+                  "type": "integer"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "rows": {
+                  "type": ["integer", "null"]
+                },
+                "columns": {
+                  "type": ["integer", "null"]
+                },
+                "width": {
+                  "type": ["integer", "null"]
+                },
+                "height": {
+                  "type": ["integer", "null"]
+                }
+              }
+            }
+          },
           "text": {
             "type": "string"
           },

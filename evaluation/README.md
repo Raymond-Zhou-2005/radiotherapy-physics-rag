@@ -24,9 +24,9 @@ evaluation/public_credible_questions.json
 
 Current size:
 
-- Total questions: 260.
+- Total questions: 280.
 - In-domain public-source topic questions: 245.
-- Out-of-domain controls: 15.
+- Out-of-domain controls: 35, including 20 hard medical-boundary controls.
 - Source records represented in runtime: 49.
 
 Each item stores:
@@ -52,19 +52,19 @@ python scripts/generate_public_benchmark.py --runtime-only --output evaluation/p
 ## Retrieval Strategy Evaluation
 
 ```bash
-RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash-fallback python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope --output-json evaluation/strategy_eval_results.json --output-md evaluation/strategy_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope --output-json evaluation/strategy_eval_results.json --output-md evaluation/strategy_eval_results.md
 ```
 
 Current results:
 
 | Strategy | Document Recall@3 | Document Recall@5 | OOD TP | OOD FN |
 | --- | ---: | ---: | ---: | ---: |
-| sparse | 0.755 | 0.857 | 15 | 0 |
-| hybrid hash+dense | 0.702 | 0.804 | 15 | 0 |
-| auto | 0.755 | 0.857 | 15 | 0 |
-| routed | 0.755 | 0.857 | 15 | 0 |
+| sparse | 0.771 | 0.861 | 35 | 0 |
+| hybrid semantic dense | 0.771 | 0.820 | 35 | 0 |
+| auto | 0.771 | 0.820 | 35 | 0 |
+| routed | 0.780 | 0.861 | 35 | 0 |
 
-`Recall@3`, `Recall@5`, and `MRR` are 0.000 in the current report because the generated public benchmark does not contain expert gold chunk IDs or section labels. Use document recall and abstention metrics for this open-source benchmark. The hash dense index is a reproducible no-model artifact check, not a semantic dense model; `auto` and `routed` therefore prefer sparse retrieval unless a semantic dense index is available.
+`Recall@3`, `Recall@5`, and `MRR` are 0.000 in the current report because the generated public benchmark does not contain expert gold chunk IDs or section labels. Use document recall and abstention metrics for this open-source benchmark. Semantic dense retrieval is available through `BAAI/bge-small-en-v1.5`, but exact source identifiers still make sparse/routed strongest for this benchmark.
 
 ## Navigator Evaluation
 
@@ -86,18 +86,53 @@ Interpretation: the navigator usually routes to the right broad topic. Document 
 ## Agent Skill Evaluation
 
 ```bash
-RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash-fallback python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
 ```
 
 Current results:
 
-- Tool success rate: 0.942.
-- Document Hit Rate@5: 0.857.
+- Tool success rate: 0.875.
+- Document Hit Rate@5: 0.861.
 - Citation present rate: 1.000.
 - OOD abstention success rate: 1.000.
 - Unexpected in-scope error count: 0.
 
 `Tool success rate` counts only `ok=true` tool responses, so correct OOD abstentions lower this aggregate rate because they are returned as structured `insufficient_evidence` errors. Use it together with `OOD abstention success rate` and `Unexpected in-scope error count`.
+
+## Asset QA Evaluation
+
+```bash
+python scripts/generate_asset_benchmark.py --assets-dir assets/extracted --sources reports/starter_corpus_sources.json --output evaluation/radiotherapy_asset_questions.json
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/asset_qa_eval_results.json --output-md evaluation/asset_qa_eval_results.md
+```
+
+Current results on 120 metadata-derived table/figure questions:
+
+- Skill OK rate: 1.000.
+- Document Hit Rate@5: 1.000.
+- Page Hit Rate@5: 0.983.
+- Asset ID Trace Hit Rate@5: 0.950.
+- Asset Type Trace Hit Rate@5: 0.975.
+
+This is table/figure metadata proximity QA, not visual interpretation.
+
+## Answer Quality Proxy Evaluation
+
+```bash
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/answer_quality_eval_results.json --output-md evaluation/answer_quality_eval_results.md
+```
+
+Current automatic proxy results:
+
+- In-scope OK rate: 1.000.
+- Citation marker rate: 1.000.
+- Used evidence ID valid rate: 1.000.
+- Mean grounded token overlap: 0.994.
+- Unsupported number case rate: 0.016.
+- Overclaim flag rate: 0.004.
+- OOD abstention success rate: 1.000.
+
+These metrics check answer format and grounding proxies. They do not replace expert answer grading.
 
 ## Private Licensed Questions
 

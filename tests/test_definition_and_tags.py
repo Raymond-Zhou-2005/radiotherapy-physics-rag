@@ -1,5 +1,5 @@
 from src.chunking.splitter import SectionAwareChunker
-from src.retrieval.heuristics import compute_rerank_adjustment
+from src.retrieval.heuristics import compute_report_match_bonus, compute_rerank_adjustment, extract_report_cues
 
 
 def test_definition_microchunk_is_preserved():
@@ -59,3 +59,24 @@ def test_summary_like_recommendation_chunk_is_penalized_for_definition_query():
     }
     adjustment = compute_rerank_adjustment("Define nontarget dose.", chunk)
     assert adjustment < 0
+
+
+def test_report_cue_extraction_matches_common_report_names():
+    cues = extract_report_cues("Compare AAPM TG 100, TG-142, IAEA TRS 398, and TECDOC1540.")
+    assert {"tg:100", "tg:142", "trs:398", "tecdoc:1540"} <= cues
+
+
+def test_report_match_bonus_rewards_exact_tg_and_penalizes_nearby_wrong_report():
+    right = {
+        "doc_id": "aapm_tg100_radiotherapy_quality_management",
+        "title": "AAPM TG 100: Application of risk analysis methods to radiation therapy quality management",
+        "source_path": "reports/raw/aapm_tg100_radiotherapy_quality_management.pdf",
+    }
+    wrong = {
+        "doc_id": "aapm_tg142_medical_accelerator_qa",
+        "title": "AAPM TG 142: Quality assurance of medical accelerators",
+        "source_path": "reports/raw/aapm_tg142_medical_accelerator_qa.pdf",
+    }
+    query = "What does TG 100 recommend for FMEA in radiotherapy quality management?"
+    assert compute_report_match_bonus(query, right) > 0.35
+    assert compute_report_match_bonus(query, wrong) < 0

@@ -8,7 +8,7 @@ The project retrieves evidence from locally built AAPM/IAEA radiotherapy physics
 
 - A Codex-usable skill under `skills/radiotherapy-physics-rag/`.
 - A local MCP stdio server with tools for querying reports and fetching chunks.
-- A reproducible PDF -> parse -> chunk -> BM25/dense -> navigator pipeline.
+- A reproducible PDF -> parse -> chunk -> BM25/semantic dense -> navigator pipeline.
 - A topic-tree navigator under `navigator/`.
 - A scene-aware routed retrieval layer under `src/orchestration/`.
 - A public open-source topic benchmark under `evaluation/`.
@@ -31,7 +31,8 @@ The current local runtime bundle used for validation contains:
 - PDF asset metadata: 655 tables and 3263 images across 49 documents.
 - ChatGPT Knowledge upload files generated locally: 49.
 - Navigator topics: 10.
-- Dense/hash artifacts present for no-model hybrid baseline: `embeddings.npy`, `chunk_ids.json`, `dense_meta.json`, `faiss.index`.
+- Semantic dense artifacts present: `BAAI/bge-small-en-v1.5` via `sentence-transformers`, 384 dimensions, FAISS inner-product index.
+- No-model hash dense remains available as an explicit CI/debug fallback, but it is not treated as a semantic baseline.
 
 The public GitHub repository intentionally excludes PDFs, parsed full text, chunks, indexes, extracted asset metadata, and generated ChatGPT upload files. Users rebuild them locally from permitted public sources.
 
@@ -46,10 +47,19 @@ python -m pip install -e ".[dev]" -c constraints.txt
 
 ```bash
 python scripts/download_starter_corpus.py --allow-manual-missing
-python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend sparse
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend both
 python scripts/build_navigator.py --index-dir index --manifest reports/manifest.jsonl --output-dir navigator --skill-dir skills/radiotherapy-physics-navigator
 python scripts/extract_pdf_assets.py reports/raw --output-dir assets/extracted
 python scripts/build_chatgpt_knowledge.py --root .
+```
+
+On Windows PowerShell:
+
+```powershell
+Remove-Item Env:RAG_FORCE_HASH_EMBEDDINGS -ErrorAction SilentlyContinue
+$env:EMBEDDING_MODEL_NAME="BAAI/bge-small-en-v1.5"
+$env:RAG_FORCE_LEXICAL_RERANK="1"
+python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend both
 ```
 
 For a fully local no-model hybrid baseline:
@@ -107,7 +117,7 @@ python scripts/generate_public_benchmark.py --runtime-only --output evaluation/p
 Run retrieval strategy evaluation:
 
 ```bash
-RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash-fallback python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope --output-json evaluation/strategy_eval_results.json --output-md evaluation/strategy_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope --output-json evaluation/strategy_eval_results.json --output-md evaluation/strategy_eval_results.md
 ```
 
 Run navigator evaluation:
@@ -119,21 +129,31 @@ python scripts/evaluate_navigator.py --questions evaluation/radiotherapy_skill_o
 Run end-to-end skill-contract evaluation:
 
 ```bash
-RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash-fallback python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
 ```
 
-Current 260-question open-source topic benchmark results:
+Run asset and answer-quality proxy evaluations:
+
+```bash
+python scripts/generate_asset_benchmark.py --assets-dir assets/extracted --sources reports/starter_corpus_sources.json --output evaluation/radiotherapy_asset_questions.json
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/asset_qa_eval_results.json --output-md evaluation/asset_qa_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/answer_quality_eval_results.json --output-md evaluation/answer_quality_eval_results.md
+```
+
+Current 280-question open-source topic benchmark results:
 
 | Evaluation | Main result |
 | --- | --- |
-| Sparse retrieval | Document Recall@5 = 0.857 |
-| Hybrid hash+dense retrieval | Document Recall@5 = 0.804 |
-| Auto retrieval | Document Recall@5 = 0.857 |
-| Routed retrieval | Document Recall@5 = 0.857 |
+| Sparse retrieval | Document Recall@5 = 0.861; OOD abstention = 1.000 |
+| Hybrid semantic retrieval | Document Recall@5 = 0.820; OOD abstention = 1.000 |
+| Auto retrieval | Document Recall@5 = 0.820; OOD abstention = 1.000 |
+| Routed retrieval | Document Recall@5 = 0.861; OOD abstention = 1.000 |
 | Navigator routing | Topic Recall@3 = 0.967; Candidate Document Recall@5 = 0.673 |
-| Routed agent skill contract | Document Hit Rate@5 = 0.857; Citation present rate = 1.000; OOD abstention success = 1.000 |
+| Routed agent skill contract | Document Hit Rate@5 = 0.861; Citation present rate = 1.000; OOD abstention success = 1.000 |
+| Asset QA metadata | Document Hit@5 = 1.000; Page Hit@5 = 0.983; Asset ID Trace@5 = 0.950 |
+| Extractive answer quality proxies | Citation marker = 1.000; valid evidence IDs = 1.000; grounded token overlap = 0.994; OOD abstention = 1.000 |
 
-Interpretation: expanding the runtime corpus improved document-level retrieval coverage. The reproducible hash dense index is useful for CI and artifact checks, but it is not a semantic dense model, so `auto` and `routed` now prefer sparse retrieval unless a semantic dense index is available. Explicit non-radiotherapy controls are now rejected before lexical overlap scoring. The navigator still finds the right broad topic reliably, but document ranking remains hard because the added AAPM reports intentionally overlap on QA, IMRT, IGRT, and commissioning. This remains an open-source retrieval and skill-contract benchmark, not an expert-adjudicated clinical QA benchmark.
+Interpretation: the project now has a real semantic dense index. On this metadata-generated report-location benchmark, BM25 sparse and routed retrieval remain stronger than pure semantic hybrid because exact report titles, TG/TRS/TECDOC numbers, and source-role words matter heavily. Routed retrieval therefore chooses sparse for direct/procedure QA and reserves semantic hybrid for broader comparison or synthesis. The answer-quality metrics are automatic proxies, not expert adjudication.
 
 ## Public Release
 

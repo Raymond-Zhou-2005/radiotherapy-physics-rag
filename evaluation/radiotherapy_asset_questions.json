@@ -1,0 +1,2042 @@
+[
+  {
+    "qid": "asset_q0001",
+    "question": "Which indexed evidence is closest to the detected table with 9 rows and 3 columns in AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials on page 11, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "expected_page": 11,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_113_physics_clinical_trials_p011_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0002",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 4 columns in AAPM Report 166: The use and QA of biologically related models for treatment planning on page 52, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "expected_page": 52,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_166_biological_models_treatment_planning_qa_p052_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0003",
+    "question": "Which indexed evidence is closest to the detected table with 15 rows and 6 columns in AAPM TG 100: Application of risk analysis methods to radiation therapy quality management on page 14, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg100_radiotherapy_quality_management",
+    "expected_page": 14,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg100_radiotherapy_quality_management_p014_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0004",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 3 columns in AAPM TG 101: Stereotactic body radiation therapy on page 2, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg101_sbrt",
+    "expected_page": 2,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg101_sbrt_p002_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0005",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 3 columns in AAPM TG 106: Accelerator beam data commissioning equipment and procedures on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg106_beam_data_commissioning",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg106_beam_data_commissioning_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0006",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 4 columns in AAPM TG 119: IMRT commissioning with multiple-institution planning and dosimetry comparisons on page 4, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg119_imrt_commissioning",
+    "expected_page": 4,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg119_imrt_commissioning_p004_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0007",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 3 columns in AAPM TG 120: Dosimetry tools and techniques for IMRT on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg120_imrt_dosimetry_tools",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg120_imrt_dosimetry_tools_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0008",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 3 columns in AAPM TG 132: Use of image registration and fusion algorithms and techniques in radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg132_image_registration_fusion",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg132_image_registration_fusion_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0009",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 2 columns in AAPM TG 142: Quality assurance of medical accelerators on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg142_medical_accelerator_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg142_medical_accelerator_qa_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0010",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 3 columns in AAPM TG 147: Quality assurance for nonradiographic radiotherapy localization and positioning systems on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg147_nonradiographic_localization_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg147_nonradiographic_localization_qa_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3681967"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0011",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 3 columns in AAPM TG 148: QA for helical tomotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg148_helical_tomotherapy_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg148_helical_tomotherapy_qa_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3462971"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0012",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 2 columns in AAPM TG 179: Quality assurance for image-guided radiation therapy utilizing CT-based technologies on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg179_ct_based_igrt_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg179_ct_based_igrt_qa_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3690466"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0013",
+    "question": "Which indexed evidence is closest to the detected table with 4 rows and 3 columns in AAPM TG 180: Image guidance doses delivered during radiotherapy: quantification, management, and reduction on page 5, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg180_image_guidance_dose_management",
+    "expected_page": 5,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg180_image_guidance_dose_management_p005_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0014",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 2 columns in AAPM TG 218: Tolerance limits and methodologies for IMRT measurement-based verification QA on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg218_imrt_measurement_based_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg218_imrt_measurement_based_qa_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12810"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0015",
+    "question": "Which indexed evidence is closest to the detected table with 6 rows and 3 columns in AAPM TG 263: Standardizing nomenclatures in radiation oncology on page 9, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg263_nomenclature",
+    "expected_page": 9,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg263_nomenclature_p009_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0016",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 6 columns in AAPM TG 75: The management of imaging dose during image-guided radiotherapy on page 12, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg75_igrt_imaging_dose",
+    "expected_page": 12,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg75_igrt_imaging_dose_p012_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0017",
+    "question": "Which indexed evidence is closest to the detected table with 8 rows and 2 columns in IAEA Human Health Reports No. 10: Radiotherapy facilities on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr10_radiotherapy_facilities_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0018",
+    "question": "Which indexed evidence is closest to the detected table with 7 rows and 2 columns in IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr16_igrt_qa_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0019",
+    "question": "Which indexed evidence is closest to the detected table with 7 rows and 2 columns in IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr17_linear_accelerators_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0020",
+    "question": "Which indexed evidence is closest to the detected table with 6 rows and 8 columns in IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry on page 69, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "expected_page": 69,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr18_radiotherapy_dosimetry_audits_p069_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0021",
+    "question": "Which indexed evidence is closest to the detected table with 8 rows and 2 columns in IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr7_record_verify_systems_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0022",
+    "question": "Which indexed evidence is closest to the detected table with 4 rows and 2 columns in IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy on page 22, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "expected_page": 22,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr8_in_vivo_dosimetry_p022_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0023",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 2 columns in IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool on page 1, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs14_planning_national_radiotherapy_services_p001_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0024",
+    "question": "Which indexed evidence is closest to the detected table with 16 rows and 13 columns in IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy on page 71, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "expected_page": 71,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs19_ct_sim_radiotherapy_p071_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0025",
+    "question": "Which indexed evidence is closest to the detected table with 21 rows and 2 columns in IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy on page 30, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "expected_page": 30,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs31_accuracy_requirements_dosimetry_p030_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0026",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 3 columns in IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students on page 69, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "expected_page": 69,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1196_radiation_oncology_physics_handbook_p069_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0027",
+    "question": "Which indexed evidence is closest to the detected table with 17 rows and 3 columns in IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge on page 10, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "expected_page": 10,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1638_radiotherapy_in_cancer_care_p010_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0028",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 2 columns in IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement on page 34, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "expected_page": 34,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1990_quatro_quality_improvement_p034_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0029",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 2 columns in IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities on page 42, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "expected_page": 42,
+    "expected_page_window": 1,
+    "asset_id": "iaea_srs47_radiotherapy_facility_radiation_protection_p042_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0030",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 2 columns in IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation on page 13, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "expected_page": 13,
+    "expected_page_window": 1,
+    "asset_id": "iaea_ssg46_medical_uses_radiation_safety_p013_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0031",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 2 columns in IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy on page 31, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "expected_page": 31,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1274_brachytherapy_source_calibration_p031_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0032",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 4 columns in IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems on page 14, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "expected_page": 14,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1540_tps_acceptance_p014_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0033",
+    "question": "Which indexed evidence is closest to the detected table with 10 rows and 6 columns in IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures on page 14, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "expected_page": 14,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1543_quatro_p014_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0034",
+    "question": "Which indexed evidence is closest to the detected table with 10 rows and 13 columns in IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems on page 19, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "expected_page": 19,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1583_tps_commissioning_p019_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0035",
+    "question": "Which indexed evidence is closest to the detected table with 15 rows and 2 columns in IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy on page 15, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "expected_page": 15,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1588_3dcrt_imrt_transition_p015_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0036",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 2 columns in IAEA TRS 398: Absorbed dose determination in external beam radiotherapy on page 46, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "expected_page": 46,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs398_absorbed_dose_ebrt_p046_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0037",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 3 columns in IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer on page 60, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "expected_page": 60,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs430_tps_commissioning_qa_p060_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0038",
+    "question": "Which indexed evidence is closest to the detected table with 12 rows and 10 columns in IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy on page 43, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "expected_page": 43,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs469_reference_dosimeters_p043_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0039",
+    "question": "Which indexed evidence is closest to the detected table with 8 rows and 2 columns in IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy on page 67, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_trs483_small_static_fields",
+    "expected_page": 67,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs483_small_static_fields_p067_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0040",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 3 columns in AAPM TG 158: Measurement and calculation of doses outside the treated volume from external-beam radiation therapy on page 10, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "tg158",
+    "expected_page": 10,
+    "expected_page_window": 1,
+    "asset_id": "tg158_p010_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/detail.asp?docid=165"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0041",
+    "question": "Which indexed evidence is closest to the detected table with 22 rows and 4 columns in AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials on page 15, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "expected_page": 15,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_113_physics_clinical_trials_p015_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0042",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 6 columns in AAPM TG 101: Stereotactic body radiation therapy on page 12, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg101_sbrt",
+    "expected_page": 12,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg101_sbrt_p012_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0043",
+    "question": "Which indexed evidence is closest to the detected table with 4 rows and 19 columns in AAPM TG 106: Accelerator beam data commissioning equipment and procedures on page 8, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg106_beam_data_commissioning",
+    "expected_page": 8,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg106_beam_data_commissioning_p008_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0044",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 5 columns in AAPM TG 119: IMRT commissioning with multiple-institution planning and dosimetry comparisons on page 9, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg119_imrt_commissioning",
+    "expected_page": 9,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg119_imrt_commissioning_p009_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0045",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 8 columns in AAPM TG 120: Dosimetry tools and techniques for IMRT on page 5, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg120_imrt_dosimetry_tools",
+    "expected_page": 5,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg120_imrt_dosimetry_tools_p005_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0046",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 3 columns in AAPM TG 132: Use of image registration and fusion algorithms and techniques in radiotherapy on page 10, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg132_image_registration_fusion",
+    "expected_page": 10,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg132_image_registration_fusion_p010_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0047",
+    "question": "Which indexed evidence is closest to the detected table with 5 rows and 5 columns in AAPM TG 142: Quality assurance of medical accelerators on page 5, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg142_medical_accelerator_qa",
+    "expected_page": 5,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg142_medical_accelerator_qa_p005_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0048",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 6 columns in AAPM TG 147: Quality assurance for nonradiographic radiotherapy localization and positioning systems on page 13, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg147_nonradiographic_localization_qa",
+    "expected_page": 13,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg147_nonradiographic_localization_qa_p013_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3681967"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0049",
+    "question": "Which indexed evidence is closest to the detected table with 4 rows and 4 columns in AAPM TG 148: QA for helical tomotherapy on page 31, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg148_helical_tomotherapy_qa",
+    "expected_page": 31,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg148_helical_tomotherapy_qa_p031_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3462971"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0050",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 6 columns in AAPM TG 179: Quality assurance for image-guided radiation therapy utilizing CT-based technologies on page 3, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg179_ct_based_igrt_qa",
+    "expected_page": 3,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg179_ct_based_igrt_qa_p003_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3690466"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0051",
+    "question": "Which indexed evidence is closest to the detected table with 4 rows and 3 columns in AAPM TG 180: Image guidance doses delivered during radiotherapy: quantification, management, and reduction on page 6, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg180_image_guidance_dose_management",
+    "expected_page": 6,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg180_image_guidance_dose_management_p006_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0052",
+    "question": "Which indexed evidence is closest to the detected table with 3 rows and 3 columns in AAPM TG 218: Tolerance limits and methodologies for IMRT measurement-based verification QA on page 2, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg218_imrt_measurement_based_qa",
+    "expected_page": 2,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg218_imrt_measurement_based_qa_p002_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12810"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0053",
+    "question": "Which indexed evidence is closest to the detected table with 10 rows and 3 columns in AAPM TG 263: Standardizing nomenclatures in radiation oncology on page 10, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg263_nomenclature",
+    "expected_page": 10,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg263_nomenclature_p010_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0054",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 6 columns in AAPM TG 75: The management of imaging dose during image-guided radiotherapy on page 13, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "aapm_tg75_igrt_imaging_dose",
+    "expected_page": 13,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg75_igrt_imaging_dose_p013_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0055",
+    "question": "Which indexed evidence is closest to the detected table with 6 rows and 11 columns in IAEA Human Health Reports No. 10: Radiotherapy facilities on page 29, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "expected_page": 29,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr10_radiotherapy_facilities_p029_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0056",
+    "question": "Which indexed evidence is closest to the detected table with 6 rows and 9 columns in IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry on page 69, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "expected_page": 69,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr18_radiotherapy_dosimetry_audits_p069_table_02",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0057",
+    "question": "Which indexed evidence is closest to the detected table with 2 rows and 2 columns in IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer on page 12, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "expected_page": 12,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr7_record_verify_systems_p012_table_02",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0058",
+    "question": "Which indexed evidence is closest to the detected table with 4 rows and 4 columns in IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy on page 27, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "expected_page": 27,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr8_in_vivo_dosimetry_p027_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0059",
+    "question": "Which indexed evidence is closest to the detected table with 27 rows and 13 columns in IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool on page 15, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "expected_page": 15,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs14_planning_national_radiotherapy_services_p015_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0060",
+    "question": "Which indexed evidence is closest to the detected table with 16 rows and 9 columns in IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy on page 72, and what nearby asset metadata should be reported?",
+    "type": "table_asset_lookup",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "expected_page": 72,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs19_ct_sim_radiotherapy_p072_table_01",
+    "asset_type": "table",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0061",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_104_kv_imaging_guidance_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0062",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials on page 12, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "expected_page": 12,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_113_physics_clinical_trials_p012_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0063",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 166: The use and QA of biologically related models for treatment planning on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_166_biological_models_treatment_planning_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0064",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_46_tg40_radiation_oncology_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0065",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_90_essential_medical_physics_ebrt_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0066",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 100: Application of risk analysis methods to radiation therapy quality management on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg100_radiotherapy_quality_management",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg100_radiotherapy_quality_management_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0067",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 101: Stereotactic body radiation therapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg101_sbrt",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg101_sbrt_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0068",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 106: Accelerator beam data commissioning equipment and procedures on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg106_beam_data_commissioning",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg106_beam_data_commissioning_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0069",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 119: IMRT commissioning with multiple-institution planning and dosimetry comparisons on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg119_imrt_commissioning",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg119_imrt_commissioning_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0070",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 120: Dosimetry tools and techniques for IMRT on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg120_imrt_dosimetry_tools",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg120_imrt_dosimetry_tools_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0071",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 132: Use of image registration and fusion algorithms and techniques in radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg132_image_registration_fusion",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg132_image_registration_fusion_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0072",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 142: Quality assurance of medical accelerators on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg142_medical_accelerator_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg142_medical_accelerator_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0073",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 147: Quality assurance for nonradiographic radiotherapy localization and positioning systems on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg147_nonradiographic_localization_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg147_nonradiographic_localization_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3681967"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0074",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 148: QA for helical tomotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg148_helical_tomotherapy_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg148_helical_tomotherapy_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3462971"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0075",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 179: Quality assurance for image-guided radiation therapy utilizing CT-based technologies on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg179_ct_based_igrt_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg179_ct_based_igrt_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3690466"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0076",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 180: Image guidance doses delivered during radiotherapy: quantification, management, and reduction on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg180_image_guidance_dose_management",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg180_image_guidance_dose_management_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0077",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 218: Tolerance limits and methodologies for IMRT measurement-based verification QA on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg218_imrt_measurement_based_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg218_imrt_measurement_based_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12810"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0078",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 263: Standardizing nomenclatures in radiation oncology on page 12, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg263_nomenclature",
+    "expected_page": 12,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg263_nomenclature_p012_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0079",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams on page 16, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "expected_page": 16,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg51_photon_dosimetry_addendum_p016_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0080",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 75: The management of imaging dose during image-guided radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg75_igrt_imaging_dose",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg75_igrt_imaging_dose_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0081",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Reports No. 10: Radiotherapy facilities on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr10_radiotherapy_facilities_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0082",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr16_igrt_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0083",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr17_linear_accelerators_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0084",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr18_radiotherapy_dosimetry_audits_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0085",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr7_record_verify_systems_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0086",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhr8_in_vivo_dosimetry_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0087",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs14_planning_national_radiotherapy_services_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0088",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs19_ct_sim_radiotherapy_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0089",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_hhs31_accuracy_requirements_dosimetry_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0090",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1196_radiation_oncology_physics_handbook_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0091",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1297_quatro_audit_tool_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0092",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1638_radiotherapy_in_cancer_care_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0093",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_pub1990_quatro_quality_improvement_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0094",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_srs47_radiotherapy_facility_radiation_protection_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0095",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_ssg46_medical_uses_radiation_safety_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0096",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1274_brachytherapy_source_calibration_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0097",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1540_tps_acceptance_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0098",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1543_quatro_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0099",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1583_tps_commissioning_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0100",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc1588_3dcrt_imrt_transition_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0101",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc989_radiation_dose_prescription_delivery_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0102",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TECDOC 1040: Design and implementation of a radiotherapy programme on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_tecdoc_1040_radiotherapy_programme_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0103",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TRS 398: Absorbed dose determination in external beam radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs398_absorbed_dose_ebrt_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0104",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs398_rev1_absorbed_dose_ebrt_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0105",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs430_tps_commissioning_qa_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0106",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs469_reference_dosimeters_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0107",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_trs483_small_static_fields",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs483_small_static_fields_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0108",
+    "question": "Which indexed evidence is closest to the detected figure or image in IAEA TRS 492: Dosimetry in brachytherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "iaea_trs492_brachytherapy_dosimetry_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0109",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 158: Measurement and calculation of doses outside the treated volume from external-beam radiation therapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "tg158",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "tg158_p001_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/detail.asp?docid=165"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0110",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization on page 13, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "expected_page": 13,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_104_kv_imaging_guidance_p013_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0111",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials on page 12, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "expected_page": 12,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_113_physics_clinical_trials_p012_image_02_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0112",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 166: The use and QA of biologically related models for treatment planning on page 25, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "expected_page": 25,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_166_biological_models_treatment_planning_qa_p025_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0113",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology on page 11, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "expected_page": 11,
+    "expected_page_window": 1,
+    "asset_id": "aapm_report_46_tg40_radiation_oncology_qa_p011_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0114",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 100: Application of risk analysis methods to radiation therapy quality management on page 8, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg100_radiotherapy_quality_management",
+    "expected_page": 8,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg100_radiotherapy_quality_management_p008_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0115",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 101: Stereotactic body radiation therapy on page 2, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg101_sbrt",
+    "expected_page": 2,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg101_sbrt_p002_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0116",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 106: Accelerator beam data commissioning equipment and procedures on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg106_beam_data_commissioning",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg106_beam_data_commissioning_p001_image_02_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0117",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 119: IMRT commissioning with multiple-institution planning and dosimetry comparisons on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg119_imrt_commissioning",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg119_imrt_commissioning_p001_image_02_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0118",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 120: Dosimetry tools and techniques for IMRT on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg120_imrt_dosimetry_tools",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg120_imrt_dosimetry_tools_p001_image_02_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0119",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 132: Use of image registration and fusion algorithms and techniques in radiotherapy on page 1, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg132_image_registration_fusion",
+    "expected_page": 1,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg132_image_registration_fusion_p001_image_02_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  },
+  {
+    "qid": "asset_q0120",
+    "question": "Which indexed evidence is closest to the detected figure or image in AAPM TG 142: Quality assurance of medical accelerators on page 38, and what nearby asset metadata should be reported?",
+    "type": "image_asset_lookup",
+    "report_id": "aapm_tg142_medical_accelerator_qa",
+    "expected_page": 38,
+    "expected_page_window": 1,
+    "asset_id": "aapm_tg142_medical_accelerator_qa_p038_image_01_01",
+    "asset_type": "image",
+    "expected_abstain": false,
+    "source_basis": "Local PDF asset metadata extracted from public source PDFs; question text uses title, asset type, page, and table shape only.",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392"
+    ],
+    "source_note": "Asset benchmark checks retrieval to the correct document/page neighborhood and whether nearby asset metadata is surfaced.",
+    "benchmark_profile": "asset_metadata"
+  }
+]

@@ -2,12 +2,18 @@
 
 ## Unreleased
 
+- Rebuilt the dense index with a real semantic embedding model: `BAAI/bge-small-en-v1.5` via `sentence-transformers`, 384 dimensions, plus FAISS search.
+- Added report-aware ranking cues for TG, AAPM Report, IAEA TRS, TECDOC, HHR/HHS, SSG, SRS, and publication numbers, plus title-overlap bonuses.
+- Expanded the benchmark to 280 questions with 20 additional hard medical-boundary OOD controls; current OOD abstention is 1.000 for sparse, hybrid, auto, and routed strategies.
+- Added table/figure asset benchmark generation and evaluation; current routed asset metadata QA reaches Document Hit@5 1.000, Page Hit@5 0.983, and Asset ID Trace@5 0.950.
+- Added answer-quality proxy evaluation for extractive answers; current routed evaluation has citation marker rate 1.000, valid evidence ID rate 1.000, grounded token overlap 0.994, and OOD abstention 1.000.
+- Updated routed retrieval to prefer sparse retrieval for direct report lookup and QA/procedure questions, while reserving semantic hybrid retrieval for broader comparison and synthesis tasks.
 - Expanded the public source catalog to 49 records and the current local runtime to 49 indexed PDFs.
 - Rebuilt the runtime corpus with 10923 chunks, 49 local ChatGPT Knowledge upload files, and PDF asset metadata for 655 tables and 3263 images.
 - Added five direct-download IAEA sources covering 3DCRT/IMRT transition, national radiotherapy services, facility radiation protection, medical radiation safety, and global radiotherapy access.
 - Refreshed TG100 and TG158 into the local runtime and added 12 additional public/free-access AAPM reports covering accelerator QA, IMRT commissioning and QA, beam data, IGRT, SBRT, image registration, imaging dose, and Tomotherapy QA.
-- Added a 260-question open-source topic benchmark generated from public source metadata, with 245 in-domain questions and 15 OOD controls.
-- Added strategy, navigator, and agent-skill contract evaluations for sparse, hybrid/hash, auto, and routed retrieval; sparse, auto, and routed Document Recall@5 are 0.857, hybrid hash+dense Document Recall@5 is 0.804, and routed agent Document Hit Rate@5 is 0.857 on the current benchmark.
+- Added a 280-question open-source topic benchmark generated from public source metadata, with 245 in-domain questions and 35 OOD controls.
+- Added strategy, navigator, and agent-skill contract evaluations for sparse, semantic hybrid, auto, and routed retrieval; sparse and routed Document Recall@5 are 0.861, semantic hybrid and auto Document Recall@5 are 0.820, and routed agent Document Hit Rate@5 is 0.861 on the current benchmark.
 - Added an explicit OOD sufficiency gate for non-radiotherapy controls; current OOD abstention success is 1.000 on the public control set.
 - Added no-model hash dense and lexical rerank controls for reproducible public benchmarking.
 - Updated `auto` and `routed` retrieval so a hash dense index is treated as a reproducibility baseline, not a semantic dense index; both now fall back to sparse retrieval unless a semantic dense index is available.

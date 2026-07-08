@@ -40,6 +40,29 @@ OOD_QUESTIONS = [
     "Which bread flour protein percentage is best for Neapolitan pizza dough?",
 ]
 
+HARD_OOD_QUESTIONS = [
+    "What chemotherapy regimen should be used for stage III lung cancer?",
+    "How should a patient manage skin burns after radiotherapy?",
+    "What MRI protocol is best for diagnosing a brain tumor?",
+    "What ICD-10 code should be billed for external beam radiotherapy?",
+    "Which antibiotic treats cellulitis after radiation dermatitis?",
+    "What survival benefit does immunotherapy add after chemoradiation?",
+    "How should a hospital obtain insurance authorization for IMRT?",
+    "What CT contrast dose should be used for a patient with renal insufficiency?",
+    "What diet should a patient follow during head and neck radiotherapy?",
+    "Can proton therapy cure prostate cancer better than surgery?",
+    "How should a patient interpret PET/CT SUV after treatment?",
+    "What radiation dose should this patient receive for a new tumor diagnosis?",
+    "Should my mother choose SBRT or surgery for early stage lung cancer?",
+    "What are the legal requirements for malpractice documentation after a treatment error?",
+    "How should a dentist manage osteoradionecrosis risk after radiotherapy?",
+    "Which immunotherapy should be combined with radiation for melanoma?",
+    "What prognosis should be given to a patient with metastatic disease after palliative radiotherapy?",
+    "How should nausea be treated during abdominal radiotherapy?",
+    "What surgical margin is required after preoperative radiotherapy?",
+    "Which hospital billing code applies to adaptive radiotherapy planning?",
+]
+
 
 def slug_words(text: str, max_words: int = 18) -> str:
     words = re.findall(r"[A-Za-z0-9]+(?:[-/][A-Za-z0-9]+)?", text)
@@ -125,6 +148,23 @@ def build_questions(sources: List[Dict], runtime_only: bool) -> List[Dict]:
                 "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
                 "source_urls": [],
                 "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+                "benchmark_profile": "open_source_topic",
+            }
+        )
+    for prompt in HARD_OOD_QUESTIONS:
+        qid = f"public_q{len(questions) + 1:04d}"
+        questions.append(
+            {
+                "qid": qid,
+                "question": prompt,
+                "type": "medical_boundary_control",
+                "report_id": None,
+                "gold_section": "",
+                "gold_chunk_ids": [],
+                "expected_abstain": True,
+                "source_basis": "Hard negative medical or administrative boundary question outside radiotherapy physics report QA.",
+                "source_urls": [],
+                "source_note": "Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.",
                 "benchmark_profile": "open_source_topic",
             }
         )

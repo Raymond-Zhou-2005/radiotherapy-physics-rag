@@ -81,6 +81,23 @@ def _table_shape(table: Any) -> tuple[Optional[int], Optional[int]]:
     return len(rows), max((len(row) for row in rows if row), default=0)
 
 
+def _table_text_preview(table: Any, max_chars: int = 700) -> str:
+    try:
+        rows = table.extract()
+    except Exception:
+        return ""
+    cells: List[str] = []
+    for row in rows or []:
+        for cell in row or []:
+            text = normalize_whitespace(str(cell or ""))
+            if text:
+                cells.append(text)
+    preview = " | ".join(cells)
+    if len(preview) > max_chars:
+        preview = preview[:max_chars].rstrip() + "..."
+    return preview
+
+
 def extract_pdf_assets(
     pdf_path: Path,
     doc_id: str,
@@ -119,6 +136,7 @@ def extract_pdf_assets(
                         caption=_caption_near(lines, bbox, "table"),
                         rows=rows,
                         columns=columns,
+                        text_preview=_table_text_preview(table),
                     )
                 )
 

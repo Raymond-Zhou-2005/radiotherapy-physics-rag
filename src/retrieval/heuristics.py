@@ -9,7 +9,7 @@ locator answer.
 from __future__ import annotations
 
 import re
-from typing import Dict, Optional
+from typing import Dict, Optional, Set
 
 from src.utils import normalize_whitespace, split_sentences
 
@@ -67,6 +67,47 @@ SUMMARY_TEXT_PATTERNS = [
     re.compile(r"\bprovides guidance\b", re.IGNORECASE),
 ]
 
+REPORT_CUE_PATTERNS = [
+    ("tg", re.compile(r"\b(?:tg|task\s*group)\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("report", re.compile(r"\b(?:aapm\s*)?(?:report|rpt)\s*(?:no\.?|number|#)?\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("trs", re.compile(r"\btrs\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("tecdoc", re.compile(r"\btecdoc\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("hhr", re.compile(r"\b(?:hhr|human\s+health\s+reports?\s*(?:no\.?|number)?)\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("hhs", re.compile(r"\b(?:hhs|human\s+health\s+series\s*(?:no\.?|number)?)\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("ssg", re.compile(r"\bssg\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("srs", re.compile(r"\bsrs\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+    ("pub", re.compile(r"\bpub(?:lication)?\s*[-#:]?\s*(\d+[a-z]?)\b", re.IGNORECASE)),
+]
+
+TITLE_STOPWORDS = {
+    "aapm",
+    "iaea",
+    "report",
+    "reports",
+    "publication",
+    "radiation",
+    "radiotherapy",
+    "therapy",
+    "physics",
+    "quality",
+    "assurance",
+    "guidance",
+    "evidence",
+    "grounded",
+    "matter",
+    "covers",
+    "cover",
+    "what",
+    "which",
+    "does",
+    "that",
+    "would",
+    "for",
+    "and",
+    "the",
+    "with",
+}
+
 
 def get_query_type(query: str) -> str:
     q = normalize_whitespace(query)
@@ -92,6 +133,55 @@ def extract_query_focus(query: str) -> Optional[str]:
     if m:
         return normalize_whitespace(m.group(1)).lower()
     return None
+
+
+def extract_report_cues(text: str) -> Set[str]:
+    """Extract normalized source identifiers such as tg:100 or trs:398."""
+    normalized = normalize_whitespace(text.replace("_", " ").replace("-", " "))
+    cues: Set[str] = set()
+    for kind, pattern in REPORT_CUE_PATTERNS:
+        for match in pattern.finditer(normalized):
+            number = match.group(1).lower().lstrip("0") or "0"
+            cues.add(f"{kind}:{number}")
+    return cues
+
+
+def report_title_terms(text: str) -> Set[str]:
+    terms = {
+        term
+        for term in re.findall(r"[a-zA-Z][a-zA-Z0-9]{2,}", text.lower())
+        if term not in TITLE_STOPWORDS and not term.isdigit()
+    }
+    return terms
+
+
+def compute_report_match_bonus(query: str, chunk: Dict) -> float:
+    """Reward exact report cues and mild title overlap for similar-report ranking."""
+    query_cues = extract_report_cues(query)
+    source_text = " ".join(
+        str(chunk.get(key, "") or "")
+        for key in ("doc_id", "title", "source_path")
+    )
+    chunk_cues = extract_report_cues(source_text)
+
+    bonus = 0.0
+    if query_cues:
+        overlap = query_cues & chunk_cues
+        if overlap:
+            bonus += 0.46 + min(0.10, 0.03 * len(overlap))
+        elif chunk_cues:
+            bonus -= 0.18
+
+    query_terms = report_title_terms(query)
+    title_terms = report_title_terms(source_text)
+    if query_terms and title_terms:
+        ratio = len(query_terms & title_terms) / max(1, len(query_terms))
+        if ratio >= 0.45:
+            bonus += min(0.18, 0.08 + ratio * 0.15)
+        elif ratio >= 0.25:
+            bonus += 0.05
+
+    return bonus
 
 
 
@@ -198,6 +288,8 @@ def compute_chunk_bonus(query: str, chunk: Dict) -> float:
     front_matter = is_front_matter(chunk)
     references = is_references(chunk)
 
+    bonus += compute_report_match_bonus(query, chunk)
+
     if front_matter:
         bonus -= 0.18
     if references and "reference" not in query.lower():
@@ -273,6 +365,8 @@ def compute_rerank_adjustment(query: str, chunk: Dict) -> float:
     summary_like = is_summary_like_chunk(chunk)
     front_matter = is_front_matter(chunk)
     references = is_references(chunk)
+
+    bonus += compute_report_match_bonus(query, chunk)
 
     if front_matter:
         bonus -= 0.22

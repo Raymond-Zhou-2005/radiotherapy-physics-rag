@@ -1,6 +1,6 @@
 # Navigator Evaluation Results
 
-- Questions: 260
+- Questions: 280
 - In-scope questions: 245
 - Topic Recall@1: 0.837
 - Topic Recall@2: 0.939

@@ -2,10 +2,10 @@
 
 - Recall@3: 0.000
 - Recall@5: 0.000
-- Document Recall@3: 0.755
-- Document Recall@5: 0.857
+- Document Recall@3: 0.771
+- Document Recall@5: 0.861
 - MRR: 0.000
-- Abstention confusion counts: TP=15, FP=0, TN=245, FN=0
+- Abstention confusion counts: TP=35, FP=0, TN=245, FN=0
 - Requested retrieval backend: sparse
 - Report scope ignored during retrieval: True
 
@@ -66,7 +66,7 @@
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
 - Retrieved doc_ids: aapm_report_104_kv_imaging_guidance, aapm_report_104_kv_imaging_guidance, aapm_report_104_kv_imaging_guidance, aapm_report_104_kv_imaging_guidance, aapm_report_104_kv_imaging_guidance, aapm_report_104_kv_imaging_guidance
-- Retrieved chunks: aapm_report_104_kv_imaging_guidance_c0114, aapm_report_104_kv_imaging_guidance_c0006, aapm_report_104_kv_imaging_guidance_c0115, aapm_report_104_kv_imaging_guidance_c0015, aapm_report_104_kv_imaging_guidance_c0009, aapm_report_104_kv_imaging_guidance_c0112
+- Retrieved chunks: aapm_report_104_kv_imaging_guidance_c0114, aapm_report_104_kv_imaging_guidance_c0115, aapm_report_104_kv_imaging_guidance_c0006, aapm_report_104_kv_imaging_guidance_c0015, aapm_report_104_kv_imaging_guidance_c0112, aapm_report_104_kv_imaging_guidance_c0009
 - Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
@@ -246,8 +246,8 @@
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
 - Retrieved doc_ids: aapm_report_46_tg40_radiation_oncology_qa, aapm_report_46_tg40_radiation_oncology_qa, aapm_report_46_tg40_radiation_oncology_qa, aapm_report_46_tg40_radiation_oncology_qa, aapm_report_46_tg40_radiation_oncology_qa, aapm_report_46_tg40_radiation_oncology_qa
-- Retrieved chunks: aapm_report_46_tg40_radiation_oncology_qa_c0121, aapm_report_46_tg40_radiation_oncology_qa_c0004, aapm_report_46_tg40_radiation_oncology_qa_c0028, aapm_report_46_tg40_radiation_oncology_qa_c0038, aapm_report_46_tg40_radiation_oncology_qa_c0065, aapm_report_46_tg40_radiation_oncology_qa_c0021
-- Retrieved sections: 2. Responsibilities of the Radiation Oncology | UNKNOWN | 10. Computation of Monitor Units | 1. QA of Newer Innovations on Medical | 2. Monitor Unit Calculation Review | 10. Computation of Monitor Units
+- Retrieved chunks: aapm_report_46_tg40_radiation_oncology_qa_c0121, aapm_report_46_tg40_radiation_oncology_qa_c0004, aapm_report_46_tg40_radiation_oncology_qa_c0028, aapm_report_46_tg40_radiation_oncology_qa_c0038, aapm_report_46_tg40_radiation_oncology_qa_c0021, aapm_report_46_tg40_radiation_oncology_qa_c0016
+- Retrieved sections: 2. Responsibilities of the Radiation Oncology | UNKNOWN | 10. Computation of Monitor Units | 1. QA of Newer Innovations on Medical | 10. Computation of Monitor Units | 10. Computation of Monitor Units
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -329,9 +329,9 @@
 - Public source URLs: https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management, iaea_hhs31_accuracy_requirements_dosimetry, aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management
-- Retrieved chunks: aapm_tg100_radiotherapy_quality_management_c0034, aapm_tg100_radiotherapy_quality_management_c0016, aapm_tg100_radiotherapy_quality_management_c0189, iaea_hhs31_accuracy_requirements_dosimetry_c0367, aapm_tg100_radiotherapy_quality_management_c0011, aapm_tg100_radiotherapy_quality_management_c0041
-- Retrieved sections: 4. QUALITY AND SAFETY: AN OVERVIEW | 2. CHARGE AND SCOPE OF THE REPORT | 10. CONCLUSIONS | 7. MANAGING UNCERTAINTY | 1. PREFACE | 5. TG-100 RISK ANALYSIS METHODOLOGY
+- Retrieved doc_ids: aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management, aapm_tg100_radiotherapy_quality_management
+- Retrieved chunks: aapm_tg100_radiotherapy_quality_management_c0034, aapm_tg100_radiotherapy_quality_management_c0016, aapm_tg100_radiotherapy_quality_management_c0189, aapm_tg100_radiotherapy_quality_management_c0011, aapm_tg100_radiotherapy_quality_management_c0041, aapm_tg100_radiotherapy_quality_management_c0078
+- Retrieved sections: 4. QUALITY AND SAFETY: AN OVERVIEW | 2. CHARGE AND SCOPE OF THE REPORT | 10. CONCLUSIONS | 1. PREFACE | 5. TG-100 RISK ANALYSIS METHODOLOGY | 7. COMPARISON WITH PREVIOUS WORK
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -485,9 +485,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc989_radiation_dose_prescription_delivery
-- Retrieved chunks: iaea_tecdoc_1040_radiotherapy_programme_c0033, iaea_tecdoc_1040_radiotherapy_programme_c0090, iaea_tecdoc_1040_radiotherapy_programme_c0030, iaea_tecdoc1274_brachytherapy_source_calibration_c0003, iaea_tecdoc_1040_radiotherapy_programme_c0073, iaea_tecdoc989_radiation_dose_prescription_delivery_c0009
-- Retrieved sections: 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME | 7. RADIATION PROTECTION AND SAFETY OF SOURCES | 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME | UNKNOWN | 6. QUALITY ASSURANCE OF THE RADIOTHERAPY PROGRAMME | UNKNOWN
+- Retrieved doc_ids: iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme, iaea_tecdoc_1040_radiotherapy_programme
+- Retrieved chunks: iaea_tecdoc_1040_radiotherapy_programme_c0033, iaea_tecdoc_1040_radiotherapy_programme_c0090, iaea_tecdoc_1040_radiotherapy_programme_c0030, iaea_tecdoc_1040_radiotherapy_programme_c0073, iaea_tecdoc_1040_radiotherapy_programme_c0074, iaea_tecdoc_1040_radiotherapy_programme_c0036
+- Retrieved sections: 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME | 7. RADIATION PROTECTION AND SAFETY OF SOURCES | 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME | 6. QUALITY ASSURANCE OF THE RADIOTHERAPY PROGRAMME | 6. QUALITY ASSURANCE OF THE RADIOTHERAPY PROGRAMME | 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -509,9 +509,9 @@
 - Public source URLs: https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs430_tps_commissioning_qa, aapm_tg51_photon_dosimetry_addendum, iaea_trs398_absorbed_dose_ebrt
-- Retrieved chunks: iaea_trs398_rev1_absorbed_dose_ebrt_c0034, iaea_trs398_absorbed_dose_ebrt_c0329, iaea_trs398_rev1_absorbed_dose_ebrt_c0388, iaea_trs430_tps_commissioning_qa_c0200, aapm_tg51_photon_dosimetry_addendum_c0059, iaea_trs398_absorbed_dose_ebrt_c0327
-- Retrieved sections: 1. INTRODUCTION | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 9. COMMISSIONING | 5. UNCERTAINTIES | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS
+- Retrieved doc_ids: iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs469_reference_dosimeters
+- Retrieved chunks: iaea_trs398_rev1_absorbed_dose_ebrt_c0034, iaea_trs398_absorbed_dose_ebrt_c0329, iaea_trs398_rev1_absorbed_dose_ebrt_c0388, iaea_trs398_absorbed_dose_ebrt_c0327, iaea_trs398_absorbed_dose_ebrt_c0005, iaea_trs469_reference_dosimeters_c0031
+- Retrieved sections: 1. INTRODUCTION | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS | UNKNOWN | 3. PHYSICAL QUANTITIES AND UNITS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -533,9 +533,9 @@
 - Public source URLs: https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs398_rev1_absorbed_dose_ebrt, aapm_tg51_photon_dosimetry_addendum, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt
-- Retrieved chunks: iaea_trs398_rev1_absorbed_dose_ebrt_c0207, aapm_tg51_photon_dosimetry_addendum_c0059, iaea_trs398_rev1_absorbed_dose_ebrt_c0208, iaea_trs398_rev1_absorbed_dose_ebrt_c0250, iaea_trs398_rev1_absorbed_dose_ebrt_c0249, iaea_trs398_rev1_absorbed_dose_ebrt_c0355
-- Retrieved sections: 6. CODE OF PRACTICE FOR | 5. UNCERTAINTIES | 6. CODE OF PRACTICE FOR | 7. CODE OF PRACTICE FOR HIGH | 7. CODE OF PRACTICE FOR HIGH | 10. CODE OF PRACTICE FOR PROTON BEAMS
+- Retrieved doc_ids: iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt
+- Retrieved chunks: iaea_trs398_rev1_absorbed_dose_ebrt_c0207, iaea_trs398_rev1_absorbed_dose_ebrt_c0208, iaea_trs398_rev1_absorbed_dose_ebrt_c0250, iaea_trs398_rev1_absorbed_dose_ebrt_c0249, iaea_trs398_rev1_absorbed_dose_ebrt_c0355, iaea_trs398_rev1_absorbed_dose_ebrt_c0384
+- Retrieved sections: 6. CODE OF PRACTICE FOR | 6. CODE OF PRACTICE FOR | 7. CODE OF PRACTICE FOR HIGH | 7. CODE OF PRACTICE FOR HIGH | 10. CODE OF PRACTICE FOR PROTON BEAMS | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -545,9 +545,9 @@
 - Public source URLs: https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_pub1196_radiation_oncology_physics_handbook, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt
-- Retrieved chunks: iaea_trs398_absorbed_dose_ebrt_c0015, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_pub1196_radiation_oncology_physics_handbook_c0857, iaea_trs398_absorbed_dose_ebrt_c0182, iaea_trs398_rev1_absorbed_dose_ebrt_c0012, iaea_trs398_absorbed_dose_ebrt_c0411
-- Retrieved sections: 8. CODE OF PRACTICE FOR LOW ENERGY | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | UNKNOWN | 7. CODE OF PRACTICE FOR | UNKNOWN | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS
+- Retrieved doc_ids: iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt
+- Retrieved chunks: iaea_trs398_absorbed_dose_ebrt_c0015, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_trs398_absorbed_dose_ebrt_c0182, iaea_trs398_rev1_absorbed_dose_ebrt_c0012, iaea_trs398_absorbed_dose_ebrt_c0411, iaea_trs398_rev1_absorbed_dose_ebrt_c0015
+- Retrieved sections: 8. CODE OF PRACTICE FOR LOW ENERGY | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 7. CODE OF PRACTICE FOR | UNKNOWN | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS | 1. INTRODUCTION
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -605,9 +605,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_tecdoc1583_tps_commissioning, iaea_tecdoc1583_tps_commissioning
-- Retrieved chunks: iaea_trs430_tps_commissioning_qa_c0048, iaea_trs430_tps_commissioning_qa_c0073, iaea_trs430_tps_commissioning_qa_c0006, iaea_trs430_tps_commissioning_qa_c0005, iaea_tecdoc1583_tps_commissioning_c0002, iaea_tecdoc1583_tps_commissioning_c0001
-- Retrieved sections: 1. INTRODUCTION | 4. ALGORITHMS USED IN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
+- Retrieved doc_ids: iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa
+- Retrieved chunks: iaea_trs430_tps_commissioning_qa_c0048, iaea_trs430_tps_commissioning_qa_c0073, iaea_trs430_tps_commissioning_qa_c0006, iaea_trs430_tps_commissioning_qa_c0005, iaea_trs430_tps_commissioning_qa_c0349, iaea_trs430_tps_commissioning_qa_c0004
+- Retrieved sections: 1. INTRODUCTION | 4. ALGORITHMS USED IN | UNKNOWN | UNKNOWN | 45. ELECTRON REQUIRING VERIFICATION CHECKS | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -677,9 +677,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt
-- Retrieved chunks: iaea_trs469_reference_dosimeters_c0038, iaea_trs469_reference_dosimeters_c0015, iaea_trs398_rev1_absorbed_dose_ebrt_c0123, iaea_trs398_rev1_absorbed_dose_ebrt_c0089, iaea_trs469_reference_dosimeters_c0120, iaea_trs398_rev1_absorbed_dose_ebrt_c0207
-- Retrieved sections: 4. PRIMARY STANDARDS AND THEIR DISSEMINATION | 1. INTRODUCTION | 4. IMPLEMENTATION | 4. IMPLEMENTATION | 7. FUNDAMENTALS OF CALIBRATION | 6. CODE OF PRACTICE FOR
+- Retrieved doc_ids: iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt
+- Retrieved chunks: iaea_trs469_reference_dosimeters_c0038, iaea_trs469_reference_dosimeters_c0015, iaea_trs469_reference_dosimeters_c0120, iaea_trs469_reference_dosimeters_c0129, iaea_trs469_reference_dosimeters_c0009, iaea_trs398_rev1_absorbed_dose_ebrt_c0123
+- Retrieved sections: 4. PRIMARY STANDARDS AND THEIR DISSEMINATION | 1. INTRODUCTION | 7. FUNDAMENTALS OF CALIBRATION | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 4. IMPLEMENTATION
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -689,9 +689,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs430_tps_commissioning_qa, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters
-- Retrieved chunks: iaea_trs469_reference_dosimeters_c0131, iaea_trs398_rev1_absorbed_dose_ebrt_c0034, iaea_trs398_rev1_absorbed_dose_ebrt_c0123, iaea_trs430_tps_commissioning_qa_c0200, iaea_trs469_reference_dosimeters_c0127, iaea_trs469_reference_dosimeters_c0007
-- Retrieved sections: 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 1. INTRODUCTION | 4. IMPLEMENTATION | 9. COMMISSIONING | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS
+- Retrieved doc_ids: iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters
+- Retrieved chunks: iaea_trs469_reference_dosimeters_c0131, iaea_trs469_reference_dosimeters_c0127, iaea_trs469_reference_dosimeters_c0007, iaea_trs469_reference_dosimeters_c0128, iaea_trs469_reference_dosimeters_c0015, iaea_trs469_reference_dosimeters_c0130
+- Retrieved sections: 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 1. INTRODUCTION | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -701,9 +701,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs469_reference_dosimeters
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0518, iaea_ssg46_medical_uses_radiation_safety_c0517, iaea_trs469_reference_dosimeters_c0013, iaea_trs469_reference_dosimeters_c0015, iaea_trs398_rev1_absorbed_dose_ebrt_c0123, iaea_trs469_reference_dosimeters_c0134
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | 1. INTRODUCTION | 4. IMPLEMENTATION | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_trs469_reference_dosimeters, iaea_ssg46_medical_uses_radiation_safety, iaea_trs469_reference_dosimeters, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0518, iaea_trs469_reference_dosimeters_c0013, iaea_ssg46_medical_uses_radiation_safety_c0517, iaea_trs469_reference_dosimeters_c0015, iaea_trs469_reference_dosimeters_c0134, iaea_trs398_rev1_absorbed_dose_ebrt_c0123
+- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 4. IMPLEMENTATION
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -713,9 +713,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt
-- Retrieved chunks: iaea_trs398_rev1_absorbed_dose_ebrt_c0207, iaea_trs469_reference_dosimeters_c0015, iaea_trs398_rev1_absorbed_dose_ebrt_c0208, iaea_trs398_rev1_absorbed_dose_ebrt_c0175, iaea_trs398_absorbed_dose_ebrt_c0142, iaea_trs398_rev1_absorbed_dose_ebrt_c0250
-- Retrieved sections: 6. CODE OF PRACTICE FOR | 1. INTRODUCTION | 6. CODE OF PRACTICE FOR | 5. CODE OF PRACTICE FOR 60Co GAMMA RAY BEAMS | 5. CODE OF PRACTICE FOR 60Co GAMMA RAY BEAMS | 7. CODE OF PRACTICE FOR HIGH
+- Retrieved doc_ids: iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs469_reference_dosimeters, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt
+- Retrieved chunks: iaea_trs469_reference_dosimeters_c0015, iaea_trs398_rev1_absorbed_dose_ebrt_c0207, iaea_trs469_reference_dosimeters_c0121, iaea_trs398_rev1_absorbed_dose_ebrt_c0208, iaea_trs398_rev1_absorbed_dose_ebrt_c0175, iaea_trs398_absorbed_dose_ebrt_c0142
+- Retrieved sections: 1. INTRODUCTION | 6. CODE OF PRACTICE FOR | 8. EVALUATING THE UNCERTAINTY | 6. CODE OF PRACTICE FOR | 5. CODE OF PRACTICE FOR 60Co GAMMA RAY BEAMS | 5. CODE OF PRACTICE FOR 60Co GAMMA RAY BEAMS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -737,9 +737,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc1543_quatro, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1990_quatro_quality_improvement, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_hhs31_accuracy_requirements_dosimetry
-- Retrieved chunks: iaea_tecdoc1543_quatro_c0029, iaea_hhs31_accuracy_requirements_dosimetry_c0441, iaea_pub1990_quatro_quality_improvement_c0006, iaea_tecdoc1543_quatro_c0108, iaea_tecdoc1543_quatro_c0038, iaea_hhs31_accuracy_requirements_dosimetry_c0379
-- Retrieved sections: 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 7. MANAGING UNCERTAINTY | UNKNOWN | 4. SIGNATURE AND DATE: | 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 7. MANAGING UNCERTAINTY
+- Retrieved doc_ids: iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1990_quatro_quality_improvement, iaea_tecdoc1543_quatro
+- Retrieved chunks: iaea_tecdoc1543_quatro_c0029, iaea_tecdoc1543_quatro_c0108, iaea_tecdoc1543_quatro_c0038, iaea_hhs31_accuracy_requirements_dosimetry_c0441, iaea_pub1990_quatro_quality_improvement_c0006, iaea_tecdoc1543_quatro_c0012
+- Retrieved sections: 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 4. SIGNATURE AND DATE: | 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 7. MANAGING UNCERTAINTY | UNKNOWN | 1. INTRODUCTION
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -749,9 +749,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr18_radiotherapy_dosimetry_audits, iaea_trs430_tps_commissioning_qa, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro
-- Retrieved chunks: iaea_hhr18_radiotherapy_dosimetry_audits_c0019, iaea_trs430_tps_commissioning_qa_c0006, iaea_tecdoc1543_quatro_c0030, iaea_tecdoc1543_quatro_c0032, iaea_tecdoc1543_quatro_c0005, iaea_tecdoc1543_quatro_c0014
-- Retrieved sections: 1. INTRODUCTION | UNKNOWN | 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 13. DOSIMETRY CALIBRATIONS AND MEASUREMENTS......................................................15 | 2. IAEA SUPPORT IN REVIEWING THE RADIOTHERAPY PROCESS IN HOSPITALS
+- Retrieved doc_ids: iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_tecdoc1543_quatro, iaea_tecdoc1543_quatro
+- Retrieved chunks: iaea_tecdoc1543_quatro_c0032, iaea_tecdoc1543_quatro_c0005, iaea_tecdoc1543_quatro_c0029, iaea_hhr18_radiotherapy_dosimetry_audits_c0019, iaea_tecdoc1543_quatro_c0030, iaea_tecdoc1543_quatro_c0014
+- Retrieved sections: 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 13. DOSIMETRY CALIBRATIONS AND MEASUREMENTS......................................................15 | 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 1. INTRODUCTION | 7. PREPARATION FOR, CARRYING OUT AND REPORTING ON-SITE REVIEW VISITS | 2. IAEA SUPPORT IN REVIEWING THE RADIOTHERAPY PROCESS IN HOSPITALS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -977,9 +977,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs483_small_static_fields, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields
-- Retrieved chunks: iaea_trs483_small_static_fields_c0020, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_trs483_small_static_fields_c0063, iaea_trs483_small_static_fields_c0027, iaea_trs483_small_static_fields_c0066, iaea_trs483_small_static_fields_c0142
-- Retrieved sections: 1. INTRODUCTION | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 1. INTRODUCTION | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 4. DETECTORS AND EQUIPMENT
+- Retrieved doc_ids: iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs483_small_static_fields
+- Retrieved chunks: iaea_trs483_small_static_fields_c0027, iaea_trs483_small_static_fields_c0020, iaea_trs483_small_static_fields_c0063, iaea_trs483_small_static_fields_c0066, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_trs483_small_static_fields_c0142
+- Retrieved sections: 1. INTRODUCTION | 1. INTRODUCTION | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 4. DETECTORS AND EQUIPMENT
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -989,9 +989,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs430_tps_commissioning_qa
-- Retrieved chunks: iaea_trs483_small_static_fields_c0013, iaea_trs483_small_static_fields_c0027, iaea_trs483_small_static_fields_c0070, iaea_trs483_small_static_fields_c0063, iaea_trs483_small_static_fields_c0043, iaea_trs430_tps_commissioning_qa_c0200
-- Retrieved sections: 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 1. INTRODUCTION | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 9. COMMISSIONING
+- Retrieved doc_ids: iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields
+- Retrieved chunks: iaea_trs483_small_static_fields_c0013, iaea_trs483_small_static_fields_c0027, iaea_trs483_small_static_fields_c0070, iaea_trs483_small_static_fields_c0063, iaea_trs483_small_static_fields_c0043, iaea_trs483_small_static_fields_c0249
+- Retrieved sections: 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 1. INTRODUCTION | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1001,9 +1001,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_trs469_reference_dosimeters, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_trs483_small_static_fields
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0518, iaea_trs469_reference_dosimeters_c0013, iaea_trs483_small_static_fields_c0019, iaea_trs483_small_static_fields_c0012, iaea_srs47_radiotherapy_facility_radiation_protection_c0020, iaea_trs483_small_static_fields_c0063
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | 1. INTRODUCTION | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 1. INTRODUCTION | 2. PHYSICS OF SMALL FIELD DOSIMETRY
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs469_reference_dosimeters, iaea_trs483_small_static_fields
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0518, iaea_trs483_small_static_fields_c0019, iaea_trs483_small_static_fields_c0012, iaea_trs483_small_static_fields_c0063, iaea_trs469_reference_dosimeters_c0013, iaea_trs483_small_static_fields_c0061
+- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 2. PHYSICS OF SMALL FIELD DOSIMETRY | 1. INTRODUCTION | 2. PHYSICS OF SMALL FIELD DOSIMETRY
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1013,9 +1013,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_tecdoc_1040_radiotherapy_programme, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields
-- Retrieved chunks: iaea_trs483_small_static_fields_c0012, iaea_trs483_small_static_fields_c0020, iaea_tecdoc_1040_radiotherapy_programme_c0084, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_trs483_small_static_fields_c0013, iaea_trs483_small_static_fields_c0277
-- Retrieved sections: 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 1. INTRODUCTION | 6. QUALITY ASSURANCE OF THE RADIOTHERAPY PROGRAMME | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF
+- Retrieved doc_ids: iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields
+- Retrieved chunks: iaea_trs483_small_static_fields_c0012, iaea_trs483_small_static_fields_c0020, iaea_trs483_small_static_fields_c0013, iaea_trs483_small_static_fields_c0277, iaea_trs483_small_static_fields_c0243, iaea_trs483_small_static_fields_c0088
+- Retrieved sections: 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 1. INTRODUCTION | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 6. CODE OF PRACTICE FOR RELATIVE DOSIMETRY OF | 3. CONCEPTS AND FORMALISM
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1037,9 +1037,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs492_brachytherapy_dosimetry
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0520, iaea_trs492_brachytherapy_dosimetry_c0157, iaea_trs492_brachytherapy_dosimetry_c0119, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_tecdoc1274_brachytherapy_source_calibration_c0102, iaea_trs492_brachytherapy_dosimetry_c0156
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 8. CODE OF PRACTICE FOR WELL-TYPE | 8. CODE OF PRACTICE FOR WELL-TYPE | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 9. QUALITY CONTROL | 8. CODE OF PRACTICE FOR WELL-TYPE
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_tecdoc1274_brachytherapy_source_calibration
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0520, iaea_trs492_brachytherapy_dosimetry_c0157, iaea_trs492_brachytherapy_dosimetry_c0119, iaea_tecdoc1274_brachytherapy_source_calibration_c0102, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_tecdoc1274_brachytherapy_source_calibration_c0001
+- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 8. CODE OF PRACTICE FOR WELL-TYPE | 8. CODE OF PRACTICE FOR WELL-TYPE | 9. QUALITY CONTROL | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1049,9 +1049,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs430_tps_commissioning_qa, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_hhr16_igrt_qa
-- Retrieved chunks: iaea_trs430_tps_commissioning_qa_c0079, iaea_pub1990_quatro_quality_improvement_c0096, iaea_pub1990_quatro_quality_improvement_c0071, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_trs398_rev1_absorbed_dose_ebrt_c0387, iaea_hhr16_igrt_qa_c0062
-- Retrieved sections: 4. ALGORITHMS USED IN | 5. EQUIPMENT RELATED PROCEDURES | 4. PATIENT RELATED PROCEDURES | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 6. IMAGE GUIDED RADIOTHERAPY
+- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_ssg46_medical_uses_radiation_safety, iaea_trs430_tps_commissioning_qa, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_trs398_rev1_absorbed_dose_ebrt
+- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0003, iaea_ssg46_medical_uses_radiation_safety_c0523, iaea_trs430_tps_commissioning_qa_c0079, iaea_pub1990_quatro_quality_improvement_c0096, iaea_pub1990_quatro_quality_improvement_c0071, iaea_trs398_rev1_absorbed_dose_ebrt_c0471
+- Retrieved sections: UNKNOWN | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 4. ALGORITHMS USED IN | 5. EQUIPMENT RELATED PROCEDURES | 4. PATIENT RELATED PROCEDURES | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1073,9 +1073,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_report_46_tg40_radiation_oncology_qa, iaea_trs492_brachytherapy_dosimetry, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_pub1196_radiation_oncology_physics_handbook, iaea_hhs31_accuracy_requirements_dosimetry, iaea_tecdoc_1040_radiotherapy_programme
-- Retrieved chunks: aapm_report_46_tg40_radiation_oncology_qa_c0073, iaea_trs492_brachytherapy_dosimetry_c0157, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_pub1196_radiation_oncology_physics_handbook_c0857, iaea_hhs31_accuracy_requirements_dosimetry_c0173, iaea_tecdoc_1040_radiotherapy_programme_c0165
-- Retrieved sections: 2. Calibration of Sources | 8. CODE OF PRACTICE FOR WELL-TYPE | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | UNKNOWN | 6. PRACTICALLY ACHIEVABLE LEVELS OF ACCURACY | 7. RADIATION PROTECTION AND SAFETY OF SOURCES
+- Retrieved doc_ids: aapm_report_46_tg40_radiation_oncology_qa, iaea_trs492_brachytherapy_dosimetry, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_pub1196_radiation_oncology_physics_handbook, iaea_hhs31_accuracy_requirements_dosimetry
+- Retrieved chunks: aapm_report_46_tg40_radiation_oncology_qa_c0073, iaea_trs492_brachytherapy_dosimetry_c0157, iaea_tecdoc1274_brachytherapy_source_calibration_c0033, iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_pub1196_radiation_oncology_physics_handbook_c0857, iaea_hhs31_accuracy_requirements_dosimetry_c0173
+- Retrieved sections: 2. Calibration of Sources | 8. CODE OF PRACTICE FOR WELL-TYPE | 4. PRIMARY STANDARDS | 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | UNKNOWN | 6. PRACTICALLY ACHIEVABLE LEVELS OF ACCURACY
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1085,9 +1085,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs492_brachytherapy_dosimetry, iaea_tecdoc1543_quatro, iaea_trs492_brachytherapy_dosimetry, iaea_pub1196_radiation_oncology_physics_handbook, iaea_trs492_brachytherapy_dosimetry, iaea_pub1297_quatro_audit_tool
-- Retrieved chunks: iaea_trs492_brachytherapy_dosimetry_c0045, iaea_tecdoc1543_quatro_c0071, iaea_trs492_brachytherapy_dosimetry_c0103, iaea_pub1196_radiation_oncology_physics_handbook_c0857, iaea_trs492_brachytherapy_dosimetry_c0091, iaea_pub1297_quatro_audit_tool_c0091
-- Retrieved sections: 4. INSTRUMENTATION | 19. BRACHYTHERAPY TESTS AND MEASUREMENTS | 7. DOSIMETRY FORMALISM | UNKNOWN | 6. ESTABLISHMENT AND DISSEMINATION OF | 6. TRAINING PROGRAMMES
+- Retrieved doc_ids: iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_trs492_brachytherapy_dosimetry
+- Retrieved chunks: iaea_trs492_brachytherapy_dosimetry_c0045, iaea_trs492_brachytherapy_dosimetry_c0103, iaea_trs492_brachytherapy_dosimetry_c0091, iaea_trs492_brachytherapy_dosimetry_c0005, iaea_trs492_brachytherapy_dosimetry_c0084, iaea_trs492_brachytherapy_dosimetry_c0008
+- Retrieved sections: 4. INSTRUMENTATION | 7. DOSIMETRY FORMALISM | 6. ESTABLISHMENT AND DISSEMINATION OF | UNKNOWN | 5. DOSIMETRY FRAMEWORK | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1217,8 +1217,8 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, aapm_tg142_medical_accelerator_qa, aapm_tg147_nonradiographic_localization_qa, iaea_tecdoc1583_tps_commissioning, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
-- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0002, aapm_tg142_medical_accelerator_qa_c0019, aapm_tg147_nonradiographic_localization_qa_c0037, iaea_tecdoc1583_tps_commissioning_c0008, iaea_tecdoc1540_tps_acceptance_c0018, iaea_tecdoc1540_tps_acceptance_c0014
+- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, aapm_tg142_medical_accelerator_qa, aapm_tg147_nonradiographic_localization_qa, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
+- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0018, aapm_tg142_medical_accelerator_qa_c0019, aapm_tg147_nonradiographic_localization_qa_c0037, iaea_tecdoc1540_tps_acceptance_c0028, iaea_tecdoc1540_tps_acceptance_c0014
 - Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
@@ -1229,9 +1229,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc1583_tps_commissioning, iaea_tecdoc1540_tps_acceptance, iaea_hhr7_record_verify_systems, iaea_hhr17_linear_accelerators, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
-- Retrieved chunks: iaea_tecdoc1583_tps_commissioning_c0002, iaea_tecdoc1540_tps_acceptance_c0014, iaea_hhr7_record_verify_systems_c0116, iaea_hhr17_linear_accelerators_c0066, iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0013
-- Retrieved sections: UNKNOWN | UNKNOWN | 6. Commissioning and ongoing QUALITY CONTROL | 9. SUMMARY OF THE COMPARISON BETWEEN | UNKNOWN | UNKNOWN
+- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1583_tps_commissioning, iaea_hhr7_record_verify_systems
+- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0014, iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0013, iaea_tecdoc1540_tps_acceptance_c0001, iaea_tecdoc1583_tps_commissioning_c0002, iaea_hhr7_record_verify_systems_c0116
+- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | 6. Commissioning and ongoing QUALITY CONTROL
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1241,9 +1241,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg147_nonradiographic_localization_qa, iaea_hhs19_ct_sim_radiotherapy, aapm_tg147_nonradiographic_localization_qa, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_pub1196_radiation_oncology_physics_handbook
-- Retrieved chunks: aapm_tg147_nonradiographic_localization_qa_c0036, iaea_hhs19_ct_sim_radiotherapy_c0131, aapm_tg147_nonradiographic_localization_qa_c0037, iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0012, iaea_pub1196_radiation_oncology_physics_handbook_c0618
-- Retrieved sections: UNKNOWN | 9. MEDICAL PHYSICIST’S TESTS17 17 | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
+- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, aapm_tg147_nonradiographic_localization_qa, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
+- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0006, iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0012, aapm_tg147_nonradiographic_localization_qa_c0036, iaea_tecdoc1540_tps_acceptance_c0001, iaea_tecdoc1540_tps_acceptance_c0007
+- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1253,9 +1253,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_pub1196_radiation_oncology_physics_handbook
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0531, iaea_ssg46_medical_uses_radiation_safety_c0530, iaea_tecdoc1540_tps_acceptance_c0012, iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0001, iaea_pub1196_radiation_oncology_physics_handbook_c0616
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
+- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
+- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0012, iaea_ssg46_medical_uses_radiation_safety_c0531, iaea_ssg46_medical_uses_radiation_safety_c0530, iaea_tecdoc1540_tps_acceptance_c0002, iaea_tecdoc1540_tps_acceptance_c0001, iaea_tecdoc1540_tps_acceptance_c0014
+- Retrieved sections: UNKNOWN | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1265,8 +1265,8 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1583_tps_commissioning, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
-- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0011, iaea_tecdoc1540_tps_acceptance_c0001, iaea_tecdoc1583_tps_commissioning_c0002, iaea_tecdoc1540_tps_acceptance_c0013, iaea_tecdoc1540_tps_acceptance_c0014, iaea_tecdoc1540_tps_acceptance_c0012
+- Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1540_tps_acceptance
+- Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0011, iaea_tecdoc1540_tps_acceptance_c0001, iaea_tecdoc1540_tps_acceptance_c0013, iaea_tecdoc1540_tps_acceptance_c0014, iaea_tecdoc1540_tps_acceptance_c0012, iaea_tecdoc1540_tps_acceptance_c0010
 - Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
@@ -1337,9 +1337,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr7_record_verify_systems, aapm_tg147_nonradiographic_localization_qa, aapm_tg147_nonradiographic_localization_qa, aapm_tg147_nonradiographic_localization_qa, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems
-- Retrieved chunks: iaea_hhr7_record_verify_systems_c0090, aapm_tg147_nonradiographic_localization_qa_c0077, aapm_tg147_nonradiographic_localization_qa_c0079, aapm_tg147_nonradiographic_localization_qa_c0080, iaea_hhr7_record_verify_systems_c0006, iaea_hhr7_record_verify_systems_c0091
-- Retrieved sections: 6. Commissioning and ongoing QUALITY CONTROL | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | 6. Commissioning and ongoing QUALITY CONTROL
+- Retrieved doc_ids: iaea_hhr7_record_verify_systems, aapm_tg147_nonradiographic_localization_qa, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, aapm_tg147_nonradiographic_localization_qa, iaea_hhr7_record_verify_systems
+- Retrieved chunks: iaea_hhr7_record_verify_systems_c0090, aapm_tg147_nonradiographic_localization_qa_c0077, iaea_hhr7_record_verify_systems_c0091, iaea_hhr7_record_verify_systems_c0006, aapm_tg147_nonradiographic_localization_qa_c0079, iaea_hhr7_record_verify_systems_c0020
+- Retrieved sections: 6. Commissioning and ongoing QUALITY CONTROL | UNKNOWN | 6. Commissioning and ongoing QUALITY CONTROL | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1349,9 +1349,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr7_record_verify_systems, iaea_hhr16_igrt_qa, aapm_tg147_nonradiographic_localization_qa, aapm_tg147_nonradiographic_localization_qa, aapm_tg147_nonradiographic_localization_qa, iaea_pub1990_quatro_quality_improvement
-- Retrieved chunks: iaea_hhr7_record_verify_systems_c0116, iaea_hhr16_igrt_qa_c0062, aapm_tg147_nonradiographic_localization_qa_c0048, aapm_tg147_nonradiographic_localization_qa_c0047, aapm_tg147_nonradiographic_localization_qa_c0076, iaea_pub1990_quatro_quality_improvement_c0091
-- Retrieved sections: 6. Commissioning and ongoing QUALITY CONTROL | 6. IMAGE GUIDED RADIOTHERAPY | UNKNOWN | UNKNOWN | UNKNOWN | 5. EQUIPMENT RELATED PROCEDURES
+- Retrieved doc_ids: iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr16_igrt_qa, aapm_tg147_nonradiographic_localization_qa, aapm_tg147_nonradiographic_localization_qa
+- Retrieved chunks: iaea_hhr7_record_verify_systems_c0116, iaea_hhr7_record_verify_systems_c0092, iaea_hhr7_record_verify_systems_c0115, iaea_hhr16_igrt_qa_c0062, aapm_tg147_nonradiographic_localization_qa_c0048, aapm_tg147_nonradiographic_localization_qa_c0047
+- Retrieved sections: 6. Commissioning and ongoing QUALITY CONTROL | 6. Commissioning and ongoing QUALITY CONTROL | 6. Commissioning and ongoing QUALITY CONTROL | 6. IMAGE GUIDED RADIOTHERAPY | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1385,9 +1385,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr16_igrt_qa, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems
-- Retrieved chunks: iaea_hhr7_record_verify_systems_c0005, iaea_hhr7_record_verify_systems_c0006, iaea_hhr16_igrt_qa_c0010, iaea_hhr7_record_verify_systems_c0021, iaea_hhr7_record_verify_systems_c0016, iaea_hhr7_record_verify_systems_c0091
-- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | 6. Commissioning and ongoing QUALITY CONTROL
+- Retrieved doc_ids: iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems, iaea_hhr7_record_verify_systems
+- Retrieved chunks: iaea_hhr7_record_verify_systems_c0005, iaea_hhr7_record_verify_systems_c0006, iaea_hhr7_record_verify_systems_c0021, iaea_hhr7_record_verify_systems_c0016, iaea_hhr7_record_verify_systems_c0091, iaea_hhr7_record_verify_systems_c0015
+- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | 6. Commissioning and ongoing QUALITY CONTROL | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1397,9 +1397,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement
-- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0023, iaea_pub1990_quatro_quality_improvement_c0031, iaea_hhr18_radiotherapy_dosimetry_audits_c0250, iaea_pub1990_quatro_quality_improvement_c0006, iaea_pub1297_quatro_audit_tool_c0017, iaea_pub1990_quatro_quality_improvement_c0030
-- Retrieved sections: 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 5. CONCLUSION | UNKNOWN | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS
+- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0023, iaea_pub1990_quatro_quality_improvement_c0031, iaea_pub1990_quatro_quality_improvement_c0006, iaea_pub1990_quatro_quality_improvement_c0030, iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1297_quatro_audit_tool_c0017
+- Retrieved sections: 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | UNKNOWN | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 4. PATIENT RELATED PROCEDURES | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1409,9 +1409,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_hhr16_igrt_qa, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement
-- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0001, iaea_pub1297_quatro_audit_tool_c0002, iaea_pub1990_quatro_quality_improvement_c0014, iaea_hhr16_igrt_qa_c0065, iaea_pub1990_quatro_quality_improvement_c0031, iaea_pub1990_quatro_quality_improvement_c0096
-- Retrieved sections: UNKNOWN | UNKNOWN | 1. INTRODUCTION | 6. IMAGE GUIDED RADIOTHERAPY | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 5. EQUIPMENT RELATED PROCEDURES
+- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement
+- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0001, iaea_pub1297_quatro_audit_tool_c0002, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1990_quatro_quality_improvement_c0031, iaea_pub1990_quatro_quality_improvement_c0096, iaea_pub1990_quatro_quality_improvement_c0093
+- Retrieved sections: UNKNOWN | UNKNOWN | 1. INTRODUCTION | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 5. EQUIPMENT RELATED PROCEDURES | 5. EQUIPMENT RELATED PROCEDURES
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1421,9 +1421,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1990_quatro_quality_improvement
-- Retrieved chunks: iaea_pub1990_quatro_quality_improvement_c0006, iaea_pub1990_quatro_quality_improvement_c0017, iaea_pub1990_quatro_quality_improvement_c0014, iaea_hhs31_accuracy_requirements_dosimetry_c0425, iaea_hhs31_accuracy_requirements_dosimetry_c0443, iaea_pub1990_quatro_quality_improvement_c0015
-- Retrieved sections: UNKNOWN | 1. INTRODUCTION | 1. INTRODUCTION | 7. MANAGING UNCERTAINTY | 7. MANAGING UNCERTAINTY | 1. INTRODUCTION
+- Retrieved doc_ids: iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement
+- Retrieved chunks: iaea_pub1990_quatro_quality_improvement_c0006, iaea_pub1990_quatro_quality_improvement_c0017, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1297_quatro_audit_tool_c0015, iaea_pub1990_quatro_quality_improvement_c0015, iaea_pub1990_quatro_quality_improvement_c0005
+- Retrieved sections: UNKNOWN | 1. INTRODUCTION | 1. INTRODUCTION | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS | 1. INTRODUCTION | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1433,9 +1433,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_hhs14_planning_national_radiotherapy_services, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_hhs31_accuracy_requirements_dosimetry
-- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0055, iaea_hhr18_radiotherapy_dosimetry_audits_c0250, iaea_hhs14_planning_national_radiotherapy_services_c0111, iaea_pub1990_quatro_quality_improvement_c0006, iaea_pub1990_quatro_quality_improvement_c0014, iaea_hhs31_accuracy_requirements_dosimetry_c0446
-- Retrieved sections: 4. PATIENT RELATED PROCEDURES | 5. CONCLUSION | 8. IMPLEMENTATION AND MONITORING | UNKNOWN | 1. INTRODUCTION | 7. MANAGING UNCERTAINTY
+- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_hhs14_planning_national_radiotherapy_services, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement
+- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0055, iaea_hhr18_radiotherapy_dosimetry_audits_c0250, iaea_hhs14_planning_national_radiotherapy_services_c0111, iaea_pub1990_quatro_quality_improvement_c0006, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1990_quatro_quality_improvement_c0031
+- Retrieved sections: 4. PATIENT RELATED PROCEDURES | 5. CONCLUSION | 8. IMPLEMENTATION AND MONITORING | UNKNOWN | 1. INTRODUCTION | 2. AUDIT STRUCTURE FOR QUATRO MISSIONS
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1445,9 +1445,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement
-- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0011, iaea_pub1297_quatro_audit_tool_c0091, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1297_quatro_audit_tool_c0002, iaea_pub1990_quatro_quality_improvement_c0096
-- Retrieved sections: 1. INTRODUCTION | 6. TRAINING PROGRAMMES | 1. INTRODUCTION | 4. PATIENT RELATED PROCEDURES | UNKNOWN | 5. EQUIPMENT RELATED PROCEDURES
+- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0091, iaea_pub1297_quatro_audit_tool_c0011, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1990_quatro_quality_improvement_c0096, iaea_pub1297_quatro_audit_tool_c0007
+- Retrieved sections: 6. TRAINING PROGRAMMES | 1. INTRODUCTION | 1. INTRODUCTION | 4. PATIENT RELATED PROCEDURES | 5. EQUIPMENT RELATED PROCEDURES | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1505,9 +1505,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement
-- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0011, iaea_pub1297_quatro_audit_tool_c0091, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1297_quatro_audit_tool_c0002, iaea_pub1990_quatro_quality_improvement_c0096
-- Retrieved sections: 1. INTRODUCTION | 6. TRAINING PROGRAMMES | 1. INTRODUCTION | 4. PATIENT RELATED PROCEDURES | UNKNOWN | 5. EQUIPMENT RELATED PROCEDURES
+- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0091, iaea_pub1297_quatro_audit_tool_c0011, iaea_pub1990_quatro_quality_improvement_c0014, iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1990_quatro_quality_improvement_c0096, iaea_pub1297_quatro_audit_tool_c0007
+- Retrieved sections: 6. TRAINING PROGRAMMES | 1. INTRODUCTION | 1. INTRODUCTION | 4. PATIENT RELATED PROCEDURES | 5. EQUIPMENT RELATED PROCEDURES | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1589,9 +1589,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_ssg46_medical_uses_radiation_safety, iaea_hhr17_linear_accelerators, iaea_ssg46_medical_uses_radiation_safety, iaea_hhr10_radiotherapy_facilities, iaea_tecdoc_1040_radiotherapy_programme
-- Retrieved chunks: iaea_hhr17_linear_accelerators_c0065, iaea_ssg46_medical_uses_radiation_safety_c0434, iaea_hhr17_linear_accelerators_c0038, iaea_ssg46_medical_uses_radiation_safety_c0281, iaea_hhr10_radiotherapy_facilities_c0026, iaea_tecdoc_1040_radiotherapy_programme_c0032
-- Retrieved sections: 9. SUMMARY OF THE COMPARISON BETWEEN | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 6. INFRASTRUCTURE | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN | 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME
+- Retrieved doc_ids: iaea_srs47_radiotherapy_facility_radiation_protection, iaea_hhr17_linear_accelerators, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_hhr17_linear_accelerators, iaea_tecdoc_1040_radiotherapy_programme, iaea_ssg46_medical_uses_radiation_safety
+- Retrieved chunks: iaea_srs47_radiotherapy_facility_radiation_protection_c0160, iaea_hhr17_linear_accelerators_c0065, iaea_srs47_radiotherapy_facility_radiation_protection_c0005, iaea_hhr17_linear_accelerators_c0038, iaea_tecdoc_1040_radiotherapy_programme_c0032, iaea_ssg46_medical_uses_radiation_safety_c0434
+- Retrieved sections: 8. WORKED EXAMPLE OF A BRACHYTHERAPY FACILITY | 9. SUMMARY OF THE COMPARISON BETWEEN | UNKNOWN | 6. INFRASTRUCTURE | 3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1625,9 +1625,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr10_radiotherapy_facilities, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_hhr17_linear_accelerators, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhr10_radiotherapy_facilities
-- Retrieved chunks: iaea_hhr10_radiotherapy_facilities_c0006, iaea_hhr18_radiotherapy_dosimetry_audits_c0014, iaea_hhr17_linear_accelerators_c0081, iaea_hhs31_accuracy_requirements_dosimetry_c0427, iaea_hhs31_accuracy_requirements_dosimetry_c0379, iaea_hhr10_radiotherapy_facilities_c0023
-- Retrieved sections: UNKNOWN | 1. INTRODUCTION | 9. SUMMARY OF THE COMPARISON BETWEEN | 7. MANAGING UNCERTAINTY | 7. MANAGING UNCERTAINTY | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN
+- Retrieved doc_ids: iaea_hhr10_radiotherapy_facilities, iaea_hhr10_radiotherapy_facilities, iaea_hhr10_radiotherapy_facilities, iaea_hhr10_radiotherapy_facilities, iaea_hhr10_radiotherapy_facilities, iaea_hhr10_radiotherapy_facilities
+- Retrieved chunks: iaea_hhr10_radiotherapy_facilities_c0006, iaea_hhr10_radiotherapy_facilities_c0023, iaea_hhr10_radiotherapy_facilities_c0007, iaea_hhr10_radiotherapy_facilities_c0039, iaea_hhr10_radiotherapy_facilities_c0028, iaea_hhr10_radiotherapy_facilities_c0024
+- Retrieved sections: UNKNOWN | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN | UNKNOWN | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1637,9 +1637,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_pub1196_radiation_oncology_physics_handbook, aapm_tg147_nonradiographic_localization_qa, iaea_trs430_tps_commissioning_qa, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators
-- Retrieved chunks: iaea_pub1196_radiation_oncology_physics_handbook_c0618, aapm_tg147_nonradiographic_localization_qa_c0044, iaea_trs430_tps_commissioning_qa_c0148, iaea_hhr17_linear_accelerators_c0035, iaea_hhr17_linear_accelerators_c0069, iaea_hhr17_linear_accelerators_c0047
-- Retrieved sections: UNKNOWN | UNKNOWN | 8. ACCEPTANCE TESTING | 6. INFRASTRUCTURE | 9. SUMMARY OF THE COMPARISON BETWEEN | 8. COST CONSIDERATIONS
+- Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators
+- Retrieved chunks: iaea_hhr17_linear_accelerators_c0035, iaea_hhr17_linear_accelerators_c0069, iaea_hhr17_linear_accelerators_c0047, iaea_hhr17_linear_accelerators_c0068, iaea_hhr17_linear_accelerators_c0066, iaea_hhr17_linear_accelerators_c0041
+- Retrieved sections: 6. INFRASTRUCTURE | 9. SUMMARY OF THE COMPARISON BETWEEN | 8. COST CONSIDERATIONS | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 6. INFRASTRUCTURE
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1650,8 +1650,8 @@
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
 - Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators
-- Retrieved chunks: iaea_hhr17_linear_accelerators_c0065, iaea_hhr17_linear_accelerators_c0066, iaea_hhr17_linear_accelerators_c0069, iaea_hhr17_linear_accelerators_c0070, iaea_hhr17_linear_accelerators_c0064, iaea_hhr17_linear_accelerators_c0068
-- Retrieved sections: 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN
+- Retrieved chunks: iaea_hhr17_linear_accelerators_c0065, iaea_hhr17_linear_accelerators_c0066, iaea_hhr17_linear_accelerators_c0069, iaea_hhr17_linear_accelerators_c0070, iaea_hhr17_linear_accelerators_c0064, iaea_hhr17_linear_accelerators_c0015
+- Retrieved sections: 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 2. NATIONAL CANCER CONTROL PLANNING
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1661,9 +1661,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_pub1196_radiation_oncology_physics_handbook, iaea_hhr17_linear_accelerators
-- Retrieved chunks: iaea_hhr17_linear_accelerators_c0040, iaea_hhr17_linear_accelerators_c0031, iaea_hhr17_linear_accelerators_c0014, iaea_hhr17_linear_accelerators_c0016, iaea_pub1196_radiation_oncology_physics_handbook_c0618, iaea_hhr17_linear_accelerators_c0038
-- Retrieved sections: 6. INFRASTRUCTURE | 6. INFRASTRUCTURE | 1. INTRODUCTION | 2. NATIONAL CANCER CONTROL PLANNING | UNKNOWN | 6. INFRASTRUCTURE
+- Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators
+- Retrieved chunks: iaea_hhr17_linear_accelerators_c0040, iaea_hhr17_linear_accelerators_c0031, iaea_hhr17_linear_accelerators_c0014, iaea_hhr17_linear_accelerators_c0016, iaea_hhr17_linear_accelerators_c0038, iaea_hhr17_linear_accelerators_c0013
+- Retrieved sections: 6. INFRASTRUCTURE | 6. INFRASTRUCTURE | 1. INTRODUCTION | 2. NATIONAL CANCER CONTROL PLANNING | 6. INFRASTRUCTURE | 1. INTRODUCTION
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1673,9 +1673,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr16_igrt_qa
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0530, iaea_hhr17_linear_accelerators_c0017, iaea_hhr17_linear_accelerators_c0009, iaea_hhr17_linear_accelerators_c0069, iaea_hhr17_linear_accelerators_c0079, iaea_hhr16_igrt_qa_c0058
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 2. NATIONAL CANCER CONTROL PLANNING | UNKNOWN | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 6. IMAGE GUIDED RADIOTHERAPY
+- Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_ssg46_medical_uses_radiation_safety, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators, iaea_hhr17_linear_accelerators
+- Retrieved chunks: iaea_hhr17_linear_accelerators_c0017, iaea_hhr17_linear_accelerators_c0009, iaea_ssg46_medical_uses_radiation_safety_c0530, iaea_hhr17_linear_accelerators_c0069, iaea_hhr17_linear_accelerators_c0079, iaea_hhr17_linear_accelerators_c0039
+- Retrieved sections: 2. NATIONAL CANCER CONTROL PLANNING | UNKNOWN | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 9. SUMMARY OF THE COMPARISON BETWEEN | 9. SUMMARY OF THE COMPARISON BETWEEN | 6. INFRASTRUCTURE
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1697,9 +1697,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs492_brachytherapy_dosimetry, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration
-- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0103, iaea_trs492_brachytherapy_dosimetry_c0209, iaea_tecdoc1274_brachytherapy_source_calibration_c0033, iaea_tecdoc1274_brachytherapy_source_calibration_c0034, iaea_tecdoc1274_brachytherapy_source_calibration_c0012, iaea_tecdoc1274_brachytherapy_source_calibration_c0009
-- Retrieved sections: 9. QUALITY CONTROL | 10. APPLICATION OF REFERENCE | 4. PRIMARY STANDARDS | 4. PRIMARY STANDARDS | 2. CHARACTERIZATION OF BRACHYTHERAPY SOURCES | 8. CALIBRATION OF BRACHYTHERAPY SOURCES BY USING OTHER
+- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs492_brachytherapy_dosimetry
+- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0103, iaea_tecdoc1274_brachytherapy_source_calibration_c0009, iaea_tecdoc1274_brachytherapy_source_calibration_c0033, iaea_tecdoc1274_brachytherapy_source_calibration_c0034, iaea_tecdoc1274_brachytherapy_source_calibration_c0012, iaea_trs492_brachytherapy_dosimetry_c0209
+- Retrieved sections: 9. QUALITY CONTROL | 8. CALIBRATION OF BRACHYTHERAPY SOURCES BY USING OTHER | 4. PRIMARY STANDARDS | 4. PRIMARY STANDARDS | 2. CHARACTERIZATION OF BRACHYTHERAPY SOURCES | 10. APPLICATION OF REFERENCE
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1709,9 +1709,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_trs430_tps_commissioning_qa, iaea_trs492_brachytherapy_dosimetry, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration
-- Retrieved chunks: iaea_trs430_tps_commissioning_qa_c0005, iaea_trs492_brachytherapy_dosimetry_c0087, iaea_trs430_tps_commissioning_qa_c0079, iaea_trs430_tps_commissioning_qa_c0386, iaea_tecdoc1274_brachytherapy_source_calibration_c0001, iaea_tecdoc1274_brachytherapy_source_calibration_c0009
-- Retrieved sections: UNKNOWN | 6. ESTABLISHMENT AND DISSEMINATION OF | 4. ALGORITHMS USED IN | 12. SUMMARY | UNKNOWN | 8. CALIBRATION OF BRACHYTHERAPY SOURCES BY USING OTHER
+- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs430_tps_commissioning_qa
+- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0009, iaea_tecdoc1274_brachytherapy_source_calibration_c0001, iaea_tecdoc1274_brachytherapy_source_calibration_c0002, iaea_tecdoc1274_brachytherapy_source_calibration_c0036, iaea_tecdoc1274_brachytherapy_source_calibration_c0035, iaea_trs430_tps_commissioning_qa_c0005
+- Retrieved sections: 8. CALIBRATION OF BRACHYTHERAPY SOURCES BY USING OTHER | UNKNOWN | UNKNOWN | 4. PRIMARY STANDARDS | 4. PRIMARY STANDARDS | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1733,9 +1733,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_trs492_brachytherapy_dosimetry, aapm_report_46_tg40_radiation_oncology_qa, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0547, iaea_tecdoc1274_brachytherapy_source_calibration_c0033, iaea_trs492_brachytherapy_dosimetry_c0209, aapm_report_46_tg40_radiation_oncology_qa_c0073, iaea_tecdoc1274_brachytherapy_source_calibration_c0035, iaea_tecdoc1274_brachytherapy_source_calibration_c0009
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 4. PRIMARY STANDARDS | 10. APPLICATION OF REFERENCE | 2. Calibration of Sources | 4. PRIMARY STANDARDS | 8. CALIBRATION OF BRACHYTHERAPY SOURCES BY USING OTHER
+- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_ssg46_medical_uses_radiation_safety, iaea_trs492_brachytherapy_dosimetry, aapm_report_46_tg40_radiation_oncology_qa
+- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0033, iaea_tecdoc1274_brachytherapy_source_calibration_c0035, iaea_tecdoc1274_brachytherapy_source_calibration_c0009, iaea_ssg46_medical_uses_radiation_safety_c0547, iaea_trs492_brachytherapy_dosimetry_c0209, aapm_report_46_tg40_radiation_oncology_qa_c0073
+- Retrieved sections: 4. PRIMARY STANDARDS | 4. PRIMARY STANDARDS | 8. CALIBRATION OF BRACHYTHERAPY SOURCES BY USING OTHER | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 10. APPLICATION OF REFERENCE | 2. Calibration of Sources
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1745,9 +1745,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1543_quatro, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration
-- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0003, iaea_tecdoc1543_quatro_c0164, iaea_tecdoc1274_brachytherapy_source_calibration_c0102, iaea_tecdoc1274_brachytherapy_source_calibration_c0029, iaea_tecdoc1274_brachytherapy_source_calibration_c0038, iaea_tecdoc1274_brachytherapy_source_calibration_c0070
-- Retrieved sections: UNKNOWN | 9. FINAL REMARKS | 9. QUALITY CONTROL | 4. PRIMARY STANDARDS | 5. CALIBRATION AT THE SSDL AND HOSPITAL LEVEL | 7. CALIBRATIONS USING WELL TYPE IONIZATION CHAMBERS
+- Retrieved doc_ids: iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration, iaea_tecdoc1274_brachytherapy_source_calibration
+- Retrieved chunks: iaea_tecdoc1274_brachytherapy_source_calibration_c0003, iaea_tecdoc1274_brachytherapy_source_calibration_c0102, iaea_tecdoc1274_brachytherapy_source_calibration_c0029, iaea_tecdoc1274_brachytherapy_source_calibration_c0070, iaea_tecdoc1274_brachytherapy_source_calibration_c0038, iaea_tecdoc1274_brachytherapy_source_calibration_c0001
+- Retrieved sections: UNKNOWN | 9. QUALITY CONTROL | 4. PRIMARY STANDARDS | 7. CALIBRATIONS USING WELL TYPE IONIZATION CHAMBERS | 5. CALIBRATION AT THE SSDL AND HOSPITAL LEVEL | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1769,9 +1769,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1297_quatro_audit_tool, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_trs430_tps_commissioning_qa, iaea_hhs31_accuracy_requirements_dosimetry, iaea_trs430_tps_commissioning_qa
-- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0051, iaea_pub1297_quatro_audit_tool_c0050, iaea_hhr18_radiotherapy_dosimetry_audits_c0014, iaea_trs430_tps_commissioning_qa_c0381, iaea_hhs31_accuracy_requirements_dosimetry_c0050, iaea_trs430_tps_commissioning_qa_c0331
-- Retrieved sections: 2. THE RADIOTHERAPY PROCESS | 4. PATIENT RELATED PROCEDURES | 1. INTRODUCTION | 12. SUMMARY | 2. THE RADIOTHERAPY PROCESS | 45. ELECTRON REQUIRING VERIFICATION CHECKS
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1297_quatro_audit_tool, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_trs430_tps_commissioning_qa, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0051, iaea_pub1297_quatro_audit_tool_c0050, iaea_hhr18_radiotherapy_dosimetry_audits_c0014, iaea_trs430_tps_commissioning_qa_c0381, iaea_tecdoc989_radiation_dose_prescription_delivery_c0009, iaea_tecdoc989_radiation_dose_prescription_delivery_c0188
+- Retrieved sections: 2. THE RADIOTHERAPY PROCESS | 4. PATIENT RELATED PROCEDURES | 1. INTRODUCTION | 12. SUMMARY | UNKNOWN | REFERENCES
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1805,9 +1805,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery
-- Retrieved chunks: iaea_tecdoc989_radiation_dose_prescription_delivery_c0009, iaea_hhr18_radiotherapy_dosimetry_audits_c0014, iaea_tecdoc989_radiation_dose_prescription_delivery_c0286, iaea_tecdoc989_radiation_dose_prescription_delivery_c0369, iaea_tecdoc989_radiation_dose_prescription_delivery_c0203, iaea_tecdoc989_radiation_dose_prescription_delivery_c0372
-- Retrieved sections: UNKNOWN | 1. INTRODUCTION | REFERENCES | REFERENCES | REFERENCES | REFERENCES
+- Retrieved doc_ids: iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery, iaea_tecdoc989_radiation_dose_prescription_delivery
+- Retrieved chunks: iaea_tecdoc989_radiation_dose_prescription_delivery_c0009, iaea_tecdoc989_radiation_dose_prescription_delivery_c0286, iaea_tecdoc989_radiation_dose_prescription_delivery_c0369, iaea_tecdoc989_radiation_dose_prescription_delivery_c0203, iaea_tecdoc989_radiation_dose_prescription_delivery_c0372, iaea_tecdoc989_radiation_dose_prescription_delivery_c0371
+- Retrieved sections: UNKNOWN | REFERENCES | REFERENCES | REFERENCES | REFERENCES | REFERENCES
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1938,8 +1938,8 @@
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
 - Retrieved doc_ids: iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition
-- Retrieved chunks: iaea_tecdoc1588_3dcrt_imrt_transition_c0014, iaea_tecdoc1588_3dcrt_imrt_transition_c0134, iaea_tecdoc1588_3dcrt_imrt_transition_c0009, iaea_tecdoc1588_3dcrt_imrt_transition_c0003, iaea_tecdoc1588_3dcrt_imrt_transition_c0004, iaea_tecdoc1588_3dcrt_imrt_transition_c0121
-- Retrieved sections: 1. CONFORMAL RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | UNKNOWN | UNKNOWN | UNKNOWN | 2. INTENSITY MODULATED RADIOTHERAPY
+- Retrieved chunks: iaea_tecdoc1588_3dcrt_imrt_transition_c0014, iaea_tecdoc1588_3dcrt_imrt_transition_c0134, iaea_tecdoc1588_3dcrt_imrt_transition_c0009, iaea_tecdoc1588_3dcrt_imrt_transition_c0003, iaea_tecdoc1588_3dcrt_imrt_transition_c0004, iaea_tecdoc1588_3dcrt_imrt_transition_c0010
+- Retrieved sections: 1. CONFORMAL RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -1950,8 +1950,8 @@
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
 - Retrieved doc_ids: iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc1588_3dcrt_imrt_transition
-- Retrieved chunks: iaea_tecdoc1588_3dcrt_imrt_transition_c0134, iaea_tecdoc1588_3dcrt_imrt_transition_c0113, iaea_tecdoc1588_3dcrt_imrt_transition_c0119, iaea_tecdoc1588_3dcrt_imrt_transition_c0111, iaea_tecdoc1588_3dcrt_imrt_transition_c0127, iaea_tecdoc1588_3dcrt_imrt_transition_c0117
-- Retrieved sections: 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY
+- Retrieved chunks: iaea_tecdoc1588_3dcrt_imrt_transition_c0134, iaea_tecdoc1588_3dcrt_imrt_transition_c0113, iaea_tecdoc1588_3dcrt_imrt_transition_c0119, iaea_tecdoc1588_3dcrt_imrt_transition_c0111, iaea_tecdoc1588_3dcrt_imrt_transition_c0127, iaea_tecdoc1588_3dcrt_imrt_transition_c0008
+- Retrieved sections: 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | 2. INTENSITY MODULATED RADIOTHERAPY | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -2069,9 +2069,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_hhr17_linear_accelerators, iaea_hhr10_radiotherapy_facilities, iaea_ssg46_medical_uses_radiation_safety, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection
-- Retrieved chunks: iaea_hhr17_linear_accelerators_c0065, iaea_hhr10_radiotherapy_facilities_c0026, iaea_ssg46_medical_uses_radiation_safety_c0281, iaea_srs47_radiotherapy_facility_radiation_protection_c0019, iaea_srs47_radiotherapy_facility_radiation_protection_c0195, iaea_srs47_radiotherapy_facility_radiation_protection_c0030
-- Retrieved sections: 9. SUMMARY OF THE COMPARISON BETWEEN | 5. RADIOTHERAPY WORKFLOW AND CONCEPT DESIGN | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | 10. RADIATION SURVEY | 3. DESIGN FEATURES
+- Retrieved doc_ids: iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_hhr17_linear_accelerators
+- Retrieved chunks: iaea_srs47_radiotherapy_facility_radiation_protection_c0171, iaea_srs47_radiotherapy_facility_radiation_protection_c0160, iaea_srs47_radiotherapy_facility_radiation_protection_c0019, iaea_srs47_radiotherapy_facility_radiation_protection_c0195, iaea_srs47_radiotherapy_facility_radiation_protection_c0030, iaea_hhr17_linear_accelerators_c0065
+- Retrieved sections: 9. WORKED EXAMPLES FOR SPECIAL PROCEDURES | 8. WORKED EXAMPLE OF A BRACHYTHERAPY FACILITY | 1. INTRODUCTION | 10. RADIATION SURVEY | 3. DESIGN FEATURES | 9. SUMMARY OF THE COMPARISON BETWEEN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -2081,9 +2081,9 @@
 - Public source URLs: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_srs47_radiotherapy_facility_radiation_protection
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0434, iaea_ssg46_medical_uses_radiation_safety_c0138, iaea_ssg46_medical_uses_radiation_safety_c0137, iaea_ssg46_medical_uses_radiation_safety_c0452, iaea_ssg46_medical_uses_radiation_safety_c0517, iaea_srs47_radiotherapy_facility_radiation_protection_c0019
-- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR | 3. SPECIFIC RECOMMENDATIONS FOR | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_srs47_radiotherapy_facility_radiation_protection
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0434, iaea_ssg46_medical_uses_radiation_safety_c0138, iaea_ssg46_medical_uses_radiation_safety_c0137, iaea_ssg46_medical_uses_radiation_safety_c0452, iaea_srs47_radiotherapy_facility_radiation_protection_c0019, iaea_srs47_radiotherapy_facility_radiation_protection_c0005
+- Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR | 3. SPECIFIC RECOMMENDATIONS FOR | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 1. INTRODUCTION | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -2345,8 +2345,8 @@
 - Public source URLs: https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg148_helical_tomotherapy_qa
-- Retrieved chunks: aapm_tg119_imrt_commissioning_c0054, aapm_tg119_imrt_commissioning_c0053, aapm_tg119_imrt_commissioning_c0011, aapm_tg119_imrt_commissioning_c0006, aapm_tg119_imrt_commissioning_c0052, aapm_tg148_helical_tomotherapy_qa_c0106
+- Retrieved doc_ids: aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning, aapm_tg119_imrt_commissioning
+- Retrieved chunks: aapm_tg119_imrt_commissioning_c0054, aapm_tg119_imrt_commissioning_c0053, aapm_tg119_imrt_commissioning_c0011, aapm_tg119_imrt_commissioning_c0006, aapm_tg119_imrt_commissioning_c0052, aapm_tg119_imrt_commissioning_c0042
 - Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
@@ -2405,8 +2405,8 @@
 - Public source URLs: https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning, aapm_tg120_imrt_dosimetry_tools, aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning
-- Retrieved chunks: aapm_tg106_beam_data_commissioning_c0005, aapm_tg106_beam_data_commissioning_c0072, aapm_tg106_beam_data_commissioning_c0007, aapm_tg120_imrt_dosimetry_tools_c0009, aapm_tg106_beam_data_commissioning_c0003, aapm_tg106_beam_data_commissioning_c0013
+- Retrieved doc_ids: aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning, aapm_tg106_beam_data_commissioning
+- Retrieved chunks: aapm_tg106_beam_data_commissioning_c0005, aapm_tg106_beam_data_commissioning_c0072, aapm_tg106_beam_data_commissioning_c0007, aapm_tg106_beam_data_commissioning_c0013, aapm_tg106_beam_data_commissioning_c0003, aapm_tg106_beam_data_commissioning_c0113
 - Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
@@ -2465,9 +2465,9 @@
 - Public source URLs: https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg120_imrt_dosimetry_tools, aapm_tg120_imrt_dosimetry_tools, aapm_report_113_physics_clinical_trials, aapm_tg120_imrt_dosimetry_tools, aapm_tg218_imrt_measurement_based_qa, aapm_tg120_imrt_dosimetry_tools
-- Retrieved chunks: aapm_tg120_imrt_dosimetry_tools_c0075, aapm_tg120_imrt_dosimetry_tools_c0009, aapm_report_113_physics_clinical_trials_c0119, aapm_tg120_imrt_dosimetry_tools_c0056, aapm_tg218_imrt_measurement_based_qa_c0054, aapm_tg120_imrt_dosimetry_tools_c0032
-- Retrieved sections: UNKNOWN | UNKNOWN | 68. Science Council and Therapy Physics Committee of the American Association of Physicists in | UNKNOWN | 3. REVIEW OF MEASUREMENT METHODS | UNKNOWN
+- Retrieved doc_ids: aapm_tg120_imrt_dosimetry_tools, aapm_tg120_imrt_dosimetry_tools, aapm_tg120_imrt_dosimetry_tools, aapm_tg120_imrt_dosimetry_tools, aapm_tg120_imrt_dosimetry_tools, aapm_tg120_imrt_dosimetry_tools
+- Retrieved chunks: aapm_tg120_imrt_dosimetry_tools_c0075, aapm_tg120_imrt_dosimetry_tools_c0009, aapm_tg120_imrt_dosimetry_tools_c0056, aapm_tg120_imrt_dosimetry_tools_c0032, aapm_tg120_imrt_dosimetry_tools_c0046, aapm_tg120_imrt_dosimetry_tools_c0036
+- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -2729,9 +2729,9 @@
 - Public source URLs: https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg75_igrt_imaging_dose, iaea_hhr16_igrt_qa, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management
-- Retrieved chunks: aapm_tg180_image_guidance_dose_management_c0039, aapm_tg180_image_guidance_dose_management_c0036, aapm_tg75_igrt_imaging_dose_c0010, iaea_hhr16_igrt_qa_c0065, aapm_tg180_image_guidance_dose_management_c0008, aapm_tg180_image_guidance_dose_management_c0003
-- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | 6. IMAGE GUIDED RADIOTHERAPY | UNKNOWN | UNKNOWN
+- Retrieved doc_ids: aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg75_igrt_imaging_dose, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management
+- Retrieved chunks: aapm_tg180_image_guidance_dose_management_c0039, aapm_tg180_image_guidance_dose_management_c0036, aapm_tg75_igrt_imaging_dose_c0010, aapm_tg180_image_guidance_dose_management_c0008, aapm_tg180_image_guidance_dose_management_c0005, aapm_tg180_image_guidance_dose_management_c0041
+- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -2753,9 +2753,9 @@
 - Public source URLs: https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, iaea_hhr16_igrt_qa, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management
-- Retrieved chunks: aapm_tg180_image_guidance_dose_management_c0038, aapm_tg180_image_guidance_dose_management_c0008, aapm_tg180_image_guidance_dose_management_c0039, iaea_hhr16_igrt_qa_c0015, aapm_tg180_image_guidance_dose_management_c0027, aapm_tg180_image_guidance_dose_management_c0036
-- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | 1. INTRODUCTION | UNKNOWN | UNKNOWN
+- Retrieved doc_ids: aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management
+- Retrieved chunks: aapm_tg180_image_guidance_dose_management_c0038, aapm_tg180_image_guidance_dose_management_c0008, aapm_tg180_image_guidance_dose_management_c0039, aapm_tg180_image_guidance_dose_management_c0027, aapm_tg180_image_guidance_dose_management_c0036, aapm_tg180_image_guidance_dose_management_c0009
+- Retrieved sections: UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
 
@@ -2813,8 +2813,8 @@
 - Public source URLs: https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824
 - Source note: Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.
 - Report scope applied: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg75_igrt_imaging_dose
-- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0225, aapm_tg180_image_guidance_dose_management_c0038, aapm_tg180_image_guidance_dose_management_c0036, aapm_tg180_image_guidance_dose_management_c0009, aapm_tg180_image_guidance_dose_management_c0039, aapm_tg75_igrt_imaging_dose_c0010
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management, aapm_tg180_image_guidance_dose_management
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0225, aapm_tg180_image_guidance_dose_management_c0038, aapm_tg180_image_guidance_dose_management_c0036, aapm_tg180_image_guidance_dose_management_c0009, aapm_tg180_image_guidance_dose_management_c0039, aapm_tg180_image_guidance_dose_management_c0008
 - Retrieved sections: 3. SPECIFIC RECOMMENDATIONS FOR | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN
 - Predicted abstain proxy: False
 - Expected abstain: False
@@ -3113,5 +3113,225 @@
 - Retrieved doc_ids: iaea_hhr8_in_vivo_dosimetry, iaea_pub1196_radiation_oncology_physics_handbook, aapm_tg119_imrt_commissioning, aapm_tg100_radiotherapy_quality_management, aapm_tg119_imrt_commissioning, aapm_tg120_imrt_dosimetry_tools
 - Retrieved chunks: iaea_hhr8_in_vivo_dosimetry_c0146, iaea_pub1196_radiation_oncology_physics_handbook_c0549, aapm_tg119_imrt_commissioning_c0040, aapm_tg100_radiotherapy_quality_management_c0057, aapm_tg119_imrt_commissioning_c0038, aapm_tg120_imrt_dosimetry_tools_c0075
 - Retrieved sections: 6. SUMMARY OF MEASUREMENTS BY CRP PARTICIPANTS | UNKNOWN | UNKNOWN | 6. TG-100 METHODOLOGY FOR DESIGNING | UNKNOWN | UNKNOWN
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0261: What chemotherapy regimen should be used for stage III lung cancer?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs14_planning_national_radiotherapy_services, iaea_pub1297_quatro_audit_tool, aapm_report_166_biological_models_treatment_planning_qa, iaea_pub1638_radiotherapy_in_cancer_care, iaea_pub1638_radiotherapy_in_cancer_care, iaea_pub1196_radiation_oncology_physics_handbook
+- Retrieved chunks: iaea_hhs14_planning_national_radiotherapy_services_c0015, iaea_pub1297_quatro_audit_tool_c0031, aapm_report_166_biological_models_treatment_planning_qa_c0111, iaea_pub1638_radiotherapy_in_cancer_care_c0098, iaea_pub1638_radiotherapy_in_cancer_care_c0091, iaea_pub1196_radiation_oncology_physics_handbook_c0752
+- Retrieved sections: 2. TECHNICAL BACKGROUND | 3. INFRASTRUCTURE | UNKNOWN | REFERENCES | REFERENCES | UNKNOWN
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0262: How should a patient manage skin burns after radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, aapm_tg75_igrt_imaging_dose, aapm_tg75_igrt_imaging_dose, iaea_pub1990_quatro_quality_improvement, aapm_tg75_igrt_imaging_dose, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0427, aapm_tg75_igrt_imaging_dose_c0010, aapm_tg75_igrt_imaging_dose_c0007, iaea_pub1990_quatro_quality_improvement_c0068, aapm_tg75_igrt_imaging_dose_c0061, iaea_pub1297_quatro_audit_tool_c0053
+- Retrieved sections: 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | UNKNOWN | UNKNOWN | 4. PATIENT RELATED PROCEDURES | UNKNOWN | 4. PATIENT RELATED PROCEDURES
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0263: What MRI protocol is best for diagnosing a brain tumor?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhr16_igrt_qa, aapm_report_113_physics_clinical_trials, aapm_report_113_physics_clinical_trials, iaea_hhr17_linear_accelerators, iaea_hhs31_accuracy_requirements_dosimetry
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0381, iaea_hhr16_igrt_qa_c0036, aapm_report_113_physics_clinical_trials_c0037, aapm_report_113_physics_clinical_trials_c0022, iaea_hhr17_linear_accelerators_c0063, iaea_hhs31_accuracy_requirements_dosimetry_c0380
+- Retrieved sections: 7. MANAGING UNCERTAINTY | 4. IMAGE GUIDED RADIOTHERAPY PROGRAMME | 8. Patient Immobilization, Target Definition, and Treatment Guidance | 5. Image Acquisition for Target Definition and Treatment Assessment | 9. SUMMARY OF THE COMPARISON BETWEEN | 7. MANAGING UNCERTAINTY
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0264: What ICD-10 code should be billed for external beam radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_trs398_absorbed_dose_ebrt, iaea_trs398_rev1_absorbed_dose_ebrt
+- Retrieved chunks: iaea_trs398_rev1_absorbed_dose_ebrt_c0471, iaea_trs398_rev1_absorbed_dose_ebrt_c0349, iaea_trs398_absorbed_dose_ebrt_c0274, iaea_trs398_rev1_absorbed_dose_ebrt_c0020, iaea_trs398_absorbed_dose_ebrt_c0397, iaea_trs398_rev1_absorbed_dose_ebrt_c0321
+- Retrieved sections: 11. CODE OF PRACTICE FOR LIGHT ION BEAMS | 10. CODE OF PRACTICE FOR PROTON BEAMS | 10. CODE OF PRACTICE FOR PROTON BEAMS | 1. INTRODUCTION | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS | 10. CODE OF PRACTICE FOR PROTON BEAMS
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0265: Which antibiotic treats cellulitis after radiation dermatitis?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: aapm_tg263_nomenclature, iaea_pub1196_radiation_oncology_physics_handbook, iaea_ssg46_medical_uses_radiation_safety, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_pub1196_radiation_oncology_physics_handbook, aapm_report_46_tg40_radiation_oncology_qa
+- Retrieved chunks: aapm_tg263_nomenclature_c0079, iaea_pub1196_radiation_oncology_physics_handbook_c0680, iaea_ssg46_medical_uses_radiation_safety_c0086, iaea_srs47_radiotherapy_facility_radiation_protection_c0159, iaea_pub1196_radiation_oncology_physics_handbook_c0803, aapm_report_46_tg40_radiation_oncology_qa_c0016
+- Retrieved sections: 14. Recommendations for Clinical Trial Study Groups | UNKNOWN | 2. GENERAL RECOMMENDATIONS FOR | 8. WORKED EXAMPLE OF A BRACHYTHERAPY FACILITY | UNKNOWN | 10. Computation of Monitor Units
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0266: What survival benefit does immunotherapy add after chemoradiation?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_pub1638_radiotherapy_in_cancer_care, aapm_tg147_nonradiographic_localization_qa, iaea_trs469_reference_dosimeters, iaea_pub1297_quatro_audit_tool, iaea_trs430_tps_commissioning_qa, aapm_tg106_beam_data_commissioning
+- Retrieved chunks: iaea_pub1638_radiotherapy_in_cancer_care_c0026, aapm_tg147_nonradiographic_localization_qa_c0055, iaea_trs469_reference_dosimeters_c0108, iaea_pub1297_quatro_audit_tool_c0050, iaea_trs430_tps_commissioning_qa_c0070, aapm_tg106_beam_data_commissioning_c0012
+- Retrieved sections: UNKNOWN | UNKNOWN | 7. FUNDAMENTALS OF CALIBRATION | 4. PATIENT RELATED PROCEDURES | 4. ALGORITHMS USED IN | UNKNOWN
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0267: How should a hospital obtain insurance authorization for IMRT?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0081, iaea_ssg46_medical_uses_radiation_safety_c0053, iaea_ssg46_medical_uses_radiation_safety_c0078, iaea_ssg46_medical_uses_radiation_safety_c0079, iaea_ssg46_medical_uses_radiation_safety_c0080, iaea_ssg46_medical_uses_radiation_safety_c0082
+- Retrieved sections: 2. GENERAL RECOMMENDATIONS FOR | 2. GENERAL RECOMMENDATIONS FOR | 2. GENERAL RECOMMENDATIONS FOR | 2. GENERAL RECOMMENDATIONS FOR | 2. GENERAL RECOMMENDATIONS FOR | 2. GENERAL RECOMMENDATIONS FOR
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0268: What CT contrast dose should be used for a patient with renal insufficiency?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0227, iaea_ssg46_medical_uses_radiation_safety_c0209, iaea_ssg46_medical_uses_radiation_safety_c0224, iaea_ssg46_medical_uses_radiation_safety_c0225, iaea_ssg46_medical_uses_radiation_safety_c0367, iaea_ssg46_medical_uses_radiation_safety_c0216
+- Retrieved sections: 3. SPECIFIC RECOMMENDATIONS FOR | 3. SPECIFIC RECOMMENDATIONS FOR | 3. SPECIFIC RECOMMENDATIONS FOR | 3. SPECIFIC RECOMMENDATIONS FOR | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0269: What diet should a patient follow during head and neck radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1990_quatro_quality_improvement, iaea_hhs31_accuracy_requirements_dosimetry, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_pub1297_quatro_audit_tool, iaea_pub1638_radiotherapy_in_cancer_care
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0424, iaea_pub1990_quatro_quality_improvement_c0076, iaea_hhs31_accuracy_requirements_dosimetry_c0044, iaea_tecdoc1588_3dcrt_imrt_transition_c0099, iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1638_radiotherapy_in_cancer_care_c0648
+- Retrieved sections: 7. MANAGING UNCERTAINTY | 4. PATIENT RELATED PROCEDURES | 2. THE RADIOTHERAPY PROCESS | 2. INTENSITY MODULATED RADIOTHERAPY | 4. PATIENT RELATED PROCEDURES | REFERENCES
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0270: Can proton therapy cure prostate cancer better than surgery?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs14_planning_national_radiotherapy_services, iaea_pub1638_radiotherapy_in_cancer_care, iaea_hhs14_planning_national_radiotherapy_services, iaea_hhs14_planning_national_radiotherapy_services, iaea_hhs14_planning_national_radiotherapy_services, iaea_pub1638_radiotherapy_in_cancer_care
+- Retrieved chunks: iaea_hhs14_planning_national_radiotherapy_services_c0015, iaea_pub1638_radiotherapy_in_cancer_care_c0026, iaea_hhs14_planning_national_radiotherapy_services_c0021, iaea_hhs14_planning_national_radiotherapy_services_c0033, iaea_hhs14_planning_national_radiotherapy_services_c0014, iaea_pub1638_radiotherapy_in_cancer_care_c0011
+- Retrieved sections: 2. TECHNICAL BACKGROUND | UNKNOWN | 2. TECHNICAL BACKGROUND | 2. TECHNICAL BACKGROUND | 1. INTRODUCTION | UNKNOWN
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0271: How should a patient interpret PET/CT SUV after treatment?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, aapm_report_113_physics_clinical_trials, aapm_tg101_sbrt, iaea_trs430_tps_commissioning_qa, iaea_pub1990_quatro_quality_improvement, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0367, aapm_report_113_physics_clinical_trials_c0021, aapm_tg101_sbrt_c0015, iaea_trs430_tps_commissioning_qa_c0168, iaea_pub1990_quatro_quality_improvement_c0040, iaea_pub1297_quatro_audit_tool_c0055
+- Retrieved sections: 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. Image Acquisition for Target Definition and Treatment Assessment | UNKNOWN | 9. COMMISSIONING | 3. INFRASTRUCTURE | 4. PATIENT RELATED PROCEDURES
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0272: What radiation dose should this patient receive for a new tumor diagnosis?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, aapm_report_46_tg40_radiation_oncology_qa, aapm_tg75_igrt_imaging_dose, aapm_tg75_igrt_imaging_dose
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0266, iaea_ssg46_medical_uses_radiation_safety_c0548, iaea_ssg46_medical_uses_radiation_safety_c0208, aapm_report_46_tg40_radiation_oncology_qa_c0096, aapm_tg75_igrt_imaging_dose_c0010, aapm_tg75_igrt_imaging_dose_c0089
+- Retrieved sections: 3. SPECIFIC RECOMMENDATIONS FOR | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR | 3. End Effects | UNKNOWN | UNKNOWN
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0273: Should my mother choose SBRT or surgery for early stage lung cancer?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_ssg46_medical_uses_radiation_safety, iaea_hhs14_planning_national_radiotherapy_services, iaea_hhs14_planning_national_radiotherapy_services, aapm_tg101_sbrt, aapm_tg101_sbrt
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0461, iaea_ssg46_medical_uses_radiation_safety_c0210, iaea_hhs14_planning_national_radiotherapy_services_c0015, iaea_hhs14_planning_national_radiotherapy_services_c0051, aapm_tg101_sbrt_c0004, aapm_tg101_sbrt_c0006
+- Retrieved sections: 8. RECOMMENDATIONS | 3. SPECIFIC RECOMMENDATIONS FOR | 2. TECHNICAL BACKGROUND | 4. TOOLS TO ASSIST WITH STRATEGIC DEVELOPMENT | UNKNOWN | UNKNOWN
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0274: What are the legal requirements for malpractice documentation after a treatment error?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_pub1990_quatro_quality_improvement, iaea_trs430_tps_commissioning_qa, iaea_pub1297_quatro_audit_tool, iaea_pub1297_quatro_audit_tool, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_pub1990_quatro_quality_improvement_c0074, iaea_trs430_tps_commissioning_qa_c0157, iaea_pub1297_quatro_audit_tool_c0051, iaea_pub1297_quatro_audit_tool_c0050, iaea_hhs31_accuracy_requirements_dosimetry_c0405, iaea_pub1297_quatro_audit_tool_c0053
+- Retrieved sections: 4. PATIENT RELATED PROCEDURES | 8. ACCEPTANCE TESTING | 4. PATIENT RELATED PROCEDURES | 4. PATIENT RELATED PROCEDURES | 7. MANAGING UNCERTAINTY | 4. PATIENT RELATED PROCEDURES
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0275: How should a dentist manage osteoradionecrosis risk after radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_ssg46_medical_uses_radiation_safety, iaea_hhs31_accuracy_requirements_dosimetry, aapm_tg100_radiotherapy_quality_management, aapm_tg179_ct_based_igrt_qa, iaea_hhr17_linear_accelerators
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0412, iaea_ssg46_medical_uses_radiation_safety_c0106, iaea_hhs31_accuracy_requirements_dosimetry_c0460, aapm_tg100_radiotherapy_quality_management_c0008, aapm_tg179_ct_based_igrt_qa_c0054, iaea_hhr17_linear_accelerators_c0038
+- Retrieved sections: 7. MANAGING UNCERTAINTY | 2. GENERAL RECOMMENDATIONS FOR | 7. MANAGING UNCERTAINTY | 1. PREFACE | UNKNOWN | 6. INFRASTRUCTURE
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0276: Which immunotherapy should be combined with radiation for melanoma?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety
+- Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0418, iaea_ssg46_medical_uses_radiation_safety_c0147, iaea_ssg46_medical_uses_radiation_safety_c0138, iaea_ssg46_medical_uses_radiation_safety_c0281, iaea_ssg46_medical_uses_radiation_safety_c0349, iaea_ssg46_medical_uses_radiation_safety_c0509
+- Retrieved sections: 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR | 3. SPECIFIC RECOMMENDATIONS FOR | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0277: What prognosis should be given to a patient with metastatic disease after palliative radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_pub1990_quatro_quality_improvement, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1297_quatro_audit_tool, iaea_pub1638_radiotherapy_in_cancer_care, iaea_hhs14_planning_national_radiotherapy_services
+- Retrieved chunks: iaea_pub1297_quatro_audit_tool_c0055, iaea_pub1990_quatro_quality_improvement_c0132, iaea_hhs31_accuracy_requirements_dosimetry_c0121, iaea_pub1297_quatro_audit_tool_c0054, iaea_pub1638_radiotherapy_in_cancer_care_c0644, iaea_hhs14_planning_national_radiotherapy_services_c0052
+- Retrieved sections: 4. PATIENT RELATED PROCEDURES | 7. EDUCATION AND TRAINING PROGRAMMES | 5. CLINICAL FRAMEWORK FOR CONSIDERING | 4. PATIENT RELATED PROCEDURES | REFERENCES | 4. TOOLS TO ASSIST WITH STRATEGIC DEVELOPMENT
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0278: How should nausea be treated during abdominal radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_tecdoc1543_quatro, iaea_hhs14_planning_national_radiotherapy_services, iaea_tecdoc1588_3dcrt_imrt_transition, iaea_tecdoc_1040_radiotherapy_programme, iaea_hhr16_igrt_qa, iaea_hhr16_igrt_qa
+- Retrieved chunks: iaea_tecdoc1543_quatro_c0169, iaea_hhs14_planning_national_radiotherapy_services_c0111, iaea_tecdoc1588_3dcrt_imrt_transition_c0027, iaea_tecdoc_1040_radiotherapy_programme_c0174, iaea_hhr16_igrt_qa_c0080, iaea_hhr16_igrt_qa_c0081
+- Retrieved sections: 10. REFERENCES TO THE EXPERT’S REPORT | 8. IMPLEMENTATION AND MONITORING | 1. CONFORMAL RADIOTHERAPY | 7. RADIATION PROTECTION AND SAFETY OF SOURCES | 6. IMAGE GUIDED RADIOTHERAPY | 6. IMAGE GUIDED RADIOTHERAPY
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0279: What surgical margin is required after preoperative radiotherapy?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_srs47_radiotherapy_facility_radiation_protection, iaea_pub1990_quatro_quality_improvement, iaea_trs430_tps_commissioning_qa, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1297_quatro_audit_tool
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0148, iaea_srs47_radiotherapy_facility_radiation_protection_c0160, iaea_pub1990_quatro_quality_improvement_c0119, iaea_trs430_tps_commissioning_qa_c0071, iaea_hhs31_accuracy_requirements_dosimetry_c0117, iaea_pub1297_quatro_audit_tool_c0080
+- Retrieved sections: 5. CLINICAL FRAMEWORK FOR CONSIDERING | 8. WORKED EXAMPLE OF A BRACHYTHERAPY FACILITY | 7. EDUCATION AND TRAINING PROGRAMMES | 4. ALGORITHMS USED IN | 5. CLINICAL FRAMEWORK FOR CONSIDERING | 5. EQUIPMENT RELATED PROCEDURES
+- Predicted abstain proxy: True
+- Expected abstain: True
+
+### public_q0280: Which hospital billing code applies to adaptive radiotherapy planning?
+- Expected doc_id: None
+- Public source basis: Hard negative medical or administrative boundary question outside radiotherapy physics report QA.
+- Source note: Synthetic boundary control used to test abstention on medical-adjacent but out-of-scope requests.
+- Report scope applied: None
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_trs469_reference_dosimeters, iaea_trs398_absorbed_dose_ebrt
+- Retrieved chunks: iaea_hhs31_accuracy_requirements_dosimetry_c0126, iaea_hhs31_accuracy_requirements_dosimetry_c0127, iaea_hhs31_accuracy_requirements_dosimetry_c0125, iaea_hhs31_accuracy_requirements_dosimetry_c0128, iaea_trs469_reference_dosimeters_c0135, iaea_trs398_absorbed_dose_ebrt_c0298
+- Retrieved sections: 5. CLINICAL FRAMEWORK FOR CONSIDERING | 5. CLINICAL FRAMEWORK FOR CONSIDERING | 5. CLINICAL FRAMEWORK FOR CONSIDERING | 5. CLINICAL FRAMEWORK FOR CONSIDERING | 9. QUALITY SYSTEM FOR SECONDARY STANDARDS | 11. CODE OF PRACTICE FOR HEAVY ION BEAMS
 - Predicted abstain proxy: True
 - Expected abstain: True

@@ -59,6 +59,17 @@ OOD_TERMS = {
     "dough",
 }
 
+CLINICAL_BOUNDARY_PATTERNS = [
+    re.compile(r"\b(chemotherapy|immunotherapy|antibiotic|cellulitis|radiation dermatitis)\b", re.I),
+    re.compile(r"\b(surgery|surgical|survival benefit|cure rate|prognosis)\b", re.I),
+    re.compile(r"\b(icd-?10|billing|insurance|authorization|malpractice|legal requirement)\b", re.I),
+    re.compile(r"\b(mri protocol|pet/ct suv|contrast dose|renal insufficiency)\b", re.I),
+    re.compile(r"\b(diet|nutrition|skin burns?|osteoradionecrosis|dental management)\b", re.I),
+    re.compile(r"\b(nausea|vomiting|pain control|symptom management|side effect management)\b", re.I),
+    re.compile(r"\b(should i|should my|my mother|my father|my wife|my husband|this patient)\b", re.I),
+    re.compile(r"\b(which treatment should|choose sbrt or surgery|treatment regimen)\b", re.I),
+]
+
 
 @dataclass
 class RoutingDecision:
@@ -93,8 +104,14 @@ def analyze_scene(query: str, report_id: str | None = None) -> dict[str, Any]:
         name for name, pattern in QUESTION_PATTERNS.items()
         if pattern.search(query)
     ]
+    clinical_boundary_matches = [
+        pattern.pattern for pattern in CLINICAL_BOUNDARY_PATTERNS
+        if pattern.search(query)
+    ]
 
-    if _contains_any(query_l, OOD_TERMS) and not domain_tags:
+    if clinical_boundary_matches:
+        task_type = "out_of_scope"
+    elif _contains_any(query_l, OOD_TERMS) and not domain_tags:
         task_type = "out_of_scope"
     elif "table_or_figure" in matched_patterns:
         task_type = "asset_lookup"
@@ -121,6 +138,7 @@ def analyze_scene(query: str, report_id: str | None = None) -> dict[str, Any]:
         "task_type": task_type,
         "domain_tags": domain_tags,
         "matched_patterns": matched_patterns,
+        "clinical_boundary_matches": clinical_boundary_matches,
         "has_report_scope": bool(report_id),
         "query_length_tokens": len(query.split()),
         "complexity": complexity,
@@ -189,15 +207,15 @@ def select_retrieval_strategy(
         return RoutingDecision("definition_sparse_microchunk", "sparse", "Definition queries benefit from lexical cues and definition microchunks.", evidence_top_k=5)
     if task_type == "asset_lookup":
         return RoutingDecision("asset_aware_sparse", "sparse", "Table or figure cue detected; retrieve text evidence and surface asset-aware trace.", evidence_top_k=8)
-    if task_type in {"comparison", "multi_report_synthesis", "procedure_or_qa"}:
+    if task_type == "procedure_or_qa":
+        return RoutingDecision("qa_sparse_exact_terms", "sparse", "QA and procedure queries often contain exact report terminology.", evidence_top_k=8)
+    if task_type in {"comparison", "multi_report_synthesis"}:
         if dense_available:
             return RoutingDecision("hybrid_rrf_synthesis", "hybrid", "Synthesis queries benefit from dense plus lexical fusion.", evidence_top_k=8)
         return RoutingDecision("broad_sparse_synthesis", "sparse", "Dense index is unavailable; use broader sparse evidence for synthesis.", evidence_top_k=8)
     if task_type == "calculation_or_formula":
         return RoutingDecision("formula_sparse", "sparse", "Formula and calculation queries need exact lexical terms.", evidence_top_k=6)
-    if dense_available:
-        return RoutingDecision("hybrid_direct", "hybrid", "Dense index is available for direct fact lookup.", evidence_top_k=5)
-    return RoutingDecision("sparse_direct", "sparse", "Portable sparse backend is available.", evidence_top_k=5)
+    return RoutingDecision("sparse_direct", "sparse", "Direct report lookup benefits from exact lexical terms and source titles.", evidence_top_k=5)
 
 
 def append_experience_record(path: Path, record: dict[str, Any]) -> None:

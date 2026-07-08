@@ -2,13 +2,14 @@
 
 ## Default Neural Retrieval Profile
 
-- Embedding model: `BAAI/bge-base-en-v1.5`
+- Embedding model: `BAAI/bge-small-en-v1.5`
 - Query prefix: `Represent this sentence for searching relevant passages: `
 - Passage prefix: none
 - Reranker model: `BAAI/bge-reranker-v2-m3`
 - Recommended reranker max length: 1024
+- Current local dense index: `sentence_transformers` backend, 384 dimensions, FAISS inner-product search.
 
-This profile requires `sentence-transformers`, `transformers`, `torch`, and local model cache access.
+This profile requires `sentence-transformers`, `transformers`, `torch`, and local model cache access. `RAG_FORCE_LEXICAL_RERANK=1` can be used to keep reranking deterministic while still using real semantic embeddings.
 
 ## No-model Reproducible Profile
 
@@ -71,12 +72,12 @@ unless `HF_HOME` or `HUGGINGFACE_HUB_CACHE` is set.
 
 ## Validation
 
-No-model validation:
+Semantic validation:
 
 ```powershell
-$env:RAG_FORCE_HASH_EMBEDDINGS="1"
+Remove-Item Env:RAG_FORCE_HASH_EMBEDDINGS -ErrorAction SilentlyContinue
 $env:RAG_FORCE_LEXICAL_RERANK="1"
-$env:EMBEDDING_MODEL_NAME="hash-fallback"
+$env:EMBEDDING_MODEL_NAME="BAAI/bge-small-en-v1.5"
 python scripts/validate_skill_package.py --skill-root . --check-sample-baseline --require-index
 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope
 ```
