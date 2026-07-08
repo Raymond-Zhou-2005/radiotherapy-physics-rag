@@ -8,10 +8,10 @@ The public repository stores source metadata and build scripts. It does not redi
 
 ## Current Catalog
 
-- Source records: 37.
-- Current local runtime PDFs: 35.
-- Manual candidates not included in the current runtime: `aapm_tg100_radiotherapy_quality_management`, `tg158`.
-- Current runtime chunks: 9290.
+- Source records: 49.
+- Current local runtime PDFs: 49.
+- Manual candidates not included in the current runtime: none in this local build.
+- Current runtime chunks: 10923.
 
 The latest source metadata lives in:
 
@@ -21,7 +21,7 @@ reports/starter_corpus_sources.json
 
 ## Added 2026-07-08
 
-The corpus was expanded with five direct-download IAEA sources:
+The corpus was first expanded with five direct-download IAEA sources:
 
 - `iaea_tecdoc1588_3dcrt_imrt_transition`
 - `iaea_hhs14_planning_national_radiotherapy_services`
@@ -30,6 +30,25 @@ The corpus was expanded with five direct-download IAEA sources:
 - `iaea_pub1638_radiotherapy_in_cancer_care`
 
 These were selected because they use official IAEA PDF URLs that can be rebuilt by the public download script.
+
+The local runtime was then expanded again by refreshing the two previously missing AAPM sources and adding 12 additional public/free-access AAPM reports that improve coverage of QA, IMRT, IGRT, SBRT, image registration, imaging dose, Tomotherapy, and commissioning:
+
+- `aapm_tg100_radiotherapy_quality_management`
+- `tg158`
+- `aapm_tg142_medical_accelerator_qa`
+- `aapm_tg119_imrt_commissioning`
+- `aapm_tg106_beam_data_commissioning`
+- `aapm_tg120_imrt_dosimetry_tools`
+- `aapm_tg218_imrt_measurement_based_qa`
+- `aapm_tg179_ct_based_igrt_qa`
+- `aapm_tg147_nonradiographic_localization_qa`
+- `aapm_tg101_sbrt`
+- `aapm_tg75_igrt_imaging_dose`
+- `aapm_tg180_image_guidance_dose_management`
+- `aapm_tg148_helical_tomotherapy_qa`
+- `aapm_tg132_image_registration_fusion`
+
+Several AAPM/Wiley records are public or free-access but not reliable direct scripted downloads. The source catalog therefore records official URLs plus, where useful, `download_url` or `render_url` hints. The public release does not redistribute these PDFs or derived full text.
 
 ## Runtime Build
 
@@ -68,8 +87,8 @@ Do commit:
 Current public benchmark:
 
 - `evaluation/radiotherapy_skill_open_questions.json`
-- 190 questions total.
-- 175 in-domain public-source topic questions.
+- 260 questions total.
+- 245 in-domain public-source topic questions.
 - 15 OOD controls.
 
 The benchmark is open-source and source-attributed, but not expert-adjudicated.

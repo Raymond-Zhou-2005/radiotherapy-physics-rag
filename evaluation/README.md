@@ -24,10 +24,10 @@ evaluation/public_credible_questions.json
 
 Current size:
 
-- Total questions: 190.
-- In-domain public-source topic questions: 175.
+- Total questions: 260.
+- In-domain public-source topic questions: 245.
 - Out-of-domain controls: 15.
-- Source records represented in runtime: 35.
+- Source records represented in runtime: 49.
 
 Each item stores:
 
@@ -59,10 +59,10 @@ Current results:
 
 | Strategy | Document Recall@3 | Document Recall@5 | OOD TP | OOD FN |
 | --- | ---: | ---: | ---: | ---: |
-| sparse | 0.686 | 0.806 | 9 | 6 |
-| hybrid hash+dense | 0.663 | 0.754 | 10 | 5 |
-| auto | 0.663 | 0.754 | 10 | 5 |
-| routed | 0.674 | 0.794 | 9 | 6 |
+| sparse | 0.755 | 0.857 | 8 | 7 |
+| hybrid hash+dense | 0.731 | 0.816 | 8 | 7 |
+| auto | 0.731 | 0.816 | 8 | 7 |
+| routed | 0.755 | 0.845 | 8 | 7 |
 
 `Recall@3`, `Recall@5`, and `MRR` are 0.000 in the current report because the generated public benchmark does not contain expert gold chunk IDs or section labels. Use document recall and abstention metrics for this open-source benchmark.
 
@@ -74,14 +74,14 @@ python scripts/evaluate_navigator.py --questions evaluation/radiotherapy_skill_o
 
 Current results:
 
-- Topic Recall@1: 0.880.
-- Topic Recall@2: 0.926.
-- Topic Recall@3: 0.966.
-- Candidate Document Recall@1: 0.211.
-- Candidate Document Recall@3: 0.480.
-- Candidate Document Recall@5: 0.709.
+- Topic Recall@1: 0.837.
+- Topic Recall@2: 0.939.
+- Topic Recall@3: 0.967.
+- Candidate Document Recall@1: 0.188.
+- Candidate Document Recall@3: 0.490.
+- Candidate Document Recall@5: 0.673.
 
-Interpretation: the navigator usually routes to the right broad topic but still needs better document ranking within topic branches.
+Interpretation: the navigator usually routes to the right broad topic. Document ranking inside topic branches became harder after adding overlapping AAPM QA, IMRT, IGRT, SBRT, registration, and commissioning reports.
 
 ## Agent Skill Evaluation
 
@@ -91,10 +91,10 @@ RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash
 
 Current results:
 
-- Tool success rate: 0.947.
-- Document Hit Rate@5: 0.800.
-- Citation present rate: 0.994.
-- OOD abstention success rate: 0.600.
+- Tool success rate: 0.965.
+- Document Hit Rate@5: 0.845.
+- Citation present rate: 0.996.
+- OOD abstention success rate: 0.533.
 - Unexpected in-scope error count: 1.
 
 ## Private Licensed Questions

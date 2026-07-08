@@ -187,7 +187,7 @@ def test_pyproject_console_scripts_are_declared_without_http_server():
 
 def test_starter_corpus_sources_are_public_metadata():
     sources = json.loads((PROJECT_ROOT / "reports" / "starter_corpus_sources.json").read_text(encoding="utf-8"))
-    assert len(sources) >= 37
+    assert len(sources) >= 49
     for record in sources:
         assert record["doc_id"]
         assert record["file"].startswith("reports/raw/")
@@ -260,7 +260,7 @@ def test_public_evaluation_files_exist_and_are_source_attributed():
     ]:
         assert (PROJECT_ROOT / rel).exists()
     questions = json.loads((PROJECT_ROOT / "evaluation" / "public_credible_questions.json").read_text(encoding="utf-8"))
-    assert len(questions) >= 150
+    assert len(questions) >= 250
     for item in questions:
         assert "qid" in item
         assert "question" in item
@@ -494,7 +494,7 @@ def test_validate_skill_package_passes():
 
     result = validate(PROJECT_ROOT, check_sample_baseline=False)
     assert result["ok"] is True
-    assert result["checks"]["starter_corpus_sources"] >= 30
+    assert result["checks"]["starter_corpus_sources"] >= 49
 
 
 @pytest.mark.skipif(os.getenv("RUN_SKILL_INTEGRATION") != "1", reason="live retrieval integration is opt-in")

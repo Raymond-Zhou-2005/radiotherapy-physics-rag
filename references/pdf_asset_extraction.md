@@ -25,7 +25,7 @@ Each record includes:
 
 `assets/extracted/asset_manifest.json` summarizes per-document asset counts.
 
-Current local 35-document extraction summary:
+Current local 49-document extraction summary:
 
 | `doc_id` | Tables | Images |
 | --- | ---: | ---: |
@@ -34,8 +34,21 @@ Current local 35-document extraction summary:
 | `aapm_report_166_biological_models_treatment_planning_qa` | 1 | 7 |
 | `aapm_report_46_tg40_radiation_oncology_qa` | 0 | 134 |
 | `aapm_report_90_essential_medical_physics_ebrt` | 0 | 1 |
+| `aapm_tg100_radiotherapy_quality_management` | 2 | 10 |
+| `aapm_tg101_sbrt` | 46 | 4 |
+| `aapm_tg106_beam_data_commissioning` | 4 | 15 |
+| `aapm_tg119_imrt_commissioning` | 20 | 5 |
+| `aapm_tg120_imrt_dosimetry_tools` | 6 | 3 |
+| `aapm_tg132_image_registration_fusion` | 12 | 4 |
+| `aapm_tg142_medical_accelerator_qa` | 19 | 2 |
+| `aapm_tg147_nonradiographic_localization_qa` | 4 | 3 |
+| `aapm_tg148_helical_tomotherapy_qa` | 9 | 8 |
+| `aapm_tg179_ct_based_igrt_qa` | 37 | 2 |
+| `aapm_tg180_image_guidance_dose_management` | 30 | 2 |
+| `aapm_tg218_imrt_measurement_based_qa` | 32 | 2 |
 | `aapm_tg263_nomenclature` | 4 | 7 |
 | `aapm_tg51_photon_dosimetry_addendum` | 0 | 1 |
+| `aapm_tg75_igrt_imaging_dose` | 34 | 3 |
 | `iaea_hhr10_radiotherapy_facilities` | 10 | 526 |
 | `iaea_hhr16_igrt_qa` | 3 | 1 |
 | `iaea_hhr17_linear_accelerators` | 1 | 4 |
@@ -64,8 +77,9 @@ Current local 35-document extraction summary:
 | `iaea_trs469_reference_dosimeters` | 2 | 6 |
 | `iaea_trs483_small_static_fields` | 9 | 63 |
 | `iaea_trs492_brachytherapy_dosimetry` | 1 | 11 |
+| `tg158` | 52 | 2 |
 
-Totals: 348 tables and 3198 images.
+Totals: 655 tables and 3263 images.
 
 ## Commands
 

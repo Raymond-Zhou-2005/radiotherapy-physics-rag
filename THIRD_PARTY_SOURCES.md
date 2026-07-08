@@ -6,7 +6,7 @@ This repository stores source metadata and build scripts. It does not redistribu
 
 The starter corpus source list is maintained in `reports/starter_corpus_sources.json`. It records official source URLs, expected local filenames, titles, organizations, and the role of each document.
 
-Users are responsible for downloading and using report PDFs under the terms of the original publishers. Generated local artifacts are ignored by Git:
+Some records include `download_url` or `render_url` hints when the official landing page is more stable than a direct PDF endpoint. For example, some AAPM/Wiley reports are public or free-access but may require browser rendering for a local runtime PDF. Users are responsible for downloading, rendering, and using report PDFs under the terms of the original publishers. Generated local artifacts are ignored by Git:
 
 - `reports/raw/*.pdf`
 - `reports/manifest.jsonl`

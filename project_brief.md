@@ -8,13 +8,13 @@ Build an open-source, Codex-usable radiotherapy physics RAG skill that can be re
 
 The implementation is now a local runtime bundle plus clean public-release package.
 
-- Source catalog: 37 public AAPM/IAEA records.
-- Local runtime: 35 downloaded/indexed PDFs.
-- Manual source candidates: TG100 and TG158.
-- Indexed chunks: 9290.
-- Extracted PDF asset metadata: 348 tables and 3198 images.
-- ChatGPT Knowledge local export: 35 Markdown files.
-- Benchmark: 190 open-source topic questions, including 15 OOD controls.
+- Source catalog: 49 public AAPM/IAEA records.
+- Local runtime: 49 downloaded or locally rendered PDFs.
+- Manual source candidates not in runtime: none in this local build.
+- Indexed chunks: 10923.
+- Extracted PDF asset metadata: 655 tables and 3263 images.
+- ChatGPT Knowledge local export: 49 Markdown files.
+- Benchmark: 260 open-source topic questions, including 15 OOD controls.
 - Interfaces: Python CLI, Codex skill, MCP server, navigator skill, ChatGPT Knowledge export.
 - Public packaging: `scripts/build_public_release.py` and `scripts/audit_public_release.py`.
 
@@ -47,31 +47,31 @@ The implementation is now a local runtime bundle plus clean public-release packa
 
 Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 
-- 190 questions total.
-- 175 in-domain public-source topic questions.
+- 260 questions total.
+- 245 in-domain public-source topic questions.
 - 15 out-of-domain controls.
 - Questions are generated from public source catalog metadata.
 
 Strategy results:
 
-- Sparse Document Recall@5: 0.806.
-- Hybrid hash+dense Document Recall@5: 0.754.
-- Auto Document Recall@5: 0.754.
-- Routed Document Recall@5: 0.794.
+- Sparse Document Recall@5: 0.857.
+- Hybrid hash+dense Document Recall@5: 0.816.
+- Auto Document Recall@5: 0.816.
+- Routed Document Recall@5: 0.845.
 
 Navigator results:
 
-- Topic Recall@3: 0.966.
-- Candidate Document Recall@5: 0.709.
+- Topic Recall@3: 0.967.
+- Candidate Document Recall@5: 0.673.
 
 Agent skill results:
 
-- Tool success rate: 0.947.
-- Document Hit Rate@5: 0.800.
-- Citation present rate: 0.994.
-- OOD abstention success rate: 0.600.
+- Tool success rate: 0.965.
+- Document Hit Rate@5: 0.845.
+- Citation present rate: 0.996.
+- OOD abstention success rate: 0.533.
 
-Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. The weakest areas are OOD abstention, topic-to-document ranking inside the navigator, and lack of expert answer adjudication.
+Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. Corpus expansion improved document-level retrieval coverage, while OOD abstention and topic-to-document ranking inside the navigator remain the weakest measured areas. The project still lacks expert answer adjudication.
 
 ## Public Repository Boundary
 
@@ -126,7 +126,7 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 
 ## Risks And Limitations
 
-- AAPM public report pages can block scripted downloads; some sources remain manual.
+- AAPM public/free-access report pages can block scripted downloads; some sources require local browser rendering or manual download.
 - PDF section extraction is imperfect.
 - The benchmark is public-source generated and not expert-adjudicated.
 - Hash dense is a reproducible no-model baseline, not a neural semantic retriever.

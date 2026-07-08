@@ -2,11 +2,12 @@
 
 ## Unreleased
 
-- Expanded the public source catalog to 37 records and the current local runtime to 35 indexed PDFs.
-- Rebuilt the runtime corpus with 9290 chunks, 35 local ChatGPT Knowledge upload files, and PDF asset metadata for 348 tables and 3198 images.
+- Expanded the public source catalog to 49 records and the current local runtime to 49 indexed PDFs.
+- Rebuilt the runtime corpus with 10923 chunks, 49 local ChatGPT Knowledge upload files, and PDF asset metadata for 655 tables and 3263 images.
 - Added five direct-download IAEA sources covering 3DCRT/IMRT transition, national radiotherapy services, facility radiation protection, medical radiation safety, and global radiotherapy access.
-- Added a 190-question open-source topic benchmark generated from public source metadata, with 175 in-domain questions and 15 OOD controls.
-- Added strategy, navigator, and agent-skill contract evaluations for sparse, hybrid/hash, auto, and routed retrieval.
+- Refreshed TG100 and TG158 into the local runtime and added 12 additional public/free-access AAPM reports covering accelerator QA, IMRT commissioning and QA, beam data, IGRT, SBRT, image registration, imaging dose, and Tomotherapy QA.
+- Added a 260-question open-source topic benchmark generated from public source metadata, with 245 in-domain questions and 15 OOD controls.
+- Added strategy, navigator, and agent-skill contract evaluations for sparse, hybrid/hash, auto, and routed retrieval; sparse Document Recall@5 is 0.857 and routed agent Document Hit Rate@5 is 0.845 on the current benchmark.
 - Added no-model hash dense and lexical rerank controls for reproducible public benchmarking.
 - Added public release build and audit scripts to create a clean GitHub package without PDFs, parsed text, chunks, indexes, or generated upload files.
 - Allowed `auto` and `sparse` retrieval to run from sparse BM25 plus chunk metadata without requiring dense index files.

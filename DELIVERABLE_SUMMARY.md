@@ -6,12 +6,12 @@ This folder is the complete non-article implementation bundle for an open-source
 
 ## Current Runtime
 
-- Source metadata records: 37.
-- Downloaded/indexed PDFs: 35.
-- Manual source candidates not in runtime: `aapm_tg100_radiotherapy_quality_management`, `tg158`.
-- Indexed chunks: 9290.
-- PDF asset metadata: 348 tables and 3198 images.
-- ChatGPT Knowledge upload files generated locally: 35.
+- Source metadata records: 49.
+- Downloaded/indexed runtime PDFs: 49.
+- Manual source candidates not in runtime: none in this local build.
+- Indexed chunks: 10923.
+- PDF asset metadata: 655 tables and 3263 images.
+- ChatGPT Knowledge upload files generated locally: 49.
 - Navigator topics: 10.
 - Dense/hash artifacts: present for reproducible no-model hybrid baseline.
 
@@ -44,29 +44,29 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 
 Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 
-- Total questions: 190.
-- In-domain public-source topic questions: 175.
+- Total questions: 260.
+- In-domain public-source topic questions: 245.
 - Out-of-domain controls: 15.
 - Source policy: generated from public source catalog metadata; no ABR/RAPHEX/commercial copyrighted question text.
 
 Strategy evaluation:
 
-- Sparse Document Recall@5: 0.806.
-- Hybrid hash+dense Document Recall@5: 0.754.
-- Auto Document Recall@5: 0.754.
-- Routed Document Recall@5: 0.794.
+- Sparse Document Recall@5: 0.857.
+- Hybrid hash+dense Document Recall@5: 0.816.
+- Auto Document Recall@5: 0.816.
+- Routed Document Recall@5: 0.845.
 
 Navigator evaluation:
 
-- Topic Recall@3: 0.966.
-- Candidate Document Recall@5: 0.709.
+- Topic Recall@3: 0.967.
+- Candidate Document Recall@5: 0.673.
 
 Agent-skill contract evaluation:
 
-- Routed tool success rate: 0.947.
-- Routed Document Hit Rate@5: 0.800.
-- Citation present rate: 0.994.
-- OOD abstention success rate: 0.600.
+- Routed tool success rate: 0.965.
+- Routed Document Hit Rate@5: 0.845.
+- Citation present rate: 0.996.
+- OOD abstention success rate: 0.533.
 - Unexpected in-scope error count: 1.
 
 ## Verification Snapshot

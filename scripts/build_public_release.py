@@ -113,13 +113,24 @@ def copy_file(source: Path, target: Path) -> None:
     shutil.copy2(source, target)
 
 
+def clear_output_dir(output_dir: Path) -> None:
+    for child in output_dir.iterdir():
+        if child.name == ".git":
+            continue
+        if child.is_dir() and not child.is_symlink():
+            shutil.rmtree(child)
+        else:
+            child.unlink()
+
+
 def build_public_release(source_root: Path, output_dir: Path, force: bool = False) -> None:
     assert_safe_output(source_root, output_dir)
     if output_dir.exists():
         if not force:
             raise FileExistsError(f"{output_dir} already exists; pass --force to rebuild it.")
-        shutil.rmtree(output_dir)
-    output_dir.mkdir(parents=True)
+        clear_output_dir(output_dir)
+    else:
+        output_dir.mkdir(parents=True)
 
     for rel in ROOT_FILES:
         source = source_root / rel

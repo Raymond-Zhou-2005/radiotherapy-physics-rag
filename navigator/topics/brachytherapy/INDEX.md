@@ -3,8 +3,8 @@ name: brachytherapy
 description: >
   Brachytherapy source calibration, dose calculation, QA, mesh, ocular plaque, and HDR/LDR workflow.
 level: 1
-num_documents: 2
-num_chunks: 143
+num_documents: 3
+num_chunks: 144
 ---
 
 # Brachytherapy physics and source calibration
@@ -25,3 +25,6 @@ Brachytherapy source calibration, dose calculation, QA, mesh, ocular plaque, and
 - `iaea_trs492_brachytherapy_dosimetry` (16 chunks): IAEA TRS 492: Dosimetry in brachytherapy
   - sections: 4. INSTRUMENTATION
   - example chunk_ids: iaea_trs492_brachytherapy_dosimetry_c0061, iaea_trs492_brachytherapy_dosimetry_c0062, iaea_trs492_brachytherapy_dosimetry_c0063, iaea_trs492_brachytherapy_dosimetry_c0064, iaea_trs492_brachytherapy_dosimetry_c0065
+- `tg158` (1 chunks): AAPM TG 158: Measurement and calculation of doses outside the treated volume from external-beam radiation therapy
+  - sections: UNKNOWN
+  - example chunk_ids: tg158_c0059

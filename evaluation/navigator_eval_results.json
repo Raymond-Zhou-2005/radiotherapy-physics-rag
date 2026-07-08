@@ -1,12 +1,12 @@
 {
-  "questions": 190,
-  "in_scope_questions": 175,
-  "topic_recall@1": 0.88,
-  "topic_recall@2": 0.9257142857142857,
-  "topic_recall@3": 0.9657142857142857,
-  "candidate_doc_recall@1": 0.21142857142857144,
-  "candidate_doc_recall@3": 0.48,
-  "candidate_doc_recall@5": 0.7085714285714285,
+  "questions": 260,
+  "in_scope_questions": 245,
+  "topic_recall@1": 0.8367346938775511,
+  "topic_recall@2": 0.9387755102040817,
+  "topic_recall@3": 0.9673469387755103,
+  "candidate_doc_recall@1": 0.18775510204081633,
+  "candidate_doc_recall@3": 0.4897959183673469,
+  "candidate_doc_recall@5": 0.673469387755102,
   "details": [
     {
       "qid": "public_q0001",
@@ -14,15 +14,15 @@
       "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
       "top_topics": [
         "imaging-and-localization",
-        "quality-management-and-safety",
-        "nomenclature-and-data"
+        "nomenclature-and-data",
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "aapm_report_104_kv_imaging_guidance",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "aapm_report_113_physics_clinical_trials",
-        "aapm_report_46_tg40_radiation_oncology_qa"
+        "aapm_tg132_image_registration_fusion"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -34,14 +34,14 @@
       "top_topics": [
         "imaging-and-localization",
         "quality-management-and-safety",
-        "treatment-planning"
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "aapm_report_104_kv_imaging_guidance",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_46_tg40_radiation_oncology_qa"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -52,15 +52,15 @@
       "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
       "top_topics": [
         "imaging-and-localization",
-        "quality-management-and-safety",
-        "education-and-foundations"
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "aapm_report_104_kv_imaging_guidance",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhr18_radiotherapy_dosimetry_audits"
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs14_planning_national_radiotherapy_services"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -72,14 +72,14 @@
       "top_topics": [
         "imaging-and-localization",
         "nontarget-dose-and-radiation-protection",
-        "quality-management-and-safety"
+        "nomenclature-and-data"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "aapm_report_104_kv_imaging_guidance",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhs14_planning_national_radiotherapy_services"
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "aapm_tg132_image_registration_fusion"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -109,15 +109,15 @@
       "expected_doc_id": "aapm_report_113_physics_clinical_trials",
       "top_topics": [
         "imaging-and-localization",
-        "education-and-foundations",
-        "treatment-planning"
+        "biological-models-and-response",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_trs430_tps_commissioning_qa",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "aapm_report_113_physics_clinical_trials",
-        "aapm_report_104_kv_imaging_guidance"
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -147,18 +147,18 @@
       "expected_doc_id": "aapm_report_113_physics_clinical_trials",
       "top_topics": [
         "imaging-and-localization",
-        "education-and-foundations",
-        "quality-management-and-safety"
+        "biological-models-and-response",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_tecdoc1543_quatro",
-        "iaea_hhs14_planning_national_radiotherapy_services"
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_report_113_physics_clinical_trials"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": false
+      "doc_hit_at_5": true
     },
     {
       "qid": "public_q0009",
@@ -166,15 +166,15 @@
       "expected_doc_id": "aapm_report_113_physics_clinical_trials",
       "top_topics": [
         "imaging-and-localization",
-        "education-and-foundations",
-        "nontarget-dose-and-radiation-protection"
+        "biological-models-and-response",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "aapm_report_113_physics_clinical_trials",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_hhs14_planning_national_radiotherapy_services"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -191,9 +191,9 @@
       "top_candidate_docs": [
         "aapm_report_113_physics_clinical_trials",
         "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
         "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_46_tg40_radiation_oncology_qa",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -211,8 +211,8 @@
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs430_tps_commissioning_qa",
         "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -224,14 +224,14 @@
       "top_topics": [
         "biological-models-and-response",
         "treatment-planning",
-        "equipment-and-facilities"
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_hhr7_record_verify_systems",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1540_tps_acceptance"
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -242,15 +242,15 @@
       "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
       "top_topics": [
         "biological-models-and-response",
-        "education-and-foundations",
+        "treatment-planning",
         "imaging-and-localization"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "aapm_report_166_biological_models_treatment_planning_qa"
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_hhs14_planning_national_radiotherapy_services"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -261,15 +261,15 @@
       "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
       "top_topics": [
         "biological-models-and-response",
-        "imaging-and-localization",
-        "treatment-planning"
+        "treatment-planning",
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
         "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
         "iaea_hhr7_record_verify_systems",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_hhs14_planning_national_radiotherapy_services"
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -287,8 +287,8 @@
         "aapm_report_166_biological_models_treatment_planning_qa",
         "iaea_trs430_tps_commissioning_qa",
         "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_113_physics_clinical_trials",
-        "iaea_tecdoc1540_tps_acceptance"
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_report_113_physics_clinical_trials"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -306,8 +306,8 @@
         "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
         "aapm_report_46_tg40_radiation_oncology_qa",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_166_biological_models_treatment_planning_qa"
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -319,12 +319,12 @@
       "top_topics": [
         "quality-management-and-safety",
         "treatment-planning",
-        "nontarget-dose-and-radiation-protection"
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
         "aapm_report_46_tg40_radiation_oncology_qa",
         "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
@@ -345,10 +345,10 @@
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_tecdoc1543_quatro",
-        "aapm_report_46_tg40_radiation_oncology_qa"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": true
+      "doc_hit_at_5": false
     },
     {
       "qid": "public_q0019",
@@ -356,14 +356,14 @@
       "expected_doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
       "top_topics": [
         "quality-management-and-safety",
-        "nontarget-dose-and-radiation-protection",
-        "treatment-planning"
+        "treatment-planning",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
         "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_tg100_radiotherapy_quality_management",
         "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
@@ -376,14 +376,14 @@
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "nomenclature-and-data"
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "aapm_report_46_tg40_radiation_oncology_qa",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
@@ -393,35 +393,35 @@
       "question": "Which report evidence is most relevant for external beam radiotherapy physics concepts and training scope, and what should be checked first?",
       "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
       "top_topics": [
-        "equipment-and-facilities",
         "education-and-foundations",
-        "imaging-and-localization"
+        "imaging-and-localization",
+        "biological-models-and-response"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_90_essential_medical_physics_ebrt"
+        "tg158"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": true
+      "doc_hit_at_5": false
     },
     {
       "qid": "public_q0022",
       "question": "What quality assurance, safety, or documentation issues are emphasized for external beam radiotherapy physics concepts and training scope?",
       "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
       "top_topics": [
-        "equipment-and-facilities",
+        "education-and-foundations",
         "nontarget-dose-and-radiation-protection",
         "quality-management-and-safety"
       ],
       "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc1543_quatro",
-        "iaea_srs47_radiotherapy_facility_radiation_protection"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
@@ -431,16 +431,16 @@
       "question": "How should a radiotherapy physicist use guidance on external beam radiotherapy physics concepts and training scope when implementing or auditing a service?",
       "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
       "top_topics": [
-        "equipment-and-facilities",
         "education-and-foundations",
-        "imaging-and-localization"
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "aapm_report_113_physics_clinical_trials"
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
@@ -450,16 +450,16 @@
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam radiotherapy physics concepts and training scope?",
       "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
       "top_topics": [
-        "equipment-and-facilities",
+        "education-and-foundations",
         "nontarget-dose-and-radiation-protection",
         "imaging-and-localization"
       ],
       "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_tecdoc_1040_radiotherapy_programme",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "aapm_report_104_kv_imaging_guidance"
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
@@ -470,21 +470,116 @@
       "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
       "top_topics": [
         "education-and-foundations",
-        "equipment-and-facilities",
-        "imaging-and-localization"
+        "nomenclature-and-data",
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "aapm_report_90_essential_medical_physics_ebrt",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "aapm_report_104_kv_imaging_guidance"
+        "iaea_hhs19_ct_sim_radiotherapy"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
       "qid": "public_q0026",
+      "question": "Which report evidence is most relevant for risk analysis process mapping fmea radiotherapy quality management and safety analysis, and what should be checked first?",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "top_topics": [
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0027",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for risk analysis process mapping fmea radiotherapy quality management and safety analysis?",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "top_topics": [
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0028",
+      "question": "How should a radiotherapy physicist use guidance on risk analysis process mapping fmea radiotherapy quality management and safety analysis when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "top_topics": [
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0029",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for risk analysis process mapping fmea radiotherapy quality management and safety analysis?",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0030",
+      "question": "What does AAPM TG 100: Application of risk analysis methods to radiation therapy quality management cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "top_topics": [
+        "quality-management-and-safety",
+        "treatment-planning",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0031",
       "question": "Which report evidence is most relevant for standard structure naming radiation oncology nomenclature and terminology normalization, and what should be checked first?",
       "expected_doc_id": "aapm_tg263_nomenclature",
       "top_topics": [
@@ -503,7 +598,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0027",
+      "qid": "public_q0032",
       "question": "What quality assurance, safety, or documentation issues are emphasized for standard structure naming radiation oncology nomenclature and terminology normalization?",
       "expected_doc_id": "aapm_tg263_nomenclature",
       "top_topics": [
@@ -514,34 +609,34 @@
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "aapm_report_46_tg40_radiation_oncology_qa"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": false
-    },
-    {
-      "qid": "public_q0028",
-      "question": "How should a radiotherapy physicist use guidance on standard structure naming radiation oncology nomenclature and terminology normalization when implementing or auditing a service?",
-      "expected_doc_id": "aapm_tg263_nomenclature",
-      "top_topics": [
-        "nomenclature-and-data",
-        "education-and-foundations",
-        "nontarget-dose-and-radiation-protection"
-      ],
-      "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0029",
+      "qid": "public_q0033",
+      "question": "How should a radiotherapy physicist use guidance on standard structure naming radiation oncology nomenclature and terminology normalization when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg263_nomenclature",
+      "top_topics": [
+        "nomenclature-and-data",
+        "imaging-and-localization",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0034",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for standard structure naming radiation oncology nomenclature and terminology normalization?",
       "expected_doc_id": "aapm_tg263_nomenclature",
       "top_topics": [
@@ -560,7 +655,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0030",
+      "qid": "public_q0035",
       "question": "What does AAPM TG 263: Standardizing nomenclatures in radiation oncology cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "aapm_tg263_nomenclature",
       "top_topics": [
@@ -579,7 +674,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0031",
+      "qid": "public_q0036",
       "question": "Which report evidence is most relevant for radiotherapy programme design staffing equipment radiation protection and safety, and what should be checked first?",
       "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
       "top_topics": [
@@ -598,12 +693,12 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0032",
+      "qid": "public_q0037",
       "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy programme design staffing equipment radiation protection and safety?",
       "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
       "top_topics": [
-        "nontarget-dose-and-radiation-protection",
         "equipment-and-facilities",
+        "nontarget-dose-and-radiation-protection",
         "quality-management-and-safety"
       ],
       "top_candidate_docs": [
@@ -617,7 +712,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0033",
+      "qid": "public_q0038",
       "question": "How should a radiotherapy physicist use guidance on radiotherapy programme design staffing equipment radiation protection and safety when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
       "top_topics": [
@@ -636,7 +731,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0034",
+      "qid": "public_q0039",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy programme design staffing equipment radiation protection and safety?",
       "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
       "top_topics": [
@@ -655,7 +750,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0035",
+      "qid": "public_q0040",
       "question": "What does IAEA TECDOC 1040: Design and implementation of a radiotherapy programme cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
       "top_topics": [
@@ -674,13 +769,13 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0036",
+      "qid": "public_q0041",
       "question": "Which report evidence is most relevant for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty, and what should be checked first?",
       "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
       "top_topics": [
         "reference-dosimetry",
-        "equipment-and-facilities",
-        "education-and-foundations"
+        "education-and-foundations",
+        "biological-models-and-response"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -693,7 +788,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0037",
+      "qid": "public_q0042",
       "question": "What quality assurance, safety, or documentation issues are emphasized for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
       "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
       "top_topics": [
@@ -712,13 +807,13 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0038",
+      "qid": "public_q0043",
       "question": "How should a radiotherapy physicist use guidance on external beam reference dosimetry absorbed dose to water beam calibration and uncertainty when implementing or auditing a service?",
       "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
       "top_topics": [
         "reference-dosimetry",
-        "nontarget-dose-and-radiation-protection",
-        "education-and-foundations"
+        "education-and-foundations",
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -726,108 +821,70 @@
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs483_small_static_fields"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0039",
-      "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
-      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
-      "top_topics": [
-        "reference-dosimetry",
-        "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_absorbed_dose_ebrt",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_trs483_small_static_fields"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0040",
-      "question": "What does IAEA TRS 398: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
-      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
-      "top_topics": [
-        "reference-dosimetry",
-        "equipment-and-facilities",
-        "nontarget-dose-and-radiation-protection"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_absorbed_dose_ebrt",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_trs483_small_static_fields",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0041",
-      "question": "Which report evidence is most relevant for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance, and what should be checked first?",
-      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
-      "top_topics": [
-        "treatment-planning",
-        "equipment-and-facilities",
-        "biological-models-and-response"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_hhr7_record_verify_systems",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0042",
-      "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
-      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
-      "top_topics": [
-        "treatment-planning",
-        "equipment-and-facilities",
-        "quality-management-and-safety"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_46_tg40_radiation_oncology_qa",
-        "iaea_tecdoc1543_quatro"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0043",
-      "question": "How should a radiotherapy physicist use guidance on treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance when implementing or auditing a service?",
-      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
-      "top_topics": [
-        "treatment-planning",
-        "equipment-and-facilities",
-        "education-and-foundations"
-      ],
-      "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_tecdoc1540_tps_acceptance"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
       "qid": "public_q0044",
-      "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "top_topics": [
+        "reference-dosimetry",
+        "nontarget-dose-and-radiation-protection",
+        "brachytherapy"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs483_small_static_fields"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0045",
+      "question": "What does IAEA TRS 398: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "top_topics": [
+        "reference-dosimetry",
+        "education-and-foundations",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0046",
+      "question": "Which report evidence is most relevant for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance, and what should be checked first?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "top_topics": [
+        "treatment-planning",
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0047",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
       "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
       "top_topics": [
         "treatment-planning",
@@ -837,7 +894,26 @@
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
         "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
         "iaea_hhr7_record_verify_systems",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0048",
+      "question": "How should a radiotherapy physicist use guidance on treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "top_topics": [
+        "treatment-planning",
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1588_3dcrt_imrt_transition"
       ],
@@ -845,7 +921,26 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0045",
+      "qid": "public_q0049",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "top_topics": [
+        "treatment-planning",
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0050",
       "question": "What does IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
       "top_topics": [
@@ -864,7 +959,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0046",
+      "qid": "public_q0051",
       "question": "Which report evidence is most relevant for broad expert teaching reference for radiation oncology physics fundamentals, and what should be checked first?",
       "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
       "top_topics": [
@@ -883,32 +978,32 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0047",
+      "qid": "public_q0052",
       "question": "What quality assurance, safety, or documentation issues are emphasized for broad expert teaching reference for radiation oncology physics fundamentals?",
       "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "nomenclature-and-data"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
         "iaea_tecdoc1543_quatro",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_46_tg40_radiation_oncology_qa"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0048",
+      "qid": "public_q0053",
       "question": "How should a radiotherapy physicist use guidance on broad expert teaching reference for radiation oncology physics fundamentals when implementing or auditing a service?",
       "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
       "top_topics": [
-        "education-and-foundations",
+        "imaging-and-localization",
         "quality-management-and-safety",
-        "nomenclature-and-data"
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
@@ -921,32 +1016,32 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0049",
+      "qid": "public_q0054",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for broad expert teaching reference for radiation oncology physics fundamentals?",
       "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
       "top_topics": [
         "education-and-foundations",
-        "nomenclature-and-data",
-        "nontarget-dose-and-radiation-protection"
+        "imaging-and-localization",
+        "nomenclature-and-data"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "aapm_tg263_nomenclature"
+        "aapm_tg263_nomenclature",
+        "aapm_report_90_essential_medical_physics_ebrt",
+        "aapm_report_113_physics_clinical_trials"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0050",
+      "qid": "public_q0055",
       "question": "What does Radiation Oncology Physics: A Handbook for Teachers and Students cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
       "top_topics": [
         "education-and-foundations",
         "quality-management-and-safety",
-        "equipment-and-facilities"
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
@@ -959,32 +1054,32 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0051",
+      "qid": "public_q0056",
       "question": "Which report evidence is most relevant for reference dosimeter calibration and standards chain for external beam radiotherapy, and what should be checked first?",
       "expected_doc_id": "iaea_trs469_reference_dosimeters",
       "top_topics": [
         "reference-dosimetry",
-        "equipment-and-facilities",
-        "nontarget-dose-and-radiation-protection"
+        "education-and-foundations",
+        "biological-models-and-response"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_trs483_small_static_fields",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_trs483_small_static_fields"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0052",
+      "qid": "public_q0057",
       "question": "What quality assurance, safety, or documentation issues are emphasized for reference dosimeter calibration and standards chain for external beam radiotherapy?",
       "expected_doc_id": "iaea_trs469_reference_dosimeters",
       "top_topics": [
         "reference-dosimetry",
         "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
+        "brachytherapy"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -997,13 +1092,13 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0053",
+      "qid": "public_q0058",
       "question": "How should a radiotherapy physicist use guidance on reference dosimeter calibration and standards chain for external beam radiotherapy when implementing or auditing a service?",
       "expected_doc_id": "iaea_trs469_reference_dosimeters",
       "top_topics": [
+        "imaging-and-localization",
         "nontarget-dose-and-radiation-protection",
-        "reference-dosimetry",
-        "equipment-and-facilities"
+        "reference-dosimetry"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -1016,13 +1111,13 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0054",
+      "qid": "public_q0059",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for reference dosimeter calibration and standards chain for external beam radiotherapy?",
       "expected_doc_id": "iaea_trs469_reference_dosimeters",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
         "reference-dosimetry",
-        "equipment-and-facilities"
+        "brachytherapy"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -1035,32 +1130,32 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0055",
+      "qid": "public_q0060",
       "question": "What does IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_trs469_reference_dosimeters",
       "top_topics": [
         "reference-dosimetry",
-        "equipment-and-facilities",
-        "nontarget-dose-and-radiation-protection"
+        "education-and-foundations",
+        "brachytherapy"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs483_small_static_fields",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhr8_in_vivo_dosimetry"
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0056",
+      "qid": "public_q0061",
       "question": "Which report evidence is most relevant for medical physics procedures for quality audits and on-site radiotherapy centre review, and what should be checked first?",
       "expected_doc_id": "iaea_tecdoc1543_quatro",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "nomenclature-and-data"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
@@ -1073,45 +1168,45 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0057",
+      "qid": "public_q0062",
       "question": "What quality assurance, safety, or documentation issues are emphasized for medical physics procedures for quality audits and on-site radiotherapy centre review?",
       "expected_doc_id": "iaea_tecdoc1543_quatro",
       "top_topics": [
         "quality-management-and-safety",
         "nontarget-dose-and-radiation-protection",
-        "education-and-foundations"
+        "treatment-planning"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_tecdoc1543_quatro",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0058",
+      "qid": "public_q0063",
       "question": "How should a radiotherapy physicist use guidance on medical physics procedures for quality audits and on-site radiotherapy centre review when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc1543_quatro",
       "top_topics": [
         "quality-management-and-safety",
-        "education-and-foundations",
-        "equipment-and-facilities"
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_tecdoc1543_quatro",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1990_quatro_quality_improvement"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0059",
+      "qid": "public_q0064",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for medical physics procedures for quality audits and on-site radiotherapy centre review?",
       "expected_doc_id": "iaea_tecdoc1543_quatro",
       "top_topics": [
@@ -1130,45 +1225,45 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0060",
+      "qid": "public_q0065",
       "question": "What does IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc1543_quatro",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_tecdoc1543_quatro",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0061",
+      "qid": "public_q0066",
       "question": "Which report evidence is most relevant for igrt quality assurance programme imaging workflow safety and implementation guidance, and what should be checked first?",
       "expected_doc_id": "iaea_hhr16_igrt_qa",
       "top_topics": [
         "quality-management-and-safety",
-        "equipment-and-facilities",
-        "imaging-and-localization"
+        "nontarget-dose-and-radiation-protection",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_104_kv_imaging_guidance",
-        "iaea_hhr16_igrt_qa",
-        "iaea_pub1990_quatro_quality_improvement"
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": true
+      "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0062",
+      "qid": "public_q0067",
       "question": "What quality assurance, safety, or documentation issues are emphasized for igrt quality assurance programme imaging workflow safety and implementation guidance?",
       "expected_doc_id": "iaea_hhr16_igrt_qa",
       "top_topics": [
@@ -1181,18 +1276,18 @@
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_tecdoc_1040_radiotherapy_programme",
-        "iaea_hhr16_igrt_qa"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": true
+      "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0063",
+      "qid": "public_q0068",
       "question": "How should a radiotherapy physicist use guidance on igrt quality assurance programme imaging workflow safety and implementation guidance when implementing or auditing a service?",
       "expected_doc_id": "iaea_hhr16_igrt_qa",
       "top_topics": [
-        "quality-management-and-safety",
         "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
         "equipment-and-facilities"
       ],
       "top_candidate_docs": [
@@ -1206,32 +1301,32 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0064",
+      "qid": "public_q0069",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for igrt quality assurance programme imaging workflow safety and implementation guidance?",
       "expected_doc_id": "iaea_hhr16_igrt_qa",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
-        "imaging-and-localization",
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_tecdoc_1040_radiotherapy_programme",
-        "iaea_hhr16_igrt_qa"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": true
+      "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0065",
+      "qid": "public_q0070",
       "question": "What does IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhr16_igrt_qa",
       "top_topics": [
         "quality-management-and-safety",
-        "equipment-and-facilities",
-        "treatment-planning"
+        "treatment-planning",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
         "iaea_hhs19_ct_sim_radiotherapy",
@@ -1244,64 +1339,64 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0066",
+      "qid": "public_q0071",
       "question": "Which report evidence is most relevant for independent radiotherapy dosimetry audits audit design and audit interpretation, and what should be checked first?",
       "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "treatment-planning"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_trs430_tps_commissioning_qa"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0067",
+      "qid": "public_q0072",
       "question": "What quality assurance, safety, or documentation issues are emphasized for independent radiotherapy dosimetry audits audit design and audit interpretation?",
       "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
       "top_topics": [
         "quality-management-and-safety",
         "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
+        "treatment-planning"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_pub1990_quatro_quality_improvement"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0068",
-      "question": "How should a radiotherapy physicist use guidance on independent radiotherapy dosimetry audits audit design and audit interpretation when implementing or auditing a service?",
-      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
-      "top_topics": [
-        "quality-management-and-safety",
-        "education-and-foundations",
-        "nontarget-dose-and-radiation-protection"
-      ],
-      "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0069",
+      "qid": "public_q0073",
+      "question": "How should a radiotherapy physicist use guidance on independent radiotherapy dosimetry audits audit design and audit interpretation when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+      "top_topics": [
+        "quality-management-and-safety",
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0074",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for independent radiotherapy dosimetry audits audit design and audit interpretation?",
       "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
       "top_topics": [
@@ -1320,7 +1415,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0070",
+      "qid": "public_q0075",
       "question": "What does IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
       "top_topics": [
@@ -1339,26 +1434,121 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0071",
+      "qid": "public_q0076",
+      "question": "Which report evidence is most relevant for nontarget and out-of field dose measurement calculation reporting and recommendations, and what should be checked first?",
+      "expected_doc_id": "tg158",
+      "top_topics": [
+        "biological-models-and-response",
+        "education-and-foundations",
+        "nomenclature-and-data"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "tg158",
+        "aapm_report_90_essential_medical_physics_ebrt"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0077",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for nontarget and out-of field dose measurement calculation reporting and recommendations?",
+      "expected_doc_id": "tg158",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "biological-models-and-response",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0078",
+      "question": "How should a radiotherapy physicist use guidance on nontarget and out-of field dose measurement calculation reporting and recommendations when implementing or auditing a service?",
+      "expected_doc_id": "tg158",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "biological-models-and-response",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0079",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for nontarget and out-of field dose measurement calculation reporting and recommendations?",
+      "expected_doc_id": "tg158",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "biological-models-and-response",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0080",
+      "question": "What does AAPM TG 158: Measurement and calculation of doses outside the treated volume from external-beam radiation therapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "tg158",
+      "top_topics": [
+        "education-and-foundations",
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "tg158",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "aapm_tg106_beam_data_commissioning"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0081",
       "question": "Which report evidence is most relevant for small field reference and relative dosimetry for external beam radiotherapy, and what should be checked first?",
       "expected_doc_id": "iaea_trs483_small_static_fields",
       "top_topics": [
         "reference-dosimetry",
-        "equipment-and-facilities",
-        "nontarget-dose-and-radiation-protection"
+        "education-and-foundations",
+        "biological-models-and-response"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs483_small_static_fields",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhr8_in_vivo_dosimetry"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0072",
+      "qid": "public_q0082",
       "question": "What quality assurance, safety, or documentation issues are emphasized for small field reference and relative dosimetry for external beam radiotherapy?",
       "expected_doc_id": "iaea_trs483_small_static_fields",
       "top_topics": [
@@ -1377,13 +1567,13 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0073",
+      "qid": "public_q0083",
       "question": "How should a radiotherapy physicist use guidance on small field reference and relative dosimetry for external beam radiotherapy when implementing or auditing a service?",
       "expected_doc_id": "iaea_trs483_small_static_fields",
       "top_topics": [
         "reference-dosimetry",
-        "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -1396,13 +1586,13 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0074",
+      "qid": "public_q0084",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for small field reference and relative dosimetry for external beam radiotherapy?",
       "expected_doc_id": "iaea_trs483_small_static_fields",
       "top_topics": [
         "reference-dosimetry",
         "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
+        "brachytherapy"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -1415,32 +1605,32 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0075",
+      "qid": "public_q0085",
       "question": "What does IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_trs483_small_static_fields",
       "top_topics": [
         "reference-dosimetry",
-        "quality-management-and-safety",
-        "treatment-planning"
+        "brachytherapy",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_trs483_small_static_fields",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhr8_in_vivo_dosimetry"
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0076",
+      "qid": "public_q0086",
       "question": "Which report evidence is most relevant for international code of practice for brachytherapy dosimetry and source calibration, and what should be checked first?",
       "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
       "top_topics": [
         "reference-dosimetry",
         "brachytherapy",
-        "equipment-and-facilities"
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -1453,7 +1643,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0077",
+      "qid": "public_q0087",
       "question": "What quality assurance, safety, or documentation issues are emphasized for international code of practice for brachytherapy dosimetry and source calibration?",
       "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
       "top_topics": [
@@ -1472,13 +1662,13 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0078",
+      "qid": "public_q0088",
       "question": "How should a radiotherapy physicist use guidance on international code of practice for brachytherapy dosimetry and source calibration when implementing or auditing a service?",
       "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
       "top_topics": [
         "reference-dosimetry",
-        "nontarget-dose-and-radiation-protection",
-        "quality-management-and-safety"
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -1491,7 +1681,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0079",
+      "qid": "public_q0089",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for international code of practice for brachytherapy dosimetry and source calibration?",
       "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
       "top_topics": [
@@ -1510,7 +1700,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0080",
+      "qid": "public_q0090",
       "question": "What does IAEA TRS 492: Dosimetry in brachytherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
       "top_topics": [
@@ -1529,103 +1719,122 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0081",
+      "qid": "public_q0091",
       "question": "Which report evidence is most relevant for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa, and what should be checked first?",
       "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
       "top_topics": [
-        "imaging-and-localization",
         "treatment-planning",
-        "biological-models-and-response"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "aapm_report_104_kv_imaging_guidance",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_hhs14_planning_national_radiotherapy_services"
-      ],
-      "topic_hit_at_3": false,
-      "doc_hit_at_5": false
-    },
-    {
-      "qid": "public_q0082",
-      "question": "What quality assurance, safety, or documentation issues are emphasized for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
-      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
-      "top_topics": [
-        "treatment-planning",
-        "quality-management-and-safety",
+        "biological-models-and-response",
         "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc1543_quatro",
-        "iaea_pub1990_quatro_quality_improvement"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0083",
-      "question": "How should a radiotherapy physicist use guidance on ct simulation treatment planning ct scanner performance and radiotherapy imaging qa when implementing or auditing a service?",
-      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
-      "top_topics": [
-        "imaging-and-localization",
-        "treatment-planning",
-        "biological-models-and-response"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
         "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1540_tps_acceptance"
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
       ],
       "topic_hit_at_3": false,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0084",
-      "question": "What limitations, uncertainty sources, or practical constraints should be considered for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
-      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
-      "top_topics": [
-        "imaging-and-localization",
-        "treatment-planning",
-        "biological-models-and-response"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "aapm_report_104_kv_imaging_guidance"
-      ],
-      "topic_hit_at_3": false,
-      "doc_hit_at_5": false
-    },
-    {
-      "qid": "public_q0085",
-      "question": "What does IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "qid": "public_q0092",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
       "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
       "top_topics": [
         "quality-management-and-safety",
         "treatment-planning",
-        "equipment-and-facilities"
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhr16_igrt_qa",
         "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0086",
+      "qid": "public_q0093",
+      "question": "How should a radiotherapy physicist use guidance on ct simulation treatment planning ct scanner performance and radiotherapy imaging qa when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "top_topics": [
+        "imaging-and-localization",
+        "biological-models-and-response",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro",
+        "aapm_tg132_image_registration_fusion"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0094",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "topic_hit_at_3": false,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0095",
+      "question": "What does IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "top_topics": [
+        "quality-management-and-safety",
+        "imaging-and-localization",
+        "reference-dosimetry"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0096",
       "question": "Which report evidence is most relevant for radiotherapy treatment planning system commissioning data entry testing and qa procedures, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "top_topics": [
+        "treatment-planning",
+        "equipment-and-facilities",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0097",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
       "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
       "top_topics": [
         "treatment-planning",
@@ -1636,25 +1845,6 @@
         "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_tecdoc1543_quatro"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": false
-    },
-    {
-      "qid": "public_q0087",
-      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
-      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
-      "top_topics": [
-        "treatment-planning",
-        "quality-management-and-safety",
-        "equipment-and-facilities"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_tecdoc1543_quatro",
         "iaea_pub1990_quatro_quality_improvement"
       ],
@@ -1662,18 +1852,37 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0088",
+      "qid": "public_q0098",
       "question": "How should a radiotherapy physicist use guidance on radiotherapy treatment planning system commissioning data entry testing and qa procedures when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
       "top_topics": [
+        "equipment-and-facilities",
         "treatment-planning",
-        "quality-management-and-safety",
-        "equipment-and-facilities"
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
         "iaea_tecdoc1543_quatro",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0099",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "top_topics": [
+        "equipment-and-facilities",
+        "treatment-planning",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_tg218_imrt_measurement_based_qa",
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1588_3dcrt_imrt_transition"
       ],
@@ -1681,45 +1890,26 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0089",
-      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
-      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
-      "top_topics": [
-        "treatment-planning",
-        "equipment-and-facilities",
-        "imaging-and-localization"
-      ],
-      "top_candidate_docs": [
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_hhs14_planning_national_radiotherapy_services"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": false
-    },
-    {
-      "qid": "public_q0090",
+      "qid": "public_q0100",
       "question": "What does IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
       "top_topics": [
         "treatment-planning",
         "equipment-and-facilities",
-        "education-and-foundations"
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_tecdoc1583_tps_commissioning"
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0091",
+      "qid": "public_q0101",
       "question": "Which report evidence is most relevant for treatment planning system specification procurement acceptance testing and quality assurance, and what should be checked first?",
       "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
       "top_topics": [
@@ -1732,13 +1922,13 @@
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "aapm_report_166_biological_models_treatment_planning_qa"
+        "aapm_tg218_imrt_measurement_based_qa"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0092",
+      "qid": "public_q0102",
       "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system specification procurement acceptance testing and quality assurance?",
       "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
       "top_topics": [
@@ -1751,13 +1941,13 @@
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1543_quatro"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0093",
+      "qid": "public_q0103",
       "question": "How should a radiotherapy physicist use guidance on treatment planning system specification procurement acceptance testing and quality assurance when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
       "top_topics": [
@@ -1776,26 +1966,26 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0094",
+      "qid": "public_q0104",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system specification procurement acceptance testing and quality assurance?",
       "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
       "top_topics": [
         "treatment-planning",
         "equipment-and-facilities",
-        "imaging-and-localization"
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_tecdoc1540_tps_acceptance",
-        "iaea_hhr7_record_verify_systems",
-        "iaea_hhr17_linear_accelerators",
-        "aapm_report_166_biological_models_treatment_planning_qa"
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg218_imrt_measurement_based_qa"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0095",
+      "qid": "public_q0105",
       "question": "What does IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
       "top_topics": [
@@ -1814,7 +2004,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0096",
+      "qid": "public_q0106",
       "question": "Which report evidence is most relevant for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels, and what should be checked first?",
       "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
       "top_topics": [
@@ -1833,17 +2023,17 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0097",
+      "qid": "public_q0107",
       "question": "What quality assurance, safety, or documentation issues are emphasized for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
       "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
       "top_topics": [
         "reference-dosimetry",
         "quality-management-and-safety",
-        "treatment-planning"
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr8_in_vivo_dosimetry",
         "iaea_trs398_rev1_absorbed_dose_ebrt"
@@ -1852,32 +2042,32 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0098",
+      "qid": "public_q0108",
       "question": "How should a radiotherapy physicist use guidance on in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels when implementing or auditing a service?",
-      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
-      "top_topics": [
-        "reference-dosimetry",
-        "education-and-foundations",
-        "imaging-and-localization"
-      ],
-      "top_candidate_docs": [
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_hhr8_in_vivo_dosimetry"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0099",
-      "question": "What limitations, uncertainty sources, or practical constraints should be considered for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
       "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
       "top_topics": [
         "reference-dosimetry",
         "imaging-and-localization",
         "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0109",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
+      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
+      "top_topics": [
+        "reference-dosimetry",
+        "nontarget-dose-and-radiation-protection",
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_hhs31_accuracy_requirements_dosimetry",
@@ -1890,7 +2080,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0100",
+      "qid": "public_q0110",
       "question": "What does IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
       "top_topics": [
@@ -1909,7 +2099,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0101",
+      "qid": "public_q0111",
       "question": "Which report evidence is most relevant for record and verify systems radiotherapy workflow safety commissioning and quality control, and what should be checked first?",
       "expected_doc_id": "iaea_hhr7_record_verify_systems",
       "top_topics": [
@@ -1928,7 +2118,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0102",
+      "qid": "public_q0112",
       "question": "What quality assurance, safety, or documentation issues are emphasized for record and verify systems radiotherapy workflow safety commissioning and quality control?",
       "expected_doc_id": "iaea_hhr7_record_verify_systems",
       "top_topics": [
@@ -1947,7 +2137,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0103",
+      "qid": "public_q0113",
       "question": "How should a radiotherapy physicist use guidance on record and verify systems radiotherapy workflow safety commissioning and quality control when implementing or auditing a service?",
       "expected_doc_id": "iaea_hhr7_record_verify_systems",
       "top_topics": [
@@ -1966,7 +2156,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0104",
+      "qid": "public_q0114",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for record and verify systems radiotherapy workflow safety commissioning and quality control?",
       "expected_doc_id": "iaea_hhr7_record_verify_systems",
       "top_topics": [
@@ -1985,7 +2175,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0105",
+      "qid": "public_q0115",
       "question": "What does IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhr7_record_verify_systems",
       "top_topics": [
@@ -2004,26 +2194,26 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0106",
+      "qid": "public_q0116",
       "question": "Which report evidence is most relevant for quatro comprehensive radiotherapy practice audits and quality improvement, and what should be checked first?",
       "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
       "top_topics": [
         "quality-management-and-safety",
-        "equipment-and-facilities",
-        "reference-dosimetry"
+        "reference-dosimetry",
+        "treatment-planning"
       ],
       "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0107",
+      "qid": "public_q0117",
       "question": "What quality assurance, safety, or documentation issues are emphasized for quatro comprehensive radiotherapy practice audits and quality improvement?",
       "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
       "top_topics": [
@@ -2042,26 +2232,26 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0108",
+      "qid": "public_q0118",
       "question": "How should a radiotherapy physicist use guidance on quatro comprehensive radiotherapy practice audits and quality improvement when implementing or auditing a service?",
       "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
       "top_topics": [
         "quality-management-and-safety",
-        "education-and-foundations",
+        "imaging-and-localization",
         "equipment-and-facilities"
       ],
       "top_candidate_docs": [
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0109",
+      "qid": "public_q0119",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for quatro comprehensive radiotherapy practice audits and quality improvement?",
       "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
       "top_topics": [
@@ -2080,32 +2270,32 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0110",
+      "qid": "public_q0120",
       "question": "What does Comprehensive audits of radiotherapy practices: a tool for quality improvement cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
       "top_topics": [
         "quality-management-and-safety",
-        "equipment-and-facilities",
-        "imaging-and-localization"
+        "imaging-and-localization",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_pub1297_quatro_audit_tool",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_tecdoc1543_quatro"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0111",
+      "qid": "public_q0121",
       "question": "Which report evidence is most relevant for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology, and what should be checked first?",
       "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "nomenclature-and-data"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
@@ -2118,32 +2308,32 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0112",
+      "qid": "public_q0122",
       "question": "What quality assurance, safety, or documentation issues are emphasized for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology?",
       "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0113",
+      "qid": "public_q0123",
       "question": "How should a radiotherapy physicist use guidance on earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology when implementing or auditing a service?",
       "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "nomenclature-and-data"
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
@@ -2156,7 +2346,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0114",
+      "qid": "public_q0124",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology?",
       "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
       "top_topics": [
@@ -2175,45 +2365,45 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0115",
+      "qid": "public_q0125",
       "question": "What does Comprehensive audits of radiotherapy practices: a tool for quality improvement cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
       "top_topics": [
         "quality-management-and-safety",
-        "equipment-and-facilities",
-        "imaging-and-localization"
+        "imaging-and-localization",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_pub1297_quatro_audit_tool",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_tecdoc1543_quatro"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0116",
+      "qid": "public_q0126",
       "question": "Which report evidence is most relevant for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy, and what should be checked first?",
       "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
       "top_topics": [
-        "equipment-and-facilities",
         "reference-dosimetry",
-        "nontarget-dose-and-radiation-protection"
+        "equipment-and-facilities",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs398_absorbed_dose_ebrt",
-        "iaea_trs483_small_static_fields",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_pub1638_radiotherapy_in_cancer_care"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0117",
+      "qid": "public_q0127",
       "question": "What quality assurance, safety, or documentation issues are emphasized for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
       "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
       "top_topics": [
@@ -2232,7 +2422,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0118",
+      "qid": "public_q0128",
       "question": "How should a radiotherapy physicist use guidance on accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy when implementing or auditing a service?",
       "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
       "top_topics": [
@@ -2251,7 +2441,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0119",
+      "qid": "public_q0129",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
       "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
       "top_topics": [
@@ -2270,32 +2460,32 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0120",
+      "qid": "public_q0130",
       "question": "What does IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
       "top_topics": [
         "reference-dosimetry",
         "quality-management-and-safety",
-        "education-and-foundations"
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_hhr8_in_vivo_dosimetry",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0121",
+      "qid": "public_q0131",
       "question": "Which report evidence is most relevant for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure, and what should be checked first?",
       "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
       "top_topics": [
         "equipment-and-facilities",
-        "nontarget-dose-and-radiation-protection",
-        "education-and-foundations"
+        "education-and-foundations",
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
@@ -2308,7 +2498,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0122",
+      "qid": "public_q0132",
       "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure?",
       "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
       "top_topics": [
@@ -2327,12 +2517,12 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0123",
+      "qid": "public_q0133",
       "question": "How should a radiotherapy physicist use guidance on radiotherapy facility design shielding equipment rooms workflow and safety infrastructure when implementing or auditing a service?",
       "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
       "top_topics": [
-        "nontarget-dose-and-radiation-protection",
         "equipment-and-facilities",
+        "nontarget-dose-and-radiation-protection",
         "education-and-foundations"
       ],
       "top_candidate_docs": [
@@ -2346,7 +2536,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0124",
+      "qid": "public_q0134",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure?",
       "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
       "top_topics": [
@@ -2365,13 +2555,13 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0125",
+      "qid": "public_q0135",
       "question": "What does IAEA Human Health Reports No. 10: Radiotherapy facilities cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
       "top_topics": [
         "education-and-foundations",
         "quality-management-and-safety",
-        "equipment-and-facilities"
+        "treatment-planning"
       ],
       "top_candidate_docs": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
@@ -2384,7 +2574,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0126",
+      "qid": "public_q0136",
       "question": "Which report evidence is most relevant for radiotherapy equipment selection acceptance testing commissioning quality control and procurement, and what should be checked first?",
       "expected_doc_id": "iaea_hhr17_linear_accelerators",
       "top_topics": [
@@ -2403,12 +2593,12 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0127",
+      "qid": "public_q0137",
       "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy equipment selection acceptance testing commissioning quality control and procurement?",
       "expected_doc_id": "iaea_hhr17_linear_accelerators",
       "top_topics": [
-        "treatment-planning",
         "equipment-and-facilities",
+        "treatment-planning",
         "quality-management-and-safety"
       ],
       "top_candidate_docs": [
@@ -2422,7 +2612,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0128",
+      "qid": "public_q0138",
       "question": "How should a radiotherapy physicist use guidance on radiotherapy equipment selection acceptance testing commissioning quality control and procurement when implementing or auditing a service?",
       "expected_doc_id": "iaea_hhr17_linear_accelerators",
       "top_topics": [
@@ -2441,7 +2631,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0129",
+      "qid": "public_q0139",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy equipment selection acceptance testing commissioning quality control and procurement?",
       "expected_doc_id": "iaea_hhr17_linear_accelerators",
       "top_topics": [
@@ -2460,7 +2650,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0130",
+      "qid": "public_q0140",
       "question": "What does IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhr17_linear_accelerators",
       "top_topics": [
@@ -2479,13 +2669,13 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0131",
+      "qid": "public_q0141",
       "question": "Which report evidence is most relevant for brachytherapy source calibration at ssdls and hospitals, and what should be checked first?",
       "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
       "top_topics": [
         "brachytherapy",
-        "equipment-and-facilities",
-        "reference-dosimetry"
+        "reference-dosimetry",
+        "biological-models-and-response"
       ],
       "top_candidate_docs": [
         "iaea_hhs31_accuracy_requirements_dosimetry",
@@ -2498,7 +2688,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0132",
+      "qid": "public_q0142",
       "question": "What quality assurance, safety, or documentation issues are emphasized for brachytherapy source calibration at ssdls and hospitals?",
       "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
       "top_topics": [
@@ -2510,33 +2700,33 @@
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_tecdoc1543_quatro"
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_pub1990_quatro_quality_improvement"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0133",
+      "qid": "public_q0143",
       "question": "How should a radiotherapy physicist use guidance on brachytherapy source calibration at ssdls and hospitals when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
       "top_topics": [
         "brachytherapy",
-        "nontarget-dose-and-radiation-protection",
-        "education-and-foundations"
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_srs47_radiotherapy_facility_radiation_protection"
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "aapm_tg132_image_registration_fusion"
       ],
       "topic_hit_at_3": true,
-      "doc_hit_at_5": false
+      "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0134",
+      "qid": "public_q0144",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for brachytherapy source calibration at ssdls and hospitals?",
       "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
       "top_topics": [
@@ -2555,32 +2745,51 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0135",
+      "qid": "public_q0145",
       "question": "What does IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
       "top_topics": [
         "brachytherapy",
         "reference-dosimetry",
-        "nontarget-dose-and-radiation-protection"
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
-        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_absorbed_dose_ebrt",
-        "iaea_trs483_small_static_fields"
+        "iaea_trs398_absorbed_dose_ebrt"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0136",
+      "qid": "public_q0146",
       "question": "Which report evidence is most relevant for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain, and what should be checked first?",
       "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
       "top_topics": [
         "education-and-foundations",
-        "equipment-and-facilities",
-        "quality-management-and-safety"
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "tg158",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0147",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
+      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+      "top_topics": [
+        "quality-management-and-safety",
+        "education-and-foundations",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
         "iaea_pub1638_radiotherapy_in_cancer_care",
@@ -2593,45 +2802,26 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0137",
-      "question": "What quality assurance, safety, or documentation issues are emphasized for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
-      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
-      "top_topics": [
-        "quality-management-and-safety",
-        "education-and-foundations",
-        "nontarget-dose-and-radiation-protection"
-      ],
-      "top_candidate_docs": [
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_hhs19_ct_sim_radiotherapy"
-      ],
-      "topic_hit_at_3": true,
-      "doc_hit_at_5": true
-    },
-    {
-      "qid": "public_q0138",
+      "qid": "public_q0148",
       "question": "How should a radiotherapy physicist use guidance on dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
       "top_topics": [
         "education-and-foundations",
-        "nontarget-dose-and-radiation-protection",
-        "quality-management-and-safety"
+        "biological-models-and-response",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_srs47_radiotherapy_facility_radiation_protection"
+        "tg158",
+        "iaea_tecdoc_1040_radiotherapy_programme"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0139",
+      "qid": "public_q0149",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
       "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
       "top_topics": [
@@ -2650,64 +2840,64 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0140",
+      "qid": "public_q0150",
       "question": "What does IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
       "top_topics": [
         "education-and-foundations",
         "quality-management-and-safety",
-        "treatment-planning"
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs19_ct_sim_radiotherapy"
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0141",
+      "qid": "public_q0151",
       "question": "Which report evidence is most relevant for updated international code of practice for absorbed dose determination in external beam radiotherapy, and what should be checked first?",
       "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
       "top_topics": [
         "reference-dosimetry",
-        "equipment-and-facilities",
+        "education-and-foundations",
         "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_trs483_small_static_fields",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs483_small_static_fields"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0142",
+      "qid": "public_q0152",
       "question": "What quality assurance, safety, or documentation issues are emphasized for updated international code of practice for absorbed dose determination in external beam radiotherapy?",
       "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
       "top_topics": [
         "reference-dosimetry",
         "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs483_small_static_fields",
-        "iaea_hhr8_in_vivo_dosimetry"
+        "iaea_pub1638_radiotherapy_in_cancer_care"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0143",
+      "qid": "public_q0153",
       "question": "How should a radiotherapy physicist use guidance on updated international code of practice for absorbed dose determination in external beam radiotherapy when implementing or auditing a service?",
       "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
       "top_topics": [
@@ -2726,127 +2916,127 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0144",
+      "qid": "public_q0154",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for updated international code of practice for absorbed dose determination in external beam radiotherapy?",
       "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
       "top_topics": [
         "reference-dosimetry",
         "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities"
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs483_small_static_fields",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1638_radiotherapy_in_cancer_care"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0145",
+      "qid": "public_q0155",
       "question": "What does IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
       "top_topics": [
         "reference-dosimetry",
-        "equipment-and-facilities",
+        "education-and-foundations",
         "nontarget-dose-and-radiation-protection"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_trs483_small_static_fields",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1638_radiotherapy_in_cancer_care"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0146",
+      "qid": "public_q0156",
       "question": "Which report evidence is most relevant for photon beam reference dosimetry addendum to the aapm tg-51 protocol, and what should be checked first?",
       "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
       "top_topics": [
-        "quality-management-and-safety",
+        "education-and-foundations",
         "imaging-and-localization",
-        "treatment-planning"
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
-        "aapm_report_104_kv_imaging_guidance",
-        "iaea_trs430_tps_commissioning_qa",
-        "aapm_report_46_tg40_radiation_oncology_qa",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_166_biological_models_treatment_planning_qa"
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "tg158",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "topic_hit_at_3": false,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0147",
+      "qid": "public_q0157",
       "question": "What quality assurance, safety, or documentation issues are emphasized for photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
       "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
       "top_topics": [
         "quality-management-and-safety",
         "treatment-planning",
-        "reference-dosimetry"
+        "brachytherapy"
       ],
       "top_candidate_docs": [
-        "iaea_trs398_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhr8_in_vivo_dosimetry"
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg148_helical_tomotherapy_qa"
       ],
-      "topic_hit_at_3": true,
+      "topic_hit_at_3": false,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0148",
+      "qid": "public_q0158",
       "question": "How should a radiotherapy physicist use guidance on photon beam reference dosimetry addendum to the aapm tg-51 protocol when implementing or auditing a service?",
       "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
       "top_topics": [
-        "quality-management-and-safety",
         "imaging-and-localization",
-        "education-and-foundations"
+        "education-and-foundations",
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_tecdoc1543_quatro",
-        "iaea_hhr18_radiotherapy_dosimetry_audits"
+        "tg158",
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": false,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0149",
+      "qid": "public_q0159",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
       "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
       "top_topics": [
-        "imaging-and-localization",
-        "quality-management-and-safety",
-        "nontarget-dose-and-radiation-protection"
+        "brachytherapy",
+        "education-and-foundations",
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
-        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "tg158",
         "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_46_tg40_radiation_oncology_qa",
-        "iaea_srs47_radiotherapy_facility_radiation_protection"
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "topic_hit_at_3": false,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0150",
+      "qid": "public_q0160",
       "question": "What does AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
       "top_topics": [
         "reference-dosimetry",
         "quality-management-and-safety",
-        "imaging-and-localization"
+        "treatment-planning"
       ],
       "top_candidate_docs": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -2859,7 +3049,7 @@
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0151",
+      "qid": "public_q0161",
       "question": "Which report evidence is most relevant for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning, and what should be checked first?",
       "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
       "top_topics": [
@@ -2878,7 +3068,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0152",
+      "qid": "public_q0162",
       "question": "What quality assurance, safety, or documentation issues are emphasized for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning?",
       "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
       "top_topics": [
@@ -2891,37 +3081,37 @@
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_tecdoc1588_3dcrt_imrt_transition",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc1543_quatro"
+        "aapm_tg100_radiotherapy_quality_management"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0153",
+      "qid": "public_q0163",
       "question": "How should a radiotherapy physicist use guidance on transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning when implementing or auditing a service?",
       "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
       "top_topics": [
         "treatment-planning",
-        "education-and-foundations",
+        "equipment-and-facilities",
         "imaging-and-localization"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_trs430_tps_commissioning_qa"
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_tg132_image_registration_fusion"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0154",
+      "qid": "public_q0164",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning?",
       "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
       "top_topics": [
         "treatment-planning",
-        "imaging-and-localization",
+        "equipment-and-facilities",
         "education-and-foundations"
       ],
       "top_candidate_docs": [
@@ -2935,7 +3125,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0155",
+      "qid": "public_q0165",
       "question": "What does IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
       "top_topics": [
@@ -2954,83 +3144,83 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0156",
+      "qid": "public_q0166",
       "question": "Which report evidence is most relevant for national radiotherapy service planning resource estimation programme capacity access and service development, and what should be checked first?",
       "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
       "top_topics": [
         "imaging-and-localization",
-        "education-and-foundations",
-        "equipment-and-facilities"
+        "quality-management-and-safety",
+        "treatment-planning"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
         "aapm_report_104_kv_imaging_guidance"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0157",
+      "qid": "public_q0167",
       "question": "What quality assurance, safety, or documentation issues are emphasized for national radiotherapy service planning resource estimation programme capacity access and service development?",
       "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
       "top_topics": [
         "quality-management-and-safety",
-        "imaging-and-localization",
-        "nontarget-dose-and-radiation-protection"
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
       ],
       "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhr16_igrt_qa",
-        "iaea_pub1990_quatro_quality_improvement"
+        "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": false
     },
     {
-      "qid": "public_q0158",
+      "qid": "public_q0168",
       "question": "How should a radiotherapy physicist use guidance on national radiotherapy service planning resource estimation programme capacity access and service development when implementing or auditing a service?",
       "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
       "top_topics": [
         "imaging-and-localization",
-        "education-and-foundations",
-        "nontarget-dose-and-radiation-protection"
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0159",
+      "qid": "public_q0169",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for national radiotherapy service planning resource estimation programme capacity access and service development?",
       "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
       "top_topics": [
         "imaging-and-localization",
         "nontarget-dose-and-radiation-protection",
-        "education-and-foundations"
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_hhs14_planning_national_radiotherapy_services"
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "aapm_report_104_kv_imaging_guidance"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0160",
+      "qid": "public_q0170",
       "question": "What does IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
       "top_topics": [
@@ -3049,13 +3239,13 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0161",
+      "qid": "public_q0171",
       "question": "Which report evidence is most relevant for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design, and what should be checked first?",
       "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
-        "equipment-and-facilities",
-        "education-and-foundations"
+        "education-and-foundations",
+        "equipment-and-facilities"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
@@ -3068,7 +3258,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0162",
+      "qid": "public_q0172",
       "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design?",
       "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
       "top_topics": [
@@ -3087,26 +3277,26 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0163",
+      "qid": "public_q0173",
       "question": "How should a radiotherapy physicist use guidance on radiotherapy facility shielding bunker design radiation protection workload barriers and safety design when implementing or auditing a service?",
       "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
-        "education-and-foundations",
-        "equipment-and-facilities"
+        "equipment-and-facilities",
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhs14_planning_national_radiotherapy_services"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0164",
+      "qid": "public_q0174",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design?",
       "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
       "top_topics": [
@@ -3125,7 +3315,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0165",
+      "qid": "public_q0175",
       "question": "What does IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
       "top_topics": [
@@ -3144,26 +3334,26 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0166",
+      "qid": "public_q0176",
       "question": "Which report evidence is most relevant for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety, and what should be checked first?",
       "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
-        "education-and-foundations",
-        "equipment-and-facilities"
+        "quality-management-and-safety",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs19_ct_sim_radiotherapy"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0167",
+      "qid": "public_q0177",
       "question": "What quality assurance, safety, or documentation issues are emphasized for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety?",
       "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
       "top_topics": [
@@ -3174,53 +3364,53 @@
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc_1040_radiotherapy_programme"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0168",
+      "qid": "public_q0178",
       "question": "How should a radiotherapy physicist use guidance on radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety when implementing or auditing a service?",
       "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
-        "education-and-foundations",
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_srs47_radiotherapy_facility_radiation_protection"
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_tecdoc1543_quatro"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0169",
+      "qid": "public_q0179",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety?",
       "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
       "top_topics": [
         "nontarget-dose-and-radiation-protection",
-        "education-and-foundations",
-        "equipment-and-facilities"
+        "quality-management-and-safety",
+        "education-and-foundations"
       ],
       "top_candidate_docs": [
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs19_ct_sim_radiotherapy"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0170",
+      "qid": "public_q0180",
       "question": "What does IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
       "top_topics": [
@@ -3239,26 +3429,26 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0171",
+      "qid": "public_q0181",
       "question": "Which report evidence is most relevant for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context, and what should be checked first?",
       "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "equipment-and-facilities"
+        "treatment-planning"
       ],
       "top_candidate_docs": [
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0172",
+      "qid": "public_q0182",
       "question": "What quality assurance, safety, or documentation issues are emphasized for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context?",
       "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
       "top_topics": [
@@ -3277,7 +3467,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0173",
+      "qid": "public_q0183",
       "question": "How should a radiotherapy physicist use guidance on global radiotherapy access infrastructure workforce technology quality safety and cancer-care context when implementing or auditing a service?",
       "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
       "top_topics": [
@@ -3296,7 +3486,7 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0174",
+      "qid": "public_q0184",
       "question": "What limitations, uncertainty sources, or practical constraints should be considered for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context?",
       "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
       "top_topics": [
@@ -3315,20 +3505,1160 @@
       "doc_hit_at_5": true
     },
     {
-      "qid": "public_q0175",
+      "qid": "public_q0185",
       "question": "What does Radiotherapy in Cancer Care: Facing the Global Challenge cover that would matter for evidence-grounded radiotherapy physics QA?",
       "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
       "top_topics": [
         "quality-management-and-safety",
         "education-and-foundations",
-        "treatment-planning"
+        "imaging-and-localization"
       ],
       "top_candidate_docs": [
         "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0186",
+      "question": "Which report evidence is most relevant for medical accelerator quality assurance linac qa test frequencies tolerances imaging safety interlocks mlc electron and photon, and what should be checked first?",
+      "expected_doc_id": "aapm_tg142_medical_accelerator_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "treatment-planning",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0187",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for medical accelerator quality assurance linac qa test frequencies tolerances imaging safety interlocks mlc electron and photon?",
+      "expected_doc_id": "aapm_tg142_medical_accelerator_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0188",
+      "question": "How should a radiotherapy physicist use guidance on medical accelerator quality assurance linac qa test frequencies tolerances imaging safety interlocks mlc electron and photon when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg142_medical_accelerator_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0189",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for medical accelerator quality assurance linac qa test frequencies tolerances imaging safety interlocks mlc electron and photon?",
+      "expected_doc_id": "aapm_tg142_medical_accelerator_qa",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0190",
+      "question": "What does AAPM TG 142: Quality assurance of medical accelerators cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg142_medical_accelerator_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "treatment-planning",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0191",
+      "question": "Which report evidence is most relevant for imrt commissioning benchmark cases confidence limits planning and delivery tests dosimetry comparison and end-to end imrt, and what should be checked first?",
+      "expected_doc_id": "aapm_tg119_imrt_commissioning",
+      "top_topics": [
+        "treatment-planning",
+        "education-and-foundations",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs430_tps_commissioning_qa",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0192",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for imrt commissioning benchmark cases confidence limits planning and delivery tests dosimetry comparison and end-to end imrt?",
+      "expected_doc_id": "aapm_tg119_imrt_commissioning",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0193",
+      "question": "How should a radiotherapy physicist use guidance on imrt commissioning benchmark cases confidence limits planning and delivery tests dosimetry comparison and end-to end imrt when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg119_imrt_commissioning",
+      "top_topics": [
+        "treatment-planning",
+        "imaging-and-localization",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0194",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for imrt commissioning benchmark cases confidence limits planning and delivery tests dosimetry comparison and end-to end imrt?",
+      "expected_doc_id": "aapm_tg119_imrt_commissioning",
+      "top_topics": [
+        "treatment-planning",
+        "imaging-and-localization",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0195",
+      "question": "What does AAPM TG 119: IMRT commissioning with multiple-institution planning and dosimetry comparisons cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg119_imrt_commissioning",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0196",
+      "question": "Which report evidence is most relevant for linear accelerator beam data commissioning phantom setup detector selection photon and electron beam measurements beam profiles, and what should be checked first?",
+      "expected_doc_id": "aapm_tg106_beam_data_commissioning",
+      "top_topics": [
+        "equipment-and-facilities",
+        "education-and-foundations",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0197",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for linear accelerator beam data commissioning phantom setup detector selection photon and electron beam measurements beam profiles?",
+      "expected_doc_id": "aapm_tg106_beam_data_commissioning",
+      "top_topics": [
+        "equipment-and-facilities",
+        "treatment-planning",
+        "brachytherapy"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr7_record_verify_systems",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0198",
+      "question": "How should a radiotherapy physicist use guidance on linear accelerator beam data commissioning phantom setup detector selection photon and electron beam measurements beam profiles when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg106_beam_data_commissioning",
+      "top_topics": [
+        "equipment-and-facilities",
+        "imaging-and-localization",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0199",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for linear accelerator beam data commissioning phantom setup detector selection photon and electron beam measurements beam profiles?",
+      "expected_doc_id": "aapm_tg106_beam_data_commissioning",
+      "top_topics": [
+        "equipment-and-facilities",
+        "brachytherapy",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg106_beam_data_commissioning",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0200",
+      "question": "What does AAPM TG 106: Accelerator beam data commissioning equipment and procedures cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg106_beam_data_commissioning",
+      "top_topics": [
+        "equipment-and-facilities",
+        "quality-management-and-safety",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_tecdoc1543_quatro",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0201",
+      "question": "Which report evidence is most relevant for imrt dosimetry tools detector arrays phantoms film ion chambers dose distribution comparison commissioning measurements and patient-specific, and what should be checked first?",
+      "expected_doc_id": "aapm_tg120_imrt_dosimetry_tools",
+      "top_topics": [
+        "treatment-planning",
+        "education-and-foundations",
+        "reference-dosimetry"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0202",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for imrt dosimetry tools detector arrays phantoms film ion chambers dose distribution comparison commissioning measurements and patient-specific?",
+      "expected_doc_id": "aapm_tg120_imrt_dosimetry_tools",
+      "top_topics": [
+        "treatment-planning",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0203",
+      "question": "How should a radiotherapy physicist use guidance on imrt dosimetry tools detector arrays phantoms film ion chambers dose distribution comparison commissioning measurements and patient-specific when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg120_imrt_dosimetry_tools",
+      "top_topics": [
+        "treatment-planning",
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0204",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for imrt dosimetry tools detector arrays phantoms film ion chambers dose distribution comparison commissioning measurements and patient-specific?",
+      "expected_doc_id": "aapm_tg120_imrt_dosimetry_tools",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning",
+        "reference-dosimetry"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0205",
+      "question": "What does AAPM TG 120: Dosimetry tools and techniques for IMRT cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg120_imrt_dosimetry_tools",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg120_imrt_dosimetry_tools",
         "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0206",
+      "question": "Which report evidence is most relevant for patient-specific imrt and vmat qa measurement-based verification gamma analysis tolerance limits action limits global and local, and what should be checked first?",
+      "expected_doc_id": "aapm_tg218_imrt_measurement_based_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0207",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for patient-specific imrt and vmat qa measurement-based verification gamma analysis tolerance limits action limits global and local?",
+      "expected_doc_id": "aapm_tg218_imrt_measurement_based_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0208",
+      "question": "How should a radiotherapy physicist use guidance on patient-specific imrt and vmat qa measurement-based verification gamma analysis tolerance limits action limits global and local when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg218_imrt_measurement_based_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0209",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for patient-specific imrt and vmat qa measurement-based verification gamma analysis tolerance limits action limits global and local?",
+      "expected_doc_id": "aapm_tg218_imrt_measurement_based_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0210",
+      "question": "What does AAPM TG 218: Tolerance limits and methodologies for IMRT measurement-based verification QA cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg218_imrt_measurement_based_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0211",
+      "question": "Which report evidence is most relevant for ct-based igrt quality assurance cone-beam ct fan-beam mvct ct-on rails geometric accuracy image quality imaging dose, and what should be checked first?",
+      "expected_doc_id": "aapm_tg179_ct_based_igrt_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "imaging-and-localization",
+        "nomenclature-and-data"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_tecdoc1543_quatro",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0212",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for ct-based igrt quality assurance cone-beam ct fan-beam mvct ct-on rails geometric accuracy image quality imaging dose?",
+      "expected_doc_id": "aapm_tg179_ct_based_igrt_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0213",
+      "question": "How should a radiotherapy physicist use guidance on ct-based igrt quality assurance cone-beam ct fan-beam mvct ct-on rails geometric accuracy image quality imaging dose when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg179_ct_based_igrt_qa",
+      "top_topics": [
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0214",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for ct-based igrt quality assurance cone-beam ct fan-beam mvct ct-on rails geometric accuracy image quality imaging dose?",
+      "expected_doc_id": "aapm_tg179_ct_based_igrt_qa",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhr16_igrt_qa",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0215",
+      "question": "What does AAPM TG 179: Quality assurance for image-guided radiation therapy utilizing CT-based technologies cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg179_ct_based_igrt_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "imaging-and-localization",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_report_46_tg40_radiation_oncology_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0216",
+      "question": "Which report evidence is most relevant for nonradiographic localization and positioning qa optical surface imaging infrared tracking radiofrequency tracking electromagnetic systems geometric accuracy, and what should be checked first?",
+      "expected_doc_id": "aapm_tg147_nonradiographic_localization_qa",
+      "top_topics": [
+        "imaging-and-localization",
+        "treatment-planning",
+        "biological-models-and-response"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "topic_hit_at_3": false,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0217",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for nonradiographic localization and positioning qa optical surface imaging infrared tracking radiofrequency tracking electromagnetic systems geometric accuracy?",
+      "expected_doc_id": "aapm_tg147_nonradiographic_localization_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "treatment-planning",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg147_nonradiographic_localization_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0218",
+      "question": "How should a radiotherapy physicist use guidance on nonradiographic localization and positioning qa optical surface imaging infrared tracking radiofrequency tracking electromagnetic systems geometric accuracy when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg147_nonradiographic_localization_qa",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg132_image_registration_fusion"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0219",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for nonradiographic localization and positioning qa optical surface imaging infrared tracking radiofrequency tracking electromagnetic systems geometric accuracy?",
+      "expected_doc_id": "aapm_tg147_nonradiographic_localization_qa",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "topic_hit_at_3": false,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0220",
+      "question": "What does AAPM TG 147: Quality assurance for nonradiographic radiotherapy localization and positioning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg147_nonradiographic_localization_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "treatment-planning",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0221",
+      "question": "Which report evidence is most relevant for stereotactic body radiation therapy sbrt simulation immobilization image guidance treatment planning dose calculation small fields delivery, and what should be checked first?",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "top_topics": [
+        "imaging-and-localization",
+        "biological-models-and-response",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "tg158",
+        "aapm_tg101_sbrt"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0222",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for stereotactic body radiation therapy sbrt simulation immobilization image guidance treatment planning dose calculation small fields delivery?",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "top_topics": [
+        "equipment-and-facilities",
+        "imaging-and-localization",
+        "biological-models-and-response"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg101_sbrt",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_tg180_image_guidance_dose_management",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg132_image_registration_fusion"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0223",
+      "question": "How should a radiotherapy physicist use guidance on stereotactic body radiation therapy sbrt simulation immobilization image guidance treatment planning dose calculation small fields delivery when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "top_topics": [
+        "imaging-and-localization",
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg101_sbrt",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_tg132_image_registration_fusion",
+        "aapm_tg180_image_guidance_dose_management",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0224",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for stereotactic body radiation therapy sbrt simulation immobilization image guidance treatment planning dose calculation small fields delivery?",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "top_topics": [
+        "imaging-and-localization",
+        "biological-models-and-response",
+        "equipment-and-facilities"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg101_sbrt",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_tg180_image_guidance_dose_management",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0225",
+      "question": "What does AAPM TG 101: Stereotactic body radiation therapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "top_topics": [
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "education-and-foundations"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "aapm_tg101_sbrt"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0226",
+      "question": "Which report evidence is most relevant for image-guided radiotherapy imaging dose management kv and mv image guidance dose patient dose estimation dose reduction, and what should be checked first?",
+      "expected_doc_id": "aapm_tg75_igrt_imaging_dose",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg75_igrt_imaging_dose"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0227",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for image-guided radiotherapy imaging dose management kv and mv image guidance dose patient dose estimation dose reduction?",
+      "expected_doc_id": "aapm_tg75_igrt_imaging_dose",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr16_igrt_qa",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0228",
+      "question": "How should a radiotherapy physicist use guidance on image-guided radiotherapy imaging dose management kv and mv image guidance dose patient dose estimation dose reduction when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg75_igrt_imaging_dose",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0229",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for image-guided radiotherapy imaging dose management kv and mv image guidance dose patient dose estimation dose reduction?",
+      "expected_doc_id": "aapm_tg75_igrt_imaging_dose",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg75_igrt_imaging_dose"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0230",
+      "question": "What does AAPM TG 75: The management of imaging dose during image-guided radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg75_igrt_imaging_dose",
+      "top_topics": [
+        "nontarget-dose-and-radiation-protection",
+        "imaging-and-localization",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0231",
+      "question": "Which report evidence is most relevant for image guidance dose quantification management and reduction cbct and radiographic imaging dose imaging protocol optimization dose, and what should be checked first?",
+      "expected_doc_id": "aapm_tg180_image_guidance_dose_management",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0232",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for image guidance dose quantification management and reduction cbct and radiographic imaging dose imaging protocol optimization dose?",
+      "expected_doc_id": "aapm_tg180_image_guidance_dose_management",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg179_ct_based_igrt_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0233",
+      "question": "How should a radiotherapy physicist use guidance on image guidance dose quantification management and reduction cbct and radiographic imaging dose imaging protocol optimization dose when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg180_image_guidance_dose_management",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0234",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for image guidance dose quantification management and reduction cbct and radiographic imaging dose imaging protocol optimization dose?",
+      "expected_doc_id": "aapm_tg180_image_guidance_dose_management",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0235",
+      "question": "What does AAPM TG 180: Image guidance doses delivered during radiotherapy: quantification, management, and reduction cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg180_image_guidance_dose_management",
+      "top_topics": [
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg180_image_guidance_dose_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0236",
+      "question": "Which report evidence is most relevant for helical tomotherapy quality assurance delivery system qa imaging qa treatment planning qa dosimetric verification mechanical checks, and what should be checked first?",
+      "expected_doc_id": "aapm_tg148_helical_tomotherapy_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "biological-models-and-response"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg148_helical_tomotherapy_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0237",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for helical tomotherapy quality assurance delivery system qa imaging qa treatment planning qa dosimetric verification mechanical checks?",
+      "expected_doc_id": "aapm_tg148_helical_tomotherapy_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "biological-models-and-response"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0238",
+      "question": "How should a radiotherapy physicist use guidance on helical tomotherapy quality assurance delivery system qa imaging qa treatment planning qa dosimetric verification mechanical checks when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg148_helical_tomotherapy_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0239",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for helical tomotherapy quality assurance delivery system qa imaging qa treatment planning qa dosimetric verification mechanical checks?",
+      "expected_doc_id": "aapm_tg148_helical_tomotherapy_qa",
+      "top_topics": [
+        "treatment-planning",
+        "quality-management-and-safety",
+        "biological-models-and-response"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0240",
+      "question": "What does AAPM TG 148: QA for helical tomotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg148_helical_tomotherapy_qa",
+      "top_topics": [
+        "quality-management-and-safety",
+        "education-and-foundations",
+        "imaging-and-localization"
+      ],
+      "top_candidate_docs": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0241",
+      "question": "Which report evidence is most relevant for image registration and fusion in radiotherapy rigid and deformable registration commissioning quality assurance validation adaptive radiotherapy, and what should be checked first?",
+      "expected_doc_id": "aapm_tg132_image_registration_fusion",
+      "top_topics": [
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg132_image_registration_fusion",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0242",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for image registration and fusion in radiotherapy rigid and deformable registration commissioning quality assurance validation adaptive radiotherapy?",
+      "expected_doc_id": "aapm_tg132_image_registration_fusion",
+      "top_topics": [
+        "quality-management-and-safety",
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_hhr16_igrt_qa"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": false
+    },
+    {
+      "qid": "public_q0243",
+      "question": "How should a radiotherapy physicist use guidance on image registration and fusion in radiotherapy rigid and deformable registration commissioning quality assurance validation adaptive radiotherapy when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg132_image_registration_fusion",
+      "top_topics": [
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "nontarget-dose-and-radiation-protection"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg132_image_registration_fusion",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0244",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for image registration and fusion in radiotherapy rigid and deformable registration commissioning quality assurance validation adaptive radiotherapy?",
+      "expected_doc_id": "aapm_tg132_image_registration_fusion",
+      "top_topics": [
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety"
+      ],
+      "top_candidate_docs": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "aapm_tg132_image_registration_fusion"
+      ],
+      "topic_hit_at_3": true,
+      "doc_hit_at_5": true
+    },
+    {
+      "qid": "public_q0245",
+      "question": "What does AAPM TG 132: Use of image registration and fusion algorithms and techniques in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg132_image_registration_fusion",
+      "top_topics": [
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "treatment-planning"
+      ],
+      "top_candidate_docs": [
+        "aapm_tg132_image_registration_fusion",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg218_imrt_measurement_based_qa"
       ],
       "topic_hit_at_3": true,
       "doc_hit_at_5": true

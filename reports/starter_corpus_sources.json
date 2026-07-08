@@ -45,6 +45,7 @@
     "title": "AAPM TG 100: Application of risk analysis methods to radiation therapy quality management",
     "organization": "AAPM",
     "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/",
+    "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/pdf/MPHYA6-000043-004209_1.pdf",
     "role": "Risk analysis, process mapping, FMEA, radiotherapy quality management, and safety analysis"
   },
   {
@@ -125,6 +126,7 @@
     "title": "AAPM TG 158: Measurement and calculation of doses outside the treated volume from external-beam radiation therapy",
     "organization": "AAPM",
     "source_url": "https://www.aapm.org/pubs/reports/detail.asp?docid=165",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12462",
     "role": "Nontarget and out-of-field dose measurement, calculation, reporting, and recommendations"
   },
   {
@@ -294,5 +296,113 @@
     "organization": "IAEA",
     "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf",
     "role": "Global radiotherapy access, infrastructure, workforce, technology, quality, safety, and cancer-care context"
+  },
+  {
+    "doc_id": "aapm_tg142_medical_accelerator_qa",
+    "file": "reports/raw/aapm_tg142_medical_accelerator_qa.pdf",
+    "title": "AAPM TG 142: Quality assurance of medical accelerators",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392",
+    "role": "Medical accelerator quality assurance, linac QA test frequencies, tolerances, imaging, safety interlocks, MLC, electron and photon beam checks"
+  },
+  {
+    "doc_id": "aapm_tg119_imrt_commissioning",
+    "file": "reports/raw/aapm_tg119_imrt_commissioning.pdf",
+    "title": "AAPM TG 119: IMRT commissioning with multiple-institution planning and dosimetry comparisons",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104",
+    "role": "IMRT commissioning benchmark cases, confidence limits, planning and delivery tests, dosimetry comparison, and end-to-end IMRT validation"
+  },
+  {
+    "doc_id": "aapm_tg106_beam_data_commissioning",
+    "file": "reports/raw/aapm_tg106_beam_data_commissioning.pdf",
+    "title": "AAPM TG 106: Accelerator beam data commissioning equipment and procedures",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070",
+    "role": "Linear accelerator beam data commissioning, phantom setup, detector selection, photon and electron beam measurements, beam profiles, output factors, and measurement uncertainty"
+  },
+  {
+    "doc_id": "aapm_tg120_imrt_dosimetry_tools",
+    "file": "reports/raw/aapm_tg120_imrt_dosimetry_tools.pdf",
+    "title": "AAPM TG 120: Dosimetry tools and techniques for IMRT",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120",
+    "role": "IMRT dosimetry tools, detector arrays, phantoms, film, ion chambers, dose distribution comparison, commissioning measurements, and patient-specific QA"
+  },
+  {
+    "doc_id": "aapm_tg218_imrt_measurement_based_qa",
+    "file": "reports/raw/aapm_tg218_imrt_measurement_based_qa.pdf",
+    "title": "AAPM TG 218: Tolerance limits and methodologies for IMRT measurement-based verification QA",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12810",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12810",
+    "role": "Patient-specific IMRT and VMAT QA, measurement-based verification, gamma analysis, tolerance limits, action limits, global and local normalization, and delivery error detection"
+  },
+  {
+    "doc_id": "aapm_tg179_ct_based_igrt_qa",
+    "file": "reports/raw/aapm_tg179_ct_based_igrt_qa.pdf",
+    "title": "AAPM TG 179: Quality assurance for image-guided radiation therapy utilizing CT-based technologies",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3690466",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3690466",
+    "role": "CT-based IGRT quality assurance, cone-beam CT, fan-beam MVCT, CT-on-rails, geometric accuracy, image quality, imaging dose, system operation, and safety"
+  },
+  {
+    "doc_id": "aapm_tg147_nonradiographic_localization_qa",
+    "file": "reports/raw/aapm_tg147_nonradiographic_localization_qa.pdf",
+    "title": "AAPM TG 147: Quality assurance for nonradiographic radiotherapy localization and positioning systems",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3681967",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3681967",
+    "role": "Nonradiographic localization and positioning QA, optical surface imaging, infrared tracking, radiofrequency tracking, electromagnetic systems, geometric accuracy, gating, and motion monitoring"
+  },
+  {
+    "doc_id": "aapm_tg101_sbrt",
+    "file": "reports/raw/aapm_tg101_sbrt.pdf",
+    "title": "AAPM TG 101: Stereotactic body radiation therapy",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081",
+    "role": "Stereotactic body radiation therapy, SBRT simulation, immobilization, image guidance, treatment planning, dose calculation, small fields, delivery, QA, and safety"
+  },
+  {
+    "doc_id": "aapm_tg75_igrt_imaging_dose",
+    "file": "reports/raw/aapm_tg75_igrt_imaging_dose.pdf",
+    "title": "AAPM TG 75: The management of imaging dose during image-guided radiotherapy",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667",
+    "role": "Image-guided radiotherapy imaging dose management, kV and MV image guidance dose, patient dose estimation, dose reduction, imaging protocol selection, and risk-benefit considerations"
+  },
+  {
+    "doc_id": "aapm_tg180_image_guidance_dose_management",
+    "file": "reports/raw/aapm_tg180_image_guidance_dose_management.pdf",
+    "title": "AAPM TG 180: Image guidance doses delivered during radiotherapy: quantification, management, and reduction",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824",
+    "role": "Image guidance dose quantification, management and reduction, CBCT and radiographic imaging dose, imaging protocol optimization, dose calculation, and reporting"
+  },
+  {
+    "doc_id": "aapm_tg148_helical_tomotherapy_qa",
+    "file": "reports/raw/aapm_tg148_helical_tomotherapy_qa.pdf",
+    "title": "AAPM TG 148: QA for helical tomotherapy",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3462971",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3462971",
+    "role": "Helical tomotherapy quality assurance, delivery system QA, imaging QA, treatment planning QA, dosimetric verification, mechanical checks, and tolerance recommendations"
+  },
+  {
+    "doc_id": "aapm_tg132_image_registration_fusion",
+    "file": "reports/raw/aapm_tg132_image_registration_fusion.pdf",
+    "title": "AAPM TG 132: Use of image registration and fusion algorithms and techniques in radiotherapy",
+    "organization": "AAPM",
+    "source_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256",
+    "render_url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256",
+    "role": "Image registration and fusion in radiotherapy, rigid and deformable registration, commissioning, quality assurance, validation, adaptive radiotherapy, dose accumulation, and uncertainty"
   }
 ]

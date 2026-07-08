@@ -24,12 +24,12 @@ The project retrieves evidence from locally built AAPM/IAEA radiotherapy physics
 
 The current local runtime bundle used for validation contains:
 
-- Source catalog records: 37.
-- Downloaded/indexed runtime PDFs: 35.
-- Manual source candidates not included in runtime: `aapm_tg100_radiotherapy_quality_management`, `tg158`.
-- Indexed chunks: 9290.
-- PDF asset metadata: 348 tables and 3198 images across 35 documents.
-- ChatGPT Knowledge upload files generated locally: 35.
+- Source catalog records: 49.
+- Downloaded/indexed runtime PDFs: 49.
+- Manual source candidates not included in runtime: none in this local build.
+- Indexed chunks: 10923.
+- PDF asset metadata: 655 tables and 3263 images across 49 documents.
+- ChatGPT Knowledge upload files generated locally: 49.
 - Navigator topics: 10.
 - Dense/hash artifacts present for no-model hybrid baseline: `embeddings.npy`, `chunk_ids.json`, `dense_meta.json`, `faiss.index`.
 
@@ -67,7 +67,7 @@ $env:EMBEDDING_MODEL_NAME="hash-fallback"
 python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend both
 ```
 
-Some AAPM sources are public but may block scripted downloads or point to publisher pages. If a source is reported as manual, download it yourself if permitted and place it at the exact `reports/raw/*.pdf` path listed in `reports/starter_corpus_sources.json`.
+Some AAPM/Wiley sources are public or free-access but may block scripted downloads or point to publisher pages. If a source is reported as manual, download or browser-render it yourself if permitted and place it at the exact `reports/raw/*.pdf` path listed in `reports/starter_corpus_sources.json`. The current local build includes refreshed TG100 and TG158 runtime files; TG158 was browser-rendered from the Wiley free-access full-text page rather than copied from a raw publisher PDF endpoint.
 
 ## Query
 
@@ -122,18 +122,18 @@ Run end-to-end skill-contract evaluation:
 RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash-fallback python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
 ```
 
-Current 190-question open-source topic benchmark results:
+Current 260-question open-source topic benchmark results:
 
 | Evaluation | Main result |
 | --- | --- |
-| Sparse retrieval | Document Recall@5 = 0.806 |
-| Hybrid hash+dense retrieval | Document Recall@5 = 0.754 |
-| Auto retrieval | Document Recall@5 = 0.754 |
-| Routed retrieval | Document Recall@5 = 0.794 |
-| Navigator routing | Topic Recall@3 = 0.966; Candidate Document Recall@5 = 0.709 |
-| Routed agent skill contract | Document Hit Rate@5 = 0.800; Citation present rate = 0.994; OOD abstention success = 0.600 |
+| Sparse retrieval | Document Recall@5 = 0.857 |
+| Hybrid hash+dense retrieval | Document Recall@5 = 0.816 |
+| Auto retrieval | Document Recall@5 = 0.816 |
+| Routed retrieval | Document Recall@5 = 0.845 |
+| Navigator routing | Topic Recall@3 = 0.967; Candidate Document Recall@5 = 0.673 |
+| Routed agent skill contract | Document Hit Rate@5 = 0.845; Citation present rate = 0.996; OOD abstention success = 0.533 |
 
-Interpretation: the system is a credible open-source skill and retrieval benchmark prototype. It is not yet an expert-adjudicated clinical QA benchmark. The navigator finds the right topic reliably, but document ranking still needs improvement. The OOD abstention heuristic is intentionally conservative and still produces false negatives.
+Interpretation: expanding the runtime corpus improved document-level retrieval coverage. The navigator still finds the right broad topic reliably, but document ranking became harder because the added AAPM reports intentionally overlap on QA, IMRT, IGRT, and commissioning. OOD abstention is now the weakest measured behavior and needs a stronger evidence sufficiency gate. This remains an open-source retrieval and skill-contract benchmark, not an expert-adjudicated clinical QA benchmark.
 
 ## Public Release
 
