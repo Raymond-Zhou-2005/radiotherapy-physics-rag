@@ -1,0 +1,13 @@
+{
+  "description": "Inspect PDFs before indexing to detect low-text or scanned documents.",
+  "command": "python scripts/inspect_pdfs.py reports/raw --output reports/pdf_text_readiness.local.json",
+  "input": {
+    "paths": ["reports/raw"],
+    "low_text_chars_per_page": 80
+  },
+  "expected_behavior": {
+    "ok": true,
+    "pdf_count": "Number of inspected PDFs.",
+    "scanned_or_ocr_likely_needed_count": "Count of PDFs likely to need OCR before indexing."
+  }
+}

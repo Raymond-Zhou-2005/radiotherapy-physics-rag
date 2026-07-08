@@ -1,0 +1,20 @@
+{
+  "description": "Build a RAG index from any PDF reports placed in reports/raw.",
+  "command": "python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index",
+  "input": {
+    "reports_dir": "reports/raw",
+    "manifest": "reports/manifest.jsonl",
+    "parsed_dir": "parsed",
+    "chunks_dir": "chunks",
+    "index_dir": "index"
+  },
+  "expected_behavior": {
+    "pipeline": [
+      "manifest",
+      "parse_pdf",
+      "chunk_corpus",
+      "build_index"
+    ],
+    "empty_corpus_error": "Returned if reports/raw contains no PDFs."
+  }
+}

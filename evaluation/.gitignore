@@ -1,0 +1,4 @@
+*.local.json
+*.local.md
+*.local.txt
+private/

@@ -1,0 +1,16 @@
+pymupdf>=1.24.0
+numpy>=1.26.0
+faiss-cpu>=1.8.0
+rank-bm25>=0.2.2
+sentence-transformers>=3.0.0
+transformers>=4.42.0
+torch>=2.2.0
+tqdm>=4.66.0
+accelerate>=0.33.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0,<6
+huggingface_hub>=0.36.0
+hf-xet>=1.1.0
+mcp>=1.2.0
+jsonschema>=4.23.0
+rich>=13.8.0,<14.0.0

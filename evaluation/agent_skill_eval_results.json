@@ -1,0 +1,3380 @@
+{
+  "questions": 190,
+  "retrieval_backend": "routed",
+  "tool_success_rate": 0.9473684210526315,
+  "document_hit_rate@5": 0.8,
+  "citation_present_rate": 0.9942857142857143,
+  "ood_abstention_success_rate": 0.6,
+  "unexpected_error_count": 1,
+  "counts": {
+    "tool_success": 180,
+    "in_scope": 175,
+    "ood": 15,
+    "doc_hit_at_5": 140,
+    "citation_present": 174,
+    "expected_abstain_success": 9,
+    "unexpected_error": 1
+  },
+  "details": [
+    {
+      "qid": "public_q0001",
+      "question": "Which report evidence is most relevant for in-room kv imaging patient setup target localization and imaging qa context, and what should be checked first?",
+      "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0002",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for in-room kv imaging patient setup target localization and imaging qa context?",
+      "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0003",
+      "question": "How should a radiotherapy physicist use guidance on in-room kv imaging patient setup target localization and imaging qa context when implementing or auditing a service?",
+      "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0004",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for in-room kv imaging patient setup target localization and imaging qa context?",
+      "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0005",
+      "question": "What does AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_report_104_kv_imaging_guidance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0006",
+      "question": "Which report evidence is most relevant for clinical trial physics planning oar credentialing and reporting guidance, and what should be checked first?",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0007",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for clinical trial physics planning oar credentialing and reporting guidance?",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0008",
+      "question": "How should a radiotherapy physicist use guidance on clinical trial physics planning oar credentialing and reporting guidance when implementing or auditing a service?",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0009",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for clinical trial physics planning oar credentialing and reporting guidance?",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0010",
+      "question": "What does AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0011",
+      "question": "Which report evidence is most relevant for treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization, and what should be checked first?",
+      "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0012",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization?",
+      "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0013",
+      "question": "How should a radiotherapy physicist use guidance on treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization when implementing or auditing a service?",
+      "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0014",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization?",
+      "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0015",
+      "question": "What does AAPM Report 166: The use and QA of biologically related models for treatment planning cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0016",
+      "question": "Which report evidence is most relevant for radiation oncology qa chart checks equipment checks documentation and programme quality, and what should be checked first?",
+      "expected_doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0017",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiation oncology qa chart checks equipment checks documentation and programme quality?",
+      "expected_doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0018",
+      "question": "How should a radiotherapy physicist use guidance on radiation oncology qa chart checks equipment checks documentation and programme quality when implementing or auditing a service?",
+      "expected_doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0019",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiation oncology qa chart checks equipment checks documentation and programme quality?",
+      "expected_doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0020",
+      "question": "What does AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0021",
+      "question": "Which report evidence is most relevant for external beam radiotherapy physics concepts and training scope, and what should be checked first?",
+      "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0022",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for external beam radiotherapy physics concepts and training scope?",
+      "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0023",
+      "question": "How should a radiotherapy physicist use guidance on external beam radiotherapy physics concepts and training scope when implementing or auditing a service?",
+      "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0024",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam radiotherapy physics concepts and training scope?",
+      "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_tg263_nomenclature",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0025",
+      "question": "What does AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_report_90_essential_medical_physics_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_90_essential_medical_physics_ebrt",
+        "aapm_report_90_essential_medical_physics_ebrt",
+        "aapm_report_90_essential_medical_physics_ebrt",
+        "aapm_report_90_essential_medical_physics_ebrt",
+        "aapm_report_90_essential_medical_physics_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0026",
+      "question": "Which report evidence is most relevant for standard structure naming radiation oncology nomenclature and terminology normalization, and what should be checked first?",
+      "expected_doc_id": "aapm_tg263_nomenclature",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0027",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for standard structure naming radiation oncology nomenclature and terminology normalization?",
+      "expected_doc_id": "aapm_tg263_nomenclature",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0028",
+      "question": "How should a radiotherapy physicist use guidance on standard structure naming radiation oncology nomenclature and terminology normalization when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg263_nomenclature",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0029",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for standard structure naming radiation oncology nomenclature and terminology normalization?",
+      "expected_doc_id": "aapm_tg263_nomenclature",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0030",
+      "question": "What does AAPM TG 263: Standardizing nomenclatures in radiation oncology cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg263_nomenclature",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0031",
+      "question": "Which report evidence is most relevant for radiotherapy programme design staffing equipment radiation protection and safety, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0032",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy programme design staffing equipment radiation protection and safety?",
+      "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0033",
+      "question": "How should a radiotherapy physicist use guidance on radiotherapy programme design staffing equipment radiation protection and safety when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0034",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy programme design staffing equipment radiation protection and safety?",
+      "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0035",
+      "question": "What does IAEA TECDOC 1040: Design and implementation of a radiotherapy programme cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0036",
+      "question": "Which report evidence is most relevant for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty, and what should be checked first?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0037",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0038",
+      "question": "How should a radiotherapy physicist use guidance on external beam reference dosimetry absorbed dose to water beam calibration and uncertainty when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0039",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0040",
+      "question": "What does IAEA TRS 398: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs398_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0041",
+      "question": "Which report evidence is most relevant for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance, and what should be checked first?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0042",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1583_tps_commissioning"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0043",
+      "question": "How should a radiotherapy physicist use guidance on treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0044",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_pub1990_quatro_quality_improvement",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0045",
+      "question": "What does IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs430_tps_commissioning_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0046",
+      "question": "Which report evidence is most relevant for broad expert teaching reference for radiation oncology physics fundamentals, and what should be checked first?",
+      "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg263_nomenclature",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_90_essential_medical_physics_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0047",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for broad expert teaching reference for radiation oncology physics fundamentals?",
+      "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1297_quatro_audit_tool"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0048",
+      "question": "How should a radiotherapy physicist use guidance on broad expert teaching reference for radiation oncology physics fundamentals when implementing or auditing a service?",
+      "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0049",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for broad expert teaching reference for radiation oncology physics fundamentals?",
+      "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+      "expected_abstain": false,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0050",
+      "question": "What does Radiation Oncology Physics: A Handbook for Teachers and Students cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0051",
+      "question": "Which report evidence is most relevant for reference dosimeter calibration and standards chain for external beam radiotherapy, and what should be checked first?",
+      "expected_doc_id": "iaea_trs469_reference_dosimeters",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0052",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for reference dosimeter calibration and standards chain for external beam radiotherapy?",
+      "expected_doc_id": "iaea_trs469_reference_dosimeters",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0053",
+      "question": "How should a radiotherapy physicist use guidance on reference dosimeter calibration and standards chain for external beam radiotherapy when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs469_reference_dosimeters",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0054",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for reference dosimeter calibration and standards chain for external beam radiotherapy?",
+      "expected_doc_id": "iaea_trs469_reference_dosimeters",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0055",
+      "question": "What does IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs469_reference_dosimeters",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs469_reference_dosimeters"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0056",
+      "question": "Which report evidence is most relevant for medical physics procedures for quality audits and on-site radiotherapy centre review, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc1543_quatro",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1543_quatro",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc1543_quatro",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0057",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for medical physics procedures for quality audits and on-site radiotherapy centre review?",
+      "expected_doc_id": "iaea_tecdoc1543_quatro",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0058",
+      "question": "How should a radiotherapy physicist use guidance on medical physics procedures for quality audits and on-site radiotherapy centre review when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc1543_quatro",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0059",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for medical physics procedures for quality audits and on-site radiotherapy centre review?",
+      "expected_doc_id": "iaea_tecdoc1543_quatro",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0060",
+      "question": "What does IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc1543_quatro",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0061",
+      "question": "Which report evidence is most relevant for igrt quality assurance programme imaging workflow safety and implementation guidance, and what should be checked first?",
+      "expected_doc_id": "iaea_hhr16_igrt_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr16_igrt_qa",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0062",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for igrt quality assurance programme imaging workflow safety and implementation guidance?",
+      "expected_doc_id": "iaea_hhr16_igrt_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr16_igrt_qa",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0063",
+      "question": "How should a radiotherapy physicist use guidance on igrt quality assurance programme imaging workflow safety and implementation guidance when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr16_igrt_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhr16_igrt_qa",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0064",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for igrt quality assurance programme imaging workflow safety and implementation guidance?",
+      "expected_doc_id": "iaea_hhr16_igrt_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0065",
+      "question": "What does IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhr16_igrt_qa",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr16_igrt_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0066",
+      "question": "Which report evidence is most relevant for independent radiotherapy dosimetry audits audit design and audit interpretation, and what should be checked first?",
+      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0067",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for independent radiotherapy dosimetry audits audit design and audit interpretation?",
+      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0068",
+      "question": "How should a radiotherapy physicist use guidance on independent radiotherapy dosimetry audits audit design and audit interpretation when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0069",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for independent radiotherapy dosimetry audits audit design and audit interpretation?",
+      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0070",
+      "question": "What does IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0071",
+      "question": "Which report evidence is most relevant for small field reference and relative dosimetry for external beam radiotherapy, and what should be checked first?",
+      "expected_doc_id": "iaea_trs483_small_static_fields",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0072",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for small field reference and relative dosimetry for external beam radiotherapy?",
+      "expected_doc_id": "iaea_trs483_small_static_fields",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0073",
+      "question": "How should a radiotherapy physicist use guidance on small field reference and relative dosimetry for external beam radiotherapy when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs483_small_static_fields",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0074",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for small field reference and relative dosimetry for external beam radiotherapy?",
+      "expected_doc_id": "iaea_trs483_small_static_fields",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0075",
+      "question": "What does IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs483_small_static_fields",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0076",
+      "question": "Which report evidence is most relevant for international code of practice for brachytherapy dosimetry and source calibration, and what should be checked first?",
+      "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0077",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for international code of practice for brachytherapy dosimetry and source calibration?",
+      "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr16_igrt_qa",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0078",
+      "question": "How should a radiotherapy physicist use guidance on international code of practice for brachytherapy dosimetry and source calibration when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0079",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for international code of practice for brachytherapy dosimetry and source calibration?",
+      "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc_1040_radiotherapy_programme"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0080",
+      "question": "What does IAEA TRS 492: Dosimetry in brachytherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs492_brachytherapy_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_tecdoc1543_quatro",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0081",
+      "question": "Which report evidence is most relevant for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa, and what should be checked first?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0082",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0083",
+      "question": "How should a radiotherapy physicist use guidance on ct simulation treatment planning ct scanner performance and radiotherapy imaging qa when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0084",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0085",
+      "question": "What does IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0086",
+      "question": "Which report evidence is most relevant for radiotherapy treatment planning system commissioning data entry testing and qa procedures, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0087",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0088",
+      "question": "How should a radiotherapy physicist use guidance on radiotherapy treatment planning system commissioning data entry testing and qa procedures when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0089",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0090",
+      "question": "What does IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc1583_tps_commissioning",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0091",
+      "question": "Which report evidence is most relevant for treatment planning system specification procurement acceptance testing and quality assurance, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0092",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system specification procurement acceptance testing and quality assurance?",
+      "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0093",
+      "question": "How should a radiotherapy physicist use guidance on treatment planning system specification procurement acceptance testing and quality assurance when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0094",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system specification procurement acceptance testing and quality assurance?",
+      "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0095",
+      "question": "What does IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc1540_tps_acceptance",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0096",
+      "question": "Which report evidence is most relevant for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels, and what should be checked first?",
+      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0097",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
+      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr16_igrt_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0098",
+      "question": "How should a radiotherapy physicist use guidance on in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0099",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
+      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0100",
+      "question": "What does IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhr8_in_vivo_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0101",
+      "question": "Which report evidence is most relevant for record and verify systems radiotherapy workflow safety commissioning and quality control, and what should be checked first?",
+      "expected_doc_id": "iaea_hhr7_record_verify_systems",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0102",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for record and verify systems radiotherapy workflow safety commissioning and quality control?",
+      "expected_doc_id": "iaea_hhr7_record_verify_systems",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr16_igrt_qa",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0103",
+      "question": "How should a radiotherapy physicist use guidance on record and verify systems radiotherapy workflow safety commissioning and quality control when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr7_record_verify_systems",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0104",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for record and verify systems radiotherapy workflow safety commissioning and quality control?",
+      "expected_doc_id": "iaea_hhr7_record_verify_systems",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_tecdoc1543_quatro",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0105",
+      "question": "What does IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhr7_record_verify_systems",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0106",
+      "question": "Which report evidence is most relevant for quatro comprehensive radiotherapy practice audits and quality improvement, and what should be checked first?",
+      "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0107",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for quatro comprehensive radiotherapy practice audits and quality improvement?",
+      "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr16_igrt_qa",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0108",
+      "question": "How should a radiotherapy physicist use guidance on quatro comprehensive radiotherapy practice audits and quality improvement when implementing or auditing a service?",
+      "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0109",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for quatro comprehensive radiotherapy practice audits and quality improvement?",
+      "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0110",
+      "question": "What does Comprehensive audits of radiotherapy practices: a tool for quality improvement cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_pub1990_quatro_quality_improvement",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0111",
+      "question": "Which report evidence is most relevant for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology, and what should be checked first?",
+      "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "aapm_tg263_nomenclature",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0112",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology?",
+      "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0113",
+      "question": "How should a radiotherapy physicist use guidance on earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology when implementing or auditing a service?",
+      "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0114",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology?",
+      "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0115",
+      "question": "What does Comprehensive audits of radiotherapy practices: a tool for quality improvement cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_pub1297_quatro_audit_tool",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0116",
+      "question": "Which report evidence is most relevant for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy, and what should be checked first?",
+      "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0117",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
+      "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0118",
+      "question": "How should a radiotherapy physicist use guidance on accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0119",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
+      "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0120",
+      "question": "What does IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0121",
+      "question": "Which report evidence is most relevant for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure, and what should be checked first?",
+      "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0122",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure?",
+      "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr10_radiotherapy_facilities"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0123",
+      "question": "How should a radiotherapy physicist use guidance on radiotherapy facility design shielding equipment rooms workflow and safety infrastructure when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0124",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure?",
+      "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0125",
+      "question": "What does IAEA Human Health Reports No. 10: Radiotherapy facilities cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhr10_radiotherapy_facilities",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0126",
+      "question": "Which report evidence is most relevant for radiotherapy equipment selection acceptance testing commissioning quality control and procurement, and what should be checked first?",
+      "expected_doc_id": "iaea_hhr17_linear_accelerators",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr7_record_verify_systems",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0127",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy equipment selection acceptance testing commissioning quality control and procurement?",
+      "expected_doc_id": "iaea_hhr17_linear_accelerators",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0128",
+      "question": "How should a radiotherapy physicist use guidance on radiotherapy equipment selection acceptance testing commissioning quality control and procurement when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhr17_linear_accelerators",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0129",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy equipment selection acceptance testing commissioning quality control and procurement?",
+      "expected_doc_id": "iaea_hhr17_linear_accelerators",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0130",
+      "question": "What does IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhr17_linear_accelerators",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0131",
+      "question": "Which report evidence is most relevant for brachytherapy source calibration at ssdls and hospitals, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0132",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for brachytherapy source calibration at ssdls and hospitals?",
+      "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0133",
+      "question": "How should a radiotherapy physicist use guidance on brachytherapy source calibration at ssdls and hospitals when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs492_brachytherapy_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0134",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for brachytherapy source calibration at ssdls and hospitals?",
+      "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0135",
+      "question": "What does IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0136",
+      "question": "Which report evidence is most relevant for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0137",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
+      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr8_in_vivo_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0138",
+      "question": "How should a radiotherapy physicist use guidance on dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0139",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
+      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0140",
+      "question": "What does IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0141",
+      "question": "Which report evidence is most relevant for updated international code of practice for absorbed dose determination in external beam radiotherapy, and what should be checked first?",
+      "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0142",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for updated international code of practice for absorbed dose determination in external beam radiotherapy?",
+      "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_pub1297_quatro_audit_tool"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0143",
+      "question": "How should a radiotherapy physicist use guidance on updated international code of practice for absorbed dose determination in external beam radiotherapy when implementing or auditing a service?",
+      "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0144",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for updated international code of practice for absorbed dose determination in external beam radiotherapy?",
+      "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0145",
+      "question": "What does IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0146",
+      "question": "Which report evidence is most relevant for photon beam reference dosimetry addendum to the aapm tg-51 protocol, and what should be checked first?",
+      "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0147",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
+      "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0148",
+      "question": "How should a radiotherapy physicist use guidance on photon beam reference dosimetry addendum to the aapm tg-51 protocol when implementing or auditing a service?",
+      "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0149",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
+      "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0150",
+      "question": "What does AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "aapm_tg51_photon_dosimetry_addendum",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0151",
+      "question": "Which report evidence is most relevant for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning, and what should be checked first?",
+      "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0152",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning?",
+      "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0153",
+      "question": "How should a radiotherapy physicist use guidance on transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning when implementing or auditing a service?",
+      "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0154",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning?",
+      "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0155",
+      "question": "What does IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0156",
+      "question": "Which report evidence is most relevant for national radiotherapy service planning resource estimation programme capacity access and service development, and what should be checked first?",
+      "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0157",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for national radiotherapy service planning resource estimation programme capacity access and service development?",
+      "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0158",
+      "question": "How should a radiotherapy physicist use guidance on national radiotherapy service planning resource estimation programme capacity access and service development when implementing or auditing a service?",
+      "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0159",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for national radiotherapy service planning resource estimation programme capacity access and service development?",
+      "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0160",
+      "question": "What does IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0161",
+      "question": "Which report evidence is most relevant for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design, and what should be checked first?",
+      "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0162",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design?",
+      "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0163",
+      "question": "How should a radiotherapy physicist use guidance on radiotherapy facility shielding bunker design radiation protection workload barriers and safety design when implementing or auditing a service?",
+      "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0164",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design?",
+      "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0165",
+      "question": "What does IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0166",
+      "question": "Which report evidence is most relevant for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety, and what should be checked first?",
+      "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0167",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety?",
+      "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0168",
+      "question": "How should a radiotherapy physicist use guidance on radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety when implementing or auditing a service?",
+      "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0169",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety?",
+      "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0170",
+      "question": "What does IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_ssg46_medical_uses_radiation_safety",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0171",
+      "question": "Which report evidence is most relevant for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context, and what should be checked first?",
+      "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0172",
+      "question": "What quality assurance, safety, or documentation issues are emphasized for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context?",
+      "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0173",
+      "question": "How should a radiotherapy physicist use guidance on global radiotherapy access infrastructure workforce technology quality safety and cancer-care context when implementing or auditing a service?",
+      "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0174",
+      "question": "What limitations, uncertainty sources, or practical constraints should be considered for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context?",
+      "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0175",
+      "question": "What does Radiotherapy in Cancer Care: Facing the Global Challenge cover that would matter for evidence-grounded radiotherapy physics QA?",
+      "expected_doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": true,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0176",
+      "question": "What hydration schedule is recommended for sourdough starter maintenance?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0177",
+      "question": "Which Python web framework should I choose for a personal finance dashboard?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0178",
+      "question": "What are the tax filing deadlines for a sole proprietorship in California?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0179",
+      "question": "How should a violinist adjust bow pressure for Baroque ornamentation?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0180",
+      "question": "What soil pH is best for growing blueberries in a home garden?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0181",
+      "question": "Which chess opening is most suitable after 1. e4 c5 2. Nf3?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs469_reference_dosimeters",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0182",
+      "question": "How do I troubleshoot a leaking kitchen faucet cartridge?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0183",
+      "question": "What is the best itinerary for a two-day visit to Kyoto?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_tecdoc1543_quatro",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0184",
+      "question": "How should I train for a half marathon after a knee injury?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0185",
+      "question": "What camera lens is best for street photography at night?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0186",
+      "question": "How do I compare mortgage refinance offers?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0187",
+      "question": "What is the safest way to clean mold from bathroom grout?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0188",
+      "question": "How should a beginner learn jazz piano voicings?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    },
+    {
+      "qid": "public_q0189",
+      "question": "What are common causes of packet loss in a home Wi-Fi network?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1990_quatro_quality_improvement"
+      ],
+      "doc_hit_at_5": false,
+      "citation_present": true,
+      "retrieval_backend": "sparse"
+    },
+    {
+      "qid": "public_q0190",
+      "question": "Which bread flour protein percentage is best for Neapolitan pizza dough?",
+      "expected_doc_id": null,
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids": [],
+      "doc_hit_at_5": false,
+      "citation_present": false,
+      "retrieval_backend": "routed"
+    }
+  ]
+}

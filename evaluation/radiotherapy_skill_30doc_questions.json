@@ -1,0 +1,776 @@
+[
+  {
+    "qid": "public_q001",
+    "question": "What acceptance and commissioning checks are important for in-room kV imaging systems used for patient setup and target localization?",
+    "type": "image_guidance_qa",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "ABR radiation oncology physics study guide domain: imaging and localization; AAPM image-guidance QA report topic",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q002",
+    "question": "What image registration and review issues should physicists consider when cone-beam CT or radiographic kV images are used for localization?",
+    "type": "image_guidance_qa",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "ABR radiation oncology physics study guide domain: imaging and localization; AAPM image-guidance QA report topic",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q003",
+    "question": "What physics responsibilities should be specified in multi-institutional radiotherapy clinical trial protocols?",
+    "type": "clinical_trials",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "12. Credentialing and Institutional Preparation",
+    "expected_abstain": false,
+    "source_basis": "AAPM clinical-trial physics guidance; ABR domain: treatment planning, delivery, and QA",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q004",
+    "question": "How should credentialing, benchmarks, and QA center review be used when advanced planning or delivery techniques enter a clinical trial?",
+    "type": "clinical_trials",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "12. Credentialing and Institutional Preparation",
+    "expected_abstain": false,
+    "source_basis": "AAPM clinical-trial physics guidance; NCI cooperative group QA practice",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q005",
+    "question": "What quality assurance issues arise when TCP, NTCP, or other biological response models are used in treatment planning?",
+    "type": "biological_model_qa",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "ABR domain: radiobiology and treatment planning; AAPM biological model QA report topic",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q006",
+    "question": "What validation and uncertainty concerns should be addressed before biologically related models are used clinically for plan evaluation or optimization?",
+    "type": "biological_model_qa",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "ABR domain: radiobiology and treatment planning; AAPM biological model QA report topic",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q007",
+    "question": "What should a comprehensive radiation oncology QA programme include for chart checks, treatment records, machine checks, and planning review?",
+    "type": "radiation_oncology_qa",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "2. Overview of Chart Checking",
+    "expected_abstain": false,
+    "source_basis": "ABR domain: treatment delivery and QA; AAPM comprehensive radiation oncology QA report topic",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q008",
+    "question": "What chart checking, port film review, treatment record review, and prescription review tasks are included in a radiation oncology QA programme?",
+    "type": "radiation_oncology_qa",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "4. Ongoing Tests",
+    "expected_abstain": false,
+    "source_basis": "ABR domain: treatment delivery and QA; AAPM comprehensive radiation oncology QA report topic",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q009",
+    "question": "What clinical and professional competencies should a radiation oncology physics residency training programme include?",
+    "type": "education_training",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "AAPM residency training guidance; CAMPEP-style radiation oncology physics training scope",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q010",
+    "question": "What knowledge and clinical training should radiation oncology physics residents receive before independent practice?",
+    "type": "education_training",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "AAPM residency training guidance; CAMPEP-style radiation oncology physics training scope",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q013",
+    "question": "Why is standardized naming of targets and organs at risk important for radiation oncology data exchange, planning, and clinical trials?",
+    "type": "nomenclature",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "AAPM nomenclature standardization guidance; ABR domain: treatment planning and informatics",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q014",
+    "question": "What principles should be used to create consistent structure names for targets, organs at risk, and planning structures in radiation oncology?",
+    "type": "nomenclature",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "AAPM nomenclature standardization guidance; ABR domain: treatment planning and informatics",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q015",
+    "question": "What staffing, equipment, room design, radiation protection, and source safety elements are important when implementing a radiotherapy programme?",
+    "type": "programme_safety",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "3. STAFF REQUIREMENTS FOR A RADIATION THERAPY PROGRAMME",
+    "expected_abstain": false,
+    "source_basis": "IAEA radiotherapy programme implementation guidance; ABR domain: radiation safety",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q016",
+    "question": "What quality assurance and radiation protection responsibilities should be planned when starting or upgrading a radiotherapy service?",
+    "type": "programme_safety",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "7. RADIATION PROTECTION AND SAFETY OF SOURCES",
+    "expected_abstain": false,
+    "source_basis": "IAEA radiotherapy programme implementation guidance; ABR domain: radiation safety",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q017",
+    "question": "How is absorbed dose to water determined for external beam reference dosimetry using calibrated ionization chambers?",
+    "type": "reference_dosimetry",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "1. INTRODUCTION",
+    "expected_abstain": false,
+    "source_basis": "IAEA dosimetry code of practice; ABR domain: calibration and dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q018",
+    "question": "How are beam quality, kQ factors, polarity, recombination, and ionization chamber corrections used in reference dosimetry?",
+    "type": "reference_dosimetry",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "4. IMPLEMENTATION",
+    "expected_abstain": false,
+    "source_basis": "IAEA dosimetry code of practice; ABR domain: calibration and dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q019",
+    "question": "What commissioning tests are recommended for computerized treatment planning systems used in radiation therapy?",
+    "type": "tps_commissioning",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA computerized treatment planning system commissioning guidance; ABR domain: treatment planning",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q020",
+    "question": "How should dose calculation algorithms, beam data, patient data transfer, and plan output be checked during TPS commissioning and QA?",
+    "type": "tps_commissioning",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA computerized treatment planning system commissioning guidance; ABR domain: treatment planning",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q021",
+    "question": "What physics concepts connect percent depth dose, tissue-air ratio, tissue-phantom ratio, scatter factors, and beam modifiers in external beam radiotherapy?",
+    "type": "physics_foundation",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA Radiation Oncology Physics handbook for teachers and students; ABR domain: basic radiation physics and dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q022",
+    "question": "What physics concepts connect percent depth dose, tissue-air ratio, tissue-phantom ratio, scatter-air ratio, and output factors in external beam radiotherapy?",
+    "type": "physics_foundation",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA Radiation Oncology Physics handbook for teachers and students; ABR domain: basic radiation physics and treatment planning",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q023",
+    "question": "How are reference dosimeters calibrated for external beam radiotherapy, and what role do calibration laboratories and standards chains play?",
+    "type": "dosimeter_calibration",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA reference dosimeter calibration guidance; ABR domain: calibration and dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q024",
+    "question": "What calibration coefficients, beam qualities, and uncertainty components matter for reference dosimeters in external beam radiotherapy?",
+    "type": "dosimeter_calibration",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA reference dosimeter calibration guidance; ABR domain: calibration and dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q025",
+    "question": "What should medical physicists review during an on-site visit or quality audit of a radiotherapy centre?",
+    "type": "quality_audit",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA QUATRO medical physics procedures; expert quality-audit practice",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q026",
+    "question": "What documents, measurements, equipment checks, treatment planning reviews, and safety procedures are part of an on-site radiotherapy centre audit?",
+    "type": "quality_audit",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA QUATRO medical physics procedures; expert quality-audit practice",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q027",
+    "question": "What elements should an image guided radiotherapy QA programme include for imaging systems, registration, workflow, and safety?",
+    "type": "igrt_qa",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA Human Health Reports No. 16 IGRT QA programme; ABR domain: imaging and localization",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q028",
+    "question": "How should end-to-end testing, imaging dose, geometric accuracy, and image registration be considered in an IGRT QA programme?",
+    "type": "igrt_qa",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA Human Health Reports No. 16 IGRT QA programme; ABR domain: imaging and localization",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q029",
+    "question": "What types of independent dosimetry audits are used in radiotherapy, and how are audit results interpreted?",
+    "type": "dosimetry_audit",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA Human Health Reports No. 18 dosimetry audits; ABR domain: calibration, dosimetry, and QA",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q030",
+    "question": "How do postal audits, on-site audits, beam output checks, and tolerance levels support quality audits in radiotherapy dosimetry?",
+    "type": "dosimetry_audit",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "IAEA Human Health Reports No. 18 dosimetry audits; ABR domain: calibration, dosimetry, and QA",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf",
+      "https://www.theabr.org/get-certified/radiation-oncology/"
+    ],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q033",
+    "question": "What does the corpus say about sourdough starter feeding schedules for home bread baking?",
+    "type": "insufficient_evidence",
+    "report_id": null,
+    "gold_section": "",
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics",
+    "source_urls": [],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q034",
+    "question": "What does the corpus say about pediatric antibiotic prophylaxis for dental procedures?",
+    "type": "insufficient_evidence",
+    "report_id": null,
+    "gold_section": "",
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics",
+    "source_urls": [],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "qid": "public_q035",
+    "question": "What does the corpus say about portfolio allocation between municipal bonds and cryptocurrency ETFs?",
+    "type": "insufficient_evidence",
+    "report_id": null,
+    "gold_section": "",
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics",
+    "source_urls": [],
+    "source_note": "Paraphrased public-source evaluation question. It is not copied from paid, private, or leaked board-review question banks."
+  },
+  {
+    "question": "How is the radioactive decay constant related to physical half-life, and how is remaining activity estimated after elapsed time?",
+    "type": "basic_radiation_physics",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "Public ABR radiation oncology physics scope and IAEA Radiation Oncology Physics handbook topic: radioactivity and radioactive decay.",
+    "source_urls": [
+      "https://www.theabr.org/get-certified/radiation-oncology/",
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Public-source, board-style paraphrase; no protected question wording copied.",
+    "qid": "public_q036"
+  },
+  {
+    "question": "For a megavoltage photon beam, how are percent depth dose, tissue maximum ratio, tissue phantom ratio, and output factors used when evaluating dose at depth for different field sizes?",
+    "type": "external_beam_dosimetry_concepts",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "Public RAPHEX sample-topic page and IAEA Radiation Oncology Physics handbook topic: external beam dose quantities and output factors.",
+    "source_urls": [
+      "https://medicalphysics.org/SimpleCMS.php?content=tablecontents.php&isbn=ramp15ther",
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Public-source, board-style paraphrase; no protected question wording copied.",
+    "qid": "public_q037"
+  },
+  {
+    "question": "What should a radiotherapy physics quality system include for policies, organization, equipment, staff knowledge, process control, and quality audit?",
+    "type": "quality_systems",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "UNKNOWN",
+    "expected_abstain": false,
+    "source_basis": "Public ABR radiation oncology physics scope and IAEA Radiation Oncology Physics handbook topic: quality assurance and quality systems.",
+    "source_urls": [
+      "https://www.theabr.org/get-certified/radiation-oncology/",
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Public-source, board-style paraphrase; no protected question wording copied.",
+    "qid": "public_q038"
+  },
+  {
+    "qid": "runtime_001",
+    "question": "What guidance does IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy provide about small field reference and relative dosimetry for external beam radiotherapy?",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_002",
+    "question": "What guidance does IAEA TRS 492: Dosimetry in brachytherapy provide about international code of practice for brachytherapy dosimetry and source calibration?",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_003",
+    "question": "What guidance does IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy provide about ct simulation, treatment planning ct scanner performance, and radiotherapy imaging qa?",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_004",
+    "question": "What guidance does IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems provide about radiotherapy treatment planning system commissioning, data entry, testing, and qa procedures?",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_005",
+    "question": "What guidance does IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems provide about treatment planning system specification, procurement, acceptance testing, and quality assurance?",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_006",
+    "question": "What guidance does IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy provide about in vivo dosimetry implementation, detector selection, clinical workflow, tolerances, and action levels?",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_007",
+    "question": "What guidance does IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer provide about record and verify systems, radiotherapy workflow safety, commissioning, and quality control?",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_008",
+    "question": "What guidance does IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement provide about quatro comprehensive radiotherapy practice audits and quality improvement?",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_009",
+    "question": "What guidance does IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement provide about earlier quatro audit methodology for radiation oncology, medical physics, and radiotherapy technology?",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_010",
+    "question": "What guidance does IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy provide about accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_011",
+    "question": "What guidance does IAEA Human Health Reports No. 10: Radiotherapy facilities provide about radiotherapy facility design, shielding, equipment rooms, workflow, and safety infrastructure?",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_012",
+    "question": "What guidance does IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment provide about radiotherapy equipment selection, acceptance testing, commissioning, quality control, and procurement?",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_013",
+    "question": "What guidance does IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy provide about brachytherapy source calibration at ssdls and hospitals?",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_014",
+    "question": "What guidance does IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery provide about dose prescription, transfer, delivery, qa, and dose accuracy across the radiotherapy chain?",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_015",
+    "question": "What guidance does IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy provide about updated international code of practice for absorbed dose determination in external beam radiotherapy?",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_016",
+    "question": "What guidance does AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams provide about photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Runtime corpus source metadata for AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Generated source-metadata validation question for the expanded 30-document runtime corpus; not copied from protected question banks."
+  },
+  {
+    "qid": "runtime_targeted_small_fields",
+    "question": "What does the small static fields code of practice say about small field reference and relative dosimetry in external beam radiotherapy?",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_brachy_dose",
+    "question": "What does the brachytherapy dosimetry code of practice cover about source calibration and clinical dosimetry traceability?",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_ct_sim",
+    "question": "What quality assurance issues are important for computed tomography scanners used in radiotherapy simulation and treatment planning?",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_tps_acceptance",
+    "question": "What should be specified and acceptance tested when a radiotherapy treatment planning system is introduced?",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_in_vivo",
+    "question": "How should in vivo dosimetry procedures be developed and used in radiotherapy quality assurance?",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_record_verify",
+    "question": "What commissioning and quality control issues are important for record and verify systems in radiation treatment?",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_facilities",
+    "question": "What facility design and shielding considerations matter when planning radiotherapy facilities?",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  },
+  {
+    "qid": "runtime_targeted_accuracy",
+    "question": "What accuracy requirements and uncertainty sources affect radiotherapy dosimetry and dose delivery?",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_chunk_ids": [],
+    "gold_section": "",
+    "expected_abstain": false,
+    "source_basis": "Public IAEA/AAPM source metadata: IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Generated public-source validation question for expanded runtime corpus; no protected question wording copied."
+  }
+]

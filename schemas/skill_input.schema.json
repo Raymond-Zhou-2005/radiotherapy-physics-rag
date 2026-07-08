@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag/schemas/skill_input.schema.json",
+  "title": "Radiotherapy Physics RAG Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query"],
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": ["evidence", "bundle", "answer"],
+      "default": "evidence"
+    },
+    "query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "report_id": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "description": "Optional indexed document/report identifier from reports/manifest.jsonl."
+    },
+    "index_dir": {
+      "type": "string",
+      "default": "index"
+    },
+    "evidence_top_k": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "maximum": 20,
+      "default": null
+    },
+    "answer_engine": {
+      "type": "string",
+      "enum": ["auto", "extractive", "medgemma"],
+      "default": "auto"
+    },
+    "retrieval_backend": {
+      "type": "string",
+      "enum": ["auto", "hybrid", "sparse", "routed"],
+      "default": "auto",
+      "description": "Retrieval path for evidence collection. auto tries hybrid retrieval and falls back to sparse retrieval; hybrid uses dense+BM25; sparse uses BM25; routed uses scene analysis and experience memory to choose a strategy."
+    },
+    "output": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  }
+}

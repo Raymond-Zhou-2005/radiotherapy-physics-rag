@@ -1,0 +1,16 @@
+{
+  "description": "Initialize a reusable report RAG workspace before any documents exist.",
+  "command": "python scripts/init_corpus.py --root .",
+  "expected_behavior": {
+    "ok": true,
+    "created_or_verified": [
+      "reports/raw",
+      "parsed",
+      "chunks",
+      "index/dense",
+      "index/sparse",
+      "index/metadata"
+    ],
+    "next_step": "Place PDFs in reports/raw and run scripts/prepare_index.py."
+  }
+}

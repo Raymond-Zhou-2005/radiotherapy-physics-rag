@@ -1,0 +1,41 @@
+{
+  "name": "radiotherapy-physics-rag",
+  "version": "2.0.0",
+  "description": "Local radiotherapy physics evidence agent with grounded retrieval over indexed reports, bundled as a Codex plugin and MCP server.",
+  "author": {
+    "name": "Raymond-Zhou-2005"
+  },
+  "homepage": "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex-plugin",
+    "codex-skill",
+    "rag",
+    "radiotherapy",
+    "medical-physics",
+    "evidence-qa",
+    "mcp",
+    "bm25",
+    "faiss"
+  ],
+  "skills": "./skills",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Radiotherapy Physics Evidence Agent",
+    "shortDescription": "Ask evidence-grounded questions over local radiotherapy physics reports.",
+    "longDescription": "A local evidence agent for radiotherapy physics reports. It provides Codex skill instructions plus an MCP server for grounded queries over the bundled report corpus, with sparse local retrieval fallback and optional dense retrieval when models are available.",
+    "developerName": "Raymond-Zhou-2005",
+    "category": "Science & Research",
+    "defaultPrompt": "Use the local radiotherapy physics evidence agent to answer with cited report evidence.",
+    "capabilities": [
+      "local-rag",
+      "mcp",
+      "evidence-qa",
+      "medical-physics"
+    ]
+  }
+}

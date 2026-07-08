@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "radiotherapy-physics-rag": {
+      "command": "python",
+      "args": [
+        "scripts/mcp_server.py",
+        "--index-dir",
+        "index"
+      ],
+      "env": {
+        "RAG_RETRIEVAL_BACKEND": "auto",
+        "HF_HUB_DISABLE_SYMLINKS_WARNING": "1"
+      }
+    }
+  }
+}

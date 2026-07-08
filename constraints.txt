@@ -1,0 +1,26 @@
+# Known-good dependency set from the validated Windows/Python 3.12 environment.
+# Install with:
+#   python -m pip install -r requirements.txt -c constraints.txt
+#   python -m pip install -e ".[dev]" -c constraints.txt
+accelerate==1.13.0
+anyio==4.13.0
+faiss-cpu==1.13.2
+hf-xet==1.5.0
+huggingface_hub==1.15.0
+httpx==0.28.1
+jsonschema==4.23.0
+mcp==1.27.2
+mypy==1.11.2
+numpy==1.26.4
+protobuf==4.25.3
+pydantic==2.13.4
+pymupdf==1.27.2.3
+pytest==9.0.3
+rank-bm25==0.2.2
+rich==13.9.4
+ruff==0.15.13
+sentence-transformers==5.5.0
+sentencepiece==0.2.1
+torch==2.12.0
+tqdm==4.66.5
+transformers==5.8.1

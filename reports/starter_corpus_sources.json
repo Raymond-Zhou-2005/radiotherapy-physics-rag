@@ -1,0 +1,298 @@
+[
+  {
+    "doc_id": "aapm_report_104_kv_imaging_guidance",
+    "file": "reports/raw/aapm_report_104_kv_imaging_guidance.pdf",
+    "title": "AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/rpt_104.pdf",
+    "role": "In-room kV imaging, patient setup, target localization, and imaging QA context"
+  },
+  {
+    "doc_id": "aapm_report_113_physics_clinical_trials",
+    "file": "reports/raw/aapm_report_113_physics_clinical_trials.pdf",
+    "title": "AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/RPT_113.pdf",
+    "role": "Clinical trial physics, planning, OAR, credentialing, and reporting guidance"
+  },
+  {
+    "doc_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "file": "reports/raw/aapm_report_166_biological_models_treatment_planning_qa.pdf",
+    "title": "AAPM Report 166: The use and QA of biologically related models for treatment planning",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/rpt_166.pdf",
+    "role": "Treatment planning model QA, dose-response modeling, NTCP/TCP, and biologically based optimization"
+  },
+  {
+    "doc_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "file": "reports/raw/aapm_report_46_tg40_radiation_oncology_qa.pdf",
+    "title": "AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/rpt_46.pdf",
+    "role": "Radiation oncology QA, chart checks, equipment checks, documentation, and programme quality"
+  },
+  {
+    "doc_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "file": "reports/raw/aapm_report_90_essential_medical_physics_ebrt.pdf",
+    "title": "AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs",
+    "organization": "AAPM",
+    "source_url": "https://aapm.org/pubs/reports/rpt_90.Pdf",
+    "role": "External beam radiotherapy physics concepts and training scope"
+  },
+  {
+    "doc_id": "aapm_tg100_radiotherapy_quality_management",
+    "file": "reports/raw/aapm_tg100_radiotherapy_quality_management.pdf",
+    "title": "AAPM TG 100: Application of risk analysis methods to radiation therapy quality management",
+    "organization": "AAPM",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/",
+    "role": "Risk analysis, process mapping, FMEA, radiotherapy quality management, and safety analysis"
+  },
+  {
+    "doc_id": "aapm_tg263_nomenclature",
+    "file": "reports/raw/aapm_tg263_nomenclature.pdf",
+    "title": "AAPM TG 263: Standardizing nomenclatures in radiation oncology",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/RPT_263.pdf",
+    "role": "Standard structure naming, radiation oncology nomenclature, and terminology normalization"
+  },
+  {
+    "doc_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "file": "reports/raw/iaea_tecdoc_1040_radiotherapy_programme.pdf",
+    "title": "IAEA TECDOC 1040: Design and implementation of a radiotherapy programme",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf",
+    "role": "Radiotherapy programme design, staffing, equipment, radiation protection, and safety"
+  },
+  {
+    "doc_id": "iaea_trs398_absorbed_dose_ebrt",
+    "file": "reports/raw/iaea_trs398_absorbed_dose_ebrt.pdf",
+    "title": "IAEA TRS 398: Absorbed dose determination in external beam radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf",
+    "role": "External beam reference dosimetry, absorbed dose to water, beam calibration, and uncertainty"
+  },
+  {
+    "doc_id": "iaea_trs430_tps_commissioning_qa",
+    "file": "reports/raw/iaea_trs430_tps_commissioning_qa.pdf",
+    "title": "IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf",
+    "role": "Treatment planning system commissioning, dose calculation checks, QA tests, and planning-system acceptance"
+  },
+  {
+    "doc_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "file": "reports/raw/iaea_pub1196_radiation_oncology_physics_handbook.pdf",
+    "title": "IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf",
+    "role": "Broad expert teaching reference for radiation oncology physics fundamentals"
+  },
+  {
+    "doc_id": "iaea_trs469_reference_dosimeters",
+    "file": "reports/raw/iaea_trs469_reference_dosimeters.pdf",
+    "title": "IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf",
+    "role": "Reference dosimeter calibration and standards chain for external beam radiotherapy"
+  },
+  {
+    "doc_id": "iaea_tecdoc1543_quatro",
+    "file": "reports/raw/iaea_tecdoc1543_quatro.pdf",
+    "title": "IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf",
+    "role": "Medical physics procedures for quality audits and on-site radiotherapy centre review"
+  },
+  {
+    "doc_id": "iaea_hhr16_igrt_qa",
+    "file": "reports/raw/iaea_hhr16_igrt_qa.pdf",
+    "title": "IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf",
+    "role": "IGRT quality assurance programme, imaging workflow, safety, and implementation guidance"
+  },
+  {
+    "doc_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "file": "reports/raw/iaea_hhr18_radiotherapy_dosimetry_audits.pdf",
+    "title": "IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf",
+    "role": "Independent radiotherapy dosimetry audits, audit design, and audit interpretation"
+  },
+  {
+    "doc_id": "tg158",
+    "file": "reports/raw/tg158.pdf",
+    "title": "AAPM TG 158: Measurement and calculation of doses outside the treated volume from external-beam radiation therapy",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/detail.asp?docid=165",
+    "role": "Nontarget and out-of-field dose measurement, calculation, reporting, and recommendations"
+  },
+  {
+    "doc_id": "iaea_trs483_small_static_fields",
+    "file": "reports/raw/iaea_trs483_small_static_fields.pdf",
+    "title": "IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf",
+    "role": "Small field reference and relative dosimetry for external beam radiotherapy"
+  },
+  {
+    "doc_id": "iaea_trs492_brachytherapy_dosimetry",
+    "file": "reports/raw/iaea_trs492_brachytherapy_dosimetry.pdf",
+    "title": "IAEA TRS 492: Dosimetry in brachytherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf",
+    "role": "International code of practice for brachytherapy dosimetry and source calibration"
+  },
+  {
+    "doc_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "file": "reports/raw/iaea_hhs19_ct_sim_radiotherapy.pdf",
+    "title": "IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf",
+    "role": "CT simulation, treatment planning CT scanner performance, and radiotherapy imaging QA"
+  },
+  {
+    "doc_id": "iaea_tecdoc1583_tps_commissioning",
+    "file": "reports/raw/iaea_tecdoc1583_tps_commissioning.pdf",
+    "title": "IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf",
+    "role": "Radiotherapy treatment planning system commissioning, data entry, testing, and QA procedures"
+  },
+  {
+    "doc_id": "iaea_tecdoc1540_tps_acceptance",
+    "file": "reports/raw/iaea_tecdoc1540_tps_acceptance.pdf",
+    "title": "IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf",
+    "role": "Treatment planning system specification, procurement, acceptance testing, and quality assurance"
+  },
+  {
+    "doc_id": "iaea_hhr8_in_vivo_dosimetry",
+    "file": "reports/raw/iaea_hhr8_in_vivo_dosimetry.pdf",
+    "title": "IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf",
+    "role": "In vivo dosimetry implementation, detector selection, clinical workflow, tolerances, and action levels"
+  },
+  {
+    "doc_id": "iaea_hhr7_record_verify_systems",
+    "file": "reports/raw/iaea_hhr7_record_verify_systems.pdf",
+    "title": "IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf",
+    "role": "Record and verify systems, radiotherapy workflow safety, commissioning, and quality control"
+  },
+  {
+    "doc_id": "iaea_pub1990_quatro_quality_improvement",
+    "file": "reports/raw/iaea_pub1990_quatro_quality_improvement.pdf",
+    "title": "IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf",
+    "role": "QUATRO comprehensive radiotherapy practice audits and quality improvement"
+  },
+  {
+    "doc_id": "iaea_pub1297_quatro_audit_tool",
+    "file": "reports/raw/iaea_pub1297_quatro_audit_tool.pdf",
+    "title": "IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf",
+    "role": "Earlier QUATRO audit methodology for radiation oncology, medical physics, and radiotherapy technology"
+  },
+  {
+    "doc_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "file": "reports/raw/iaea_hhs31_accuracy_requirements_dosimetry.pdf",
+    "title": "IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf",
+    "role": "Accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy"
+  },
+  {
+    "doc_id": "iaea_hhr10_radiotherapy_facilities",
+    "file": "reports/raw/iaea_hhr10_radiotherapy_facilities.pdf",
+    "title": "IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf",
+    "role": "Radiotherapy facility design, shielding, equipment rooms, workflow, and safety infrastructure"
+  },
+  {
+    "doc_id": "iaea_hhr17_linear_accelerators",
+    "file": "reports/raw/iaea_hhr17_linear_accelerators.pdf",
+    "title": "IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf",
+    "role": "Radiotherapy equipment selection, acceptance testing, commissioning, quality control, and procurement"
+  },
+  {
+    "doc_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "file": "reports/raw/iaea_tecdoc1274_brachytherapy_source_calibration.pdf",
+    "title": "IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf",
+    "role": "Brachytherapy source calibration at SSDLs and hospitals"
+  },
+  {
+    "doc_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "file": "reports/raw/iaea_tecdoc989_radiation_dose_prescription_delivery.pdf",
+    "title": "IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf",
+    "role": "Dose prescription, transfer, delivery, QA, and dose accuracy across the radiotherapy chain"
+  },
+  {
+    "doc_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "file": "reports/raw/iaea_trs398_rev1_absorbed_dose_ebrt.pdf",
+    "title": "IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf",
+    "role": "Updated international code of practice for absorbed dose determination in external beam radiotherapy"
+  },
+  {
+    "doc_id": "aapm_tg51_photon_dosimetry_addendum",
+    "file": "reports/raw/aapm_tg51_photon_dosimetry_addendum.pdf",
+    "title": "AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "organization": "AAPM",
+    "source_url": "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf",
+    "role": "Photon beam reference dosimetry addendum to the AAPM TG-51 protocol"
+  },
+  {
+    "doc_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "file": "reports/raw/iaea_tecdoc1588_3dcrt_imrt_transition.pdf",
+    "title": "IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf",
+    "role": "Transition from 2-D radiotherapy to 3-D conformal radiotherapy and IMRT, including implementation, staffing, equipment, training, planning, and QA considerations"
+  },
+  {
+    "doc_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "file": "reports/raw/iaea_hhs14_planning_national_radiotherapy_services.pdf",
+    "title": "IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf",
+    "role": "National radiotherapy service planning, resource estimation, programme capacity, access, and service development"
+  },
+  {
+    "doc_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "file": "reports/raw/iaea_srs47_radiotherapy_facility_radiation_protection.pdf",
+    "title": "IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf",
+    "role": "Radiotherapy facility shielding, bunker design, radiation protection, workload, barriers, and safety design"
+  },
+  {
+    "doc_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "file": "reports/raw/iaea_ssg46_medical_uses_radiation_safety.pdf",
+    "title": "IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf",
+    "role": "Radiation protection and safety requirements for medical uses of ionizing radiation, including responsibilities, optimization, and safety infrastructure relevant to radiotherapy"
+  },
+  {
+    "doc_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "file": "reports/raw/iaea_pub1638_radiotherapy_in_cancer_care.pdf",
+    "title": "IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge",
+    "organization": "IAEA",
+    "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf",
+    "role": "Global radiotherapy access, infrastructure, workforce, technology, quality, safety, and cancer-care context"
+  }
+]

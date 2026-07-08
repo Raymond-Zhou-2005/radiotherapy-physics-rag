@@ -1,0 +1,16 @@
+{
+  "description": "Retrieve cited evidence from the indexed starter corpus.",
+  "command": "python scripts/plugin_query.py --mode evidence --retrieval-backend sparse \"What does AAPM TG 100 say about risk analysis?\" --output evidence.json",
+  "input": {
+    "mode": "evidence",
+    "query": "What does AAPM TG 100 say about risk analysis?",
+    "index_dir": "index",
+    "retrieval_backend": "sparse"
+  },
+  "expected_behavior": {
+    "ok": true,
+    "rag_pipeline.required": true,
+    "evidence_status": "sufficient",
+    "citations": "Every evidence item includes document, section, and page metadata."
+  }
+}

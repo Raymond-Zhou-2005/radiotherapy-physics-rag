@@ -1,0 +1,18 @@
+{
+  "description": "Create a conservative answer assembled from retrieved evidence.",
+  "command": "python scripts/plugin_query.py --mode answer --answer-engine extractive --retrieval-backend sparse \"What does IAEA TECDOC 1040 say about staffing for a radiotherapy programme?\" --output answer.json",
+  "input": {
+    "mode": "answer",
+    "answer_engine": "extractive",
+    "query": "What does IAEA TECDOC 1040 say about staffing for a radiotherapy programme?",
+    "index_dir": "index",
+    "retrieval_backend": "sparse"
+  },
+  "expected_behavior": {
+    "ok": true,
+    "answer_engine": "extractive",
+    "used_evidence_ids": [
+      "E1"
+    ]
+  }
+}

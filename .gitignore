@@ -1,0 +1,57 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.md
+*.local.txt
+
+# Hugging Face and local model caches can be very large.
+.cache/
+hf_cache/
+models/
+
+# Generated local outputs.
+evidence.json
+bundle.json
+answer.json
+retrieval_preview.json
+rerank_preview.json
+dist/*.zip
+
+# Locally downloaded third-party reports and derived full-text artifacts.
+reports/raw/*.pdf
+!reports/raw/.gitkeep
+reports/manifest.jsonl
+parsed/*.jsonl
+!parsed/.gitkeep
+chunks/*.jsonl
+!chunks/.gitkeep
+index/dense/*
+!index/dense/.gitkeep
+index/sparse/*
+!index/sparse/.gitkeep
+index/metadata/*
+!index/metadata/.gitkeep
+assets/extracted/*.jsonl
+assets/extracted/asset_manifest.json
+assets/extracted/images/
+!assets/extracted/.gitkeep
+chatgpt_knowledge/upload_manifest.json
+chatgpt_knowledge/upload_files/*.md
+!chatgpt_knowledge/upload_files/.gitkeep
+
+# Keep corpus/index artifacts tracked only when intentionally added.
+reports/raw/*.tmp
+parsed/*.tmp
+chunks/*.tmp
+index/**/*.tmp

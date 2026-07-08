@@ -1,0 +1,14 @@
+{
+  "description": "Unsupported questions return a structured insufficient-evidence result.",
+  "command": "python scripts/plugin_query.py --mode evidence --retrieval-backend sparse \"What does the corpus say about dental implant antibiotic prophylaxis?\"",
+  "input": {
+    "mode": "evidence",
+    "query": "What does the corpus say about dental implant antibiotic prophylaxis?",
+    "index_dir": "index",
+    "retrieval_backend": "sparse"
+  },
+  "expected_behavior": {
+    "ok": false,
+    "error_code": "insufficient_evidence"
+  }
+}

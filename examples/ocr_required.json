@@ -1,0 +1,14 @@
+{
+  "description": "OCR helper returns a structured ocr_required error when OCRmyPDF is not installed.",
+  "command": "python scripts/ocr_pdfs.py reports/raw/scanned_report.pdf --output-dir reports/ocr",
+  "input": {
+    "input_pdf": "reports/raw/scanned_report.pdf",
+    "output_dir": "reports/ocr",
+    "language": "eng"
+  },
+  "expected_behavior": {
+    "ok": false,
+    "error_code": "ocr_required",
+    "next_step": "Install OCRmyPDF, Ghostscript, and Tesseract, or OCR the PDF before indexing."
+  }
+}

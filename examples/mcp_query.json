@@ -1,0 +1,21 @@
+{
+  "description": "Expose the skill as an MCP stdio server for agent platforms that can connect to MCP tools.",
+  "command": "python scripts/mcp_server.py --index-dir index",
+  "input": {
+    "tool": "query_reports",
+    "arguments": {
+      "mode": "evidence",
+      "query": "What does IAEA TRS 398 cover about absorbed dose determination in external beam radiotherapy?",
+      "report_id": "iaea_trs398_absorbed_dose_ebrt",
+      "evidence_top_k": 2
+    }
+  },
+  "expected_behavior": {
+    "ok": true,
+    "evidence": [
+      {
+        "doc_id": "iaea_trs398_absorbed_dose_ebrt"
+      }
+    ]
+  }
+}

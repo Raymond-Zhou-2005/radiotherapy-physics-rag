@@ -1,0 +1,14 @@
+{
+  "description": "Export an evidence bundle for a downstream grounded answer model.",
+  "command": "python scripts/plugin_query.py --mode bundle --retrieval-backend sparse \"What physics responsibilities are discussed for clinical trials?\" --output bundle.json",
+  "input": {
+    "mode": "bundle",
+    "query": "What physics responsibilities are discussed for clinical trials?",
+    "index_dir": "index",
+    "retrieval_backend": "sparse"
+  },
+  "expected_behavior": {
+    "ok": true,
+    "prompt_for_medgemma": "Included and grounded only in returned evidence."
+  }
+}

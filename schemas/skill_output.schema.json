@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag/schemas/skill_output.schema.json",
+  "title": "Radiotherapy Physics RAG Success Output",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "ok",
+    "schema_version",
+    "skill_name",
+    "mode",
+    "query",
+    "report_scope",
+    "evidence_status",
+    "abstained",
+    "evidence",
+    "citations"
+  ],
+  "properties": {
+    "ok": {
+      "const": true
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "skill_name": {
+      "const": "radiotherapy-physics-rag"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["evidence", "bundle", "answer"]
+    },
+    "query": {
+      "type": "string"
+    },
+    "report_scope": {
+      "type": "object",
+      "required": ["requested_report_id", "applied", "available_report_ids"],
+      "properties": {
+        "requested_report_id": {
+          "type": ["string", "null"]
+        },
+        "applied": {
+          "type": "boolean"
+        },
+        "available_report_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence_status": {
+      "type": "string",
+      "enum": ["sufficient", "partial", "insufficient"]
+    },
+    "rag_pipeline": {
+      "type": "object",
+      "properties": {
+        "retrieval_backend": {
+          "type": "string",
+          "enum": ["auto", "hybrid", "sparse", "routed"]
+        },
+        "routing": {
+          "type": ["object", "null"]
+        }
+      }
+    },
+    "abstained": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "chunk_id", "doc_id", "section", "page_start", "page_end", "text", "scores"],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "chunk_id": {
+            "type": "string"
+          },
+          "doc_id": {
+            "type": "string"
+          },
+          "document": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "subsection": {
+            "type": "string"
+          },
+          "page_start": {
+            "type": "integer"
+          },
+          "page_end": {
+            "type": "integer"
+          },
+          "page_range": {
+            "type": "string"
+          },
+          "chunk_kind": {
+            "type": "string"
+          },
+          "parent_chunk_id": {
+            "type": ["string", "null"]
+          },
+          "source_path": {
+            "type": ["string", "null"]
+          },
+          "citation": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "scores": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "chunk_id", "doc_id", "document", "section", "page_range", "citation"],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "chunk_id": {
+            "type": "string"
+          },
+          "doc_id": {
+            "type": "string"
+          },
+          "document": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "subsection": {
+            "type": "string"
+          },
+          "page_start": {
+            "type": "integer"
+          },
+          "page_end": {
+            "type": "integer"
+          },
+          "page_range": {
+            "type": "string"
+          },
+          "source_path": {
+            "type": ["string", "null"]
+          },
+          "citation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "prompt_for_medgemma": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    },
+    "used_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "answer_engine": {
+      "type": "string"
+    }
+  }
+}

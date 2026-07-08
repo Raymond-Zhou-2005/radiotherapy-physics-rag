@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Radiotherapy Physics RAG</title>
+  <desc id="desc">A radiotherapy physics document stack with search and citation marks.</desc>
+  <rect width="256" height="256" rx="42" fill="#17324d"/>
+  <path d="M64 58h96l32 32v108H64z" fill="#f7fbfb"/>
+  <path d="M160 58v33h32z" fill="#c8dfee"/>
+  <path d="M88 112h80M88 138h58M88 164h68" stroke="#17324d" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="169" cy="167" r="28" fill="none" stroke="#2aa876" stroke-width="10"/>
+  <path d="m190 188 23 23" stroke="#2aa876" stroke-width="12" stroke-linecap="round"/>
+  <path d="M76 42h78" stroke="#f2b84b" stroke-width="10" stroke-linecap="round"/>
+</svg>

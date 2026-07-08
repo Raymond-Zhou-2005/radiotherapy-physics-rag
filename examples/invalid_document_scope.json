@@ -1,0 +1,15 @@
+{
+  "description": "Invalid document/report scope should return a structured out_of_scope error.",
+  "command": "python scripts/plugin_query.py --mode evidence --report-id not_indexed --retrieval-backend sparse \"What does the report say about QA?\"",
+  "input": {
+    "mode": "evidence",
+    "report_id": "not_indexed",
+    "query": "What does the report say about QA?",
+    "index_dir": "index",
+    "retrieval_backend": "sparse"
+  },
+  "expected_behavior": {
+    "ok": false,
+    "error_code": "out_of_scope"
+  }
+}

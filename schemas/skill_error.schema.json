@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag/schemas/skill_error.schema.json",
+  "title": "Radiotherapy Physics RAG Error Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "schema_version", "skill_name", "mode", "query", "error"],
+  "properties": {
+    "ok": {
+      "const": false
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "skill_name": {
+      "const": "radiotherapy-physics-rag"
+    },
+    "mode": {
+      "type": ["string", "null"],
+      "enum": ["evidence", "bundle", "answer", null]
+    },
+    "query": {
+      "type": ["string", "null"]
+    },
+    "error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "message", "details"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": [
+            "missing_index",
+            "out_of_scope",
+            "insufficient_evidence",
+            "missing_model_path",
+            "ocr_required",
+            "runtime_failure",
+            "empty_corpus"
+          ]
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

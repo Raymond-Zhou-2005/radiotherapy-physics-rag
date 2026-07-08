@@ -1,0 +1,2822 @@
+[
+  {
+    "qid": "public_q0001",
+    "question": "Which report evidence is most relevant for in-room kv imaging patient setup target localization and imaging qa context, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0002",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for in-room kv imaging patient setup target localization and imaging qa context?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0003",
+    "question": "How should a radiotherapy physicist use guidance on in-room kv imaging patient setup target localization and imaging qa context when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0004",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for in-room kv imaging patient setup target localization and imaging qa context?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0005",
+    "question": "What does AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_report_104_kv_imaging_guidance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 104: The role of in-room kV x-ray imaging for patient setup and target localization",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0006",
+    "question": "Which report evidence is most relevant for clinical trial physics planning oar credentialing and reporting guidance, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0007",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for clinical trial physics planning oar credentialing and reporting guidance?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0008",
+    "question": "How should a radiotherapy physicist use guidance on clinical trial physics planning oar credentialing and reporting guidance when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0009",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for clinical trial physics planning oar credentialing and reporting guidance?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0010",
+    "question": "What does AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_report_113_physics_clinical_trials",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 113: Guidance for the Physics Aspects of Clinical Trials",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0011",
+    "question": "Which report evidence is most relevant for treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 166: The use and QA of biologically related models for treatment planning",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0012",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 166: The use and QA of biologically related models for treatment planning",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0013",
+    "question": "How should a radiotherapy physicist use guidance on treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 166: The use and QA of biologically related models for treatment planning",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0014",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning model qa dose-response modeling ntcp/tcp and biologically based optimization?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 166: The use and QA of biologically related models for treatment planning",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0015",
+    "question": "What does AAPM Report 166: The use and QA of biologically related models for treatment planning cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_report_166_biological_models_treatment_planning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 166: The use and QA of biologically related models for treatment planning",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0016",
+    "question": "Which report evidence is most relevant for radiation oncology qa chart checks equipment checks documentation and programme quality, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0017",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiation oncology qa chart checks equipment checks documentation and programme quality?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0018",
+    "question": "How should a radiotherapy physicist use guidance on radiation oncology qa chart checks equipment checks documentation and programme quality when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0019",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiation oncology qa chart checks equipment checks documentation and programme quality?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0020",
+    "question": "What does AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_report_46_tg40_radiation_oncology_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 46 / TG 40: Comprehensive QA for radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0021",
+    "question": "Which report evidence is most relevant for external beam radiotherapy physics concepts and training scope, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0022",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for external beam radiotherapy physics concepts and training scope?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0023",
+    "question": "How should a radiotherapy physicist use guidance on external beam radiotherapy physics concepts and training scope when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0024",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam radiotherapy physics concepts and training scope?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0025",
+    "question": "What does AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_report_90_essential_medical_physics_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM Report 90: Essentials and guidelines for hospital based medical physics residency training programs",
+    "source_urls": [
+      "https://aapm.org/pubs/reports/rpt_90.Pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0026",
+    "question": "Which report evidence is most relevant for standard structure naming radiation oncology nomenclature and terminology normalization, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 263: Standardizing nomenclatures in radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0027",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for standard structure naming radiation oncology nomenclature and terminology normalization?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 263: Standardizing nomenclatures in radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0028",
+    "question": "How should a radiotherapy physicist use guidance on standard structure naming radiation oncology nomenclature and terminology normalization when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 263: Standardizing nomenclatures in radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0029",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for standard structure naming radiation oncology nomenclature and terminology normalization?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 263: Standardizing nomenclatures in radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0030",
+    "question": "What does AAPM TG 263: Standardizing nomenclatures in radiation oncology cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_tg263_nomenclature",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG 263: Standardizing nomenclatures in radiation oncology",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0031",
+    "question": "Which report evidence is most relevant for radiotherapy programme design staffing equipment radiation protection and safety, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1040: Design and implementation of a radiotherapy programme",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0032",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy programme design staffing equipment radiation protection and safety?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1040: Design and implementation of a radiotherapy programme",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0033",
+    "question": "How should a radiotherapy physicist use guidance on radiotherapy programme design staffing equipment radiation protection and safety when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1040: Design and implementation of a radiotherapy programme",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0034",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy programme design staffing equipment radiation protection and safety?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1040: Design and implementation of a radiotherapy programme",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0035",
+    "question": "What does IAEA TECDOC 1040: Design and implementation of a radiotherapy programme cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc_1040_radiotherapy_programme",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1040: Design and implementation of a radiotherapy programme",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1040_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0036",
+    "question": "Which report evidence is most relevant for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0037",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0038",
+    "question": "How should a radiotherapy physicist use guidance on external beam reference dosimetry absorbed dose to water beam calibration and uncertainty when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0039",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for external beam reference dosimetry absorbed dose to water beam calibration and uncertainty?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0040",
+    "question": "What does IAEA TRS 398: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_trs398_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0041",
+    "question": "Which report evidence is most relevant for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0042",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0043",
+    "question": "How should a radiotherapy physicist use guidance on treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0044",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system commissioning dose calculation checks qa tests and planning-system acceptance?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0045",
+    "question": "What does IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_trs430_tps_commissioning_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 430: Commissioning and Quality Assurance of Computerized Planning Systems for Radiation Treatment of Cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0046",
+    "question": "Which report evidence is most relevant for broad expert teaching reference for radiation oncology physics fundamentals, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0047",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for broad expert teaching reference for radiation oncology physics fundamentals?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0048",
+    "question": "How should a radiotherapy physicist use guidance on broad expert teaching reference for radiation oncology physics fundamentals when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0049",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for broad expert teaching reference for radiation oncology physics fundamentals?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0050",
+    "question": "What does Radiation Oncology Physics: A Handbook for Teachers and Students cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_pub1196_radiation_oncology_physics_handbook",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiation Oncology Physics: A Handbook for Teachers and Students",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0051",
+    "question": "Which report evidence is most relevant for reference dosimeter calibration and standards chain for external beam radiotherapy, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0052",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for reference dosimeter calibration and standards chain for external beam radiotherapy?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0053",
+    "question": "How should a radiotherapy physicist use guidance on reference dosimeter calibration and standards chain for external beam radiotherapy when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0054",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for reference dosimeter calibration and standards chain for external beam radiotherapy?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0055",
+    "question": "What does IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_trs469_reference_dosimeters",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 469: Calibration of Reference Dosimeters for External Beam Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0056",
+    "question": "Which report evidence is most relevant for medical physics procedures for quality audits and on-site radiotherapy centre review, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0057",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for medical physics procedures for quality audits and on-site radiotherapy centre review?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0058",
+    "question": "How should a radiotherapy physicist use guidance on medical physics procedures for quality audits and on-site radiotherapy centre review when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0059",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for medical physics procedures for quality audits and on-site radiotherapy centre review?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0060",
+    "question": "What does IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc1543_quatro",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1543: On-site Visits to Radiotherapy Centres: Medical Physics Procedures",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1543_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0061",
+    "question": "Which report evidence is most relevant for igrt quality assurance programme imaging workflow safety and implementation guidance, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0062",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for igrt quality assurance programme imaging workflow safety and implementation guidance?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0063",
+    "question": "How should a radiotherapy physicist use guidance on igrt quality assurance programme imaging workflow safety and implementation guidance when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0064",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for igrt quality assurance programme imaging workflow safety and implementation guidance?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0065",
+    "question": "What does IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhr16_igrt_qa",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 16: Quality Assurance Programme for Image Guided Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0066",
+    "question": "Which report evidence is most relevant for independent radiotherapy dosimetry audits audit design and audit interpretation, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0067",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for independent radiotherapy dosimetry audits audit design and audit interpretation?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0068",
+    "question": "How should a radiotherapy physicist use guidance on independent radiotherapy dosimetry audits audit design and audit interpretation when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0069",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for independent radiotherapy dosimetry audits audit design and audit interpretation?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0070",
+    "question": "What does IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhr18_radiotherapy_dosimetry_audits",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 18: Quality Audits in Radiotherapy Dosimetry",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0071",
+    "question": "Which report evidence is most relevant for small field reference and relative dosimetry for external beam radiotherapy, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0072",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for small field reference and relative dosimetry for external beam radiotherapy?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0073",
+    "question": "How should a radiotherapy physicist use guidance on small field reference and relative dosimetry for external beam radiotherapy when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0074",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for small field reference and relative dosimetry for external beam radiotherapy?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0075",
+    "question": "What does IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_trs483_small_static_fields",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 483: Dosimetry of small static fields used in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0076",
+    "question": "Which report evidence is most relevant for international code of practice for brachytherapy dosimetry and source calibration, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0077",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for international code of practice for brachytherapy dosimetry and source calibration?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0078",
+    "question": "How should a radiotherapy physicist use guidance on international code of practice for brachytherapy dosimetry and source calibration when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0079",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for international code of practice for brachytherapy dosimetry and source calibration?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0080",
+    "question": "What does IAEA TRS 492: Dosimetry in brachytherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_trs492_brachytherapy_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 492: Dosimetry in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0081",
+    "question": "Which report evidence is most relevant for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0082",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0083",
+    "question": "How should a radiotherapy physicist use guidance on ct simulation treatment planning ct scanner performance and radiotherapy imaging qa when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0084",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for ct simulation treatment planning ct scanner performance and radiotherapy imaging qa?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0085",
+    "question": "What does IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhs19_ct_sim_radiotherapy",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 19: Quality assurance programme for computed tomography in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0086",
+    "question": "Which report evidence is most relevant for radiotherapy treatment planning system commissioning data entry testing and qa procedures, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0087",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0088",
+    "question": "How should a radiotherapy physicist use guidance on radiotherapy treatment planning system commissioning data entry testing and qa procedures when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0089",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy treatment planning system commissioning data entry testing and qa procedures?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0090",
+    "question": "What does IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc1583_tps_commissioning",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1583: Commissioning of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0091",
+    "question": "Which report evidence is most relevant for treatment planning system specification procurement acceptance testing and quality assurance, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0092",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for treatment planning system specification procurement acceptance testing and quality assurance?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0093",
+    "question": "How should a radiotherapy physicist use guidance on treatment planning system specification procurement acceptance testing and quality assurance when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0094",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for treatment planning system specification procurement acceptance testing and quality assurance?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0095",
+    "question": "What does IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc1540_tps_acceptance",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1540: Specification and acceptance testing of radiotherapy treatment planning systems",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0096",
+    "question": "Which report evidence is most relevant for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0097",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0098",
+    "question": "How should a radiotherapy physicist use guidance on in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0099",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for in vivo dosimetry implementation detector selection clinical workflow tolerances and action levels?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0100",
+    "question": "What does IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhr8_in_vivo_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 8: Development of procedures for in vivo dosimetry in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0101",
+    "question": "Which report evidence is most relevant for record and verify systems radiotherapy workflow safety commissioning and quality control, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0102",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for record and verify systems radiotherapy workflow safety commissioning and quality control?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0103",
+    "question": "How should a radiotherapy physicist use guidance on record and verify systems radiotherapy workflow safety commissioning and quality control when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0104",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for record and verify systems radiotherapy workflow safety commissioning and quality control?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0105",
+    "question": "What does IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhr7_record_verify_systems",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 7: Record and verify systems for radiation treatment of cancer",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0106",
+    "question": "Which report evidence is most relevant for quatro comprehensive radiotherapy practice audits and quality improvement, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0107",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for quatro comprehensive radiotherapy practice audits and quality improvement?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0108",
+    "question": "How should a radiotherapy physicist use guidance on quatro comprehensive radiotherapy practice audits and quality improvement when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0109",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for quatro comprehensive radiotherapy practice audits and quality improvement?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0110",
+    "question": "What does Comprehensive audits of radiotherapy practices: a tool for quality improvement cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_pub1990_quatro_quality_improvement",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1990_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0111",
+    "question": "Which report evidence is most relevant for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0112",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0113",
+    "question": "How should a radiotherapy physicist use guidance on earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0114",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for earlier quatro audit methodology for radiation oncology medical physics and radiotherapy technology?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0115",
+    "question": "What does Comprehensive audits of radiotherapy practices: a tool for quality improvement cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_pub1297_quatro_audit_tool",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Comprehensive audits of radiotherapy practices: a tool for quality improvement",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0116",
+    "question": "Which report evidence is most relevant for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0117",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0118",
+    "question": "How should a radiotherapy physicist use guidance on accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0119",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for accuracy and uncertainty requirements for external beam radiotherapy and brachytherapy?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0120",
+    "question": "What does IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhs31_accuracy_requirements_dosimetry",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 31: Accuracy requirements and uncertainties in radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0121",
+    "question": "Which report evidence is most relevant for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0122",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0123",
+    "question": "How should a radiotherapy physicist use guidance on radiotherapy facility design shielding equipment rooms workflow and safety infrastructure when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0124",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy facility design shielding equipment rooms workflow and safety infrastructure?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0125",
+    "question": "What does IAEA Human Health Reports No. 10: Radiotherapy facilities cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhr10_radiotherapy_facilities",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 10: Radiotherapy facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0126",
+    "question": "Which report evidence is most relevant for radiotherapy equipment selection acceptance testing commissioning quality control and procurement, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0127",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy equipment selection acceptance testing commissioning quality control and procurement?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0128",
+    "question": "How should a radiotherapy physicist use guidance on radiotherapy equipment selection acceptance testing commissioning quality control and procurement when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0129",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy equipment selection acceptance testing commissioning quality control and procurement?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0130",
+    "question": "What does IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhr17_linear_accelerators",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Reports No. 17: Selection, acceptance testing, commissioning and quality control of radiotherapy equipment",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0131",
+    "question": "Which report evidence is most relevant for brachytherapy source calibration at ssdls and hospitals, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0132",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for brachytherapy source calibration at ssdls and hospitals?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0133",
+    "question": "How should a radiotherapy physicist use guidance on brachytherapy source calibration at ssdls and hospitals when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0134",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for brachytherapy source calibration at ssdls and hospitals?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0135",
+    "question": "What does IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc1274_brachytherapy_source_calibration",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1274: Calibration of photon and beta ray sources used in brachytherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0136",
+    "question": "Which report evidence is most relevant for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0137",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0138",
+    "question": "How should a radiotherapy physicist use guidance on dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0139",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for dose prescription transfer delivery qa and dose accuracy across the radiotherapy chain?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0140",
+    "question": "What does IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc989_radiation_dose_prescription_delivery",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 989: Radiation dose in radiotherapy from prescription to delivery",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0141",
+    "question": "Which report evidence is most relevant for updated international code of practice for absorbed dose determination in external beam radiotherapy, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0142",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for updated international code of practice for absorbed dose determination in external beam radiotherapy?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0143",
+    "question": "How should a radiotherapy physicist use guidance on updated international code of practice for absorbed dose determination in external beam radiotherapy when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0144",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for updated international code of practice for absorbed dose determination in external beam radiotherapy?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0145",
+    "question": "What does IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_trs398_rev1_absorbed_dose_ebrt",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TRS 398 Rev. 1: Absorbed dose determination in external beam radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0146",
+    "question": "Which report evidence is most relevant for photon beam reference dosimetry addendum to the aapm tg-51 protocol, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0147",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
+    "type": "qa_or_safety",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0148",
+    "question": "How should a radiotherapy physicist use guidance on photon beam reference dosimetry addendum to the aapm tg-51 protocol when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0149",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for photon beam reference dosimetry addendum to the aapm tg-51 protocol?",
+    "type": "uncertainty_or_limits",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0150",
+    "question": "What does AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "aapm_tg51_photon_dosimetry_addendum",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: AAPM - AAPM TG-51 addendum: clinical reference dosimetry of high-energy photon beams",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0151",
+    "question": "Which report evidence is most relevant for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0152",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0153",
+    "question": "How should a radiotherapy physicist use guidance on transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0154",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for transition from 2-d radiotherapy to 3-d conformal radiotherapy and imrt including implementation staffing equipment training planning?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0155",
+    "question": "What does IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_tecdoc1588_3dcrt_imrt_transition",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA TECDOC 1588: Transition from 2-D Radiotherapy to 3-D Conformal and Intensity Modulated Radiotherapy",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0156",
+    "question": "Which report evidence is most relevant for national radiotherapy service planning resource estimation programme capacity access and service development, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0157",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for national radiotherapy service planning resource estimation programme capacity access and service development?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0158",
+    "question": "How should a radiotherapy physicist use guidance on national radiotherapy service planning resource estimation programme capacity access and service development when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0159",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for national radiotherapy service planning resource estimation programme capacity access and service development?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0160",
+    "question": "What does IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_hhs14_planning_national_radiotherapy_services",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Human Health Series No. 14: Planning National Radiotherapy Services: A Practical Tool",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0161",
+    "question": "Which report evidence is most relevant for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0162",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0163",
+    "question": "How should a radiotherapy physicist use guidance on radiotherapy facility shielding bunker design radiation protection workload barriers and safety design when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0164",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiotherapy facility shielding bunker design radiation protection workload barriers and safety design?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0165",
+    "question": "What does IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_srs47_radiotherapy_facility_radiation_protection",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Safety Reports Series No. 47: Radiation Protection in the Design of Radiotherapy Facilities",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0166",
+    "question": "Which report evidence is most relevant for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0167",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0168",
+    "question": "How should a radiotherapy physicist use guidance on radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0169",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for radiation protection and safety requirements for medical uses of ionizing radiation including responsibilities optimization and safety?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0170",
+    "question": "What does IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_ssg46_medical_uses_radiation_safety",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA Specific Safety Guide No. SSG-46: Radiation Protection and Safety in Medical Uses of Ionizing Radiation",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0171",
+    "question": "Which report evidence is most relevant for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context, and what should be checked first?",
+    "type": "source_locator",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0172",
+    "question": "What quality assurance, safety, or documentation issues are emphasized for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context?",
+    "type": "qa_or_safety",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0173",
+    "question": "How should a radiotherapy physicist use guidance on global radiotherapy access infrastructure workforce technology quality safety and cancer-care context when implementing or auditing a service?",
+    "type": "implementation",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0174",
+    "question": "What limitations, uncertainty sources, or practical constraints should be considered for global radiotherapy access infrastructure workforce technology quality safety and cancer-care context?",
+    "type": "uncertainty_or_limits",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0175",
+    "question": "What does Radiotherapy in Cancer Care: Facing the Global Challenge cover that would matter for evidence-grounded radiotherapy physics QA?",
+    "type": "named_source",
+    "report_id": "iaea_pub1638_radiotherapy_in_cancer_care",
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": false,
+    "source_basis": "Public source catalog topic derived from: IAEA - IAEA: Radiotherapy in Cancer Care: Facing the Global Challenge",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Open-source topic benchmark item generated from public source metadata. It is not copied from paid, private, leaked, or expert-only examination material.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0176",
+    "question": "What hydration schedule is recommended for sourdough starter maintenance?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0177",
+    "question": "Which Python web framework should I choose for a personal finance dashboard?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0178",
+    "question": "What are the tax filing deadlines for a sole proprietorship in California?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0179",
+    "question": "How should a violinist adjust bow pressure for Baroque ornamentation?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0180",
+    "question": "What soil pH is best for growing blueberries in a home garden?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0181",
+    "question": "Which chess opening is most suitable after 1. e4 c5 2. Nf3?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0182",
+    "question": "How do I troubleshoot a leaking kitchen faucet cartridge?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0183",
+    "question": "What is the best itinerary for a two-day visit to Kyoto?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0184",
+    "question": "How should I train for a half marathon after a knee injury?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0185",
+    "question": "What camera lens is best for street photography at night?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0186",
+    "question": "How do I compare mortgage refinance offers?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0187",
+    "question": "What is the safest way to clean mold from bathroom grout?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0188",
+    "question": "How should a beginner learn jazz piano voicings?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0189",
+    "question": "What are common causes of packet loss in a home Wi-Fi network?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  },
+  {
+    "qid": "public_q0190",
+    "question": "Which bread flour protein percentage is best for Neapolitan pizza dough?",
+    "type": "out_of_domain_control",
+    "report_id": null,
+    "gold_section": "",
+    "gold_chunk_ids": [],
+    "expected_abstain": true,
+    "source_basis": "Negative control outside radiotherapy physics and outside the public source catalog.",
+    "source_urls": [],
+    "source_note": "Synthetic out-of-domain control used to test abstention behaviour.",
+    "benchmark_profile": "open_source_topic"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "radiotherapy-physics-rag",
+  "interface": {
+    "displayName": "Radiotherapy Physics RAG"
+  },
+  "plugins": [
+    {
+      "name": "radiotherapy-physics-rag",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Science & Research"
+    }
+  ]
+}
