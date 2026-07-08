@@ -119,6 +119,54 @@ def required_dense_index_files(index_dir: Path) -> List[Path]:
     ]
 
 
+def dense_index_status(index_dir: Path) -> Dict[str, Any]:
+    files = required_dense_index_files(index_dir)
+    missing = [str(path) for path in files if not path.exists()]
+    if missing:
+        return {"available": False, "semantic": False, "missing": missing, "reason": "missing_dense_files"}
+
+    meta_path = index_dir / "dense" / "dense_meta.json"
+    try:
+        with meta_path.open("r", encoding="utf-8") as handle:
+            meta = json.load(handle)
+    except Exception as exc:
+        return {
+            "available": True,
+            "semantic": False,
+            "reason": "unreadable_dense_meta",
+            "exception_type": exc.__class__.__name__,
+            "exception": str(exc),
+        }
+
+    backend = str(meta.get("embedding_backend", "") or "").lower()
+    model_name = str(meta.get("embedding_model_name", "") or "").lower()
+    allow_hash_hybrid = os.getenv("RAG_ALLOW_HASH_HYBRID", "").lower() in {"1", "true", "yes"}
+    hash_like = backend == "hash_fallback" or model_name in {"hash", "hash-fallback", "hash_fallback"}
+    if hash_like and not allow_hash_hybrid:
+        return {
+            "available": True,
+            "semantic": False,
+            "reason": "hash_dense_index",
+            "embedding_backend": meta.get("embedding_backend"),
+            "embedding_model_name": meta.get("embedding_model_name"),
+        }
+    return {
+        "available": True,
+        "semantic": True,
+        "reason": "semantic_dense_index",
+        "embedding_backend": meta.get("embedding_backend"),
+        "embedding_model_name": meta.get("embedding_model_name"),
+    }
+
+
+def dense_index_is_semantic(index_dir: Path) -> bool:
+    return bool(dense_index_status(index_dir).get("semantic"))
+
+
+def experience_append_enabled() -> bool:
+    return os.getenv("RAG_EXPERIENCE_APPEND", "").lower() in {"1", "true", "yes"}
+
+
 def required_index_files(index_dir: Path, retrieval_backend: str = "auto") -> List[Path]:
     backend = (retrieval_backend or "auto").lower()
     files = required_sparse_index_files(index_dir)
@@ -198,15 +246,13 @@ def collect_evidence_with_backend(
     if backend == "sparse":
         return collect_sparse_evidence(query, index_dir, report_id, evidence_top_k), "sparse", warnings
 
-    if backend == "auto" and not all(path.exists() for path in required_dense_index_files(index_dir)):
+    dense_status = dense_index_status(index_dir)
+    if backend == "auto" and not dense_status["semantic"]:
         warnings.append(
             {
                 "code": "hybrid_retrieval_unavailable",
-                "message": "Dense index files are unavailable; using local BM25 sparse retrieval without loading embedding models.",
-                "missing": [
-                    str(path) for path in required_dense_index_files(index_dir)
-                    if not path.exists()
-                ],
+                "message": "Semantic dense retrieval is unavailable; using local BM25 sparse retrieval without loading embedding models.",
+                "dense_index_status": dense_status,
             }
         )
         return collect_sparse_evidence(query, index_dir, report_id, evidence_top_k), "sparse", warnings
@@ -234,7 +280,8 @@ def collect_routed_evidence(
     evidence_top_k: Optional[int] = None,
 ) -> Tuple[List[Dict[str, Any]], str, List[Dict[str, Any]]]:
     """Route retrieval strategy from scene features and experience memory."""
-    dense_available = all(path.exists() for path in required_dense_index_files(index_dir))
+    dense_status = dense_index_status(index_dir)
+    dense_available = bool(dense_status["semantic"])
     memory_path = Path(os.getenv("RAG_EXPERIENCE_MEMORY", str(index_dir.parent / "experience" / "experience_memory.jsonl")))
     records = load_experience_memory(memory_path)
     scene = analyze_scene(query, report_id=report_id)
@@ -245,11 +292,12 @@ def collect_routed_evidence(
     warnings: List[Dict[str, Any]] = [
         {
             "code": "routing_decision",
-            "message": "Experience-RAG style router selected a retrieval strategy for this query.",
+            "message": "Scene-aware router selected a retrieval strategy for this query.",
             "scene_features": scene,
             "decision": decision.to_dict(),
             "experience_memory_path": str(memory_path),
             "experience_memory_records": len(records),
+            "dense_index_status": dense_status,
             "experience_matches": [
                 {
                     "query": item.get("query"),
@@ -444,6 +492,18 @@ def query_content_terms(query: str) -> List[str]:
 
 
 def assess_evidence_sufficiency(query: str, evidence: List[Dict[str, Any]]) -> Dict[str, Any]:
+    scene = analyze_scene(query)
+    if scene.get("task_type") == "out_of_scope":
+        return {
+            "sufficient": False,
+            "reason": "Query is outside the radiotherapy physics corpus scope.",
+            "query_terms": sorted(set(query_content_terms(query))),
+            "max_overlap": 0.0,
+            "best_overlap_chunk_id": None,
+            "threshold": 1.0,
+            "scene_features": scene,
+        }
+
     if not evidence:
         return {"sufficient": False, "reason": "No evidence chunks were retrieved.", "query_terms": [], "max_overlap": 0.0}
 
@@ -716,7 +776,7 @@ def run_skill(
         retrieval_backend=actual_retrieval_backend,
         retrieval_warnings=retrieval_warnings,
     )
-    if selected_retrieval_backend == "routed":
+    if selected_retrieval_backend == "routed" and experience_append_enabled():
         routing = result.get("rag_pipeline", {}).get("routing") or {}
         decision = routing.get("decision") or {}
         scene = routing.get("scene_features") or {}

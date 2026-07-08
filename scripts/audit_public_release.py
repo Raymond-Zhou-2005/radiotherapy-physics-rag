@@ -41,6 +41,7 @@ FORBIDDEN_RUNTIME_PREFIXES = (
 FORBIDDEN_EXACT = {
     "reports/manifest.jsonl",
     "chatgpt_knowledge/upload_manifest.json",
+    "experience/experience_memory.jsonl",
 }
 
 

@@ -315,7 +315,7 @@ def build_navigator(index_dir: Path, manifest_path: Path, output_dir: Path, skil
     skill_md = [
         "---",
         "name: radiotherapy-physics-navigator",
-        "description: Use this skill when Codex needs to navigate the local radiotherapy physics RAG corpus by topic before retrieving evidence, especially for multi-report synthesis, source triage, or Corpus2Skill-style agent navigation.",
+        "description: Use this skill when Codex needs to navigate the local radiotherapy physics RAG corpus by topic before retrieving evidence, especially for multi-report synthesis, source triage, or topic-tree agent navigation.",
         "---",
         "",
         "# Radiotherapy Physics Navigator",

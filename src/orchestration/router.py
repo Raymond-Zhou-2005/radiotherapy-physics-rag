@@ -1,4 +1,4 @@
-"""Experience-RAG style scene analysis, memory lookup, and strategy routing."""
+"""Scene-aware retrieval strategy routing with lightweight memory lookup."""
 
 from __future__ import annotations
 
@@ -48,6 +48,15 @@ DOMAIN_TERMS = {
 OOD_TERMS = {
     "bread", "crypto", "municipal", "portfolio", "dental", "antibiotic",
     "stock", "recipe", "weather", "legal", "tax",
+    "sourdough", "python", "web framework", "finance", "dashboard",
+    "filing", "proprietorship", "california", "violin", "violinist",
+    "baroque", "ornamentation", "soil", "blueberries", "garden",
+    "chess", "opening", "kitchen", "faucet", "cartridge", "kyoto",
+    "itinerary", "marathon", "knee injury", "camera", "lens",
+    "photography", "mortgage", "refinance", "mold", "bathroom",
+    "grout", "jazz", "piano", "voicings", "wi-fi", "wifi",
+    "packet loss", "home network", "flour", "neapolitan", "pizza",
+    "dough",
 }
 
 
@@ -197,4 +206,3 @@ def append_experience_record(path: Path, record: dict[str, Any]) -> None:
     payload.setdefault("timestamp_utc", datetime.now(timezone.utc).isoformat())
     with path.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(payload, ensure_ascii=False, sort_keys=True) + "\n")
-

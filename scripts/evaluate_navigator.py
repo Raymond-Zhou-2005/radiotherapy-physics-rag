@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Evaluate the Corpus2Skill-style navigator as a routing surface."""
+"""Evaluate the topic-tree navigator as a routing surface."""
 
 from __future__ import annotations
 

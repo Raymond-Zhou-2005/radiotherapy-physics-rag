@@ -52,9 +52,9 @@ Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 Strategy evaluation:
 
 - Sparse Document Recall@5: 0.857.
-- Hybrid hash+dense Document Recall@5: 0.816.
-- Auto Document Recall@5: 0.816.
-- Routed Document Recall@5: 0.845.
+- Hybrid hash+dense Document Recall@5: 0.804.
+- Auto Document Recall@5: 0.857.
+- Routed Document Recall@5: 0.857.
 
 Navigator evaluation:
 
@@ -63,11 +63,11 @@ Navigator evaluation:
 
 Agent-skill contract evaluation:
 
-- Routed tool success rate: 0.965.
-- Routed Document Hit Rate@5: 0.845.
-- Citation present rate: 0.996.
-- OOD abstention success rate: 0.533.
-- Unexpected in-scope error count: 1.
+- Routed tool success rate: 0.942.
+- Routed Document Hit Rate@5: 0.857.
+- Citation present rate: 1.000.
+- OOD abstention success rate: 1.000.
+- Unexpected in-scope error count: 0.
 
 ## Verification Snapshot
 
@@ -83,3 +83,5 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 ## Boundary
 
 This is research software and an open-source evaluation bundle, not a clinical decision system. It should not be used for patient-specific medical advice. The local folder contains third-party PDFs and derived runtime artifacts for local research use; the public GitHub release excludes those artifacts and keeps only source metadata, code, skill files, tests, and benchmark assets.
+
+Routed retrieval can optionally append local query traces when `RAG_EXPERIENCE_APPEND=1` is set. That local memory file is excluded from the public release.

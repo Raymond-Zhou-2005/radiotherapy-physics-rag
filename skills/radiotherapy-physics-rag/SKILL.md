@@ -5,7 +5,7 @@ description: Use this skill when the user asks evidence-grounded questions about
 
 # Radiotherapy Physics RAG
 
-Use the locally built report corpus as the evidence boundary. The skill supports evidence lookup, evidence bundles, conservative extractive answers, Corpus2Skill-style navigation, Experience-RAG-style strategy routing, corpus inspection, PDF onboarding, index rebuilding, validation, and ChatGPT Knowledge export.
+Use the locally built report corpus as the evidence boundary. The skill supports evidence lookup, evidence bundles, conservative extractive answers, topic-tree navigation, scene-aware strategy routing, corpus inspection, PDF onboarding, index rebuilding, validation, and ChatGPT Knowledge export.
 
 ## User Experience Boundary
 
@@ -27,7 +27,7 @@ in the public repository.
 python scripts/plugin_query.py --mode evidence --retrieval-backend routed "What does the corpus say about radiation oncology QA?"
 ```
 
-6. Use `--retrieval-backend sparse` for portable BM25 evidence retrieval. Use `--retrieval-backend auto` to try hybrid retrieval when local dense files and models are available, with sparse fallback when they are not. Use `--retrieval-backend routed` to classify the scene, consult `experience/experience_memory.jsonl`, and choose a retrieval strategy.
+6. Use `--retrieval-backend sparse` for portable BM25 evidence retrieval. Use `--retrieval-backend auto` to try hybrid retrieval when local dense files and models are available, with sparse fallback when they are not. Use `--retrieval-backend routed` to classify the scene, optionally consult local routing memory if present, and choose a retrieval strategy. Routed traces are appended only when `RAG_EXPERIENCE_APPEND=1` is set.
 
 If the index is missing, bootstrap the local corpus first:
 

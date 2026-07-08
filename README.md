@@ -9,8 +9,8 @@ The project retrieves evidence from locally built AAPM/IAEA radiotherapy physics
 - A Codex-usable skill under `skills/radiotherapy-physics-rag/`.
 - A local MCP stdio server with tools for querying reports and fetching chunks.
 - A reproducible PDF -> parse -> chunk -> BM25/dense -> navigator pipeline.
-- A Corpus2Skill-style navigator tree under `navigator/`.
-- An Experience-RAG-style routed retrieval layer under `src/orchestration/`.
+- A topic-tree navigator under `navigator/`.
+- A scene-aware routed retrieval layer under `src/orchestration/`.
 - A public open-source topic benchmark under `evaluation/`.
 
 ## What This Is Not
@@ -127,13 +127,13 @@ Current 260-question open-source topic benchmark results:
 | Evaluation | Main result |
 | --- | --- |
 | Sparse retrieval | Document Recall@5 = 0.857 |
-| Hybrid hash+dense retrieval | Document Recall@5 = 0.816 |
-| Auto retrieval | Document Recall@5 = 0.816 |
-| Routed retrieval | Document Recall@5 = 0.845 |
+| Hybrid hash+dense retrieval | Document Recall@5 = 0.804 |
+| Auto retrieval | Document Recall@5 = 0.857 |
+| Routed retrieval | Document Recall@5 = 0.857 |
 | Navigator routing | Topic Recall@3 = 0.967; Candidate Document Recall@5 = 0.673 |
-| Routed agent skill contract | Document Hit Rate@5 = 0.845; Citation present rate = 0.996; OOD abstention success = 0.533 |
+| Routed agent skill contract | Document Hit Rate@5 = 0.857; Citation present rate = 1.000; OOD abstention success = 1.000 |
 
-Interpretation: expanding the runtime corpus improved document-level retrieval coverage. The navigator still finds the right broad topic reliably, but document ranking became harder because the added AAPM reports intentionally overlap on QA, IMRT, IGRT, and commissioning. OOD abstention is now the weakest measured behavior and needs a stronger evidence sufficiency gate. This remains an open-source retrieval and skill-contract benchmark, not an expert-adjudicated clinical QA benchmark.
+Interpretation: expanding the runtime corpus improved document-level retrieval coverage. The reproducible hash dense index is useful for CI and artifact checks, but it is not a semantic dense model, so `auto` and `routed` now prefer sparse retrieval unless a semantic dense index is available. Explicit non-radiotherapy controls are now rejected before lexical overlap scoring. The navigator still finds the right broad topic reliably, but document ranking remains hard because the added AAPM reports intentionally overlap on QA, IMRT, IGRT, and commissioning. This remains an open-source retrieval and skill-contract benchmark, not an expert-adjudicated clinical QA benchmark.
 
 ## Public Release
 
@@ -163,8 +163,8 @@ Forbidden public artifacts include:
 | `.codex-plugin/`, `.mcp.json` | Codex plugin and MCP launch metadata |
 | `scripts/` | Build, query, evaluation, and release commands |
 | `src/` | PDF processing, chunking, retrieval, routing, generation helpers |
-| `navigator/` | Corpus2Skill-style topic tree and chunk pointers |
-| `experience/` | Experience-RAG-style routing memory |
+| `navigator/` | Topic tree and chunk pointers |
+| `experience/` | Optional local routing memory placeholder |
 | `reports/starter_corpus_sources.json` | Public source catalog |
 | `evaluation/` | Public benchmark questions and evaluation outputs |
 | `references/` | Focused implementation notes |

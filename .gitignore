@@ -49,6 +49,7 @@ assets/extracted/images/
 chatgpt_knowledge/upload_manifest.json
 chatgpt_knowledge/upload_files/*.md
 !chatgpt_knowledge/upload_files/.gitkeep
+experience/experience_memory.jsonl
 
 # Keep corpus/index artifacts tracked only when intentionally added.
 reports/raw/*.tmp

@@ -59,12 +59,12 @@ Current results:
 
 | Strategy | Document Recall@3 | Document Recall@5 | OOD TP | OOD FN |
 | --- | ---: | ---: | ---: | ---: |
-| sparse | 0.755 | 0.857 | 8 | 7 |
-| hybrid hash+dense | 0.731 | 0.816 | 8 | 7 |
-| auto | 0.731 | 0.816 | 8 | 7 |
-| routed | 0.755 | 0.845 | 8 | 7 |
+| sparse | 0.755 | 0.857 | 15 | 0 |
+| hybrid hash+dense | 0.702 | 0.804 | 15 | 0 |
+| auto | 0.755 | 0.857 | 15 | 0 |
+| routed | 0.755 | 0.857 | 15 | 0 |
 
-`Recall@3`, `Recall@5`, and `MRR` are 0.000 in the current report because the generated public benchmark does not contain expert gold chunk IDs or section labels. Use document recall and abstention metrics for this open-source benchmark.
+`Recall@3`, `Recall@5`, and `MRR` are 0.000 in the current report because the generated public benchmark does not contain expert gold chunk IDs or section labels. Use document recall and abstention metrics for this open-source benchmark. The hash dense index is a reproducible no-model artifact check, not a semantic dense model; `auto` and `routed` therefore prefer sparse retrieval unless a semantic dense index is available.
 
 ## Navigator Evaluation
 
@@ -91,11 +91,13 @@ RAG_FORCE_HASH_EMBEDDINGS=1 RAG_FORCE_LEXICAL_RERANK=1 EMBEDDING_MODEL_NAME=hash
 
 Current results:
 
-- Tool success rate: 0.965.
-- Document Hit Rate@5: 0.845.
-- Citation present rate: 0.996.
-- OOD abstention success rate: 0.533.
-- Unexpected in-scope error count: 1.
+- Tool success rate: 0.942.
+- Document Hit Rate@5: 0.857.
+- Citation present rate: 1.000.
+- OOD abstention success rate: 1.000.
+- Unexpected in-scope error count: 0.
+
+`Tool success rate` counts only `ok=true` tool responses, so correct OOD abstentions lower this aggregate rate because they are returned as structured `insufficient_evidence` errors. Use it together with `OOD abstention success rate` and `Unexpected in-scope error count`.
 
 ## Private Licensed Questions
 

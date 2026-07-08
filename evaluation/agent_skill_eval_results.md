@@ -2,11 +2,11 @@
 
 - Questions: 260
 - Retrieval backend: routed
-- Tool success rate: 0.965
-- Document Hit Rate@5: 0.845
-- Citation present rate: 0.996
-- OOD abstention success rate: 0.533
-- Unexpected errors: 1
+- Tool success rate: 0.942
+- Document Hit Rate@5: 0.857
+- Citation present rate: 1.000
+- OOD abstention success rate: 1.000
+- Unexpected errors: 0
 
 ## Failed In-Scope Document@5 Cases
 
@@ -28,12 +28,12 @@
 ### public_q0021
 - Expected doc_id: aapm_report_90_essential_medical_physics_ebrt
 - Error code: None
-- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_tecdoc_1040_radiotherapy_programme, iaea_hhs31_accuracy_requirements_dosimetry
+- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhs31_accuracy_requirements_dosimetry, iaea_tecdoc_1040_radiotherapy_programme, iaea_pub1196_radiation_oncology_physics_handbook
 
 ### public_q0022
 - Expected doc_id: aapm_report_90_essential_medical_physics_ebrt
 - Error code: None
-- Retrieved doc_ids: iaea_hhr16_igrt_qa, iaea_hhs31_accuracy_requirements_dosimetry, iaea_trs430_tps_commissioning_qa, iaea_pub1297_quatro_audit_tool, iaea_hhs31_accuracy_requirements_dosimetry
+- Retrieved doc_ids: iaea_hhr16_igrt_qa, iaea_trs430_tps_commissioning_qa, iaea_trs430_tps_commissioning_qa, iaea_pub1297_quatro_audit_tool, iaea_tecdoc1543_quatro
 
 ### public_q0023
 - Expected doc_id: aapm_report_90_essential_medical_physics_ebrt
@@ -43,7 +43,7 @@
 ### public_q0024
 - Expected doc_id: aapm_report_90_essential_medical_physics_ebrt
 - Error code: None
-- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc_1040_radiotherapy_programme, aapm_report_113_physics_clinical_trials, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1196_radiation_oncology_physics_handbook
+- Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc_1040_radiotherapy_programme, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1196_radiation_oncology_physics_handbook, iaea_hhs31_accuracy_requirements_dosimetry
 
 ### public_q0043
 - Expected doc_id: iaea_trs398_absorbed_dose_ebrt
@@ -65,20 +65,10 @@
 - Error code: None
 - Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc1583_tps_commissioning, iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1583_tps_commissioning, iaea_tecdoc1540_tps_acceptance
 
-### public_q0052
-- Expected doc_id: iaea_pub1196_radiation_oncology_physics_handbook
-- Error code: None
-- Retrieved doc_ids: iaea_pub1297_quatro_audit_tool, iaea_trs430_tps_commissioning_qa, iaea_pub1990_quatro_quality_improvement, iaea_hhr17_linear_accelerators, iaea_pub1297_quatro_audit_tool
-
 ### public_q0053
 - Expected doc_id: iaea_pub1196_radiation_oncology_physics_handbook
 - Error code: None
 - Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_trs430_tps_commissioning_qa, iaea_hhs31_accuracy_requirements_dosimetry, iaea_pub1638_radiotherapy_in_cancer_care
-
-### public_q0054
-- Expected doc_id: iaea_pub1196_radiation_oncology_physics_handbook
-- Error code: insufficient_evidence
-- Retrieved doc_ids: 
 
 ### public_q0069
 - Expected doc_id: iaea_hhr16_igrt_qa
@@ -124,11 +114,6 @@
 - Expected doc_id: iaea_hhr8_in_vivo_dosimetry
 - Error code: None
 - Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_hhs31_accuracy_requirements_dosimetry
-
-### public_q0121
-- Expected doc_id: iaea_pub1297_quatro_audit_tool
-- Error code: None
-- Retrieved doc_ids: iaea_hhs31_accuracy_requirements_dosimetry, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_pub1990_quatro_quality_improvement, iaea_pub1990_quatro_quality_improvement, iaea_hhs31_accuracy_requirements_dosimetry
 
 ### public_q0123
 - Expected doc_id: iaea_pub1297_quatro_audit_tool

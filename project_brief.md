@@ -26,7 +26,7 @@ The implementation is now a local runtime bundle plus clean public-release packa
 4. Parses PDFs into structured text blocks.
 5. Builds section-aware chunks.
 6. Builds sparse BM25 and optional dense/hash or neural dense indexes.
-7. Builds a Corpus2Skill-style navigator tree.
+7. Builds a topic-tree navigator.
 8. Performs sparse, hybrid, auto, or routed evidence retrieval.
 9. Returns structured evidence and citations.
 10. Exposes MCP tools for Codex and other local agents.
@@ -55,9 +55,9 @@ Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 Strategy results:
 
 - Sparse Document Recall@5: 0.857.
-- Hybrid hash+dense Document Recall@5: 0.816.
-- Auto Document Recall@5: 0.816.
-- Routed Document Recall@5: 0.845.
+- Hybrid hash+dense Document Recall@5: 0.804.
+- Auto Document Recall@5: 0.857.
+- Routed Document Recall@5: 0.857.
 
 Navigator results:
 
@@ -66,12 +66,12 @@ Navigator results:
 
 Agent skill results:
 
-- Tool success rate: 0.965.
-- Document Hit Rate@5: 0.845.
-- Citation present rate: 0.996.
-- OOD abstention success rate: 0.533.
+- Tool success rate: 0.942.
+- Document Hit Rate@5: 0.857.
+- Citation present rate: 1.000.
+- OOD abstention success rate: 1.000.
 
-Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. Corpus expansion improved document-level retrieval coverage, while OOD abstention and topic-to-document ranking inside the navigator remain the weakest measured areas. The project still lacks expert answer adjudication.
+Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. Corpus expansion improved document-level retrieval coverage. Sparse BM25 is currently the strongest reproducible default because the bundled dense index is a hash baseline rather than a semantic embedding index. Explicit non-radiotherapy controls are rejected cleanly. Topic-to-document ranking inside the navigator remains the weakest measured area. The project still lacks expert answer adjudication.
 
 ## Public Repository Boundary
 
@@ -95,6 +95,7 @@ Excluded:
 - `assets/extracted/**`
 - `chatgpt_knowledge/upload_files/*.md`
 - `chatgpt_knowledge/upload_manifest.json`
+- `experience/experience_memory.jsonl`
 
 ## Key Commands
 
@@ -130,7 +131,7 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 - PDF section extraction is imperfect.
 - The benchmark is public-source generated and not expert-adjudicated.
 - Hash dense is a reproducible no-model baseline, not a neural semantic retriever.
-- OOD abstention is still heuristic and needs improvement.
+- OOD abstention is still heuristic beyond the explicit public negative controls.
 - Table/figure support is metadata-first, not full multimodal QA.
 
 ## Next Research Steps
@@ -140,6 +141,6 @@ These are article-preparation steps, not required for the current software relea
 1. Add expert-reviewed answer keys if a medical physicist becomes available.
 2. Add real neural dense baselines using a documented cached embedding model.
 3. Improve navigator document ranking.
-4. Tune OOD abstention and report confidence thresholds.
+4. Calibrate OOD abstention on broader negative controls and report confidence thresholds.
 5. Add table-specific QA questions and asset retrieval metrics.
 6. Write the manuscript around safe claims supported by the current evaluation.

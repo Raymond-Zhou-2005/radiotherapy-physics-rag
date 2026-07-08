@@ -74,6 +74,7 @@ EXCLUDE_PREFIXES = (
 EXCLUDE_EXACT = {
     "reports/manifest.jsonl",
     "chatgpt_knowledge/upload_manifest.json",
+    "experience/experience_memory.jsonl",
 }
 
 EXCLUDE_SUFFIXES = {".pdf", ".pkl", ".npy", ".index", ".pyc", ".pyo", ".pptx", ".zip"}

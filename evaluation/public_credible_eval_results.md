@@ -5,7 +5,7 @@
 - Document Recall@3: 0.755
 - Document Recall@5: 0.857
 - MRR: 0.000
-- Abstention confusion counts: TP=8, FP=0, TN=245, FN=7
+- Abstention confusion counts: TP=15, FP=0, TN=245, FN=0
 - Requested retrieval backend: sparse
 - Report scope ignored during retrieval: True
 
@@ -2959,7 +2959,7 @@
 - Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, aapm_tg142_medical_accelerator_qa, iaea_ssg46_medical_uses_radiation_safety, aapm_report_46_tg40_radiation_oncology_qa
 - Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0470, iaea_ssg46_medical_uses_radiation_safety_c0162, iaea_ssg46_medical_uses_radiation_safety_c0469, aapm_tg142_medical_accelerator_qa_c0030, iaea_ssg46_medical_uses_radiation_safety_c0362, aapm_report_46_tg40_radiation_oncology_qa_c0121
 - Retrieved sections: 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR | 5. SPECIFIC RECOMMENDATIONS FOR RADIATION | UNKNOWN | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 2. Responsibilities of the Radiation Oncology
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0247: Which Python web framework should I choose for a personal finance dashboard?
@@ -2970,7 +2970,7 @@
 - Retrieved doc_ids: iaea_pub1196_radiation_oncology_physics_handbook, iaea_ssg46_medical_uses_radiation_safety, iaea_hhr10_radiotherapy_facilities, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_pub1196_radiation_oncology_physics_handbook, iaea_hhr18_radiotherapy_dosimetry_audits
 - Retrieved chunks: iaea_pub1196_radiation_oncology_physics_handbook_c0819, iaea_ssg46_medical_uses_radiation_safety_c0183, iaea_hhr10_radiotherapy_facilities_c0011, iaea_trs398_rev1_absorbed_dose_ebrt_c0008, iaea_pub1196_radiation_oncology_physics_handbook_c0184, iaea_hhr18_radiotherapy_dosimetry_audits_c0062
 - Retrieved sections: UNKNOWN | 3. SPECIFIC RECOMMENDATIONS FOR | 2. INITIAL CONSIDERATIONS | UNKNOWN | UNKNOWN | 4. AUDIT STEPS - METHODOLOGY AND TESTING
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0248: What are the tax filing deadlines for a sole proprietorship in California?
@@ -2992,7 +2992,7 @@
 - Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_trs398_rev1_absorbed_dose_ebrt, iaea_tecdoc1274_brachytherapy_source_calibration, aapm_tg142_medical_accelerator_qa, aapm_tg132_image_registration_fusion, iaea_trs398_rev1_absorbed_dose_ebrt
 - Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0288, iaea_trs398_rev1_absorbed_dose_ebrt_c0180, iaea_tecdoc1274_brachytherapy_source_calibration_c0103, aapm_tg142_medical_accelerator_qa_c0039, aapm_tg132_image_registration_fusion_c0026, iaea_trs398_rev1_absorbed_dose_ebrt_c0214
 - Retrieved sections: 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 6. CODE OF PRACTICE FOR | 9. QUALITY CONTROL | UNKNOWN | UNKNOWN | 7. CODE OF PRACTICE FOR HIGH
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0250: What soil pH is best for growing blueberries in a home garden?
@@ -3014,7 +3014,7 @@
 - Retrieved doc_ids: iaea_trs469_reference_dosimeters, iaea_hhr8_in_vivo_dosimetry, iaea_trs492_brachytherapy_dosimetry, iaea_hhr18_radiotherapy_dosimetry_audits, iaea_trs483_small_static_fields, iaea_trs483_small_static_fields
 - Retrieved chunks: iaea_trs469_reference_dosimeters_c0111, iaea_hhr8_in_vivo_dosimetry_c0075, iaea_trs492_brachytherapy_dosimetry_c0205, iaea_hhr18_radiotherapy_dosimetry_audits_c0222, iaea_trs483_small_static_fields_c0168, iaea_trs483_small_static_fields_c0134
 - Retrieved sections: 7. FUNDAMENTALS OF CALIBRATION | 3. DOSIMETRY SYSTEMS EVALUATED IN THE CRP | 10. APPLICATION OF REFERENCE | 5. CONCLUSION | 5. CODE OF PRACTICE FOR REFERENCE DOSIMETRY | 4. DETECTORS AND EQUIPMENT
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0252: How do I troubleshoot a leaking kitchen faucet cartridge?
@@ -3036,7 +3036,7 @@
 - Retrieved doc_ids: iaea_tecdoc1540_tps_acceptance, iaea_tecdoc1543_quatro, iaea_hhs14_planning_national_radiotherapy_services, iaea_hhr17_linear_accelerators
 - Retrieved chunks: iaea_tecdoc1540_tps_acceptance_c0014, iaea_tecdoc1543_quatro_c0185, iaea_hhs14_planning_national_radiotherapy_services_c0079, iaea_hhr17_linear_accelerators_c0079
 - Retrieved sections: UNKNOWN | 2. INTERVIEW WITH RADIATION ONCOLOGIST Demographics Name: __________________________________________ | 4. TOOLS TO ASSIST WITH STRATEGIC DEVELOPMENT | 9. SUMMARY OF THE COMPARISON BETWEEN
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0254: How should I train for a half marathon after a knee injury?
@@ -3047,7 +3047,7 @@
 - Retrieved doc_ids: iaea_ssg46_medical_uses_radiation_safety, iaea_ssg46_medical_uses_radiation_safety, iaea_tecdoc_1040_radiotherapy_programme, iaea_trs430_tps_commissioning_qa, iaea_ssg46_medical_uses_radiation_safety, aapm_report_46_tg40_radiation_oncology_qa
 - Retrieved chunks: iaea_ssg46_medical_uses_radiation_safety_c0415, iaea_ssg46_medical_uses_radiation_safety_c0265, iaea_tecdoc_1040_radiotherapy_programme_c0065, iaea_trs430_tps_commissioning_qa_c0300, iaea_ssg46_medical_uses_radiation_safety_c0414, aapm_report_46_tg40_radiation_oncology_qa_c0083
 - Retrieved sections: 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 3. SPECIFIC RECOMMENDATIONS FOR | 5. EQUIPMENT | 45. ELECTRON REQUIRING VERIFICATION CHECKS | 4. SPECIFIC RECOMMENDATIONS FOR RADIATION | 5. Source Inventories
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0255: What camera lens is best for street photography at night?
@@ -3102,7 +3102,7 @@
 - Retrieved doc_ids: aapm_tg100_radiotherapy_quality_management, iaea_trs430_tps_commissioning_qa, iaea_pub1196_radiation_oncology_physics_handbook, iaea_hhs19_ct_sim_radiotherapy, iaea_pub1990_quatro_quality_improvement, aapm_tg100_radiotherapy_quality_management
 - Retrieved chunks: aapm_tg100_radiotherapy_quality_management_c0125, iaea_trs430_tps_commissioning_qa_c0126, iaea_pub1196_radiation_oncology_physics_handbook_c0664, iaea_hhs19_ct_sim_radiotherapy_c0037, iaea_pub1990_quatro_quality_improvement_c0096, aapm_tg100_radiotherapy_quality_management_c0126
 - Retrieved sections: 9. EXAMPLE APPLICATION OF TG-100 METHODOLOGY TO IMRT | 6. QUALITY ASSURANCE MANAGEMENT | UNKNOWN | 3. PERFORMANCE REQUIREMENTS IN CT | 5. EQUIPMENT RELATED PROCEDURES | 9. EXAMPLE APPLICATION OF TG-100 METHODOLOGY TO IMRT
-- Predicted abstain proxy: False
+- Predicted abstain proxy: True
 - Expected abstain: True
 
 ### public_q0260: Which bread flour protein percentage is best for Neapolitan pizza dough?
