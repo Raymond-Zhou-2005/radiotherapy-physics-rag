@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.1 - 2026-07-10
+
+- Expanded the public answer-target benchmark from 12 to 61 items by combining paraphrased public answer-key seeds with open-report answer targets generated from public AAPM/IAEA report evidence.
+- Expanded realistic agent-task evaluation from 12 to 40 tasks, including 30 in-scope agent-use tasks and 10 hard medical-boundary OOD refusal tasks.
+- Added `evaluate_answer_generation.py` to separate extractive answer value hits from evidence-only and bundle-prompt target availability without hosted LLM calls.
+- Added `analyze_failure_taxonomy.py` to classify benchmark failures and gaps into paper-facing categories such as answer synthesis gap, retrieval gap, page miss, and skill error.
+- Added a hard OOD boundary for SUV cutoff / malignant recurrence PET-CT interpretation questions outside the radiotherapy physics evidence scope.
+- Updated the paper experiment matrix to 19 rows, now including answer-generation mode comparison and failure taxonomy.
+- Current new evaluation results: public answer-target gold-answer success 0.787, evidence-only/bundle target hit 0.852, extractive answer target hit 0.344, agent-task success 1.000 across 40 tasks, and 58 automatically classified failure/gap cases.
+
 ## 2.1.0 - 2026-07-09
 
 - Added real cross-encoder reranking with `BAAI/bge-reranker-base`, backend caching, explicit backend metadata in evidence scores, and lexical fallback for offline use.

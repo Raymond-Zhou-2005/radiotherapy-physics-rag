@@ -1,5 +1,5 @@
 {
-  "tasks": 12,
+  "tasks": 40,
   "retrieval_backend": "auto",
   "evidence_top_k": 8,
   "task_success_rate": 1.0,
@@ -12,17 +12,17 @@
   "ood_abstention_success_rate": 1.0,
   "unexpected_error_count": 0,
   "counts": {
-    "tasks": 12,
-    "in_scope": 9,
-    "ood": 3,
-    "structured_success": 9,
-    "doc_hit_at_5": 9,
-    "citation_success": 9,
-    "bundle_prompt_success": 9,
-    "asset_trace_success": 9,
-    "answer_value_success": 9,
-    "abstention_success": 3,
-    "task_success": 12,
+    "tasks": 40,
+    "in_scope": 30,
+    "ood": 10,
+    "structured_success": 30,
+    "doc_hit_at_5": 30,
+    "citation_success": 30,
+    "bundle_prompt_success": 30,
+    "asset_trace_success": 30,
+    "answer_value_success": 30,
+    "abstention_success": 10,
+    "task_success": 40,
     "unexpected_errors": 0
   },
   "details": [
@@ -262,6 +262,552 @@
     },
     {
       "qid": "agent_task_q0010",
+      "task": "Collect evidence for small-field dosimetry.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0011",
+      "task": "Collect evidence for image-registration QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg132_image_registration_fusion",
+        "aapm_tg132_image_registration_fusion",
+        "aapm_tg132_image_registration_fusion",
+        "aapm_tg132_image_registration_fusion",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0012",
+      "task": "Collect evidence for nonradiographic localization QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg147_nonradiographic_localization_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0013",
+      "task": "Collect evidence for SBRT workflow safety.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0014",
+      "task": "Collect evidence for IGRT imaging-dose management.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg180_image_guidance_dose_management",
+        "aapm_tg180_image_guidance_dose_management",
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg75_igrt_imaging_dose"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0015",
+      "task": "Collect evidence for helical tomotherapy QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg148_helical_tomotherapy_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0016",
+      "task": "Collect evidence for IMRT patient-specific QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg218_imrt_measurement_based_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0017",
+      "task": "Build a bundle for accelerator beam-data commissioning.",
+      "mode": "bundle",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg106_beam_data_commissioning",
+        "aapm_tg106_beam_data_commissioning",
+        "aapm_tg106_beam_data_commissioning",
+        "aapm_tg106_beam_data_commissioning",
+        "aapm_tg106_beam_data_commissioning"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0018",
+      "task": "Collect evidence for IMRT commissioning benchmark tests.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg119_imrt_commissioning",
+        "aapm_tg119_imrt_commissioning",
+        "aapm_tg119_imrt_commissioning",
+        "aapm_tg119_imrt_commissioning",
+        "aapm_tg119_imrt_commissioning"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0019",
+      "task": "Collect evidence for biologically based treatment planning QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_report_166_biological_models_treatment_planning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0020",
+      "task": "Collect evidence for nontarget and out-of-field dose.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "tg158",
+        "tg158",
+        "tg158",
+        "tg158",
+        "tg158"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0021",
+      "task": "Collect evidence for CT simulation QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0022",
+      "task": "Collect evidence for independent dosimetry audits.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhr18_radiotherapy_dosimetry_audits"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0023",
+      "task": "Collect evidence for in vivo dosimetry workflow.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0024",
+      "task": "Collect evidence for record-and-verify systems.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0025",
+      "task": "Collect evidence for radiotherapy facility design.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhr10_radiotherapy_facilities",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0026",
+      "task": "Collect evidence for equipment selection and acceptance testing.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0027",
+      "task": "Build a bundle for national radiotherapy service planning.",
+      "mode": "bundle",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0028",
+      "task": "Collect evidence for radiation protection in medical radiation use.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0029",
+      "task": "Collect evidence for dose accuracy and uncertainty requirements.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0030",
+      "task": "Collect evidence for prescription-to-delivery dose transfer.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0031",
       "task": "Reject a medically related but non-radiotherapy-physics query.",
       "mode": "evidence",
       "expected_abstain": true,
@@ -279,7 +825,7 @@
       "reranker_backends": []
     },
     {
-      "qid": "agent_task_q0011",
+      "qid": "agent_task_q0032",
       "task": "Reject a clinical medication-management query outside the corpus.",
       "mode": "answer",
       "expected_abstain": true,
@@ -297,9 +843,135 @@
       "reranker_backends": []
     },
     {
-      "qid": "agent_task_q0012",
+      "qid": "agent_task_q0033",
       "task": "Reject a medical-imaging question that is not radiotherapy physics guidance.",
       "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0034",
+      "task": "Reject a billing and insurance question.",
+      "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0035",
+      "task": "Reject a nutrition-support question.",
+      "mode": "answer",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0036",
+      "task": "Reject a dental management question.",
+      "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0037",
+      "task": "Reject a PET/CT interpretation question outside the physics corpus.",
+      "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0038",
+      "task": "Reject a legal risk-management question.",
+      "mode": "answer",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0039",
+      "task": "Reject a general surgery decision question.",
+      "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0040",
+      "task": "Reject a symptom-management question.",
+      "mode": "answer",
       "expected_abstain": true,
       "ok": false,
       "error_code": "insufficient_evidence",

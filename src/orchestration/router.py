@@ -64,6 +64,7 @@ CLINICAL_BOUNDARY_PATTERNS = [
     re.compile(r"\b(surgery|surgical|survival benefit|cure rate|prognosis)\b", re.I),
     re.compile(r"\b(icd-?10|billing|insurance|authorization|malpractice|legal requirement)\b", re.I),
     re.compile(r"\b(mri protocol|pet/ct suv|contrast dose|renal insufficiency)\b", re.I),
+    re.compile(r"\b(suv cutoff|standardized uptake value|malignant recurrence|diagnose recurrence)\b", re.I),
     re.compile(r"\b(diet|nutrition|skin burns?|osteoradionecrosis|dental management)\b", re.I),
     re.compile(r"\b(nausea|vomiting|pain control|symptom management|side effect management)\b", re.I),
     re.compile(r"\b(insulin|hypoglycemia|hypoglycaemia|medication management|drug regimen|dose adjustment)\b", re.I),

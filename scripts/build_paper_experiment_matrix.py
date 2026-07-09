@@ -168,6 +168,25 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
             note="Public short-answer seed; not expert clinical grading.",
         )
 
+    answer_generation = read_json(eval_dir / "answer_generation_eval_results.json")
+    if answer_generation:
+        add_metric_row(
+            rows,
+            experiment="Answer generation mode comparison",
+            artifact="evaluation/answer_generation_eval_results.json",
+            sample_count=answer_generation.get("questions"),
+            primary_metric="Extractive answer value hit rate",
+            primary_value=answer_generation.get("extractive_answer_value_hit_rate"),
+            secondary_metrics={
+                "Evidence-only value hit": answer_generation.get("evidence_only_value_hit_rate"),
+                "Bundle prompt value hit": answer_generation.get("bundle_prompt_value_hit_rate"),
+                "Answer synthesis gap": answer_generation.get("answer_synthesis_gap_rate"),
+                "Retrieval gap": answer_generation.get("retrieval_gap_rate"),
+                "Citation present": answer_generation.get("citation_present_rate"),
+            },
+            note="Local no-hosted-LLM comparison separating evidence availability from extractive answer synthesis.",
+        )
+
     answer_quality = read_json(eval_dir / "answer_quality_eval_results.json")
     if answer_quality:
         add_metric_row(
@@ -200,6 +219,19 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
                 "Candidate Document Recall@5": navigator.get("candidate_doc_recall@5"),
             },
             note="Checks navigable topic index support.",
+        )
+
+    failure_taxonomy = read_json(eval_dir / "failure_taxonomy.json")
+    if failure_taxonomy:
+        add_metric_row(
+            rows,
+            experiment="Failure taxonomy",
+            artifact="evaluation/failure_taxonomy.json",
+            sample_count=failure_taxonomy.get("case_count"),
+            primary_metric="Automatically classified failure/gap cases",
+            primary_value=float(failure_taxonomy.get("case_count", 0)),
+            secondary_metrics=failure_taxonomy.get("by_category", {}),
+            note="Engineering failure taxonomy for paper discussion; not expert clinical adjudication.",
         )
 
     return {

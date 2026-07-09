@@ -15,7 +15,7 @@
     "source_urls": [
       "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -33,7 +33,7 @@
     "source_urls": [
       "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -52,7 +52,7 @@
     "source_urls": [
       "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -72,7 +72,7 @@
     "source_urls": [
       "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -94,7 +94,7 @@
     "source_urls": [
       "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -112,7 +112,7 @@
     "source_urls": [
       "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -131,7 +131,7 @@
     "source_urls": [
       "https://afomp.org/2023/08/31/mcq-in-medical-physics-2/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -151,7 +151,7 @@
     "source_urls": [
       "https://afomp.org/2023/08/31/mcq-in-medical-physics-2/"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -177,7 +177,7 @@
     "source_urls": [
       "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -200,7 +200,7 @@
     "source_urls": [
       "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -228,7 +228,7 @@
     "source_urls": [
       "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
     "expected_abstain": false
   },
@@ -257,8 +257,1362 @@
     "source_urls": [
       "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
     ],
-    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. Review source terms before expanding redistribution.",
+    "source_note": "Paraphrased public answer-key seed. The benchmark stores short factual answer targets, not copied proprietary exam banks. It is not expert-adjudicated.",
     "benchmark_profile": "external_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0001",
+    "question": "How does TG-104 define in-room kV imaging in the treatment room?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "radiographic imaging"
+      ],
+      [
+        "kV x-ray",
+        "kilovoltage"
+      ],
+      [
+        "treatment room"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_104_kv_imaging_guidance"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0002",
+    "question": "What broad categories of in-room kV imaging systems are described by TG-104?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "rail-track",
+        "rail track"
+      ],
+      [
+        "ceiling",
+        "floor"
+      ],
+      [
+        "gantry-mounted",
+        "gantry mounted"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_104_kv_imaging_guidance"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0003",
+    "question": "What system properties does TG-104 say should be checked for kV imaging acceptance, commissioning, and QA?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "image quality"
+      ],
+      [
+        "localization accuracy"
+      ],
+      [
+        "imaging dose"
+      ],
+      [
+        "system operation"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_104_kv_imaging_guidance"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0004",
+    "question": "What data and naming issues are emphasized for radiation oncology clinical trial physics support?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "DICOM"
+      ],
+      [
+        "DICOM RT"
+      ],
+      [
+        "AAPM TG-263",
+        "TG-263",
+        "structure names"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_113_physics_clinical_trials"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0005",
+    "question": "What type of preparation can QA centers use for trials that need benchmark planning studies?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "benchmark"
+      ],
+      [
+        "phantom"
+      ],
+      [
+        "QA center",
+        "QA centers"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_113_physics_clinical_trials"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_113.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0006",
+    "question": "What biological treatment planning indices are discussed in AAPM Report 166?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "TCP"
+      ],
+      [
+        "NTCP"
+      ],
+      [
+        "gEUD",
+        "EUD"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_166_biological_models_treatment_planning_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0007",
+    "question": "Why does AAPM Report 166 treat biologically based planning systems cautiously?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "limitations"
+      ],
+      [
+        "model",
+        "models"
+      ],
+      [
+        "clinical data",
+        "parameter"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_166_biological_models_treatment_planning_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_166.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0008",
+    "question": "What broad program area is covered by AAPM TG-40?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "quality assurance",
+        "QA"
+      ],
+      [
+        "radiation oncology"
+      ],
+      [
+        "comprehensive"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_report_46_tg40_radiation_oncology_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/rpt_46.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0009",
+    "question": "Which FMEA scoring dimensions are used in TG-100 radiotherapy quality management?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "occurrence"
+      ],
+      [
+        "severity"
+      ],
+      [
+        "detectability"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg100_radiotherapy_quality_management"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0010",
+    "question": "What process-analysis tools does TG-100 connect with radiotherapy quality management?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "process map",
+        "process mapping"
+      ],
+      [
+        "fault tree"
+      ],
+      [
+        "FMEA"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg100_radiotherapy_quality_management"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985013/"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0011",
+    "question": "What does TG-263 standardize for radiation oncology?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "nomenclature"
+      ],
+      [
+        "structure",
+        "structures"
+      ],
+      [
+        "target",
+        "organ"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg263_nomenclature"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/RPT_263.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0012",
+    "question": "What equipment class is the subject of TG-142 QA guidance?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "medical accelerator",
+        "accelerators"
+      ],
+      [
+        "quality assurance",
+        "QA"
+      ],
+      [
+        "tolerance",
+        "tolerances"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg142_medical_accelerator_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3190392"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0013",
+    "question": "What kind of IMRT commissioning evidence is associated with TG-119?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "IMRT"
+      ],
+      [
+        "commissioning"
+      ],
+      [
+        "benchmark",
+        "confidence"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg119_imrt_commissioning"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3238104"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0014",
+    "question": "What measurements and equipment does TG-106 associate with accelerator beam data commissioning?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "beam data"
+      ],
+      [
+        "commissioning"
+      ],
+      [
+        "detector",
+        "phantom"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg106_beam_data_commissioning"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2969070"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0015",
+    "question": "What measurement tools are discussed in TG-120 for IMRT dosimetry?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "film"
+      ],
+      [
+        "ion chamber",
+        "chambers"
+      ],
+      [
+        "array",
+        "arrays"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg120_imrt_dosimetry_tools"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3514120"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0016",
+    "question": "What QA methodology and limits are central to TG-218?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "IMRT",
+        "VMAT"
+      ],
+      [
+        "gamma"
+      ],
+      [
+        "tolerance",
+        "action"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg218_imrt_measurement_based_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12810"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0017",
+    "question": "What CT-based image guidance technologies are within TG-179's QA scope?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "CBCT",
+        "cone-beam"
+      ],
+      [
+        "MVCT",
+        "CT-on-rails",
+        "CT on rails"
+      ],
+      [
+        "quality assurance",
+        "QA"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg179_ct_based_igrt_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3690466"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0018",
+    "question": "What nonradiographic localization systems are discussed in TG-147?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "optical",
+        "surface"
+      ],
+      [
+        "infrared",
+        "radiofrequency",
+        "electromagnetic"
+      ],
+      [
+        "localization",
+        "positioning"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg147_nonradiographic_localization_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3681967"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0019",
+    "question": "What technical areas are emphasized by TG-101 for SBRT practice?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "SBRT",
+        "stereotactic body"
+      ],
+      [
+        "image guidance"
+      ],
+      [
+        "small field",
+        "small fields"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg101_sbrt"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3438081"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0020",
+    "question": "What patient-dose issue is the focus of TG-75 for image-guided radiotherapy?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "imaging dose"
+      ],
+      [
+        "image-guided",
+        "IGRT"
+      ],
+      [
+        "management"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg75_igrt_imaging_dose"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.2775667"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0021",
+    "question": "What three dose-management actions are described in TG-180's title and scope?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "quantification"
+      ],
+      [
+        "management"
+      ],
+      [
+        "reduction"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg180_image_guidance_dose_management"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12824"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0022",
+    "question": "What modality-specific QA topic is covered by TG-148?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "helical tomotherapy"
+      ],
+      [
+        "quality assurance",
+        "QA"
+      ],
+      [
+        "delivery",
+        "imaging",
+        "treatment planning"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg148_helical_tomotherapy_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3462971"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0023",
+    "question": "What image-registration topics are central to TG-132?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "rigid",
+        "deformable"
+      ],
+      [
+        "registration"
+      ],
+      [
+        "commissioning",
+        "validation",
+        "quality assurance"
+      ]
+    ],
+    "expected_doc_ids": [
+      "aapm_tg132_image_registration_fusion"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12256"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0024",
+    "question": "What dose region is the focus of TG-158?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "outside the treated volume",
+        "nontarget",
+        "out-of-field"
+      ],
+      [
+        "external-beam",
+        "external beam"
+      ],
+      [
+        "measurement",
+        "calculation"
+      ]
+    ],
+    "expected_doc_ids": [
+      "tg158"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www.aapm.org/pubs/reports/detail.asp?docid=165"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0025",
+    "question": "What physical quantity and medium are central to IAEA TRS-398 reference dosimetry?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "absorbed dose"
+      ],
+      [
+        "water"
+      ],
+      [
+        "external beam"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs398_absorbed_dose_ebrt"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/mtcd/publications/pdf/trs398_scr.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0026",
+    "question": "What does TRS-398 Rev. 1 update for external beam radiotherapy?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "absorbed dose"
+      ],
+      [
+        "external beam"
+      ],
+      [
+        "code of practice"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs398_rev1_absorbed_dose_ebrt"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0027",
+    "question": "What calibration topic is covered by IAEA TRS-469?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "calibration"
+      ],
+      [
+        "reference dosimeter",
+        "reference dosimeters"
+      ],
+      [
+        "external beam"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs469_reference_dosimeters"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/trs469_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0028",
+    "question": "What field type is covered by IAEA TRS-483 dosimetry guidance?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "small static field",
+        "small static fields"
+      ],
+      [
+        "dosimetry"
+      ],
+      [
+        "external beam"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs483_small_static_fields"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/D483_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0029",
+    "question": "What treatment modality does IAEA TRS-492 address?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "brachytherapy"
+      ],
+      [
+        "dosimetry"
+      ],
+      [
+        "source",
+        "calibration"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs492_brachytherapy_dosimetry"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/DOC-010-492_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0030",
+    "question": "According to TRS-430, what are the main purposes of TPS commissioning tests?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "education"
+      ],
+      [
+        "verification"
+      ],
+      [
+        "documentation"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs430_tps_commissioning_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0031",
+    "question": "What user understanding is emphasized as a major component of TPS commissioning?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "capabilities"
+      ],
+      [
+        "limitations"
+      ],
+      [
+        "TPS",
+        "treatment planning system"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_trs430_tps_commissioning_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS430_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0032",
+    "question": "What procurement-stage TPS activities are covered by IAEA TECDOC-1540?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "specification"
+      ],
+      [
+        "acceptance testing"
+      ],
+      [
+        "treatment planning system",
+        "TPS"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_tecdoc1540_tps_acceptance"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0033",
+    "question": "What implementation activity is covered by IAEA TECDOC-1583 for radiotherapy TPSs?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "commissioning"
+      ],
+      [
+        "treatment planning system",
+        "TPS"
+      ],
+      [
+        "quality assurance",
+        "QA",
+        "testing"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_tecdoc1583_tps_commissioning"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1583_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0034",
+    "question": "What radiotherapy imaging equipment is the focus of IAEA HHS-19 QA guidance?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "computed tomography",
+        "CT"
+      ],
+      [
+        "radiotherapy"
+      ],
+      [
+        "quality assurance",
+        "QA"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhs19_ct_sim_radiotherapy"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1557_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0035",
+    "question": "What programme type is covered by IAEA Human Health Reports No. 16?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "image guided",
+        "IGRT"
+      ],
+      [
+        "quality assurance",
+        "QA"
+      ],
+      [
+        "programme",
+        "program"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhr16_igrt_qa"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1827_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0036",
+    "question": "What independent quality process is the focus of IAEA HHR-18?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "audit",
+        "audits"
+      ],
+      [
+        "dosimetry"
+      ],
+      [
+        "radiotherapy"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhr18_radiotherapy_dosimetry_audits"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1964_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0037",
+    "question": "What clinical dosimetry procedure is covered by IAEA Human Health Reports No. 8?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "in vivo"
+      ],
+      [
+        "dosimetry"
+      ],
+      [
+        "radiotherapy"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhr8_in_vivo_dosimetry"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1606_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0038",
+    "question": "What workflow safety system is covered by IAEA HHR-7?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "record and verify"
+      ],
+      [
+        "radiation treatment"
+      ],
+      [
+        "quality control",
+        "commissioning",
+        "safety"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhr7_record_verify_systems"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1607_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0039",
+    "question": "What facility-planning topics are covered by IAEA HHR-10?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "radiotherapy facilities",
+        "facility"
+      ],
+      [
+        "shielding",
+        "room"
+      ],
+      [
+        "workflow",
+        "safety"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhr10_radiotherapy_facilities"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1645web-46536742.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0040",
+    "question": "Which equipment lifecycle activities are covered by IAEA HHR-17?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "selection"
+      ],
+      [
+        "acceptance testing"
+      ],
+      [
+        "commissioning"
+      ],
+      [
+        "quality control"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhr17_linear_accelerators"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB1948_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0041",
+    "question": "What design concern is central to IAEA SRS-47?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "radiation protection"
+      ],
+      [
+        "design"
+      ],
+      [
+        "radiotherapy facilities",
+        "shielding"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_srs47_radiotherapy_facility_radiation_protection"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1223_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0042",
+    "question": "What safety domain is addressed by IAEA SSG-46?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "radiation protection"
+      ],
+      [
+        "safety"
+      ],
+      [
+        "medical uses"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_ssg46_medical_uses_radiation_safety"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/publications/PDF/PUB1775_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0043",
+    "question": "What source-calibration setting is covered by IAEA TECDOC-1274?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "brachytherapy"
+      ],
+      [
+        "source calibration",
+        "calibration"
+      ],
+      [
+        "SSDL",
+        "hospital"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_tecdoc1274_brachytherapy_source_calibration"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1274_prn.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0044",
+    "question": "What dose-chain stages are linked in IAEA TECDOC-989?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "prescription"
+      ],
+      [
+        "delivery"
+      ],
+      [
+        "quality assurance",
+        "QA"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_tecdoc989_radiation_dose_prescription_delivery"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/te_989_prn.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0045",
+    "question": "What technology transition is covered by IAEA TECDOC-1588?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "2-D",
+        "2D"
+      ],
+      [
+        "3-D conformal",
+        "3D conformal"
+      ],
+      [
+        "IMRT"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_tecdoc1588_3dcrt_imrt_transition"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/TE_1588_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0046",
+    "question": "What health-system planning topic is covered by IAEA HHS-14?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "national radiotherapy services"
+      ],
+      [
+        "planning"
+      ],
+      [
+        "resource",
+        "capacity"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhs14_planning_national_radiotherapy_services"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1462_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0047",
+    "question": "What global cancer-care issue is discussed in IAEA Radiotherapy in Cancer Care?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "global"
+      ],
+      [
+        "radiotherapy"
+      ],
+      [
+        "access",
+        "infrastructure",
+        "workforce"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_pub1638_radiotherapy_in_cancer_care"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1638_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0048",
+    "question": "What type of audit methodology is associated with the IAEA QUATRO tool?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "comprehensive"
+      ],
+      [
+        "audit",
+        "audits"
+      ],
+      [
+        "radiotherapy practices"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_pub1297_quatro_audit_tool"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1297_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
+    "expected_abstain": false
+  },
+  {
+    "qid": "gold_report_q0049",
+    "question": "What two measurement concepts are central to IAEA HHS-31?",
+    "answer_type": "open_report_answer_target",
+    "expected_answer_groups": [
+      [
+        "accuracy"
+      ],
+      [
+        "uncertainty",
+        "uncertainties"
+      ],
+      [
+        "radiotherapy"
+      ]
+    ],
+    "expected_doc_ids": [
+      "iaea_hhs31_accuracy_requirements_dosimetry"
+    ],
+    "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+    "source_urls": [
+      "https://www-pub.iaea.org/MTCD/Publications/PDF/P1679_HH31_web.pdf"
+    ],
+    "source_note": "Open-report answer target generated from public AAPM/IAEA source metadata and locally parsed report evidence. This is a reproducible benchmark target, not expert grading.",
+    "benchmark_profile": "open_report_gold_answer",
     "expected_abstain": false
   }
 ]

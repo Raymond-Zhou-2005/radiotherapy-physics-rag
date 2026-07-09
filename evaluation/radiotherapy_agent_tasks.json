@@ -18,12 +18,13 @@
     "question": "Prepare an evidence bundle about commissioning computerized treatment planning systems for radiation therapy.",
     "expected_doc_ids": [
       "iaea_trs430_tps_commissioning_qa",
-      "iaea_tecdoc1540_tps_acceptance"
+      "iaea_tecdoc1540_tps_acceptance",
+      "iaea_tecdoc1583_tps_commissioning"
     ],
     "expected_citations": true,
-    "expected_bundle_prompt": true,
     "expected_abstain": false,
-    "benchmark_profile": "agent_task"
+    "benchmark_profile": "agent_task",
+    "expected_bundle_prompt": true
   },
   {
     "qid": "agent_task_q0003",
@@ -45,6 +46,9 @@
     "expected_doc_ids": [
       "aapm_tg101_sbrt"
     ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task",
     "expected_asset_id": "aapm_tg101_sbrt_p002_table_01",
     "expected_answer_groups": [
       [
@@ -54,10 +58,7 @@
       [
         "Gy"
       ]
-    ],
-    "expected_citations": true,
-    "expected_abstain": false,
-    "benchmark_profile": "agent_task"
+    ]
   },
   {
     "qid": "agent_task_q0005",
@@ -66,7 +67,8 @@
     "question": "Find radiotherapy physics evidence on CT based image-guided radiotherapy QA and localization checks.",
     "expected_doc_ids": [
       "aapm_tg179_ct_based_igrt_qa",
-      "aapm_tg75_igrt_imaging_dose"
+      "aapm_tg75_igrt_imaging_dose",
+      "iaea_hhr16_igrt_qa"
     ],
     "expected_citations": true,
     "expected_abstain": false,
@@ -119,12 +121,270 @@
       "iaea_tecdoc1274_brachytherapy_source_calibration"
     ],
     "expected_citations": true,
-    "expected_bundle_prompt": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task",
+    "expected_bundle_prompt": true
+  },
+  {
+    "qid": "agent_task_q0010",
+    "task": "Collect evidence for small-field dosimetry.",
+    "mode": "evidence",
+    "question": "Find evidence about dosimetry of small static fields in external beam radiotherapy.",
+    "expected_doc_ids": [
+      "iaea_trs483_small_static_fields"
+    ],
+    "expected_citations": true,
     "expected_abstain": false,
     "benchmark_profile": "agent_task"
   },
   {
-    "qid": "agent_task_q0010",
+    "qid": "agent_task_q0011",
+    "task": "Collect evidence for image-registration QA.",
+    "mode": "evidence",
+    "question": "Find evidence about rigid and deformable image registration commissioning and validation in radiotherapy.",
+    "expected_doc_ids": [
+      "aapm_tg132_image_registration_fusion"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0012",
+    "task": "Collect evidence for nonradiographic localization QA.",
+    "mode": "evidence",
+    "question": "Find evidence about nonradiographic radiotherapy localization and positioning system QA.",
+    "expected_doc_ids": [
+      "aapm_tg147_nonradiographic_localization_qa"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0013",
+    "task": "Collect evidence for SBRT workflow safety.",
+    "mode": "evidence",
+    "question": "Find evidence about SBRT simulation, immobilization, image guidance, treatment planning, and QA.",
+    "expected_doc_ids": [
+      "aapm_tg101_sbrt"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0014",
+    "task": "Collect evidence for IGRT imaging-dose management.",
+    "mode": "evidence",
+    "question": "Find evidence about managing and reducing imaging dose during image-guided radiotherapy.",
+    "expected_doc_ids": [
+      "aapm_tg75_igrt_imaging_dose",
+      "aapm_tg180_image_guidance_dose_management"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0015",
+    "task": "Collect evidence for helical tomotherapy QA.",
+    "mode": "evidence",
+    "question": "Find evidence about helical tomotherapy delivery, imaging, treatment planning, and dosimetric QA.",
+    "expected_doc_ids": [
+      "aapm_tg148_helical_tomotherapy_qa"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0016",
+    "task": "Collect evidence for IMRT patient-specific QA.",
+    "mode": "evidence",
+    "question": "Find evidence about IMRT measurement-based verification, gamma analysis, tolerance limits, and action limits.",
+    "expected_doc_ids": [
+      "aapm_tg218_imrt_measurement_based_qa",
+      "aapm_tg120_imrt_dosimetry_tools"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0017",
+    "task": "Build a bundle for accelerator beam-data commissioning.",
+    "mode": "bundle",
+    "question": "Prepare a grounded evidence bundle on accelerator beam data commissioning equipment and measurement procedures.",
+    "expected_doc_ids": [
+      "aapm_tg106_beam_data_commissioning"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task",
+    "expected_bundle_prompt": true
+  },
+  {
+    "qid": "agent_task_q0018",
+    "task": "Collect evidence for IMRT commissioning benchmark tests.",
+    "mode": "evidence",
+    "question": "Find evidence about IMRT commissioning benchmark cases, confidence limits, planning, and dosimetry comparisons.",
+    "expected_doc_ids": [
+      "aapm_tg119_imrt_commissioning"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0019",
+    "task": "Collect evidence for biologically based treatment planning QA.",
+    "mode": "evidence",
+    "question": "Find evidence about biological models, TCP, NTCP, gEUD, and QA for biologically based treatment planning.",
+    "expected_doc_ids": [
+      "aapm_report_166_biological_models_treatment_planning_qa"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0020",
+    "task": "Collect evidence for nontarget and out-of-field dose.",
+    "mode": "evidence",
+    "question": "Find evidence about measurement and calculation of doses outside the treated volume from external-beam radiotherapy.",
+    "expected_doc_ids": [
+      "tg158"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0021",
+    "task": "Collect evidence for CT simulation QA.",
+    "mode": "evidence",
+    "question": "Find evidence about computed tomography quality assurance for radiotherapy simulation and treatment planning.",
+    "expected_doc_ids": [
+      "iaea_hhs19_ct_sim_radiotherapy"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0022",
+    "task": "Collect evidence for independent dosimetry audits.",
+    "mode": "evidence",
+    "question": "Find evidence about quality audits in radiotherapy dosimetry and independent audit interpretation.",
+    "expected_doc_ids": [
+      "iaea_hhr18_radiotherapy_dosimetry_audits"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0023",
+    "task": "Collect evidence for in vivo dosimetry workflow.",
+    "mode": "evidence",
+    "question": "Find evidence about in vivo dosimetry procedures, detector selection, tolerances, and action levels.",
+    "expected_doc_ids": [
+      "iaea_hhr8_in_vivo_dosimetry"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0024",
+    "task": "Collect evidence for record-and-verify systems.",
+    "mode": "evidence",
+    "question": "Find evidence about record and verify systems, workflow safety, commissioning, and quality control.",
+    "expected_doc_ids": [
+      "iaea_hhr7_record_verify_systems"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0025",
+    "task": "Collect evidence for radiotherapy facility design.",
+    "mode": "evidence",
+    "question": "Find evidence about radiotherapy facility design, equipment rooms, shielding, workflow, and safety infrastructure.",
+    "expected_doc_ids": [
+      "iaea_hhr10_radiotherapy_facilities",
+      "iaea_srs47_radiotherapy_facility_radiation_protection"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0026",
+    "task": "Collect evidence for equipment selection and acceptance testing.",
+    "mode": "evidence",
+    "question": "Find evidence about selection, acceptance testing, commissioning, and quality control of radiotherapy equipment.",
+    "expected_doc_ids": [
+      "iaea_hhr17_linear_accelerators"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0027",
+    "task": "Build a bundle for national radiotherapy service planning.",
+    "mode": "bundle",
+    "question": "Prepare a grounded evidence bundle about national radiotherapy service planning, resources, and capacity.",
+    "expected_doc_ids": [
+      "iaea_hhs14_planning_national_radiotherapy_services",
+      "iaea_pub1638_radiotherapy_in_cancer_care"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task",
+    "expected_bundle_prompt": true
+  },
+  {
+    "qid": "agent_task_q0028",
+    "task": "Collect evidence for radiation protection in medical radiation use.",
+    "mode": "evidence",
+    "question": "Find evidence about radiation protection and safety responsibilities for medical uses of ionizing radiation relevant to radiotherapy.",
+    "expected_doc_ids": [
+      "iaea_ssg46_medical_uses_radiation_safety"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0029",
+    "task": "Collect evidence for dose accuracy and uncertainty requirements.",
+    "mode": "evidence",
+    "question": "Find evidence about accuracy requirements and uncertainties in radiotherapy dosimetry.",
+    "expected_doc_ids": [
+      "iaea_hhs31_accuracy_requirements_dosimetry"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0030",
+    "task": "Collect evidence for prescription-to-delivery dose transfer.",
+    "mode": "evidence",
+    "question": "Find evidence about radiation dose in radiotherapy from prescription to delivery and related QA.",
+    "expected_doc_ids": [
+      "iaea_tecdoc989_radiation_dose_prescription_delivery"
+    ],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "agent_task"
+  },
+  {
+    "qid": "agent_task_q0031",
     "task": "Reject a medically related but non-radiotherapy-physics query.",
     "mode": "evidence",
     "question": "Which chemotherapy regimen should be selected for metastatic pancreatic cancer?",
@@ -133,7 +393,7 @@
     "benchmark_profile": "agent_task_hard_ood"
   },
   {
-    "qid": "agent_task_q0011",
+    "qid": "agent_task_q0032",
     "task": "Reject a clinical medication-management query outside the corpus.",
     "mode": "answer",
     "question": "How should an insulin dose be adjusted for an individual patient with fasting hypoglycemia?",
@@ -142,10 +402,73 @@
     "benchmark_profile": "agent_task_hard_ood"
   },
   {
-    "qid": "agent_task_q0012",
+    "qid": "agent_task_q0033",
     "task": "Reject a medical-imaging question that is not radiotherapy physics guidance.",
     "mode": "evidence",
     "question": "What is the best MRI sequence to diagnose acute ischemic stroke in an emergency department?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0034",
+    "task": "Reject a billing and insurance question.",
+    "mode": "evidence",
+    "question": "Which ICD-10 code should be used to bill a radiation dermatitis follow-up visit?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0035",
+    "task": "Reject a nutrition-support question.",
+    "mode": "answer",
+    "question": "What diet should a head and neck cancer patient follow during mucositis?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0036",
+    "task": "Reject a dental management question.",
+    "mode": "evidence",
+    "question": "How should osteoradionecrosis of the mandible be treated clinically?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0037",
+    "task": "Reject a PET/CT interpretation question outside the physics corpus.",
+    "mode": "evidence",
+    "question": "What SUV cutoff should diagnose malignant recurrence on PET/CT?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0038",
+    "task": "Reject a legal risk-management question.",
+    "mode": "answer",
+    "question": "What malpractice liability applies if a radiotherapy plan review is delayed?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0039",
+    "task": "Reject a general surgery decision question.",
+    "mode": "evidence",
+    "question": "Should a patient choose SBRT or surgery for an operable lung tumor?",
+    "expected_doc_ids": [],
+    "expected_abstain": true,
+    "benchmark_profile": "agent_task_hard_ood"
+  },
+  {
+    "qid": "agent_task_q0040",
+    "task": "Reject a symptom-management question.",
+    "mode": "answer",
+    "question": "How should severe nausea after cancer treatment be managed with medication?",
     "expected_doc_ids": [],
     "expected_abstain": true,
     "benchmark_profile": "agent_task_hard_ood"

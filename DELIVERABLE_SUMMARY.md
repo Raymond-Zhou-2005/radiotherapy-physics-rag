@@ -16,6 +16,8 @@ This folder is the complete non-article implementation bundle for an open-source
 - Semantic dense artifacts: `BAAI/bge-small-en-v1.5`, `sentence_transformers`, 384 dimensions, FAISS index.
 - Cross-encoder reranker: `BAAI/bge-reranker-base`, with lexical fallback.
 - Hash dense fallback: available only as explicit no-model CI/debug profile.
+- Public answer-target benchmark: 61 questions.
+- Realistic agent-task benchmark: 40 tasks.
 
 ## Main Entry Points
 
@@ -92,18 +94,32 @@ Cell-level table QA:
 - Evidence cell value hit rate: 0.929.
 - Answer cell value hit rate: 0.643.
 
-External gold-answer seed:
+Public answer-target benchmark:
 
-- 12 paraphrased public answer-key questions.
-- Gold-answer success rate: 0.583.
-- Evidence value hit rate: 0.583.
-- Answer value hit rate: 0.333.
+- 61 public answer-target questions.
+- Gold-answer success rate: 0.787.
+- Evidence value hit rate: 0.787.
+- Answer value hit rate: 0.344.
+
+Answer-generation mode comparison:
+
+- 61 public answer-target questions.
+- Extractive answer value hit rate: 0.344.
+- Evidence-only value hit rate: 0.852.
+- Bundle prompt value hit rate: 0.852.
+- Answer synthesis gap rate: 0.508.
 
 Realistic agent-task evaluation:
 
-- 12 downstream agent-use tasks.
+- 40 downstream agent-use tasks.
 - Task success rate: 1.000.
+- In-scope Document Hit Rate@5: 1.000.
 - Hard medical-boundary OOD abstention success rate: 1.000.
+
+Failure taxonomy:
+
+- Automatically classified failure/gap cases: 58.
+- Dominant category: answer synthesis gap.
 
 Answer-quality proxy evaluation:
 
@@ -118,7 +134,7 @@ Paper experiment matrix:
 
 - `evaluation/paper_experiment_matrix.md`
 - `evaluation/paper_experiment_matrix.json`
-- 17 experiment rows covering retrieval ablations, strategy evaluation, agent contract, agent tasks, asset QA, table-cell QA, external gold-answer seed, answer-quality proxy, and navigator metrics.
+- 19 experiment rows covering retrieval ablations, strategy evaluation, agent contract, agent tasks, asset QA, table-cell QA, public answer-target benchmark, answer-generation gap analysis, failure taxonomy, answer-quality proxy, and navigator metrics.
 
 ## Verification Snapshot
 

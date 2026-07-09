@@ -6,7 +6,7 @@ This folder contains public evaluation assets for the radiotherapy physics RAG s
 
 The benchmark does not copy ABR, RAPHEX, board-review, commercial, leaked, or private question-bank material. The main public topic benchmark is generated from the public source catalog metadata in `reports/starter_corpus_sources.json`.
 
-The external gold-answer seed stores short answer targets paraphrased from public answer-key pages/documents. It is intended for method stress testing, not redistribution of a full exam bank.
+The public answer-target benchmark stores short answer targets paraphrased from public answer-key pages/documents and generated from public AAPM/IAEA report evidence. It is intended for method stress testing, not redistribution of a full exam bank.
 
 This means the benchmark is useful for open-source retrieval and skill-contract testing, but it is not an expert-adjudicated clinical correctness benchmark.
 
@@ -30,9 +30,9 @@ Current size:
 - In-domain public-source topic questions: 245.
 - Out-of-domain controls: 35, including 20 hard medical-boundary controls.
 - Source records represented in runtime: 49.
-- External gold-answer seed: 12 public short-answer target questions.
+- Public answer-target benchmark: 61 questions, including 12 public external answer-key seeds and 49 open-report answer targets.
 - Table-cell QA seed: 14 questions checking exact values from extracted table text previews.
-- Realistic agent-task seed: 12 tasks checking skill contract behavior.
+- Realistic agent-task benchmark: 40 tasks checking skill contract behavior, including 10 hard medical-boundary OOD tasks.
 
 Each item stores:
 
@@ -159,22 +159,39 @@ Current 14-question table-cell results:
 
 This checks whether short values from extracted table text previews are recoverable. It is stricter than metadata proximity, but still not human visual QA.
 
-## External Gold-Answer Seed
+## Public Answer-Target Benchmark
 
 ```bash
 python scripts/generate_gold_answer_benchmark.py --output evaluation/radiotherapy_gold_answer_questions.json
 EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/gold_answer_eval_results.json --output-md evaluation/gold_answer_eval_results.md
 ```
 
-Current 12-question results:
+Current 61-question results:
 
-- Skill OK rate: 0.917.
-- Citation present rate: 0.917.
-- Answer value hit rate: 0.333.
-- Evidence value hit rate: 0.583.
-- Gold-answer success rate: 0.583.
+- Skill OK rate: 0.984.
+- Citation present rate: 0.984.
+- Answer value hit rate: 0.344.
+- Evidence value hit rate: 0.787.
+- Gold-answer success rate: 0.787.
 
-Interpretation: the skill is stronger as an evidence-finding tool than as an extractive-only answer generator for public answer-key and calculation-style questions. This is a limitation to report, not hide.
+Interpretation: the skill is stronger as an evidence-finding tool than as an extractive-only answer generator. This is a limitation to report, not hide.
+
+## Answer Generation Mode Comparison
+
+```bash
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_answer_generation.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/answer_generation_eval_results.json --output-md evaluation/answer_generation_eval_results.md
+```
+
+Current 61-question results:
+
+- Extractive answer value hit rate: 0.344.
+- Extractive evidence value hit rate: 0.852.
+- Evidence-only value hit rate: 0.852.
+- Bundle prompt value hit rate: 0.852.
+- Answer synthesis gap rate: 0.508.
+- Retrieval gap rate: 0.148.
+
+Interpretation: most misses are answer-synthesis gaps rather than absence of relevant retrieved evidence.
 
 ## Realistic Agent Tasks
 
@@ -183,7 +200,7 @@ python scripts/generate_agent_task_benchmark.py --output evaluation/radiotherapy
 EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto --output-json evaluation/agent_task_eval_results.json --output-md evaluation/agent_task_eval_results.md
 ```
 
-Current 12-task results:
+Current 40-task results:
 
 - Task success rate: 1.000.
 - Document Hit Rate@5: 1.000 on in-scope tasks.
@@ -191,6 +208,23 @@ Current 12-task results:
 - Bundle prompt success rate: 1.000.
 - Asset trace success rate: 1.000.
 - Hard medical-boundary OOD abstention success rate: 1.000.
+
+## Failure Taxonomy
+
+```bash
+python scripts/analyze_failure_taxonomy.py --eval-dir evaluation --output-json evaluation/failure_taxonomy.json --output-md evaluation/failure_taxonomy.md
+```
+
+Current automatically classified failure/gap cases:
+
+- Total cases: 58.
+- Answer synthesis gap: 35.
+- Retrieval gap: 9.
+- Retrieval or evidence gap in gold-answer evaluation: 12.
+- Page miss: 1.
+- Skill error: 1.
+
+These categories are engineering diagnostics for the paper discussion. They are not expert clinical correctness labels.
 
 ## Answer Quality Proxy Evaluation
 
@@ -216,7 +250,7 @@ These metrics check answer format and grounding proxies. They do not replace exp
 python scripts/build_paper_experiment_matrix.py --eval-dir evaluation --output-json evaluation/paper_experiment_matrix.json --output-md evaluation/paper_experiment_matrix.md
 ```
 
-The matrix consolidates retrieval ablations, agent contract metrics, asset/table-cell metrics, external gold-answer seed metrics, answer-quality proxies, and navigator metrics into one paper-facing table.
+The matrix consolidates retrieval ablations, agent contract metrics, asset/table-cell metrics, public answer-target metrics, answer-generation mode comparison, failure taxonomy, answer-quality proxies, and navigator metrics into one paper-facing table.
 
 ## Private Licensed Questions
 

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from scripts.add_documents import main as add_documents_main
+from scripts.analyze_failure_taxonomy import main as analyze_failure_taxonomy_main
 from scripts.audit_public_release import main as audit_public_release_main
 from scripts.build_chatgpt_knowledge import main as build_chatgpt_knowledge_main
 from scripts.build_navigator import main as build_navigator_main
@@ -14,6 +15,7 @@ from scripts.download_starter_corpus import main as download_corpus_main
 from scripts.evaluate_ablation import main as evaluate_ablation_main
 from scripts.evaluate_agent_skill import main as evaluate_agent_skill_main
 from scripts.evaluate_agent_tasks import main as evaluate_agent_tasks_main
+from scripts.evaluate_answer_generation import main as evaluate_answer_generation_main
 from scripts.evaluate_answer_quality import main as evaluate_answer_quality_main
 from scripts.evaluate_asset_qa import main as evaluate_asset_qa_main
 from scripts.evaluate_gold_answers import main as evaluate_gold_answers_main
@@ -38,6 +40,7 @@ from scripts.validate_skill_package import main as validate_skill_main
 
 __all__ = [
     "add_documents_main",
+    "analyze_failure_taxonomy_main",
     "audit_public_release_main",
     "build_chatgpt_knowledge_main",
     "build_navigator_main",
@@ -49,6 +52,7 @@ __all__ = [
     "evaluate_ablation_main",
     "evaluate_agent_skill_main",
     "evaluate_agent_tasks_main",
+    "evaluate_answer_generation_main",
     "evaluate_answer_quality_main",
     "evaluate_asset_qa_main",
     "evaluate_gold_answers_main",

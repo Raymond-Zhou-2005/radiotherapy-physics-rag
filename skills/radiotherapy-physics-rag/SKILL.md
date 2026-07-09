@@ -59,9 +59,11 @@ python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_
 python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_table_cell_qa.py --questions evaluation/radiotherapy_table_cell_questions.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_answer_generation.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_ablation.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index
+python scripts/analyze_failure_taxonomy.py --eval-dir evaluation
 python scripts/build_paper_experiment_matrix.py --eval-dir evaluation
 python scripts/build_chatgpt_knowledge.py --root .
 python scripts/validate_skill_package.py --skill-root . --check-sample-baseline --require-index

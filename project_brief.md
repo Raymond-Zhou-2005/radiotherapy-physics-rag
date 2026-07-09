@@ -17,8 +17,10 @@ The implementation is now a local runtime bundle plus clean public-release packa
 - Benchmark: 280 open-source topic questions, including 35 OOD controls with 20 hard medical-boundary negatives.
 - Asset benchmark: 120 metadata-derived table/figure questions.
 - Table-cell benchmark: 14 exact-value questions from extracted public PDF table text previews.
-- External gold-answer seed: 12 paraphrased public answer-key questions with short answer targets.
-- Agent-task benchmark: 12 realistic downstream skill-use tasks.
+- Public answer-target benchmark: 61 questions, including 12 paraphrased public answer-key seeds and 49 open-report answer targets.
+- Agent-task benchmark: 40 realistic downstream skill-use tasks, including 10 hard medical-boundary OOD tasks.
+- Answer-generation mode comparison: local comparison of extractive answer, evidence-only target availability, and bundle prompt target availability.
+- Failure taxonomy: automatic classification of benchmark failure/gap cases for paper discussion.
 - Interfaces: Python CLI, Codex skill, MCP server, navigator skill, ChatGPT Knowledge export.
 - Public packaging: `scripts/build_public_release.py` and `scripts/audit_public_release.py`.
 
@@ -36,7 +38,7 @@ The implementation is now a local runtime bundle plus clean public-release packa
 10. Returns structured evidence and citations.
 11. Exposes MCP tools for Codex and other local agents.
 12. Generates public open-source benchmarks.
-13. Evaluates retrieval, formal ablations, navigator routing, agent-facing skill behavior, table/figure asset metadata, cell-level table values, external gold-answer seeds, and answer-quality proxies.
+13. Evaluates retrieval, formal ablations, navigator routing, agent-facing skill behavior, table/figure asset metadata, cell-level table values, public answer-target questions, answer-generation gaps, failure taxonomy, and answer-quality proxies.
 14. Builds a clean GitHub release directory without PDFs or derived full text.
 
 ## What The System Does Not Do
@@ -94,16 +96,30 @@ Cell-level table QA results:
 - Evidence cell value hit rate: 0.929.
 - Answer cell value hit rate: 0.643.
 
-External gold-answer seed results:
+Public answer-target benchmark results:
 
-- Gold-answer success rate: 0.583.
-- Evidence value hit rate: 0.583.
-- Answer value hit rate: 0.333.
+- Gold-answer success rate: 0.787.
+- Evidence value hit rate: 0.787.
+- Answer value hit rate: 0.344.
+
+Answer-generation mode comparison:
+
+- Extractive answer value hit rate: 0.344.
+- Evidence-only value hit rate: 0.852.
+- Bundle prompt value hit rate: 0.852.
+- Answer synthesis gap rate: 0.508.
+- Retrieval gap rate: 0.148.
 
 Realistic agent-task results:
 
 - Task success rate: 1.000.
+- In-scope Document Hit Rate@5: 1.000 across 30 tasks.
 - Hard medical-boundary OOD abstention success rate: 1.000.
+
+Failure taxonomy:
+
+- Automatically classified failure/gap cases: 58.
+- Dominant category: answer synthesis gap.
 
 Answer quality proxy results:
 
@@ -114,7 +130,7 @@ Answer quality proxy results:
 - Overclaim flag rate: 0.020.
 - OOD abstention success rate: 1.000.
 
-Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. It uses a real semantic embedding index and a real cross-encoder reranker. The safest default is `auto` retrieval, which uses semantic hybrid retrieval when the dense index is semantic and falls back to sparse retrieval when neural artifacts are absent. Topic-to-document ranking inside the navigator and answer generation for calculation-style gold questions remain the weakest measured areas. The project still lacks expert answer adjudication.
+Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. It uses a real semantic embedding index and a real cross-encoder reranker. The safest default is `auto` retrieval, which uses semantic hybrid retrieval when the dense index is semantic and falls back to sparse retrieval when neural artifacts are absent. Topic-to-document ranking inside the navigator and answer synthesis remain the weakest measured areas: evidence and bundle prompts contain many more answer targets than the current extractive answer surfaces. The project still lacks expert answer adjudication.
 
 ## Public Repository Boundary
 
@@ -162,7 +178,9 @@ python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill
 python scripts/evaluate_ablation.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index
 python scripts/evaluate_table_cell_qa.py --questions evaluation/radiotherapy_table_cell_questions.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_answer_generation.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto
 python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto
+python scripts/analyze_failure_taxonomy.py --eval-dir evaluation
 python scripts/build_paper_experiment_matrix.py --eval-dir evaluation
 ```
 
@@ -182,16 +200,15 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 - Report-aware heuristics remain experimental because formal ablation showed lower recall on the current benchmark.
 - OOD abstention is still heuristic beyond the explicit public negative controls.
 - Table/figure support includes metadata proximity and extracted table text previews, not full multimodal visual QA.
-- External gold-answer seed performance is limited because the current answer mode is conservative and extractive-only.
+- Public answer-target performance shows that evidence retrieval is substantially stronger than extractive answer synthesis.
 
 ## Next Research Steps
 
-These are article-preparation steps, not required for the current software release:
+These are article-preparation or article-upgrade steps after the current software release:
 
 1. Add expert-reviewed answer keys if a medical physicist becomes available.
 2. Add a stronger answer generator and compare extractive, local LLM, and hosted LLM answer modes under the same evidence contract.
 3. Improve answer generation for calculation-style and public-answer-key questions while preserving evidence grounding.
-4. Calibrate OOD abstention on broader negative controls and report confidence thresholds.
-5. Improve navigator document ranking.
-6. Add multimodal figure QA if licensing and expert review become available.
-7. Write the manuscript around safe claims supported by the current evaluation.
+4. Improve navigator document ranking.
+5. Add multimodal figure QA if licensing and expert review become available.
+6. Write the manuscript around safe claims supported by the current evaluation.

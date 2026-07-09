@@ -1,6 +1,6 @@
 # Agent Task Evaluation Results
 
-- Tasks: 12
+- Tasks: 40
 - Retrieval backend: auto
 - Task success rate: 1.000
 - Structured success rate: 0.750

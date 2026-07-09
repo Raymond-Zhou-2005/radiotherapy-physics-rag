@@ -30,6 +30,8 @@ The current local runtime bundle used for validation contains:
 - Indexed chunks: 10923.
 - PDF asset metadata: 655 tables and 3263 images across 49 documents.
 - ChatGPT Knowledge upload files generated locally: 49.
+- Public answer-target benchmark: 61 questions, including public external answer-key seeds and open-report answer targets.
+- Realistic agent-task benchmark: 40 tasks, including 10 hard medical-boundary OOD tasks.
 - Navigator topics: 10.
 - Semantic dense artifacts present: `BAAI/bge-small-en-v1.5` via `sentence-transformers`, 384 dimensions, FAISS inner-product index.
 - Cross-encoder reranker: `BAAI/bge-reranker-base`, with lexical fallback when neural models are unavailable.
@@ -142,10 +144,12 @@ python scripts/generate_table_cell_benchmark.py --output evaluation/radiotherapy
 EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_table_cell_qa.py --questions evaluation/radiotherapy_table_cell_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/table_cell_qa_eval_results.json --output-md evaluation/table_cell_qa_eval_results.md
 python scripts/generate_gold_answer_benchmark.py --output evaluation/radiotherapy_gold_answer_questions.json
 EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/gold_answer_eval_results.json --output-md evaluation/gold_answer_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_answer_generation.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/answer_generation_eval_results.json --output-md evaluation/answer_generation_eval_results.md
 python scripts/generate_agent_task_benchmark.py --output evaluation/radiotherapy_agent_tasks.json
 EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto --output-json evaluation/agent_task_eval_results.json --output-md evaluation/agent_task_eval_results.md
 EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/answer_quality_eval_results.json --output-md evaluation/answer_quality_eval_results.md
 python scripts/evaluate_ablation.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --output-json evaluation/ablation_eval_results.json --output-md evaluation/ablation_eval_results.md
+python scripts/analyze_failure_taxonomy.py --eval-dir evaluation --output-json evaluation/failure_taxonomy.json --output-md evaluation/failure_taxonomy.md
 python scripts/build_paper_experiment_matrix.py --eval-dir evaluation --output-json evaluation/paper_experiment_matrix.json --output-md evaluation/paper_experiment_matrix.md
 ```
 
@@ -161,11 +165,13 @@ Current 280-question open-source topic benchmark results:
 | Auto agent skill contract | Document Hit Rate@5 = 0.947; Citation present rate = 1.000; OOD abstention success = 1.000 |
 | Asset QA metadata | Document Hit@5 = 1.000; Page Hit@5 = 0.983; Asset ID Trace@5 = 0.950 |
 | Cell-level table QA | Cell QA success = 0.929; evidence cell value hit = 0.929; answer cell value hit = 0.643 |
-| External gold-answer seed | Gold-answer success = 0.583; answer value hit = 0.333 |
-| Realistic agent tasks | Task success = 1.000; hard medical-boundary OOD abstention = 1.000 |
+| Public answer-target benchmark | Gold-answer success = 0.787; evidence value hit = 0.787; answer value hit = 0.344 |
+| Answer generation mode comparison | Evidence/bundle value hit = 0.852; extractive answer value hit = 0.344; answer synthesis gap = 0.508 |
+| Realistic agent tasks | Task success = 1.000 across 40 tasks; hard medical-boundary OOD abstention = 1.000 |
+| Failure taxonomy | 58 automatically classified failure/gap cases; most common category is answer synthesis gap |
 | Extractive answer quality proxies | Citation marker = 1.000; valid evidence IDs = 1.000; grounded token overlap = 0.993; OOD abstention = 1.000 |
 
-Interpretation: the project now has a real semantic dense index and a real cross-encoder reranker. Formal ablation showed that semantic hybrid retrieval with cross-encoder reranking and report-aware heuristics disabled is the preferred default for this public benchmark. Report-aware heuristics remain available as an ablation/experimental option, but they are not the default because they reduced document recall in the current matrix. The gold-answer and answer-quality metrics are automatic research proxies, not expert adjudication.
+Interpretation: the project now has a real semantic dense index and a real cross-encoder reranker. Formal ablation showed that semantic hybrid retrieval with cross-encoder reranking and report-aware heuristics disabled is the preferred default for this public benchmark. Report-aware heuristics remain available as an ablation/experimental option, but they are not the default because they reduced document recall in the current matrix. The answer-target, answer-generation, failure-taxonomy, and answer-quality metrics are automatic research proxies, not expert adjudication.
 
 ## Public Release
 
