@@ -22,7 +22,8 @@
 
 - [ ] Write the full manuscript.
 - [ ] Generate final publication figures.
-- [ ] Create a GitHub release tag.
+- [x] Prepare and push Git tag `v2.1.1`.
+- [ ] Create a GitHub release object from `v2.1.1`.
 - [ ] Mint or attach a Zenodo DOI.
 - [ ] Decide whether expert review is available.
 - [ ] If expert review is available, run expert answer/citation scoring.
@@ -38,4 +39,3 @@
 - Answer-target and answer-generation comparison table.
 - Failure taxonomy table.
 - Conservative limitations section.
-
