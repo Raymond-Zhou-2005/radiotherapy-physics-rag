@@ -17,18 +17,20 @@ in the public repository.
 
 ## Query Workflow
 
-1. Prefer the MCP tool `query_reports` with `mode="evidence"` and `retrieval_backend="routed"` for evidence lookup when the query type is not obvious.
+1. Prefer the MCP tool `query_reports` with `mode="evidence"` and `retrieval_backend="auto"` for evidence lookup when the semantic dense index is available.
 2. Use `mode="answer"` only when the user asks for a concise answer. Keep citations tied to returned evidence IDs.
 3. Use `mode="bundle"` when the user wants a prompt/evidence packet for another local answer model.
 4. For broad or multi-report questions, inspect `navigator/SKILL.md` and at least two relevant `navigator/topics/*/INDEX.md` branches, then retrieve full evidence through `query_reports` or MCP `get_chunk`.
 5. If MCP is unavailable, run:
 
 ```bash
-python scripts/plugin_query.py --mode evidence --retrieval-backend routed "What does the corpus say about radiation oncology QA?"
+python scripts/plugin_query.py --mode evidence --retrieval-backend auto "What does the corpus say about radiation oncology QA?"
 ```
 
-6. Use `--retrieval-backend sparse` for portable BM25 evidence retrieval. Use `--retrieval-backend hybrid` or `auto` when a semantic dense index such as `BAAI/bge-small-en-v1.5` has been built. Use `--retrieval-backend routed` to classify the scene, optionally consult local routing memory if present, and choose a retrieval strategy. Routed currently prefers sparse for exact report/source lookup and QA procedure questions, and semantic hybrid for broader comparison or synthesis. Routed traces are appended only when `RAG_EXPERIENCE_APPEND=1` is set.
-7. For explicit table, figure, image, or diagram page questions, inspect returned `nearby_assets` metadata in each evidence item. This is metadata-grounded table/figure lookup, not visual interpretation.
+6. Use `--retrieval-backend auto` as the default research path. It uses semantic dense + BM25 hybrid retrieval with `BAAI/bge-reranker-base` cross-encoder reranking when the local artifacts and model cache are available, and falls back safely when neural components are absent.
+7. Use `--retrieval-backend sparse` for portable BM25 evidence retrieval. Use `--retrieval-backend routed` when you specifically want scene routing and optional local routing memory. Routed traces are appended only when `RAG_EXPERIENCE_APPEND=1` is set.
+8. Keep report-aware heuristic flags off by default. They remain useful for ablation, but the current formal matrix showed lower document recall when they were enabled.
+9. For explicit table, figure, image, or diagram page questions, inspect returned `nearby_assets` metadata and `text_preview` fields in each evidence item. This supports extracted table text QA, not full visual interpretation.
 
 If the index is missing, bootstrap the local corpus first:
 
@@ -50,12 +52,17 @@ python scripts/build_navigator.py --index-dir index --manifest reports/manifest.
 
 ```bash
 python scripts/plugin_doctor.py --root .
-python scripts/plugin_query.py --mode evidence --retrieval-backend routed "What does IAEA TRS 398 cover about absorbed dose determination in external beam radiotherapy?"
+python scripts/plugin_query.py --mode evidence --retrieval-backend auto "What does IAEA TRS 398 cover about absorbed dose determination in external beam radiotherapy?"
 python scripts/list_corpus.py --root .
 python scripts/build_navigator.py --index-dir index --manifest reports/manifest.jsonl --output-dir navigator --skill-dir skills/radiotherapy-physics-navigator
 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope
-python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend routed
-python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed
+python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_table_cell_qa.py --questions evaluation/radiotherapy_table_cell_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_ablation.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index
+python scripts/build_paper_experiment_matrix.py --eval-dir evaluation
 python scripts/build_chatgpt_knowledge.py --root .
 python scripts/validate_skill_package.py --skill-root . --check-sample-baseline --require-index
 ```

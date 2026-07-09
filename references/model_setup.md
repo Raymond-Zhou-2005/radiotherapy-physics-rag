@@ -5,11 +5,13 @@
 - Embedding model: `BAAI/bge-small-en-v1.5`
 - Query prefix: `Represent this sentence for searching relevant passages: `
 - Passage prefix: none
-- Reranker model: `BAAI/bge-reranker-v2-m3`
-- Recommended reranker max length: 1024
+- Reranker model: `BAAI/bge-reranker-base`
+- Recommended reranker max length: 512
 - Current local dense index: `sentence_transformers` backend, 384 dimensions, FAISS inner-product search.
 
 This profile requires `sentence-transformers`, `transformers`, `torch`, and local model cache access. `RAG_FORCE_LEXICAL_RERANK=1` can be used to keep reranking deterministic while still using real semantic embeddings.
+
+Default retrieval uses `auto`: semantic dense + BM25 hybrid retrieval when a semantic dense index is present, with cross-encoder reranking when the reranker can be loaded. If neural components are absent, the skill falls back to lexical reranking instead of failing ordinary queries.
 
 ## No-model Reproducible Profile
 
@@ -38,6 +40,24 @@ The skill uses lexical reranking when:
 - neural reranker dependencies or model downloads fail
 
 This keeps retrieval usable offline and prevents large evaluations from repeatedly attempting model downloads.
+
+Use `RAG_RERANKER_BACKEND=cross_encoder` for formal cross-encoder runs. Use `RAG_RERANKER_STRICT=1` when you want evaluation to fail instead of silently falling back to lexical reranking.
+
+Report-aware heuristic flags default to off:
+
+```powershell
+Remove-Item Env:USE_RETRIEVAL_HEURISTICS -ErrorAction SilentlyContinue
+Remove-Item Env:USE_RERANK_HEURISTICS -ErrorAction SilentlyContinue
+```
+
+They can be enabled for ablation:
+
+```powershell
+$env:USE_RETRIEVAL_HEURISTICS="1"
+$env:USE_RERANK_HEURISTICS="1"
+```
+
+Current formal ablation found lower document recall with those flags enabled, so they are experimental rather than the recommended default.
 
 ## Optional Answer Model
 
@@ -80,4 +100,13 @@ $env:RAG_FORCE_LEXICAL_RERANK="1"
 $env:EMBEDDING_MODEL_NAME="BAAI/bge-small-en-v1.5"
 python scripts/validate_skill_package.py --skill-root . --check-sample-baseline --require-index
 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope
+```
+
+Cross-encoder validation:
+
+```powershell
+Remove-Item Env:RAG_FORCE_LEXICAL_RERANK -ErrorAction SilentlyContinue
+$env:RAG_RERANKER_BACKEND="cross_encoder"
+$env:RERANKER_MODEL_NAME="BAAI/bge-reranker-base"
+python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies hybrid auto --ignore-report-scope
 ```

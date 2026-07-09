@@ -32,6 +32,7 @@ The current local runtime bundle used for validation contains:
 - ChatGPT Knowledge upload files generated locally: 49.
 - Navigator topics: 10.
 - Semantic dense artifacts present: `BAAI/bge-small-en-v1.5` via `sentence-transformers`, 384 dimensions, FAISS inner-product index.
+- Cross-encoder reranker: `BAAI/bge-reranker-base`, with lexical fallback when neural models are unavailable.
 - No-model hash dense remains available as an explicit CI/debug fallback, but it is not treated as a semantic baseline.
 
 The public GitHub repository intentionally excludes PDFs, parsed full text, chunks, indexes, extracted asset metadata, and generated ChatGPT upload files. Users rebuild them locally from permitted public sources.
@@ -47,7 +48,7 @@ python -m pip install -e ".[dev]" -c constraints.txt
 
 ```bash
 python scripts/download_starter_corpus.py --allow-manual-missing
-EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend both
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend both
 python scripts/build_navigator.py --index-dir index --manifest reports/manifest.jsonl --output-dir navigator --skill-dir skills/radiotherapy-physics-navigator
 python scripts/extract_pdf_assets.py reports/raw --output-dir assets/extracted
 python scripts/build_chatgpt_knowledge.py --root .
@@ -58,7 +59,7 @@ On Windows PowerShell:
 ```powershell
 Remove-Item Env:RAG_FORCE_HASH_EMBEDDINGS -ErrorAction SilentlyContinue
 $env:EMBEDDING_MODEL_NAME="BAAI/bge-small-en-v1.5"
-$env:RAG_FORCE_LEXICAL_RERANK="1"
+$env:RERANKER_MODEL_NAME="BAAI/bge-reranker-base"
 python scripts/prepare_index.py --reports-dir reports/raw --manifest reports/manifest.jsonl --parsed-dir parsed --chunks-dir chunks --index-dir index --index-backend both
 ```
 
@@ -117,7 +118,7 @@ python scripts/generate_public_benchmark.py --runtime-only --output evaluation/p
 Run retrieval strategy evaluation:
 
 ```bash
-EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope --output-json evaluation/strategy_eval_results.json --output-md evaluation/strategy_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope --output-json evaluation/strategy_eval_results.json --output-md evaluation/strategy_eval_results.md
 ```
 
 Run navigator evaluation:
@@ -129,31 +130,42 @@ python scripts/evaluate_navigator.py --questions evaluation/radiotherapy_skill_o
 Run end-to-end skill-contract evaluation:
 
 ```bash
-EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/agent_skill_eval_results.json --output-md evaluation/agent_skill_eval_results.md
 ```
 
 Run asset and answer-quality proxy evaluations:
 
 ```bash
 python scripts/generate_asset_benchmark.py --assets-dir assets/extracted --sources reports/starter_corpus_sources.json --output evaluation/radiotherapy_asset_questions.json
-EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/asset_qa_eval_results.json --output-md evaluation/asset_qa_eval_results.md
-EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RAG_FORCE_LEXICAL_RERANK=1 python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed --output-json evaluation/answer_quality_eval_results.json --output-md evaluation/answer_quality_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_asset_qa.py --questions evaluation/radiotherapy_asset_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/asset_qa_eval_results.json --output-md evaluation/asset_qa_eval_results.md
+python scripts/generate_table_cell_benchmark.py --output evaluation/radiotherapy_table_cell_questions.json
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_table_cell_qa.py --questions evaluation/radiotherapy_table_cell_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/table_cell_qa_eval_results.json --output-md evaluation/table_cell_qa_eval_results.md
+python scripts/generate_gold_answer_benchmark.py --output evaluation/radiotherapy_gold_answer_questions.json
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/gold_answer_eval_results.json --output-md evaluation/gold_answer_eval_results.md
+python scripts/generate_agent_task_benchmark.py --output evaluation/radiotherapy_agent_tasks.json
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto --output-json evaluation/agent_task_eval_results.json --output-md evaluation/agent_task_eval_results.md
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5 RERANKER_MODEL_NAME=BAAI/bge-reranker-base python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto --output-json evaluation/answer_quality_eval_results.json --output-md evaluation/answer_quality_eval_results.md
+python scripts/evaluate_ablation.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --output-json evaluation/ablation_eval_results.json --output-md evaluation/ablation_eval_results.md
+python scripts/build_paper_experiment_matrix.py --eval-dir evaluation --output-json evaluation/paper_experiment_matrix.json --output-md evaluation/paper_experiment_matrix.md
 ```
 
 Current 280-question open-source topic benchmark results:
 
 | Evaluation | Main result |
 | --- | --- |
-| Sparse retrieval | Document Recall@5 = 0.861; OOD abstention = 1.000 |
-| Hybrid semantic retrieval | Document Recall@5 = 0.820; OOD abstention = 1.000 |
-| Auto retrieval | Document Recall@5 = 0.820; OOD abstention = 1.000 |
-| Routed retrieval | Document Recall@5 = 0.861; OOD abstention = 1.000 |
+| Sparse retrieval | Document Recall@5 = 0.918; OOD abstention = 1.000 |
+| Hybrid semantic + cross-encoder retrieval | Document Recall@5 = 0.947; OOD abstention = 1.000 |
+| Auto retrieval | Document Recall@5 = 0.947; OOD abstention = 1.000 |
+| Routed retrieval | Document Recall@5 = 0.927; OOD abstention = 1.000 |
 | Navigator routing | Topic Recall@3 = 0.967; Candidate Document Recall@5 = 0.673 |
-| Routed agent skill contract | Document Hit Rate@5 = 0.861; Citation present rate = 1.000; OOD abstention success = 1.000 |
+| Auto agent skill contract | Document Hit Rate@5 = 0.947; Citation present rate = 1.000; OOD abstention success = 1.000 |
 | Asset QA metadata | Document Hit@5 = 1.000; Page Hit@5 = 0.983; Asset ID Trace@5 = 0.950 |
-| Extractive answer quality proxies | Citation marker = 1.000; valid evidence IDs = 1.000; grounded token overlap = 0.994; OOD abstention = 1.000 |
+| Cell-level table QA | Cell QA success = 0.929; evidence cell value hit = 0.929; answer cell value hit = 0.643 |
+| External gold-answer seed | Gold-answer success = 0.583; answer value hit = 0.333 |
+| Realistic agent tasks | Task success = 1.000; hard medical-boundary OOD abstention = 1.000 |
+| Extractive answer quality proxies | Citation marker = 1.000; valid evidence IDs = 1.000; grounded token overlap = 0.993; OOD abstention = 1.000 |
 
-Interpretation: the project now has a real semantic dense index. On this metadata-generated report-location benchmark, BM25 sparse and routed retrieval remain stronger than pure semantic hybrid because exact report titles, TG/TRS/TECDOC numbers, and source-role words matter heavily. Routed retrieval therefore chooses sparse for direct/procedure QA and reserves semantic hybrid for broader comparison or synthesis. The answer-quality metrics are automatic proxies, not expert adjudication.
+Interpretation: the project now has a real semantic dense index and a real cross-encoder reranker. Formal ablation showed that semantic hybrid retrieval with cross-encoder reranking and report-aware heuristics disabled is the preferred default for this public benchmark. Report-aware heuristics remain available as an ablation/experimental option, but they are not the default because they reduced document recall in the current matrix. The gold-answer and answer-quality metrics are automatic research proxies, not expert adjudication.
 
 ## Public Release
 

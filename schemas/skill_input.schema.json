@@ -39,7 +39,7 @@
       "type": "string",
       "enum": ["auto", "hybrid", "sparse", "routed"],
       "default": "auto",
-      "description": "Retrieval path for evidence collection. auto tries hybrid retrieval and falls back to sparse retrieval; hybrid uses dense+BM25; sparse uses BM25; routed uses scene analysis and experience memory to choose a strategy."
+      "description": "Retrieval path for evidence collection. auto uses semantic dense+BM25 hybrid retrieval when a semantic dense index is available and falls back safely; hybrid uses dense+BM25; sparse uses BM25; routed uses scene analysis and optional local experience memory to choose a strategy."
     },
     "output": {
       "type": ["string", "null"],

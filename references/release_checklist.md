@@ -49,7 +49,13 @@ If the local starter corpus has been built, also run:
 python scripts/validate_skill_package.py --skill-root . --check-sample-baseline --require-index
 python scripts/evaluate_strategies.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --strategies sparse hybrid auto routed --ignore-report-scope
 python scripts/evaluate_navigator.py --questions evaluation/radiotherapy_skill_open_questions.json --navigator-dir navigator
-python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend routed
+python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_ablation.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index
+python scripts/evaluate_table_cell_qa.py --questions evaluation/radiotherapy_table_cell_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_gold_answers.py --questions evaluation/radiotherapy_gold_answer_questions.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_agent_tasks.py --tasks evaluation/radiotherapy_agent_tasks.json --index-dir index --retrieval-backend auto
+python scripts/evaluate_answer_quality.py --questions evaluation/radiotherapy_skill_open_questions.json --index-dir index --retrieval-backend auto
+python scripts/build_paper_experiment_matrix.py --eval-dir evaluation
 ```
 
 ## Demo Readiness
@@ -59,6 +65,7 @@ python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill
 - [ ] Demo evidence includes document title, section, page range, and chunk ID.
 - [ ] No demo output commits long copyrighted passages.
 - [ ] Public evaluation summaries reflect the current corpus and benchmark.
+- [ ] `evaluation/paper_experiment_matrix.md` reflects the current result files.
 
 ## Documentation
 
@@ -67,3 +74,11 @@ python scripts/evaluate_agent_skill.py --questions evaluation/radiotherapy_skill
 - [ ] `THIRD_PARTY_SOURCES.md` reflects the source metadata policy.
 - [ ] `PRIVACY.md` still states local-only behavior accurately.
 - [ ] `CHANGELOG.md` records user-visible changes.
+
+## DOI Release
+
+- [ ] `.zenodo.json` metadata reviewed.
+- [ ] GitHub release tag created, for example `v2.1.0`.
+- [ ] Zenodo connected to the GitHub repository and the release imported.
+- [ ] Real Zenodo DOI copied back into `CITATION.cff`, README, and the manuscript after Zenodo mints it.
+- [ ] No placeholder DOI is committed as if it were final.

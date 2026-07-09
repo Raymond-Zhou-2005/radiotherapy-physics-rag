@@ -12,6 +12,7 @@ ROOT_FILES = [
     ".env.example",
     ".gitignore",
     ".mcp.json",
+    ".zenodo.json",
     "CHANGELOG.md",
     "CITATION.cff",
     "CONTRIBUTING.md",

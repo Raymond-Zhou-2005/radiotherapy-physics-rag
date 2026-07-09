@@ -1,0 +1,154 @@
+#!/usr/bin/env python
+"""Generate agent-facing task benchmark items."""
+
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+from typing import Any, Dict, List
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.utils import write_json
+
+
+def task_items() -> List[Dict[str, Any]]:
+    return [
+        {
+            "qid": "agent_task_q0001",
+            "task": "Collect cited evidence for an agent drafting a medical accelerator QA implementation note.",
+            "mode": "evidence",
+            "question": "Find evidence for routine medical accelerator QA checks and tolerances in radiotherapy physics.",
+            "expected_doc_ids": ["aapm_tg142_medical_accelerator_qa"],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0002",
+            "task": "Build a grounded prompt bundle for treatment planning system commissioning QA.",
+            "mode": "bundle",
+            "question": "Prepare an evidence bundle about commissioning computerized treatment planning systems for radiation therapy.",
+            "expected_doc_ids": ["iaea_trs430_tps_commissioning_qa", "iaea_tecdoc1540_tps_acceptance"],
+            "expected_citations": True,
+            "expected_bundle_prompt": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0003",
+            "task": "Collect evidence for risk-analysis/FMEA quality management in radiotherapy.",
+            "mode": "evidence",
+            "question": "Find evidence about FMEA, occurrence, severity, and detectability scoring for radiotherapy quality management.",
+            "expected_doc_ids": ["aapm_tg100_radiotherapy_quality_management"],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0004",
+            "task": "Answer a table-cell question and preserve the table asset trace.",
+            "mode": "answer",
+            "question": "In AAPM TG 101 Table I on page 2, what dose per fraction range is listed for SBRT?",
+            "expected_doc_ids": ["aapm_tg101_sbrt"],
+            "expected_asset_id": "aapm_tg101_sbrt_p002_table_01",
+            "expected_answer_groups": [["6-30", "6 to 30"], ["Gy"]],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0005",
+            "task": "Collect evidence for image-guided radiotherapy QA.",
+            "mode": "evidence",
+            "question": "Find radiotherapy physics evidence on CT based image-guided radiotherapy QA and localization checks.",
+            "expected_doc_ids": ["aapm_tg179_ct_based_igrt_qa", "aapm_tg75_igrt_imaging_dose"],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0006",
+            "task": "Collect evidence for absorbed-dose reference dosimetry.",
+            "mode": "evidence",
+            "question": "Find evidence about absorbed dose determination in external beam radiotherapy reference dosimetry.",
+            "expected_doc_ids": ["iaea_trs398_absorbed_dose_ebrt", "iaea_trs398_rev1_absorbed_dose_ebrt"],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0007",
+            "task": "Collect evidence for target and OAR naming conventions.",
+            "mode": "evidence",
+            "question": "Find evidence about standardized nomenclature for target volumes and organs at risk in radiation oncology.",
+            "expected_doc_ids": ["aapm_tg263_nomenclature"],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0008",
+            "task": "Collect evidence for clinical-trial physics QA responsibilities.",
+            "mode": "evidence",
+            "question": "Find evidence about medical physics responsibilities and QA centers in radiation oncology clinical trials.",
+            "expected_doc_ids": ["aapm_report_113_physics_clinical_trials"],
+            "expected_citations": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0009",
+            "task": "Build a bundle for brachytherapy dosimetry evidence.",
+            "mode": "bundle",
+            "question": "Prepare a grounded evidence bundle on brachytherapy dosimetry recommendations and source calibration.",
+            "expected_doc_ids": ["iaea_trs492_brachytherapy_dosimetry", "iaea_tecdoc1274_brachytherapy_source_calibration"],
+            "expected_citations": True,
+            "expected_bundle_prompt": True,
+            "expected_abstain": False,
+            "benchmark_profile": "agent_task",
+        },
+        {
+            "qid": "agent_task_q0010",
+            "task": "Reject a medically related but non-radiotherapy-physics query.",
+            "mode": "evidence",
+            "question": "Which chemotherapy regimen should be selected for metastatic pancreatic cancer?",
+            "expected_doc_ids": [],
+            "expected_abstain": True,
+            "benchmark_profile": "agent_task_hard_ood",
+        },
+        {
+            "qid": "agent_task_q0011",
+            "task": "Reject a clinical medication-management query outside the corpus.",
+            "mode": "answer",
+            "question": "How should an insulin dose be adjusted for an individual patient with fasting hypoglycemia?",
+            "expected_doc_ids": [],
+            "expected_abstain": True,
+            "benchmark_profile": "agent_task_hard_ood",
+        },
+        {
+            "qid": "agent_task_q0012",
+            "task": "Reject a medical-imaging question that is not radiotherapy physics guidance.",
+            "mode": "evidence",
+            "question": "What is the best MRI sequence to diagnose acute ischemic stroke in an emergency department?",
+            "expected_doc_ids": [],
+            "expected_abstain": True,
+            "benchmark_profile": "agent_task_hard_ood",
+        },
+    ]
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate agent task benchmark questions.")
+    parser.add_argument("--output", type=Path, default=Path("evaluation/radiotherapy_agent_tasks.json"))
+    args = parser.parse_args()
+    items = task_items()
+    write_json(args.output, items)
+    print(f"Wrote {len(items)} agent task items to {args.output}")
+
+
+if __name__ == "__main__":
+    main()

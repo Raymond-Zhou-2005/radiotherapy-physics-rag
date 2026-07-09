@@ -1,15 +1,15 @@
 # Answer Quality Evaluation Results
 
 - Questions: 280
-- Retrieval backend: routed
+- Retrieval backend: auto
 - Answer engine: extractive
 - In-scope OK rate: 1.000
 - Answer present rate: 1.000
 - Citation marker rate: 1.000
 - Used evidence ID valid rate: 1.000
-- Mean grounded token overlap: 0.994
-- Unsupported number case rate: 0.016
-- Overclaim flag rate: 0.004
+- Mean grounded token overlap: 0.993
+- Unsupported number case rate: 0.000
+- Overclaim flag rate: 0.020
 - OOD abstention success rate: 1.000
 - Unexpected errors: 0
 

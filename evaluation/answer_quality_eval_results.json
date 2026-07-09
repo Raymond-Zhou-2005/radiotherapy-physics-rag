@@ -1,14 +1,14 @@
 {
   "questions": 280,
-  "retrieval_backend": "routed",
+  "retrieval_backend": "auto",
   "answer_engine": "extractive",
   "in_scope_ok_rate": 1.0,
   "answer_present_rate": 1.0,
   "citation_marker_rate": 1.0,
   "used_evidence_id_valid_rate": 1.0,
-  "mean_grounded_token_overlap": 0.9937663441590311,
-  "unsupported_number_case_rate": 0.0163265306122449,
-  "overclaim_flag_rate": 0.004081632653061225,
+  "mean_grounded_token_overlap": 0.992622076447844,
+  "unsupported_number_case_rate": 0.0,
+  "overclaim_flag_rate": 0.02040816326530612,
   "ood_abstention_success_rate": 1.0,
   "unexpected_error_count": 0,
   "counts": {
@@ -19,8 +19,8 @@
     "answer_present": 245,
     "citation_marker_present": 245,
     "used_evidence_ids_valid": 245,
-    "unsupported_number_cases": 4,
-    "overclaim_cases": 1,
+    "unsupported_number_cases": 0,
+    "overclaim_cases": 5,
     "ood_abstention_success": 35,
     "unexpected_errors": 0
   },
@@ -46,7 +46,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9908,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -59,10 +59,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9919,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0004",
@@ -72,7 +72,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -85,7 +85,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.991,
+      "grounded_token_overlap": 0.9898,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -98,10 +98,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0007",
@@ -111,10 +111,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.982,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0008",
@@ -124,10 +124,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0009",
@@ -140,7 +140,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0010",
@@ -150,7 +150,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9917,
+      "grounded_token_overlap": 0.9832,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -189,10 +189,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "overclaim_flag": true,
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0014",
@@ -215,7 +215,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9911,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -228,10 +228,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9915,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0017",
@@ -244,155 +244,10 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0018",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9826,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0019",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9922,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0020",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0021",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
-      "unsupported_numbers": [
-        "17"
-      ],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0022",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9914,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0023",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.98,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0024",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0025",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9889,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0026",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0027",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9833,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0028",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9921,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0029",
       "expected_abstain": false,
       "ok": true,
       "error_code": null,
@@ -405,20 +260,72 @@
       "retrieval_backend": "hybrid"
     },
     {
-      "qid": "public_q0030",
+      "qid": "public_q0019",
       "expected_abstain": false,
       "ok": true,
       "error_code": null,
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9908,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
-      "qid": "public_q0031",
+      "qid": "public_q0020",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.989,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0021",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 1.0,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0022",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9922,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0023",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9912,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0024",
       "expected_abstain": false,
       "ok": true,
       "error_code": null,
@@ -428,7 +335,98 @@
       "grounded_token_overlap": 0.9919,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0025",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 1.0,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0026",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9921,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0027",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9833,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0028",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9833,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0029",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9817,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0030",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9911,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
+      "qid": "public_q0031",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9865,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0032",
@@ -451,10 +449,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9833,
+      "grounded_token_overlap": 0.9919,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0034",
@@ -464,10 +462,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9916,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0035",
@@ -477,10 +475,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9865,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0036",
@@ -490,10 +488,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.981,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0037",
@@ -503,10 +501,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9808,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0038",
@@ -516,10 +514,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.981,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0039",
@@ -529,10 +527,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.991,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0040",
@@ -542,10 +540,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9897,
+      "grounded_token_overlap": 0.9904,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0041",
@@ -555,10 +553,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9846,
+      "grounded_token_overlap": 0.9868,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0042",
@@ -568,7 +566,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9897,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -584,7 +582,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0044",
@@ -594,7 +592,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9851,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -620,10 +618,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9911,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0047",
@@ -633,10 +631,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9909,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0048",
@@ -646,10 +644,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9813,
+      "grounded_token_overlap": 0.9789,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0049",
@@ -659,10 +657,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9911,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0050",
@@ -672,7 +670,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.99,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -685,10 +683,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9911,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0052",
@@ -698,10 +696,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0053",
@@ -711,10 +709,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0054",
@@ -724,10 +722,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9821,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0055",
@@ -737,10 +735,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9906,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0056",
@@ -750,10 +748,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0057",
@@ -763,7 +761,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -776,10 +774,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9919,
+      "grounded_token_overlap": 0.9913,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0059",
@@ -802,7 +800,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -815,10 +813,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9899,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0062",
@@ -828,10 +826,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9873,
+      "grounded_token_overlap": 0.9811,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0063",
@@ -841,10 +839,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.99,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0064",
@@ -854,7 +852,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9909,
+      "grounded_token_overlap": 0.9811,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -867,10 +865,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9825,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0066",
@@ -883,7 +881,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0067",
@@ -893,10 +891,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9906,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0068",
@@ -906,10 +904,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 0.9897,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0069",
@@ -919,12 +917,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9911,
-      "unsupported_numbers": [
-        "4"
-      ],
+      "grounded_token_overlap": 0.9903,
+      "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0070",
@@ -937,7 +933,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0071",
@@ -947,7 +943,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -973,10 +969,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0074",
@@ -986,7 +982,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9909,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1012,10 +1008,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9909,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0077",
@@ -1025,7 +1021,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9909,
+      "grounded_token_overlap": 0.981,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1041,7 +1037,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0079",
@@ -1051,7 +1047,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.981,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1064,7 +1060,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9919,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1080,7 +1076,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0082",
@@ -1090,7 +1086,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9877,
+      "grounded_token_overlap": 0.9905,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1103,10 +1099,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0084",
@@ -1116,7 +1112,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.988,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1142,7 +1138,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9902,
+      "grounded_token_overlap": 0.9828,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1155,7 +1151,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9902,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1171,7 +1167,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0089",
@@ -1181,7 +1177,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 0.9909,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1194,7 +1190,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9832,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1207,7 +1203,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 0.9912,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1233,10 +1229,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9904,
+      "grounded_token_overlap": 0.9804,
       "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "overclaim_flag": true,
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0094",
@@ -1246,7 +1242,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9919,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1259,10 +1255,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9902,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0096",
@@ -1272,7 +1268,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9917,
+      "grounded_token_overlap": 0.9818,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1298,10 +1294,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9914,
+      "grounded_token_overlap": 0.9789,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0099",
@@ -1311,7 +1307,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9831,
+      "grounded_token_overlap": 0.9815,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1337,10 +1333,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9916,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0102",
@@ -1350,10 +1346,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9892,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0103",
@@ -1366,7 +1362,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0104",
@@ -1376,10 +1372,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0105",
@@ -1389,10 +1385,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.982,
+      "grounded_token_overlap": 0.9836,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0106",
@@ -1405,7 +1401,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0107",
@@ -1415,10 +1411,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9825,
+      "grounded_token_overlap": 0.9906,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0108",
@@ -1428,10 +1424,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9813,
+      "grounded_token_overlap": 0.9804,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0109",
@@ -1441,10 +1437,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9914,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0110",
@@ -1454,7 +1450,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9789,
+      "grounded_token_overlap": 0.9798,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1467,10 +1463,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9815,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0112",
@@ -1480,10 +1476,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9909,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0113",
@@ -1493,10 +1489,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0114",
@@ -1509,7 +1505,7 @@
       "grounded_token_overlap": 0.9912,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0115",
@@ -1519,7 +1515,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9882,
+      "grounded_token_overlap": 0.9798,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1532,7 +1528,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9909,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1545,7 +1541,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9918,
+      "grounded_token_overlap": 0.9909,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1558,10 +1554,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9916,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0119",
@@ -1597,10 +1593,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9836,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0122",
@@ -1610,10 +1606,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9908,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0123",
@@ -1626,7 +1622,7 @@
       "grounded_token_overlap": 0.9916,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0124",
@@ -1636,7 +1632,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9835,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1662,12 +1658,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
-      "unsupported_numbers": [
-        "17"
-      ],
+      "grounded_token_overlap": 0.9906,
+      "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0127",
@@ -1677,7 +1671,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9915,
+      "grounded_token_overlap": 0.9906,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1690,10 +1684,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0129",
@@ -1716,10 +1710,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9833,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0131",
@@ -1729,10 +1723,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9918,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0132",
@@ -1745,7 +1739,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0133",
@@ -1755,10 +1749,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0134",
@@ -1771,7 +1765,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0135",
@@ -1784,7 +1778,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0136",
@@ -1797,7 +1791,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0137",
@@ -1807,10 +1801,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9884,
+      "grounded_token_overlap": 0.989,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0138",
@@ -1821,11 +1815,9 @@
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
       "grounded_token_overlap": 1.0,
-      "unsupported_numbers": [
-        "1"
-      ],
+      "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0139",
@@ -1835,10 +1827,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9901,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0140",
@@ -1848,10 +1840,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.982,
+      "grounded_token_overlap": 0.9909,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0141",
@@ -1861,10 +1853,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9802,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0142",
@@ -1887,10 +1879,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 0.9811,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0144",
@@ -1913,7 +1905,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9829,
+      "grounded_token_overlap": 0.9808,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1939,7 +1931,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9899,
+      "grounded_token_overlap": 0.9904,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1952,10 +1944,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9921,
+      "grounded_token_overlap": 0.991,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0149",
@@ -1965,7 +1957,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9911,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -1978,7 +1970,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9825,
+      "grounded_token_overlap": 0.9921,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2004,7 +1996,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9901,
+      "grounded_token_overlap": 0.9821,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2017,10 +2009,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9898,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0154",
@@ -2030,7 +2022,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2056,10 +2048,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0157",
@@ -2069,7 +2061,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9915,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2082,10 +2074,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9919,
+      "grounded_token_overlap": 0.9906,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0159",
@@ -2095,7 +2087,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2108,7 +2100,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9921,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2121,7 +2113,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2134,9 +2126,9 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
-      "overclaim_flag": false,
+      "overclaim_flag": true,
       "retrieval_backend": "hybrid"
     },
     {
@@ -2147,10 +2139,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9802,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0164",
@@ -2160,7 +2152,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.98,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2173,10 +2165,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.991,
+      "grounded_token_overlap": 0.9907,
       "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "overclaim_flag": true,
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0166",
@@ -2186,10 +2178,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0167",
@@ -2199,10 +2191,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9914,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0168",
@@ -2212,10 +2204,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0169",
@@ -2225,10 +2217,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9915,
+      "grounded_token_overlap": 0.9844,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0170",
@@ -2240,7 +2232,7 @@
       "used_evidence_ids_valid": true,
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
-      "overclaim_flag": true,
+      "overclaim_flag": false,
       "retrieval_backend": "hybrid"
     },
     {
@@ -2251,7 +2243,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9896,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2264,7 +2256,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.991,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2277,10 +2269,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9902,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0174",
@@ -2303,7 +2295,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9919,
+      "grounded_token_overlap": 0.9817,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2329,7 +2321,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9903,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2342,10 +2334,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9898,
+      "grounded_token_overlap": 0.9808,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0179",
@@ -2368,7 +2360,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.989,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2381,7 +2373,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9916,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2394,7 +2386,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9911,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2407,10 +2399,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9829,
+      "grounded_token_overlap": 0.9817,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0184",
@@ -2420,26 +2412,13 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9818,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
-      "overclaim_flag": false,
+      "overclaim_flag": true,
       "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0185",
-      "expected_abstain": false,
-      "ok": true,
-      "error_code": null,
-      "answer_present": true,
-      "citation_marker_present": true,
-      "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9922,
-      "unsupported_numbers": [],
-      "overclaim_flag": false,
-      "retrieval_backend": "sparse"
-    },
-    {
-      "qid": "public_q0186",
       "expected_abstain": false,
       "ok": true,
       "error_code": null,
@@ -2452,6 +2431,19 @@
       "retrieval_backend": "hybrid"
     },
     {
+      "qid": "public_q0186",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "answer_present": true,
+      "citation_marker_present": true,
+      "used_evidence_ids_valid": true,
+      "grounded_token_overlap": 0.9914,
+      "unsupported_numbers": [],
+      "overclaim_flag": false,
+      "retrieval_backend": "hybrid"
+    },
+    {
       "qid": "public_q0187",
       "expected_abstain": false,
       "ok": true,
@@ -2459,7 +2451,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2472,10 +2464,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.984,
+      "grounded_token_overlap": 0.9914,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0189",
@@ -2498,7 +2490,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9914,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2511,7 +2503,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9839,
+      "grounded_token_overlap": 0.9924,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2524,7 +2516,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9831,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2537,10 +2529,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9924,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0194",
@@ -2550,7 +2542,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9907,
+      "grounded_token_overlap": 0.9924,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2563,7 +2555,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9918,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2605,7 +2597,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0199",
@@ -2654,7 +2646,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9913,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2667,10 +2659,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.991,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0204",
@@ -2680,7 +2672,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9918,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2693,7 +2685,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9832,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2732,10 +2724,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9901,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0209",
@@ -2758,7 +2750,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9914,
+      "grounded_token_overlap": 0.9851,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2771,10 +2763,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0212",
@@ -2784,10 +2776,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9894,
+      "grounded_token_overlap": 0.9839,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0213",
@@ -2797,10 +2789,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9918,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0214",
@@ -2810,10 +2802,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9894,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0215",
@@ -2823,10 +2815,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9926,
+      "grounded_token_overlap": 0.9852,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0216",
@@ -2836,7 +2828,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9906,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2849,7 +2841,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2862,10 +2854,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9919,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0219",
@@ -2875,7 +2867,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9908,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2888,7 +2880,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9892,
+      "grounded_token_overlap": 0.9828,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2901,10 +2893,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0222",
@@ -2914,10 +2906,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9826,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0223",
@@ -2927,10 +2919,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9916,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0224",
@@ -2940,10 +2932,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9837,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0225",
@@ -2953,7 +2945,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -2966,10 +2958,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0227",
@@ -2979,10 +2971,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9913,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0228",
@@ -2992,10 +2984,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9911,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0229",
@@ -3005,10 +2997,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.984,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0230",
@@ -3018,10 +3010,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9916,
+      "grounded_token_overlap": 0.9918,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0231",
@@ -3031,10 +3023,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9917,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0232",
@@ -3044,10 +3036,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9906,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0233",
@@ -3057,10 +3049,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9916,
+      "grounded_token_overlap": 0.984,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0234",
@@ -3070,10 +3062,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9915,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0235",
@@ -3083,10 +3075,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9877,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0236",
@@ -3109,7 +3101,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9915,
+      "grounded_token_overlap": 0.9901,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -3122,10 +3114,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9912,
+      "grounded_token_overlap": 0.9914,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0239",
@@ -3135,7 +3127,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9902,
+      "grounded_token_overlap": 0.9901,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -3148,7 +3140,7 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9831,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
       "retrieval_backend": "hybrid"
@@ -3164,7 +3156,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0242",
@@ -3177,7 +3169,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0243",
@@ -3187,10 +3179,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 1.0,
+      "grounded_token_overlap": 0.9896,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0244",
@@ -3200,10 +3192,10 @@
       "answer_present": true,
       "citation_marker_present": true,
       "used_evidence_ids_valid": true,
-      "grounded_token_overlap": 0.9882,
+      "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0245",
@@ -3216,7 +3208,7 @@
       "grounded_token_overlap": 1.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "sparse"
+      "retrieval_backend": "hybrid"
     },
     {
       "qid": "public_q0246",
@@ -3229,7 +3221,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0247",
@@ -3242,7 +3234,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0248",
@@ -3255,7 +3247,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0249",
@@ -3268,7 +3260,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0250",
@@ -3281,7 +3273,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0251",
@@ -3294,7 +3286,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0252",
@@ -3307,7 +3299,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0253",
@@ -3320,7 +3312,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0254",
@@ -3333,7 +3325,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0255",
@@ -3346,7 +3338,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0256",
@@ -3359,7 +3351,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0257",
@@ -3372,7 +3364,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0258",
@@ -3385,7 +3377,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0259",
@@ -3398,7 +3390,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0260",
@@ -3411,7 +3403,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0261",
@@ -3424,7 +3416,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0262",
@@ -3437,7 +3429,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0263",
@@ -3450,7 +3442,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0264",
@@ -3463,7 +3455,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0265",
@@ -3476,7 +3468,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0266",
@@ -3489,7 +3481,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0267",
@@ -3502,7 +3494,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0268",
@@ -3515,7 +3507,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0269",
@@ -3528,7 +3520,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0270",
@@ -3541,7 +3533,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0271",
@@ -3554,7 +3546,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0272",
@@ -3567,7 +3559,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0273",
@@ -3580,7 +3572,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0274",
@@ -3593,7 +3585,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0275",
@@ -3606,7 +3598,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0276",
@@ -3619,7 +3611,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0277",
@@ -3632,7 +3624,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0278",
@@ -3645,7 +3637,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0279",
@@ -3658,7 +3650,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     },
     {
       "qid": "public_q0280",
@@ -3671,7 +3663,7 @@
       "grounded_token_overlap": 0.0,
       "unsupported_numbers": [],
       "overclaim_flag": false,
-      "retrieval_backend": "routed"
+      "retrieval_backend": "auto"
     }
   ],
   "metric_note": "Automatic proxy metrics only; they do not replace expert answer grading."

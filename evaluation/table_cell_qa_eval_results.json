@@ -1,0 +1,377 @@
+{
+  "questions": 14,
+  "retrieval_backend": "auto",
+  "evidence_top_k": 8,
+  "skill_ok_rate": 1.0,
+  "doc_hit_rate@5": 1.0,
+  "page_hit_rate@5": 0.9285714285714286,
+  "asset_trace_hit_rate@5": 0.9285714285714286,
+  "answer_cell_value_hit_rate": 0.6428571428571429,
+  "evidence_cell_value_hit_rate": 0.9285714285714286,
+  "cell_qa_success_rate": 0.9285714285714286,
+  "unexpected_error_count": 0,
+  "counts": {
+    "questions": 14,
+    "skill_ok": 14,
+    "doc_hit_at_5": 14,
+    "page_hit_at_5": 13,
+    "asset_trace_hit_at_5": 13,
+    "answer_cell_value_hit": 9,
+    "evidence_cell_value_hit": 13,
+    "cell_qa_success": 13,
+    "unexpected_errors": 0
+  },
+  "details": [
+    {
+      "qid": "table_cell_q0001",
+      "asset_id": "aapm_tg101_sbrt_p002_table_01",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "expected_page": 2,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": false,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0002",
+      "asset_id": "aapm_tg101_sbrt_p002_table_01",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "expected_page": 2,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": false,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0003",
+      "asset_id": "aapm_tg101_sbrt_p002_table_01",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "expected_page": 2,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0004",
+      "asset_id": "aapm_tg101_sbrt_p002_table_01",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "expected_page": 2,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0005",
+      "asset_id": "aapm_tg101_sbrt_p002_table_01",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "expected_page": 2,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg101_sbrt",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "aapm_tg120_imrt_dosimetry_tools"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0006",
+      "asset_id": "aapm_tg101_sbrt_p002_table_01",
+      "expected_doc_id": "aapm_tg101_sbrt",
+      "expected_page": 2,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg120_imrt_dosimetry_tools"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0007",
+      "asset_id": "aapm_tg100_radiotherapy_quality_management_p014_table_01",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "expected_page": 14,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0008",
+      "asset_id": "aapm_tg100_radiotherapy_quality_management_p014_table_01",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "expected_page": 14,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": false,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0009",
+      "asset_id": "aapm_tg100_radiotherapy_quality_management_p014_table_01",
+      "expected_doc_id": "aapm_tg100_radiotherapy_quality_management",
+      "expected_page": 14,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": false,
+      "asset_trace_hit_at_5": false,
+      "answer_cell_value_hit": false,
+      "evidence_cell_value_hit": false,
+      "cell_qa_success": false,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0010",
+      "asset_id": "aapm_report_113_physics_clinical_trials_p011_table_01",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_page": 11,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0011",
+      "asset_id": "aapm_report_113_physics_clinical_trials_p011_table_01",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_page": 11,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0012",
+      "asset_id": "aapm_report_113_physics_clinical_trials_p015_table_01",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_page": 15,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0013",
+      "asset_id": "aapm_report_113_physics_clinical_trials_p015_table_01",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_page": 15,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": true,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "table_cell_q0014",
+      "asset_id": "aapm_report_113_physics_clinical_trials_p015_table_01",
+      "expected_doc_id": "aapm_report_113_physics_clinical_trials",
+      "expected_page": 15,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "doc_hit_at_5": true,
+      "page_hit_at_5": true,
+      "asset_trace_hit_at_5": true,
+      "answer_cell_value_hit": false,
+      "evidence_cell_value_hit": true,
+      "cell_qa_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    }
+  ],
+  "metric_note": "Cell-level table QA checks exact short values in extracted table text previews. It is stricter than page-level asset proximity but still not human visual QA."
+}

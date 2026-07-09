@@ -4,8 +4,8 @@
 
 - Recall@3: 0.000
 - Recall@5: 0.000
-- Document Recall@3: 0.771
-- Document Recall@5: 0.861
+- Document Recall@3: 0.869
+- Document Recall@5: 0.918
 - MRR: 0.000
 - Abstention: TP=35, FP=0, TN=245, FN=0
 - Ignore report scope: True
@@ -14,8 +14,8 @@
 
 - Recall@3: 0.000
 - Recall@5: 0.000
-- Document Recall@3: 0.771
-- Document Recall@5: 0.820
+- Document Recall@3: 0.922
+- Document Recall@5: 0.947
 - MRR: 0.000
 - Abstention: TP=35, FP=0, TN=245, FN=0
 - Ignore report scope: True
@@ -24,8 +24,8 @@
 
 - Recall@3: 0.000
 - Recall@5: 0.000
-- Document Recall@3: 0.771
-- Document Recall@5: 0.820
+- Document Recall@3: 0.922
+- Document Recall@5: 0.947
 - MRR: 0.000
 - Abstention: TP=35, FP=0, TN=245, FN=0
 - Ignore report scope: True
@@ -34,8 +34,8 @@
 
 - Recall@3: 0.000
 - Recall@5: 0.000
-- Document Recall@3: 0.780
-- Document Recall@5: 0.861
+- Document Recall@3: 0.898
+- Document Recall@5: 0.927
 - MRR: 0.000
 - Abstention: TP=35, FP=0, TN=245, FN=0
 - Ignore report scope: True

@@ -11,7 +11,7 @@ section-location questions are treated more appropriately for technical PDFs.
 
 from __future__ import annotations
 
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
 import os
 import numpy as np
@@ -22,6 +22,7 @@ os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
 from src.retrieval.heuristics import compute_chunk_bonus, compute_rerank_adjustment, get_query_type
 from src.utils import simple_tokenize
 
+VALID_BACKENDS = {"auto", "lexical", "cross_encoder", "hf"}
 FORCE_LEXICAL = os.getenv("RAG_FORCE_LEXICAL_RERANK", "").lower() in {"1", "true", "yes"} or os.getenv(
     "RAG_FORCE_HASH_EMBEDDINGS", ""
 ).lower() in {"1", "true", "yes"}
@@ -47,6 +48,9 @@ else:
         AutoModelForSequenceClassification = None
         AutoTokenizer = None
 
+_CROSS_ENCODER_CACHE: Dict[Tuple[str, int], Any] = {}
+_HF_RERANKER_CACHE: Dict[Tuple[str, str], Tuple[Any, Any, str]] = {}
+
 
 class CandidateReranker:
     """Re-rank candidate chunks for a given query."""
@@ -55,7 +59,12 @@ class CandidateReranker:
         self.model_name = model_name
         self.max_length = max_length
         self.use_heuristics = use_heuristics
-        self.backend = backend
+        requested_backend = (backend or os.getenv("RAG_RERANKER_BACKEND", "auto")).lower()
+        if requested_backend not in VALID_BACKENDS:
+            requested_backend = "auto"
+        self.backend = requested_backend
+        self.requested_backend = requested_backend
+        self.resolved_backend = "lexical"
         self.cross_encoder = None
         self.hf_tokenizer = None
         self.hf_model = None
@@ -63,28 +72,43 @@ class CandidateReranker:
 
         if FORCE_LEXICAL:
             self.backend = "lexical"
+            self.requested_backend = "lexical"
 
         if self.backend == "lexical":
+            self.resolved_backend = "lexical"
             return
 
-        if CrossEncoder is not None:
+        if self.backend in {"auto", "cross_encoder"} and CrossEncoder is not None:
             try:
-                self.cross_encoder = CrossEncoder(model_name, max_length=max_length)
+                cache_key = (model_name, max_length)
+                if cache_key not in _CROSS_ENCODER_CACHE:
+                    _CROSS_ENCODER_CACHE[cache_key] = CrossEncoder(model_name, max_length=max_length)
+                self.cross_encoder = _CROSS_ENCODER_CACHE[cache_key]
+                self.resolved_backend = "cross_encoder"
                 return
             except Exception:
                 self.cross_encoder = None
 
-        if AutoTokenizer is not None and AutoModelForSequenceClassification is not None and torch is not None:
+        if self.backend in {"auto", "hf"} and AutoTokenizer is not None and AutoModelForSequenceClassification is not None and torch is not None:
             try:
-                self.hf_tokenizer = AutoTokenizer.from_pretrained(model_name)
-                self.hf_model = AutoModelForSequenceClassification.from_pretrained(model_name)
-                self.device = "cuda" if torch.cuda.is_available() else "cpu"
-                self.hf_model.to(self.device)
-                self.hf_model.eval()
+                device = "cuda" if torch.cuda.is_available() else "cpu"
+                cache_key = (model_name, device)
+                if cache_key not in _HF_RERANKER_CACHE:
+                    tokenizer = AutoTokenizer.from_pretrained(model_name)
+                    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+                    model.to(device)
+                    model.eval()
+                    _HF_RERANKER_CACHE[cache_key] = (tokenizer, model, device)
+                self.hf_tokenizer, self.hf_model, self.device = _HF_RERANKER_CACHE[cache_key]
+                self.resolved_backend = "hf_sequence_classifier"
             except Exception:
                 self.hf_tokenizer = None
                 self.hf_model = None
                 self.device = None
+        if self.resolved_backend == "lexical" and os.getenv("RAG_RERANKER_STRICT", "").lower() in {"1", "true", "yes"}:
+            raise RuntimeError(
+                f"Requested reranker backend '{self.requested_backend}' could not be loaded for model '{model_name}'."
+            )
 
     def rerank(self, query: str, candidates: List[Dict], top_k: int = 5) -> List[Dict]:
         if not candidates:
@@ -122,6 +146,9 @@ class CandidateReranker:
             candidate["rerank_heuristic_bonus"] = float(rerank_bonus)
             candidate["rerank_retrieval_bonus"] = float(retrieval_bonus)
             candidate["rerank_score"] = float(blended + rerank_bonus + retrieval_bonus_weight * retrieval_bonus)
+            candidate["reranker_backend"] = self.resolved_backend
+            candidate["reranker_requested_backend"] = self.requested_backend
+            candidate["reranker_model_name"] = self.model_name if self.resolved_backend != "lexical" else ""
 
         ranked = sorted(candidates, key=lambda x: x.get("rerank_score", 0.0), reverse=True)[:top_k]
         for rank, item in enumerate(ranked, start=1):

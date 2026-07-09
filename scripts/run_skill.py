@@ -380,9 +380,9 @@ def collect_sparse_evidence(
 ) -> List[Dict[str, Any]]:
     """Retrieve evidence with only the local BM25 index.
 
-    This path is intentionally model-free. It keeps the plugin usable in CI,
-    offline demos, and ordinary downloads where Hugging Face models have not
-    been cached yet.
+    This path is model-free by default. Set RAG_SPARSE_RERANK_BACKEND to
+    cross_encoder or auto when a formal experiment should apply neural
+    reranking to BM25 candidates too.
     """
     metadata_path = index_dir / "metadata" / "chunk_metadata.jsonl"
     cache_key = str(metadata_path.resolve())
@@ -420,7 +420,8 @@ def collect_sparse_evidence(
     ]
     for rank, item in enumerate(candidates, start=1):
         item["retrieval_rank"] = rank
-    return rerank_and_refine(query, candidates, evidence_top_k=evidence_top_k, rerank_backend="lexical")
+    sparse_rerank_backend = os.getenv("RAG_SPARSE_RERANK_BACKEND", "lexical")
+    return rerank_and_refine(query, candidates, evidence_top_k=evidence_top_k, rerank_backend=sparse_rerank_backend)
 
 
 def rerank_and_refine(
@@ -429,11 +430,12 @@ def rerank_and_refine(
     evidence_top_k: Optional[int] = None,
     rerank_backend: str = "auto",
 ) -> List[Dict[str, Any]]:
+    selected_rerank_backend = MODELS.reranker_backend if rerank_backend == "auto" else rerank_backend
     reranker = CandidateReranker(
         MODELS.reranker_model_name,
         max_length=MODELS.reranker_max_length,
         use_heuristics=RETRIEVAL.use_rerank_heuristics,
-        backend=rerank_backend,
+        backend=selected_rerank_backend,
     )
     evidence = reranker.rerank(query, candidates, top_k=RETRIEVAL.rerank_top_k)
     evidence = refine_evidence(query, evidence, evidence_top_k=evidence_top_k)
@@ -737,6 +739,7 @@ def find_nearby_assets(
                     "caption": str(asset.get("caption", "") or "")[:240],
                     "rows": asset.get("rows"),
                     "columns": asset.get("columns"),
+                    "text_preview": str(asset.get("text_preview", "") or "")[:900],
                     "width": asset.get("width"),
                     "height": asset.get("height"),
                 }
@@ -792,6 +795,9 @@ def flatten_evidence(evidence: List[Dict[str, Any]], project_root: Optional[Path
                     "rerank_retrieval_bonus": safe_float(item.get("rerank_retrieval_bonus")),
                     "rerank_score": safe_float(item.get("rerank_score")),
                     "rerank_rank": item.get("rank"),
+                    "reranker_backend": item.get("reranker_backend"),
+                    "reranker_requested_backend": item.get("reranker_requested_backend"),
+                    "reranker_model_name": item.get("reranker_model_name"),
                 },
             }
         )
@@ -812,10 +818,29 @@ def base_success(
         if retrieval_backend == "hybrid"
         else "local BM25 sparse search"
     )
+    heuristic_label = (
+        "with report-aware heuristics"
+        if RETRIEVAL.use_retrieval_heuristics or RETRIEVAL.use_rerank_heuristics
+        else "without report-aware heuristics"
+    )
     routing_items = [
         item for item in (retrieval_warnings or [])
         if item.get("code") == "routing_decision"
     ]
+    reranker_backends = sorted(
+        {
+            str(item.get("reranker_backend"))
+            for item in evidence
+            if item.get("reranker_backend")
+        }
+    )
+    reranker_models = sorted(
+        {
+            str(item.get("reranker_model_name"))
+            for item in evidence
+            if item.get("reranker_model_name")
+        }
+    )
     return {
         "ok": True,
         "schema_version": SCHEMA_VERSION,
@@ -829,10 +854,12 @@ def base_success(
             "retrieval": retrieval_label,
             "retrieval_backend": retrieval_backend,
             "retrieval_warnings": retrieval_warnings or [],
-            "fusion": "reciprocal-rank fusion with report-aware heuristics"
+            "fusion": f"reciprocal-rank fusion {heuristic_label}"
             if retrieval_backend == "hybrid"
-            else "BM25 ranking with report-aware heuristics",
+            else f"BM25 ranking {heuristic_label}",
             "post_retrieval": "candidate reranking and evidence refinement",
+            "reranker_backends": reranker_backends,
+            "reranker_models": reranker_models,
             "answer_boundary": "answers must use returned evidence only",
             "routing": routing_items[-1] if routing_items else None,
         },
@@ -843,7 +870,11 @@ def base_success(
     }
 
 
-def build_extractive_answer(query: str, evidence: List[Dict[str, Any]]) -> Dict[str, Any]:
+def build_extractive_answer(
+    query: str,
+    evidence: List[Dict[str, Any]],
+    project_root: Optional[Path] = None,
+) -> Dict[str, Any]:
     """Return a conservative no-model answer assembled from retrieved evidence."""
     if not evidence:
         return {
@@ -863,6 +894,24 @@ def build_extractive_answer(query: str, evidence: List[Dict[str, Any]]) -> Dict[
         snippet = text[:700].rstrip()
         if len(text) > len(snippet):
             snippet += "..."
+        if project_root is not None and is_asset_page_query(query):
+            nearby_assets = find_nearby_assets(
+                project_root,
+                str(chunk.get("doc_id")),
+                int(chunk.get("page_start", 0)),
+                int(chunk.get("page_end", 0)),
+                window_pages=1,
+                limit=3,
+            )
+            asset_snippets = []
+            for asset in nearby_assets:
+                preview = " ".join(str(asset.get("text_preview", "") or "").split())
+                caption = " ".join(str(asset.get("caption", "") or "").split())
+                asset_text = "; ".join(part for part in [caption, preview[:500]] if part)
+                if asset_text:
+                    asset_snippets.append(f"{asset.get('asset_id')}: {asset_text}")
+            if asset_snippets:
+                snippet = snippet + "\nNearby table/figure text: " + " | ".join(asset_snippets)
         used.append(f"E{idx}")
         answer_parts.append(f"[E{idx}] {snippet}")
 
@@ -970,7 +1019,7 @@ def run_skill(
         result["answer_engine"] = engine
 
         if engine == "extractive":
-            answer = build_extractive_answer(query, evidence)
+            answer = build_extractive_answer(query, evidence, project_root=index_dir.parent)
             result["answer"] = answer["answer"]
             result["confidence"] = answer["confidence"]
             result["evidence_status"] = answer["evidence_status"]

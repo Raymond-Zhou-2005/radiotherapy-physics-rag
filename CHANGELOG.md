@@ -1,29 +1,30 @@
 # Changelog
 
-## Unreleased
+## 2.1.0 - 2026-07-09
+
+- Added real cross-encoder reranking with `BAAI/bge-reranker-base`, backend caching, explicit backend metadata in evidence scores, and lexical fallback for offline use.
+- Rebuilt and evaluated the preferred retrieval profile as semantic dense + BM25 hybrid retrieval with cross-encoder reranking and report-aware heuristics disabled.
+- Added formal ablation evaluation across BM25, semantic hybrid, cross-encoder, report-aware heuristics, and routing variants. Current safest default reaches Document Recall@5 0.947 with OOD TP/FN 35/0 on the 280-question public benchmark.
+- Added 12 external public gold-answer seed questions and evaluation. Current gold-answer success is 0.583, exposing the limitation of extractive-only answers on calculation/public-answer-key tasks.
+- Added 14 cell-level table QA questions from extracted public PDF table text previews. Current Cell QA success is 0.929 and evidence cell-value hit is 0.929.
+- Added 12 realistic agent-task evaluations covering evidence lookup, bundle generation, table asset trace, and hard medical-boundary OOD refusal. Current task success is 1.000.
+- Added paper experiment matrix generation with 17 experiment rows covering retrieval ablations, strategy evaluation, agent contract, agent tasks, asset QA, table-cell QA, gold-answer seed, answer-quality proxy, and navigator metrics.
+- Added `.zenodo.json` metadata and release DOI checklist steps. No fake DOI is committed.
+- Extended hard OOD routing for medication dose adjustment, insulin/hypoglycemia, stroke MRI, and similar medically related but non-radiotherapy-physics questions.
+- Exposed nearby table/figure `text_preview` metadata in evidence outputs and table-aware extractive answer snippets for explicit asset/page queries.
+- Updated current public results: auto/hybrid Document Recall@5 0.947, agent skill Document Hit@5 0.947, answer-quality grounded token overlap 0.993, unsupported number case rate 0.000, and OOD abstention 1.000.
+
+## 2.0.1 - 2026-07-09
 
 - Rebuilt the dense index with a real semantic embedding model: `BAAI/bge-small-en-v1.5` via `sentence-transformers`, 384 dimensions, plus FAISS search.
-- Added report-aware ranking cues for TG, AAPM Report, IAEA TRS, TECDOC, HHR/HHS, SSG, SRS, and publication numbers, plus title-overlap bonuses.
-- Expanded the benchmark to 280 questions with 20 additional hard medical-boundary OOD controls; current OOD abstention is 1.000 for sparse, hybrid, auto, and routed strategies.
-- Added table/figure asset benchmark generation and evaluation; current routed asset metadata QA reaches Document Hit@5 1.000, Page Hit@5 0.983, and Asset ID Trace@5 0.950.
-- Added answer-quality proxy evaluation for extractive answers; current routed evaluation has citation marker rate 1.000, valid evidence ID rate 1.000, grounded token overlap 0.994, and OOD abstention 1.000.
-- Updated routed retrieval to prefer sparse retrieval for direct report lookup and QA/procedure questions, while reserving semantic hybrid retrieval for broader comparison and synthesis tasks.
-- Expanded the public source catalog to 49 records and the current local runtime to 49 indexed PDFs.
-- Rebuilt the runtime corpus with 10923 chunks, 49 local ChatGPT Knowledge upload files, and PDF asset metadata for 655 tables and 3263 images.
-- Added five direct-download IAEA sources covering 3DCRT/IMRT transition, national radiotherapy services, facility radiation protection, medical radiation safety, and global radiotherapy access.
-- Refreshed TG100 and TG158 into the local runtime and added 12 additional public/free-access AAPM reports covering accelerator QA, IMRT commissioning and QA, beam data, IGRT, SBRT, image registration, imaging dose, and Tomotherapy QA.
+- Expanded the public source catalog to 49 records and the local runtime to 49 indexed PDFs, 10923 chunks, 49 local ChatGPT Knowledge upload files, and PDF asset metadata for 655 tables and 3263 images.
+- Refreshed TG100 and TG158 into the local runtime and added additional public/free-access AAPM and IAEA reports covering accelerator QA, IMRT commissioning and QA, beam data, IGRT, SBRT, image registration, imaging dose, Tomotherapy QA, radiation safety, and global radiotherapy access.
 - Added a 280-question open-source topic benchmark generated from public source metadata, with 245 in-domain questions and 35 OOD controls.
-- Added strategy, navigator, and agent-skill contract evaluations for sparse, semantic hybrid, auto, and routed retrieval; sparse and routed Document Recall@5 are 0.861, semantic hybrid and auto Document Recall@5 are 0.820, and routed agent Document Hit Rate@5 is 0.861 on the current benchmark.
-- Added an explicit OOD sufficiency gate for non-radiotherapy controls; current OOD abstention success is 1.000 on the public control set.
+- Added navigator, strategy, agent-skill, asset metadata, and answer-quality proxy evaluations.
 - Added no-model hash dense and lexical rerank controls for reproducible public benchmarking.
-- Updated `auto` and `routed` retrieval so a hash dense index is treated as a reproducibility baseline, not a semantic dense index; both now fall back to sparse retrieval unless a semantic dense index is available.
 - Made routed retrieval memory appends opt-in with `RAG_EXPERIENCE_APPEND=1` and excluded local memory logs from the public release.
-- Added public release build and audit scripts to create a clean GitHub package without PDFs, parsed text, chunks, indexes, or generated upload files.
-- Allowed `auto` and `sparse` retrieval to run from sparse BM25 plus chunk metadata without requiring dense index files.
-- Added a sparse-only index builder and `prepare_index.py --index-backend sparse` for the no-model path.
-- Added display-ready citation strings, `page_range`, and `source_path` to evidence and citation outputs.
+- Added public release build and audit scripts to create a clean GitHub package without PDFs, parsed text, chunks, indexes, extracted asset records, or generated upload files.
 - Clarified no-code user surfaces for Codex Plugin and ChatGPT Knowledge while keeping Python as the local build/retrieval engine.
-- Clarified that evaluation assets live in the repository `evaluation/` folder and remain separate from runtime skill files.
 
 ## 2.0.0 - 2026-06-12
 

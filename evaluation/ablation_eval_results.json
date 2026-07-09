@@ -1,0 +1,163 @@
+{
+  "question_file": "evaluation\\radiotherapy_skill_open_questions.json",
+  "index_dir": "index",
+  "ignore_report_scope": true,
+  "variants": [
+    {
+      "variant": "bm25_lexical_no_reportaware",
+      "description": "BM25 candidates, lexical rerank, report-aware heuristics disabled.",
+      "strategy": "sparse",
+      "uses_dense": false,
+      "uses_cross_encoder": false,
+      "uses_reportaware": false,
+      "uses_routing": false,
+      "ok": true,
+      "questions": 280,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "doc_recall@3": 0.8693877551020408,
+      "doc_recall@5": 0.9183673469387755,
+      "mrr": 0.0,
+      "abstention": {
+        "tp": 35,
+        "fp": 0,
+        "tn": 245,
+        "fn": 0
+      },
+      "observed_reranker_backends": [
+        "lexical"
+      ],
+      "ignore_report_scope": true
+    },
+    {
+      "variant": "bm25_lexical_reportaware",
+      "description": "BM25 candidates, lexical rerank, report-aware heuristics enabled.",
+      "strategy": "sparse",
+      "uses_dense": false,
+      "uses_cross_encoder": false,
+      "uses_reportaware": true,
+      "uses_routing": false,
+      "ok": true,
+      "questions": 280,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "doc_recall@3": 0.7714285714285715,
+      "doc_recall@5": 0.8612244897959184,
+      "mrr": 0.0,
+      "abstention": {
+        "tp": 35,
+        "fp": 0,
+        "tn": 245,
+        "fn": 0
+      },
+      "observed_reranker_backends": [
+        "lexical"
+      ],
+      "ignore_report_scope": true
+    },
+    {
+      "variant": "hybrid_lexical_no_reportaware",
+      "description": "Semantic dense + BM25 hybrid candidates, lexical rerank, report-aware heuristics disabled.",
+      "strategy": "hybrid",
+      "uses_dense": true,
+      "uses_cross_encoder": false,
+      "uses_reportaware": false,
+      "uses_routing": false,
+      "ok": true,
+      "questions": 280,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "doc_recall@3": 0.9102040816326531,
+      "doc_recall@5": 0.9551020408163265,
+      "mrr": 0.0,
+      "abstention": {
+        "tp": 34,
+        "fp": 0,
+        "tn": 245,
+        "fn": 1
+      },
+      "observed_reranker_backends": [
+        "lexical"
+      ],
+      "ignore_report_scope": true
+    },
+    {
+      "variant": "hybrid_crossencoder_no_reportaware",
+      "description": "Semantic dense + BM25 hybrid candidates, cross-encoder rerank, report-aware heuristics disabled.",
+      "strategy": "hybrid",
+      "uses_dense": true,
+      "uses_cross_encoder": true,
+      "uses_reportaware": false,
+      "uses_routing": false,
+      "ok": true,
+      "questions": 280,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "doc_recall@3": 0.9224489795918367,
+      "doc_recall@5": 0.9469387755102041,
+      "mrr": 0.0,
+      "abstention": {
+        "tp": 35,
+        "fp": 0,
+        "tn": 245,
+        "fn": 0
+      },
+      "observed_reranker_backends": [
+        "cross_encoder"
+      ],
+      "ignore_report_scope": true
+    },
+    {
+      "variant": "hybrid_crossencoder_reportaware",
+      "description": "Semantic dense + BM25 hybrid candidates, cross-encoder rerank, report-aware heuristics enabled.",
+      "strategy": "hybrid",
+      "uses_dense": true,
+      "uses_cross_encoder": true,
+      "uses_reportaware": true,
+      "uses_routing": false,
+      "ok": true,
+      "questions": 280,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "doc_recall@3": 0.7795918367346939,
+      "doc_recall@5": 0.8734693877551021,
+      "mrr": 0.0,
+      "abstention": {
+        "tp": 34,
+        "fp": 0,
+        "tn": 245,
+        "fn": 1
+      },
+      "observed_reranker_backends": [
+        "cross_encoder"
+      ],
+      "ignore_report_scope": true
+    },
+    {
+      "variant": "routed_full",
+      "description": "Scene-routed retrieval with semantic dense available, cross-encoder rerank, report-aware heuristics enabled.",
+      "strategy": "routed",
+      "uses_dense": true,
+      "uses_cross_encoder": true,
+      "uses_reportaware": true,
+      "uses_routing": true,
+      "ok": true,
+      "questions": 280,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "doc_recall@3": 0.8204081632653061,
+      "doc_recall@5": 0.8979591836734694,
+      "mrr": 0.0,
+      "abstention": {
+        "tp": 34,
+        "fp": 0,
+        "tn": 245,
+        "fn": 1
+      },
+      "observed_reranker_backends": [
+        "cross_encoder"
+      ],
+      "ignore_report_scope": true
+    }
+  ]
+}

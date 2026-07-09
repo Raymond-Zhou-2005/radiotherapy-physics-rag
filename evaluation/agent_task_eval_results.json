@@ -1,0 +1,319 @@
+{
+  "tasks": 12,
+  "retrieval_backend": "auto",
+  "evidence_top_k": 8,
+  "task_success_rate": 1.0,
+  "structured_success_rate": 0.75,
+  "doc_hit_rate@5": 1.0,
+  "citation_success_rate": 1.0,
+  "bundle_prompt_success_rate": 1.0,
+  "asset_trace_success_rate": 1.0,
+  "answer_value_success_rate": 1.0,
+  "ood_abstention_success_rate": 1.0,
+  "unexpected_error_count": 0,
+  "counts": {
+    "tasks": 12,
+    "in_scope": 9,
+    "ood": 3,
+    "structured_success": 9,
+    "doc_hit_at_5": 9,
+    "citation_success": 9,
+    "bundle_prompt_success": 9,
+    "asset_trace_success": 9,
+    "answer_value_success": 9,
+    "abstention_success": 3,
+    "task_success": 12,
+    "unexpected_errors": 0
+  },
+  "details": [
+    {
+      "qid": "agent_task_q0001",
+      "task": "Collect cited evidence for an agent drafting a medical accelerator QA implementation note.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0002",
+      "task": "Build a grounded prompt bundle for treatment planning system commissioning QA.",
+      "mode": "bundle",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0003",
+      "task": "Collect evidence for risk-analysis/FMEA quality management in radiotherapy.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0004",
+      "task": "Answer a table-cell question and preserve the table asset trace.",
+      "mode": "answer",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0005",
+      "task": "Collect evidence for image-guided radiotherapy QA.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0006",
+      "task": "Collect evidence for absorbed-dose reference dosimetry.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0007",
+      "task": "Collect evidence for target and OAR naming conventions.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg263_nomenclature",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0008",
+      "task": "Collect evidence for clinical-trial physics QA responsibilities.",
+      "mode": "evidence",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0009",
+      "task": "Build a bundle for brachytherapy dosimetry evidence.",
+      "mode": "bundle",
+      "expected_abstain": false,
+      "ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "aapm_report_46_tg40_radiation_oncology_qa"
+      ],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": false,
+      "task_success": true,
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "agent_task_q0010",
+      "task": "Reject a medically related but non-radiotherapy-physics query.",
+      "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0011",
+      "task": "Reject a clinical medication-management query outside the corpus.",
+      "mode": "answer",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "agent_task_q0012",
+      "task": "Reject a medical-imaging question that is not radiotherapy physics guidance.",
+      "mode": "evidence",
+      "expected_abstain": true,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "doc_hit_at_5": true,
+      "citation_success": true,
+      "bundle_prompt_success": true,
+      "asset_trace_success": true,
+      "answer_value_success": true,
+      "abstention_success": true,
+      "task_success": true,
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    }
+  ],
+  "metric_note": "Agent-task evaluation checks reusable skill contract behaviour, not only retrieval recall."
+}

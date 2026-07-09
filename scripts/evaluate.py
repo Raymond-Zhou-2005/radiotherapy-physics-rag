@@ -49,6 +49,7 @@ def evaluate_retrieval(
     doc_r5 = []
     abstain_counts = {"tp": 0, "fp": 0, "tn": 0, "fn": 0}
     detailed = []
+    observed_reranker_backends = set()
 
     for q in questions:
         expected_doc_id = q.get("report_id")
@@ -62,6 +63,8 @@ def evaluate_retrieval(
         retrieved_ids = [item["chunk_id"] for item in ranked]
         retrieved_doc_ids = [item["chunk"]["doc_id"] for item in ranked]
         retrieved_sections = [item["chunk"]["section"] for item in ranked]
+        reranker_backends = sorted({str(item.get("reranker_backend")) for item in ranked if item.get("reranker_backend")})
+        observed_reranker_backends.update(reranker_backends)
 
         if q.get("gold_chunk_ids"):
             r3.append(recall_at_k(retrieved_ids, q["gold_chunk_ids"], 3))
@@ -92,6 +95,7 @@ def evaluate_retrieval(
                 "retrieved_chunk_ids": retrieved_ids,
                 "retrieved_doc_ids": retrieved_doc_ids,
                 "retrieved_sections": retrieved_sections,
+                "reranker_backends": reranker_backends,
                 "predicted_abstain_proxy": pred_abstained,
                 "expected_abstain": gold_should_abstain,
                 "source_basis": q.get("source_basis") or q.get("authority_source", ""),
@@ -111,6 +115,7 @@ def evaluate_retrieval(
         "mrr": sum(reciprocal_ranks) / len(reciprocal_ranks) if reciprocal_ranks else 0.0,
         "abstention": abstain_counts,
         "retrieval_backend": retrieval_backend,
+        "observed_reranker_backends": sorted(observed_reranker_backends),
         "ignore_report_scope": ignore_report_scope,
         "details": detailed,
     }
@@ -126,6 +131,7 @@ def write_markdown_report(summary: Dict, output_path: Path) -> None:
     lines.append(f"- Document Recall@3: {summary['doc_recall@3']:.3f}")
     lines.append(f"- Document Recall@5: {summary['doc_recall@5']:.3f}")
     lines.append(f"- MRR: {summary['mrr']:.3f}")
+    lines.append(f"- Observed reranker backends: {', '.join(summary.get('observed_reranker_backends', []))}")
     lines.append(
         f"- Abstention confusion counts: TP={summary['abstention']['tp']}, FP={summary['abstention']['fp']}, TN={summary['abstention']['tn']}, FN={summary['abstention']['fn']}"
     )

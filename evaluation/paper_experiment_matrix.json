@@ -1,0 +1,300 @@
+{
+  "matrix_version": "1.0",
+  "evaluation_dir": "evaluation",
+  "experiment_count": 17,
+  "rows": [
+    {
+      "experiment": "Ablation: bm25_lexical_no_reportaware",
+      "artifact": "evaluation/ablation_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.9183673469387755,
+      "secondary_metrics": {
+        "MRR": 0.0,
+        "Recall@5": 0.0,
+        "Observed reranker": [
+          "lexical"
+        ],
+        "Uses dense": false,
+        "Uses cross encoder": false,
+        "Uses report-aware heuristics": false,
+        "Uses routing": false
+      },
+      "note": "BM25 candidates, lexical rerank, report-aware heuristics disabled."
+    },
+    {
+      "experiment": "Ablation: bm25_lexical_reportaware",
+      "artifact": "evaluation/ablation_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.8612244897959184,
+      "secondary_metrics": {
+        "MRR": 0.0,
+        "Recall@5": 0.0,
+        "Observed reranker": [
+          "lexical"
+        ],
+        "Uses dense": false,
+        "Uses cross encoder": false,
+        "Uses report-aware heuristics": true,
+        "Uses routing": false
+      },
+      "note": "BM25 candidates, lexical rerank, report-aware heuristics enabled."
+    },
+    {
+      "experiment": "Ablation: hybrid_lexical_no_reportaware",
+      "artifact": "evaluation/ablation_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.9551020408163265,
+      "secondary_metrics": {
+        "MRR": 0.0,
+        "Recall@5": 0.0,
+        "Observed reranker": [
+          "lexical"
+        ],
+        "Uses dense": true,
+        "Uses cross encoder": false,
+        "Uses report-aware heuristics": false,
+        "Uses routing": false
+      },
+      "note": "Semantic dense + BM25 hybrid candidates, lexical rerank, report-aware heuristics disabled."
+    },
+    {
+      "experiment": "Ablation: hybrid_crossencoder_no_reportaware",
+      "artifact": "evaluation/ablation_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.9469387755102041,
+      "secondary_metrics": {
+        "MRR": 0.0,
+        "Recall@5": 0.0,
+        "Observed reranker": [
+          "cross_encoder"
+        ],
+        "Uses dense": true,
+        "Uses cross encoder": true,
+        "Uses report-aware heuristics": false,
+        "Uses routing": false
+      },
+      "note": "Semantic dense + BM25 hybrid candidates, cross-encoder rerank, report-aware heuristics disabled."
+    },
+    {
+      "experiment": "Ablation: hybrid_crossencoder_reportaware",
+      "artifact": "evaluation/ablation_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.8734693877551021,
+      "secondary_metrics": {
+        "MRR": 0.0,
+        "Recall@5": 0.0,
+        "Observed reranker": [
+          "cross_encoder"
+        ],
+        "Uses dense": true,
+        "Uses cross encoder": true,
+        "Uses report-aware heuristics": true,
+        "Uses routing": false
+      },
+      "note": "Semantic dense + BM25 hybrid candidates, cross-encoder rerank, report-aware heuristics enabled."
+    },
+    {
+      "experiment": "Ablation: routed_full",
+      "artifact": "evaluation/ablation_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.8979591836734694,
+      "secondary_metrics": {
+        "MRR": 0.0,
+        "Recall@5": 0.0,
+        "Observed reranker": [
+          "cross_encoder"
+        ],
+        "Uses dense": true,
+        "Uses cross encoder": true,
+        "Uses report-aware heuristics": true,
+        "Uses routing": true
+      },
+      "note": "Scene-routed retrieval with semantic dense available, cross-encoder rerank, report-aware heuristics enabled."
+    },
+    {
+      "experiment": "Retrieval strategy: sparse",
+      "artifact": "evaluation/strategy_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.9183673469387755,
+      "secondary_metrics": {
+        "Document Recall@3": 0.8693877551020408,
+        "MRR": 0.0,
+        "Abstention": {
+          "tp": 35,
+          "fp": 0,
+          "tn": 245,
+          "fn": 0
+        },
+        "Observed reranker": [
+          "lexical"
+        ]
+      },
+      "note": "Open-source topic retrieval benchmark; not expert answer grading."
+    },
+    {
+      "experiment": "Retrieval strategy: hybrid",
+      "artifact": "evaluation/strategy_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.9469387755102041,
+      "secondary_metrics": {
+        "Document Recall@3": 0.9224489795918367,
+        "MRR": 0.0,
+        "Abstention": {
+          "tp": 35,
+          "fp": 0,
+          "tn": 245,
+          "fn": 0
+        },
+        "Observed reranker": [
+          "cross_encoder"
+        ]
+      },
+      "note": "Open-source topic retrieval benchmark; not expert answer grading."
+    },
+    {
+      "experiment": "Retrieval strategy: auto",
+      "artifact": "evaluation/strategy_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.9469387755102041,
+      "secondary_metrics": {
+        "Document Recall@3": 0.9224489795918367,
+        "MRR": 0.0,
+        "Abstention": {
+          "tp": 35,
+          "fp": 0,
+          "tn": 245,
+          "fn": 0
+        },
+        "Observed reranker": [
+          "cross_encoder"
+        ]
+      },
+      "note": "Open-source topic retrieval benchmark; not expert answer grading."
+    },
+    {
+      "experiment": "Retrieval strategy: routed",
+      "artifact": "evaluation/strategy_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Recall@5",
+      "primary_value": 0.926530612244898,
+      "secondary_metrics": {
+        "Document Recall@3": 0.8979591836734694,
+        "MRR": 0.0,
+        "Abstention": {
+          "tp": 35,
+          "fp": 0,
+          "tn": 245,
+          "fn": 0
+        },
+        "Observed reranker": [
+          "cross_encoder",
+          "lexical"
+        ]
+      },
+      "note": "Open-source topic retrieval benchmark; not expert answer grading."
+    },
+    {
+      "experiment": "Agent-facing skill contract",
+      "artifact": "evaluation/agent_skill_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Document Hit Rate@5",
+      "primary_value": 0.9469387755102041,
+      "secondary_metrics": {
+        "Citation present": 1.0,
+        "OOD abstention": 1.0,
+        "Unexpected errors": 0
+      },
+      "note": "End-to-end skill invocation without an external LLM API."
+    },
+    {
+      "experiment": "Realistic agent tasks",
+      "artifact": "evaluation/agent_task_eval_results.json",
+      "sample_count": 12,
+      "primary_metric": "Task success rate",
+      "primary_value": 1.0,
+      "secondary_metrics": {
+        "Structured success": 0.75,
+        "Citation success": 1.0,
+        "Bundle prompt success": 1.0,
+        "Asset trace success": 1.0,
+        "OOD abstention": 1.0
+      },
+      "note": "Checks reusable skill contract behaviour for downstream agents."
+    },
+    {
+      "experiment": "Table/figure asset proximity",
+      "artifact": "evaluation/asset_qa_eval_results.json",
+      "sample_count": 120,
+      "primary_metric": "Asset ID Trace Hit Rate@5",
+      "primary_value": 0.95,
+      "secondary_metrics": {
+        "Document Hit@5": 1.0,
+        "Page Hit@5": 0.9833333333333333,
+        "Asset Type Trace@5": 0.975
+      },
+      "note": "Metadata proximity check, not visual interpretation."
+    },
+    {
+      "experiment": "Cell-level table QA",
+      "artifact": "evaluation/table_cell_qa_eval_results.json",
+      "sample_count": 14,
+      "primary_metric": "Cell QA success rate",
+      "primary_value": 0.9285714285714286,
+      "secondary_metrics": {
+        "Evidence cell value hit": 0.9285714285714286,
+        "Answer cell value hit": 0.6428571428571429,
+        "Asset trace@5": 0.9285714285714286,
+        "Page Hit@5": 0.9285714285714286
+      },
+      "note": "Checks short values from extracted table text previews."
+    },
+    {
+      "experiment": "External gold-answer seed",
+      "artifact": "evaluation/gold_answer_eval_results.json",
+      "sample_count": 12,
+      "primary_metric": "Gold-answer success rate",
+      "primary_value": 0.5833333333333334,
+      "secondary_metrics": {
+        "Evidence value hit": 0.5833333333333334,
+        "Answer value hit": 0.3333333333333333,
+        "Citation present": 0.9166666666666666
+      },
+      "note": "Public short-answer seed; not expert clinical grading."
+    },
+    {
+      "experiment": "Answer-quality proxy",
+      "artifact": "evaluation/answer_quality_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Mean grounded token overlap",
+      "primary_value": 0.992622076447844,
+      "secondary_metrics": {
+        "Citation marker": 1.0,
+        "Evidence ID valid": 1.0,
+        "Unsupported number case": 0.0,
+        "Overclaim flag": 0.02040816326530612,
+        "OOD abstention": 1.0
+      },
+      "note": "Automatic faithfulness proxy; not expert correctness grading."
+    },
+    {
+      "experiment": "Navigator retrieval",
+      "artifact": "evaluation/navigator_eval_results.json",
+      "sample_count": 280,
+      "primary_metric": "Topic Recall@3",
+      "primary_value": 0.9673469387755103,
+      "secondary_metrics": {
+        "Candidate Document Recall@5": 0.673469387755102
+      },
+      "note": "Checks navigable topic index support."
+    }
+  ]
+}

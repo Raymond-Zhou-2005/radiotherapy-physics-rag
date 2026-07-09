@@ -1,0 +1,30 @@
+{
+  "title": "Radiotherapy Physics RAG Skill",
+  "description": "A local-first, agent-facing radiotherapy physics retrieval skill with BM25/semantic retrieval, cross-encoder reranking, report-aware heuristics, table/figure evidence traces, MCP support, and reproducible public evaluation scripts.",
+  "creators": [
+    {
+      "name": "Raymond-Zhou-2005"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "retrieval-augmented generation",
+    "radiotherapy",
+    "medical physics",
+    "Codex skill",
+    "MCP",
+    "BM25",
+    "FAISS",
+    "cross-encoder reranking",
+    "evidence-grounded QA"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "upload_type": "software"
+}

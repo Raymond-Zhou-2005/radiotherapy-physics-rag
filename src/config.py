@@ -32,7 +32,7 @@ class ModelConfig:
     Retrieval and generation are intentionally separated.
     The default retrieval setup is semantic but lightweight:
     - Dense retrieval: BAAI/bge-small-en-v1.5
-    - Reranking: BGE reranker v2 m3
+    - Reranking: BAAI/bge-reranker-base cross-encoder
     These can be overridden through environment variables.
     """
 
@@ -42,8 +42,9 @@ class ModelConfig:
     )
     reranker_model_name: str = os.getenv(
         "RERANKER_MODEL_NAME",
-        "BAAI/bge-reranker-v2-m3",
+        "BAAI/bge-reranker-base",
     )
+    reranker_backend: str = os.getenv("RAG_RERANKER_BACKEND", "auto")
     medgemma_model_name_or_path: str = os.getenv(
         "MEDGEMMA_MODEL_NAME_OR_PATH",
         "",
@@ -56,7 +57,7 @@ class ModelConfig:
         "EMBEDDING_DOCUMENT_PREFIX",
         "",
     )
-    reranker_max_length: int = int(os.getenv("RERANKER_MAX_LENGTH", "1024"))
+    reranker_max_length: int = int(os.getenv("RERANKER_MAX_LENGTH", "512"))
     max_new_tokens: int = int(os.getenv("MAX_NEW_TOKENS", "512"))
 
 
@@ -79,8 +80,8 @@ class RetrievalConfig:
     fused_top_k: int = int(os.getenv("FUSED_TOP_K", "20"))
     rerank_top_k: int = int(os.getenv("RERANK_TOP_K", "6"))
     rrf_k: int = int(os.getenv("RRF_K", "60"))
-    use_retrieval_heuristics: bool = os.getenv("USE_RETRIEVAL_HEURISTICS", "1") == "1"
-    use_rerank_heuristics: bool = os.getenv("USE_RERANK_HEURISTICS", "1") == "1"
+    use_retrieval_heuristics: bool = os.getenv("USE_RETRIEVAL_HEURISTICS", "0") == "1"
+    use_rerank_heuristics: bool = os.getenv("USE_RERANK_HEURISTICS", "0") == "1"
 
 
 PATHS = ProjectPaths()

@@ -14,6 +14,7 @@ This folder is the complete non-article implementation bundle for an open-source
 - ChatGPT Knowledge upload files generated locally: 49.
 - Navigator topics: 10.
 - Semantic dense artifacts: `BAAI/bge-small-en-v1.5`, `sentence_transformers`, 384 dimensions, FAISS index.
+- Cross-encoder reranker: `BAAI/bge-reranker-base`, with lexical fallback.
 - Hash dense fallback: available only as explicit no-model CI/debug profile.
 
 ## Main Entry Points
@@ -52,11 +53,17 @@ Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 
 Strategy evaluation:
 
-- Sparse Document Recall@5: 0.861.
-- Hybrid semantic Document Recall@5: 0.820.
-- Auto Document Recall@5: 0.820.
-- Routed Document Recall@5: 0.861.
+- Sparse Document Recall@5: 0.918.
+- Hybrid semantic + cross-encoder Document Recall@5: 0.947.
+- Auto Document Recall@5: 0.947.
+- Routed Document Recall@5: 0.927.
 - OOD abstention success: 1.000 for all evaluated retrieval strategies.
+
+Formal ablation:
+
+- Best safe default: semantic hybrid + BM25 candidates with cross-encoder reranking and report-aware heuristics disabled.
+- Hybrid + lexical without report-aware heuristics reached Document Recall@5 0.955 but had one OOD false negative.
+- Report-aware heuristics are retained as an ablation condition, not as the default.
 
 Navigator evaluation:
 
@@ -65,8 +72,8 @@ Navigator evaluation:
 
 Agent-skill contract evaluation:
 
-- Routed tool success rate: 0.875.
-- Routed Document Hit Rate@5: 0.861.
+- Auto tool success rate: 0.875.
+- Auto Document Hit Rate@5: 0.947.
 - Citation present rate: 1.000.
 - OOD abstention success rate: 1.000.
 - Unexpected in-scope error count: 0.
@@ -78,12 +85,40 @@ Asset QA evaluation:
 - Page Hit Rate@5: 0.983.
 - Asset ID Trace Hit Rate@5: 0.950.
 
+Cell-level table QA:
+
+- 14 exact-value table questions.
+- Cell QA success rate: 0.929.
+- Evidence cell value hit rate: 0.929.
+- Answer cell value hit rate: 0.643.
+
+External gold-answer seed:
+
+- 12 paraphrased public answer-key questions.
+- Gold-answer success rate: 0.583.
+- Evidence value hit rate: 0.583.
+- Answer value hit rate: 0.333.
+
+Realistic agent-task evaluation:
+
+- 12 downstream agent-use tasks.
+- Task success rate: 1.000.
+- Hard medical-boundary OOD abstention success rate: 1.000.
+
 Answer-quality proxy evaluation:
 
 - Citation marker rate: 1.000.
 - Used evidence ID valid rate: 1.000.
-- Mean grounded token overlap: 0.994.
+- Mean grounded token overlap: 0.993.
+- Unsupported number case rate: 0.000.
+- Overclaim flag rate: 0.020.
 - OOD abstention success rate: 1.000.
+
+Paper experiment matrix:
+
+- `evaluation/paper_experiment_matrix.md`
+- `evaluation/paper_experiment_matrix.json`
+- 17 experiment rows covering retrieval ablations, strategy evaluation, agent contract, agent tasks, asset QA, table-cell QA, external gold-answer seed, answer-quality proxy, and navigator metrics.
 
 ## Verification Snapshot
 

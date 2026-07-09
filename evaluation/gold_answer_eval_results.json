@@ -1,0 +1,327 @@
+{
+  "questions": 12,
+  "retrieval_backend": "auto",
+  "evidence_top_k": 8,
+  "skill_ok_rate": 0.9166666666666666,
+  "citation_present_rate": 0.9166666666666666,
+  "answer_value_hit_rate": 0.3333333333333333,
+  "evidence_value_hit_rate": 0.5833333333333334,
+  "gold_answer_success_rate": 0.5833333333333334,
+  "unexpected_error_count": 1,
+  "counts": {
+    "questions": 12,
+    "skill_ok": 11,
+    "citation_present": 11,
+    "answer_value_hit": 4,
+    "evidence_value_hit": 7,
+    "gold_answer_success": 7,
+    "unexpected_errors": 1
+  },
+  "details": [
+    {
+      "qid": "gold_external_q0001",
+      "question": "In single-field megavoltage x-ray treatment prescribed at 5 cm depth, what happens to exit dose when using 15 MV instead of 6 MV?",
+      "answer_type": "concept",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1540_tps_acceptance",
+        "tg158"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0002",
+      "question": "For the adjacent-field setup in the public AFOMP physics quiz, what skin gap was given for fields intersecting at 5 cm depth?",
+      "answer_type": "numeric",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": true,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs483_small_static_fields"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0003",
+      "question": "What detector type is identified by the public AFOMP answer key as best for locating a dropped I-125 seed?",
+      "answer_type": "device",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
+      ],
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "answer_value_hit": false,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
+      "citation_present": false,
+      "retrieved_doc_ids_at_5": [],
+      "retrieval_backend": "auto",
+      "reranker_backends": []
+    },
+    {
+      "qid": "gold_external_q0004",
+      "question": "What whole-body dose is given in the public AFOMP answer key for LD50/60 without medical intervention?",
+      "answer_type": "numeric",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0005",
+      "question": "Among an electron, proton, and alpha particle each with 20 MeV kinetic energy, which particle is described as travelling almost at light speed?",
+      "answer_type": "concept",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": true,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0006",
+      "question": "For Cs-131 with an approximately 10 day half-life, what activity 24 hours earlier corresponds to a 1.000 mCi calibration seed at the stated time?",
+      "answer_type": "numeric",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs14_planning_national_radiotherapy_services"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0007",
+      "question": "What interaction change explains the loss of contrast in a therapy verification image compared with a simulator radiographic image?",
+      "answer_type": "concept",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2023/08/31/mcq-in-medical-physics-2/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0008",
+      "question": "After ten half-lives, approximately what fraction of the original radioactive activity remains?",
+      "answer_type": "numeric",
+      "source_basis": "AFOMP public MCQ answer key, paraphrased",
+      "source_urls": [
+        "https://afomp.org/2023/08/31/mcq-in-medical-physics-2/"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0009",
+      "question": "In the RANZCR sample rubric, what is the planning organ at risk volume intended to account for?",
+      "answer_type": "short_answer",
+      "source_basis": "RANZCR public sample questions and answers, paraphrased",
+      "source_urls": [
+        "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": true,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0010",
+      "question": "In the RANZCR sample rubric, what target motion concept is captured by internal target volume?",
+      "answer_type": "short_answer",
+      "source_basis": "RANZCR public sample questions and answers, paraphrased",
+      "source_urls": [
+        "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": true,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "aapm_report_113_physics_clinical_trials"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0011",
+      "question": "According to the RANZCR sample rubric, why did ICRU 83 matter for IMRT prescribing and reporting?",
+      "answer_type": "short_answer",
+      "source_basis": "RANZCR public sample questions and answers, paraphrased",
+      "source_urls": [
+        "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_ssg46_medical_uses_radiation_safety"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    },
+    {
+      "qid": "gold_external_q0012",
+      "question": "In the RANZCR sample rubric, what are common reasons for daily image-guided treatment verification in bulky head and neck IMRT?",
+      "answer_type": "short_answer",
+      "source_basis": "RANZCR public sample questions and answers, paraphrased",
+      "source_urls": [
+        "https://www.ranzcr.com/wp-content/uploads/2023/04/Radiation-Oncology-Phase-1-Examination-Sample-Questions-and-Answers-FINAL.pdf"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": false,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ]
+    }
+  ],
+  "metric_note": "Gold-answer seed evaluation checks short answer targets from public answer keys. It does not replace expert grading and may penalize extractive-only answers on calculation questions."
+}
