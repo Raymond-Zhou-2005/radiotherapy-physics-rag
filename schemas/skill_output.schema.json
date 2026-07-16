@@ -215,6 +215,14 @@
     },
     "answer_engine": {
       "type": "string"
+    },
+    "extractive_selector": {
+      "type": "string",
+      "enum": ["auto", "lexical", "semantic_coverage"]
+    },
+    "extractive_selector_backend": {
+      "type": "string",
+      "enum": ["lexical", "cross_encoder", "not_run"]
     }
   }
 }

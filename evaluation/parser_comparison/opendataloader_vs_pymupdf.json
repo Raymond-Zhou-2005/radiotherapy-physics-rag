@@ -1,0 +1,192 @@
+{
+  "comparison_design": {
+    "old_parser": "PyMuPDF historical runtime snapshot",
+    "new_parser": "OpenDataLoader rebuilt runtime",
+    "held_constant": [
+      "49 runtime source PDFs",
+      "100-question public external MCQ file",
+      "auto retrieval configuration",
+      "BAAI/bge-reranker-base cross-encoder option selector",
+      "top-6 evidence and evidence-only skill mode"
+    ],
+    "interpretation_boundary": "This is a public answer-keyed development comparison, not a hidden test, a Codex-host evaluation, expert grading, or clinical validation."
+  },
+  "old_runtime_snapshot": {
+    "parser": "PyMuPDF historical runtime before OpenDataLoader replacement",
+    "source_records": 49,
+    "parsed_files": 49,
+    "parsed_blocks": 66937,
+    "chunk_files": 49,
+    "indexed_chunks": 10923,
+    "asset_documents": 49,
+    "asset_tables": 655,
+    "asset_images": 3263,
+    "dense_meta_sha256": "c37aab0ef62b1651f866e2e03a2d838047023801a7021db3af5a504644c898e0",
+    "evaluation": "public_mcq_eval_results.json uses this historical index with auto retrieval, cross encoder, evidence top-k 6"
+  },
+  "opendataloader_runtime_snapshot": {
+    "source_records": 49,
+    "parsed_files": 49,
+    "parsed_blocks": 81375,
+    "chunk_files": 49,
+    "indexed_chunks": 8948,
+    "asset_documents": 49,
+    "asset_tables": 440,
+    "asset_images": 2140
+  },
+  "runtime_artifact_delta": {
+    "source_records": 0,
+    "parsed_files": 0,
+    "parsed_blocks": 14438,
+    "chunk_files": 0,
+    "indexed_chunks": -1975,
+    "asset_documents": 0,
+    "asset_tables": -215,
+    "asset_images": -1123
+  },
+  "old_mcq_metrics": {
+    "questions": 100,
+    "skill_ok_rate": 1.0,
+    "citation_present_rate": 1.0,
+    "evidence_contains_gold_option_rate": 0.14,
+    "mcq_option_accuracy": 0.34,
+    "mean_total_latency_seconds": 14.93168003
+  },
+  "opendataloader_mcq_metrics": {
+    "questions": 100,
+    "skill_ok_rate": 0.99,
+    "citation_present_rate": 0.99,
+    "evidence_contains_gold_option_rate": 0.14,
+    "mcq_option_accuracy": 0.36,
+    "mean_total_latency_seconds": 13.5033849
+  },
+  "mcq_metric_delta": {
+    "skill_ok_rate": -0.010000000000000009,
+    "citation_present_rate": -0.010000000000000009,
+    "evidence_contains_gold_option_rate": 0.0,
+    "mcq_option_accuracy": 0.019999999999999962,
+    "mean_total_latency_seconds": -1.4282951300000004
+  },
+  "question_outcome_changes": {
+    "improved": {
+      "count": 16,
+      "qids": [
+        "public_mcq_001",
+        "public_mcq_003",
+        "public_mcq_005",
+        "public_mcq_006",
+        "public_mcq_008",
+        "public_mcq_012",
+        "public_mcq_035",
+        "public_mcq_038",
+        "public_mcq_067",
+        "public_mcq_076",
+        "public_mcq_077",
+        "public_mcq_078",
+        "public_mcq_083",
+        "public_mcq_087",
+        "public_mcq_088",
+        "public_mcq_089"
+      ]
+    },
+    "regressed": {
+      "count": 14,
+      "qids": [
+        "public_mcq_015",
+        "public_mcq_016",
+        "public_mcq_024",
+        "public_mcq_026",
+        "public_mcq_050",
+        "public_mcq_056",
+        "public_mcq_060",
+        "public_mcq_070",
+        "public_mcq_073",
+        "public_mcq_092",
+        "public_mcq_094",
+        "public_mcq_095",
+        "public_mcq_096",
+        "public_mcq_100"
+      ]
+    },
+    "both_correct": {
+      "count": 20,
+      "qids": [
+        "public_mcq_002",
+        "public_mcq_007",
+        "public_mcq_010",
+        "public_mcq_011",
+        "public_mcq_021",
+        "public_mcq_034",
+        "public_mcq_039",
+        "public_mcq_045",
+        "public_mcq_047",
+        "public_mcq_052",
+        "public_mcq_054",
+        "public_mcq_055",
+        "public_mcq_063",
+        "public_mcq_064",
+        "public_mcq_066",
+        "public_mcq_069",
+        "public_mcq_072",
+        "public_mcq_075",
+        "public_mcq_097",
+        "public_mcq_098"
+      ]
+    },
+    "both_incorrect": {
+      "count": 50,
+      "qids": [
+        "public_mcq_004",
+        "public_mcq_009",
+        "public_mcq_013",
+        "public_mcq_014",
+        "public_mcq_017",
+        "public_mcq_018",
+        "public_mcq_019",
+        "public_mcq_020",
+        "public_mcq_022",
+        "public_mcq_023",
+        "public_mcq_025",
+        "public_mcq_027",
+        "public_mcq_028",
+        "public_mcq_029",
+        "public_mcq_030",
+        "public_mcq_031",
+        "public_mcq_032",
+        "public_mcq_033",
+        "public_mcq_036",
+        "public_mcq_037",
+        "public_mcq_040",
+        "public_mcq_041",
+        "public_mcq_042",
+        "public_mcq_043",
+        "public_mcq_044",
+        "public_mcq_046",
+        "public_mcq_048",
+        "public_mcq_049",
+        "public_mcq_051",
+        "public_mcq_053",
+        "public_mcq_057",
+        "public_mcq_058",
+        "public_mcq_059",
+        "public_mcq_061",
+        "public_mcq_062",
+        "public_mcq_065",
+        "public_mcq_068",
+        "public_mcq_071",
+        "public_mcq_074",
+        "public_mcq_079",
+        "public_mcq_080",
+        "public_mcq_081",
+        "public_mcq_082",
+        "public_mcq_084",
+        "public_mcq_085",
+        "public_mcq_086",
+        "public_mcq_090",
+        "public_mcq_091",
+        "public_mcq_093",
+        "public_mcq_099"
+      ]
+    }
+  }
+}

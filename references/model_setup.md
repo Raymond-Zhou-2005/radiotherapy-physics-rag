@@ -67,6 +67,14 @@ Current formal ablation found lower document recall with those flags enabled, so
 
 ## Install
 
+## PDF Parser Runtime
+
+The local parser is OpenDataLoader PDF and requires Java 11 or newer. The
+adapter appends `-Djava.util.Arrays.useLegacyMergeSort=true` to
+`JAVA_TOOL_OPTIONS` when absent. This is a documented compatibility workaround
+for an upstream OpenDataLoader 2.5.0 comparator failure on the older IAEA
+TRS-430 PDF; it preserves user-supplied JVM options and does not use PyMuPDF.
+
 ```powershell
 python -m pip install -r requirements.txt -c constraints.txt
 python -m pip install -e ".[dev]" -c constraints.txt

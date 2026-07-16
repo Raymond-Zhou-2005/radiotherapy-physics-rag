@@ -16,7 +16,6 @@ import re
 from pathlib import Path
 from typing import Dict, Iterable, List
 
-
 DEFAULT_SOURCE_NOTE = (
     "Open-source topic benchmark item generated from public source metadata. "
     "It is not copied from paid, private, leaked, or expert-only examination material."

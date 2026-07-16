@@ -11,7 +11,7 @@ The public repository stores source metadata and build scripts. It does not redi
 - Source records: 49.
 - Current local runtime PDFs: 49.
 - Manual candidates not included in the current runtime: none in this local build.
-- Current runtime chunks: 10923.
+- Current OpenDataLoader runtime chunks: 8948.
 
 The latest source metadata lives in:
 

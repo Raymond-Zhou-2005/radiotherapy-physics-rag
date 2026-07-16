@@ -1,0 +1,1573 @@
+{
+  "questions": 61,
+  "retrieval_backend": "auto",
+  "evidence_top_k": 8,
+  "selectors": [
+    {
+      "selector": "lexical",
+      "questions": 61,
+      "answer_value_hit_rate": 0.39344262295081966,
+      "citation_present_rate": 0.9836065573770492,
+      "unexpected_error_count": 1,
+      "resolved_selector_backends": {
+        "lexical": 60,
+        "not_run": 1
+      },
+      "details": [
+        {
+          "qid": "gold_external_q0001",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_external_q0002",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_external_q0003",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": false,
+          "error_code": "insufficient_evidence",
+          "extractive_selector_backend": "not_run",
+          "used_evidence_ids": []
+        },
+        {
+          "qid": "gold_external_q0004",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_external_q0005",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_external_q0006",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E3",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_external_q0007",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_external_q0008",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_external_q0009",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_external_q0010",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_external_q0011",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_external_q0012",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0001",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0002",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0003",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0004",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0005",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E5",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0006",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0007",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E5",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0008",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E6",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0009",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0010",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E3",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0011",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0012",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E6",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0013",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0014",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E5",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0015",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0016",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0017",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0018",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0019",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0020",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0021",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E3",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0022",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0023",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0024",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E3",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0025",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0026",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0027",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0028",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0029",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E5",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0030",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0031",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0032",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0033",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0034",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0035",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E6",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0036",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0037",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0038",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0039",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0040",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0041",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0042",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0043",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E4",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0044",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0045",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0046",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0047",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E1",
+            "E6",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0048",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0049",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "lexical",
+          "used_evidence_ids": [
+            "E6",
+            "E3",
+            "E2"
+          ]
+        }
+      ],
+      "by_benchmark_profile": {
+        "external_gold_answer": {
+          "questions": 12,
+          "answer_value_hit_rate": 0.3333333333333333,
+          "citation_present_rate": 0.9166666666666666
+        },
+        "open_report_gold_answer": {
+          "questions": 49,
+          "answer_value_hit_rate": 0.40816326530612246,
+          "citation_present_rate": 1.0
+        }
+      }
+    },
+    {
+      "selector": "semantic_coverage",
+      "questions": 61,
+      "answer_value_hit_rate": 0.5573770491803278,
+      "citation_present_rate": 0.9836065573770492,
+      "unexpected_error_count": 1,
+      "resolved_selector_backends": {
+        "cross_encoder": 60,
+        "not_run": 1
+      },
+      "details": [
+        {
+          "qid": "gold_external_q0001",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E3",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_external_q0002",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_external_q0003",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": false,
+          "error_code": "insufficient_evidence",
+          "extractive_selector_backend": "not_run",
+          "used_evidence_ids": []
+        },
+        {
+          "qid": "gold_external_q0004",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_external_q0005",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_external_q0006",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E6",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_external_q0007",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_external_q0008",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_external_q0009",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E4",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_external_q0010",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E1",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_external_q0011",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_external_q0012",
+          "benchmark_profile": "external_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0001",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0002",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0003",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E5",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0004",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E3",
+            "E2",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0005",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0006",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0007",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0008",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0009",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0010",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0011",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0012",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0013",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0014",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0015",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E4",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0016",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3",
+            "E5",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0017",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0018",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0019",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E5",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0020",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0021",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0022",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E4",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0023",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E4",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0024",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E3",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0025",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0026",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0027",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0028",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0029",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0030",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E1",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0031",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0032",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0033",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0034",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0035",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E3",
+            "E4"
+          ]
+        },
+        {
+          "qid": "gold_report_q0036",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0037",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0038",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0039",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0040",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E4",
+            "E2",
+            "E5"
+          ]
+        },
+        {
+          "qid": "gold_report_q0041",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E4",
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0042",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0043",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0044",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "qid": "gold_report_q0045",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E4",
+            "E3"
+          ]
+        },
+        {
+          "qid": "gold_report_q0046",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E3",
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0047",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": true,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E4",
+            "E6"
+          ]
+        },
+        {
+          "qid": "gold_report_q0048",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "qid": "gold_report_q0049",
+          "benchmark_profile": "open_report_gold_answer",
+          "answer_value_hit": false,
+          "citation_present": true,
+          "error_code": null,
+          "extractive_selector_backend": "cross_encoder",
+          "used_evidence_ids": [
+            "E2",
+            "E3",
+            "E6"
+          ]
+        }
+      ],
+      "by_benchmark_profile": {
+        "external_gold_answer": {
+          "questions": 12,
+          "answer_value_hit_rate": 0.4166666666666667,
+          "citation_present_rate": 0.9166666666666666
+        },
+        "open_report_gold_answer": {
+          "questions": 49,
+          "answer_value_hit_rate": 0.5918367346938775,
+          "citation_present_rate": 1.0
+        }
+      }
+    }
+  ],
+  "metric_note": "Frozen automatic answer-target comparison; neither selector uses answer keys at runtime.",
+  "paired_comparisons": [
+    {
+      "baseline_selector": "lexical",
+      "challenger_selector": "semantic_coverage",
+      "questions": 61,
+      "baseline_hit_rate": 0.39344262295081966,
+      "challenger_hit_rate": 0.5573770491803278,
+      "absolute_difference": 0.16393442622950818,
+      "baseline_wilson_95_ci": [
+        0.28068351453037077,
+        0.5188274737102107
+      ],
+      "challenger_wilson_95_ci": [
+        0.4330336769314388,
+        0.6749219447851712
+      ],
+      "paired_bootstrap_95_ci": [
+        0.04918032786885246,
+        0.2786885245901639
+      ],
+      "exact_mcnemar_two_sided_p": 0.012939453125,
+      "challenger_better_cases": 12,
+      "challenger_worse_cases": 2
+    }
+  ]
+}

@@ -18,7 +18,6 @@ from scripts.evaluate import load_questions
 from scripts.run_skill import SkillExecutionError, run_skill
 from src.utils import write_json
 
-
 SPACE_RE = re.compile(r"\s+")
 
 

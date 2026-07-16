@@ -23,12 +23,13 @@ from scripts.evaluate import load_questions
 from scripts.run_skill import SkillExecutionError, run_skill
 from src.utils import simple_tokenize, write_json
 
-
 EVIDENCE_ID_RE = re.compile(r"\[E\d+\]")
 NUMBER_RE = re.compile(r"\b\d+(?:\.\d+)?(?:-\d+(?:\.\d+)?)?%?\b")
 OVERCLAIM_PATTERNS = [
-    re.compile(r"\b(this patient should|you should|your doctor should|prescribe|diagnose|cure)\b", re.I),
-    re.compile(r"\b(clinical recommendation is|medical advice|treatment decision)\b", re.I),
+    re.compile(r"\b(?:this patient|you|your doctor)\s+should\b", re.I),
+    re.compile(r"\b(?:i|we)\s+(?:recommend|prescribe|diagnose)\b", re.I),
+    re.compile(r"\b(?:this patient|you)\s+(?:must|need to|require)\b", re.I),
+    re.compile(r"\b(?:clinical recommendation|medical advice|treatment decision)\s+(?:is|would be)\b", re.I),
 ]
 
 
@@ -37,8 +38,24 @@ def extract_numbers(text: str) -> Set[str]:
     return set(NUMBER_RE.findall(cleaned))
 
 
+def answer_claim_text(answer: str) -> str:
+    """Exclude verbatim supporting excerpts from checks on answer-level claims."""
+    return answer.split("\n\nSupporting evidence excerpts:", maxsplit=1)[0]
+
+
+def returned_evidence_text(evidence_items: List[Dict[str, Any]]) -> str:
+    """Join returned chunk text and returned asset previews for grounding checks."""
+    parts = []
+    for item in evidence_items:
+        parts.append(str(item.get("text", "") or ""))
+        for asset in item.get("nearby_assets", []) or []:
+            parts.append(str(asset.get("caption", "") or ""))
+            parts.append(str(asset.get("text_preview", "") or ""))
+    return "\n".join(parts)
+
+
 def grounded_token_overlap(answer: str, evidence_items: List[Dict[str, Any]]) -> float:
-    evidence_text = " ".join(str(item.get("text", "")) for item in evidence_items)
+    evidence_text = returned_evidence_text(evidence_items)
     evidence_terms = set(simple_tokenize(evidence_text))
     answer_terms = {
         token for token in simple_tokenize(EVIDENCE_ID_RE.sub(" ", answer))
@@ -57,6 +74,7 @@ def evaluate_answer_quality(
     questions: List[Dict[str, Any]],
     index_dir: Path,
     retrieval_backend: str,
+    extractive_selector: str = "auto",
     max_questions: int | None = None,
 ) -> Dict[str, Any]:
     selected = questions[:max_questions] if max_questions else questions
@@ -95,6 +113,7 @@ def evaluate_answer_quality(
             "unsupported_numbers": [],
             "overclaim_flag": False,
             "retrieval_backend": retrieval_backend,
+            "extractive_selector": extractive_selector,
         }
 
         try:
@@ -104,9 +123,11 @@ def evaluate_answer_quality(
                 index_dir=index_dir,
                 retrieval_backend=retrieval_backend,
                 answer_engine="extractive",
+                extractive_selector=extractive_selector,
             )
             detail["ok"] = bool(result.get("ok"))
             detail["retrieval_backend"] = result.get("rag_pipeline", {}).get("retrieval_backend", retrieval_backend)
+            detail["extractive_selector"] = result.get("extractive_selector", extractive_selector)
             if expected_abstain:
                 counts["unexpected_errors"] += 1
                 detail["error_code"] = "answered_expected_abstain"
@@ -120,19 +141,22 @@ def evaluate_answer_quality(
             used_ids = {str(item) for item in result.get("used_evidence_ids", [])}
             bracket_ids = {marker.strip("[]") for marker in EVIDENCE_ID_RE.findall(answer)}
             valid_ids = (used_ids | bracket_ids).issubset(citation_ids) and bool(used_ids or bracket_ids)
-            answer_numbers = extract_numbers(answer)
-            evidence_numbers = extract_numbers(" ".join(str(item.get("text", "")) for item in evidence))
+            claim_text = answer_claim_text(answer)
+            answer_numbers = extract_numbers(claim_text)
+            evidence_numbers = extract_numbers(returned_evidence_text(evidence))
             unsupported = sorted(answer_numbers - evidence_numbers)
-            overlap = grounded_token_overlap(answer, evidence)
-            overclaim = has_overclaim(answer)
+            overlap = grounded_token_overlap(claim_text, evidence)
+            overclaim = has_overclaim(claim_text)
 
             detail["answer_present"] = bool(answer.strip())
             detail["citation_marker_present"] = bool(bracket_ids)
             detail["used_evidence_ids_valid"] = valid_ids
-            detail["grounded_token_overlap"] = round(overlap, 4)
+            # Persist the same numeric precision used by the aggregate so the
+            # frozen summary can be exactly reproduced from per-item details.
+            detail["grounded_token_overlap"] = overlap
             detail["unsupported_numbers"] = unsupported
             detail["overclaim_flag"] = overclaim
-            overlaps.append(overlap)
+            overlaps.append(detail["grounded_token_overlap"])
 
             counts["answer_present"] += int(detail["answer_present"])
             counts["citation_marker_present"] += int(detail["citation_marker_present"])
@@ -154,6 +178,7 @@ def evaluate_answer_quality(
         "questions": len(selected),
         "retrieval_backend": retrieval_backend,
         "answer_engine": "extractive",
+        "extractive_selector": extractive_selector,
         "in_scope_ok_rate": counts["in_scope_ok"] / in_scope,
         "answer_present_rate": counts["answer_present"] / answered,
         "citation_marker_rate": counts["citation_marker_present"] / answered,
@@ -165,7 +190,10 @@ def evaluate_answer_quality(
         "unexpected_error_count": counts["unexpected_errors"],
         "counts": counts,
         "details": details,
-        "metric_note": "Automatic proxy metrics only; they do not replace expert answer grading.",
+        "metric_note": (
+            "Automatic proxy metrics only; they do not replace expert answer grading. "
+            "Number and overclaim checks apply to the extractive summary, not verbatim supporting excerpts."
+        ),
     }
 
 
@@ -176,6 +204,7 @@ def write_markdown(summary: Dict[str, Any], output_path: Path) -> None:
         f"- Questions: {summary['questions']}",
         f"- Retrieval backend: {summary['retrieval_backend']}",
         f"- Answer engine: {summary['answer_engine']}",
+        f"- Extractive selector: {summary['extractive_selector']}",
         f"- In-scope OK rate: {summary['in_scope_ok_rate']:.3f}",
         f"- Answer present rate: {summary['answer_present_rate']:.3f}",
         f"- Citation marker rate: {summary['citation_marker_rate']:.3f}",
@@ -197,6 +226,7 @@ def main() -> None:
     parser.add_argument("--questions", type=Path, default=Path("evaluation/radiotherapy_skill_open_questions.json"))
     parser.add_argument("--index-dir", type=Path, default=Path("index"))
     parser.add_argument("--retrieval-backend", choices=["auto", "hybrid", "sparse", "routed"], default="routed")
+    parser.add_argument("--extractive-selector", choices=["auto", "lexical", "semantic_coverage"], default="auto")
     parser.add_argument("--max-questions", type=int, default=0)
     parser.add_argument("--output-json", type=Path, default=Path("evaluation/answer_quality_eval_results.json"))
     parser.add_argument("--output-md", type=Path, default=Path("evaluation/answer_quality_eval_results.md"))
@@ -206,6 +236,7 @@ def main() -> None:
         load_questions(args.questions),
         args.index_dir,
         args.retrieval_backend,
+        extractive_selector=args.extractive_selector,
         max_questions=args.max_questions or None,
     )
     write_json(args.output_json, summary)

@@ -47,6 +47,12 @@ Use this before adding unfamiliar reports. PDFs with very low extracted text per
 
 ## Extract table and image metadata
 
+## Record local corpus provenance
+
+Run `python scripts/build_provenance_manifest.py` after building the corpus.
+The resulting local manifest captures observed PDF hashes and page counts, but
+does not replace a maintainer's publisher-license review.
+
 Run:
 
 ```bash

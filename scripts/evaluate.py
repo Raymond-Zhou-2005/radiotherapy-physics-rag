@@ -25,9 +25,8 @@ import json
 from pathlib import Path
 from typing import Dict, List
 
-from src.evaluation.metrics import abstention_confusion, mrr, recall_at_k, section_match_recall
 from scripts.run_skill import RETRIEVAL_BACKENDS, assess_evidence_sufficiency, collect_evidence_with_backend
-
+from src.evaluation.metrics import abstention_confusion, mrr, recall_at_k, section_match_recall
 
 
 def load_questions(path: Path) -> List[Dict]:

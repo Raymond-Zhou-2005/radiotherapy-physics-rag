@@ -1,0 +1,243 @@
+{
+  "analysis_version": "1.0",
+  "source_evaluation_files": [
+    "strategy_eval_results.json",
+    "gold_answer_eval_results.json",
+    "answer_generation_eval_results.json",
+    "table_cell_qa_eval_results.json",
+    "agent_task_eval_results.json",
+    "mcp_contract_eval_results.json",
+    "answer_quality_eval_results.json"
+  ],
+  "method": {
+    "confidence_level": 0.95,
+    "binary_interval": "Wilson score interval",
+    "continuous_interval": "nonparametric percentile bootstrap for the mean",
+    "paired_comparison": "paired percentile bootstrap and two-sided exact McNemar test",
+    "bootstrap_repetitions": 10000,
+    "random_seed": 20260714,
+    "scope_note": "Intervals describe uncertainty within the fixed automatic evaluation sets. They do not establish clinical validity, expert agreement, or population generalization."
+  },
+  "retrieval": {
+    "strategies": {
+      "sparse": {
+        "document_recall_at_5": {
+          "successes": 225,
+          "total": 245,
+          "rate": 0.9183673469387755,
+          "wilson_95_ci": [
+            0.8772817973307678,
+            0.9465359096202084
+          ]
+        },
+        "ood_refusal": {
+          "successes": 35,
+          "total": 35,
+          "rate": 1.0,
+          "wilson_95_ci": [
+            0.9010990076755959,
+            0.9999999999999999
+          ]
+        }
+      },
+      "hybrid": {
+        "document_recall_at_5": {
+          "successes": 232,
+          "total": 245,
+          "rate": 0.9469387755102041,
+          "wilson_95_ci": [
+            0.911346599856478,
+            0.9687318285448088
+          ]
+        },
+        "ood_refusal": {
+          "successes": 35,
+          "total": 35,
+          "rate": 1.0,
+          "wilson_95_ci": [
+            0.9010990076755959,
+            0.9999999999999999
+          ]
+        }
+      },
+      "auto": {
+        "document_recall_at_5": {
+          "successes": 232,
+          "total": 245,
+          "rate": 0.9469387755102041,
+          "wilson_95_ci": [
+            0.911346599856478,
+            0.9687318285448088
+          ]
+        },
+        "ood_refusal": {
+          "successes": 35,
+          "total": 35,
+          "rate": 1.0,
+          "wilson_95_ci": [
+            0.9010990076755959,
+            0.9999999999999999
+          ]
+        }
+      },
+      "routed": {
+        "document_recall_at_5": {
+          "successes": 227,
+          "total": 245,
+          "rate": 0.926530612244898,
+          "wilson_95_ci": [
+            0.886867357462435,
+            0.9530248413314871
+          ]
+        },
+        "ood_refusal": {
+          "successes": 35,
+          "total": 35,
+          "rate": 1.0,
+          "wilson_95_ci": [
+            0.9010990076755959,
+            0.9999999999999999
+          ]
+        }
+      }
+    },
+    "paired_sparse_vs_hybrid": {
+      "comparison": "hybrid_minus_sparse_document_recall_at_5",
+      "paired_questions": 245,
+      "hybrid_minus_sparse": 0.02857142857142858,
+      "bootstrap_95_ci": [
+        0.0,
+        0.061224489795918366
+      ],
+      "discordant_hybrid_only": 11,
+      "discordant_sparse_only": 4,
+      "exact_mcnemar_two_sided_p": 0.11846923828125
+    }
+  },
+  "answer_targets": {
+    "external_gold_answer": {
+      "gold_evidence_value_hit": {
+        "successes": 5,
+        "total": 12,
+        "rate": 0.4166666666666667,
+        "wilson_95_ci": [
+          0.19326031365875665,
+          0.6804886874504503
+        ]
+      },
+      "gold_extractive_answer_value_hit": {
+        "successes": 4,
+        "total": 12,
+        "rate": 0.3333333333333333,
+        "wilson_95_ci": [
+          0.13812009109121315,
+          0.6093779111272004
+        ]
+      },
+      "generation_evidence_only_value_hit": {
+        "successes": 5,
+        "total": 12,
+        "rate": 0.4166666666666667,
+        "wilson_95_ci": [
+          0.19326031365875665,
+          0.6804886874504503
+        ]
+      },
+      "generation_extractive_answer_value_hit": {
+        "successes": 4,
+        "total": 12,
+        "rate": 0.3333333333333333,
+        "wilson_95_ci": [
+          0.13812009109121315,
+          0.6093779111272004
+        ]
+      }
+    },
+    "open_report_gold_answer": {
+      "gold_evidence_value_hit": {
+        "successes": 39,
+        "total": 49,
+        "rate": 0.7959183673469388,
+        "wilson_95_ci": [
+          0.6636299908048744,
+          0.8851815039421786
+        ]
+      },
+      "gold_extractive_answer_value_hit": {
+        "successes": 27,
+        "total": 49,
+        "rate": 0.5510204081632653,
+        "wilson_95_ci": [
+          0.413151082194979,
+          0.6814715893131335
+        ]
+      },
+      "generation_evidence_only_value_hit": {
+        "successes": 44,
+        "total": 49,
+        "rate": 0.8979591836734694,
+        "wilson_95_ci": [
+          0.7824363845080409,
+          0.9556204532552373
+        ]
+      },
+      "generation_extractive_answer_value_hit": {
+        "successes": 27,
+        "total": 49,
+        "rate": 0.5510204081632653,
+        "wilson_95_ci": [
+          0.413151082194979,
+          0.6814715893131335
+        ]
+      }
+    }
+  },
+  "capability_contracts": {
+    "cell_level_table_qa": {
+      "successes": 14,
+      "total": 14,
+      "rate": 1.0,
+      "wilson_95_ci": [
+        0.7846891972623643,
+        1.0
+      ]
+    },
+    "direct_skill_task_success": {
+      "successes": 40,
+      "total": 40,
+      "rate": 1.0,
+      "wilson_95_ci": [
+        0.9123783988027135,
+        1.0
+      ]
+    },
+    "mcp_stdio_task_success": {
+      "successes": 7,
+      "total": 7,
+      "rate": 1.0,
+      "wilson_95_ci": [
+        0.6456695649333126,
+        1.0
+      ]
+    }
+  },
+  "answer_quality_proxy": {
+    "in_scope_grounded_token_overlap": {
+      "total": 61,
+      "mean": 0.9401706985075112,
+      "bootstrap_95_ci": [
+        0.9061998062470572,
+        0.9589122072240595
+      ]
+    },
+    "ood_refusal": {
+      "successes": 0,
+      "total": 0,
+      "rate": 0.0,
+      "wilson_95_ci": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

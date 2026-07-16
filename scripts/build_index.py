@@ -26,7 +26,6 @@ from src.retrieval.sparse import SparseIndexer
 from src.utils import ensure_dir, iter_jsonl, write_jsonl
 
 
-
 def load_all_chunks(chunks_dir: Path):
     chunks = []
     for path in sorted(chunks_dir.glob("*.chunks.jsonl")):

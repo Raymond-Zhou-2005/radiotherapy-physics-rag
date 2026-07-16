@@ -25,7 +25,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.utils import write_json
 
-
 AFOMP_2025 = "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
 AFOMP_2023 = "https://afomp.org/2023/08/31/mcq-in-medical-physics-2/"
 RANZCR_2023 = (

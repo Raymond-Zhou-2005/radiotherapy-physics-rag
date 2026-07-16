@@ -7,7 +7,7 @@ import argparse
 import json
 from collections import Counter
 from pathlib import Path
-from typing import Any, Dict, Iterable, List
+from typing import Any, Dict, Iterable
 
 
 def iter_jsonl(path: Path) -> Iterable[Dict[str, Any]]:

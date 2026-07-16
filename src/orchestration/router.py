@@ -9,7 +9,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
-
 QUESTION_PATTERNS = {
     "definition": re.compile(r"\b(define|what is|what are|meaning of|stands for)\b", re.I),
     "comparison": re.compile(r"\b(compare|difference|differentiate|versus|vs\.?|contrast)\b", re.I),

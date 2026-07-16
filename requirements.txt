@@ -1,4 +1,4 @@
-pymupdf>=1.24.0
+opendataloader-pdf>=2.5.0,<3.0.0
 numpy>=1.26.0
 faiss-cpu>=1.8.0
 rank-bm25>=0.2.2

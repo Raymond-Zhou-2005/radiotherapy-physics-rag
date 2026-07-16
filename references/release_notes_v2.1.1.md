@@ -15,7 +15,7 @@ taxonomy, and documents academic claim boundaries.
 - `scripts/analyze_failure_taxonomy.py`.
 - Answer generation mode comparison outputs.
 - Failure taxonomy outputs.
-- Paper experiment matrix with 19 experiment rows.
+- Paper experiment matrix with 24 experiment rows.
 - Public academic norm review.
 - Paper readiness checklist.
 
@@ -33,12 +33,13 @@ taxonomy, and documents academic claim boundaries.
 
 - Auto Document Recall@5 on the 280-question public benchmark: 0.947.
 - OOD abstention success on current controls: 1.000.
-- Public answer-target success: 0.787.
-- Evidence/bundle target hit in answer-generation comparison: 0.852.
-- Extractive answer value hit: 0.344.
-- Realistic agent-task success: 1.000 across 40 tasks.
+- Public answer-target aggregate success: 0.787; extractive answer value hit: 0.393.
+- External public-answer-key profile: N = 12, evidence value hit = 0.583, answer value hit = 0.333.
+- In-corpus open-report profile: N = 49, evidence value hit = 0.837, answer value hit = 0.408.
+- Evidence/bundle target hit in answer-generation comparison: 0.852; answer synthesis gap: 0.459.
+- Direct skill-contract success: 1.000 across 40 tasks; MCP stdio contract success: 1.000 across 7 tasks.
 - Table-cell QA success: 0.929.
-- Failure/gap cases classified: 58, dominated by answer synthesis gaps.
+- Failure/gap cases classified: 51, dominated by answer synthesis gaps.
 
 ## Release Boundary
 

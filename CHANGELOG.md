@@ -1,5 +1,23 @@
 # Changelog
 
+## Unreleased
+
+- Replaced the local PDF parsing runtime with OpenDataLoader PDF and rebuilt 49 source PDFs into 8,948 chunks, 440 table records, and 2,140 image records. The parser adapter records a narrow Java compatibility workaround for one upstream OpenDataLoader 2.5.0 comparator failure.
+- Added a pinned Apache-2.0 public 100-question medical-physics MCQ benchmark, answer-key-free host tasks, host-answer scorer, and method-comparison report. The benchmark is outside the runtime retrieval corpus.
+- Added a controlled parser comparison with the deterministic option selector fixed: PyMuPDF answered 34/100 and OpenDataLoader answered 36/100; mean latency changed from 14.932 to 13.503 seconds per question.
+- Added a recorded Codex-agent local-skill evaluation: 96/100 public MCQs correct, citations on all 100 responses, and mean latency 9.059 seconds per question. This is explicitly documented as public development evidence, not blinded, expert, clinical, or fully non-interactive CLI-MCP validation.
+- Re-ran current OpenDataLoader formal ablation, asset QA, cell-level table QA, answer-target, answer-generation, direct skill-contract, MCP-contract, and answer-quality evaluations. Updated public-facing summaries to distinguish current ODL results from pre-parser-refresh historical files.
+
+## 2.2.0 - 2026-07-14
+
+- Made `semantic_coverage` the default local extractive sentence selector. It reranks sentences from the already returned evidence with the existing cross-encoder, uses diversity controls, and does not access answer keys or generate new claims.
+- Added a frozen same-evidence selector ablation on 61 answer targets. Semantic coverage improved automatic extractive answer-value hit from 0.393 to 0.557 (paired delta 0.164; deterministic bootstrap 95% CI 0.049 to 0.279; exact McNemar p=0.0129).
+- Re-ran the full 280-item automatic answer-quality proxy using the default selector: grounded-token overlap 0.960, valid evidence identifiers and citation markers for all 245 in-scope items, zero implemented unsupported-number/overclaim flags, and 35/35 predefined OOD refusals.
+- Rebuilt the failure taxonomy (41 automatically classified cases), uncertainty report, and paper experiment matrix (26 rows), then verified 33 frozen-output consistency checks.
+- Added the extractive-selector evaluator and expanded the evaluation audit to recompute the selector results from per-item details.
+- Hardened public-release construction: container delivery files are now copied, while local runtime-integrity audit files remain excluded with PDFs, indexes, caches, and other non-distributable runtime artifacts.
+- Rebuilt the publication package with seven figures, seven tables, an updated manuscript/Word export, a teacher-facing 13-slide presentation, and explicit academic-norm and manuscript self-review records. The package remains an engineering-methods deliverable; it does not claim expert, clinical, autonomous-agent, or security validation.
+
 ## 2.1.1 - 2026-07-10
 
 - Expanded the public answer-target benchmark from 12 to 61 items by combining paraphrased public answer-key seeds with open-report answer targets generated from public AAPM/IAEA report evidence.
@@ -8,7 +26,7 @@
 - Added `analyze_failure_taxonomy.py` to classify benchmark failures and gaps into paper-facing categories such as answer synthesis gap, retrieval gap, page miss, and skill error.
 - Added a hard OOD boundary for SUV cutoff / malignant recurrence PET-CT interpretation questions outside the radiotherapy physics evidence scope.
 - Updated the paper experiment matrix to 19 rows, now including answer-generation mode comparison and failure taxonomy.
-- Current new evaluation results: public answer-target gold-answer success 0.787, evidence-only/bundle target hit 0.852, extractive answer target hit 0.344, agent-task success 1.000 across 40 tasks, and 58 automatically classified failure/gap cases.
+- Current evaluation results: public answer-target aggregate success 0.787, evidence-only/bundle target hit 0.852, extractive answer target hit 0.393, direct skill-contract success 1.000 across 40 tasks, MCP stdio contract success 1.000 across 7 tasks, and 51 automatically classified failure/gap cases.
 
 ## 2.1.0 - 2026-07-09
 
@@ -22,7 +40,7 @@
 - Added `.zenodo.json` metadata and release DOI checklist steps. No fake DOI is committed.
 - Extended hard OOD routing for medication dose adjustment, insulin/hypoglycemia, stroke MRI, and similar medically related but non-radiotherapy-physics questions.
 - Exposed nearby table/figure `text_preview` metadata in evidence outputs and table-aware extractive answer snippets for explicit asset/page queries.
-- Updated current public results: auto/hybrid Document Recall@5 0.947, agent skill Document Hit@5 0.947, answer-quality grounded token overlap 0.993, unsupported number case rate 0.000, and OOD abstention 1.000.
+- Updated current public results: auto/hybrid Document Recall@5 0.947, agent skill Document Hit@5 0.947, answer-quality summary grounded token overlap 0.953, unsupported number case rate 0.000, overclaim flag rate 0.000, and OOD abstention 1.000.
 
 ## 2.0.1 - 2026-07-09
 

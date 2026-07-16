@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 
 def recall_at_k(retrieved_ids: List[str], gold_ids: List[str], k: int) -> float:

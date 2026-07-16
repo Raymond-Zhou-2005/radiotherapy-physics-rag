@@ -62,46 +62,11 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
             note=item.get("description", ""),
         )
 
-    strategy = read_json(eval_dir / "strategy_eval_results.json")
-    for name, item in (strategy.get("strategies") or {}).items():
-        add_metric_row(
-            rows,
-            experiment=f"Retrieval strategy: {name}",
-            artifact="evaluation/strategy_eval_results.json",
-            sample_count=strategy.get("question_count"),
-            primary_metric="Document Recall@5",
-            primary_value=item.get("doc_recall@5"),
-            secondary_metrics={
-                "Document Recall@3": item.get("doc_recall@3"),
-                "MRR": item.get("mrr"),
-                "Abstention": item.get("abstention"),
-                "Observed reranker": item.get("observed_reranker_backends"),
-            },
-            note="Open-source topic retrieval benchmark; not expert answer grading.",
-        )
-
-    agent_skill = read_json(eval_dir / "agent_skill_eval_results.json")
-    if agent_skill:
-        add_metric_row(
-            rows,
-            experiment="Agent-facing skill contract",
-            artifact="evaluation/agent_skill_eval_results.json",
-            sample_count=agent_skill.get("questions"),
-            primary_metric="Document Hit Rate@5",
-            primary_value=agent_skill.get("document_hit_rate@5"),
-            secondary_metrics={
-                "Citation present": agent_skill.get("citation_present_rate"),
-                "OOD abstention": agent_skill.get("ood_abstention_success_rate"),
-                "Unexpected errors": agent_skill.get("unexpected_error_count"),
-            },
-            note="End-to-end skill invocation without an external LLM API.",
-        )
-
     agent_tasks = read_json(eval_dir / "agent_task_eval_results.json")
     if agent_tasks:
         add_metric_row(
             rows,
-            experiment="Realistic agent tasks",
+            experiment="Direct skill contract tasks",
             artifact="evaluation/agent_task_eval_results.json",
             sample_count=agent_tasks.get("tasks"),
             primary_metric="Task success rate",
@@ -113,7 +78,26 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
                 "Asset trace success": agent_tasks.get("asset_trace_success_rate"),
                 "OOD abstention": agent_tasks.get("ood_abstention_success_rate"),
             },
-            note="Checks reusable skill contract behaviour for downstream agents.",
+            note="Direct Python skill-contract integration; not an MCP transport or autonomous-agent evaluation.",
+        )
+
+    mcp_contract = read_json(eval_dir / "mcp_contract_eval_results.json")
+    if mcp_contract:
+        add_metric_row(
+            rows,
+            experiment="MCP stdio contract integration",
+            artifact="evaluation/mcp_contract_eval_results.json",
+            sample_count=mcp_contract.get("tasks"),
+            primary_metric="Task success rate",
+            primary_value=mcp_contract.get("task_success_rate"),
+            secondary_metrics={
+                "Required tools present": mcp_contract.get("required_tools_present"),
+                "In-scope task success": mcp_contract.get("in_scope_task_success_rate"),
+                "OOD refusal": mcp_contract.get("ood_refusal_success_rate"),
+                "Transport errors": mcp_contract.get("transport_error_count"),
+                "Protocol version": mcp_contract.get("mcp_protocol_version"),
+            },
+            note="Separate-process MCP stdio client/server test; not autonomous host-agent planning evaluation.",
         )
 
     asset_qa = read_json(eval_dir / "asset_qa_eval_results.json")
@@ -155,7 +139,7 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
     if gold:
         add_metric_row(
             rows,
-            experiment="External gold-answer seed",
+            experiment="Public answer-target aggregate",
             artifact="evaluation/gold_answer_eval_results.json",
             sample_count=gold.get("questions"),
             primary_metric="Gold-answer success rate",
@@ -165,8 +149,28 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
                 "Answer value hit": gold.get("answer_value_hit_rate"),
                 "Citation present": gold.get("citation_present_rate"),
             },
-            note="Public short-answer seed; not expert clinical grading.",
+            note="Combined profiles; interpret only together with the two profile-specific rows below.",
         )
+        for profile, metrics in (gold.get("by_benchmark_profile") or {}).items():
+            is_external = profile == "external_gold_answer"
+            add_metric_row(
+                rows,
+                experiment=f"Public answer-target: {profile}",
+                artifact="evaluation/gold_answer_eval_results.json",
+                sample_count=metrics.get("questions"),
+                primary_metric="Gold-answer success rate",
+                primary_value=metrics.get("gold_answer_success_rate"),
+                secondary_metrics={
+                    "Evidence value hit": metrics.get("evidence_value_hit_rate"),
+                    "Answer value hit": metrics.get("answer_value_hit_rate"),
+                    "Citation present": metrics.get("citation_present_rate"),
+                },
+                note=(
+                    "Small external public-answer-key stress test; not expert-adjudicated."
+                    if is_external
+                    else "In-corpus open-report target check; not an independent generalization test."
+                ),
+            )
 
     answer_generation = read_json(eval_dir / "answer_generation_eval_results.json")
     if answer_generation:
@@ -186,6 +190,21 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
             },
             note="Local no-hosted-LLM comparison separating evidence availability from extractive answer synthesis.",
         )
+        for profile, metrics in (answer_generation.get("by_benchmark_profile") or {}).items():
+            add_metric_row(
+                rows,
+                experiment=f"Answer synthesis: {profile}",
+                artifact="evaluation/answer_generation_eval_results.json",
+                sample_count=metrics.get("questions"),
+                primary_metric="Extractive answer value hit rate",
+                primary_value=metrics.get("extractive_answer_value_hit_rate"),
+                secondary_metrics={
+                    "Evidence-only value hit": metrics.get("evidence_only_value_hit_rate"),
+                    "Answer synthesis gap": metrics.get("answer_synthesis_gap_rate"),
+                    "Retrieval gap": metrics.get("retrieval_gap_rate"),
+                },
+                note="Profile-specific answer-synthesis diagnostic; not expert answer grading.",
+            )
 
     answer_quality = read_json(eval_dir / "answer_quality_eval_results.json")
     if answer_quality:
@@ -206,36 +225,52 @@ def build_matrix(eval_dir: Path) -> Dict[str, Any]:
             note="Automatic faithfulness proxy; not expert correctness grading.",
         )
 
-    navigator = read_json(eval_dir / "navigator_eval_results.json")
-    if navigator:
-        add_metric_row(
-            rows,
-            experiment="Navigator retrieval",
-            artifact="evaluation/navigator_eval_results.json",
-            sample_count=navigator.get("questions"),
-            primary_metric="Topic Recall@3",
-            primary_value=navigator.get("topic_recall@3"),
-            secondary_metrics={
-                "Candidate Document Recall@5": navigator.get("candidate_doc_recall@5"),
-            },
-            note="Checks navigable topic index support.",
-        )
+    pymupdf_mcq = read_json(eval_dir / "parser_comparison" / "pymupdf_baseline" / "public_mcq_eval_results.json")
+    opendataloader_mcq = read_json(eval_dir / "parser_comparison" / "opendataloader" / "public_mcq_eval_results.json")
+    if pymupdf_mcq and opendataloader_mcq:
+        for label, artifact, result in [
+            ("Public MCQ parser baseline: PyMuPDF", "evaluation/parser_comparison/pymupdf_baseline/public_mcq_eval_results.json", pymupdf_mcq),
+            ("Public MCQ parser comparison: OpenDataLoader", "evaluation/parser_comparison/opendataloader/public_mcq_eval_results.json", opendataloader_mcq),
+        ]:
+            add_metric_row(
+                rows,
+                experiment=label,
+                artifact=artifact,
+                sample_count=result.get("questions"),
+                primary_metric="MCQ option accuracy",
+                primary_value=result.get("mcq_option_accuracy"),
+                secondary_metrics={
+                    "Mean total latency seconds": result.get("mean_total_latency_seconds"),
+                    "Option selector": result.get("option_selector"),
+                    "Option selector backend": result.get("option_selector_backend"),
+                },
+                note="Same deterministic option-evidence selector; parser/index comparison only, not host-agent evaluation.",
+            )
 
-    failure_taxonomy = read_json(eval_dir / "failure_taxonomy.json")
-    if failure_taxonomy:
+    codex_score = read_json(eval_dir / "external" / "codex_agent_skill_score.json")
+    codex_metrics = codex_score.get("metrics") or {}
+    if codex_metrics:
+        accuracy = codex_metrics.get("accuracy") or {}
+        citations = codex_metrics.get("citation_rate") or {}
+        latency = codex_metrics.get("latency_seconds") or {}
         add_metric_row(
             rows,
-            experiment="Failure taxonomy",
-            artifact="evaluation/failure_taxonomy.json",
-            sample_count=failure_taxonomy.get("case_count"),
-            primary_metric="Automatically classified failure/gap cases",
-            primary_value=float(failure_taxonomy.get("case_count", 0)),
-            secondary_metrics=failure_taxonomy.get("by_category", {}),
-            note="Engineering failure taxonomy for paper discussion; not expert clinical adjudication.",
+            experiment="Public MCQ: Codex agent using local skill evidence",
+            artifact="evaluation/external/codex_agent_skill_score.json",
+            sample_count=accuracy.get("total"),
+            primary_metric="MCQ accuracy",
+            primary_value=accuracy.get("rate"),
+            secondary_metrics={
+                "Correct": accuracy.get("correct"),
+                "Citation rate": citations.get("rate"),
+                "Mean latency seconds": latency.get("mean"),
+                "P95 latency seconds": latency.get("p95_nearest_rank"),
+            },
+            note="Recorded Codex-agent local-skill run on public development data; not blinded, expert-adjudicated, or CLI-MCP end-to-end.",
         )
 
     return {
-        "matrix_version": "1.0",
+        "matrix_version": "1.2",
         "evaluation_dir": str(eval_dir),
         "experiment_count": len(rows),
         "rows": rows,

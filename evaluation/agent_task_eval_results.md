@@ -1,7 +1,7 @@
 # Agent Task Evaluation Results
 
 - Tasks: 40
-- Retrieval backend: auto
+- Retrieval backend: hybrid
 - Task success rate: 1.000
 - Structured success rate: 0.750
 - Document Hit Rate@5: 1.000

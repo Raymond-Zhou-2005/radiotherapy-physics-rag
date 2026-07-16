@@ -7,6 +7,7 @@ import argparse
 import importlib.util
 import json
 import platform
+import shutil
 import sys
 from pathlib import Path
 from typing import Any, Dict, Iterable
@@ -16,7 +17,6 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.list_corpus import list_corpus
-
 
 REQUIRED_FILES = [
     ".codex-plugin/plugin.json",
@@ -42,7 +42,7 @@ OPTIONAL_DENSE_FILES = [
 ]
 
 MODULES = [
-    "fitz",
+    "opendataloader_pdf",
     "numpy",
     "rank_bm25",
     "sentence_transformers",
@@ -78,6 +78,7 @@ def doctor(root: Path) -> Dict[str, Any]:
     runtime = rel_status(root, RUNTIME_FILES)
     dense = rel_status(root, OPTIONAL_DENSE_FILES)
     modules = {name: module_available(name) for name in MODULES}
+    java_available = shutil.which("java") is not None
     corpus = list_corpus(root)
     dense_meta = read_json(root / "index" / "dense" / "dense_meta.json")
     asset_manifest = read_json(root / "assets" / "extracted" / "asset_manifest.json")
@@ -104,6 +105,10 @@ def doctor(root: Path) -> Dict[str, Any]:
         warnings.append({"code": "dense_runtime_unavailable", "message": "Dense retrieval will fall back or require model dependencies."})
     if runtime_ready and not all(item["exists"] for item in dense.values()):
         warnings.append({"code": "dense_index_incomplete", "message": "Hybrid retrieval may be unavailable; sparse retrieval can still work."})
+    if not modules.get("opendataloader_pdf"):
+        warnings.append({"code": "pdf_parser_unavailable", "message": "OpenDataLoader PDF is not installed; run pip install -r requirements.txt."})
+    if not java_available:
+        warnings.append({"code": "java_unavailable", "message": "Java 11 or newer is required to parse or inspect PDFs with OpenDataLoader."})
 
     return {
         "ok": not errors,
@@ -115,6 +120,7 @@ def doctor(root: Path) -> Dict[str, Any]:
         "runtime_files": runtime,
         "optional_dense_files": dense,
         "modules": modules,
+        "java_available": java_available,
         "dense_meta": dense_meta,
         "asset_manifest": {
             "document_count": len(asset_manifest.get("documents", [])),

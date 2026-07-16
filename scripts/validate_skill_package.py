@@ -7,10 +7,9 @@ import argparse
 import importlib.util
 import json
 import re
-import sys
+import shutil
 from pathlib import Path
 from typing import Any, Dict, List
-
 
 REQUIRED_FILES = [
     ".github/workflows/ci.yml",
@@ -18,6 +17,9 @@ REQUIRED_FILES = [
     ".codex-plugin/plugin.json",
     ".mcp.json",
     ".zenodo.json",
+    "Dockerfile",
+    ".dockerignore",
+    "CONTAINER.md",
     "CHANGELOG.md",
     "CITATION.cff",
     "CONTRIBUTING.md",
@@ -37,8 +39,15 @@ REQUIRED_FILES = [
     "scripts/evaluate.py",
     "scripts/evaluate_ablation.py",
     "scripts/evaluate_agent_tasks.py",
+    "scripts/evaluate_answer_generation.py",
+    "scripts/evaluate_answer_quality.py",
+    "scripts/evaluate_extractive_selectors.py",
     "scripts/evaluate_strategies.py",
     "scripts/evaluate_gold_answers.py",
+    "scripts/evaluate_public_mcq_exam.py",
+    "scripts/run_codex_host_mcq.py",
+    "scripts/score_host_mcq_answers.py",
+    "scripts/compare_mcq_answer_methods.py",
     "scripts/evaluate_table_cell_qa.py",
     "scripts/extract_pdf_assets.py",
     "scripts/generate_agent_task_benchmark.py",
@@ -46,6 +55,7 @@ REQUIRED_FILES = [
     "scripts/build_paper_experiment_matrix.py",
     "scripts/chunk_corpus.py",
     "scripts/generate_gold_answer_benchmark.py",
+    "scripts/import_public_medical_physics_exam.py",
     "scripts/generate_table_cell_benchmark.py",
     "scripts/inspect_pdfs.py",
     "scripts/list_corpus.py",
@@ -58,10 +68,12 @@ REQUIRED_FILES = [
     "scripts/init_corpus.py",
     "scripts/prepare_index.py",
     "scripts/validate_skill_package.py",
+    "scripts/audit_runtime_integrity.py",
     "scripts/build_skill_bundle.py",
     "scripts/build_chatgpt_knowledge.py",
     "README.md",
     "references/document_onboarding.md",
+    "references/agent_evidence_safety.md",
     "references/mcp_usage.md",
     "references/model_setup.md",
     "references/output_contract.md",
@@ -77,6 +89,7 @@ REQUIRED_FILES = [
     "chatgpt_knowledge/starter_questions.md",
     "evaluation/README.md",
     "evaluation/public_credible_questions.json",
+    "evaluation/external/public_medical_physics_100_mcq.json",
     "evaluation/public_credible_eval_results.md",
     "evaluation/corpus_baseline.json",
     ".agents/plugins/marketplace.json",
@@ -111,7 +124,6 @@ FORBIDDEN_PATHS = [
     "agents",
     ".github/ISSUE_TEMPLATE",
     ".github/workflows/release.yml",
-    "Dockerfile",
     "docker-compose.yml",
     "requirements-dev.txt",
     "references/rag_blueprint.md",
@@ -241,6 +253,9 @@ def validate(skill_root: Path, require_index: bool = False, check_sample_baselin
             "radiotherapy-rag-evaluate-gold-answers",
             "radiotherapy-rag-evaluate-strategies",
             "radiotherapy-rag-evaluate-table-cells",
+            "radiotherapy-rag-run-codex-host-mcq",
+            "radiotherapy-rag-score-host-mcq",
+            "radiotherapy-rag-compare-mcq-methods",
         ]:
             if command not in text:
                 errors.append(f"pyproject.toml is missing console script {command}")
@@ -297,7 +312,6 @@ def validate(skill_root: Path, require_index: bool = False, check_sample_baselin
             )
 
     sources_path = skill_root / "reports" / "starter_corpus_sources.json"
-    manifest_doc_ids: List[str] = []
     if sources_path.exists():
         try:
             sources = json.loads(sources_path.read_text(encoding="utf-8"))
@@ -309,7 +323,6 @@ def validate(skill_root: Path, require_index: bool = False, check_sample_baselin
             errors.append(
                 f"Expected at least {EXPECTED_BASELINE['minimum_document_count']} starter corpus source records, found {len(sources)}"
             )
-        manifest_doc_ids = [str(item.get("doc_id")) for item in sources if item.get("doc_id")]
         if require_index:
             raw_pdf_count = len(list((skill_root / "reports" / "raw").glob("*.pdf")))
             checks["starter_corpus_pdf_count"] = raw_pdf_count
@@ -375,7 +388,8 @@ def validate(skill_root: Path, require_index: bool = False, check_sample_baselin
         errors.append("Missing assets/extracted/asset_manifest.json")
 
     dependency_checks = {
-        "fitz": module_available("fitz"),
+        "opendataloader_pdf": module_available("opendataloader_pdf"),
+        "java": shutil.which("java") is not None,
         "numpy": module_available("numpy"),
         "rank_bm25": module_available("rank_bm25"),
         "sentence_transformers": module_available("sentence_transformers"),
@@ -385,8 +399,10 @@ def validate(skill_root: Path, require_index: bool = False, check_sample_baselin
         "jsonschema": module_available("jsonschema"),
     }
     checks["dependencies"] = dependency_checks
-    if not dependency_checks["fitz"]:
-        warnings.append("PyMuPDF/fitz is not installed; PDF parsing and prepare_index.py require pip install -r requirements.txt.")
+    if not dependency_checks["opendataloader_pdf"]:
+        warnings.append("OpenDataLoader PDF is not installed; PDF parsing and prepare_index.py require pip install -r requirements.txt.")
+    if not dependency_checks["java"]:
+        warnings.append("Java 11 or newer is not available on PATH; OpenDataLoader PDF parsing requires it.")
     if not dependency_checks["numpy"]:
         warnings.append("numpy is not installed; dense index loading requires pip install -r requirements.txt.")
     if not dependency_checks["rank_bm25"]:

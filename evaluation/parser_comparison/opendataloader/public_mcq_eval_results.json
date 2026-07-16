@@ -1,0 +1,4616 @@
+{
+  "dataset_name": "Radiation Oncology NLP Database Medical Physics 100-question QA set",
+  "dataset_license": "Apache-2.0",
+  "source_repository": "https://github.com/Mayo-Clinic-RadOnc-Foundation-Models/Radiation-Oncology-NLP-Database",
+  "source_commit": "27e04f14a141a3a92dcc1df0449245175ae94b7c",
+  "source_csv_sha256": "e78390ab24c8ceb62454df03d28fa029b50c28c599e221fd758531dc0e122f96",
+  "questions": 100,
+  "retrieval_backend_requested": "auto",
+  "evidence_top_k": 6,
+  "skill_mode": "evidence",
+  "option_selector": "cross_encoder_option_evidence",
+  "option_selector_backend": "cross_encoder",
+  "skill_ok_rate": 0.99,
+  "citation_present_rate": 0.99,
+  "evidence_contains_gold_option_rate": 0.14,
+  "extractive_answer_contains_gold_option_rate": null,
+  "mcq_option_accuracy": 0.36,
+  "mean_retrieval_latency_seconds": 6.563879859999999,
+  "mean_option_selection_latency_seconds": 6.93950505,
+  "mean_total_latency_seconds": 13.5033849,
+  "details": [
+    {
+      "qid": "public_mcq_001",
+      "source_question_number": 1,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Neutrons",
+          "score": 0.05088448524475098
+        },
+        {
+          "label": "D",
+          "text": "Positrons",
+          "score": 0.03385607525706291
+        },
+        {
+          "label": "B",
+          "text": "Electrons",
+          "score": 0.03323691710829735
+        },
+        {
+          "label": "A",
+          "text": "Protons",
+          "score": 0.02141544036567211
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 9.58923,
+      "option_selection_latency_seconds": 6.729316,
+      "total_latency_seconds": 16.318545
+    },
+    {
+      "qid": "public_mcq_002",
+      "source_question_number": 2,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "tg158",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "slightly smaller",
+          "score": 0.024879660457372665
+        },
+        {
+          "label": "B",
+          "text": "slightly larger",
+          "score": 0.024801861494779587
+        },
+        {
+          "label": "C",
+          "text": "equal to",
+          "score": 0.020294131711125374
+        },
+        {
+          "label": "D",
+          "text": "All of the above are possible.",
+          "score": 0.01716797612607479
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.470433,
+      "option_selection_latency_seconds": 6.995282,
+      "total_latency_seconds": 13.465716
+    },
+    {
+      "qid": "public_mcq_003",
+      "source_question_number": 3,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "39 keV and 48 keV",
+          "score": 0.2895411550998688
+        },
+        {
+          "label": "C",
+          "text": "9 keV, 59 keV and 68 keV",
+          "score": 0.2885032892227173
+        },
+        {
+          "label": "D",
+          "text": "9 keV",
+          "score": 0.2710709869861603
+        },
+        {
+          "label": "A",
+          "text": "a continuous spectrum from 2 keV to 70 keV",
+          "score": 0.2507435381412506
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.684974,
+      "option_selection_latency_seconds": 7.552413,
+      "total_latency_seconds": 14.237387
+    },
+    {
+      "qid": "public_mcq_004",
+      "source_question_number": 4,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "The maximum photon energy is determined by the target material.",
+          "score": 0.5124405026435852
+        },
+        {
+          "label": "A",
+          "text": "The maximum photon energy is determined by the kVp.",
+          "score": 0.20246942341327667
+        },
+        {
+          "label": "D",
+          "text": "The characteristic photon energies are determined by the filtration.",
+          "score": 0.1626582145690918
+        },
+        {
+          "label": "C",
+          "text": "The characteristic photon energies are determined by the tube current.",
+          "score": 0.09377825260162354
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.423401,
+      "option_selection_latency_seconds": 6.995872,
+      "total_latency_seconds": 13.419273
+    },
+    {
+      "qid": "public_mcq_005",
+      "source_question_number": 5,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt",
+        "iaea_trs398_absorbed_dose_ebrt"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "2 mm",
+          "score": 0.9451258182525635
+        },
+        {
+          "label": "A",
+          "text": "1 mm",
+          "score": 0.9366196393966675
+        },
+        {
+          "label": "D",
+          "text": "4 mm",
+          "score": 0.9363049864768982
+        },
+        {
+          "label": "C",
+          "text": "3 mm",
+          "score": 0.9071504473686218
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.513126,
+      "option_selection_latency_seconds": 7.371919,
+      "total_latency_seconds": 13.885045
+    },
+    {
+      "qid": "public_mcq_006",
+      "source_question_number": 6,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Magnetron",
+          "score": 0.966883659362793
+        },
+        {
+          "label": "B",
+          "text": "Target",
+          "score": 0.9584960341453552
+        },
+        {
+          "label": "C",
+          "text": "Electron gun",
+          "score": 0.9358517527580261
+        },
+        {
+          "label": "A",
+          "text": "Thyratron",
+          "score": 0.8900073766708374
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.410873,
+      "option_selection_latency_seconds": 6.947953,
+      "total_latency_seconds": 13.358827
+    },
+    {
+      "qid": "public_mcq_007",
+      "source_question_number": 7,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Reduce leakage doses between leaves.",
+          "score": 0.6331221461296082
+        },
+        {
+          "label": "A",
+          "text": "Reduce frictions between leaves.",
+          "score": 0.514633059501648
+        },
+        {
+          "label": "D",
+          "text": "Increase field sizes for treatments.",
+          "score": 0.4481582045555115
+        },
+        {
+          "label": "C",
+          "text": "Increase speed of leaves.",
+          "score": 0.330102801322937
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.362592,
+      "option_selection_latency_seconds": 6.161437,
+      "total_latency_seconds": 12.524029
+    },
+    {
+      "qid": "public_mcq_008",
+      "source_question_number": 8,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Target",
+          "score": 0.14769430458545685
+        },
+        {
+          "label": "C",
+          "text": "Monitor chamber",
+          "score": 0.10931317508220673
+        },
+        {
+          "label": "B",
+          "text": "Electron gun",
+          "score": 0.0736466571688652
+        },
+        {
+          "label": "D",
+          "text": "Scattering foil",
+          "score": 0.04537514969706535
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.641126,
+      "option_selection_latency_seconds": 6.830405,
+      "total_latency_seconds": 13.471531
+    },
+    {
+      "qid": "public_mcq_009",
+      "source_question_number": 9,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg218_imrt_measurement_based_qa",
+        "tg158",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "tg158",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Has higher average energy.",
+          "score": 0.8741117119789124
+        },
+        {
+          "label": "D",
+          "text": "Increases treatment time.",
+          "score": 0.7731895446777344
+        },
+        {
+          "label": "C",
+          "text": "Has a higher dose rate.",
+          "score": 0.7656490802764893
+        },
+        {
+          "label": "B",
+          "text": "Is more penetrating.",
+          "score": 0.6981178522109985
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 5.7492,
+      "option_selection_latency_seconds": 6.78309,
+      "total_latency_seconds": 12.53229
+    },
+    {
+      "qid": "public_mcq_010",
+      "source_question_number": 10,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Photoelectric effect",
+          "score": 0.867457926273346
+        },
+        {
+          "label": "C",
+          "text": "Pair production",
+          "score": 0.8352926969528198
+        },
+        {
+          "label": "D",
+          "text": "Rayleigh scatter",
+          "score": 0.7898368239402771
+        },
+        {
+          "label": "B",
+          "text": "Compton scattering",
+          "score": 0.7097265124320984
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.964187,
+      "option_selection_latency_seconds": 7.465121,
+      "total_latency_seconds": 14.429308
+    },
+    {
+      "qid": "public_mcq_011",
+      "source_question_number": 11,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Bremsstrahlung",
+          "score": 0.7110286355018616
+        },
+        {
+          "label": "C",
+          "text": "Pair production",
+          "score": 0.3493746817111969
+        },
+        {
+          "label": "B",
+          "text": "Compton scattering",
+          "score": 0.3383755087852478
+        },
+        {
+          "label": "A",
+          "text": "Photoelectric effect",
+          "score": 0.2910046875476837
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.389713,
+      "option_selection_latency_seconds": 7.069983,
+      "total_latency_seconds": 13.459695
+    },
+    {
+      "qid": "public_mcq_012",
+      "source_question_number": 12,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "0o",
+          "score": 0.8674204349517822
+        },
+        {
+          "label": "C",
+          "text": "90o",
+          "score": 0.8626048564910889
+        },
+        {
+          "label": "D",
+          "text": "180o",
+          "score": 0.8543758392333984
+        },
+        {
+          "label": "B",
+          "text": "45o",
+          "score": 0.8457921743392944
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.764073,
+      "option_selection_latency_seconds": 7.523013,
+      "total_latency_seconds": 14.287085
+    },
+    {
+      "qid": "public_mcq_013",
+      "source_question_number": 13,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "μ/ρ ≥ μen/ρ ≥ μtr/ρ",
+          "score": 0.9936233162879944
+        },
+        {
+          "label": "B",
+          "text": "μen/ρ ≥ μtr/ρ ≥ μ/ρ",
+          "score": 0.993012011051178
+        },
+        {
+          "label": "D",
+          "text": "μ/ρ ≥ μtr/ρ ≥ μen/ρ",
+          "score": 0.9920052886009216
+        },
+        {
+          "label": "A",
+          "text": "μtr/ρ ≥ μen/ρ ≥ μ/ρ",
+          "score": 0.991710364818573
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.47277,
+      "option_selection_latency_seconds": 6.254291,
+      "total_latency_seconds": 12.727061
+    },
+    {
+      "qid": "public_mcq_014",
+      "source_question_number": 14,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "The relationship between KERMA and the absorbed dose can’t be determined.",
+          "score": 0.8080503344535828
+        },
+        {
+          "label": "A",
+          "text": "The KERMA is greater than the absorbed dose.",
+          "score": 0.7041043043136597
+        },
+        {
+          "label": "B",
+          "text": "The KERMA is equal to the absorbed dose.",
+          "score": 0.6927485466003418
+        },
+        {
+          "label": "C",
+          "text": "The KERMA is less than the absorbed dose.",
+          "score": 0.6730703711509705
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.545885,
+      "option_selection_latency_seconds": 7.733949,
+      "total_latency_seconds": 14.279833
+    },
+    {
+      "qid": "public_mcq_015",
+      "source_question_number": 15,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Gamma-rays from 60Co.",
+          "score": 0.344174861907959
+        },
+        {
+          "label": "A",
+          "text": "X-rays from a 100 kVp x-ray tube.",
+          "score": 0.305232971906662
+        },
+        {
+          "label": "D",
+          "text": "18 MV x-rays from a LINAC.",
+          "score": 0.23473840951919556
+        },
+        {
+          "label": "C",
+          "text": "6 MV x-rays from a LINAC.",
+          "score": 0.22892917692661285
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.595886,
+      "option_selection_latency_seconds": 7.331622,
+      "total_latency_seconds": 13.927508
+    },
+    {
+      "qid": "public_mcq_016",
+      "source_question_number": 16,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Farmer chambers",
+          "score": 0.9800153374671936
+        },
+        {
+          "label": "A",
+          "text": "Diodes",
+          "score": 0.9544321298599243
+        },
+        {
+          "label": "C",
+          "text": "Plane parallel ionization chambers",
+          "score": 0.9456289410591125
+        },
+        {
+          "label": "D",
+          "text": "Geiger-Muller counter",
+          "score": 0.9247121810913086
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.391037,
+      "option_selection_latency_seconds": 7.597356,
+      "total_latency_seconds": 13.988393
+    },
+    {
+      "qid": "public_mcq_017",
+      "source_question_number": 17,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "E",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "0.1%",
+          "score": 0.041903357952833176
+        },
+        {
+          "label": "E",
+          "text": "0.001%",
+          "score": 0.039768412709236145
+        },
+        {
+          "label": "D",
+          "text": "0.01%",
+          "score": 0.030482444912195206
+        },
+        {
+          "label": "A",
+          "text": "20%",
+          "score": 0.029600946232676506
+        },
+        {
+          "label": "B",
+          "text": "1%",
+          "score": 0.02864973619580269
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.167898,
+      "option_selection_latency_seconds": 8.29221,
+      "total_latency_seconds": 14.460108
+    },
+    {
+      "qid": "public_mcq_018",
+      "source_question_number": 18,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg180_image_guidance_dose_management",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr8_in_vivo_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Optically stimulated luminescence dosimeters (OSLDs)",
+          "score": 0.9951654672622681
+        },
+        {
+          "label": "B",
+          "text": "Thermoluminescent dosimeters (TLDs)",
+          "score": 0.9912593960762024
+        },
+        {
+          "label": "A",
+          "text": "Diodes",
+          "score": 0.9863383173942566
+        },
+        {
+          "label": "C",
+          "text": "Ionization chambers",
+          "score": 0.9210600852966309
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.395777,
+      "option_selection_latency_seconds": 7.332731,
+      "total_latency_seconds": 13.728508
+    },
+    {
+      "qid": "public_mcq_019",
+      "source_question_number": 19,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Recombination correction",
+          "score": 0.9900107979774475
+        },
+        {
+          "label": "C",
+          "text": "Scatter correction",
+          "score": 0.9869211912155151
+        },
+        {
+          "label": "D",
+          "text": "Polarity correction",
+          "score": 0.9859391450881958
+        },
+        {
+          "label": "A",
+          "text": "Temperature and pressure correction",
+          "score": 0.9849560856819153
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.508007,
+      "option_selection_latency_seconds": 6.259789,
+      "total_latency_seconds": 12.767795
+    },
+    {
+      "qid": "public_mcq_020",
+      "source_question_number": 20,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "0.97",
+          "score": 0.053981002420186996
+        },
+        {
+          "label": "B",
+          "text": "0.99",
+          "score": 0.041816793382167816
+        },
+        {
+          "label": "C",
+          "text": "1.03",
+          "score": 0.03152026981115341
+        },
+        {
+          "label": "D",
+          "text": "1.06",
+          "score": 0.03128345310688019
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.468661,
+      "option_selection_latency_seconds": 7.521494,
+      "total_latency_seconds": 13.990155
+    },
+    {
+      "qid": "public_mcq_021",
+      "source_question_number": 21,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "%dd(10)x",
+          "score": 0.9893122315406799
+        },
+        {
+          "label": "B",
+          "text": "Tenth value layer",
+          "score": 0.7742537260055542
+        },
+        {
+          "label": "C",
+          "text": "Average beam energy",
+          "score": 0.7526467442512512
+        },
+        {
+          "label": "A",
+          "text": "Nominal beam energy",
+          "score": 0.664739727973938
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.583833,
+      "option_selection_latency_seconds": 6.726304,
+      "total_latency_seconds": 13.310137
+    },
+    {
+      "qid": "public_mcq_022",
+      "source_question_number": 22,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Every day",
+          "score": 0.3179994523525238
+        },
+        {
+          "label": "B",
+          "text": "Every month",
+          "score": 0.30127623677253723
+        },
+        {
+          "label": "C",
+          "text": "Every year",
+          "score": 0.2651878297328949
+        },
+        {
+          "label": "D",
+          "text": "Every other year",
+          "score": 0.23639950156211853
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.417613,
+      "option_selection_latency_seconds": 3.82577,
+      "total_latency_seconds": 10.243383
+    },
+    {
+      "qid": "public_mcq_023",
+      "source_question_number": 23,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "TMR includes both beam attenuation and beam divergence.",
+          "score": 0.5963132381439209
+        },
+        {
+          "label": "A",
+          "text": "PDD includes both beam attenuation and beam divergence.",
+          "score": 0.47171103954315186
+        },
+        {
+          "label": "B",
+          "text": "PDD includes beam attenuation but does not include beam divergence.",
+          "score": 0.46431416273117065
+        },
+        {
+          "label": "D",
+          "text": "TMR does not include beam attenuation but does include beam divergence.",
+          "score": 0.4440467953681946
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.185261,
+      "option_selection_latency_seconds": 7.534748,
+      "total_latency_seconds": 13.720009
+    },
+    {
+      "qid": "public_mcq_024",
+      "source_question_number": 24,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Move the patient closer to the collimator.",
+          "score": 0.41494807600975037
+        },
+        {
+          "label": "B",
+          "text": "Increasing the source to collimator distance.",
+          "score": 0.29558634757995605
+        },
+        {
+          "label": "A",
+          "text": "Increasing SSD.",
+          "score": 0.19906188547611237
+        },
+        {
+          "label": "C",
+          "text": "Reducing the source size.",
+          "score": 0.1387488842010498
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 5.85684,
+      "option_selection_latency_seconds": 6.508999,
+      "total_latency_seconds": 12.365839
+    },
+    {
+      "qid": "public_mcq_025",
+      "source_question_number": 25,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "0.985 cGy/MU",
+          "score": 0.6601151823997498
+        },
+        {
+          "label": "D",
+          "text": "1.03 cGy/MU",
+          "score": 0.6320416927337646
+        },
+        {
+          "label": "B",
+          "text": "0.97 cGy/MU",
+          "score": 0.6212719678878784
+        },
+        {
+          "label": "C",
+          "text": "1.015 cGy/MU",
+          "score": 0.5530276298522949
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.495714,
+      "option_selection_latency_seconds": 7.738946,
+      "total_latency_seconds": 14.23466
+    },
+    {
+      "qid": "public_mcq_026",
+      "source_question_number": 26,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1540_tps_acceptance"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "100",
+          "score": 0.8569830656051636
+        },
+        {
+          "label": "C",
+          "text": "140",
+          "score": 0.8536404967308044
+        },
+        {
+          "label": "D",
+          "text": "160",
+          "score": 0.8194966912269592
+        },
+        {
+          "label": "B",
+          "text": "102",
+          "score": 0.8023818135261536
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.573834,
+      "option_selection_latency_seconds": 7.37221,
+      "total_latency_seconds": 13.946044
+    },
+    {
+      "qid": "public_mcq_027",
+      "source_question_number": 27,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc1543_quatro",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1583_tps_commissioning",
+        "tg158"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "30o",
+          "score": 0.6860767602920532
+        },
+        {
+          "label": "D",
+          "text": "60o",
+          "score": 0.3314182460308075
+        },
+        {
+          "label": "B",
+          "text": "40o",
+          "score": 0.30415499210357666
+        },
+        {
+          "label": "C",
+          "text": "50o",
+          "score": 0.2973614037036896
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.419627,
+      "option_selection_latency_seconds": 7.506796,
+      "total_latency_seconds": 13.926423
+    },
+    {
+      "qid": "public_mcq_028",
+      "source_question_number": 28,
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "selected_label": "A",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": false,
+      "retrieved_doc_ids_at_5": [],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "1.0 cm",
+          "score": -Infinity
+        },
+        {
+          "label": "B",
+          "text": "1.5 cm",
+          "score": -Infinity
+        },
+        {
+          "label": "C",
+          "text": "2.0 cm",
+          "score": -Infinity
+        },
+        {
+          "label": "D",
+          "text": "2.2 cm",
+          "score": -Infinity
+        }
+      ],
+      "retrieval_backend": "auto",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 7.229276,
+      "option_selection_latency_seconds": 6e-05,
+      "total_latency_seconds": 7.229336
+    },
+    {
+      "qid": "public_mcq_029",
+      "source_question_number": 29,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "3o",
+          "score": 0.035907644778490067
+        },
+        {
+          "label": "B",
+          "text": "5o",
+          "score": 0.03534328192472458
+        },
+        {
+          "label": "C",
+          "text": "7o",
+          "score": 0.03393350541591644
+        },
+        {
+          "label": "D",
+          "text": "9o",
+          "score": 0.03233153000473976
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.857539,
+      "option_selection_latency_seconds": 7.408683,
+      "total_latency_seconds": 14.266222
+    },
+    {
+      "qid": "public_mcq_030",
+      "source_question_number": 30,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Mean dose",
+          "score": 0.8501534461975098
+        },
+        {
+          "label": "D",
+          "text": "Maximum dose",
+          "score": 0.7946948409080505
+        },
+        {
+          "label": "C",
+          "text": "Minimum dose",
+          "score": 0.7799090147018433
+        },
+        {
+          "label": "A",
+          "text": "Location of the hot spot",
+          "score": 0.7728276252746582
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.559494,
+      "option_selection_latency_seconds": 7.431823,
+      "total_latency_seconds": 13.991316
+    },
+    {
+      "qid": "public_mcq_031",
+      "source_question_number": 31,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg263_nomenclature",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "95% of the heart receives more than 20 Gy.",
+          "score": 0.384899765253067
+        },
+        {
+          "label": "D",
+          "text": "95% of the heart receives less than 20 Gy.",
+          "score": 0.36166617274284363
+        },
+        {
+          "label": "B",
+          "text": "5% of the heart receives less than 20 Gy.",
+          "score": 0.2623830735683441
+        },
+        {
+          "label": "A",
+          "text": "5% of the heart receives exactly 20 Gy.",
+          "score": 0.20397144556045532
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.545332,
+      "option_selection_latency_seconds": 7.255414,
+      "total_latency_seconds": 13.800746
+    },
+    {
+      "qid": "public_mcq_032",
+      "source_question_number": 32,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Dose for each treatment fraction",
+          "score": 0.24238865077495575
+        },
+        {
+          "label": "B",
+          "text": "Total treatment dose",
+          "score": 0.21779939532279968
+        },
+        {
+          "label": "C",
+          "text": "Number of treatment fractions",
+          "score": 0.16038328409194946
+        },
+        {
+          "label": "D",
+          "text": "Number of beams",
+          "score": 0.12721417844295502
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.460698,
+      "option_selection_latency_seconds": 7.164426,
+      "total_latency_seconds": 13.625124
+    },
+    {
+      "qid": "public_mcq_033",
+      "source_question_number": 33,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "E",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "E",
+          "text": "20 MeV",
+          "score": 0.9397637844085693
+        },
+        {
+          "label": "B",
+          "text": "9 MeV",
+          "score": 0.9325089454650879
+        },
+        {
+          "label": "C",
+          "text": "12 MeV",
+          "score": 0.7052882313728333
+        },
+        {
+          "label": "D",
+          "text": "16 MeV",
+          "score": 0.6846399307250977
+        },
+        {
+          "label": "A",
+          "text": "6 MeV",
+          "score": 0.6837161779403687
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.497126,
+      "option_selection_latency_seconds": 8.68998,
+      "total_latency_seconds": 15.187105
+    },
+    {
+      "qid": "public_mcq_034",
+      "source_question_number": 34,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Bremsstrahlung radiation",
+          "score": 0.6146385073661804
+        },
+        {
+          "label": "C",
+          "text": "Characteristic x-rays",
+          "score": 0.20951324701309204
+        },
+        {
+          "label": "A",
+          "text": "Compton scattering",
+          "score": 0.1877841204404831
+        },
+        {
+          "label": "D",
+          "text": "Pair production",
+          "score": 0.09823404997587204
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.142375,
+      "option_selection_latency_seconds": 7.554925,
+      "total_latency_seconds": 13.6973
+    },
+    {
+      "qid": "public_mcq_035",
+      "source_question_number": 35,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Electron boost to chest wall of breast cancer",
+          "score": 0.29060491919517517
+        },
+        {
+          "label": "B",
+          "text": "Multiple fields IMRT treatment",
+          "score": 0.23371681571006775
+        },
+        {
+          "label": "D",
+          "text": "VMAT treatment with two arcs",
+          "score": 0.1679069548845291
+        },
+        {
+          "label": "A",
+          "text": "Four fields box for a pelvic treatment",
+          "score": 0.1442987471818924
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.038382,
+      "option_selection_latency_seconds": 6.860317,
+      "total_latency_seconds": 12.898699
+    },
+    {
+      "qid": "public_mcq_036",
+      "source_question_number": 36,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "It is equal to the distance from the x-ray sources to the isocenter.",
+          "score": 0.736699104309082
+        },
+        {
+          "label": "C",
+          "text": "It is larger than the distance from the x-ray sources to the isocenter.",
+          "score": 0.6870856285095215
+        },
+        {
+          "label": "A",
+          "text": "It increases with increasing electron energy.",
+          "score": 0.15277136862277985
+        },
+        {
+          "label": "D",
+          "text": "It is independent of electron energy.",
+          "score": 0.09577397257089615
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.173214,
+      "option_selection_latency_seconds": 7.242765,
+      "total_latency_seconds": 13.415979
+    },
+    {
+      "qid": "public_mcq_037",
+      "source_question_number": 37,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "6 cm",
+          "score": 0.5738030672073364
+        },
+        {
+          "label": "D",
+          "text": "12 cm",
+          "score": 0.4810234308242798
+        },
+        {
+          "label": "C",
+          "text": "9 cm",
+          "score": 0.4612466096878052
+        },
+        {
+          "label": "A",
+          "text": "3 cm",
+          "score": 0.45512455701828003
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.428183,
+      "option_selection_latency_seconds": 6.256917,
+      "total_latency_seconds": 12.685101
+    },
+    {
+      "qid": "public_mcq_038",
+      "source_question_number": 38,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Optimizing beam fluence based on the desired dose constraints.",
+          "score": 0.9792662262916565
+        },
+        {
+          "label": "A",
+          "text": "Choosing best beam angles.",
+          "score": 0.969205379486084
+        },
+        {
+          "label": "B",
+          "text": "Choosing appropriate beam modifiers such as wedges and compensators.",
+          "score": 0.9205225706100464
+        },
+        {
+          "label": "D",
+          "text": "Adding beam block to protect organs at risk.",
+          "score": 0.8793368339538574
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.793701,
+      "option_selection_latency_seconds": 5.12376,
+      "total_latency_seconds": 11.917461
+    },
+    {
+      "qid": "public_mcq_039",
+      "source_question_number": 39,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "It converts optimized fluence to the achievable fluence by MLC.",
+          "score": 0.9219968914985657
+        },
+        {
+          "label": "B",
+          "text": "It converts cost functions to the optimized fluence.",
+          "score": 0.7817698121070862
+        },
+        {
+          "label": "C",
+          "text": "It converts achievable fluence to dose.",
+          "score": 0.7593255043029785
+        },
+        {
+          "label": "D",
+          "text": "It converts desirable constraints to cost functions.",
+          "score": 0.7494428157806396
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.802618,
+      "option_selection_latency_seconds": 6.116249,
+      "total_latency_seconds": 12.918867
+    },
+    {
+      "qid": "public_mcq_040",
+      "source_question_number": 40,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg119_imrt_commissioning",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "aapm_tg120_imrt_dosimetry_tools"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "50%/mm",
+          "score": 0.7047080993652344
+        },
+        {
+          "label": "C",
+          "text": "10%/mm",
+          "score": 0.7045808434486389
+        },
+        {
+          "label": "B",
+          "text": "1%/mm",
+          "score": 0.5311834812164307
+        },
+        {
+          "label": "A",
+          "text": "0.1%/mm",
+          "score": 0.4200657606124878
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.362758,
+      "option_selection_latency_seconds": 7.375631,
+      "total_latency_seconds": 13.73839
+    },
+    {
+      "qid": "public_mcq_041",
+      "source_question_number": 41,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg142_medical_accelerator_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Diode Array",
+          "score": 0.9300538897514343
+        },
+        {
+          "label": "A",
+          "text": "Electronic portal imaging device",
+          "score": 0.9233934283256531
+        },
+        {
+          "label": "B",
+          "text": "Film and ionization chamber",
+          "score": 0.917634904384613
+        },
+        {
+          "label": "D",
+          "text": "Single ionization chamber",
+          "score": 0.9044684767723083
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.449086,
+      "option_selection_latency_seconds": 7.761451,
+      "total_latency_seconds": 14.210537
+    },
+    {
+      "qid": "public_mcq_042",
+      "source_question_number": 42,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Beam angle",
+          "score": 0.8161320090293884
+        },
+        {
+          "label": "D",
+          "text": "Upper and lower dose constraints",
+          "score": 0.6979002356529236
+        },
+        {
+          "label": "C",
+          "text": "Beam weight",
+          "score": 0.6500180959701538
+        },
+        {
+          "label": "A",
+          "text": "Beam energy",
+          "score": 0.6183686256408691
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.43298,
+      "option_selection_latency_seconds": 7.383322,
+      "total_latency_seconds": 13.816302
+    },
+    {
+      "qid": "public_mcq_043",
+      "source_question_number": 43,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "0.99",
+          "score": 0.15392056107521057
+        },
+        {
+          "label": "A",
+          "text": "1.01",
+          "score": 0.14235453307628632
+        },
+        {
+          "label": "B",
+          "text": "1.1",
+          "score": 0.13487617671489716
+        },
+        {
+          "label": "D",
+          "text": "0.9",
+          "score": 0.13148917257785797
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.395475,
+      "option_selection_latency_seconds": 7.696224,
+      "total_latency_seconds": 14.091699
+    },
+    {
+      "qid": "public_mcq_044",
+      "source_question_number": 44,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg179_ct_based_igrt_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Increasing field of view.",
+          "score": 0.5165912508964539
+        },
+        {
+          "label": "D",
+          "text": "Decreasing tube current.",
+          "score": 0.4847554564476013
+        },
+        {
+          "label": "C",
+          "text": "Decreasing field of view.",
+          "score": 0.4652770161628723
+        },
+        {
+          "label": "A",
+          "text": "Increasing tube voltage.",
+          "score": 0.29916447401046753
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.481944,
+      "option_selection_latency_seconds": 7.36342,
+      "total_latency_seconds": 13.845365
+    },
+    {
+      "qid": "public_mcq_045",
+      "source_question_number": 45,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "MR images do not have information about electron density.",
+          "score": 0.9908657670021057
+        },
+        {
+          "label": "A",
+          "text": "MR images have inferior soft tissue contrast than CT.",
+          "score": 0.9875333309173584
+        },
+        {
+          "label": "B",
+          "text": "MR images have worse spatial resolution than CT.",
+          "score": 0.8602904677391052
+        },
+        {
+          "label": "C",
+          "text": "MR images deliver more ionization doses to the patient than CT.",
+          "score": 0.8510260581970215
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.184943,
+      "option_selection_latency_seconds": 6.202307,
+      "total_latency_seconds": 12.38725
+    },
+    {
+      "qid": "public_mcq_046",
+      "source_question_number": 46,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs483_small_static_fields",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "10 cm",
+          "score": 0.004344248212873936
+        },
+        {
+          "label": "A",
+          "text": "5 cm",
+          "score": 0.003785890992730856
+        },
+        {
+          "label": "B",
+          "text": "7.5 cm",
+          "score": 0.0035277337301522493
+        },
+        {
+          "label": "D",
+          "text": "15 cm",
+          "score": 0.0031825201585888863
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.859402,
+      "option_selection_latency_seconds": 7.366341,
+      "total_latency_seconds": 14.225743
+    },
+    {
+      "qid": "public_mcq_047",
+      "source_question_number": 47,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_report_113_physics_clinical_trials",
+        "tg158",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc1588_3dcrt_imrt_transition"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "MRI",
+          "score": 0.8828020095825195
+        },
+        {
+          "label": "B",
+          "text": "PET",
+          "score": 0.8472421169281006
+        },
+        {
+          "label": "D",
+          "text": "Radiograph",
+          "score": 0.8115842938423157
+        },
+        {
+          "label": "C",
+          "text": "CT",
+          "score": 0.799502432346344
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.486302,
+      "option_selection_latency_seconds": 6.346413,
+      "total_latency_seconds": 12.832715
+    },
+    {
+      "qid": "public_mcq_048",
+      "source_question_number": 48,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg132_image_registration_fusion",
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg101_sbrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "PET images spatial resolution is better than CT and MRI.",
+          "score": 0.9961197376251221
+        },
+        {
+          "label": "D",
+          "text": "PET images spatial resolution is better than 1 mm.",
+          "score": 0.8964070677757263
+        },
+        {
+          "label": "B",
+          "text": "PET images spatial resolution increases when the average energy of the emitted positrons decrease.",
+          "score": 0.7797434329986572
+        },
+        {
+          "label": "C",
+          "text": "PET images spatial resolution increases when number of detectors in the ring decreases.",
+          "score": 0.6856773495674133
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.739766,
+      "option_selection_latency_seconds": 7.432521,
+      "total_latency_seconds": 14.172287
+    },
+    {
+      "qid": "public_mcq_049",
+      "source_question_number": 49,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg263_nomenclature",
+        "aapm_tg263_nomenclature",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Prescription dose",
+          "score": 0.28700077533721924
+        },
+        {
+          "label": "A",
+          "text": "Patient name",
+          "score": 0.23925523459911346
+        },
+        {
+          "label": "B",
+          "text": "Treatment angles",
+          "score": 0.22498644888401031
+        },
+        {
+          "label": "C",
+          "text": "CT scanner parameters, such as kVp, mAs",
+          "score": 0.1766815334558487
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.033354,
+      "option_selection_latency_seconds": 7.23561,
+      "total_latency_seconds": 13.268964
+    },
+    {
+      "qid": "public_mcq_050",
+      "source_question_number": 50,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "1.0 s",
+          "score": 0.02644517831504345
+        },
+        {
+          "label": "D",
+          "text": "2.0 s",
+          "score": 0.023346561938524246
+        },
+        {
+          "label": "B",
+          "text": "0.5 s",
+          "score": 0.02225254662334919
+        },
+        {
+          "label": "A",
+          "text": "0.2 s",
+          "score": 0.02197258360683918
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.556355,
+      "option_selection_latency_seconds": 7.515512,
+      "total_latency_seconds": 14.071867
+    },
+    {
+      "qid": "public_mcq_051",
+      "source_question_number": 51,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "CT simulator usually has a larger bore size than diagnostic CT.",
+          "score": 0.39841535687446594
+        },
+        {
+          "label": "B",
+          "text": "CT simulator gives better image spatial resolution and contrast than diagnostic CT.",
+          "score": 0.3624539375305176
+        },
+        {
+          "label": "C",
+          "text": "CT simulator needs extra laser for localizing the treatment isocenter.",
+          "score": 0.1573178917169571
+        },
+        {
+          "label": "D",
+          "text": "CT simulator needs accurate geometry and HU for the whole body.",
+          "score": 0.10935240983963013
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 5.387762,
+      "option_selection_latency_seconds": 6.514142,
+      "total_latency_seconds": 11.901904
+    },
+    {
+      "qid": "public_mcq_052",
+      "source_question_number": 52,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_report_104_kv_imaging_guidance",
+        "tg158",
+        "aapm_tg147_nonradiographic_localization_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Change 3D CRT plan to IMRT plan.",
+          "score": 0.7640232443809509
+        },
+        {
+          "label": "A",
+          "text": "Change weekly IGRT to daily IGRT.",
+          "score": 0.7330372929573059
+        },
+        {
+          "label": "B",
+          "text": "Change the setup from laser to IGRT.",
+          "score": 0.6878791451454163
+        },
+        {
+          "label": "C",
+          "text": "Add fiducial markers to the target.",
+          "score": 0.6056877970695496
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 5.719229,
+      "option_selection_latency_seconds": 7.10868,
+      "total_latency_seconds": 12.82791
+    },
+    {
+      "qid": "public_mcq_053",
+      "source_question_number": 53,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "MV portal imaging",
+          "score": 0.744525671005249
+        },
+        {
+          "label": "B",
+          "text": "kV orthogonal planar images",
+          "score": 0.6765161752700806
+        },
+        {
+          "label": "C",
+          "text": "kV cone-beam CT",
+          "score": 0.631950318813324
+        },
+        {
+          "label": "D",
+          "text": "Surface imaging",
+          "score": 0.6175496578216553
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.132438,
+      "option_selection_latency_seconds": 6.63646,
+      "total_latency_seconds": 12.768898
+    },
+    {
+      "qid": "public_mcq_054",
+      "source_question_number": 54,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhr16_igrt_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "MV portal image.",
+          "score": 0.3617050051689148
+        },
+        {
+          "label": "D",
+          "text": "CT on-rail.",
+          "score": 0.2783172130584717
+        },
+        {
+          "label": "B",
+          "text": "kV orthogonal planar images.",
+          "score": 0.22137661278247833
+        },
+        {
+          "label": "C",
+          "text": "kV cone-beam CT.",
+          "score": 0.18921393156051636
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.420703,
+      "option_selection_latency_seconds": 6.204398,
+      "total_latency_seconds": 12.625101
+    },
+    {
+      "qid": "public_mcq_055",
+      "source_question_number": 55,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg180_image_guidance_dose_management",
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhr16_igrt_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "kV orthogonal planar images",
+          "score": 0.3207526206970215
+        },
+        {
+          "label": "A",
+          "text": "MV portal image",
+          "score": 0.23577766120433807
+        },
+        {
+          "label": "B",
+          "text": "MV cone-beam CT",
+          "score": 0.23437470197677612
+        },
+        {
+          "label": "D",
+          "text": "kV cone-beam CT",
+          "score": 0.22114121913909912
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.935006,
+      "option_selection_latency_seconds": 10.867252,
+      "total_latency_seconds": 17.802258
+    },
+    {
+      "qid": "public_mcq_056",
+      "source_question_number": 56,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg147_nonradiographic_localization_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg147_nonradiographic_localization_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Implanted fiducial markers and fluoroscopy imaging.",
+          "score": 0.14924603700637817
+        },
+        {
+          "label": "A",
+          "text": "Infrared surface imaging.",
+          "score": 0.02380046620965004
+        },
+        {
+          "label": "B",
+          "text": "Implanted RF beacons.",
+          "score": 0.020390596240758896
+        },
+        {
+          "label": "D",
+          "text": "MR images in MR-LINAC.",
+          "score": 0.018727904185652733
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 8.125484,
+      "option_selection_latency_seconds": 7.070596,
+      "total_latency_seconds": 15.19608
+    },
+    {
+      "qid": "public_mcq_057",
+      "source_question_number": 57,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Patient is comfortable in free breathing.",
+          "score": 0.2507503628730774
+        },
+        {
+          "label": "A",
+          "text": "Reduced internal target volume.",
+          "score": 0.10840865224599838
+        },
+        {
+          "label": "C",
+          "text": "Reduced treatment time.",
+          "score": 0.06926141679286957
+        },
+        {
+          "label": "B",
+          "text": "Reduced dose to organ at risk.",
+          "score": 0.06407932937145233
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 7.65767,
+      "option_selection_latency_seconds": 8.185067,
+      "total_latency_seconds": 15.842737
+    },
+    {
+      "qid": "public_mcq_058",
+      "source_question_number": 58,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs19_ct_sim_radiotherapy"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "tumor in the lung",
+          "score": 0.49647286534309387
+        },
+        {
+          "label": "D",
+          "text": "tumor in the liver",
+          "score": 0.40617990493774414
+        },
+        {
+          "label": "B",
+          "text": "tumor in the brain",
+          "score": 0.3784579634666443
+        },
+        {
+          "label": "A",
+          "text": "tumor near the diaphragm",
+          "score": 0.15328478813171387
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.866628,
+      "option_selection_latency_seconds": 7.116332,
+      "total_latency_seconds": 13.98296
+    },
+    {
+      "qid": "public_mcq_059",
+      "source_question_number": 59,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg75_igrt_imaging_dose",
+        "aapm_report_113_physics_clinical_trials",
+        "iaea_hhr16_igrt_qa",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Free-breathing respiratory gating.",
+          "score": 0.5946789383888245
+        },
+        {
+          "label": "B",
+          "text": "Real-time tumor tracking.",
+          "score": 0.5197763442993164
+        },
+        {
+          "label": "C",
+          "text": "IGRT using cone-beam CT.",
+          "score": 0.3929620385169983
+        },
+        {
+          "label": "A",
+          "text": "Deep-inspiration breath hold (DIBH).",
+          "score": 0.3862169682979584
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 7.356305,
+      "option_selection_latency_seconds": 6.135027,
+      "total_latency_seconds": 13.491332
+    },
+    {
+      "qid": "public_mcq_060",
+      "source_question_number": 60,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "1.5%",
+          "score": 0.5024147629737854
+        },
+        {
+          "label": "C",
+          "text": "1.0%",
+          "score": 0.49782073497772217
+        },
+        {
+          "label": "B",
+          "text": "0.7%",
+          "score": 0.4796789288520813
+        },
+        {
+          "label": "A",
+          "text": "0.5%",
+          "score": 0.47547560930252075
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.970813,
+      "option_selection_latency_seconds": 8.324254,
+      "total_latency_seconds": 15.295067
+    },
+    {
+      "qid": "public_mcq_061",
+      "source_question_number": 61,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc_1040_radiotherapy_programme",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Its decay rate is 37 GBq.",
+          "score": 0.6730111241340637
+        },
+        {
+          "label": "A",
+          "text": "Its decay rate is equivalent to about 10 grams of 226Ra.",
+          "score": 0.4710865616798401
+        },
+        {
+          "label": "B",
+          "text": "Its decay rate is equivalent to about 1 gram of 226Ra.",
+          "score": 0.45899102091789246
+        },
+        {
+          "label": "D",
+          "text": "Its decay rate is 3.7 GBq.",
+          "score": 0.3432087004184723
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 7.679168,
+      "option_selection_latency_seconds": 7.384979,
+      "total_latency_seconds": 15.064147
+    },
+    {
+      "qid": "public_mcq_062",
+      "source_question_number": 62,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_trs492_brachytherapy_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "12 hours",
+          "score": 0.049260031431913376
+        },
+        {
+          "label": "C",
+          "text": "4 hours",
+          "score": 0.0477149598300457
+        },
+        {
+          "label": "D",
+          "text": "3 hours",
+          "score": 0.04766146093606949
+        },
+        {
+          "label": "B",
+          "text": "8 hours",
+          "score": 0.04691021516919136
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 7.136511,
+      "option_selection_latency_seconds": 7.992441,
+      "total_latency_seconds": 15.128952
+    },
+    {
+      "qid": "public_mcq_063",
+      "source_question_number": 63,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhr8_in_vivo_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "5.9 cGy/h",
+          "score": 0.9863948822021484
+        },
+        {
+          "label": "D",
+          "text": "7.9 cGy/h",
+          "score": 0.9843577146530151
+        },
+        {
+          "label": "A",
+          "text": "4.9 cGy/h",
+          "score": 0.9836496114730835
+        },
+        {
+          "label": "C",
+          "text": "7.0 cGy/h",
+          "score": 0.9804242849349976
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 7.480262,
+      "option_selection_latency_seconds": 2.778771,
+      "total_latency_seconds": 10.259033
+    },
+    {
+      "qid": "public_mcq_064",
+      "source_question_number": 64,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "125I",
+          "score": 0.33260712027549744
+        },
+        {
+          "label": "C",
+          "text": "226Ra",
+          "score": 0.2825828194618225
+        },
+        {
+          "label": "A",
+          "text": "192Ir",
+          "score": 0.25897762179374695
+        },
+        {
+          "label": "B",
+          "text": "137Cs",
+          "score": 0.20108133554458618
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.80135,
+      "option_selection_latency_seconds": 6.247341,
+      "total_latency_seconds": 13.048691
+    },
+    {
+      "qid": "public_mcq_065",
+      "source_question_number": 65,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum",
+        "aapm_tg51_photon_dosimetry_addendum"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "The dose delivered while the source is in transit is usually ignored.",
+          "score": 0.15954507887363434
+        },
+        {
+          "label": "D",
+          "text": "The patient is treated as water.",
+          "score": 0.11157692968845367
+        },
+        {
+          "label": "A",
+          "text": "The absorption and scattering in the source is not considered.",
+          "score": 0.10259837657213211
+        },
+        {
+          "label": "B",
+          "text": "The applicator is treated as water.",
+          "score": 0.08813973516225815
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.690286,
+      "option_selection_latency_seconds": 7.665336,
+      "total_latency_seconds": 14.355622
+    },
+    {
+      "qid": "public_mcq_066",
+      "source_question_number": 66,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Attenuation is compensated by the increased scatter.",
+          "score": 0.9670188426971436
+        },
+        {
+          "label": "B",
+          "text": "Attenuation is included in the geometry factor.",
+          "score": 0.9430850148200989
+        },
+        {
+          "label": "A",
+          "text": "There is no attenuation for the first 5 cm.",
+          "score": 0.9293015599250793
+        },
+        {
+          "label": "D",
+          "text": "Attenuation is included in the anisotropy factor.",
+          "score": 0.9153900742530823
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.521086,
+      "option_selection_latency_seconds": 7.367705,
+      "total_latency_seconds": 13.88879
+    },
+    {
+      "qid": "public_mcq_067",
+      "source_question_number": 67,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc1540_tps_acceptance",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "933 cGy",
+          "score": 0.03561778366565704
+        },
+        {
+          "label": "A",
+          "text": "1244 cGy",
+          "score": 0.0323510617017746
+        },
+        {
+          "label": "D",
+          "text": "500 cGy",
+          "score": 0.029792314395308495
+        },
+        {
+          "label": "C",
+          "text": "700 cGy",
+          "score": 0.02407349832355976
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.497692,
+      "option_selection_latency_seconds": 7.766508,
+      "total_latency_seconds": 14.2642
+    },
+    {
+      "qid": "public_mcq_068",
+      "source_question_number": 68,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "are longer at the superior end than the inferior end.",
+          "score": 0.2076248973608017
+        },
+        {
+          "label": "A",
+          "text": "are the same at all dwell points.",
+          "score": 0.18508309125900269
+        },
+        {
+          "label": "B",
+          "text": "are longer at the ends.",
+          "score": 0.14705535769462585
+        },
+        {
+          "label": "C",
+          "text": "are longer in the middle.",
+          "score": 0.11651148647069931
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.384561,
+      "option_selection_latency_seconds": 6.881532,
+      "total_latency_seconds": 13.266093
+    },
+    {
+      "qid": "public_mcq_069",
+      "source_question_number": 69,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "The half-life for 103Pd is shorter.",
+          "score": 0.9984644651412964
+        },
+        {
+          "label": "B",
+          "text": "The energy of emitted photon for 103Pd is larger.",
+          "score": 0.9935529232025146
+        },
+        {
+          "label": "C",
+          "text": "The radial dose function g(r) for 103Pd is larger.",
+          "score": 0.9908319115638733
+        },
+        {
+          "label": "D",
+          "text": "The anisotropy function for 103Pd is larger.",
+          "score": 0.9818702936172485
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.43325,
+      "option_selection_latency_seconds": 7.704018,
+      "total_latency_seconds": 14.137267
+    },
+    {
+      "qid": "public_mcq_070",
+      "source_question_number": 70,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg147_nonradiographic_localization_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Radiation monitor function check",
+          "score": 0.08953921496868134
+        },
+        {
+          "label": "D",
+          "text": "Source calibration",
+          "score": 0.035683389753103256
+        },
+        {
+          "label": "B",
+          "text": "Survey meter function check",
+          "score": 0.02996293641626835
+        },
+        {
+          "label": "A",
+          "text": "Source position accuracy check",
+          "score": 0.025580696761608124
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.396883,
+      "option_selection_latency_seconds": 7.317632,
+      "total_latency_seconds": 13.714515
+    },
+    {
+      "qid": "public_mcq_071",
+      "source_question_number": 71,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "A well ionization chamber",
+          "score": 0.07309660315513611
+        },
+        {
+          "label": "D",
+          "text": "A diode",
+          "score": 0.029423661530017853
+        },
+        {
+          "label": "B",
+          "text": "A Farmer chamber",
+          "score": 0.025289267301559448
+        },
+        {
+          "label": "C",
+          "text": "A Geiger-Muller counter",
+          "score": 0.014790116809308529
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.525171,
+      "option_selection_latency_seconds": 7.581749,
+      "total_latency_seconds": 14.106921
+    },
+    {
+      "qid": "public_mcq_072",
+      "source_question_number": 72,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg75_igrt_imaging_dose",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Performing patient surveys only before the treatment.",
+          "score": 0.6874719858169556
+        },
+        {
+          "label": "B",
+          "text": "Changing the source at a frequency of 3-4 months.",
+          "score": 0.4573340117931366
+        },
+        {
+          "label": "A",
+          "text": "Calibrating the source when a new source is used.",
+          "score": 0.3697977662086487
+        },
+        {
+          "label": "C",
+          "text": "Performing daily QA in the days only when patient treatment is scheduled.",
+          "score": 0.3399259150028229
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.606586,
+      "option_selection_latency_seconds": 7.078128,
+      "total_latency_seconds": 13.684714
+    },
+    {
+      "qid": "public_mcq_073",
+      "source_question_number": 73,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg142_medical_accelerator_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "The treatment is faster than it is for regular patients.",
+          "score": 0.07661566138267517
+        },
+        {
+          "label": "C",
+          "text": "The extended SSD increases the dose uniformity.",
+          "score": 0.04485544189810753
+        },
+        {
+          "label": "B",
+          "text": "FFF mode is used to increase the dose rate.",
+          "score": 0.03740810230374336
+        },
+        {
+          "label": "A",
+          "text": "Lung block is always needed when lateral opposed beams are used.",
+          "score": 0.0343099981546402
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.202289,
+      "option_selection_latency_seconds": 6.778369,
+      "total_latency_seconds": 12.980658
+    },
+    {
+      "qid": "public_mcq_074",
+      "source_question_number": 74,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_tecdoc1583_tps_commissioning"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "350 cm",
+          "score": 0.19589748978614807
+        },
+        {
+          "label": "A",
+          "text": "250 cm",
+          "score": 0.1873343139886856
+        },
+        {
+          "label": "D",
+          "text": "550 cm",
+          "score": 0.17878586053848267
+        },
+        {
+          "label": "C",
+          "text": "450 cm",
+          "score": 0.17720656096935272
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.899472,
+      "option_selection_latency_seconds": 7.214306,
+      "total_latency_seconds": 14.113778
+    },
+    {
+      "qid": "public_mcq_075",
+      "source_question_number": 75,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "tg158",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "To minimize the dose from x-ray contaminations.",
+          "score": 0.13408514857292175
+        },
+        {
+          "label": "D",
+          "text": "To reduce treatment time.",
+          "score": 0.07070837169885635
+        },
+        {
+          "label": "B",
+          "text": "To maximize the dose from x-ray contaminations.",
+          "score": 0.054201025515794754
+        },
+        {
+          "label": "C",
+          "text": "To increase the SSD.",
+          "score": 0.045223724097013474
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.46572,
+      "option_selection_latency_seconds": 6.622313,
+      "total_latency_seconds": 13.088033
+    },
+    {
+      "qid": "public_mcq_076",
+      "source_question_number": 76,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "B",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "MV photons",
+          "score": 0.8627662658691406
+        },
+        {
+          "label": "A",
+          "text": "MeV Electrons",
+          "score": 0.8606616258621216
+        },
+        {
+          "label": "D",
+          "text": "kV x-rays",
+          "score": 0.8394672870635986
+        },
+        {
+          "label": "C",
+          "text": "HDR Brachytherapy",
+          "score": 0.7951852679252625
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.626428,
+      "option_selection_latency_seconds": 6.789827,
+      "total_latency_seconds": 13.416256
+    },
+    {
+      "qid": "public_mcq_077",
+      "source_question_number": 77,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "tg158",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "They increase with depth.",
+          "score": 0.014573324471712112
+        },
+        {
+          "label": "C",
+          "text": "They do not change with depth.",
+          "score": 0.004293168429285288
+        },
+        {
+          "label": "A",
+          "text": "They are always larger than penumbras of MV x-rays in LINAC.",
+          "score": 0.003048237878829241
+        },
+        {
+          "label": "B",
+          "text": "They are always smaller than penumbras of MV x-rays in LINAC.",
+          "score": 0.002882359316572547
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.499673,
+      "option_selection_latency_seconds": 7.353177,
+      "total_latency_seconds": 13.85285
+    },
+    {
+      "qid": "public_mcq_078",
+      "source_question_number": 78,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "tg158",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "A range modulation wheel",
+          "score": 0.0874217078089714
+        },
+        {
+          "label": "B",
+          "text": "Scanning magnets",
+          "score": 0.07568934559822083
+        },
+        {
+          "label": "A",
+          "text": "A dose monitor chamber",
+          "score": 0.03781282529234886
+        },
+        {
+          "label": "D",
+          "text": "A spot position monitor",
+          "score": 0.029864953830838203
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.437598,
+      "option_selection_latency_seconds": 7.703835,
+      "total_latency_seconds": 14.141432
+    },
+    {
+      "qid": "public_mcq_079",
+      "source_question_number": 79,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "tg158",
+        "tg158",
+        "tg158",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "It results in about 3.5% range uncertainty.",
+          "score": 0.034976281225681305
+        },
+        {
+          "label": "D",
+          "text": "It is the same as range uncertainty.",
+          "score": 0.029074950143694878
+        },
+        {
+          "label": "A",
+          "text": "It is due to the statistical uncertainty in energy loss.",
+          "score": 0.020324157550930977
+        },
+        {
+          "label": "C",
+          "text": "It can be minimized by robust optimization.",
+          "score": 0.01803016848862171
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.559068,
+      "option_selection_latency_seconds": 7.371452,
+      "total_latency_seconds": 13.93052
+    },
+    {
+      "qid": "public_mcq_080",
+      "source_question_number": 80,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_hhr17_linear_accelerators",
+        "tg158",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs398_absorbed_dose_ebrt"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Protons at 250 MeV have a higher speed than electrons at 6-20 MeV.",
+          "score": 0.18894276022911072
+        },
+        {
+          "label": "B",
+          "text": "The mass of protons is about 1800 times more than the mass of electrons.",
+          "score": 0.0939047560095787
+        },
+        {
+          "label": "D",
+          "text": "Protons do not generate x-rays by Bremsstrahlung radiation.",
+          "score": 0.06329576671123505
+        },
+        {
+          "label": "C",
+          "text": "Protons have positive charge while electrons have negative charge.",
+          "score": 0.047241050750017166
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 5.887785,
+      "option_selection_latency_seconds": 6.851529,
+      "total_latency_seconds": 12.739315
+    },
+    {
+      "qid": "public_mcq_081",
+      "source_question_number": 81,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "tg158"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "IMPT by pencil beam scanning needs less hardware than double scattering.",
+          "score": 0.08943287283182144
+        },
+        {
+          "label": "C",
+          "text": "IMPT is less sensitive to motion than double scattering.",
+          "score": 0.04963162541389465
+        },
+        {
+          "label": "B",
+          "text": "IMPT is more conformal than double scattering.",
+          "score": 0.040269408375024796
+        },
+        {
+          "label": "A",
+          "text": "An IMPT plan can be robust with robustness optimization.",
+          "score": 0.027758581563830376
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.497757,
+      "option_selection_latency_seconds": 7.396784,
+      "total_latency_seconds": 13.894541
+    },
+    {
+      "qid": "public_mcq_082",
+      "source_question_number": 82,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "D",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "tg158",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "It is always a constant 1.1 for all depths.",
+          "score": 0.5637596249580383
+        },
+        {
+          "label": "D",
+          "text": "It is the highest at the distal fall off depth.",
+          "score": 0.3864949643611908
+        },
+        {
+          "label": "B",
+          "text": "It is the highest at the shallow depth.",
+          "score": 0.32781216502189636
+        },
+        {
+          "label": "C",
+          "text": "It is the highest at the center of spread-out Bragg peak.",
+          "score": 0.32045137882232666
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.421355,
+      "option_selection_latency_seconds": 6.691002,
+      "total_latency_seconds": 13.112357
+    },
+    {
+      "qid": "public_mcq_083",
+      "source_question_number": 83,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg101_sbrt",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields",
+        "iaea_trs483_small_static_fields"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Farmer chamber",
+          "score": 0.6813995838165283
+        },
+        {
+          "label": "B",
+          "text": "Pin-point ionization chamber",
+          "score": 0.6209099888801575
+        },
+        {
+          "label": "A",
+          "text": "Diode",
+          "score": 0.3528631329536438
+        },
+        {
+          "label": "D",
+          "text": "Diamond detector",
+          "score": 0.33765697479248047
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.422205,
+      "option_selection_latency_seconds": 7.240301,
+      "total_latency_seconds": 13.662506
+    },
+    {
+      "qid": "public_mcq_084",
+      "source_question_number": 84,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs483_small_static_fields",
+        "aapm_report_104_kv_imaging_guidance",
+        "tg158",
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "To reduce collisions.",
+          "score": 0.09252505749464035
+        },
+        {
+          "label": "B",
+          "text": "To reduce treatment time.",
+          "score": 0.06518173217773438
+        },
+        {
+          "label": "A",
+          "text": "To reduce the penumbra.",
+          "score": 0.06348557025194168
+        },
+        {
+          "label": "D",
+          "text": "To merge multiple isocenters to a single isocenter.",
+          "score": 0.06065867096185684
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.476611,
+      "option_selection_latency_seconds": 6.217427,
+      "total_latency_seconds": 12.694039
+    },
+    {
+      "qid": "public_mcq_085",
+      "source_question_number": 85,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "iaea_hhr7_record_verify_systems",
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_hhr7_record_verify_systems"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Both frame-based and frame-less systems are feasible for SRS.",
+          "score": 0.0137051185593009
+        },
+        {
+          "label": "A",
+          "text": "A flattening filter free (FFF) can’t be used in SRS technique.",
+          "score": 0.004807388875633478
+        },
+        {
+          "label": "C",
+          "text": "The SRS field may not have lateral charge particle equilibrium (CPE).",
+          "score": 0.0046156104654073715
+        },
+        {
+          "label": "B",
+          "text": "A Winston-Lutz test is required to verify the coincidence between radiation and mechanical isocenters.",
+          "score": 0.0027548435609787703
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.726329,
+      "option_selection_latency_seconds": 7.380761,
+      "total_latency_seconds": 14.10709
+    },
+    {
+      "qid": "public_mcq_086",
+      "source_question_number": 86,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg101_sbrt"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Rapid dose fall off outside of target.",
+          "score": 0.3396562337875366
+        },
+        {
+          "label": "D",
+          "text": "Gradient index to be as small as possible.",
+          "score": 0.0953914225101471
+        },
+        {
+          "label": "C",
+          "text": "Conformality index to be close to 1.",
+          "score": 0.07758893817663193
+        },
+        {
+          "label": "B",
+          "text": "Homogenous dose inside the target.",
+          "score": 0.03956739977002144
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.443351,
+      "option_selection_latency_seconds": 6.744592,
+      "total_latency_seconds": 13.187943
+    },
+    {
+      "qid": "public_mcq_087",
+      "source_question_number": 87,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_104_kv_imaging_guidance",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg101_sbrt",
+        "iaea_pub1638_radiotherapy_in_cancer_care"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "a higher output accuracy",
+          "score": 0.4807628095149994
+        },
+        {
+          "label": "A",
+          "text": "a smaller CT slice thickness",
+          "score": 0.48045533895492554
+        },
+        {
+          "label": "B",
+          "text": "a smaller dose calculation grid",
+          "score": 0.3841167092323303
+        },
+        {
+          "label": "D",
+          "text": "a higher precision in the coincidence of beam and gantry/couch isocenters.",
+          "score": 0.16901174187660217
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.335122,
+      "option_selection_latency_seconds": 7.721946,
+      "total_latency_seconds": 14.057068
+    },
+    {
+      "qid": "public_mcq_088",
+      "source_question_number": 88,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "A",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_report_166_biological_models_treatment_planning_qa",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg75_igrt_imaging_dose"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Arc plan with dynamic MLC.",
+          "score": 0.2426411211490631
+        },
+        {
+          "label": "C",
+          "text": "Dynamic conformal Arc.",
+          "score": 0.21324148774147034
+        },
+        {
+          "label": "B",
+          "text": "Arc plan with cones.",
+          "score": 0.18914104998111725
+        },
+        {
+          "label": "D",
+          "text": "Arc plan with static MLC.",
+          "score": 0.1749495565891266
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.751242,
+      "option_selection_latency_seconds": 7.792041,
+      "total_latency_seconds": 14.543282
+    },
+    {
+      "qid": "public_mcq_089",
+      "source_question_number": 89,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg218_imrt_measurement_based_qa",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg148_helical_tomotherapy_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Picket fence test.",
+          "score": 0.6758134961128235
+        },
+        {
+          "label": "A",
+          "text": "Start shot for gantry isocentricity.",
+          "score": 0.5023199915885925
+        },
+        {
+          "label": "C",
+          "text": "Start shot for MLC isocentricity.",
+          "score": 0.34318026900291443
+        },
+        {
+          "label": "B",
+          "text": "Winston-Lutz test.",
+          "score": 0.08274716883897781
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.559463,
+      "option_selection_latency_seconds": 7.821981,
+      "total_latency_seconds": 14.381443
+    },
+    {
+      "qid": "public_mcq_090",
+      "source_question_number": 90,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg179_ct_based_igrt_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Door interlock",
+          "score": 0.8687065243721008
+        },
+        {
+          "label": "B",
+          "text": "Output",
+          "score": 0.8025373816490173
+        },
+        {
+          "label": "D",
+          "text": "Laser accuracy",
+          "score": 0.5599743127822876
+        },
+        {
+          "label": "C",
+          "text": "Light field and radiation field coincidence",
+          "score": 0.38652512431144714
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.442788,
+      "option_selection_latency_seconds": 2.340141,
+      "total_latency_seconds": 8.782929
+    },
+    {
+      "qid": "public_mcq_091",
+      "source_question_number": 91,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhr16_igrt_qa",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Spatial resolution",
+          "score": 0.8458549380302429
+        },
+        {
+          "label": "A",
+          "text": "HU accuracy",
+          "score": 0.793857216835022
+        },
+        {
+          "label": "D",
+          "text": "Field of view",
+          "score": 0.6832983493804932
+        },
+        {
+          "label": "B",
+          "text": "Coincidence between the CBCT isocenter and the radiation beam isocenter",
+          "score": 0.5765907764434814
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.452324,
+      "option_selection_latency_seconds": 8.088393,
+      "total_latency_seconds": 14.540717
+    },
+    {
+      "qid": "public_mcq_092",
+      "source_question_number": 92,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "3%",
+          "score": 0.9484102725982666
+        },
+        {
+          "label": "B",
+          "text": "1%",
+          "score": 0.9438542127609253
+        },
+        {
+          "label": "A",
+          "text": "0.5%",
+          "score": 0.9332751035690308
+        },
+        {
+          "label": "C",
+          "text": "2%",
+          "score": 0.9290908575057983
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.836944,
+      "option_selection_latency_seconds": 3.276955,
+      "total_latency_seconds": 10.113899
+    },
+    {
+      "qid": "public_mcq_093",
+      "source_question_number": 93,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "MLC",
+          "score": 0.7824363708496094
+        },
+        {
+          "label": "C",
+          "text": "CBCT",
+          "score": 0.7253360748291016
+        },
+        {
+          "label": "A",
+          "text": "CT simulator",
+          "score": 0.7170659303665161
+        },
+        {
+          "label": "D",
+          "text": "Planar MV imager",
+          "score": 0.6948583722114563
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.461926,
+      "option_selection_latency_seconds": 7.378723,
+      "total_latency_seconds": 13.84065
+    },
+    {
+      "qid": "public_mcq_094",
+      "source_question_number": 94,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "B",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "option_scores": [
+        {
+          "label": "B",
+          "text": "Occupancy factor.",
+          "score": 0.27890270948410034
+        },
+        {
+          "label": "C",
+          "text": "Use factor.",
+          "score": 0.21110783517360687
+        },
+        {
+          "label": "D",
+          "text": "Workload.",
+          "score": 0.13752247393131256
+        },
+        {
+          "label": "A",
+          "text": "Distance.",
+          "score": 0.06630480289459229
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.705462,
+      "option_selection_latency_seconds": 7.65167,
+      "total_latency_seconds": 14.357132
+    },
+    {
+      "qid": "public_mcq_095",
+      "source_question_number": 95,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "1/20",
+          "score": 0.30637916922569275
+        },
+        {
+          "label": "D",
+          "text": "1/40",
+          "score": 0.30174070596694946
+        },
+        {
+          "label": "A",
+          "text": "1",
+          "score": 0.29331305623054504
+        },
+        {
+          "label": "B",
+          "text": "1/5",
+          "score": 0.2923300862312317
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.252725,
+      "option_selection_latency_seconds": 4.883864,
+      "total_latency_seconds": 11.136589
+    },
+    {
+      "qid": "public_mcq_096",
+      "source_question_number": 96,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "A",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "Borated polyethylene, Lead, Steel",
+          "score": 0.6431350111961365
+        },
+        {
+          "label": "D",
+          "text": "Borated polyethylene, Steel, Lead",
+          "score": 0.6127137541770935
+        },
+        {
+          "label": "B",
+          "text": "Lead, Borated polyethylene, Steel",
+          "score": 0.6013979911804199
+        },
+        {
+          "label": "A",
+          "text": "Steel, Borated polyethylene, Lead",
+          "score": 0.578761637210846
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.541589,
+      "option_selection_latency_seconds": 7.412198,
+      "total_latency_seconds": 13.953787
+    },
+    {
+      "qid": "public_mcq_097",
+      "source_question_number": 97,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "C",
+      "gold_label": "C",
+      "selected_correct": true,
+      "evidence_contains_gold_option": true,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection",
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
+      ],
+      "option_scores": [
+        {
+          "label": "C",
+          "text": "0.7",
+          "score": 0.7401065826416016
+        },
+        {
+          "label": "B",
+          "text": "0.5",
+          "score": 0.4470610022544861
+        },
+        {
+          "label": "A",
+          "text": "0.3",
+          "score": 0.4267774522304535
+        },
+        {
+          "label": "D",
+          "text": "1.0",
+          "score": 0.4138775169849396
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.547625,
+      "option_selection_latency_seconds": 7.295994,
+      "total_latency_seconds": 13.843619
+    },
+    {
+      "qid": "public_mcq_098",
+      "source_question_number": 98,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "D",
+      "selected_correct": true,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "tg158"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "100 keV neutrons",
+          "score": 0.4886583387851715
+        },
+        {
+          "label": "B",
+          "text": "250 MeV protons",
+          "score": 0.30517688393592834
+        },
+        {
+          "label": "A",
+          "text": "6 MV x-rays",
+          "score": 0.2904469966888428
+        },
+        {
+          "label": "C",
+          "text": "6 MeV electrons",
+          "score": 0.2733090817928314
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.017423,
+      "option_selection_latency_seconds": 6.267639,
+      "total_latency_seconds": 12.285062
+    },
+    {
+      "qid": "public_mcq_099",
+      "source_question_number": 99,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "D",
+      "gold_label": "C",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg101_sbrt",
+        "aapm_tg101_sbrt",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
+      ],
+      "option_scores": [
+        {
+          "label": "D",
+          "text": "Dose was delivered to the liver.",
+          "score": 0.06428191065788269
+        },
+        {
+          "label": "C",
+          "text": "A single fraction dose deviation of 45%.",
+          "score": 0.05559033527970314
+        },
+        {
+          "label": "B",
+          "text": "The wrong patient was treated.",
+          "score": 0.028936346992850304
+        },
+        {
+          "label": "A",
+          "text": "A total dose deviation of 25%.",
+          "score": 0.022418711334466934
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.184486,
+      "option_selection_latency_seconds": 6.401409,
+      "total_latency_seconds": 12.585895
+    },
+    {
+      "qid": "public_mcq_100",
+      "source_question_number": 100,
+      "ok": true,
+      "error_code": null,
+      "selected_label": "A",
+      "gold_label": "B",
+      "selected_correct": false,
+      "evidence_contains_gold_option": false,
+      "extractive_answer_contains_gold_option": null,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "option_scores": [
+        {
+          "label": "A",
+          "text": "Documenting immobilization devices used in CT sim.",
+          "score": 0.04780968651175499
+        },
+        {
+          "label": "C",
+          "text": "Verifying HU accuracy of CT Sim in daily QA.",
+          "score": 0.04426304250955582
+        },
+        {
+          "label": "D",
+          "text": "Verifying correct patient before CT Sim.",
+          "score": 0.037361908704042435
+        },
+        {
+          "label": "B",
+          "text": "Verifying bore size of CT sim.",
+          "score": 0.03700357675552368
+        }
+      ],
+      "retrieval_backend": "hybrid",
+      "option_selector_backend": "cross_encoder",
+      "retrieval_latency_seconds": 6.456508,
+      "option_selection_latency_seconds": 6.586438,
+      "total_latency_seconds": 13.042946
+    }
+  ],
+  "metric_note": "The option selector sees only question, options, and skill-returned evidence. Gold labels are read only after selection to compute MCQ accuracy. This is a public answer-keyed external benchmark, not a hidden test, a Codex-host evaluation, expert grading, or clinical validation."
+}

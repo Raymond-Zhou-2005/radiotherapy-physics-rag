@@ -24,7 +24,6 @@ from src.config import CHUNKING
 from src.utils import ensure_dir, read_jsonl, write_jsonl
 
 
-
 def chunk_all(parsed_dir: Path, chunks_dir: Path) -> None:
     ensure_dir(chunks_dir)
     chunker = SectionAwareChunker(

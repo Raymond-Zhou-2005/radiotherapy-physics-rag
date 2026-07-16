@@ -4,12 +4,21 @@
       "path": "topics/reference-dosimetry/INDEX.md",
       "description": "Absorbed dose, ionization chambers, beam quality, calibration coefficients, small fields, and reference dosimeters.",
       "doc_ids": [
-        "aapm_report_46_tg40_radiation_oncology_qa",
         "aapm_report_90_essential_medical_physics_ebrt",
+        "aapm_tg101_sbrt",
+        "aapm_tg106_beam_data_commissioning",
+        "aapm_tg120_imrt_dosimetry_tools",
+        "aapm_tg148_helical_tomotherapy_qa",
         "aapm_tg51_photon_dosimetry_addendum",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc1543_quatro",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs469_reference_dosimeters",
@@ -19,76 +28,80 @@
       ],
       "top_terms": [
         "iaea",
-        "unknown",
-        "trs",
         "beam",
-        "dosimetry",
         "external",
         "dose",
-        "absorbed",
+        "dosimetry",
         "determination",
+        "trs",
+        "absorbed",
+        "rev",
         "human",
         "health",
+        "reference",
+        "procedures",
+        "vivo",
+        "development",
+        "series",
+        "uncertainties",
+        "accuracy",
+        "requirements",
+        "calibration",
+        "reports",
+        "small",
         "code",
         "practice",
-        "accuracy",
-        "uncertainties",
-        "series",
-        "requirements",
-        "rev",
-        "beams",
-        "references",
-        "vivo",
-        "procedures",
-        "small",
-        "reports",
-        "development",
-        "reference",
-        "static",
         "fields",
+        "relative",
+        "international",
         "used",
-        "brachytherapy"
+        "static",
+        "dosimeters"
       ]
     },
     "brachytherapy": {
       "path": "topics/brachytherapy/INDEX.md",
       "description": "Brachytherapy source calibration, dose calculation, QA, mesh, ocular plaque, and HDR/LDR workflow.",
       "doc_ids": [
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc1274_brachytherapy_source_calibration",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc_1040_radiotherapy_programme",
         "iaea_trs492_brachytherapy_dosimetry",
         "tg158"
       ],
       "top_terms": [
-        "calibration",
-        "brachytherapy",
         "sources",
-        "iaea",
-        "unknown",
-        "tecdoc",
-        "photon",
+        "brachytherapy",
+        "calibration",
         "beta",
         "ray",
+        "photon",
         "used",
-        "using",
-        "measurement",
-        "free",
-        "in-air",
-        "technique",
-        "other",
-        "references",
-        "calibrations",
-        "well",
-        "type",
-        "ionization",
-        "chambers",
-        "trs",
+        "iaea",
+        "tecdoc",
         "dosimetry",
-        "instrumentation",
-        "u-1",
-        "detectors",
-        "ldr",
-        "primary",
-        "standards"
+        "standards",
+        "hdr",
+        "correction",
+        "air",
+        "kerma",
+        "quality",
+        "type",
+        "factor",
+        "trs",
+        "technicalreportsseriesno",
+        "requirements",
+        "uncertainties",
+        "chamber",
+        "traceability",
+        "scatter",
+        "safety",
+        "aspects",
+        "human",
+        "health",
+        "series"
       ]
     },
     "treatment-planning": {
@@ -97,52 +110,65 @@
       "doc_ids": [
         "aapm_report_113_physics_clinical_trials",
         "aapm_report_166_biological_models_treatment_planning_qa",
-        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_tg101_sbrt",
+        "aapm_tg106_beam_data_commissioning",
         "aapm_tg119_imrt_commissioning",
         "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg132_image_registration_fusion",
+        "aapm_tg147_nonradiographic_localization_qa",
+        "aapm_tg148_helical_tomotherapy_qa",
         "aapm_tg218_imrt_measurement_based_qa",
+        "iaea_hhr16_igrt_qa",
         "iaea_hhr17_linear_accelerators",
         "iaea_hhr7_record_verify_systems",
+        "iaea_hhr8_in_vivo_dosimetry",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_pub1990_quatro_quality_improvement",
         "iaea_tecdoc1540_tps_acceptance",
         "iaea_tecdoc1543_quatro",
         "iaea_tecdoc1583_tps_commissioning",
         "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc_1040_radiotherapy_programme",
         "iaea_trs430_tps_commissioning_qa",
         "tg158"
       ],
       "top_terms": [
-        "unknown",
-        "iaea",
         "treatment",
         "planning",
-        "commissioning",
+        "iaea",
         "systems",
+        "commissioning",
         "quality",
-        "cancer",
         "aapm",
-        "assurance",
-        "trs",
-        "computerized",
-        "tecdoc",
+        "cancer",
         "imrt",
-        "verification",
-        "testing",
-        "conformal",
-        "modulated",
-        "intensity",
+        "tecdoc",
+        "assurance",
         "acceptance",
+        "testing",
+        "computerized",
+        "trs",
+        "dose",
         "human",
         "health",
-        "reports",
+        "conformal",
+        "verification",
+        "models",
+        "technicalreportsseriesno",
+        "modulated",
+        "intensity",
+        "use",
+        "biologically",
+        "dosimetry",
         "from",
         "limits",
-        "measurement",
-        "transition",
-        "tolerance",
-        "dosimetry",
-        "review"
+        "record"
       ]
     },
     "imaging-and-localization": {
@@ -153,44 +179,53 @@
         "aapm_report_113_physics_clinical_trials",
         "aapm_report_90_essential_medical_physics_ebrt",
         "aapm_tg101_sbrt",
+        "aapm_tg120_imrt_dosimetry_tools",
         "aapm_tg132_image_registration_fusion",
+        "aapm_tg148_helical_tomotherapy_qa",
+        "aapm_tg179_ct_based_igrt_qa",
         "aapm_tg180_image_guidance_dose_management",
+        "aapm_tg75_igrt_imaging_dose",
         "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhr16_igrt_qa",
         "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc_1040_radiotherapy_programme",
         "tg158"
       ],
       "top_terms": [
-        "unknown",
+        "iaea",
         "aapm",
         "imaging",
-        "image",
-        "target",
-        "patient",
-        "x-ray",
-        "role",
-        "in-room",
-        "setup",
-        "localization",
-        "guidance",
-        "therapy",
-        "registration",
-        "iaea",
-        "national",
-        "planning",
         "human",
         "health",
-        "physics",
         "series",
-        "services",
+        "physics",
+        "cancer",
+        "care",
+        "therapy",
+        "facing",
+        "global",
+        "challenge",
+        "image",
+        "group",
+        "task",
+        "oncology",
+        "handbook",
+        "teachers",
+        "students",
+        "target",
+        "planning",
+        "national",
+        "localization",
         "practical",
+        "patient",
+        "registration",
+        "services",
         "tool",
-        "clinical",
-        "stereotactic",
-        "body",
-        "techniques",
-        "fusion",
-        "use"
+        "blank"
       ]
     },
     "quality-management-and-safety": {
@@ -199,7 +234,6 @@
       "doc_ids": [
         "aapm_report_113_physics_clinical_trials",
         "aapm_report_46_tg40_radiation_oncology_qa",
-        "aapm_report_90_essential_medical_physics_ebrt",
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg101_sbrt",
         "aapm_tg132_image_registration_fusion",
@@ -211,8 +245,10 @@
         "iaea_hhr10_radiotherapy_facilities",
         "iaea_hhr16_igrt_qa",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "iaea_hhr8_in_vivo_dosimetry",
         "iaea_hhs14_planning_national_radiotherapy_services",
         "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1297_quatro_audit_tool",
         "iaea_pub1638_radiotherapy_in_cancer_care",
@@ -224,155 +260,168 @@
         "tg158"
       ],
       "top_terms": [
-        "unknown",
         "quality",
         "iaea",
+        "audits",
         "aapm",
+        "assurance",
         "human",
         "health",
-        "assurance",
-        "audits",
-        "therapy",
-        "programme",
-        "reports",
         "comprehensive",
-        "references",
-        "procedures",
-        "medical",
         "dosimetry",
-        "analysis",
         "series",
-        "risk",
+        "therapy",
         "tool",
-        "computed",
-        "tomography",
-        "application",
-        "practices",
+        "programme",
         "improvement",
-        "management",
+        "practices",
+        "medical",
+        "reports",
+        "oncology",
+        "tecdoc",
+        "national",
+        "cancer",
         "physics",
-        "methodology",
-        "methods",
-        "tecdoc"
+        "application",
+        "global",
+        "care",
+        "procedures",
+        "facing",
+        "challenge",
+        "unknown",
+        "networks"
       ]
     },
     "equipment-and-facilities": {
       "path": "topics/equipment-and-facilities/INDEX.md",
       "description": "Linacs, radiotherapy equipment, facility design, shielding, staffing, infrastructure, and programme implementation.",
       "doc_ids": [
-        "aapm_report_90_essential_medical_physics_ebrt",
         "aapm_tg106_beam_data_commissioning",
         "iaea_hhr17_linear_accelerators",
-        "iaea_tecdoc_1040_radiotherapy_programme",
-        "tg158"
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
+        "iaea_tecdoc_1040_radiotherapy_programme"
       ],
       "top_terms": [
-        "unknown",
         "equipment",
-        "commissioning",
-        "aapm",
-        "accelerator",
-        "beam",
         "data",
+        "commissioning",
+        "beam",
+        "iaea",
+        "aapm",
         "procedures",
+        "accelerator",
+        "iii",
         "programme",
+        "tecdoc",
         "design",
         "implementation",
-        "iaea",
-        "tecdoc",
-        "therapy",
-        "staff",
-        "requirements",
-        "staffing",
+        "unknown",
+        "dose",
         "human",
         "health",
-        "reports",
-        "selection",
-        "acceptance",
-        "testing",
+        "cancer",
         "quality",
-        "control",
-        "infrastructure",
-        "brachytherapy",
-        "flow",
-        "facility",
-        "dose"
+        "care",
+        "facing",
+        "global",
+        "challenge",
+        "photon",
+        "scanner",
+        "verification",
+        "validation",
+        "physics",
+        "from",
+        "treatment"
       ]
     },
     "nomenclature-and-data": {
       "path": "topics/nomenclature-and-data/INDEX.md",
       "description": "TG-263 style naming, data transfer, structure naming, electronic charting, and interoperability.",
       "doc_ids": [
-        "aapm_report_46_tg40_radiation_oncology_qa",
-        "aapm_report_90_essential_medical_physics_ebrt",
-        "aapm_tg263_nomenclature"
+        "aapm_tg263_nomenclature",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "top_terms": [
         "aapm",
         "oncology",
+        "group",
+        "task",
         "standardizing",
         "nomenclatures",
-        "unknown",
         "nomenclature",
         "recommendations",
-        "structure",
-        "non-target",
-        "physics",
-        "residency",
-        "study",
-        "guidelines",
-        "target",
-        "pilot",
-        "essentials",
-        "hospital",
-        "based",
-        "medical",
-        "training",
-        "programs",
-        "conduct",
+        "iaea",
         "guiding",
         "principles",
+        "study",
+        "target",
+        "pilot",
+        "structure",
+        "dose",
+        "metrics",
         "results",
-        "initial",
-        "evaluation",
-        "current",
-        "practices",
-        "existing"
+        "physics",
+        "from",
+        "unknown",
+        "structures",
+        "tecdoc",
+        "delivery",
+        "dicom",
+        "non-target",
+        "prescription",
+        "approach",
+        "guidelines",
+        "dvh"
       ]
     },
     "biological-models-and-response": {
       "path": "topics/biological-models-and-response/INDEX.md",
       "description": "TCP, NTCP, biological response models, RBE, radiobiology, and biologically based optimization QA.",
       "doc_ids": [
+        "aapm_report_113_physics_clinical_trials",
         "aapm_report_166_biological_models_treatment_planning_qa",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "tg158"
       ],
       "top_terms": [
-        "ntcp",
-        "aapm",
-        "unknown",
-        "biologically",
-        "use",
-        "related",
-        "models",
         "treatment",
         "planning",
-        "measurement",
-        "calculation",
-        "doses",
-        "outside",
-        "treated",
-        "volume",
-        "from",
-        "external-beam",
-        "therapy",
+        "biologically",
+        "models",
+        "use",
+        "related",
+        "aapm",
         "dose",
-        "biological",
-        "considerations",
-        "reporting",
-        "recommended",
-        "weighted",
-        "formalism"
+        "from",
+        "prescription",
+        "iaea",
+        "tecdoc",
+        "delivery",
+        "ntcp",
+        "parameters",
+        "brief",
+        "review",
+        "history",
+        "significance",
+        "dose-response",
+        "modeling",
+        "figure",
+        "benchmark",
+        "case",
+        "verification",
+        "eud",
+        "tcp",
+        "calculations",
+        "pinnacle",
+        "beam"
       ]
     },
     "nontarget-dose-and-radiation-protection": {
@@ -380,42 +429,46 @@
       "description": "Out-of-field dose, imaging dose, induced activity, radiation protection, shielding, and safety of sources.",
       "doc_ids": [
         "aapm_tg75_igrt_imaging_dose",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_tecdoc_1040_radiotherapy_programme",
         "tg158"
       ],
       "top_terms": [
-        "safety",
-        "specific",
-        "unknown",
         "protection",
+        "safety",
+        "design",
+        "facilities",
         "iaea",
+        "series",
+        "dose",
+        "reports",
+        "imaging",
         "medical",
         "uses",
-        "guide",
-        "ssg-46",
         "ionizing",
-        "recommendations",
-        "design",
-        "reports",
-        "series",
-        "facilities",
         "aapm",
-        "dose",
-        "imaging",
         "management",
         "during",
         "image-guided",
-        "worked",
-        "general",
-        "sources",
-        "tecdoc",
-        "implementation",
-        "programme",
-        "examples",
-        "references",
-        "emergency"
+        "specific",
+        "guide",
+        "ssg-46",
+        "doses",
+        "modalities",
+        "iii",
+        "shielding",
+        "maze",
+        "introduction",
+        "example",
+        "unknown",
+        "physics",
+        "therapy",
+        "oncology"
       ]
     },
     "education-and-foundations": {
@@ -424,42 +477,44 @@
       "doc_ids": [
         "aapm_report_90_essential_medical_physics_ebrt",
         "iaea_hhr10_radiotherapy_facilities",
+        "iaea_hhs14_planning_national_radiotherapy_services",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1638_radiotherapy_in_cancer_care",
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "tg158"
       ],
       "top_terms": [
-        "unknown",
         "iaea",
-        "references",
+        "cancer",
+        "care",
+        "global",
+        "challenge",
+        "facing",
         "physics",
         "oncology",
         "handbook",
         "teachers",
         "students",
-        "care",
-        "cancer",
-        "facing",
-        "global",
-        "challenge",
-        "from",
         "dose",
-        "tecdoc",
+        "blank",
+        "from",
         "prescription",
         "delivery",
+        "tecdoc",
+        "unknown",
         "aapm",
+        "facilities",
+        "training",
+        "medical",
+        "education",
+        "health",
+        "human",
+        "concept",
         "therapy",
-        "volume",
-        "measurement",
-        "outside",
-        "treated",
-        "calculation",
-        "doses",
-        "external-beam",
-        "essentials",
-        "guidelines",
-        "hospital"
+        "rosenblatt",
+        "planning",
+        "design"
       ]
     }
   },
@@ -471,6 +526,7 @@
     },
     "aapm_report_113_physics_clinical_trials": {
       "topics": [
+        "biological-models-and-response",
         "imaging-and-localization",
         "quality-management-and-safety",
         "treatment-planning"
@@ -484,19 +540,13 @@
     },
     "aapm_report_46_tg40_radiation_oncology_qa": {
       "topics": [
-        "nomenclature-and-data",
-        "quality-management-and-safety",
-        "reference-dosimetry",
-        "treatment-planning"
+        "quality-management-and-safety"
       ]
     },
     "aapm_report_90_essential_medical_physics_ebrt": {
       "topics": [
         "education-and-foundations",
-        "equipment-and-facilities",
         "imaging-and-localization",
-        "nomenclature-and-data",
-        "quality-management-and-safety",
         "reference-dosimetry"
       ]
     },
@@ -508,12 +558,16 @@
     "aapm_tg101_sbrt": {
       "topics": [
         "imaging-and-localization",
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "aapm_tg106_beam_data_commissioning": {
       "topics": [
-        "equipment-and-facilities"
+        "equipment-and-facilities",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "aapm_tg119_imrt_commissioning": {
@@ -523,6 +577,8 @@
     },
     "aapm_tg120_imrt_dosimetry_tools": {
       "topics": [
+        "imaging-and-localization",
+        "reference-dosimetry",
         "treatment-planning"
       ]
     },
@@ -540,16 +596,21 @@
     },
     "aapm_tg147_nonradiographic_localization_qa": {
       "topics": [
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "treatment-planning"
       ]
     },
     "aapm_tg148_helical_tomotherapy_qa": {
       "topics": [
-        "quality-management-and-safety"
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "aapm_tg179_ct_based_igrt_qa": {
       "topics": [
+        "imaging-and-localization",
         "quality-management-and-safety"
       ]
     },
@@ -576,6 +637,7 @@
     },
     "aapm_tg75_igrt_imaging_dose": {
       "topics": [
+        "imaging-and-localization",
         "nontarget-dose-and-radiation-protection"
       ]
     },
@@ -588,7 +650,9 @@
     },
     "iaea_hhr16_igrt_qa": {
       "topics": [
-        "quality-management-and-safety"
+        "imaging-and-localization",
+        "quality-management-and-safety",
+        "treatment-planning"
       ]
     },
     "iaea_hhr17_linear_accelerators": {
@@ -599,7 +663,8 @@
     },
     "iaea_hhr18_radiotherapy_dosimetry_audits": {
       "topics": [
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "reference-dosimetry"
       ]
     },
     "iaea_hhr7_record_verify_systems": {
@@ -609,45 +674,76 @@
     },
     "iaea_hhr8_in_vivo_dosimetry": {
       "topics": [
-        "reference-dosimetry"
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_hhs14_planning_national_radiotherapy_services": {
       "topics": [
+        "education-and-foundations",
+        "equipment-and-facilities",
         "imaging-and-localization",
-        "quality-management-and-safety"
+        "nomenclature-and-data",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_hhs19_ct_sim_radiotherapy": {
       "topics": [
-        "quality-management-and-safety"
+        "equipment-and-facilities",
+        "imaging-and-localization",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_hhs31_accuracy_requirements_dosimetry": {
       "topics": [
-        "reference-dosimetry"
+        "brachytherapy",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_pub1196_radiation_oncology_physics_handbook": {
       "topics": [
         "education-and-foundations",
-        "quality-management-and-safety"
+        "equipment-and-facilities",
+        "imaging-and-localization",
+        "nomenclature-and-data",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_pub1297_quatro_audit_tool": {
       "topics": [
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "treatment-planning"
       ]
     },
     "iaea_pub1638_radiotherapy_in_cancer_care": {
       "topics": [
+        "brachytherapy",
         "education-and-foundations",
-        "quality-management-and-safety"
+        "equipment-and-facilities",
+        "imaging-and-localization",
+        "nomenclature-and-data",
+        "nontarget-dose-and-radiation-protection",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_pub1990_quatro_quality_improvement": {
       "topics": [
-        "quality-management-and-safety"
+        "quality-management-and-safety",
+        "treatment-planning"
       ]
     },
     "iaea_srs47_radiotherapy_facility_radiation_protection": {
@@ -684,17 +780,27 @@
     },
     "iaea_tecdoc1588_3dcrt_imrt_transition": {
       "topics": [
+        "education-and-foundations",
+        "nomenclature-and-data",
         "treatment-planning"
       ]
     },
     "iaea_tecdoc989_radiation_dose_prescription_delivery": {
       "topics": [
+        "biological-models-and-response",
+        "brachytherapy",
         "education-and-foundations",
-        "quality-management-and-safety"
+        "equipment-and-facilities",
+        "imaging-and-localization",
+        "nomenclature-and-data",
+        "quality-management-and-safety",
+        "reference-dosimetry",
+        "treatment-planning"
       ]
     },
     "iaea_tecdoc_1040_radiotherapy_programme": {
       "topics": [
+        "brachytherapy",
         "equipment-and-facilities",
         "imaging-and-localization",
         "nontarget-dose-and-radiation-protection",
@@ -739,7 +845,6 @@
         "biological-models-and-response",
         "brachytherapy",
         "education-and-foundations",
-        "equipment-and-facilities",
         "imaging-and-localization",
         "nontarget-dose-and-radiation-protection",
         "quality-management-and-safety",

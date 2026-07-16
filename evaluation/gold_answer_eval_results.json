@@ -1,26 +1,66 @@
 {
   "questions": 61,
-  "retrieval_backend": "auto",
-  "evidence_top_k": 8,
   "skill_ok_rate": 0.9836065573770492,
   "citation_present_rate": 0.9836065573770492,
-  "answer_value_hit_rate": 0.3442622950819672,
-  "evidence_value_hit_rate": 0.7868852459016393,
-  "gold_answer_success_rate": 0.7868852459016393,
+  "answer_value_hit_rate": 0.5081967213114754,
+  "evidence_value_hit_rate": 0.7213114754098361,
+  "gold_answer_success_rate": 0.7213114754098361,
   "unexpected_error_count": 1,
   "counts": {
     "questions": 61,
     "skill_ok": 60,
     "citation_present": 60,
-    "answer_value_hit": 21,
-    "evidence_value_hit": 48,
-    "gold_answer_success": 48,
+    "answer_value_hit": 31,
+    "evidence_value_hit": 44,
+    "gold_answer_success": 44,
     "unexpected_errors": 1
+  },
+  "retrieval_backend": "hybrid",
+  "evidence_top_k": 8,
+  "extractive_selector": "auto",
+  "by_benchmark_profile": {
+    "external_gold_answer": {
+      "questions": 12,
+      "skill_ok_rate": 1.0,
+      "citation_present_rate": 1.0,
+      "answer_value_hit_rate": 0.3333333333333333,
+      "evidence_value_hit_rate": 0.4166666666666667,
+      "gold_answer_success_rate": 0.4166666666666667,
+      "unexpected_error_count": 0,
+      "counts": {
+        "questions": 12,
+        "skill_ok": 12,
+        "citation_present": 12,
+        "answer_value_hit": 4,
+        "evidence_value_hit": 5,
+        "gold_answer_success": 5,
+        "unexpected_errors": 0
+      }
+    },
+    "open_report_gold_answer": {
+      "questions": 49,
+      "skill_ok_rate": 0.9795918367346939,
+      "citation_present_rate": 0.9795918367346939,
+      "answer_value_hit_rate": 0.5510204081632653,
+      "evidence_value_hit_rate": 0.7959183673469388,
+      "gold_answer_success_rate": 0.7959183673469388,
+      "unexpected_error_count": 1,
+      "counts": {
+        "questions": 49,
+        "skill_ok": 48,
+        "citation_present": 48,
+        "answer_value_hit": 27,
+        "evidence_value_hit": 39,
+        "gold_answer_success": 39,
+        "unexpected_errors": 1
+      }
+    }
   },
   "details": [
     {
       "qid": "gold_external_q0001",
       "question": "In single-field megavoltage x-ray treatment prescribed at 5 cm depth, what happens to exit dose when using 15 MV instead of 6 MV?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "concept",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -36,17 +76,20 @@
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhr8_in_vivo_dosimetry",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_tecdoc1540_tps_acceptance",
-        "tg158"
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0002",
       "question": "For the adjacent-field setup in the public AFOMP physics quiz, what skin gap was given for fields intersecting at 5 cm depth?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "numeric",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -63,34 +106,48 @@
         "iaea_trs483_small_static_fields",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_trs483_small_static_fields"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0003",
       "question": "What detector type is identified by the public AFOMP answer key as best for locating a dropped I-125 seed?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "device",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
         "https://afomp.org/2025/02/27/answers-for-mcq-quiz/"
       ],
-      "ok": false,
-      "error_code": "insufficient_evidence",
+      "ok": true,
+      "error_code": null,
       "answer_value_hit": false,
       "evidence_value_hit": false,
       "gold_answer_success": false,
-      "citation_present": false,
-      "retrieved_doc_ids_at_5": [],
-      "retrieval_backend": "auto",
-      "reranker_backends": []
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0004",
       "question": "What whole-body dose is given in the public AFOMP answer key for LD50/60 without medical intervention?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "numeric",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -99,24 +156,27 @@
       "ok": true,
       "error_code": null,
       "answer_value_hit": false,
-      "evidence_value_hit": true,
-      "gold_answer_success": true,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg75_igrt_imaging_dose",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1196_radiation_oncology_physics_handbook"
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg101_sbrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_report_166_biological_models_treatment_planning_qa"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0005",
       "question": "Among an electron, proton, and alpha particle each with 20 MeV kinetic energy, which particle is described as travelling almost at light speed?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "concept",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -138,11 +198,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0006",
       "question": "For Cs-131 with an approximately 10 day half-life, what activity 24 hours earlier corresponds to a 1.000 mCi calibration seed at the stated time?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "numeric",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -156,19 +219,22 @@
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_trs469_reference_dosimeters",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_hhs14_planning_national_radiotherapy_services"
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0007",
       "question": "What interaction change explains the loss of contrast in a therapy verification image compared with a simulator radiographic image?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "concept",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -181,20 +247,23 @@
       "gold_answer_success": false,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_report_104_kv_imaging_guidance",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0008",
       "question": "After ten half-lives, approximately what fraction of the original radioactive activity remains?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "numeric",
       "source_basis": "AFOMP public MCQ answer key, paraphrased",
       "source_urls": [
@@ -208,19 +277,22 @@
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1196_radiation_oncology_physics_handbook"
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0009",
       "question": "In the RANZCR sample rubric, what is the planning organ at risk volume intended to account for?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "short_answer",
       "source_basis": "RANZCR public sample questions and answers, paraphrased",
       "source_urls": [
@@ -236,17 +308,20 @@
         "iaea_tecdoc1588_3dcrt_imrt_transition",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0010",
       "question": "In the RANZCR sample rubric, what target motion concept is captured by internal target volume?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "short_answer",
       "source_basis": "RANZCR public sample questions and answers, paraphrased",
       "source_urls": [
@@ -260,19 +335,22 @@
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg147_nonradiographic_localization_qa",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "aapm_report_113_physics_clinical_trials"
+        "iaea_hhr16_igrt_qa",
+        "aapm_tg101_sbrt",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0011",
       "question": "According to the RANZCR sample rubric, why did ICRU 83 matter for IMRT prescribing and reporting?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "short_answer",
       "source_basis": "RANZCR public sample questions and answers, paraphrased",
       "source_urls": [
@@ -285,20 +363,20 @@
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_external_q0012",
       "question": "In the RANZCR sample rubric, what are common reasons for daily image-guided treatment verification in bulky head and neck IMRT?",
+      "benchmark_profile": "external_gold_answer",
       "answer_type": "short_answer",
       "source_basis": "RANZCR public sample questions and answers, paraphrased",
       "source_urls": [
@@ -307,24 +385,27 @@
       "ok": true,
       "error_code": null,
       "answer_value_hit": false,
-      "evidence_value_hit": true,
-      "gold_answer_success": true,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_hhr16_igrt_qa",
         "aapm_tg179_ct_based_igrt_qa",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0001",
       "question": "How does TG-104 define in-room kV imaging in the treatment room?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -346,37 +427,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0002",
       "question": "What broad categories of in-room kV imaging systems are described by TG-104?",
-      "answer_type": "open_report_answer_target",
-      "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
-      "source_urls": [
-        "https://www.aapm.org/pubs/reports/rpt_104.pdf"
-      ],
-      "ok": true,
-      "error_code": null,
-      "answer_value_hit": false,
-      "evidence_value_hit": true,
-      "gold_answer_success": true,
-      "citation_present": true,
-      "retrieved_doc_ids_at_5": [
-        "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_104_kv_imaging_guidance"
-      ],
-      "retrieval_backend": "hybrid",
-      "reranker_backends": [
-        "cross_encoder"
-      ]
-    },
-    {
-      "qid": "gold_report_q0003",
-      "question": "What system properties does TG-104 say should be checked for kV imaging acceptance, commissioning, and QA?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -398,11 +456,43 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
+    },
+    {
+      "qid": "gold_report_q0003",
+      "question": "What system properties does TG-104 say should be checked for kV imaging acceptance, commissioning, and QA?",
+      "benchmark_profile": "open_report_gold_answer",
+      "answer_type": "open_report_answer_target",
+      "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
+      "source_urls": [
+        "https://www.aapm.org/pubs/reports/rpt_104.pdf"
+      ],
+      "ok": true,
+      "error_code": null,
+      "answer_value_hit": true,
+      "evidence_value_hit": true,
+      "gold_answer_success": true,
+      "citation_present": true,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance",
+        "aapm_report_104_kv_imaging_guidance"
+      ],
+      "retrieval_backend": "hybrid",
+      "reranker_backends": [
+        "cross_encoder"
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0004",
       "question": "What data and naming issues are emphasized for radiation oncology clinical trial physics support?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -416,19 +506,22 @@
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
         "aapm_tg263_nomenclature",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
+        "aapm_tg263_nomenclature",
         "aapm_report_113_physics_clinical_trials"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0005",
       "question": "What type of preparation can QA centers use for trials that need benchmark planning studies?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -436,7 +529,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -450,11 +543,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0006",
       "question": "What biological treatment planning indices are discussed in AAPM Report 166?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -476,11 +572,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0007",
       "question": "Why does AAPM Report 166 treat biologically based planning systems cautiously?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -502,11 +601,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0008",
       "question": "What broad program area is covered by AAPM TG-40?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -519,20 +621,23 @@
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa",
         "aapm_report_46_tg40_radiation_oncology_qa",
-        "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg142_medical_accelerator_qa",
         "aapm_report_46_tg40_radiation_oncology_qa",
         "aapm_report_46_tg40_radiation_oncology_qa"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0009",
       "question": "Which FMEA scoring dimensions are used in TG-100 radiotherapy quality management?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -554,11 +659,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0010",
       "question": "What process-analysis tools does TG-100 connect with radiotherapy quality management?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -566,7 +674,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -580,11 +688,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0011",
       "question": "What does TG-263 standardize for radiation oncology?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -592,7 +703,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -606,11 +717,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0012",
       "question": "What equipment class is the subject of TG-142 QA guidance?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -618,7 +732,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -626,17 +740,20 @@
         "aapm_tg148_helical_tomotherapy_qa",
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg147_nonradiographic_localization_qa"
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0013",
       "question": "What kind of IMRT commissioning evidence is associated with TG-119?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -644,7 +761,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -658,11 +775,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0014",
       "question": "What measurements and equipment does TG-106 associate with accelerator beam data commissioning?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -684,11 +804,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0015",
       "question": "What measurement tools are discussed in TG-120 for IMRT dosimetry?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -710,11 +833,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0016",
       "question": "What QA methodology and limits are central to TG-218?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -736,11 +862,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0017",
       "question": "What CT-based image guidance technologies are within TG-179's QA scope?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -762,11 +891,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0018",
       "question": "What nonradiographic localization systems are discussed in TG-147?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -788,11 +920,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0019",
       "question": "What technical areas are emphasized by TG-101 for SBRT practice?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -814,11 +949,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0020",
       "question": "What patient-dose issue is the focus of TG-75 for image-guided radiotherapy?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -833,18 +971,21 @@
       "retrieved_doc_ids_at_5": [
         "aapm_tg75_igrt_imaging_dose",
         "aapm_tg75_igrt_imaging_dose",
-        "aapm_tg180_image_guidance_dose_management",
         "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg180_image_guidance_dose_management",
         "aapm_tg75_igrt_imaging_dose"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0021",
       "question": "What three dose-management actions are described in TG-180's title and scope?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -866,11 +1007,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0022",
       "question": "What modality-specific QA topic is covered by TG-148?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -878,7 +1022,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -892,11 +1036,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0023",
       "question": "What image-registration topics are central to TG-132?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -904,25 +1051,28 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "aapm_report_113_physics_clinical_trials",
         "aapm_tg132_image_registration_fusion",
-        "aapm_report_113_physics_clinical_trials",
         "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg132_image_registration_fusion",
         "aapm_tg132_image_registration_fusion"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0024",
       "question": "What dose region is the focus of TG-158?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -937,18 +1087,21 @@
       "retrieved_doc_ids_at_5": [
         "tg158",
         "tg158",
-        "tg158",
         "aapm_tg120_imrt_dosimetry_tools",
+        "tg158",
         "tg158"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0025",
       "question": "What physical quantity and medium are central to IAEA TRS-398 reference dosimetry?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -961,20 +1114,23 @@
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_absorbed_dose_ebrt"
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0026",
       "question": "What does TRS-398 Rev. 1 update for external beam radiotherapy?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -982,7 +1138,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -996,11 +1152,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0027",
       "question": "What calibration topic is covered by IAEA TRS-469?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1022,11 +1181,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0028",
       "question": "What field type is covered by IAEA TRS-483 dosimetry guidance?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1034,7 +1196,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -1048,11 +1210,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0029",
       "question": "What treatment modality does IAEA TRS-492 address?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1060,7 +1225,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": true,
+      "answer_value_hit": false,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -1074,11 +1239,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0030",
       "question": "According to TRS-430, what are the main purposes of TPS commissioning tests?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1092,18 +1260,21 @@
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_tecdoc1583_tps_commissioning",
-        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0031",
       "question": "What user understanding is emphasized as a major component of TPS commissioning?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1118,44 +1289,42 @@
       "retrieved_doc_ids_at_5": [
         "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0032",
       "question": "What procurement-stage TPS activities are covered by IAEA TECDOC-1540?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
         "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1540_web.pdf"
       ],
-      "ok": true,
-      "error_code": null,
-      "answer_value_hit": true,
-      "evidence_value_hit": true,
-      "gold_answer_success": true,
-      "citation_present": true,
-      "retrieved_doc_ids_at_5": [
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance"
-      ],
+      "ok": false,
+      "error_code": "insufficient_evidence",
+      "answer_value_hit": false,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
+      "citation_present": false,
+      "retrieved_doc_ids_at_5": [],
       "retrieval_backend": "hybrid",
-      "reranker_backends": [
-        "cross_encoder"
-      ]
+      "reranker_backends": [],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "not_run"
     },
     {
       "qid": "gold_report_q0033",
       "question": "What implementation activity is covered by IAEA TECDOC-1583 for radiotherapy TPSs?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1177,11 +1346,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0034",
       "question": "What radiotherapy imaging equipment is the focus of IAEA HHS-19 QA guidance?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1194,20 +1366,23 @@
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_hhr16_igrt_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr16_igrt_qa",
         "iaea_hhr16_igrt_qa"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0035",
       "question": "What programme type is covered by IAEA Human Health Reports No. 16?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1229,11 +1404,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0036",
       "question": "What independent quality process is the focus of IAEA HHR-18?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1241,25 +1419,28 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1297_quatro_audit_tool",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_tecdoc1543_quatro"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0037",
       "question": "What clinical dosimetry procedure is covered by IAEA Human Health Reports No. 8?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1267,7 +1448,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": true,
+      "answer_value_hit": false,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -1281,11 +1462,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0038",
       "question": "What workflow safety system is covered by IAEA HHR-7?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1298,20 +1482,23 @@
       "gold_answer_success": false,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr7_record_verify_systems",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0039",
       "question": "What facility-planning topics are covered by IAEA HHR-10?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1333,11 +1520,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0040",
       "question": "Which equipment lifecycle activities are covered by IAEA HHR-17?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1350,20 +1540,23 @@
       "gold_answer_success": false,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_hhr17_linear_accelerators",
-        "iaea_hhr17_linear_accelerators"
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0041",
       "question": "What design concern is central to IAEA SRS-47?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1380,16 +1573,19 @@
         "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0042",
       "question": "What safety domain is addressed by IAEA SSG-46?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1397,7 +1593,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": true,
+      "answer_value_hit": false,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -1411,11 +1607,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0043",
       "question": "What source-calibration setting is covered by IAEA TECDOC-1274?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1437,11 +1636,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0044",
       "question": "What dose-chain stages are linked in IAEA TECDOC-989?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1449,7 +1651,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -1463,11 +1665,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0045",
       "question": "What technology transition is covered by IAEA TECDOC-1588?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1475,7 +1680,7 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
@@ -1489,11 +1694,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0046",
       "question": "What health-system planning topic is covered by IAEA HHS-14?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1515,11 +1723,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0047",
       "question": "What global cancer-care issue is discussed in IAEA Radiotherapy in Cancer Care?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1541,11 +1752,14 @@
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0048",
       "question": "What type of audit methodology is associated with the IAEA QUATRO tool?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1553,25 +1767,28 @@
       ],
       "ok": true,
       "error_code": null,
-      "answer_value_hit": false,
+      "answer_value_hit": true,
       "evidence_value_hit": true,
       "gold_answer_success": true,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     },
     {
       "qid": "gold_report_q0049",
       "question": "What two measurement concepts are central to IAEA HHS-31?",
+      "benchmark_profile": "open_report_gold_answer",
       "answer_type": "open_report_answer_target",
       "source_basis": "Open AAPM/IAEA report source catalog and locally parsed public report text",
       "source_urls": [
@@ -1580,20 +1797,22 @@
       "ok": true,
       "error_code": null,
       "answer_value_hit": false,
-      "evidence_value_hit": true,
-      "gold_answer_success": true,
+      "evidence_value_hit": false,
+      "gold_answer_success": false,
       "citation_present": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_trs483_small_static_fields",
+        "iaea_pub1297_quatro_audit_tool",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ],
       "retrieval_backend": "hybrid",
       "reranker_backends": [
         "cross_encoder"
-      ]
+      ],
+      "extractive_selector": "auto",
+      "extractive_selector_backend": "cross_encoder"
     }
   ],
   "metric_note": "Gold-answer seed evaluation checks short answer targets from public answer keys. It does not replace expert grading and may penalize extractive-only answers on calculation questions."

@@ -27,16 +27,16 @@ from src.orchestration.router import (
     load_experience_memory,
     select_retrieval_strategy,
 )
-from src.retrieval.heuristics import compute_chunk_bonus, get_query_type, report_title_terms
+from src.retrieval.heuristics import compute_chunk_bonus, extract_report_cues, get_query_type, report_title_terms
 from src.retrieval.hybrid import HybridRetriever
 from src.retrieval.reranker import CandidateReranker
 from src.retrieval.sparse import SparseIndexer
 from src.utils import iter_jsonl, simple_tokenize, write_json
 
-
 SKILL_NAME = "radiotherapy-physics-rag"
 SCHEMA_VERSION = "1.0.0"
 RETRIEVAL_BACKENDS = {"auto", "hybrid", "sparse", "routed"}
+EXTRACTIVE_SELECTORS = {"auto", "lexical", "semantic_coverage"}
 _METADATA_CACHE: Dict[str, Dict[str, Dict[str, Any]]] = {}
 _HYBRID_RETRIEVER_CACHE: Dict[Tuple[str, str, str, str, bool], HybridRetriever] = {}
 _ASSET_CACHE: Dict[str, List[Dict[str, Any]]] = {}
@@ -85,8 +85,22 @@ QUERY_STOPWORDS = {
     "with",
 }
 
-ASSET_QUERY_RE = re.compile(r"\b(table|figure|fig\.?|image|diagram|asset)\b", re.IGNORECASE)
+# Do not treat ordinary phrases such as "image-guided radiotherapy" as an
+# asset-reading request.  Image handling is reserved for a user who explicitly
+# points to a displayed/detected image or asks for image metadata.
+ASSET_QUERY_RE = re.compile(
+    r"\b(table|figure|fig\.?|diagram|asset)\b"
+    r"|\b(?:detected|displayed|shown|this|that|the)\s+image\b"
+    r"|\bimage\s+(?:asset|metadata|above|below|shown|displayed|on\s+page)\b",
+    re.IGNORECASE,
+)
 PAGE_QUERY_RE = re.compile(r"\bpage\s+(\d{1,4})\b", re.IGNORECASE)
+LISTING_QUERY_RE = re.compile(
+    r"\b(?:what|which|list|name|identify|describe)\b.*\b(?:"
+    r"actions?|areas?|categories|elements|indices|issues|methods|purposes|"
+    r"properties|reasons|systems|technologies|tests|tools|types)\b",
+    re.IGNORECASE,
+)
 
 
 class SkillExecutionError(Exception):
@@ -554,17 +568,103 @@ def extract_requested_page(query: str) -> Optional[int]:
         return None
 
 
+def is_asset_query(query: str) -> bool:
+    """Return whether a query explicitly asks about an extracted visual asset."""
+    return bool(ASSET_QUERY_RE.search(query))
+
+
 def is_asset_page_query(query: str) -> bool:
-    return bool(ASSET_QUERY_RE.search(query) and extract_requested_page(query) is not None)
+    return bool(is_asset_query(query) and extract_requested_page(query) is not None)
+
+
+def sentence_token_overlap(left: str, right: str) -> float:
+    """Return lexical overlap used only to avoid repeated extracts."""
+    left_terms = set(simple_tokenize(left))
+    right_terms = set(simple_tokenize(right))
+    if not left_terms or not right_terms:
+        return 0.0
+    return len(left_terms & right_terms) / max(1, len(left_terms | right_terms))
+
+
+def enumeration_bonus(query: str, sentence: str) -> float:
+    """Favor evidence sentences that actually enumerate a requested set.
+
+    This is a lightweight presentation heuristic, not a source-specific answer
+    key. It is applied only after retrieval and semantic sentence reranking.
+    """
+    if not LISTING_QUERY_RE.search(query):
+        return 0.0
+    bonus = 0.0
+    lowered = sentence.lower()
+    if any(marker in lowered for marker in ("including", "such as", "consist", "are:", "are ")):
+        bonus += 0.06
+    if sentence.count(",") >= 2 or sentence.count(";") >= 1:
+        bonus += 0.05
+    acronym_count = len(re.findall(r"\b[A-Z][A-Z0-9-]{1,}\b", sentence))
+    bonus += min(0.09, 0.03 * acronym_count)
+    return bonus
+
+
+def semantic_sentence_order(query: str, candidates: List[Dict[str, Any]]) -> tuple[List[Dict[str, Any]], str]:
+    """Rank retrieved evidence sentences with the existing cross-encoder.
+
+    A sentence is never generated or rewritten here. When the neural reranker
+    is unavailable, ``CandidateReranker`` deterministically falls back to its
+    lexical path and the output reports that backend.
+    """
+    if not candidates:
+        return [], "lexical"
+
+    rerank_candidates: List[Dict[str, Any]] = []
+    for candidate in candidates:
+        source_chunk = candidate["chunk"]
+        sentence_chunk = dict(source_chunk)
+        sentence_chunk["text"] = str(candidate["sentence"])
+        rerank_candidates.append(
+            {
+                "chunk": sentence_chunk,
+                "final_retrieval_score": 1.0 / max(1, int(candidate["evidence_idx"])),
+                "_answer_candidate": candidate,
+            }
+        )
+
+    reranker = CandidateReranker(
+        MODELS.reranker_model_name,
+        max_length=min(384, MODELS.reranker_max_length),
+        use_heuristics=False,
+        backend=MODELS.reranker_backend,
+    )
+    reranked = reranker.rerank(query, rerank_candidates, top_k=len(rerank_candidates))
+    ordered: List[Dict[str, Any]] = []
+    for item in reranked:
+        candidate = dict(item["_answer_candidate"])
+        candidate["selector_score"] = float(item.get("rerank_score", 0.0)) + enumeration_bonus(query, candidate["sentence"])
+        candidate["selector_backend"] = str(item.get("reranker_backend", reranker.resolved_backend))
+        ordered.append(candidate)
+    ordered.sort(key=lambda item: (-float(item["selector_score"]), item["evidence_idx"], item["sentence_idx"]))
+    return ordered, reranker.resolved_backend
 
 
 def infer_asset_doc_id(query: str, metadata: List[Dict[str, Any]], evidence: List[Dict[str, Any]]) -> Optional[str]:
+    query_cues = extract_report_cues(query)
     q_terms = report_title_terms(query)
     by_doc: Dict[str, str] = {}
     for chunk in metadata:
         doc_id = str(chunk.get("doc_id", "") or "")
         if doc_id and doc_id not in by_doc:
             by_doc[doc_id] = str(chunk.get("title", "") or doc_id)
+
+    # Exact structured report identifiers are stronger than free title words.
+    # This lets `TG101`, `TG 101`, and `TG-101` all target the same report.
+    cue_matches = []
+    for doc_id, title in by_doc.items():
+        doc_cues = extract_report_cues(f"{doc_id} {title}")
+        overlap = query_cues & doc_cues
+        if overlap:
+            cue_matches.append((len(overlap), doc_id))
+    if cue_matches:
+        cue_matches.sort(key=lambda item: (-item[0], item[1]))
+        return cue_matches[0][1]
 
     best_doc = None
     best_score = 0
@@ -642,6 +742,102 @@ def augment_asset_page_evidence(
         )
         seen.add(chunk_id)
 
+    if not augmented:
+        return evidence
+    combined = augmented + evidence
+    for rank, item in enumerate(combined, start=1):
+        item["rank"] = rank
+    limit = evidence_top_k if evidence_top_k is not None else len(evidence)
+    return combined[:limit]
+
+
+def augment_named_asset_evidence(
+    query: str,
+    evidence: List[Dict[str, Any]],
+    metadata: List[Dict[str, Any]],
+    project_root: Path,
+    evidence_top_k: Optional[int] = None,
+    window_pages: int = 1,
+) -> List[Dict[str, Any]]:
+    """Inject the best matching local table/figure page for an explicit asset query.
+
+    This is intentionally narrow: the user must mention an asset and the
+    target is chosen only from extracted metadata for one inferred document.
+    It does not run for ordinary prose questions and does not manufacture a
+    cell value; it only exposes the PDF-derived preview through normal evidence.
+    """
+    if not is_asset_query(query) or is_asset_page_query(query):
+        return evidence
+    doc_id = infer_asset_doc_id(query, metadata, evidence)
+    if not doc_id:
+        return evidence
+
+    query_lower = query.lower()
+    wanted_type = "table" if "table" in query_lower else "image" if "figure" in query_lower or "image" in query_lower else None
+    query_terms = {term for term in simple_tokenize(query) if term not in QUERY_STOPWORDS}
+    scored_assets: List[Tuple[int, int, str, Dict[str, Any]]] = []
+    for asset in load_doc_assets(project_root, doc_id):
+        if wanted_type and asset.get("asset_type") != wanted_type:
+            continue
+        asset_text = " ".join(
+            [
+                str(asset.get("asset_id", "") or ""),
+                str(asset.get("caption", "") or ""),
+                str(asset.get("text_preview", "") or ""),
+            ]
+        )
+        overlap = len(query_terms & set(simple_tokenize(asset_text)))
+        if overlap:
+            scored_assets.append((overlap, -int(asset.get("page", 0) or 0), str(asset.get("asset_id", "")), asset))
+    if not scored_assets:
+        return evidence
+
+    _, _, _, target = max(scored_assets)
+    page = int(target.get("page", 0) or 0)
+    if page < 1:
+        return evidence
+    low = page - window_pages
+    high = page + window_pages
+    nearby_chunks = [
+        chunk
+        for chunk in metadata
+        if chunk.get("doc_id") == doc_id
+        and int(chunk.get("page_start", -999)) <= high
+        and int(chunk.get("page_end", -999)) >= low
+    ]
+    nearby_chunks.sort(
+        key=lambda chunk: (
+            min(abs(int(chunk.get("page_start", page)) - page), abs(int(chunk.get("page_end", page)) - page)),
+            int(chunk.get("page_start", page)),
+            str(chunk.get("chunk_id", "")),
+        )
+    )
+
+    seen = {item.get("chunk_id") for item in evidence}
+    augmented: List[Dict[str, Any]] = []
+    for chunk in nearby_chunks[:3]:
+        chunk_id = chunk.get("chunk_id")
+        if chunk_id in seen:
+            continue
+        augmented.append(
+            {
+                "chunk_id": chunk_id,
+                "dense_score": None,
+                "bm25_score": None,
+                "dense_hit": False,
+                "bm25_hit": False,
+                "fusion_score": 0.0,
+                "heuristic_bonus": 0.0,
+                "final_retrieval_score": 1.0,
+                "retrieval_rank": 0,
+                "rerank_score": 1.0,
+                "rank": 0,
+                "asset_target_injected": True,
+                "asset_target_id": target.get("asset_id"),
+                "chunk": chunk,
+            }
+        )
+        seen.add(chunk_id)
     if not augmented:
         return evidence
     combined = augmented + evidence
@@ -739,7 +935,7 @@ def find_nearby_assets(
                     "caption": str(asset.get("caption", "") or "")[:240],
                     "rows": asset.get("rows"),
                     "columns": asset.get("columns"),
-                    "text_preview": str(asset.get("text_preview", "") or "")[:900],
+                    "text_preview": str(asset.get("text_preview", "") or "")[:1800],
                     "width": asset.get("width"),
                     "height": asset.get("height"),
                 }
@@ -874,8 +1070,14 @@ def build_extractive_answer(
     query: str,
     evidence: List[Dict[str, Any]],
     project_root: Optional[Path] = None,
+    selector: str = "auto",
 ) -> Dict[str, Any]:
-    """Return a conservative no-model answer assembled from retrieved evidence."""
+    """Return a conservative, query-focused no-model answer from retrieved evidence.
+
+    This path deliberately does not paraphrase or infer.  It selects complete
+    evidence sentences that overlap the user's request, while down-weighting
+    front matter and references that often rank highly for report-title queries.
+    """
     if not evidence:
         return {
             "answer": "Insufficient evidence in the indexed corpus.",
@@ -886,42 +1088,202 @@ def build_extractive_answer(
             "used_evidence_ids": [],
         }
 
-    used = []
-    answer_parts = []
-    for idx, item in enumerate(evidence[:2], start=1):
-        chunk = item["chunk"]
-        text = " ".join(str(chunk.get("text", "")).split())
-        snippet = text[:700].rstrip()
-        if len(text) > len(snippet):
-            snippet += "..."
-        if project_root is not None and is_asset_page_query(query):
+    # Tables and figures carry answer-bearing values in local asset previews.
+    # Preserve those previews rather than applying prose sentence selection.
+    if project_root is not None and is_asset_query(query):
+        # A question can name a table/figure without stating its page.  Scan all
+        # retrieved evidence neighborhoods, rather than only the first two
+        # chunks, because the target asset can be attached to a lower-ranked
+        # but still returned page.  The answer remains extractive: it exposes
+        # only caption and PDF-derived preview text, never an inferred cell.
+        used = []
+        asset_records = []
+        seen_asset_ids = set()
+        for evidence_idx, item in enumerate(evidence, start=1):
+            chunk = item["chunk"]
             nearby_assets = find_nearby_assets(
                 project_root,
                 str(chunk.get("doc_id")),
                 int(chunk.get("page_start", 0)),
                 int(chunk.get("page_end", 0)),
                 window_pages=1,
-                limit=3,
+                limit=8,
             )
-            asset_snippets = []
             for asset in nearby_assets:
+                asset_id = str(asset.get("asset_id", "") or "")
+                if not asset_id or asset_id in seen_asset_ids:
+                    continue
                 preview = " ".join(str(asset.get("text_preview", "") or "").split())
                 caption = " ".join(str(asset.get("caption", "") or "").split())
-                asset_text = "; ".join(part for part in [caption, preview[:500]] if part)
-                if asset_text:
-                    asset_snippets.append(f"{asset.get('asset_id')}: {asset_text}")
-            if asset_snippets:
-                snippet = snippet + "\nNearby table/figure text: " + " | ".join(asset_snippets)
-        used.append(f"E{idx}")
-        answer_parts.append(f"[E{idx}] {snippet}")
+                asset_text = "; ".join(part for part in [caption, preview] if part)
+                if not asset_text:
+                    continue
+                asset_records.append(
+                    {
+                        "evidence_id": f"E{evidence_idx}",
+                        "asset_id": asset_id,
+                        "asset_type": str(asset.get("asset_type", "asset") or "asset"),
+                        "page": asset.get("page"),
+                        "text": asset_text[:1800],
+                    }
+                )
+                seen_asset_ids.add(asset_id)
+                if f"E{evidence_idx}" not in used:
+                    used.append(f"E{evidence_idx}")
+                if len(asset_records) == 5:
+                    break
+            if len(asset_records) == 5:
+                break
+
+        if asset_records:
+            answer_parts = []
+            for record in asset_records:
+                page_label = f"p. {record['page']}" if record.get("page") else "page unknown"
+                answer_parts.append(
+                    f"[{record['evidence_id']}] {record['asset_type']} {record['asset_id']} ({page_label}): "
+                    f"{record['text']}"
+                )
+            return {
+                "answer": "Evidence-grounded asset extract:\n\n" + "\n\n".join(answer_parts),
+                "confidence": "medium",
+                "evidence_status": "sufficient",
+                "abstained": False,
+                "abstention_reason": "",
+                "used_evidence_ids": used,
+            }
+
+    selected_selector = (selector or "auto").lower()
+    if selected_selector not in EXTRACTIVE_SELECTORS:
+        raise SkillExecutionError(
+            "out_of_scope",
+            f"Unsupported extractive selector '{selector}'.",
+            {"supported_extractive_selectors": sorted(EXTRACTIVE_SELECTORS)},
+        )
+
+    query_terms = set(query_content_terms(query))
+    candidates: List[Dict[str, Any]] = []
+    sentence_re = re.compile(r"(?<=[.!?])\s+|(?<=;)\s+(?=[A-Z])")
+    weak_sections = {"FRONT_MATTER", "REFERENCES", "ACKNOWLEDGMENTS", "ACKNOWLEDGEMENTS"}
+
+    for evidence_idx, item in enumerate(evidence, start=1):
+        chunk = item["chunk"]
+        text = " ".join(str(chunk.get("text", "")).split())
+        section = str(chunk.get("section", "") or "").upper()
+        section_penalty = 0.65 if section in weak_sections else 0.0
+        retrieval_bonus = 0.20 / evidence_idx
+
+        for sentence_idx, sentence in enumerate(sentence_re.split(text)):
+            sentence = sentence.strip()
+            if len(sentence) < 40 or len(sentence) > 700:
+                continue
+            sentence_terms = set(simple_tokenize(sentence))
+            overlap = len(query_terms & sentence_terms) / max(1, len(query_terms))
+            # A sentence with a requested content word should outrank generic
+            # title and author text even when the document title is a close match.
+            score = overlap + retrieval_bonus - section_penalty
+            if section == "UNKNOWN":
+                score -= 0.03
+            candidates.append(
+                {
+                    "score": score,
+                    "evidence_id": f"E{evidence_idx}",
+                    "evidence_idx": evidence_idx,
+                    "sentence_idx": sentence_idx,
+                    "sentence": sentence,
+                    "chunk": chunk,
+                }
+            )
+
+    candidates.sort(key=lambda item: (-float(item["score"]), item["evidence_idx"], item["sentence_idx"]))
+    body_candidates = [
+        item for item in candidates if str(item["chunk"].get("section", "") or "").upper() not in weak_sections
+    ]
+    # Front matter can establish report identity, but it is not an answer when
+    # the retrieved evidence also contains substantive report content.
+    if body_candidates:
+        candidates = body_candidates
+    selector_backend = "lexical"
+    if selected_selector in {"auto", "semantic_coverage"}:
+        candidates, selector_backend = semantic_sentence_order(query, candidates)
+    selected: List[Dict[str, Any]] = []
+    seen_sentences = set()
+    selected_by_chunk: Dict[str, int] = {}
+    use_coverage_controls = selected_selector in {"auto", "semantic_coverage"}
+    max_selected = 4 if use_coverage_controls else 3
+    # Prefer at most two evidence units.  This keeps the fallback answer short
+    # and gives a downstream agent a compact, citation-linked starting point.
+    for candidate in candidates:
+        normalized = candidate["sentence"].lower()
+        if normalized in seen_sentences:
+            continue
+        candidate_score = float(candidate.get("selector_score", candidate["score"]))
+        if selected and candidate_score < 0.08:
+            continue
+        chunk_id = str(candidate["chunk"].get("chunk_id", "") or "")
+        if use_coverage_controls:
+            if chunk_id and selected_by_chunk.get(chunk_id, 0) >= 2:
+                continue
+            if any(sentence_token_overlap(candidate["sentence"], existing["sentence"]) >= 0.82 for existing in selected):
+                continue
+        selected.append(candidate)
+        seen_sentences.add(normalized)
+        if use_coverage_controls and chunk_id:
+            selected_by_chunk[chunk_id] = selected_by_chunk.get(chunk_id, 0) + 1
+        if len(selected) == max_selected:
+            break
+
+    if not selected:
+        fallback = evidence[0]["chunk"]
+        text = " ".join(str(fallback.get("text", "")).split())
+        selected = [
+            {
+                "evidence_id": "E1",
+                "sentence": text[:700].rstrip() + ("..." if len(text) > 700 else ""),
+                "chunk": fallback,
+            }
+        ]
+
+    used = []
+    answer_parts = []
+    selected_by_evidence: Dict[str, Dict[str, Any]] = {}
+    for item in selected:
+        evidence_id = str(item["evidence_id"])
+        if evidence_id not in used:
+            used.append(evidence_id)
+            selected_by_evidence[evidence_id] = item
+        snippet = str(item["sentence"])
+        chunk = item["chunk"]
+        answer_parts.append(f"- {snippet} [{evidence_id}]")
+
+    supporting_parts = []
+    for evidence_id in used[:2]:
+        item = selected_by_evidence[evidence_id]
+        text = " ".join(str(item["chunk"].get("text", "")).split())
+        sentence = str(item["sentence"])
+        sentence_start = text.lower().find(sentence.lower())
+        if sentence_start < 0:
+            sentence_start = 0
+        context_start = max(0, sentence_start - 220)
+        context_end = min(len(text), sentence_start + len(sentence) + 480)
+        excerpt = text[context_start:context_end].strip()
+        if context_start > 0:
+            excerpt = "..." + excerpt
+        if context_end < len(text):
+            excerpt += "..."
+        if excerpt and excerpt != sentence:
+            supporting_parts.append(f"[{evidence_id}] {excerpt}")
 
     return {
-        "answer": "Based only on the retrieved evidence:\n\n" + "\n\n".join(answer_parts),
+        "answer": "Evidence-grounded extractive summary:\n"
+        + "\n".join(answer_parts)
+        + ("\n\nSupporting evidence excerpts:\n" + "\n\n".join(supporting_parts) if supporting_parts else ""),
         "confidence": "medium",
         "evidence_status": "sufficient",
         "abstained": False,
         "abstention_reason": "",
         "used_evidence_ids": used,
+        "extractive_selector": selected_selector,
+        "extractive_selector_backend": selector_backend,
     }
 
 
@@ -932,6 +1294,7 @@ def run_skill(
     report_id: Optional[str] = None,
     evidence_top_k: Optional[int] = None,
     answer_engine: str = "auto",
+    extractive_selector: str = "auto",
     retrieval_backend: Optional[str] = None,
 ) -> Dict[str, Any]:
     if mode not in {"evidence", "bundle", "answer"}:
@@ -945,6 +1308,12 @@ def run_skill(
             "out_of_scope",
             f"Unsupported answer engine '{answer_engine}'.",
             {"supported_answer_engines": ["auto", "extractive", "medgemma"]},
+        )
+    if extractive_selector not in EXTRACTIVE_SELECTORS:
+        raise SkillExecutionError(
+            "out_of_scope",
+            f"Unsupported extractive selector '{extractive_selector}'.",
+            {"supported_extractive_selectors": sorted(EXTRACTIVE_SELECTORS)},
         )
     selected_retrieval_backend = (retrieval_backend or os.getenv("RAG_RETRIEVAL_BACKEND", "auto")).lower()
     if selected_retrieval_backend not in RETRIEVAL_BACKENDS:
@@ -973,6 +1342,13 @@ def run_skill(
         retrieval_backend=selected_retrieval_backend,
     )
     evidence = augment_asset_page_evidence(query, evidence, metadata, evidence_top_k=evidence_top_k)
+    evidence = augment_named_asset_evidence(
+        query,
+        evidence,
+        metadata,
+        project_root=index_dir.parent,
+        evidence_top_k=evidence_top_k,
+    )
     sufficiency = assess_evidence_sufficiency(query, evidence)
     if not sufficiency["sufficient"]:
         raise SkillExecutionError(
@@ -1019,13 +1395,20 @@ def run_skill(
         result["answer_engine"] = engine
 
         if engine == "extractive":
-            answer = build_extractive_answer(query, evidence, project_root=index_dir.parent)
+            answer = build_extractive_answer(
+                query,
+                evidence,
+                project_root=index_dir.parent,
+                selector=extractive_selector,
+            )
             result["answer"] = answer["answer"]
             result["confidence"] = answer["confidence"]
             result["evidence_status"] = answer["evidence_status"]
             result["abstained"] = answer["abstained"]
             result["abstention_reason"] = answer.get("abstention_reason", "")
             result["used_evidence_ids"] = answer.get("used_evidence_ids", [])
+            result["extractive_selector"] = answer.get("extractive_selector", extractive_selector)
+            result["extractive_selector_backend"] = answer.get("extractive_selector_backend", "lexical")
             return result
 
         if engine != "medgemma":
@@ -1088,6 +1471,7 @@ def main() -> None:
     parser.add_argument("--index-dir", type=Path, default=Path("index"))
     parser.add_argument("--evidence-top-k", type=int, default=None)
     parser.add_argument("--answer-engine", choices=["auto", "extractive", "medgemma"], default="auto")
+    parser.add_argument("--extractive-selector", choices=sorted(EXTRACTIVE_SELECTORS), default="auto")
     parser.add_argument("--retrieval-backend", choices=sorted(RETRIEVAL_BACKENDS), default=None)
     parser.add_argument("--output", type=Path, default=None)
     args = parser.parse_args()
@@ -1101,6 +1485,7 @@ def main() -> None:
             report_id=args.report_id,
             evidence_top_k=args.evidence_top_k,
             answer_engine=args.answer_engine,
+            extractive_selector=args.extractive_selector,
             retrieval_backend=args.retrieval_backend,
         )
     except SkillExecutionError as exc:

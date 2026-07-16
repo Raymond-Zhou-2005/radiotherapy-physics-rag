@@ -17,7 +17,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from scripts.validate_skill_package import validate
 
-
 EXCLUDE_PARTS = {
     ".git",
     ".pytest_cache",

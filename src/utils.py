@@ -8,7 +8,6 @@ import re
 from pathlib import Path
 from typing import Dict, Iterable, Iterator, List, Sequence
 
-
 WORD_RE = re.compile(r"\b\w+\b", re.UNICODE)
 SENTENCE_BOUNDARY_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"“(])")
 

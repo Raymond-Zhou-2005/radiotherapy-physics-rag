@@ -32,6 +32,7 @@ dist/*.zip
 reports/raw/*.pdf
 !reports/raw/.gitkeep
 reports/manifest.jsonl
+reports/provenance_manifest.json
 parsed/*.jsonl
 !parsed/.gitkeep
 chunks/*.jsonl

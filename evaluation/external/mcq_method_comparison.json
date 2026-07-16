@@ -1,0 +1,51 @@
+{
+  "benchmark": {
+    "name": "Radiation Oncology NLP Database Medical Physics 100-question QA set",
+    "questions": 100,
+    "public_development_set": true,
+    "boundary": "All results use a public answer-keyed benchmark. They are not hidden-test, expert, or clinical-validation results."
+  },
+  "methods": [
+    {
+      "name": "PyMuPDF + deterministic cross-encoder option selector",
+      "parser": "PyMuPDF historical snapshot",
+      "answer_host": "deterministic option-evidence selector",
+      "accuracy": 0.34,
+      "mean_latency_seconds": 14.93168003,
+      "questions": 100
+    },
+    {
+      "name": "OpenDataLoader + deterministic cross-encoder option selector",
+      "parser": "OpenDataLoader rebuilt runtime",
+      "answer_host": "deterministic option-evidence selector",
+      "accuracy": 0.36,
+      "mean_latency_seconds": 13.5033849,
+      "questions": 100
+    },
+    {
+      "name": "OpenDataLoader + Codex agent using local skill evidence",
+      "parser": "OpenDataLoader rebuilt runtime",
+      "answer_host": "Codex agent, instructed to call the local skill before selecting",
+      "accuracy": 0.96,
+      "mean_latency_seconds": 9.059365,
+      "questions": 100
+    }
+  ],
+  "controlled_parser_comparison": {
+    "improved": 16,
+    "regressed": 14,
+    "both_correct": 20,
+    "both_incorrect": 50
+  },
+  "host_reasoning_comparison": {
+    "improved": 61,
+    "regressed": 1,
+    "both_correct": 35,
+    "both_incorrect": 3
+  },
+  "interpretation": {
+    "parser_ablation": "Only the first two methods hold the answer-selection mechanism fixed and therefore isolate the parser/index change.",
+    "agent_result": "The Codex-agent result changes both the parser/runtime and the answer host. It demonstrates agent use of skill evidence, not a parser-only effect.",
+    "host_transport": "The Codex CLI MCP runner was implemented but its non-interactive Windows MCP call was cancelled by host authorization; this live result used direct local skill calls by the Codex agent."
+  }
+}

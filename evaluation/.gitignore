@@ -2,3 +2,5 @@
 *.local.md
 *.local.txt
 private/
+runtime_integrity_audit.json
+runtime_integrity_audit.md

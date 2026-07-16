@@ -18,7 +18,7 @@ review.
 | Expert-review boundary | PASS | Documentation states that current results are automatic public-source evaluations, not expert-adjudicated clinical correctness. |
 | Metric interpretation | PASS | Answer-quality, answer-target, and failure-taxonomy metrics are labeled as proxies or engineering diagnostics. |
 | DOI/release status | PARTIAL | `.zenodo.json` is present; DOI creation requires a GitHub release and Zenodo integration or manual upload. |
-| Final manuscript reference style | PENDING | No final submission manuscript is included yet. |
+| Final manuscript reference style | PARTIAL | A publication-style manuscript package exists, but target-journal formatting and final reference adaptation remain pending. |
 
 ## Required Claim Boundary
 
@@ -39,10 +39,11 @@ Unsupported claims unless additional evidence is added:
 ## Main Remaining Scientific Limitation
 
 The strongest measured area is evidence retrieval and evidence bundling. The
-weakest measured area is direct extractive answer synthesis: the current
-61-question public answer-target benchmark shows much higher evidence/bundle
-target availability than extractive answer value hit rate. This should be
-reported as a limitation rather than hidden.
+current semantic-coverage extractor improves automatic answer-value hit from
+0.393 to 0.557 on the fixed 61-question set without changing retrieved
+evidence, but evidence/bundle target availability remains higher at 0.852.
+The remaining gap and weaker external profile must still be reported as
+limitations rather than hidden.
 
 ## Pre-Submission Requirements
 
@@ -52,4 +53,3 @@ reported as a limitation rather than hidden.
   automatic, and reproducible rather than expert-validated.
 - If expert review becomes available, report the expert scoring protocol,
   reviewer qualifications, item sampling, rubric, and agreement statistics.
-

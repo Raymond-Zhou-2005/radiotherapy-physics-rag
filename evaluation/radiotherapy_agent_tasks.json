@@ -42,21 +42,17 @@
     "qid": "agent_task_q0004",
     "task": "Answer a table-cell question and preserve the table asset trace.",
     "mode": "answer",
-    "question": "In AAPM TG 101 Table I on page 2, what dose per fraction range is listed for SBRT?",
+    "question": "In AAPM TG 100 Table II, what occurrence description is listed for rank 1?",
     "expected_doc_ids": [
-      "aapm_tg101_sbrt"
+      "aapm_tg100_radiotherapy_quality_management"
     ],
     "expected_citations": true,
     "expected_abstain": false,
     "benchmark_profile": "agent_task",
-    "expected_asset_id": "aapm_tg101_sbrt_p002_table_01",
+    "expected_asset_id": "aapm_tg100_radiotherapy_quality_management_p014_table_01",
     "expected_answer_groups": [
       [
-        "6-30",
-        "6 to 30"
-      ],
-      [
-        "Gy"
+        "failure unlikely"
       ]
     ]
   },

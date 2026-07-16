@@ -1,0 +1,13 @@
+{
+  "parser": "PyMuPDF historical runtime before OpenDataLoader replacement",
+  "source_records": 49,
+  "parsed_files": 49,
+  "parsed_blocks": 66937,
+  "chunk_files": 49,
+  "indexed_chunks": 10923,
+  "asset_documents": 49,
+  "asset_tables": 655,
+  "asset_images": 3263,
+  "dense_meta_sha256": "c37aab0ef62b1651f866e2e03a2d838047023801a7021db3af5a504644c898e0",
+  "evaluation": "public_mcq_eval_results.json uses this historical index with auto retrieval, cross encoder, evidence top-k 6"
+}

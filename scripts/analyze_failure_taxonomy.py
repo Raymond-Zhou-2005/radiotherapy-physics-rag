@@ -116,17 +116,34 @@ def classify_table_cells(table_cell: Dict[str, Any], cases: List[Dict[str, Any]]
             add_case(cases, "table_cell", qid, "unclassified_table_failure", "Table-cell task failed for an unclassified reason.", item)
 
 
+def classify_mcp_contract(mcp_contract: Dict[str, Any], cases: List[Dict[str, Any]]) -> None:
+    for item in mcp_contract.get("details", []) or []:
+        if item.get("task_success"):
+            continue
+        qid = str(item.get("qid"))
+        checks = item.get("checks", {}) or {}
+        if item.get("transport_error"):
+            add_case(cases, "mcp_contract", qid, "mcp_transport_failure", "MCP stdio client/server call failed.", item)
+        elif not checks.get("abstention", True):
+            add_case(cases, "mcp_contract", qid, "ood_abstention_failure", "MCP tool did not return the expected refusal.", item)
+        elif not checks.get("tool_specific", True):
+            add_case(cases, "mcp_contract", qid, "mcp_tool_contract_failure", "MCP tool-specific response contract failed.", item)
+        else:
+            add_case(cases, "mcp_contract", qid, "mcp_result_validation_failure", "MCP response did not meet the expected task checks.", item)
+
+
 def build_taxonomy(eval_dir: Path) -> Dict[str, Any]:
     cases: List[Dict[str, Any]] = []
     classify_gold(read_json(eval_dir / "gold_answer_eval_results.json"), cases)
     classify_answer_generation(read_json(eval_dir / "answer_generation_eval_results.json"), cases)
     classify_agent_tasks(read_json(eval_dir / "agent_task_eval_results.json"), cases)
     classify_table_cells(read_json(eval_dir / "table_cell_qa_eval_results.json"), cases)
+    classify_mcp_contract(read_json(eval_dir / "mcp_contract_eval_results.json"), cases)
 
     by_category = Counter(case["category"] for case in cases)
     by_source = Counter(case["source"] for case in cases)
     return {
-        "taxonomy_version": "1.0",
+        "taxonomy_version": "1.1",
         "evaluation_dir": str(eval_dir),
         "case_count": len(cases),
         "by_category": dict(sorted(by_category.items())),

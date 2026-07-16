@@ -20,11 +20,9 @@ import argparse
 import json
 from pathlib import Path
 
-import fitz
-
+from src.pdf_processing.opendataloader_backend import document_metadata
 from src.schemas import DocumentRecord
 from src.utils import sha256_file, slugify_filename, write_jsonl
-
 
 PROJECT_ROOT = _PathBootstrap(__file__).resolve().parents[1]
 
@@ -60,10 +58,6 @@ def infer_title_from_pdf(pdf_path: Path) -> str:
     This function keeps the logic deliberately conservative. It first checks the
     PDF metadata title, then falls back to the filename.
     """
-    doc = fitz.open(pdf_path)
-    meta_title = (doc.metadata or {}).get("title", "")
-    if meta_title and meta_title.strip():
-        return meta_title.strip()
     return pdf_path.stem
 
 
@@ -71,10 +65,12 @@ def infer_title_from_pdf(pdf_path: Path) -> str:
 def build_manifest(reports_dir: Path, output_path: Path) -> None:
     records = []
     source_metadata = load_source_metadata(reports_dir)
-    for pdf_path in sorted(reports_dir.glob("*.pdf")):
-        doc = fitz.open(pdf_path)
+    pdf_paths = sorted(reports_dir.glob("*.pdf"))
+    parser_metadata = document_metadata(pdf_paths)
+    for pdf_path in pdf_paths:
         source = source_metadata.get(pdf_path.name) or source_metadata.get(slugify_filename(pdf_path.stem)) or {}
-        title = source.get("title") or infer_title_from_pdf(pdf_path)
+        parsed_info = parser_metadata.get(pdf_path.resolve(), {})
+        title = source.get("title") or parsed_info.get("title") or infer_title_from_pdf(pdf_path)
         doc_id = source.get("doc_id") or slugify_filename(pdf_path.stem)
         record = DocumentRecord(
             doc_id=doc_id,
@@ -88,7 +84,7 @@ def build_manifest(reports_dir: Path, output_path: Path) -> None:
             source_url=source.get("source_url"),
             role=source.get("role"),
             sha256=sha256_file(pdf_path),
-            num_pages=len(doc),
+            num_pages=parsed_info.get("num_pages") or None,
             language="en",
         )
         records.append(record.to_dict())

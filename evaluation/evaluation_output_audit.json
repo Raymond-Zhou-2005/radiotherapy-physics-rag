@@ -1,0 +1,175 @@
+{
+  "audit_version": "1.1",
+  "evaluation_dir": "evaluation",
+  "checks": [
+    {
+      "name": "strategy:sparse:document_recall_at_5",
+      "passed": true,
+      "detail": "summary=0.9183673469387755, details=0.9183673469387755, n=245"
+    },
+    {
+      "name": "strategy:sparse:abstention_confusion",
+      "passed": true,
+      "detail": "summary={'tp': 35, 'fp': 0, 'tn': 245, 'fn': 0}, details={'tp': 35, 'fn': 0, 'fp': 0, 'tn': 245}"
+    },
+    {
+      "name": "strategy:hybrid:document_recall_at_5",
+      "passed": true,
+      "detail": "summary=0.9469387755102041, details=0.9469387755102041, n=245"
+    },
+    {
+      "name": "strategy:hybrid:abstention_confusion",
+      "passed": true,
+      "detail": "summary={'tp': 35, 'fp': 0, 'tn': 245, 'fn': 0}, details={'tp': 35, 'fn': 0, 'fp': 0, 'tn': 245}"
+    },
+    {
+      "name": "strategy:auto:document_recall_at_5",
+      "passed": true,
+      "detail": "summary=0.9469387755102041, details=0.9469387755102041, n=245"
+    },
+    {
+      "name": "strategy:auto:abstention_confusion",
+      "passed": true,
+      "detail": "summary={'tp': 35, 'fp': 0, 'tn': 245, 'fn': 0}, details={'tp': 35, 'fn': 0, 'fp': 0, 'tn': 245}"
+    },
+    {
+      "name": "strategy:routed:document_recall_at_5",
+      "passed": true,
+      "detail": "summary=0.926530612244898, details=0.926530612244898, n=245"
+    },
+    {
+      "name": "strategy:routed:abstention_confusion",
+      "passed": true,
+      "detail": "summary={'tp': 35, 'fp': 0, 'tn': 245, 'fn': 0}, details={'tp': 35, 'fn': 0, 'fp': 0, 'tn': 245}"
+    },
+    {
+      "name": "gold:question_count",
+      "passed": true,
+      "detail": "summary=61, details=61"
+    },
+    {
+      "name": "gold:evidence_value_hit_rate",
+      "passed": true,
+      "detail": "summary=0.7213114754098361, details=0.7213114754098361"
+    },
+    {
+      "name": "gold:answer_value_hit_rate",
+      "passed": true,
+      "detail": "summary=0.5081967213114754, details=0.5081967213114754"
+    },
+    {
+      "name": "gold:citation_present_rate",
+      "passed": true,
+      "detail": "summary=0.9836065573770492, details=0.9836065573770492"
+    },
+    {
+      "name": "gold:gold_answer_success_rate",
+      "passed": true,
+      "detail": "summary=0.7213114754098361, details=0.7213114754098361"
+    },
+    {
+      "name": "gold:external_gold_answer:success",
+      "passed": true,
+      "detail": "summary_n=12, details_n=12, summary_rate=0.4166666666666667, details_rate=0.4166666666666667"
+    },
+    {
+      "name": "gold:open_report_gold_answer:success",
+      "passed": true,
+      "detail": "summary_n=49, details_n=49, summary_rate=0.7959183673469388, details_rate=0.7959183673469388"
+    },
+    {
+      "name": "generation:question_count",
+      "passed": true,
+      "detail": "summary=61, details=61"
+    },
+    {
+      "name": "generation:extractive_answer_value_hit_rate",
+      "passed": true,
+      "detail": "summary=0.5081967213114754, details=0.5081967213114754"
+    },
+    {
+      "name": "generation:evidence_only_value_hit_rate",
+      "passed": true,
+      "detail": "summary=0.8032786885245902, details=0.8032786885245902"
+    },
+    {
+      "name": "generation:answer_synthesis_gap_rate",
+      "passed": true,
+      "detail": "summary=0.29508196721311475, details=0.29508196721311475"
+    },
+    {
+      "name": "generation:retrieval_gap_rate",
+      "passed": true,
+      "detail": "summary=0.19672131147540983, details=0.19672131147540983"
+    },
+    {
+      "name": "generation:external_gold_answer:answer_hit",
+      "passed": true,
+      "detail": "summary_n=12, details_n=12, summary_rate=0.3333333333333333, details_rate=0.3333333333333333"
+    },
+    {
+      "name": "generation:open_report_gold_answer:answer_hit",
+      "passed": true,
+      "detail": "summary_n=49, details_n=49, summary_rate=0.5510204081632653, details_rate=0.5510204081632653"
+    },
+    {
+      "name": "selector:lexical:summary",
+      "passed": true,
+      "detail": "summary_n=61, details_n=61, answer=0.39344262295081966/0.39344262295081966, citation=0.9836065573770492/0.9836065573770492"
+    },
+    {
+      "name": "selector:lexical:profiles",
+      "passed": true,
+      "detail": "Profile-specific answer and citation rates were recomputed from frozen per-question details."
+    },
+    {
+      "name": "selector:semantic_coverage:summary",
+      "passed": true,
+      "detail": "summary_n=61, details_n=61, answer=0.5573770491803278/0.5573770491803278, citation=0.9836065573770492/0.9836065573770492"
+    },
+    {
+      "name": "selector:semantic_coverage:profiles",
+      "passed": true,
+      "detail": "Profile-specific answer and citation rates were recomputed from frozen per-question details."
+    },
+    {
+      "name": "selector:paired:semantic_coverage",
+      "passed": true,
+      "detail": "Paired selector comparison, interval, and McNemar result were deterministically recomputed from frozen per-question details."
+    },
+    {
+      "name": "table:cell_qa_success",
+      "passed": true,
+      "detail": "summary_n=14, details_n=14, summary_rate=1.0, details_rate=1.0"
+    },
+    {
+      "name": "direct_skill:task_success",
+      "passed": true,
+      "detail": "summary_n=40, details_n=40, summary_rate=1.0, details_rate=1.0"
+    },
+    {
+      "name": "mcp_stdio:task_success",
+      "passed": true,
+      "detail": "summary_n=7, details_n=7, summary_rate=1.0, details_rate=1.0"
+    },
+    {
+      "name": "quality:grounded_token_overlap",
+      "passed": true,
+      "detail": "summary=0.9558402101493031, details=0.9558402101493031, n=60"
+    },
+    {
+      "name": "quality:ood_refusal",
+      "passed": true,
+      "detail": "summary=0.0, details=0.0, n=0"
+    },
+    {
+      "name": "uncertainty:deterministic_recompute",
+      "passed": true,
+      "detail": "The persisted uncertainty JSON was recomputed from the frozen per-item evaluation outputs."
+    }
+  ],
+  "passed": 33,
+  "failed": 0,
+  "ok": true,
+  "scope_note": "This audit checks internal consistency of automatic evaluation artifacts. It does not validate the benchmark labels, clinical correctness, or expert agreement."
+}

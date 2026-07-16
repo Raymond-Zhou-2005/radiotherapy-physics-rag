@@ -9,7 +9,6 @@ from typing import Dict, List
 from src.schemas import ChunkRecord
 from src.utils import count_approx_tokens, normalize_whitespace, split_sentences
 
-
 DEFINITION_CUES = (
     "is referred to as",
     "is defined as",

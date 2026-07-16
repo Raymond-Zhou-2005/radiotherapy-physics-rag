@@ -8,7 +8,6 @@ import json
 from pathlib import Path
 from typing import Dict, List
 
-
 FORBIDDEN_SUFFIXES = {
     ".pdf",
     ".pkl",
@@ -42,6 +41,8 @@ FORBIDDEN_EXACT = {
     "reports/manifest.jsonl",
     "chatgpt_knowledge/upload_manifest.json",
     "experience/experience_memory.jsonl",
+    "evaluation/runtime_integrity_audit.json",
+    "evaluation/runtime_integrity_audit.md",
 }
 
 
@@ -66,6 +67,8 @@ def audit(root: Path) -> Dict:
             forbidden.append(rel.replace("\\", "/"))
     required = [
         "README.md",
+        "Dockerfile",
+        "CONTAINER.md",
         "reports/starter_corpus_sources.json",
         "skills/radiotherapy-physics-rag/SKILL.md",
         "scripts/download_starter_corpus.py",

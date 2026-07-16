@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this evidence agent in research or engineering work, please cite it."
 title: "Radiotherapy Physics Report Evidence Agent"
-version: "2.1.0"
-date-released: "2026-07-09"
+version: "2.1.1"
+date-released: "2026-07-10"
 authors:
   - name: "Raymond-Zhou-2005"
 repository-code: "https://github.com/Raymond-Zhou-2005/radiotherapy-physics-rag"

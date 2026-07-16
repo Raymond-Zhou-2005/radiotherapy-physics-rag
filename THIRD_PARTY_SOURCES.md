@@ -24,8 +24,26 @@ The public evaluation questions in `evaluation/public_credible_questions.json` a
 
 The current public benchmark is an open-source topic benchmark, not an expert-adjudicated clinical correctness benchmark.
 
+`evaluation/external/public_medical_physics_100_mcq.json` is imported from the
+Apache-2.0 **Radiation Oncology NLP Database** at its pinned commit
+`27e04f14a141a3a92dcc1df0449245175ae94b7c`. It contains 100 public
+medical-physics multiple-choice questions with one source answer each. The
+imported license is retained at `evaluation/external/LICENSE-Apache-2.0.txt`.
+This test is external to the runtime corpus, but public rather than hidden and
+is not expert-adjudicated for this project. The runtime code does not read its
+gold-answer fields.
+
 Private licensed ABR, RAPHEX, institutional, or commercial questions should be kept in `.local.json` files under `evaluation/`. These files are ignored by Git.
 
 ## Dependency Licenses
 
 Project code is MIT licensed. Python dependencies, local model packages, and report PDFs remain under their own licenses and terms.
+
+### OpenDataLoader PDF
+
+Local PDF parsing uses `opendataloader-pdf` rather than PyMuPDF. It is a
+third-party Python package and Java-backed command-line parser. The runtime
+requires Java 11 or newer. Its source, documentation, version, and license
+must be checked from the upstream project before each release:
+`https://github.com/opendataloader-project/opendataloader-pdf` and
+`https://opendataloader.org/docs`.

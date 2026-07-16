@@ -30,8 +30,20 @@ from scripts.run_skill import SkillExecutionError, run_skill
 from src.generation.prompting import build_grounded_prompt
 from src.utils import write_json
 
-
 SPACE_RE = re.compile(r"\s+")
+METRIC_KEYS = (
+    "answer_ok",
+    "evidence_ok",
+    "bundle_ok",
+    "extractive_answer_value_hit",
+    "extractive_evidence_value_hit",
+    "evidence_only_value_hit",
+    "bundle_prompt_value_hit",
+    "citation_present",
+    "answer_synthesis_gap",
+    "retrieval_gap",
+    "unexpected_errors",
+)
 
 
 def normalize(text: str) -> str:
@@ -48,6 +60,29 @@ def group_hit(text: str, groups: List[List[str]]) -> bool:
         if not any(normalize(alias) in haystack for alias in group):
             return False
     return True
+
+
+def empty_counts() -> Dict[str, int]:
+    return {"questions": 0, **{key: 0 for key in METRIC_KEYS}}
+
+
+def summarize_counts(counts: Dict[str, int]) -> Dict[str, Any]:
+    denom = max(1, counts["questions"])
+    return {
+        "questions": counts["questions"],
+        "answer_ok_rate": counts["answer_ok"] / denom,
+        "evidence_ok_rate": counts["evidence_ok"] / denom,
+        "bundle_ok_rate": counts["bundle_ok"] / denom,
+        "extractive_answer_value_hit_rate": counts["extractive_answer_value_hit"] / denom,
+        "extractive_evidence_value_hit_rate": counts["extractive_evidence_value_hit"] / denom,
+        "evidence_only_value_hit_rate": counts["evidence_only_value_hit"] / denom,
+        "bundle_prompt_value_hit_rate": counts["bundle_prompt_value_hit"] / denom,
+        "citation_present_rate": counts["citation_present"] / denom,
+        "answer_synthesis_gap_rate": counts["answer_synthesis_gap"] / denom,
+        "retrieval_gap_rate": counts["retrieval_gap"] / denom,
+        "unexpected_error_count": counts["unexpected_errors"],
+        "counts": counts,
+    }
 
 
 def result_text(
@@ -82,6 +117,7 @@ def safe_answer_run(
     index_dir: Path,
     retrieval_backend: str,
     evidence_top_k: int,
+    extractive_selector: str,
 ) -> tuple[Dict[str, Any], str | None]:
     try:
         return (
@@ -92,6 +128,7 @@ def safe_answer_run(
                 retrieval_backend=retrieval_backend,
                 evidence_top_k=evidence_top_k,
                 answer_engine="extractive",
+                extractive_selector=extractive_selector,
             ),
             None,
         )
@@ -104,28 +141,21 @@ def evaluate_answer_generation(
     index_dir: Path,
     retrieval_backend: str,
     evidence_top_k: int,
+    extractive_selector: str = "auto",
     max_questions: int | None = None,
 ) -> Dict[str, Any]:
     selected = questions[:max_questions] if max_questions else questions
-    counts = {
-        "questions": len(selected),
-        "answer_ok": 0,
-        "evidence_ok": 0,
-        "bundle_ok": 0,
-        "extractive_answer_value_hit": 0,
-        "extractive_evidence_value_hit": 0,
-        "evidence_only_value_hit": 0,
-        "bundle_prompt_value_hit": 0,
-        "citation_present": 0,
-        "answer_synthesis_gap": 0,
-        "retrieval_gap": 0,
-        "unexpected_errors": 0,
-    }
+    counts = empty_counts()
+    profile_counts: Dict[str, Dict[str, int]] = {}
     details: List[Dict[str, Any]] = []
 
     for question in selected:
+        profile = str(question.get("benchmark_profile", "unspecified") or "unspecified")
+        profile_count = profile_counts.setdefault(profile, empty_counts())
         expected_groups = question.get("expected_answer_groups", []) or []
-        answer_result, answer_error = safe_answer_run(question["question"], index_dir, retrieval_backend, evidence_top_k)
+        answer_result, answer_error = safe_answer_run(
+            question["question"], index_dir, retrieval_backend, evidence_top_k, extractive_selector
+        )
         evidence_items = answer_result.get("evidence", []) or []
         prompt_text = ""
         if evidence_items:
@@ -137,32 +167,36 @@ def evaluate_answer_generation(
         answer_ok = bool(answer_result.get("ok"))
         evidence_ok = answer_ok
         bundle_ok = answer_ok and bool(prompt_text)
-        counts["answer_ok"] += int(answer_ok)
-        counts["evidence_ok"] += int(evidence_ok)
-        counts["bundle_ok"] += int(bundle_ok)
-
         answer_hit = group_hit(str(answer_result.get("answer", "") or ""), expected_groups)
         answer_evidence_hit = group_hit(result_text(answer_result), expected_groups)
         evidence_hit = group_hit(result_text(answer_result, include_answer=False, include_prompt=False), expected_groups)
         bundle_hit = group_hit(result_text(answer_result, include_answer=False, include_prompt=True, prompt_text=prompt_text), expected_groups)
         citation_present = bool(answer_result.get("citations"))
 
-        counts["extractive_answer_value_hit"] += int(answer_hit)
-        counts["extractive_evidence_value_hit"] += int(answer_evidence_hit)
-        counts["evidence_only_value_hit"] += int(evidence_hit)
-        counts["bundle_prompt_value_hit"] += int(bundle_hit)
-        counts["citation_present"] += int(citation_present)
-
         answer_synthesis_gap = bool((answer_evidence_hit or evidence_hit or bundle_hit) and not answer_hit)
         retrieval_gap = bool(not answer_evidence_hit and not evidence_hit and not bundle_hit)
-        counts["answer_synthesis_gap"] += int(answer_synthesis_gap)
-        counts["retrieval_gap"] += int(retrieval_gap)
-        counts["unexpected_errors"] += int(bool(answer_error) and not question.get("expected_abstain"))
+        values = {
+            "answer_ok": int(answer_ok),
+            "evidence_ok": int(evidence_ok),
+            "bundle_ok": int(bundle_ok),
+            "extractive_answer_value_hit": int(answer_hit),
+            "extractive_evidence_value_hit": int(answer_evidence_hit),
+            "evidence_only_value_hit": int(evidence_hit),
+            "bundle_prompt_value_hit": int(bundle_hit),
+            "citation_present": int(citation_present),
+            "answer_synthesis_gap": int(answer_synthesis_gap),
+            "retrieval_gap": int(retrieval_gap),
+            "unexpected_errors": int(bool(answer_error) and not question.get("expected_abstain")),
+        }
+        for target_counts in (counts, profile_count):
+            target_counts["questions"] += 1
+            for key, value in values.items():
+                target_counts[key] += value
 
         details.append(
             {
                 "qid": question.get("qid"),
-                "benchmark_profile": question.get("benchmark_profile"),
+                "benchmark_profile": profile,
                 "answer_ok": answer_ok,
                 "evidence_ok": evidence_ok,
                 "bundle_ok": bundle_ok,
@@ -182,24 +216,17 @@ def evaluate_answer_generation(
             }
         )
 
-    denom = max(1, len(selected))
+    summary = summarize_counts(counts)
     return {
-        "questions": len(selected),
+        **summary,
         "retrieval_backend": retrieval_backend,
         "evidence_top_k": evidence_top_k,
         "answer_engine": "extractive",
-        "answer_ok_rate": counts["answer_ok"] / denom,
-        "evidence_ok_rate": counts["evidence_ok"] / denom,
-        "bundle_ok_rate": counts["bundle_ok"] / denom,
-        "extractive_answer_value_hit_rate": counts["extractive_answer_value_hit"] / denom,
-        "extractive_evidence_value_hit_rate": counts["extractive_evidence_value_hit"] / denom,
-        "evidence_only_value_hit_rate": counts["evidence_only_value_hit"] / denom,
-        "bundle_prompt_value_hit_rate": counts["bundle_prompt_value_hit"] / denom,
-        "citation_present_rate": counts["citation_present"] / denom,
-        "answer_synthesis_gap_rate": counts["answer_synthesis_gap"] / denom,
-        "retrieval_gap_rate": counts["retrieval_gap"] / denom,
-        "unexpected_error_count": counts["unexpected_errors"],
-        "counts": counts,
+        "extractive_selector": extractive_selector,
+        "by_benchmark_profile": {
+            profile: summarize_counts(profile_count)
+            for profile, profile_count in sorted(profile_counts.items())
+        },
         "details": details,
         "metric_note": (
             "This local evaluation separates retrieval/evidence availability from extractive answer synthesis. "
@@ -235,6 +262,7 @@ def write_markdown(summary: Dict[str, Any], output_path: Path) -> None:
         f"- Retrieval backend: {summary['retrieval_backend']}",
         f"- Evidence top-k: {summary['evidence_top_k']}",
         f"- Answer engine: {summary['answer_engine']}",
+        f"- Extractive selector: {summary['extractive_selector']}",
         f"- Extractive answer value hit rate: {summary['extractive_answer_value_hit_rate']:.3f}",
         f"- Extractive evidence value hit rate: {summary['extractive_evidence_value_hit_rate']:.3f}",
         f"- Evidence-only value hit rate: {summary['evidence_only_value_hit_rate']:.3f}",
@@ -246,9 +274,29 @@ def write_markdown(summary: Dict[str, Any], output_path: Path) -> None:
         "",
         summary["metric_note"],
         "",
+        "## Results By Benchmark Profile",
+        "",
+        "| Profile | Questions | Answer value hit | Evidence-only value hit | Synthesis gap | Retrieval gap |",
+        "| --- | ---: | ---: | ---: | ---: | ---: |",
+    ]
+    for profile, metrics in summary.get("by_benchmark_profile", {}).items():
+        lines.append(
+            "| {profile} | {questions} | {answer:.3f} | {evidence:.3f} | {synthesis:.3f} | {retrieval:.3f} |".format(
+                profile=profile,
+                questions=metrics["questions"],
+                answer=metrics["extractive_answer_value_hit_rate"],
+                evidence=metrics["evidence_only_value_hit_rate"],
+                synthesis=metrics["answer_synthesis_gap_rate"],
+                retrieval=metrics["retrieval_gap_rate"],
+            )
+        )
+    lines.extend(
+        [
+            "",
         "## Gap Cases",
         "",
-    ]
+        ]
+    )
     gap_cases = [item for item in summary["details"] if item["answer_synthesis_gap"] or item["retrieval_gap"]]
     if not gap_cases:
         lines.append("None.")
@@ -271,6 +319,7 @@ def main() -> None:
     parser.add_argument("--index-dir", type=Path, default=Path("index"))
     parser.add_argument("--retrieval-backend", choices=["auto", "hybrid", "sparse", "routed"], default="auto")
     parser.add_argument("--evidence-top-k", type=int, default=8)
+    parser.add_argument("--extractive-selector", choices=["auto", "lexical", "semantic_coverage"], default="auto")
     parser.add_argument("--max-questions", type=int, default=0)
     parser.add_argument("--output-json", type=Path, default=Path("evaluation/answer_generation_eval_results.json"))
     parser.add_argument("--output-md", type=Path, default=Path("evaluation/answer_generation_eval_results.md"))
@@ -281,6 +330,7 @@ def main() -> None:
         args.index_dir,
         args.retrieval_backend,
         args.evidence_top_k,
+        extractive_selector=args.extractive_selector,
         max_questions=args.max_questions or None,
     )
     write_json(args.output_json, summary)

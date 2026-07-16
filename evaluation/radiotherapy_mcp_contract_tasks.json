@@ -1,0 +1,88 @@
+[
+  {
+    "qid": "mcp_contract_q0001",
+    "tool": "list_reports",
+    "arguments": {"root": "."},
+    "expected_abstain": false,
+    "benchmark_profile": "mcp_stdio_contract"
+  },
+  {
+    "qid": "mcp_contract_q0002",
+    "tool": "list_navigator_topics",
+    "arguments": {"root": "."},
+    "expected_abstain": false,
+    "benchmark_profile": "mcp_stdio_contract"
+  },
+  {
+    "qid": "mcp_contract_q0003",
+    "tool": "get_chunk",
+    "arguments": {"chunk_id": "aapm_tg142_medical_accelerator_qa_c0000"},
+    "expected_doc_ids": ["aapm_tg142_medical_accelerator_qa"],
+    "expected_abstain": false,
+    "benchmark_profile": "mcp_stdio_contract"
+  },
+  {
+    "qid": "mcp_contract_q0004",
+    "tool": "query_reports",
+    "arguments": {
+      "query": "Find cited evidence for routine medical accelerator QA checks and tolerances in radiotherapy physics.",
+      "mode": "evidence",
+      "retrieval_backend": "auto",
+      "evidence_top_k": 8
+    },
+    "expected_doc_ids": ["aapm_tg142_medical_accelerator_qa"],
+    "expected_citations": true,
+    "expected_abstain": false,
+    "benchmark_profile": "mcp_stdio_contract"
+  },
+  {
+    "qid": "mcp_contract_q0005",
+    "tool": "query_reports",
+    "arguments": {
+      "query": "Prepare an evidence bundle about commissioning computerized treatment planning systems for radiation therapy.",
+      "mode": "bundle",
+      "retrieval_backend": "auto",
+      "evidence_top_k": 8
+    },
+    "expected_doc_ids": [
+      "iaea_trs430_tps_commissioning_qa",
+      "iaea_tecdoc1540_tps_acceptance",
+      "iaea_tecdoc1583_tps_commissioning"
+    ],
+    "expected_citations": true,
+    "expected_bundle_prompt": true,
+    "expected_abstain": false,
+    "benchmark_profile": "mcp_stdio_contract"
+  },
+  {
+    "qid": "mcp_contract_q0006",
+    "tool": "query_reports",
+    "arguments": {
+      "query": "In AAPM TG 100 Table II, what occurrence description is listed for rank 1?",
+      "mode": "answer",
+      "retrieval_backend": "auto",
+      "evidence_top_k": 8,
+      "answer_engine": "extractive"
+    },
+    "expected_doc_ids": ["aapm_tg100_radiotherapy_quality_management"],
+    "expected_citations": true,
+    "expected_asset_id": "aapm_tg100_radiotherapy_quality_management_p014_table_01",
+    "expected_answer_groups": [["failure unlikely"]],
+    "expected_abstain": false,
+    "benchmark_profile": "mcp_stdio_contract"
+  },
+  {
+    "qid": "mcp_contract_q0007",
+    "tool": "query_reports",
+    "arguments": {
+      "query": "What antibiotic dose should be prescribed for uncomplicated acute appendicitis?",
+      "mode": "answer",
+      "retrieval_backend": "auto",
+      "evidence_top_k": 8,
+      "answer_engine": "extractive"
+    },
+    "expected_abstain": true,
+    "expected_error_codes": ["insufficient_evidence", "out_of_scope"],
+    "benchmark_profile": "mcp_stdio_contract"
+  }
+]

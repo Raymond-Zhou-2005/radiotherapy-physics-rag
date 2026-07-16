@@ -11,15 +11,17 @@ The implementation is now a local runtime bundle plus clean public-release packa
 - Source catalog: 49 public AAPM/IAEA records.
 - Local runtime: 49 downloaded or locally rendered PDFs.
 - Manual source candidates not in runtime: none in this local build.
-- Indexed chunks: 10923.
-- Extracted PDF asset metadata: 655 tables and 3263 images.
+- Indexed chunks: 8948 after the OpenDataLoader rebuild.
+- Extracted PDF asset metadata: 440 tables and 2140 images.
 - ChatGPT Knowledge local export: 49 Markdown files.
 - Benchmark: 280 open-source topic questions, including 35 OOD controls with 20 hard medical-boundary negatives.
 - Asset benchmark: 120 metadata-derived table/figure questions.
 - Table-cell benchmark: 14 exact-value questions from extracted public PDF table text previews.
 - Public answer-target benchmark: 61 questions, including 12 paraphrased public answer-key seeds and 49 open-report answer targets.
+- External public MCQ benchmark: 100 Apache-2.0 answer-keyed medical-physics questions, outside runtime retrieval.
+- Combined evaluation inventory: 622 cases across separate retrieval, answer, asset, contract, and MCQ benchmark families; this is not a pooled clinical cohort.
 - Agent-task benchmark: 40 realistic downstream skill-use tasks, including 10 hard medical-boundary OOD tasks.
-- Answer-generation mode comparison: local comparison of extractive answer, evidence-only target availability, and bundle prompt target availability.
+- Answer-generation mode comparison plus a same-evidence lexical-versus-semantic sentence-selector ablation.
 - Failure taxonomy: automatic classification of benchmark failure/gap cases for paper discussion.
 - Interfaces: Python CLI, Codex skill, MCP server, navigator skill, ChatGPT Knowledge export.
 - Public packaging: `scripts/build_public_release.py` and `scripts/audit_public_release.py`.
@@ -38,7 +40,7 @@ The implementation is now a local runtime bundle plus clean public-release packa
 10. Returns structured evidence and citations.
 11. Exposes MCP tools for Codex and other local agents.
 12. Generates public open-source benchmarks.
-13. Evaluates retrieval, formal ablations, navigator routing, agent-facing skill behavior, table/figure asset metadata, cell-level table values, public answer-target questions, answer-generation gaps, failure taxonomy, and answer-quality proxies.
+13. Evaluates retrieval, formal ablations, navigator routing, direct skill-contract behavior, MCP stdio transport, table/figure asset metadata, cell-level table values, profile-separated public answer targets, answer-generation gaps, failure taxonomy, and answer-quality proxies.
 14. Builds a clean GitHub release directory without PDFs or derived full text.
 
 ## What The System Does Not Do
@@ -59,78 +61,85 @@ Benchmark: `evaluation/radiotherapy_skill_open_questions.json`
 - 35 out-of-domain controls, including medical-adjacent hard negatives.
 - Questions are generated from public source catalog metadata.
 
-Strategy results:
+Current OpenDataLoader formal ablation:
 
-- Sparse Document Recall@5: 0.918.
-- Hybrid semantic + cross-encoder Document Recall@5: 0.947.
-- Auto Document Recall@5: 0.947.
-- Routed Document Recall@5: 0.927.
-- OOD abstention success: 1.000 for all evaluated strategies.
+- BM25 + lexical, no report-aware rules: Document Recall@5 = 0.918; OOD abstention = 34/35.
+- Hybrid + lexical, no report-aware rules: Document Recall@5 = 0.935; OOD abstention = 34/35.
+- Hybrid + cross-encoder, no report-aware rules: Document Recall@5 = 0.959; OOD abstention = 34/35.
+- Hybrid + cross-encoder + report-aware rules: Document Recall@5 = 0.910; OOD abstention = 35/35.
+- Routed full: Document Recall@5 = 0.918; OOD abstention = 35/35.
 
-Formal ablation result:
-
-- Best safe default: semantic hybrid + BM25 candidates with cross-encoder reranking, report-aware heuristics disabled.
-- Hybrid + lexical without report-aware heuristics reached Document Recall@5 0.955 but had one OOD false negative, so it is kept as an ablation condition rather than the default.
-
-Navigator results:
-
-- Topic Recall@3: 0.967.
-- Candidate Document Recall@5: 0.673.
-
-Agent skill results:
-
-- Tool success rate: 0.875.
-- Document Hit Rate@5: 0.947.
-- Citation present rate: 1.000.
-- OOD abstention success rate: 1.000.
+This is a safety/recall tradeoff rather than a single winner. Earlier strategy,
+navigator, and 280-question agent-skill result files predate the parser rebuild
+and are retained only as historical outputs, not current ODL headline claims.
 
 Asset QA results:
 
-- Document Hit Rate@5: 1.000.
-- Page Hit Rate@5: 0.983.
-- Asset ID Trace Hit Rate@5: 0.950.
+- Document Hit Rate@5: 119/120 (0.992).
+- Page Hit Rate@5: 114/120 (0.950).
+- Asset ID Trace Hit Rate@5: 114/120 (0.950).
 
 Cell-level table QA results:
 
-- Cell QA success rate: 0.929.
-- Evidence cell value hit rate: 0.929.
-- Answer cell value hit rate: 0.643.
+- Cell QA success rate: 14/14 (1.000).
+- Evidence cell value hit rate: 14/14 (1.000).
+- Answer cell value hit rate: 14/14 (1.000).
 
 Public answer-target benchmark results:
 
-- Gold-answer success rate: 0.787.
-- Evidence value hit rate: 0.787.
-- Answer value hit rate: 0.344.
+- Gold-answer success rate: 44/61 (0.721).
+- Evidence value hit rate: 44/61 (0.721).
+- Current extractive answer value hit rate: 31/61 (0.508).
+- External public-answer-key profile: N = 12, evidence value hit = 5/12, answer value hit = 4/12.
+- In-corpus open-report profile: N = 49, evidence value hit = 39/49, answer value hit = 27/49.
 
 Answer-generation mode comparison:
 
-- Extractive answer value hit rate: 0.344.
-- Evidence-only value hit rate: 0.852.
-- Bundle prompt value hit rate: 0.852.
-- Answer synthesis gap rate: 0.508.
-- Retrieval gap rate: 0.148.
+- Current extractive answer value hit rate: 31/61 (0.508).
+- Evidence-only value hit rate: 49/61 (0.803).
+- Bundle prompt value hit rate: 49/61 (0.803).
+- Answer synthesis gap rate: 0.295.
+- Retrieval gap rate: 12/61 (0.197).
 
-Realistic agent-task results:
+Direct skill-contract task results:
 
 - Task success rate: 1.000.
 - In-scope Document Hit Rate@5: 1.000 across 30 tasks.
 - Hard medical-boundary OOD abstention success rate: 1.000.
 
+MCP stdio contract results:
+
+- Seven separate-process MCP tasks passed.
+- Required MCP tools were present and transport errors were 0.
+- This validates protocol transport and tool contracts, not autonomous host-agent planning.
+
 Failure taxonomy:
 
-- Automatically classified failure/gap cases: 58.
-- Dominant category: answer synthesis gap.
+- The frozen taxonomy is a historical diagnostic and must be regenerated before it is used as an ODL result.
 
 Answer quality proxy results:
 
 - Citation marker rate: 1.000.
 - Used evidence ID valid rate: 1.000.
-- Mean grounded token overlap: 0.993.
+- Mean grounded token overlap: 0.956 on 60 successful ODL answers.
 - Unsupported number case rate: 0.000.
-- Overclaim flag rate: 0.020.
-- OOD abstention success rate: 1.000.
+- Overclaim flag rate: 0.000.
+- OOD abstention is not measured by this 61-item answer-target proxy; use the formal ablation and direct skill-contract tasks instead.
 
-Interpretation: the package is now credible as an open-source RAG skill and reproducible benchmark prototype. It uses a real semantic embedding index and a real cross-encoder reranker. The safest default is `auto` retrieval, which uses semantic hybrid retrieval when the dense index is semantic and falls back to sparse retrieval when neural artifacts are absent. Topic-to-document ranking inside the navigator and answer synthesis remain the weakest measured areas: evidence and bundle prompts contain many more answer targets than the current extractive answer surfaces. The project still lacks expert answer adjudication.
+External public MCQ results: keeping the deterministic option selector fixed,
+the historical PyMuPDF runtime answered 34/100 and the OpenDataLoader runtime
+answered 36/100 (mean latency 14.932 versus 13.503 s/question). A recorded
+Codex agent instructed to use the local skill answered 96/100 with citations on
+all 100 responses (mean 9.059 s/question). The latter changes the answer host
+as well as the parser/runtime and is not blinded, expert-adjudicated, or a
+clinical claim.
+
+Interpretation: the package is a reproducible open-source RAG skill and
+benchmark prototype. It uses a real semantic embedding index and a real
+cross-encoder reranker. The 49 in-corpus answer targets must not be reported as
+independent generalization; the 12 external short-answer items remain small;
+and the public MCQ result is development data. The project still lacks expert
+answer adjudication.
 
 ## Public Repository Boundary
 
@@ -187,8 +196,8 @@ python scripts/build_paper_experiment_matrix.py --eval-dir evaluation
 Build public release:
 
 ```bash
-python scripts/build_public_release.py --source-root . --output-dir D:\CodexWorkplace\radiotherapy-physics-rag-public --force
-python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-physics-rag-public
+python scripts/build_public_release.py --source-root . --output-dir D:\CodexWorkplace\RAG\radiotherapy-physics-rag-public --force
+python scripts/audit_public_release.py --root D:\CodexWorkplace\RAG\radiotherapy-physics-rag-public
 ```
 
 ## Risks And Limitations
@@ -200,7 +209,7 @@ python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-phy
 - Report-aware heuristics remain experimental because formal ablation showed lower recall on the current benchmark.
 - OOD abstention is still heuristic beyond the explicit public negative controls.
 - Table/figure support includes metadata proximity and extracted table text previews, not full multimodal visual QA.
-- Public answer-target performance shows that evidence retrieval is substantially stronger than extractive answer synthesis.
+- Public answer-target performance shows that evidence retrieval remains stronger than extractive answer synthesis, although same-evidence cross-encoder sentence selection improved automatic answer-value hit by +0.164 on the fixed benchmark.
 
 ## Next Research Steps
 

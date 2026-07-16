@@ -13,7 +13,6 @@ from typing import Dict, Optional, Set
 
 from src.utils import normalize_whitespace, split_sentences
 
-
 DEFINITION_PATTERNS = [
     re.compile(r"\bis referred to as\b", re.IGNORECASE),
     re.compile(r"\bis defined as\b", re.IGNORECASE),

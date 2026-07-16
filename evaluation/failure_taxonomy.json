@@ -1,18 +1,18 @@
 {
-  "taxonomy_version": "1.0",
+  "taxonomy_version": "1.1",
   "evaluation_dir": "evaluation",
-  "case_count": 58,
+  "case_count": 41,
   "by_category": {
-    "answer_synthesis_gap": 35,
+    "answer_synthesis_gap": 18,
     "page_miss": 1,
     "retrieval_gap": 9,
     "retrieval_or_evidence_gap": 12,
     "skill_error": 1
   },
   "by_source": {
-    "answer_generation": 40,
+    "answer_generation": 27,
     "gold_answer": 13,
-    "table_cell": 5
+    "table_cell": 1
   },
   "cases": [
     {
@@ -284,21 +284,7 @@
     },
     {
       "source": "answer_generation",
-      "qid": "gold_external_q0012",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_pub1638_radiotherapy_in_cancer_care",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "aapm_tg179_ct_based_igrt_qa",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0002",
+      "qid": "gold_report_q0003",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
       "retrieved_doc_ids_at_5": [
@@ -326,20 +312,6 @@
     },
     {
       "source": "answer_generation",
-      "qid": "gold_report_q0005",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
       "qid": "gold_report_q0008",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
@@ -354,34 +326,6 @@
     },
     {
       "source": "answer_generation",
-      "qid": "gold_report_q0010",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0011",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg263_nomenclature",
-        "aapm_tg263_nomenclature",
-        "aapm_tg263_nomenclature",
-        "aapm_tg263_nomenclature",
-        "aapm_tg263_nomenclature"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
       "qid": "gold_report_q0012",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
@@ -391,20 +335,6 @@
         "aapm_tg142_medical_accelerator_qa",
         "aapm_tg148_helical_tomotherapy_qa",
         "aapm_tg147_nonradiographic_localization_qa"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0013",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg119_imrt_commissioning",
-        "aapm_tg119_imrt_commissioning",
-        "aapm_tg119_imrt_commissioning",
-        "aapm_tg119_imrt_commissioning",
-        "aapm_tg119_imrt_commissioning"
       ],
       "error_code": null
     },
@@ -438,6 +368,20 @@
     },
     {
       "source": "answer_generation",
+      "qid": "gold_report_q0017",
+      "category": "answer_synthesis_gap",
+      "detail": "Evidence or bundle contained the target but extractive answer did not.",
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg179_ct_based_igrt_qa"
+      ],
+      "error_code": null
+    },
+    {
+      "source": "answer_generation",
       "qid": "gold_report_q0018",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
@@ -466,20 +410,6 @@
     },
     {
       "source": "answer_generation",
-      "qid": "gold_report_q0020",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg75_igrt_imaging_dose",
-        "aapm_tg75_igrt_imaging_dose",
-        "aapm_tg180_image_guidance_dose_management",
-        "aapm_tg75_igrt_imaging_dose",
-        "aapm_tg75_igrt_imaging_dose"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
       "qid": "gold_report_q0021",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
@@ -489,34 +419,6 @@
         "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management",
         "aapm_tg180_image_guidance_dose_management"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0022",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg148_helical_tomotherapy_qa"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0023",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_tg132_image_registration_fusion",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_tg179_ct_based_igrt_qa",
-        "aapm_tg132_image_registration_fusion"
       ],
       "error_code": null
     },
@@ -536,43 +438,15 @@
     },
     {
       "source": "answer_generation",
-      "qid": "gold_report_q0026",
+      "qid": "gold_report_q0029",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
       "retrieved_doc_ids_at_5": [
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_rev1_absorbed_dose_ebrt"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0027",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_trs469_reference_dosimeters",
-        "iaea_trs469_reference_dosimeters",
-        "iaea_trs469_reference_dosimeters",
-        "iaea_trs469_reference_dosimeters",
-        "iaea_trs469_reference_dosimeters"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0028",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_trs483_small_static_fields",
-        "iaea_trs483_small_static_fields",
-        "iaea_trs483_small_static_fields",
-        "iaea_trs483_small_static_fields",
-        "iaea_trs483_small_static_fields"
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry"
       ],
       "error_code": null
     },
@@ -600,20 +474,6 @@
         "iaea_hhr16_igrt_qa",
         "iaea_hhr16_igrt_qa",
         "iaea_hhr16_igrt_qa"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0036",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1297_quatro_audit_tool",
-        "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
       ],
       "error_code": null
     },
@@ -661,20 +521,6 @@
     },
     {
       "source": "answer_generation",
-      "qid": "gold_report_q0041",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
       "qid": "gold_report_q0044",
       "category": "answer_synthesis_gap",
       "detail": "Evidence or bundle contained the target but extractive answer did not.",
@@ -684,34 +530,6 @@
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
         "iaea_tecdoc989_radiation_dose_prescription_delivery"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0045",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "answer_generation",
-      "qid": "gold_report_q0046",
-      "category": "answer_synthesis_gap",
-      "detail": "Evidence or bundle contained the target but extractive answer did not.",
-      "retrieved_doc_ids_at_5": [
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_hhs14_planning_national_radiotherapy_services"
       ],
       "error_code": null
     },
@@ -745,48 +563,6 @@
     },
     {
       "source": "table_cell",
-      "qid": "table_cell_q0001",
-      "category": "answer_synthesis_gap",
-      "detail": "Cell value was present in evidence but not in the extractive answer.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "table_cell",
-      "qid": "table_cell_q0002",
-      "category": "answer_synthesis_gap",
-      "detail": "Cell value was present in evidence but not in the extractive answer.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt",
-        "aapm_tg101_sbrt"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "table_cell",
-      "qid": "table_cell_q0008",
-      "category": "answer_synthesis_gap",
-      "detail": "Cell value was present in evidence but not in the extractive answer.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "table_cell",
       "qid": "table_cell_q0009",
       "category": "page_miss",
       "detail": "Expected table page was not retrieved.",
@@ -795,20 +571,6 @@
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg100_radiotherapy_quality_management",
-        "aapm_tg100_radiotherapy_quality_management"
-      ],
-      "error_code": null
-    },
-    {
-      "source": "table_cell",
-      "qid": "table_cell_q0014",
-      "category": "answer_synthesis_gap",
-      "detail": "Cell value was present in evidence but not in the extractive answer.",
-      "retrieved_doc_ids_at_5": [
-        "aapm_report_113_physics_clinical_trials",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg179_ct_based_igrt_qa",
-        "iaea_trs430_tps_commissioning_qa",
         "aapm_tg100_radiotherapy_quality_management"
       ],
       "error_code": null

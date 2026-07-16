@@ -11,7 +11,8 @@
 - [x] Expanded hard OOD tests.
 - [x] Table/figure metadata benchmark.
 - [x] Cell-level table QA benchmark.
-- [x] Realistic agent-task evaluation.
+- [x] Direct skill-contract evaluation.
+- [x] MCP stdio client/server contract evaluation.
 - [x] Answer-quality proxy evaluation.
 - [x] Failure taxonomy.
 - [x] Public release boundary audit script.

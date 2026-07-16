@@ -1,0 +1,178 @@
+{
+  "tasks": 7,
+  "transport": "mcp_stdio",
+  "mcp_server_name": "radiotherapy-physics-rag",
+  "mcp_protocol_version": "2025-11-25",
+  "tool_names": [
+    "get_chunk",
+    "list_navigator_topics",
+    "list_reports",
+    "query_reports"
+  ],
+  "required_tools_present": true,
+  "task_success_rate": 1.0,
+  "in_scope_task_success_rate": 1.0,
+  "ood_refusal_success_rate": 1.0,
+  "transport_error_count": 0,
+  "details": [
+    {
+      "qid": "mcp_contract_q0001",
+      "tool": "list_reports",
+      "expected_abstain": false,
+      "transport_error": null,
+      "response_ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    },
+    {
+      "qid": "mcp_contract_q0002",
+      "tool": "list_navigator_topics",
+      "expected_abstain": false,
+      "transport_error": null,
+      "response_ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    },
+    {
+      "qid": "mcp_contract_q0003",
+      "tool": "get_chunk",
+      "expected_abstain": false,
+      "transport_error": null,
+      "response_ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    },
+    {
+      "qid": "mcp_contract_q0004",
+      "tool": "query_reports",
+      "expected_abstain": false,
+      "transport_error": null,
+      "response_ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_hhr18_radiotherapy_dosimetry_audits",
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa"
+      ],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    },
+    {
+      "qid": "mcp_contract_q0005",
+      "tool": "query_reports",
+      "expected_abstain": false,
+      "transport_error": null,
+      "response_ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa"
+      ],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    },
+    {
+      "qid": "mcp_contract_q0006",
+      "tool": "query_reports",
+      "expected_abstain": false,
+      "transport_error": null,
+      "response_ok": true,
+      "error_code": null,
+      "retrieved_doc_ids_at_5": [
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management",
+        "aapm_tg100_radiotherapy_quality_management"
+      ],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    },
+    {
+      "qid": "mcp_contract_q0007",
+      "tool": "query_reports",
+      "expected_abstain": true,
+      "transport_error": null,
+      "response_ok": false,
+      "error_code": "insufficient_evidence",
+      "retrieved_doc_ids_at_5": [],
+      "checks": {
+        "ok": true,
+        "abstention": true,
+        "tool_specific": true,
+        "doc": true,
+        "citation": true,
+        "bundle": true,
+        "asset": true,
+        "answer_value": true
+      },
+      "task_success": true
+    }
+  ],
+  "metric_note": "This is an end-to-end MCP stdio transport and tool-contract evaluation. It does not evaluate an autonomous host agent's planning, tool selection, or clinical correctness."
+}

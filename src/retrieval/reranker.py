@@ -11,9 +11,9 @@ section-location questions are treated more appropriately for technical PDFs.
 
 from __future__ import annotations
 
+import os
 from typing import Any, Dict, List, Tuple
 
-import os
 import numpy as np
 
 # Suppress the repetitive Windows symlink warning in normal project use.
@@ -154,6 +154,47 @@ class CandidateReranker:
         for rank, item in enumerate(ranked, start=1):
             item["rank"] = rank
         return ranked
+
+    def score_query_chunk_pairs(self, pairs: List[Tuple[str, Dict[str, Any]]]) -> List[float]:
+        """Score arbitrary query/chunk pairs with the resolved reranker backend.
+
+        This exposes raw model relevance for batch consumers. It deliberately
+        omits retrieval priors, normalization, and report heuristics because
+        those only apply while ordering one retrieval candidate list.
+        """
+        if not pairs:
+            return []
+        queries = [query for query, _ in pairs]
+        chunks = [chunk for _, chunk in pairs]
+        texts = [self._compose_rerank_text(chunk) for chunk in chunks]
+        if self.cross_encoder is not None:
+            return [float(score) for score in self.cross_encoder.predict(list(zip(queries, texts)))]
+        if self.hf_model is not None and self.hf_tokenizer is not None and torch is not None:
+            batch = self.hf_tokenizer(
+                queries,
+                texts,
+                padding=True,
+                truncation=True,
+                max_length=self.max_length,
+                return_tensors="pt",
+            )
+            batch = {key: value.to(self.device) for key, value in batch.items()}
+            with torch.no_grad():
+                logits = self.hf_model(**batch).logits
+                if logits.ndim == 2 and logits.shape[1] == 1:
+                    scores = logits[:, 0]
+                elif logits.ndim == 2 and logits.shape[1] > 1:
+                    scores = logits[:, -1]
+                else:
+                    scores = logits.reshape(-1)
+            return [float(score) for score in scores.detach().cpu().numpy().astype(np.float32)]
+
+        scores = []
+        for query, text in zip(queries, texts):
+            query_tokens = set(simple_tokenize(query))
+            text_tokens = set(simple_tokenize(text))
+            scores.append(len(query_tokens & text_tokens) / max(1, len(query_tokens)))
+        return scores
 
     def _compose_rerank_text(self, chunk: Dict) -> str:
         parts = [

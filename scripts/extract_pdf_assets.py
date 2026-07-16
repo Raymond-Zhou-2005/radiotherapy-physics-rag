@@ -13,7 +13,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.pdf_processing.assets import extract_pdf_assets, write_jsonl
+from src.pdf_processing.assets import extract_pdf_assets_for_documents, write_jsonl
 
 
 def iter_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
@@ -58,27 +58,29 @@ def main() -> None:
     root = args.root.resolve()
     output_dir = args.output_dir.resolve()
     lookup = manifest_lookup(args.manifest)
-    results = []
-
+    documents = []
     for pdf_path in discover_pdfs(args.paths):
         rel = pdf_path.resolve().relative_to(root).as_posix() if str(pdf_path.resolve()).startswith(str(root)) else pdf_path.as_posix()
         meta = lookup.get(rel, {})
         doc_id = str(meta.get("doc_id") or fallback_doc_id(pdf_path))
         title = str(meta.get("title") or doc_id)
-        records = extract_pdf_assets(
-            pdf_path=pdf_path,
-            doc_id=doc_id,
-            title=title,
-            root=root,
-            save_images=args.save_images,
-            image_output_dir=output_dir / "images",
-        )
+        documents.append({"pdf_path": str(pdf_path), "doc_id": doc_id, "title": title, "source_path": rel})
+
+    records_by_doc = extract_pdf_assets_for_documents(
+        documents,
+        save_images=args.save_images,
+        image_output_dir=output_dir / "images",
+    )
+    results = []
+    for document in documents:
+        doc_id = document["doc_id"]
+        records = records_by_doc[doc_id]
         target = output_dir / f"{doc_id}.assets.jsonl"
         write_jsonl(target, records)
         results.append(
             {
                 "doc_id": doc_id,
-                "source_path": rel,
+                "source_path": document["source_path"],
                 "output": target.relative_to(root).as_posix(),
                 "asset_count": len(records),
                 "table_count": sum(1 for item in records if item["asset_type"] == "table"),

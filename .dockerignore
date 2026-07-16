@@ -1,0 +1,22 @@
+.git
+.github
+.pytest_cache
+.ruff_cache
+__pycache__
+*.py[cod]
+.venv
+build
+dist
+*.egg-info
+
+# Third-party content and locally generated runtime artifacts stay outside the image.
+reports/raw/
+reports/manifest.jsonl
+parsed/
+chunks/
+index/
+assets/extracted/
+chatgpt_knowledge/upload_files/
+chatgpt_knowledge/upload_manifest.json
+experience/
+Temp/

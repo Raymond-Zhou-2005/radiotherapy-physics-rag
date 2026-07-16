@@ -1,0 +1,833 @@
+{
+  "details": [
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.632,
+      "qid": "public_mcq_001",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.193,
+      "qid": "public_mcq_002",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.11,
+      "qid": "public_mcq_003",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.21,
+      "qid": "public_mcq_004",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.529,
+      "qid": "public_mcq_005",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.774,
+      "qid": "public_mcq_006",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.328,
+      "qid": "public_mcq_007",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.105,
+      "qid": "public_mcq_008",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.091,
+      "qid": "public_mcq_009",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.769,
+      "qid": "public_mcq_010",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.206,
+      "qid": "public_mcq_011",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.527,
+      "qid": "public_mcq_012",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.053,
+      "qid": "public_mcq_013",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.226,
+      "qid": "public_mcq_014",
+      "selected_correct": false,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.078,
+      "qid": "public_mcq_015",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 6.728,
+      "qid": "public_mcq_016",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.773,
+      "qid": "public_mcq_017",
+      "selected_correct": true,
+      "selected_label": "E"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.245,
+      "qid": "public_mcq_018",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.204,
+      "qid": "public_mcq_019",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.26,
+      "qid": "public_mcq_020",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.191,
+      "qid": "public_mcq_021",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.343,
+      "qid": "public_mcq_022",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.576,
+      "qid": "public_mcq_023",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.092,
+      "qid": "public_mcq_024",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.279,
+      "qid": "public_mcq_025",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 32.087419,
+      "qid": "public_mcq_026",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 24.383641,
+      "qid": "public_mcq_027",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 24.311845,
+      "qid": "public_mcq_028",
+      "selected_correct": false,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 24.372662,
+      "qid": "public_mcq_029",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.428422,
+      "qid": "public_mcq_030",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 23.572917,
+      "qid": "public_mcq_031",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.206924,
+      "qid": "public_mcq_032",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.873151,
+      "qid": "public_mcq_033",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.975873,
+      "qid": "public_mcq_034",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.585395,
+      "qid": "public_mcq_035",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.309479,
+      "qid": "public_mcq_036",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.956938,
+      "qid": "public_mcq_037",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.657766,
+      "qid": "public_mcq_038",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.641924,
+      "qid": "public_mcq_039",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.475287,
+      "qid": "public_mcq_040",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.397371,
+      "qid": "public_mcq_041",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.402024,
+      "qid": "public_mcq_042",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.992231,
+      "qid": "public_mcq_043",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.385619,
+      "qid": "public_mcq_044",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.326806,
+      "qid": "public_mcq_045",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.218126,
+      "qid": "public_mcq_046",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.146915,
+      "qid": "public_mcq_047",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.651583,
+      "qid": "public_mcq_048",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.316809,
+      "qid": "public_mcq_049",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.613369,
+      "qid": "public_mcq_050",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.818,
+      "qid": "public_mcq_051",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.007,
+      "qid": "public_mcq_052",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.186,
+      "qid": "public_mcq_053",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.864,
+      "qid": "public_mcq_054",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 9.284,
+      "qid": "public_mcq_055",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 20.727,
+      "qid": "public_mcq_056",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.238,
+      "qid": "public_mcq_057",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.229,
+      "qid": "public_mcq_058",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.094,
+      "qid": "public_mcq_059",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.973,
+      "qid": "public_mcq_060",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 23.342,
+      "qid": "public_mcq_061",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 13.526,
+      "qid": "public_mcq_062",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.186,
+      "qid": "public_mcq_063",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.112,
+      "qid": "public_mcq_064",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.803,
+      "qid": "public_mcq_065",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.627,
+      "qid": "public_mcq_066",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.277,
+      "qid": "public_mcq_067",
+      "selected_correct": false,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.18,
+      "qid": "public_mcq_068",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.272,
+      "qid": "public_mcq_069",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 19.758,
+      "qid": "public_mcq_070",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 23.672,
+      "qid": "public_mcq_071",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.502,
+      "qid": "public_mcq_072",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.145,
+      "qid": "public_mcq_073",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 8.018,
+      "qid": "public_mcq_074",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.822,
+      "qid": "public_mcq_075",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.777,
+      "qid": "public_mcq_076",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.174,
+      "qid": "public_mcq_077",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.026,
+      "qid": "public_mcq_078",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.241,
+      "qid": "public_mcq_079",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.459,
+      "qid": "public_mcq_080",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.027,
+      "qid": "public_mcq_081",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.781,
+      "qid": "public_mcq_082",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.1,
+      "qid": "public_mcq_083",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.188,
+      "qid": "public_mcq_084",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.209,
+      "qid": "public_mcq_085",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.381,
+      "qid": "public_mcq_086",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.172,
+      "qid": "public_mcq_087",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.759,
+      "qid": "public_mcq_088",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.097,
+      "qid": "public_mcq_089",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.153,
+      "qid": "public_mcq_090",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.108,
+      "qid": "public_mcq_091",
+      "selected_correct": true,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.337,
+      "qid": "public_mcq_092",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.221,
+      "qid": "public_mcq_093",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.837,
+      "qid": "public_mcq_094",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.148,
+      "qid": "public_mcq_095",
+      "selected_correct": true,
+      "selected_label": "A"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.325,
+      "qid": "public_mcq_096",
+      "selected_correct": false,
+      "selected_label": "B"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.08,
+      "qid": "public_mcq_097",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.122,
+      "qid": "public_mcq_098",
+      "selected_correct": true,
+      "selected_label": "D"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.257,
+      "qid": "public_mcq_099",
+      "selected_correct": true,
+      "selected_label": "C"
+    },
+    {
+      "citation_count": 1,
+      "citation_present": true,
+      "latency_seconds": 7.483,
+      "qid": "public_mcq_100",
+      "selected_correct": true,
+      "selected_label": "B"
+    }
+  ],
+  "inputs": {
+    "answers_sha256": "9474680ad8c3a6373a63ad3050cbdd64774075e497ea8d83be6e28fc2daa1619",
+    "benchmark_sha256": "960ef43349598839719233410d2967c08eff926a409e866a7bf717615a065086",
+    "host_tasks_sha256": "a3abf764ec0ceff9315a2fcb7f228dbabd3b037b2eea3df0459d6d916d5bdafa"
+  },
+  "metrics": {
+    "accuracy": {
+      "correct": 96,
+      "rate": 0.96,
+      "total": 100
+    },
+    "citation_rate": {
+      "rate": 1.0,
+      "total": 100,
+      "with_citations": 100
+    },
+    "latency_seconds": {
+      "count": 100,
+      "max": 32.087419,
+      "mean": 9.059365,
+      "median": 7.471,
+      "min": 6.728,
+      "p95_nearest_rank": 23.572917
+    }
+  },
+  "questions": 100,
+  "schema_version": "1.0",
+  "scorer": "host_mcq_answers",
+  "scoring_boundary": "Gold labels are read only after host-task and answer-log validation. They are not included in host tasks or per-question score details."
+}

@@ -23,7 +23,6 @@ if str(PROJECT_ROOT) not in sys.path:
 from scripts.run_skill import format_citation_text, format_page_range
 from src.utils import ensure_dir, iter_jsonl, write_jsonl
 
-
 TAXONOMY: dict[str, dict[str, Any]] = {
     "reference-dosimetry": {
         "name": "Reference dosimetry and calibration",

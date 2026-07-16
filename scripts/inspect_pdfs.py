@@ -15,35 +15,33 @@ if str(PROJECT_ROOT) not in sys.path:
 
 
 def inspect_pdf(path: Path, low_text_chars_per_page: int = 80) -> Dict[str, Any]:
+    """Inspect text readiness using the same OpenDataLoader parser as ingestion."""
     try:
-        import fitz
-    except Exception as exc:  # pragma: no cover - dependency boundary
-        return {
-            "file": str(path),
-            "ok": False,
-            "error": {
-                "code": "runtime_failure",
-                "message": "PyMuPDF/fitz is required to inspect PDFs.",
-                "details": {"exception": str(exc)},
-            },
-        }
+        from src.pdf_processing.opendataloader_backend import document_metadata, parse_documents
 
-    try:
-        doc = fitz.open(path)
+        resolved = path.resolve()
+        metadata = document_metadata([resolved])[resolved]
+        blocks = parse_documents(
+            [
+                {
+                    "pdf_path": str(resolved),
+                    "doc_id": "inspection",
+                    "title": path.stem,
+                    "source_path": str(path),
+                }
+            ]
+        )["inspection"]
+        page_count = int(metadata.get("num_pages") or 0)
+        page_text = {page: "" for page in range(1, page_count + 1)}
+        for block in blocks:
+            page_text[block.page_start] = f"{page_text.get(block.page_start, '')} {block.text}".strip()
         page_stats = []
-        total_chars = 0
-        low_text_pages = 0
-        empty_pages = 0
-        for index, page in enumerate(doc, start=1):
-            text = page.get_text("text") or ""
-            chars = len(text.strip())
-            total_chars += chars
-            if chars == 0:
-                empty_pages += 1
-            if chars < low_text_chars_per_page:
-                low_text_pages += 1
-            page_stats.append({"page": index, "text_chars": chars, "low_text": chars < low_text_chars_per_page})
-        page_count = len(doc)
+        for page in range(1, page_count + 1):
+            chars = len(page_text.get(page, "").strip())
+            page_stats.append({"page": page, "text_chars": chars, "low_text": chars < low_text_chars_per_page})
+        total_chars = sum(item["text_chars"] for item in page_stats)
+        low_text_pages = sum(item["low_text"] for item in page_stats)
+        empty_pages = sum(item["text_chars"] == 0 for item in page_stats)
         avg_chars = total_chars / page_count if page_count else 0.0
         scanned_likely = page_count > 0 and (
             avg_chars < low_text_chars_per_page or low_text_pages / page_count >= 0.5

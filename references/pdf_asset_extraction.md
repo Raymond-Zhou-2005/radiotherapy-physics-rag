@@ -80,7 +80,7 @@ Current local 49-document extraction summary:
 | `iaea_trs492_brachytherapy_dosimetry` | 1 | 11 |
 | `tg158` | 52 | 2 |
 
-Totals: 655 tables and 3263 images.
+Current OpenDataLoader rebuild totals: 440 tables and 2140 images.
 
 ## Commands
 

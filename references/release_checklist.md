@@ -17,7 +17,7 @@ Use this checklist before pushing or tagging a public release.
 Suggested check:
 
 ```powershell
-python scripts/audit_public_release.py --root D:\CodexWorkplace\radiotherapy-physics-rag-public
+python scripts/audit_public_release.py --root D:\CodexWorkplace\RAG\radiotherapy-physics-rag-public
 ```
 
 The audit should return `"ok": true`.

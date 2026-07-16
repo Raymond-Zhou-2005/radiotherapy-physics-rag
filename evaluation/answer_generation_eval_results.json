@@ -1,32 +1,91 @@
 {
   "questions": 61,
-  "retrieval_backend": "auto",
-  "evidence_top_k": 8,
-  "answer_engine": "extractive",
   "answer_ok_rate": 0.9836065573770492,
   "evidence_ok_rate": 0.9836065573770492,
   "bundle_ok_rate": 0.9836065573770492,
-  "extractive_answer_value_hit_rate": 0.3442622950819672,
-  "extractive_evidence_value_hit_rate": 0.8524590163934426,
-  "evidence_only_value_hit_rate": 0.8524590163934426,
-  "bundle_prompt_value_hit_rate": 0.8524590163934426,
+  "extractive_answer_value_hit_rate": 0.5081967213114754,
+  "extractive_evidence_value_hit_rate": 0.8032786885245902,
+  "evidence_only_value_hit_rate": 0.8032786885245902,
+  "bundle_prompt_value_hit_rate": 0.8032786885245902,
   "citation_present_rate": 0.9836065573770492,
-  "answer_synthesis_gap_rate": 0.5081967213114754,
-  "retrieval_gap_rate": 0.14754098360655737,
+  "answer_synthesis_gap_rate": 0.29508196721311475,
+  "retrieval_gap_rate": 0.19672131147540983,
   "unexpected_error_count": 1,
   "counts": {
     "questions": 61,
     "answer_ok": 60,
     "evidence_ok": 60,
     "bundle_ok": 60,
-    "extractive_answer_value_hit": 21,
-    "extractive_evidence_value_hit": 52,
-    "evidence_only_value_hit": 52,
-    "bundle_prompt_value_hit": 52,
+    "extractive_answer_value_hit": 31,
+    "extractive_evidence_value_hit": 49,
+    "evidence_only_value_hit": 49,
+    "bundle_prompt_value_hit": 49,
     "citation_present": 60,
-    "answer_synthesis_gap": 31,
-    "retrieval_gap": 9,
+    "answer_synthesis_gap": 18,
+    "retrieval_gap": 12,
     "unexpected_errors": 1
+  },
+  "retrieval_backend": "hybrid",
+  "evidence_top_k": 8,
+  "answer_engine": "extractive",
+  "extractive_selector": "auto",
+  "by_benchmark_profile": {
+    "external_gold_answer": {
+      "questions": 12,
+      "answer_ok_rate": 1.0,
+      "evidence_ok_rate": 1.0,
+      "bundle_ok_rate": 1.0,
+      "extractive_answer_value_hit_rate": 0.3333333333333333,
+      "extractive_evidence_value_hit_rate": 0.4166666666666667,
+      "evidence_only_value_hit_rate": 0.4166666666666667,
+      "bundle_prompt_value_hit_rate": 0.4166666666666667,
+      "citation_present_rate": 1.0,
+      "answer_synthesis_gap_rate": 0.08333333333333333,
+      "retrieval_gap_rate": 0.5833333333333334,
+      "unexpected_error_count": 0,
+      "counts": {
+        "questions": 12,
+        "answer_ok": 12,
+        "evidence_ok": 12,
+        "bundle_ok": 12,
+        "extractive_answer_value_hit": 4,
+        "extractive_evidence_value_hit": 5,
+        "evidence_only_value_hit": 5,
+        "bundle_prompt_value_hit": 5,
+        "citation_present": 12,
+        "answer_synthesis_gap": 1,
+        "retrieval_gap": 7,
+        "unexpected_errors": 0
+      }
+    },
+    "open_report_gold_answer": {
+      "questions": 49,
+      "answer_ok_rate": 0.9795918367346939,
+      "evidence_ok_rate": 0.9795918367346939,
+      "bundle_ok_rate": 0.9795918367346939,
+      "extractive_answer_value_hit_rate": 0.5510204081632653,
+      "extractive_evidence_value_hit_rate": 0.8979591836734694,
+      "evidence_only_value_hit_rate": 0.8979591836734694,
+      "bundle_prompt_value_hit_rate": 0.8979591836734694,
+      "citation_present_rate": 0.9795918367346939,
+      "answer_synthesis_gap_rate": 0.3469387755102041,
+      "retrieval_gap_rate": 0.10204081632653061,
+      "unexpected_error_count": 1,
+      "counts": {
+        "questions": 49,
+        "answer_ok": 48,
+        "evidence_ok": 48,
+        "bundle_ok": 48,
+        "extractive_answer_value_hit": 27,
+        "extractive_evidence_value_hit": 44,
+        "evidence_only_value_hit": 44,
+        "bundle_prompt_value_hit": 44,
+        "citation_present": 48,
+        "answer_synthesis_gap": 17,
+        "retrieval_gap": 5,
+        "unexpected_errors": 1
+      }
+    }
   },
   "details": [
     {
@@ -49,8 +108,8 @@
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhr8_in_vivo_dosimetry",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_tecdoc1540_tps_acceptance",
-        "tg158"
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ]
     },
     {
@@ -74,26 +133,32 @@
         "iaea_trs483_small_static_fields",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_trs483_small_static_fields"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ]
     },
     {
       "qid": "gold_external_q0003",
       "benchmark_profile": "external_gold_answer",
-      "answer_ok": false,
-      "evidence_ok": false,
-      "bundle_ok": false,
-      "answer_error": "insufficient_evidence",
-      "evidence_error": "insufficient_evidence",
-      "bundle_error": "insufficient_evidence",
+      "answer_ok": true,
+      "evidence_ok": true,
+      "bundle_ok": true,
+      "answer_error": null,
+      "evidence_error": null,
+      "bundle_error": null,
       "extractive_answer_value_hit": false,
       "extractive_evidence_value_hit": false,
       "evidence_only_value_hit": false,
       "bundle_prompt_value_hit": false,
-      "citation_present": false,
+      "citation_present": true,
       "answer_synthesis_gap": false,
       "retrieval_gap": true,
-      "retrieved_doc_ids_at_5": []
+      "retrieved_doc_ids_at_5": [
+        "iaea_trs430_tps_commissioning_qa",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_tg106_beam_data_commissioning",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
+      ]
     },
     {
       "qid": "gold_external_q0004",
@@ -105,18 +170,18 @@
       "evidence_error": null,
       "bundle_error": null,
       "extractive_answer_value_hit": false,
-      "extractive_evidence_value_hit": true,
-      "evidence_only_value_hit": true,
-      "bundle_prompt_value_hit": true,
+      "extractive_evidence_value_hit": false,
+      "evidence_only_value_hit": false,
+      "bundle_prompt_value_hit": false,
       "citation_present": true,
-      "answer_synthesis_gap": true,
-      "retrieval_gap": false,
+      "answer_synthesis_gap": false,
+      "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg75_igrt_imaging_dose",
-        "aapm_report_166_biological_models_treatment_planning_qa",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1196_radiation_oncology_physics_handbook"
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_tg101_sbrt",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
+        "aapm_report_166_biological_models_treatment_planning_qa"
       ]
     },
     {
@@ -161,10 +226,10 @@
       "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_trs469_reference_dosimeters",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "iaea_hhs14_planning_national_radiotherapy_services"
+        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_trs469_reference_dosimeters",
+        "iaea_tecdoc1274_brachytherapy_source_calibration"
       ]
     },
     {
@@ -184,10 +249,10 @@
       "answer_synthesis_gap": false,
       "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
+        "aapm_report_104_kv_imaging_guidance",
         "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_report_46_tg40_radiation_oncology_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_pub1196_radiation_oncology_physics_handbook"
       ]
     },
@@ -209,10 +274,10 @@
       "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
         "iaea_hhs14_planning_national_radiotherapy_services",
-        "iaea_ssg46_medical_uses_radiation_safety",
         "iaea_trs492_brachytherapy_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_pub1196_radiation_oncology_physics_handbook"
+        "iaea_trs469_reference_dosimeters",
+        "iaea_trs492_brachytherapy_dosimetry",
+        "iaea_trs492_brachytherapy_dosimetry"
       ]
     },
     {
@@ -235,8 +300,8 @@
         "iaea_tecdoc1588_3dcrt_imrt_transition",
         "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
+        "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_tecdoc989_radiation_dose_prescription_delivery"
       ]
     },
     {
@@ -257,10 +322,10 @@
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_pub1196_radiation_oncology_physics_handbook",
-        "aapm_tg147_nonradiographic_localization_qa",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "aapm_report_113_physics_clinical_trials"
+        "iaea_hhr16_igrt_qa",
+        "aapm_tg101_sbrt",
+        "iaea_hhr16_igrt_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ]
     },
     {
@@ -280,11 +345,8 @@
       "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ]
     },
     {
@@ -297,18 +359,18 @@
       "evidence_error": null,
       "bundle_error": null,
       "extractive_answer_value_hit": false,
-      "extractive_evidence_value_hit": true,
-      "evidence_only_value_hit": true,
-      "bundle_prompt_value_hit": true,
+      "extractive_evidence_value_hit": false,
+      "evidence_only_value_hit": false,
+      "bundle_prompt_value_hit": false,
       "citation_present": true,
-      "answer_synthesis_gap": true,
-      "retrieval_gap": false,
+      "answer_synthesis_gap": false,
+      "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
-        "iaea_pub1638_radiotherapy_in_cancer_care",
         "iaea_tecdoc1588_3dcrt_imrt_transition",
+        "iaea_hhr16_igrt_qa",
         "aapm_tg179_ct_based_igrt_qa",
-        "iaea_tecdoc1588_3dcrt_imrt_transition",
-        "iaea_tecdoc1588_3dcrt_imrt_transition"
+        "aapm_tg179_ct_based_igrt_qa",
+        "iaea_hhs31_accuracy_requirements_dosimetry"
       ]
     },
     {
@@ -344,12 +406,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_report_104_kv_imaging_guidance",
@@ -377,7 +439,7 @@
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_report_104_kv_imaging_guidance",
-        "aapm_report_104_kv_imaging_guidance",
+        "aapm_tg142_medical_accelerator_qa",
         "aapm_report_104_kv_imaging_guidance",
         "aapm_report_104_kv_imaging_guidance",
         "aapm_report_104_kv_imaging_guidance"
@@ -401,9 +463,9 @@
       "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
         "aapm_report_113_physics_clinical_trials",
+        "aapm_report_113_physics_clinical_trials",
         "aapm_tg263_nomenclature",
-        "aapm_report_113_physics_clinical_trials",
-        "aapm_report_113_physics_clinical_trials",
+        "aapm_tg263_nomenclature",
         "aapm_report_113_physics_clinical_trials"
       ]
     },
@@ -416,12 +478,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_report_113_physics_clinical_trials",
@@ -496,9 +558,9 @@
       "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa",
         "aapm_report_46_tg40_radiation_oncology_qa",
-        "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg142_medical_accelerator_qa",
         "aapm_report_46_tg40_radiation_oncology_qa",
         "aapm_report_46_tg40_radiation_oncology_qa"
       ]
@@ -536,12 +598,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_tg100_radiotherapy_quality_management",
@@ -560,12 +622,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_tg263_nomenclature",
@@ -584,19 +646,19 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_tg148_helical_tomotherapy_qa",
         "aapm_tg100_radiotherapy_quality_management",
         "aapm_tg142_medical_accelerator_qa",
-        "aapm_tg148_helical_tomotherapy_qa",
-        "aapm_tg147_nonradiographic_localization_qa"
+        "aapm_tg142_medical_accelerator_qa",
+        "aapm_tg142_medical_accelerator_qa"
       ]
     },
     {
@@ -608,12 +670,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_tg119_imrt_commissioning",
@@ -786,8 +848,8 @@
       "retrieved_doc_ids_at_5": [
         "aapm_tg75_igrt_imaging_dose",
         "aapm_tg75_igrt_imaging_dose",
-        "aapm_tg180_image_guidance_dose_management",
         "aapm_tg75_igrt_imaging_dose",
+        "aapm_tg180_image_guidance_dose_management",
         "aapm_tg75_igrt_imaging_dose"
       ]
     },
@@ -824,12 +886,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_tg148_helical_tomotherapy_qa",
@@ -848,18 +910,18 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "aapm_report_113_physics_clinical_trials",
         "aapm_tg132_image_registration_fusion",
-        "aapm_report_113_physics_clinical_trials",
         "aapm_tg179_ct_based_igrt_qa",
+        "aapm_tg132_image_registration_fusion",
         "aapm_tg132_image_registration_fusion"
       ]
     },
@@ -882,8 +944,8 @@
       "retrieved_doc_ids_at_5": [
         "tg158",
         "tg158",
-        "tg158",
         "aapm_tg120_imrt_dosimetry_tools",
+        "tg158",
         "tg158"
       ]
     },
@@ -904,11 +966,11 @@
       "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
-        "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
         "iaea_trs398_rev1_absorbed_dose_ebrt",
-        "iaea_trs398_absorbed_dose_ebrt"
+        "iaea_trs398_rev1_absorbed_dose_ebrt",
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ]
     },
     {
@@ -920,12 +982,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_trs398_rev1_absorbed_dose_ebrt",
@@ -968,12 +1030,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_trs483_small_static_fields",
@@ -992,12 +1054,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": true,
+      "extractive_answer_value_hit": false,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": false,
+      "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_trs492_brachytherapy_dosimetry",
@@ -1025,8 +1087,8 @@
       "retrieval_gap": true,
       "retrieved_doc_ids_at_5": [
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_tecdoc1583_tps_commissioning",
-        "iaea_tecdoc1583_tps_commissioning",
+        "iaea_trs430_tps_commissioning_qa",
+        "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa"
       ]
     },
@@ -1049,7 +1111,7 @@
       "retrieved_doc_ids_at_5": [
         "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa",
-        "iaea_trs430_tps_commissioning_qa",
+        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_trs430_tps_commissioning_qa",
         "iaea_trs430_tps_commissioning_qa"
       ]
@@ -1057,26 +1119,20 @@
     {
       "qid": "gold_report_q0032",
       "benchmark_profile": "open_report_gold_answer",
-      "answer_ok": true,
-      "evidence_ok": true,
-      "bundle_ok": true,
-      "answer_error": null,
-      "evidence_error": null,
-      "bundle_error": null,
-      "extractive_answer_value_hit": true,
-      "extractive_evidence_value_hit": true,
-      "evidence_only_value_hit": true,
-      "bundle_prompt_value_hit": true,
-      "citation_present": true,
+      "answer_ok": false,
+      "evidence_ok": false,
+      "bundle_ok": false,
+      "answer_error": "insufficient_evidence",
+      "evidence_error": "insufficient_evidence",
+      "bundle_error": "insufficient_evidence",
+      "extractive_answer_value_hit": false,
+      "extractive_evidence_value_hit": false,
+      "evidence_only_value_hit": false,
+      "bundle_prompt_value_hit": false,
+      "citation_present": false,
       "answer_synthesis_gap": false,
-      "retrieval_gap": false,
-      "retrieved_doc_ids_at_5": [
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance",
-        "iaea_tecdoc1540_tps_acceptance"
-      ]
+      "retrieval_gap": true,
+      "retrieved_doc_ids_at_5": []
     },
     {
       "qid": "gold_report_q0033",
@@ -1119,10 +1175,10 @@
       "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
-        "iaea_hhr16_igrt_qa",
         "iaea_hhs19_ct_sim_radiotherapy",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
+        "iaea_hhs14_planning_national_radiotherapy_services",
+        "iaea_hhs19_ct_sim_radiotherapy",
+        "iaea_hhr16_igrt_qa",
         "iaea_hhr16_igrt_qa"
       ]
     },
@@ -1159,19 +1215,19 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_hhr18_radiotherapy_dosimetry_audits",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1297_quatro_audit_tool",
         "iaea_hhr18_radiotherapy_dosimetry_audits",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_tecdoc1543_quatro"
       ]
     },
     {
@@ -1183,12 +1239,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": true,
+      "extractive_answer_value_hit": false,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": false,
+      "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_hhr8_in_vivo_dosimetry",
@@ -1215,11 +1271,11 @@
       "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
-        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_hhr7_record_verify_systems",
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_hhs19_ct_sim_radiotherapy",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_ssg46_medical_uses_radiation_safety"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ]
     },
     {
@@ -1263,11 +1319,11 @@
       "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
-        "iaea_ssg46_medical_uses_radiation_safety",
+        "iaea_hhr17_linear_accelerators",
+        "iaea_hhr17_linear_accelerators",
         "iaea_hhr17_linear_accelerators",
         "iaea_ssg46_medical_uses_radiation_safety",
-        "iaea_hhr17_linear_accelerators",
-        "iaea_hhr17_linear_accelerators"
+        "iaea_trs398_rev1_absorbed_dose_ebrt"
       ]
     },
     {
@@ -1291,7 +1347,7 @@
         "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
         "iaea_srs47_radiotherapy_facility_radiation_protection",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_srs47_radiotherapy_facility_radiation_protection"
       ]
     },
     {
@@ -1303,12 +1359,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": true,
+      "extractive_answer_value_hit": false,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": false,
+      "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_ssg46_medical_uses_radiation_safety",
@@ -1351,12 +1407,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_tecdoc989_radiation_dose_prescription_delivery",
@@ -1375,12 +1431,12 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_tecdoc1588_3dcrt_imrt_transition",
@@ -1447,19 +1503,19 @@
       "answer_error": null,
       "evidence_error": null,
       "bundle_error": null,
-      "extractive_answer_value_hit": false,
+      "extractive_answer_value_hit": true,
       "extractive_evidence_value_hit": true,
       "evidence_only_value_hit": true,
       "bundle_prompt_value_hit": true,
       "citation_present": true,
-      "answer_synthesis_gap": true,
+      "answer_synthesis_gap": false,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
         "iaea_pub1990_quatro_quality_improvement",
         "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1990_quatro_quality_improvement",
-        "iaea_pub1638_radiotherapy_in_cancer_care"
+        "iaea_pub1297_quatro_audit_tool",
+        "iaea_hhs31_accuracy_requirements_dosimetry",
+        "iaea_pub1990_quatro_quality_improvement"
       ]
     },
     {
@@ -1479,11 +1535,11 @@
       "answer_synthesis_gap": true,
       "retrieval_gap": false,
       "retrieved_doc_ids_at_5": [
-        "iaea_pub1196_radiation_oncology_physics_handbook",
         "iaea_hhs31_accuracy_requirements_dosimetry",
         "iaea_trs483_small_static_fields",
+        "iaea_pub1297_quatro_audit_tool",
         "iaea_hhs31_accuracy_requirements_dosimetry",
-        "iaea_hhs31_accuracy_requirements_dosimetry"
+        "iaea_pub1196_radiation_oncology_physics_handbook"
       ]
     }
   ],

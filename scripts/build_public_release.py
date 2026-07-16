@@ -7,16 +7,18 @@ import argparse
 import shutil
 from pathlib import Path
 
-
 ROOT_FILES = [
+    ".dockerignore",
     ".env.example",
     ".gitignore",
     ".mcp.json",
     ".zenodo.json",
     "CHANGELOG.md",
     "CITATION.cff",
+    "CONTAINER.md",
     "CONTRIBUTING.md",
     "DELIVERABLE_SUMMARY.md",
+    "Dockerfile",
     "LICENSE",
     "PRIVACY.md",
     "README.md",
@@ -76,6 +78,8 @@ EXCLUDE_EXACT = {
     "reports/manifest.jsonl",
     "chatgpt_knowledge/upload_manifest.json",
     "experience/experience_memory.jsonl",
+    "evaluation/runtime_integrity_audit.json",
+    "evaluation/runtime_integrity_audit.md",
 }
 
 EXCLUDE_SUFFIXES = {".pdf", ".pkl", ".npy", ".index", ".pyc", ".pyo", ".pptx", ".zip"}
